@@ -1,7 +1,7 @@
 package io.github.sefiraat.networks.listeners;
 
 import io.github.sefiraat.networks.slimefun.network.NetworkQuantumStorage;
-import io.github.thebusybiscuit.slimefun4.api.events.ExplosiveToolBreakBlocksEvent;
+import io.github.thebusybiscuit.slimefun5.api.events.ExplosiveToolBreakBlocksEvent;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.event.EventHandler;
@@ -25,3 +25,4 @@ public class ExplosiveToolListener implements Listener {
         event.getAdditionalBlocks().removeAll(blocksToRemove);
     }
 }
+

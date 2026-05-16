@@ -6,7 +6,7 @@ import io.github.schntgaispock.slimehud.waila.HudController;
 import io.github.sefiraat.networks.network.stackcaches.QuantumCache;
 import io.github.sefiraat.networks.slimefun.network.NetworkGreedyBlock;
 import io.github.sefiraat.networks.slimefun.network.NetworkQuantumStorage;
-import io.github.thebusybiscuit.slimefun4.utils.ChatUtils;
+import io.github.thebusybiscuit.slimefun5.utils.ChatUtils;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import org.bukkit.Location;
@@ -57,3 +57,4 @@ public class HudCallbacks {
         return "&7| &f" + itemName + " &7| " + amountStr + "/" + limitStr;
     }
 }
+

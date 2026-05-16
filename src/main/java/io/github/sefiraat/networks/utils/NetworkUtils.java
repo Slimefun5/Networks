@@ -11,7 +11,7 @@ import io.github.sefiraat.networks.slimefun.network.NetworkDirectional;
 import io.github.sefiraat.networks.slimefun.network.NetworkPusher;
 import io.github.sefiraat.networks.slimefun.tools.NetworkConfigurator;
 import io.github.sefiraat.networks.utils.datatypes.DataTypeMethods;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 
 import org.bukkit.Location;
@@ -101,3 +101,4 @@ public class NetworkUtils {
         NetworkStorage.removeNode(location);
     }
 }
+

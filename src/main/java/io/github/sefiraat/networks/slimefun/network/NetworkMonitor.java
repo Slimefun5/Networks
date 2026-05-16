@@ -1,9 +1,9 @@
 package io.github.sefiraat.networks.slimefun.network;
 
 import io.github.sefiraat.networks.network.NodeType;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import org.bukkit.inventory.ItemStack;
 
 public class NetworkMonitor extends NetworkDirectional {
@@ -12,3 +12,4 @@ public class NetworkMonitor extends NetworkDirectional {
         super(itemGroup, item, recipeType, recipe, NodeType.STORAGE_MONITOR);
     }
 }
+
