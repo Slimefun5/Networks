@@ -1,3 +1,7 @@
+<p align="center">
+<img width="800" src="https://github.com/Sefiraat/Networks/blob/master/images/logo/logo.svg"><br><br>
+</p>
+
 # Networks
 
 [![Build Status](https://Slimefun5.github.io/builds/Slimefun5/Networks/stable/badge.svg)](https://Slimefun5.github.io/builds/Slimefun5/Networks/stable)
@@ -12,30 +16,6 @@ A Slimefun addon that adds digital storage networks, crafting grids, and item tr
 - Paper 1.16.* - 26.1.*
 - Slimefun 5
 
-## Developer API
-
-You can easily depend on this project using [github-gradle](https://github.com/intisy/github-gradle).
-
-In your `build.gradle.kts`:
-
-```kotlin
-plugins {
-    id("io.github.intisy.github-gradle") version "1.8.2.1"
-}
-
-dependencies {
-    "githubCompileOnly"("Slimefun5:Networks:v1.0.1")
-}
-```
-
-<p align="center">
-<img width="800" src="https://github.com/Sefiraat/Networks/blob/master/images/logo/logo.svg"><br><br>
-</p>
-
-Networks is a Slimefun4 addon that brings a simple yet powerful item storage and movement network that works along side
-cargo.
-
-## Download Networks
 ## About Networks
 
 You can find a fuller guide to Networks including all items and blocks in
@@ -136,3 +116,19 @@ direction and drive to make these things including some monster test setups of N
 
 Another big shoutout to **GentlemanCheesy** of **mc.talosmp.net** for being my first (and as of writing this, only!)
 sponsor. A few coffee's a month to make me feel better about making these addons <3
+
+## Developer API
+
+You can easily depend on this project using [github-gradle](https://github.com/intisy/github-gradle).
+
+In your `build.gradle.kts`:
+
+```kotlin
+plugins {
+    id("io.github.intisy.github-gradle") version "1.8.2.1"
+}
+
+dependencies {
+    "githubCompileOnly"("Slimefun5:Networks:v1.0.1")
+}
+```
