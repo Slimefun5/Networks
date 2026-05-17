@@ -1,3 +1,33 @@
+# Networks
+
+[![Build Status](https://Slimefun5.github.io/builds/Slimefun5/Networks/stable/badge.svg)](https://Slimefun5.github.io/builds/Slimefun5/Networks/stable)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Slimefun5/Networks/total)
+[![GitHub Followers](https://img.shields.io/github/followers/Slimefun5?style=social)](https://github.com/Slimefun5)
+[![GitHub Stars](https://img.shields.io/github/stars/Slimefun5/Networks?style=social)](https://github.com/Slimefun5/Networks)
+
+A Slimefun 5 Addon.
+
+## Requirements
+- Java 25
+- Paper 1.16.* - 26.1.*
+- Slimefun 5
+
+## Developer API
+
+You can easily depend on this project using [github-gradle](https://github.com/intisy/github-gradle).
+
+In your `build.gradle.kts`:
+
+```kotlin
+plugins {
+    id("io.github.intisy.github-gradle") version "1.8.2.1"
+}
+
+dependencies {
+    "githubCompileOnly"("Slimefun5:Networks:v1.0.1")
+}
+```
+
 <p align="center">
 <img width="800" src="https://github.com/Sefiraat/Networks/blob/master/images/logo/logo.svg"><br><br>
 </p>
@@ -6,9 +36,6 @@ Networks is a Slimefun4 addon that brings a simple yet powerful item storage and
 cargo.
 
 ## Download Networks
-
-[![Build Status](https://thebusybiscuit.github.io/builds/Sefiraat/Networks/master/badge.svg)](https://thebusybiscuit.github.io/builds/Sefiraat/Networks/master)
-
 ## About Networks
 
 You can find a fuller guide to Networks including all items and blocks in
