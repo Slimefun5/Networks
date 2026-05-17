@@ -5,7 +5,7 @@
 [![GitHub Followers](https://img.shields.io/github/followers/Slimefun5?style=social)](https://github.com/Slimefun5)
 [![GitHub Stars](https://img.shields.io/github/stars/Slimefun5/Networks?style=social)](https://github.com/Slimefun5/Networks)
 
-A Slimefun 5 Addon.
+A Slimefun addon that adds digital storage networks, crafting grids, and item transport.
 
 ## Requirements
 - Java 25
