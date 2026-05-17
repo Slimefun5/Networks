@@ -1,15 +1,13 @@
 package io.github.sefiraat.networks.utils;
 
 import io.github.sefiraat.networks.Networks;
-import lombok.Data;
-import lombok.experimental.UtilityClass;
 import org.bukkit.NamespacedKey;
 
 import javax.annotation.Nonnull;
 
-@Data
-@UtilityClass
+
 public class Keys {
+    private Keys() {}
 
     public static final NamespacedKey ON_COOLDOWN = newKey("cooldown");
     public static final NamespacedKey CARD_INSTANCE = newKey("ntw_card");
@@ -23,3 +21,4 @@ public class Keys {
         return new NamespacedKey(Networks.getInstance(), value);
     }
 }
+

@@ -3,7 +3,7 @@ author: Sefiraat
 description: No idea yet
 main: io.github.sefiraat.networks.Networks
 website: https://github.com/Sefiraat/Networks
-version: ${project.version}
+version: ${version}
 api-version: 1.17
 depend:
   - Slimefun

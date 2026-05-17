@@ -5,15 +5,14 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.implementation.items.backpacks.SlimefunBackpack;
-import lombok.experimental.UtilityClass;
 import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.Nonnull;
 import java.util.HashMap;
 import java.util.Map;
 
-@UtilityClass
 public final class SupportedRecipes {
+    private SupportedRecipes() {}
 
     private static final Map<ItemStack[], ItemStack> RECIPES = new HashMap<>();
 
@@ -44,7 +43,7 @@ public final class SupportedRecipes {
         RECIPES.put(input, output);
     }
 
-    public boolean testRecipe(@Nonnull ItemStack[] input, @Nonnull ItemStack[] recipe) {
+    public static boolean testRecipe(@Nonnull ItemStack[] input, @Nonnull ItemStack[] recipe) {
         for (int test = 0; test < recipe.length; test++) {
             if (!StackUtils.itemsMatch(input[test], recipe[test])) {
                 return false;
@@ -58,4 +57,5 @@ public final class SupportedRecipes {
     }
 
 }
+
 

@@ -2,7 +2,6 @@ package io.github.sefiraat.networks.utils;
 
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
-import lombok.Getter;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Color;
 import org.bukkit.Material;
@@ -14,7 +13,6 @@ import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.ArrayList;
 import java.util.List;
 
-@Getter
 public enum Theme {
     WARNING(ChatColor.YELLOW, "Warning"),
     ERROR(ChatColor.RED, "Error"),
@@ -33,10 +31,21 @@ public enum Theme {
     RECIPE_TYPE(ChatColor.of("#ffe89c"), "Recipe Type"),
     GUIDE(ChatColor.of("#444444"), "Guide");
 
-    @Getter
     protected static final Theme[] cachedValues = values();
     private final ChatColor color;
     private final String loreLine;
+
+    public static Theme[] getCachedValues() {
+        return cachedValues;
+    }
+
+    public ChatColor getColor() {
+        return color;
+    }
+
+    public String getLoreLine() {
+        return loreLine;
+    }
 
     @ParametersAreNonnullByDefault
     Theme(ChatColor color, String loreLine) {
@@ -132,7 +141,7 @@ public enum Theme {
         }
         finalLore.add("");
         finalLore.add(applyThemeToString(Theme.CLICK_INFO, themeType.getLoreLine()));
-        return new CustomItemStack(
+        return CustomItemStack.create(
             material,
             Theme.applyThemeToString(themeType, name),
             finalLore.toArray(new String[finalLore.size() - 1])
@@ -141,4 +150,9 @@ public enum Theme {
 
 
 }
+
+
+
+
+
 

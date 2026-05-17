@@ -15,7 +15,6 @@ import io.github.thebusybiscuit.slimefun5.core.handlers.BlockPlaceHandler;
 import io.github.thebusybiscuit.slimefun5.core.handlers.ItemUseHandler;
 import io.github.thebusybiscuit.slimefun5.implementation.items.blocks.UnplaceableBlock;
 
-import lombok.Getter;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
@@ -36,10 +35,16 @@ import java.util.Set;
 
 public abstract class NetworkObject extends SlimefunItem implements AdminDebuggable {
 
-    @Getter
     private final NodeType nodeType;
-    @Getter
+
+    public NodeType getNodeType() {
+        return this.nodeType;
+    }
     private final List<Integer> slotsToDrop = new ArrayList<>();
+
+    public List<Integer> getSlotsToDrop() {
+        return this.slotsToDrop;
+    }
 
     protected static final Set<BlockFace> CHECK_FACES = Set.of(
         BlockFace.UP,

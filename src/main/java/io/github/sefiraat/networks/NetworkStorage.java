@@ -2,13 +2,11 @@ package io.github.sefiraat.networks;
 
 import io.github.sefiraat.networks.network.NetworkNode;
 import io.github.sefiraat.networks.network.NodeDefinition;
-import lombok.experimental.UtilityClass;
 import org.bukkit.Location;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@UtilityClass
 public class NetworkStorage {
 
     private static final Map<Location, NodeDefinition> ALL_NETWORK_OBJECTS = new HashMap<>();

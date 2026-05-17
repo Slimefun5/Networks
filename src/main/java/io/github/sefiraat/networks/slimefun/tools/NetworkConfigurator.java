@@ -1,6 +1,6 @@
 package io.github.sefiraat.networks.slimefun.tools;
 
-import de.jeff_media.morepersistentdatatypes.DataType;
+import com.jeff_media.morepersistentdatatypes.DataType;
 import io.github.sefiraat.networks.slimefun.network.NetworkDirectional;
 import io.github.sefiraat.networks.slimefun.network.NetworkPusher;
 import io.github.sefiraat.networks.utils.Keys;
@@ -93,3 +93,7 @@ public class NetworkConfigurator extends SlimefunItem {
         player.sendMessage(Theme.SUCCESS + "Configuration copied.");
     }
 }
+
+
+
+
