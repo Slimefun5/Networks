@@ -14,7 +14,7 @@ A Slimefun addon that adds digital storage networks, crafting grids, and item tr
 ## Requirements
 - Java 25
 - Paper 1.16.* - 26.1.*
-- Slimefun 5
+- [Slimefun 5](https://github.com/Slimefun5/Slimefun5)
 
 ## About Networks
 
@@ -132,3 +132,21 @@ dependencies {
     "githubCompileOnly"("Slimefun5:Networks:v1.0.1")
 }
 ```
+
+## Wiki
+
+[Read more on the Slimefun Wiki...](https://github.com/Slimefun5/Wiki/wiki/Networks)
+
+## Discord
+
+You can find Slimefun's community on Discord! Click the badge below to join the server for suggestions/questions or other discussions about this plugin.
+
+<p align="center">
+  <a href="https://discord.gg/fsD4Bkh">
+    <img src="https://discordapp.com/api/guilds/738626600539160576/widget.png?style=banner2" alt="Discord"/>
+  </a>
+</p>
+
+## License
+
+This project is open-source and licensed under the MIT License.
