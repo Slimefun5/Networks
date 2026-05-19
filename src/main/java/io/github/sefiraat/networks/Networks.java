@@ -10,10 +10,10 @@ import io.github.sefiraat.networks.slimefun.network.NetworkController;
 import io.github.thebusybiscuit.slimefun5.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.updater.BlobBuildUpdater;
 
-import org.bstats.bukkit.Metrics;
 import org.bstats.charts.AdvancedPie;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+import dev.walshy.sfmetrics.MetricsModule;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -41,6 +41,8 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
+        MetricsModule.setup(this, 31391);
+
         instance = this;
 
         getLogger().info("########################################");
@@ -85,8 +87,7 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
     }
 
     public void setupMetrics() {
-        final Metrics metrics = new Metrics(this, 13644);
-
+        final 
         AdvancedPie networksChart = new AdvancedPie("networks", () -> {
             Map<String, Integer> networksMap = new HashMap<>();
             networksMap.put("Number of networks", NetworkController.getNetworks().size());
