@@ -33,6 +33,7 @@ repositories {
 }
 
 dependencies {
+    githubImplementation("Slimefun5:SlimefunMetrics:master")
     compileOnly("io.papermc.paper:paper-api:${property("paperApiVersion")}")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
     "githubCompileOnly"("Slimefun5:Slimefun5:v5.1.1")
@@ -47,8 +48,7 @@ dependencies {
         isTransitive = false
     }
 
-    implementation("org.bstats:bstats-bukkit:3.0.2")
-}
+    }
 
 tasks {
     compileJava {
@@ -64,8 +64,7 @@ tasks {
     }
     shadowJar {
         archiveFileName.set("Networks v${project.version}.jar")
-        relocate("org.bstats", "io.github.sefiraat.networks.bstats")
-        exclude("META-INF/**")
+                exclude("META-INF/**")
     }
     build {
         dependsOn(shadowJar)
