@@ -56,7 +56,8 @@ public class NetworkCard extends SlimefunItem {
                 }
 
                 final SlimefunItem cardItem = SlimefunItem.getByItem(card);
-                if (cardItem instanceof NetworkCard networkCard) {
+                if (cardItem instanceof NetworkCard) {
+                    NetworkCard networkCard = (NetworkCard) cardItem;
                     final ItemMeta cardMeta = card.getItemMeta();
                     final CardInstance cardInstance = DataTypeMethods.getCustom(
                         cardMeta,

@@ -1,6 +1,5 @@
 package io.github.sefiraat.networks.slimefun.network;
 
-import dev.sefiraat.sefilib.misc.ParticleUtils;
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.Networks;
 import io.github.sefiraat.networks.network.NodeDefinition;
@@ -91,13 +90,14 @@ public class NetworkVacuum extends NetworkObject {
                 Collection<Entity> items = location.getWorld()
                     .getNearbyEntities(location, range, range, range, Item.class::isInstance);
                 Optional<Entity> optionalEntity = items.stream().findFirst();
-                if (optionalEntity.isEmpty() || !(optionalEntity.get() instanceof Item item)) {
+                if (!optionalEntity.isPresent() || !(optionalEntity.get() instanceof Item)) {
                     return;
                 }
+                Item item = (Item) optionalEntity.get();
                 if (item.getPickupDelay() <= 0 && !SlimefunUtils.hasNoPickupFlag(item)) {
                     final ItemStack itemStack = item.getItemStack();
                     blockMenu.replaceExistingItem(inputSlot, itemStack);
-                    ParticleUtils.displayParticleRandomly(item, 1, 5, new Particle.DustOptions(Color.BLUE, 1));
+                    item.getWorld().spawnParticle(Particle.REDSTONE, item.getLocation(), 1, 0.2, 0.2, 0.2, new Particle.DustOptions(Color.BLUE, 1));
                     item.remove();
                 }
                 return;

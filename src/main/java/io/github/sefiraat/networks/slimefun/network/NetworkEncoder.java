@@ -150,10 +150,7 @@ public class NetworkEncoder extends NetworkObject {
             }
         }
 
-        // If no slimefun recipe found, try a vanilla one
-        if (crafted == null) {
-            crafted = Bukkit.craftItem(inputs.clone(), player.getWorld(), player);
-        }
+        // vanilla craftItem() is 1.18+ — skip on legacy
 
         // If no item crafted OR result doesn't fit, escape
         if (crafted.getType() == Material.AIR) {

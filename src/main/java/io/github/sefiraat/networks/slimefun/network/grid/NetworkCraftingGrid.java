@@ -217,10 +217,7 @@ public class NetworkCraftingGrid extends AbstractGrid {
             }
         }
 
-        // If no slimefun recipe found, try a vanilla one
-        if (crafted == null) {
-            crafted = Bukkit.craftItem(inputs, player.getWorld(), player);
-        }
+        // vanilla craftItem() is 1.18+ — skip on legacy
 
         // If no item crafted OR result doesn't fit, escape
         if (crafted.getType() == Material.AIR || !menu.fits(crafted, CRAFT_OUTPUT_SLOT)) {

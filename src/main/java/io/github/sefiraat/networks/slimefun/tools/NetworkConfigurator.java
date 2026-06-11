@@ -44,8 +44,9 @@ public class NetworkConfigurator extends SlimefunItem {
                         final Block block = optional.get();
                         final SlimefunItem slimefunItem = BlockStorage.check(block);
                         if (Slimefun.getProtectionManager().hasPermission(player, block, Interaction.INTERACT_BLOCK)
-                            && slimefunItem instanceof NetworkDirectional directional
+                            && slimefunItem instanceof NetworkDirectional
                         ) {
+                            NetworkDirectional directional = (NetworkDirectional) slimefunItem;
                             final BlockMenu blockMenu = BlockStorage.getInventory(block);
                             if (player.isSneaking()) {
                                 setConfigurator(directional, e.getItem(), blockMenu, player);

@@ -33,8 +33,6 @@ public class BlueprintInstance extends ItemStackCache {
     }
 
     public void generateVanillaRecipe(World world) {
-        if (this.recipe == null) {
-            this.recipe = Bukkit.getCraftingRecipe(this.recipeItems, world);
-        }
+        // getCraftingRecipe() is 1.18+ — skip on legacy
     }
 }

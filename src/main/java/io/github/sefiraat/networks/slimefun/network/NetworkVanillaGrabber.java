@@ -88,9 +88,10 @@ public class NetworkVanillaGrabber extends NetworkDirectional {
 
         final BlockState blockState = targetBlock.getState();
 
-        if (!(blockState instanceof InventoryHolder holder)) {
+        if (!(blockState instanceof InventoryHolder)) {
             return;
         }
+        InventoryHolder holder = (InventoryHolder) blockState;
 
         boolean wildChests = Networks.getSupportedPluginManager().isWildChests();
         boolean isChest = wildChests && WildChestsAPI.getChest(targetBlock.getLocation()) != null;
@@ -106,7 +107,8 @@ public class NetworkVanillaGrabber extends NetworkDirectional {
         sendDebugMessage(block.getLocation(), "WildChest test passed.");
         final Inventory inventory = holder.getInventory();
 
-        if (inventory instanceof FurnaceInventory furnaceInventory) {
+        if (inventory instanceof FurnaceInventory) {
+            FurnaceInventory furnaceInventory = (FurnaceInventory) inventory;
             final ItemStack furnaceInventoryResult = furnaceInventory.getResult();
             final ItemStack furnaceInventoryFuel = furnaceInventory.getFuel();
             grabItem(blockMenu, furnaceInventoryResult);
@@ -115,7 +117,8 @@ public class NetworkVanillaGrabber extends NetworkDirectional {
                 grabItem(blockMenu, furnaceInventoryFuel);
             }
 
-        } else if (inventory instanceof BrewerInventory brewerInventory) {
+        } else if (inventory instanceof BrewerInventory) {
+            BrewerInventory brewerInventory = (BrewerInventory) inventory;
             for (int i = 0; i < 3; i++) {
                 final ItemStack stack = brewerInventory.getContents()[i];
                 if (stack != null && stack.getType() == Material.POTION) {

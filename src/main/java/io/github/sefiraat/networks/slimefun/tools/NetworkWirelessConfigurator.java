@@ -48,7 +48,8 @@ public class NetworkWirelessConfigurator extends SlimefunItem {
                         if (Slimefun.getProtectionManager().hasPermission(player, block, Interaction.INTERACT_BLOCK)) {
                             final ItemStack heldItem = player.getInventory().getItemInMainHand();
                             final BlockMenu blockMenu = BlockStorage.getInventory(block);
-                            if (slimefunItem instanceof NetworkWirelessTransmitter transmitter && player.isSneaking()) {
+                            if (slimefunItem instanceof NetworkWirelessTransmitter && player.isSneaking()) {
+                                NetworkWirelessTransmitter transmitter = (NetworkWirelessTransmitter) slimefunItem;
                                 setTransmitter(transmitter, heldItem, blockMenu, player);
                             } else if (slimefunItem instanceof NetworkWirelessReceiver && !player.isSneaking()) {
                                 setReceiver(heldItem, blockMenu, player);

@@ -80,9 +80,10 @@ public class NetworkVanillaPusher extends NetworkDirectional {
 
         final BlockState blockState = targetBlock.getState();
 
-        if (!(blockState instanceof InventoryHolder holder)) {
+        if (!(blockState instanceof InventoryHolder)) {
             return;
         }
+        InventoryHolder holder = (InventoryHolder) blockState;
 
         final Inventory inventory = holder.getInventory();
         final ItemStack stack = blockMenu.getItemInSlot(INPUT_SLOT);
@@ -97,10 +98,10 @@ public class NetworkVanillaPusher extends NetworkDirectional {
         sendDebugMessage(block.getLocation(), "WildChests detected: " + wildChests);
         sendDebugMessage(block.getLocation(), "Block detected as chest: " + isChest);
 
-        if (inventory instanceof FurnaceInventory furnace) {
-            handleFurnace(stack, furnace);
-        } else if (inventory instanceof BrewerInventory brewer) {
-            handleBrewingStand(stack, brewer);
+        if (inventory instanceof FurnaceInventory) {
+            handleFurnace(stack, (FurnaceInventory) inventory);
+        } else if (inventory instanceof BrewerInventory) {
+            handleBrewingStand(stack, (BrewerInventory) inventory);
         } else if (wildChests && isChest) {
             sendDebugMessage(block.getLocation(), "WildChest test failed, escaping");
             return;

@@ -29,6 +29,8 @@ import org.bukkit.inventory.ItemStack;
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -46,13 +48,10 @@ public abstract class NetworkObject extends SlimefunItem implements AdminDebugga
         return this.slotsToDrop;
     }
 
-    protected static final Set<BlockFace> CHECK_FACES = Set.of(
-        BlockFace.UP,
-        BlockFace.DOWN,
-        BlockFace.NORTH,
-        BlockFace.SOUTH,
-        BlockFace.EAST,
-        BlockFace.WEST
+    protected static final Set<BlockFace> CHECK_FACES = Collections.unmodifiableSet(
+        new java.util.HashSet<>(Arrays.asList(
+            BlockFace.UP, BlockFace.DOWN, BlockFace.NORTH, BlockFace.SOUTH, BlockFace.EAST, BlockFace.WEST
+        ))
     );
 
 

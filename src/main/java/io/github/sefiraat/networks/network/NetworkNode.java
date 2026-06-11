@@ -142,7 +142,8 @@ public class NetworkNode {
         if (this.nodeType == NodeType.POWER_NODE) {
             int blockCharge = 0;
             final SlimefunItem item = BlockStorage.check(this.nodePosition);
-            if (item instanceof NetworkPowerNode powerNode) {
+            if (item instanceof NetworkPowerNode) {
+                NetworkPowerNode powerNode = (NetworkPowerNode) item;
                 blockCharge = powerNode.getCharge(this.nodePosition);
             }
             return blockCharge;

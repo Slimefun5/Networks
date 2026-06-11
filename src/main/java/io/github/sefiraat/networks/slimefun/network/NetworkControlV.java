@@ -1,9 +1,6 @@
 package io.github.sefiraat.networks.slimefun.network;
 
-import com.gmail.nossr50.mcMMO;
-import dev.sefiraat.sefilib.misc.ParticleUtils;
-import dev.sefiraat.sefilib.world.LocationUtils;
-import io.github.bakedlibs.dough.blocks.BlockPosition;
+import io.github.thebusybiscuit.slimefun5.libraries.dough.blocks.BlockPosition;
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.Networks;
 import io.github.sefiraat.networks.managers.SupportedPluginManager;
@@ -23,6 +20,7 @@ import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import org.bukkit.Bukkit;
 import org.bukkit.Color;
+import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.Particle;
@@ -140,15 +138,8 @@ public class NetworkControlV extends NetworkDirectional {
         this.blockCache.add(targetPosition);
         Bukkit.getScheduler().runTask(Networks.getInstance(), bukkitTask -> {
             targetBlock.setType(fetchedStack.getType(), true);
-            if (SupportedPluginManager.getInstance().isMcMMO()) {
-                mcMMO.getPlaceStore().setTrue(targetBlock);
-            }
-            ParticleUtils.displayParticleRandomly(
-                LocationUtils.centre(targetBlock.getLocation()),
-                Particle.ELECTRIC_SPARK,
-                1,
-                5
-            );
+            Location centre = targetBlock.getLocation().clone().add(0.5, 0.5, 0.5);
+            centre.getWorld().spawnParticle(Particle.CRIT_MAGIC, centre, 1, 0.2, 0.2, 0.2);
         });
     }
 

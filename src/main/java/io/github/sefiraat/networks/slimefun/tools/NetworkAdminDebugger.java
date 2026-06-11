@@ -41,7 +41,8 @@ public class NetworkAdminDebugger extends SlimefunItem {
                 player.sendMessage(Theme.ERROR + "You can only use this tool as an op'd player.");
                 return;
             }
-            if (slimefunItem instanceof AdminDebuggable debuggable) {
+            if (slimefunItem instanceof AdminDebuggable) {
+                AdminDebuggable debuggable = (AdminDebuggable) slimefunItem;
                 debuggable.toggle(block.getLocation(), player);
                 e.cancel();
             }

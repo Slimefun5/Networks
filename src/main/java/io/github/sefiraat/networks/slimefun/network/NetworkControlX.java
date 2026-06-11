@@ -1,8 +1,6 @@
 package io.github.sefiraat.networks.slimefun.network;
 
-import dev.sefiraat.sefilib.misc.ParticleUtils;
-import dev.sefiraat.sefilib.world.LocationUtils;
-import io.github.bakedlibs.dough.blocks.BlockPosition;
+import io.github.thebusybiscuit.slimefun5.libraries.dough.blocks.BlockPosition;
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.Networks;
 import io.github.sefiraat.networks.network.NodeDefinition;
@@ -21,6 +19,7 @@ import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import org.bukkit.Bukkit;
 import org.bukkit.Color;
+import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.Particle;
@@ -142,12 +141,8 @@ public class NetworkControlX extends NetworkDirectional {
                 }
 
                 targetBlock.setType(Material.AIR, true);
-                ParticleUtils.displayParticleRandomly(
-                    LocationUtils.centre(targetBlock.getLocation()),
-                    1,
-                    5,
-                    DUST_OPTIONS
-                );
+                Location centre = targetBlock.getLocation().clone().add(0.5, 0.5, 0.5);
+                centre.getWorld().spawnParticle(Particle.REDSTONE, centre, 1, 0.2, 0.2, 0.2, DUST_OPTIONS);
                 definition.getNode().getRoot().removeRootPower(REQUIRED_POWER);
             });
         }

@@ -168,7 +168,7 @@ public class NetworkWirelessTransmitter extends NetworkObject {
                     final Location particleLocation = blockMenu.getLocation().clone().add(0.5, 1.1, 0.5);
                     final Location particleLocation2 = linkedBlockMenu.getLocation().clone().add(0.5, 2.1, 0.5);
                     particleLocation.getWorld().spawnParticle(
-                        Particle.WAX_ON,
+                        Particle.VILLAGER_HAPPY,
                         particleLocation,
                         0,
                         0,
@@ -176,7 +176,7 @@ public class NetworkWirelessTransmitter extends NetworkObject {
                         0
                     );
                     particleLocation2.getWorld().spawnParticle(
-                        Particle.WAX_OFF,
+                        Particle.VILLAGER_HAPPY,
                         particleLocation2,
                         0,
                         0,

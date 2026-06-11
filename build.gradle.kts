@@ -17,38 +17,28 @@ github {
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(25))
+        languageVersion.set(JavaLanguageVersion.of(8))
     }
 }
 
 repositories {
     mavenCentral()
     maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
-    maven("https://repo.papermc.io/repository/maven-public/")
     maven("https://repo.codemc.io/repository/maven-public/")
     maven("https://jitpack.io")
     maven("https://nexus.neetgames.com/repository/maven-public/")
     maven("https://repo.bg-software.com/repository/api/")
-    maven("https://sefiraat.jfrog.io/artifactory/default-maven-local")
 }
 
 dependencies {
-    implementation("com.github.Slimefun5:SlimefunMetrics:master-SNAPSHOT")
-    compileOnly("io.papermc.paper:paper-api:${property("paperApiVersion")}")
+    compileOnly(files("../../core/Slimefun5/core/build/libs/Slimefun v5.0.0-UNOFFICIAL-MC26.1.2.jar"))
+    compileOnly("org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
-    "githubCompileOnly"("Slimefun5:Slimefun5:v5.1.1")
+    compileOnly("org.jetbrains:annotations:23.0.0")
 
-    compileOnly("dev.sefiraat:SefiLib:0.2.6")
-
-    githubCompileOnly("Slimefun5:InfinityExpansion:v1.1.1")
-    compileOnly("com.github.Sefiraat:Netheopoiesis:8d1af6c570")
-    compileOnly("com.github.schntgaispock:SlimeHUD:1.2.7")
+    compileOnly(files("../InfinityExpansion/build/libs/InfinityExpansion v1.0.0.jar"))
     compileOnly("com.bgsoftware:WildChestsAPI:2024.1")
-    compileOnly("com.gmail.nossr50.mcMMO:mcMMO:2.2.017") {
-        isTransitive = false
-    }
-
-    }
+}
 
 tasks {
     compileJava {
@@ -64,9 +54,15 @@ tasks {
     }
     shadowJar {
         archiveFileName.set("Networks v${project.version}.jar")
-                exclude("META-INF/**")
+        exclude("META-INF/**")
     }
     build {
         dependsOn(shadowJar)
+    }
+    compileTestJava {
+        enabled = false
+    }
+    test {
+        enabled = false
     }
 }

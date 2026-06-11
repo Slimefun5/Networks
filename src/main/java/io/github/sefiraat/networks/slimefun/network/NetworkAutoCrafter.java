@@ -133,7 +133,7 @@ public class NetworkAutoCrafter extends NetworkObject {
                 final ItemMeta blueprintMeta = blueprint.getItemMeta();
                 final Optional<BlueprintInstance> optional = DataTypeMethods.getOptionalCustom(blueprintMeta, Keys.BLUEPRINT_INSTANCE, PersistentCraftingBlueprintType.TYPE);
 
-                if (optional.isEmpty()) {
+                if (!optional.isPresent()) {
                     return;
                 }
 
@@ -219,7 +219,7 @@ public class NetworkAutoCrafter extends NetworkObject {
         // Push item
         final Location location = blockMenu.getLocation().clone().add(0.5, 1.1, 0.5);
         if (root.isDisplayParticles()) {
-            location.getWorld().spawnParticle(Particle.WAX_OFF, location, 0, 0, 4, 0);
+            location.getWorld().spawnParticle(Particle.VILLAGER_HAPPY, location, 0, 0, 4, 0);
         }
         blockMenu.pushItem(crafted, OUTPUT_SLOT);
         return true;
