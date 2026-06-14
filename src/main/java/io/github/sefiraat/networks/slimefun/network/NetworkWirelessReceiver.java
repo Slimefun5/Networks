@@ -4,6 +4,7 @@ import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.network.NodeDefinition;
 import io.github.sefiraat.networks.network.NodeType;
 import io.github.sefiraat.networks.slimefun.NetworkSlimefunItems;
+import io.github.sefiraat.networks.utils.MaterialCompat;
 import io.github.sefiraat.networks.utils.Theme;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
@@ -12,6 +13,7 @@ import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
@@ -38,7 +40,7 @@ public class NetworkWirelessReceiver extends NetworkObject {
     };
 
     private static final ItemStack RECEIVED_BACKGROUND_STACK = CustomItemStack.create(
-        Material.GREEN_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.GREEN_STAINED_GLASS_PANE),
         Theme.SUCCESS + "Received items"
     );
 

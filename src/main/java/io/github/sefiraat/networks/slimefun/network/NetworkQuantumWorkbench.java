@@ -2,9 +2,8 @@ package io.github.sefiraat.networks.slimefun.network;
 
 import io.github.sefiraat.networks.Networks;
 import io.github.sefiraat.networks.network.stackcaches.QuantumCache;
-import io.github.sefiraat.networks.utils.Keys;
+import io.github.sefiraat.networks.utils.MaterialCompat;
 import io.github.sefiraat.networks.utils.Theme;
-import io.github.sefiraat.networks.utils.datatypes.DataTypeMethods;
 import io.github.sefiraat.networks.utils.datatypes.PersistentQuantumStorageType;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
@@ -15,6 +14,7 @@ import io.github.thebusybiscuit.slimefun5.core.handlers.BlockBreakHandler;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.slimefun5.utils.SlimefunUtils;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
@@ -45,7 +45,7 @@ public class NetworkQuantumWorkbench extends SlimefunItem {
     private static final int OUTPUT_SLOT = 25;
 
     private static final ItemStack CRAFT_BUTTON_STACK = CustomItemStack.create(
-        Material.CRAFTING_TABLE,
+        MaterialCompat.material(XMaterial.CRAFTING_TABLE),
         Theme.CLICK_INFO + "Click to entangle"
     );
 
@@ -54,7 +54,7 @@ public class NetworkQuantumWorkbench extends SlimefunItem {
     public static final RecipeType TYPE = new RecipeType(
         new NamespacedKey(Networks.getInstance(), "quantum-workbench"),
         Theme.themedItemStack(
-            Material.BRAIN_CORAL_BLOCK,
+            MaterialCompat.material(XMaterial.BRAIN_CORAL_BLOCK),
             Theme.MACHINE,
             "Quantum Workbench",
             "Crafted using the Quantum Workbench."
@@ -141,7 +141,7 @@ public class NetworkQuantumWorkbench extends SlimefunItem {
                 final ItemMeta oldMeta = coreItem.getItemMeta();
                 final ItemMeta newMeta = crafted.getItemMeta();
                 final NetworkQuantumStorage newQuantum = (NetworkQuantumStorage) SlimefunItem.getByItem(crafted);
-                final QuantumCache oldCache = DataTypeMethods.getCustom(oldMeta, Keys.QUANTUM_STORAGE_INSTANCE, PersistentQuantumStorageType.TYPE);
+                final QuantumCache oldCache = PersistentQuantumStorageType.read(oldMeta);
 
                 if (oldCache != null) {
                     final QuantumCache newCache = new QuantumCache(
@@ -150,7 +150,7 @@ public class NetworkQuantumWorkbench extends SlimefunItem {
                         newQuantum.getMaxAmount(),
                         oldCache.isVoidExcess()
                     );
-                    DataTypeMethods.setCustom(newMeta, Keys.QUANTUM_STORAGE_INSTANCE, PersistentQuantumStorageType.TYPE, newCache);
+                    PersistentQuantumStorageType.store(newMeta, newCache);
                     newCache.addMetaLore(newMeta);
                     crafted.setItemMeta(newMeta);
                 }

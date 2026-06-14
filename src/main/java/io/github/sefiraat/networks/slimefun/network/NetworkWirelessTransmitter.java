@@ -5,6 +5,8 @@ import io.github.sefiraat.networks.network.NodeDefinition;
 import io.github.sefiraat.networks.network.NodeType;
 import io.github.sefiraat.networks.network.stackcaches.ItemRequest;
 import io.github.sefiraat.networks.slimefun.NetworkSlimefunItems;
+import io.github.sefiraat.networks.utils.MaterialCompat;
+import io.github.sefiraat.networks.utils.ParticleCompat;
 import io.github.sefiraat.networks.utils.Theme;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
@@ -13,6 +15,7 @@ import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
@@ -44,7 +47,7 @@ public class NetworkWirelessTransmitter extends NetworkObject {
     };
 
     private static final ItemStack TEMPLATE_BACKGROUND_STACK = CustomItemStack.create(
-        Material.GREEN_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.GREEN_STAINED_GLASS_PANE),
         Theme.SUCCESS + "Transmit items matching"
     );
 
@@ -167,22 +170,8 @@ public class NetworkWirelessTransmitter extends NetworkObject {
                 if (definition.getNode().getRoot().isDisplayParticles()) {
                     final Location particleLocation = blockMenu.getLocation().clone().add(0.5, 1.1, 0.5);
                     final Location particleLocation2 = linkedBlockMenu.getLocation().clone().add(0.5, 2.1, 0.5);
-                    particleLocation.getWorld().spawnParticle(
-                        Particle.VILLAGER_HAPPY,
-                        particleLocation,
-                        0,
-                        0,
-                        4,
-                        0
-                    );
-                    particleLocation2.getWorld().spawnParticle(
-                        Particle.VILLAGER_HAPPY,
-                        particleLocation2,
-                        0,
-                        0,
-                        -4,
-                        0
-                    );
+                    ParticleCompat.spawn(particleLocation, 0, 0, 4, 0, "VILLAGER_HAPPY", "HAPPY_VILLAGER");
+                    ParticleCompat.spawn(particleLocation2, 0, 0, -4, 0, "VILLAGER_HAPPY", "HAPPY_VILLAGER");
                 }
             }
         }

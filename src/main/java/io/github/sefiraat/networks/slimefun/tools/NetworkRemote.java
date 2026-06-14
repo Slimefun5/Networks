@@ -1,6 +1,5 @@
 package io.github.sefiraat.networks.slimefun.tools;
 
-import com.jeff_media.morepersistentdatatypes.DataType;
 import io.github.sefiraat.networks.slimefun.network.grid.NetworkGrid;
 import io.github.sefiraat.networks.utils.Keys;
 import io.github.sefiraat.networks.utils.Theme;
@@ -16,7 +15,7 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import org.bukkit.Location;
-import org.bukkit.NamespacedKey;
+import io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -69,14 +68,14 @@ public class NetworkRemote extends SlimefunItem {
 
     public static void setGrid(@Nonnull ItemStack itemStack, @Nonnull Block block, @Nonnull Player player) {
         final ItemMeta itemMeta = itemStack.getItemMeta();
-        DataTypeMethods.setCustom(itemMeta, KEY, DataType.LOCATION, block.getLocation());
+        DataTypeMethods.setLocation(itemMeta, KEY.toString(), block.getLocation());
         itemStack.setItemMeta(itemMeta);
         player.sendMessage(Theme.SUCCESS + "Grid has been bound to the remote.");
     }
 
     public static void tryOpenGrid(@Nonnull ItemStack itemStack, @Nonnull Player player, int range) {
         final ItemMeta itemMeta = itemStack.getItemMeta();
-        final Location location = DataTypeMethods.getCustom(itemMeta, KEY, DataType.LOCATION);
+        final Location location = DataTypeMethods.getLocation(itemMeta, KEY.toString());
 
         if (location != null) {
 

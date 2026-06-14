@@ -3,8 +3,11 @@ package io.github.sefiraat.networks.slimefun.network;
 import io.github.sefiraat.networks.NetworkStorage;
 import java.util.Arrays;
 import io.github.sefiraat.networks.network.NodeType;
+import io.github.sefiraat.networks.utils.MaterialCompat;
 import io.github.sefiraat.networks.utils.NetworkUtils;
+import io.github.sefiraat.networks.utils.ParticleCompat;
 import io.github.sefiraat.networks.utils.Theme;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemSetting;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
@@ -334,7 +337,7 @@ public abstract class NetworkDirectional extends NetworkObject {
 
     @Nonnull
     public static ItemStack getDirectionalSlotPane(@Nonnull BlockFace blockFace, @Nonnull Material blockMaterial, boolean active) {
-        if (blockMaterial.isItem() && !blockMaterial.isAir()) {
+        if (MaterialCompat.isItem(blockMaterial) && !MaterialCompat.isAir(blockMaterial)) {
             final ItemStack displayStack = CustomItemStack.create(
                 blockMaterial,
                 Theme.PASSIVE + "Direction " + blockFace.name() + " (" + blockMaterial.name() + ")"
@@ -351,7 +354,7 @@ public abstract class NetworkDirectional extends NetworkObject {
             displayStack.setItemMeta(itemMeta);
             return displayStack;
         } else {
-            Material material = active ? Material.GREEN_STAINED_GLASS_PANE : Material.RED_STAINED_GLASS_PANE;
+            Material material = active ? MaterialCompat.material(XMaterial.GREEN_STAINED_GLASS_PANE) : MaterialCompat.material(XMaterial.RED_STAINED_GLASS_PANE);
             return CustomItemStack.create(
                 material,
                 ChatColor.GRAY + "Set direction: " + blockFace.name()
@@ -364,15 +367,15 @@ public abstract class NetworkDirectional extends NetworkObject {
         return SELECTED_DIRECTION_MAP.get(location);
     }
 
-    protected Particle.DustOptions getDustOptions() {
-        return new Particle.DustOptions(Color.RED, 1);
+    protected Color getDustColor() {
+        return Color.RED;
     }
 
     protected void showParticle(@Nonnull Location location, @Nonnull BlockFace blockFace) {
         final Vector faceVector = blockFace.getDirection().clone().multiply(-1);
         final Vector pushVector = faceVector.clone().multiply(2);
         final Location displayLocation = location.clone().add(0.5, 0.5, 0.5).add(faceVector);
-        location.getWorld().spawnParticle(Particle.REDSTONE, displayLocation, 0, pushVector.getX(), pushVector.getY(), pushVector.getZ(), getDustOptions());
+        ParticleCompat.spawnDirectionalDust(displayLocation, getDustColor(), 1, pushVector.getX(), pushVector.getY(), pushVector.getZ());
     }
 }
 

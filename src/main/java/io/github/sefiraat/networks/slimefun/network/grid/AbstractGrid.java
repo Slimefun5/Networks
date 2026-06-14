@@ -8,6 +8,7 @@ import io.github.sefiraat.networks.network.NetworkRoot;
 import io.github.sefiraat.networks.network.NodeDefinition;
 import io.github.sefiraat.networks.network.NodeType;
 import io.github.sefiraat.networks.slimefun.network.NetworkObject;
+import io.github.sefiraat.networks.utils.MaterialCompat;
 import io.github.sefiraat.networks.utils.StackUtils;
 import io.github.sefiraat.networks.utils.Theme;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
@@ -17,6 +18,7 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.api.items.settings.IntRangeSetting;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.slimefun5.utils.ChatUtils;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ClickAction;
@@ -45,27 +47,27 @@ import java.util.Map;
 public abstract class AbstractGrid extends NetworkObject {
 
     private static final ItemStack BLANK_SLOT_STACK = CustomItemStack.create(
-        Material.LIGHT_GRAY_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.LIGHT_GRAY_STAINED_GLASS_PANE),
         " "
     );
 
     private static final ItemStack PAGE_PREVIOUS_STACK = CustomItemStack.create(
-        Material.RED_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.RED_STAINED_GLASS_PANE),
         Theme.CLICK_INFO.getColor() + "Previous Page"
     );
 
     private static final ItemStack PAGE_NEXT_STACK = CustomItemStack.create(
-        Material.RED_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.RED_STAINED_GLASS_PANE),
         Theme.CLICK_INFO.getColor() + "Next Page"
     );
 
     private static final ItemStack CHANGE_SORT_STACK = CustomItemStack.create(
-        Material.BLUE_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.BLUE_STAINED_GLASS_PANE),
         Theme.CLICK_INFO.getColor() + "Change Sort Order"
     );
 
     private static final ItemStack FILTER_STACK = CustomItemStack.create(
-        Material.NAME_TAG,
+        MaterialCompat.material(XMaterial.NAME_TAG),
         Theme.CLICK_INFO.getColor() + "Set Filter (Right Click to Clear)"
     );
 

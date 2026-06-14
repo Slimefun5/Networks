@@ -9,7 +9,9 @@ import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
+import io.github.sefiraat.networks.utils.MaterialCompat;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import org.bukkit.Bukkit;
@@ -113,7 +115,7 @@ public class NetworkVanillaGrabber extends NetworkDirectional {
             final ItemStack furnaceInventoryFuel = furnaceInventory.getFuel();
             grabItem(blockMenu, furnaceInventoryResult);
 
-            if (furnaceInventoryFuel != null && furnaceInventoryFuel.getType() == Material.BUCKET) {
+            if (furnaceInventoryFuel != null && furnaceInventoryFuel.getType() == MaterialCompat.material(XMaterial.BUCKET)) {
                 grabItem(blockMenu, furnaceInventoryFuel);
             }
 
@@ -121,7 +123,7 @@ public class NetworkVanillaGrabber extends NetworkDirectional {
             BrewerInventory brewerInventory = (BrewerInventory) inventory;
             for (int i = 0; i < 3; i++) {
                 final ItemStack stack = brewerInventory.getContents()[i];
-                if (stack != null && stack.getType() == Material.POTION) {
+                if (stack != null && stack.getType() == MaterialCompat.material(XMaterial.POTION)) {
                     final PotionMeta potionMeta = (PotionMeta) stack.getItemMeta();
                     if (potionMeta.getBasePotionData().getType() != PotionType.WATER) {
                         grabItem(blockMenu, stack);
@@ -195,8 +197,8 @@ public class NetworkVanillaGrabber extends NetworkDirectional {
     }
 
     @Override
-    protected Particle.DustOptions getDustOptions() {
-        return new Particle.DustOptions(Color.MAROON, 1);
+    protected Color getDustColor() {
+        return Color.MAROON;
     }
 }
 

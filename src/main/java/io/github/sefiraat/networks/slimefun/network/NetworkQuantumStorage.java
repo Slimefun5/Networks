@@ -2,10 +2,10 @@ package io.github.sefiraat.networks.slimefun.network;
 
 import io.github.sefiraat.networks.network.stackcaches.QuantumCache;
 import io.github.sefiraat.networks.utils.Keys;
+import io.github.sefiraat.networks.utils.MaterialCompat;
 import io.github.sefiraat.networks.utils.StackUtils;
 import io.github.sefiraat.networks.utils.StringUtils;
 import io.github.sefiraat.networks.utils.Theme;
-import io.github.sefiraat.networks.utils.datatypes.DataTypeMethods;
 import io.github.sefiraat.networks.utils.datatypes.PersistentQuantumStorageType;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
@@ -15,10 +15,11 @@ import io.github.thebusybiscuit.slimefun5.core.attributes.DistinctiveItem;
 import io.github.thebusybiscuit.slimefun5.core.handlers.BlockBreakHandler;
 import io.github.thebusybiscuit.slimefun5.core.handlers.BlockPlaceHandler;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
-import io.github.thebusybiscuit.slimefun5.libraries.dough.data.persistent.PersistentDataAPI;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.slimefun5.utils.ChestMenuUtils;
+import io.github.thebusybiscuit.slimefun5.utils.compatibility.PdcCompat;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
@@ -27,7 +28,6 @@ import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
@@ -65,31 +65,31 @@ public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveIt
     public static final int OUTPUT_SLOT = 7;
 
     private static final ItemStack BACK_INPUT = CustomItemStack.create(
-        Material.GREEN_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.GREEN_STAINED_GLASS_PANE),
         Theme.PASSIVE + "Input"
     );
 
     private static final ItemStack BACK_ITEM = CustomItemStack.create(
-        Material.BLUE_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.BLUE_STAINED_GLASS_PANE),
         Theme.PASSIVE + "Item Stored"
     );
 
     private static final ItemStack NO_ITEM = CustomItemStack.create(
-        Material.RED_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.RED_STAINED_GLASS_PANE),
         Theme.ERROR + "No Registered Item",
         Theme.PASSIVE + "Click the icon below while",
         Theme.PASSIVE + "holding an item to register it."
     );
 
     private static final ItemStack SET_ITEM = CustomItemStack.create(
-        Material.LIME_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.LIME_STAINED_GLASS_PANE),
         Theme.SUCCESS + "Set Item",
         Theme.PASSIVE + "Drag an item on top of this pane to register it.",
         Theme.PASSIVE + "Shift Click to change voiding"
     );
 
     private static final ItemStack BACK_OUTPUT = CustomItemStack.create(
-        Material.ORANGE_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.ORANGE_STAINED_GLASS_PANE),
         Theme.PASSIVE + "Output"
     );
 
@@ -102,7 +102,8 @@ public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveIt
 
     static {
         final ItemMeta itemMeta = NO_ITEM.getItemMeta();
-        PersistentDataAPI.setBoolean(itemMeta, Keys.newKey("display"), true);
+        // Version-safe PDC marker (no-op pre-1.14); stored as a byte to mirror dough's boolean encoding.
+        PdcCompat.set(itemMeta, Keys.newKey("display"), "BYTE", (byte) 1);
         NO_ITEM.setItemMeta(itemMeta);
     }
 
@@ -309,7 +310,7 @@ public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveIt
     }
 
     private boolean isDisplayItem(@Nonnull ItemStack itemStack) {
-        return PersistentDataAPI.getBoolean(itemStack.getItemMeta(), Keys.newKey("display"));
+        return PdcCompat.getByte(itemStack.getItemMeta(), Keys.newKey("display")) == (byte) 1;
     }
 
     protected void onBreak(@Nonnull BlockBreakEvent event) {
@@ -323,7 +324,7 @@ public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveIt
                 final ItemStack itemToDrop = this.getItem().clone();
                 final ItemMeta itemMeta = itemToDrop.getItemMeta();
 
-                DataTypeMethods.setCustom(itemMeta, Keys.QUANTUM_STORAGE_INSTANCE, PersistentQuantumStorageType.TYPE, cache);
+                PersistentQuantumStorageType.store(itemMeta, cache);
                 cache.addMetaLore(itemMeta);
                 itemToDrop.setItemMeta(itemMeta);
                 location.getWorld().dropItem(location.clone().add(0.5, 0.5, 0.5), itemToDrop);
@@ -339,7 +340,7 @@ public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveIt
     protected void onPlace(@Nonnull BlockPlaceEvent event) {
         final ItemStack itemStack = event.getItemInHand();
         final ItemMeta itemMeta = itemStack.getItemMeta();
-        final QuantumCache cache = DataTypeMethods.getCustom(itemMeta, Keys.QUANTUM_STORAGE_INSTANCE, PersistentQuantumStorageType.TYPE);
+        final QuantumCache cache = PersistentQuantumStorageType.read(itemMeta);
 
         if (cache == null) {
             return;
@@ -370,10 +371,15 @@ public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveIt
         syncBlock(location, cache);
     }
 
+    private static boolean isShulkerBox(@Nonnull Material material) {
+        // Version-safe replacement for Tag.SHULKER_BOXES (the Tag system is 1.13+, shulker boxes 1.11+).
+        return material.name().endsWith("SHULKER_BOX");
+    }
+
     private static boolean isBlacklisted(@Nonnull ItemStack itemStack) {
         return itemStack.getType() == Material.AIR
             || itemStack.getType().getMaxDurability() < 0
-            || Tag.SHULKER_BOXES.isTagged(itemStack.getType())
+            || isShulkerBox(itemStack.getType())
             || SlimefunItem.getByItem(itemStack) instanceof NetworkQuantumStorage;
     }
 
@@ -454,7 +460,22 @@ public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveIt
 
     @Override
     public boolean canStack(@Nonnull ItemMeta sfItemMeta, @Nonnull ItemMeta itemMeta) {
-        return sfItemMeta.getPersistentDataContainer().equals(itemMeta.getPersistentDataContainer());
+        if (!PdcCompat.isSupported()) {
+            // No PersistentDataContainer pre-1.14; fall back to meta equality.
+            return sfItemMeta.equals(itemMeta);
+        }
+        return containersEqual(sfItemMeta, itemMeta);
+    }
+
+    // Reflective PDC-container comparison (1.14+); avoids naming PersistentDataContainer in bytecode.
+    private static boolean containersEqual(@Nonnull ItemMeta a, @Nonnull ItemMeta b) {
+        try {
+            Object ca = ItemMeta.class.getMethod("getPersistentDataContainer").invoke(a);
+            Object cb = ItemMeta.class.getMethod("getPersistentDataContainer").invoke(b);
+            return ca == null ? cb == null : ca.equals(cb);
+        } catch (ReflectiveOperationException e) {
+            return a.equals(b);
+        }
     }
 }
 

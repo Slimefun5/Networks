@@ -2,7 +2,7 @@ package io.github.sefiraat.networks.utils;
 
 import io.github.sefiraat.networks.network.stackcaches.ItemStackCache;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
-import io.github.thebusybiscuit.slimefun5.libraries.dough.data.persistent.PersistentDataAPI;
+import io.github.sefiraat.networks.compat.Pdc;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BannerMeta;
@@ -85,7 +85,7 @@ public class StackUtils {
             return false;
         }
 
-        if (!itemMeta.getPersistentDataContainer().equals(cachedMeta.getPersistentDataContainer())) {
+        if (!containersEqual(itemMeta, cachedMeta)) {
             return false;
         }
 
@@ -292,7 +292,7 @@ public class StackUtils {
     public static void putOnCooldown(ItemStack itemStack, int durationInSeconds) {
         ItemMeta itemMeta = itemStack.getItemMeta();
         if (itemMeta != null) {
-            PersistentDataAPI.setLong(itemMeta, Keys.ON_COOLDOWN, System.currentTimeMillis() + (durationInSeconds * 1000L));
+            Pdc.setLong(itemMeta, Keys.ON_COOLDOWN.toString(), System.currentTimeMillis() + (durationInSeconds * 1000L));
             itemStack.setItemMeta(itemMeta);
         }
     }
@@ -302,9 +302,21 @@ public class StackUtils {
     public static boolean isOnCooldown(ItemStack itemStack) {
         ItemMeta itemMeta = itemStack.getItemMeta();
         if (itemMeta != null) {
-            long cooldownUntil = PersistentDataAPI.getLong(itemMeta, Keys.ON_COOLDOWN, 0);
+            long cooldownUntil = Pdc.getLong(itemMeta, Keys.ON_COOLDOWN.toString(), 0);
             return System.currentTimeMillis() < cooldownUntil;
         }
         return false;
+    }
+
+    // Reflective PDC-container comparison (1.14+); avoids naming PersistentDataContainer in bytecode so
+    // this enable-loaded class links cleanly on 1.8. Falls back to meta equality pre-1.14.
+    private static boolean containersEqual(@Nonnull ItemMeta a, @Nonnull ItemMeta b) {
+        try {
+            Object ca = ItemMeta.class.getMethod("getPersistentDataContainer").invoke(a);
+            Object cb = ItemMeta.class.getMethod("getPersistentDataContainer").invoke(b);
+            return ca == null ? cb == null : ca.equals(cb);
+        } catch (ReflectiveOperationException e) {
+            return a.equals(b);
+        }
     }
 }

@@ -1,10 +1,8 @@
 package io.github.sefiraat.networks.slimefun.tools;
 
 import io.github.sefiraat.networks.network.stackcaches.BlueprintInstance;
-import io.github.sefiraat.networks.utils.Keys;
 import io.github.sefiraat.networks.utils.StringUtils;
 import io.github.sefiraat.networks.utils.Theme;
-import io.github.sefiraat.networks.utils.datatypes.DataTypeMethods;
 import io.github.sefiraat.networks.utils.datatypes.PersistentCraftingBlueprintType;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
@@ -28,14 +26,26 @@ public class CraftingBlueprint extends UnplaceableBlock implements DistinctiveIt
 
     @Override
     public boolean canStack(@Nonnull ItemMeta itemMetaOne, @Nonnull ItemMeta itemMetaTwo) {
-        return itemMetaOne.getPersistentDataContainer().equals(itemMetaTwo.getPersistentDataContainer());
+        return containersEqual(itemMetaOne, itemMetaTwo);
+    }
+
+    // Reflective PDC-container comparison (1.14+); avoids naming PersistentDataContainer in bytecode.
+    // Falls back to meta equality pre-1.14 where no container exists.
+    private static boolean containersEqual(@Nonnull ItemMeta a, @Nonnull ItemMeta b) {
+        try {
+            Object ca = ItemMeta.class.getMethod("getPersistentDataContainer").invoke(a);
+            Object cb = ItemMeta.class.getMethod("getPersistentDataContainer").invoke(b);
+            return ca == null ? cb == null : ca.equals(cb);
+        } catch (ReflectiveOperationException e) {
+            return a.equals(b);
+        }
     }
 
     @ParametersAreNonnullByDefault
     public static void setBlueprint(ItemStack blueprint, ItemStack[] recipe, ItemStack output) {
         final ItemMeta itemMeta = blueprint.getItemMeta();
         final ItemMeta outputMeta = output.getItemMeta();
-        DataTypeMethods.setCustom(itemMeta, Keys.BLUEPRINT_INSTANCE, PersistentCraftingBlueprintType.TYPE, new BlueprintInstance(recipe, output));
+        PersistentCraftingBlueprintType.store(itemMeta, new BlueprintInstance(recipe, output));
         List<String> lore = new ArrayList<>();
 
         lore.add(Theme.CLICK_INFO + "Assigned Recipe");

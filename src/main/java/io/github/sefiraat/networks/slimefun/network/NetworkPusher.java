@@ -4,12 +4,14 @@ import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.network.NodeDefinition;
 import io.github.sefiraat.networks.network.NodeType;
 import io.github.sefiraat.networks.network.stackcaches.ItemRequest;
+import io.github.sefiraat.networks.utils.MaterialCompat;
 import io.github.sefiraat.networks.utils.StackUtils;
 import io.github.sefiraat.networks.utils.Theme;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
@@ -38,7 +40,7 @@ public class NetworkPusher extends NetworkDirectional {
     private static final int DOWN_SLOT = 32;
 
     public static final ItemStack TEMPLATE_BACKGROUND_STACK = CustomItemStack.create(
-        Material.BLUE_STAINED_GLASS_PANE, Theme.PASSIVE + "Push items matching template"
+        MaterialCompat.material(XMaterial.BLUE_STAINED_GLASS_PANE), Theme.PASSIVE + "Push items matching template"
     );
 
     public NetworkPusher(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
@@ -161,8 +163,8 @@ public class NetworkPusher extends NetworkDirectional {
     }
 
     @Override
-    protected Particle.DustOptions getDustOptions() {
-        return new Particle.DustOptions(Color.MAROON, 1);
+    protected Color getDustColor() {
+        return Color.MAROON;
     }
 }
 

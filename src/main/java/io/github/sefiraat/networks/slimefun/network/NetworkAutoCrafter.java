@@ -9,10 +9,10 @@ import io.github.sefiraat.networks.network.stackcaches.BlueprintInstance;
 import io.github.sefiraat.networks.network.stackcaches.ItemRequest;
 import io.github.sefiraat.networks.slimefun.NetworkSlimefunItems;
 import io.github.sefiraat.networks.slimefun.tools.CraftingBlueprint;
-import io.github.sefiraat.networks.utils.Keys;
+import io.github.sefiraat.networks.utils.MaterialCompat;
+import io.github.sefiraat.networks.utils.ParticleCompat;
 import io.github.sefiraat.networks.utils.StackUtils;
 import io.github.sefiraat.networks.utils.Theme;
-import io.github.sefiraat.networks.utils.datatypes.DataTypeMethods;
 import io.github.sefiraat.networks.utils.datatypes.PersistentCraftingBlueprintType;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
@@ -21,6 +21,7 @@ import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
@@ -53,11 +54,11 @@ public class NetworkAutoCrafter extends NetworkObject {
     private static final int OUTPUT_SLOT = 16;
 
     public static final ItemStack BLUEPRINT_BACKGROUND_STACK = CustomItemStack.create(
-        Material.BLUE_STAINED_GLASS_PANE, Theme.PASSIVE + "Crafting Blueprint"
+        MaterialCompat.material(XMaterial.BLUE_STAINED_GLASS_PANE), Theme.PASSIVE + "Crafting Blueprint"
     );
 
     public static final ItemStack OUTPUT_BACKGROUND_STACK = CustomItemStack.create(
-        Material.GREEN_STAINED_GLASS_PANE, Theme.PASSIVE + "Output"
+        MaterialCompat.material(XMaterial.GREEN_STAINED_GLASS_PANE), Theme.PASSIVE + "Output"
     );
 
     private final int chargePerCraft;
@@ -131,7 +132,7 @@ public class NetworkAutoCrafter extends NetworkObject {
 
             if (instance == null) {
                 final ItemMeta blueprintMeta = blueprint.getItemMeta();
-                final Optional<BlueprintInstance> optional = DataTypeMethods.getOptionalCustom(blueprintMeta, Keys.BLUEPRINT_INSTANCE, PersistentCraftingBlueprintType.TYPE);
+                final Optional<BlueprintInstance> optional = Optional.ofNullable(PersistentCraftingBlueprintType.read(blueprintMeta));
 
                 if (!optional.isPresent()) {
                     return;
@@ -219,7 +220,7 @@ public class NetworkAutoCrafter extends NetworkObject {
         // Push item
         final Location location = blockMenu.getLocation().clone().add(0.5, 1.1, 0.5);
         if (root.isDisplayParticles()) {
-            location.getWorld().spawnParticle(Particle.VILLAGER_HAPPY, location, 0, 0, 4, 0);
+            ParticleCompat.spawn(location, 0, 0, 4, 0, "VILLAGER_HAPPY", "HAPPY_VILLAGER");
         }
         blockMenu.pushItem(crafted, OUTPUT_SLOT);
         return true;

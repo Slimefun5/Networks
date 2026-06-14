@@ -1,60 +1,47 @@
 package io.github.sefiraat.networks.utils.datatypes;
 
-import com.jeff_media.morepersistentdatatypes.DataType;
 import io.github.sefiraat.networks.network.stackcaches.BlueprintInstance;
-import io.github.sefiraat.networks.network.stackcaches.CardInstance;
-import io.github.sefiraat.networks.utils.Keys;
-import org.bukkit.NamespacedKey;
+import io.github.sefiraat.networks.compat.Pdc;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.persistence.PersistentDataAdapterContext;
-import org.bukkit.persistence.PersistentDataContainer;
-import org.bukkit.persistence.PersistentDataType;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 /**
- * A {@link PersistentDataType} for {@link CardInstance}
- * Creatively thieved from {@see <a href="https://github.com/baked-libs/dough/blob/main/dough-data/src/main/java/io/github/bakedlibs/dough/data/persistent/PersistentUUIDDataType.java">PersistentUUIDDataType}
- *
- * @author Sfiguz7
- * @author Walshy
+ * Version-safe persistence for {@link BlueprintInstance} (recipe array + output).
+ * <p>
+ * Stores flat String-keyed (Base64) values through {@link PersistentDataAPI} instead of a nested
+ * {@code PersistentDataContainer}, so it never references {@code org.bukkit.persistence.*} in bytecode.
  */
+public final class PersistentCraftingBlueprintType {
 
-public class PersistentCraftingBlueprintType implements PersistentDataType<PersistentDataContainer, BlueprintInstance> {
+    private PersistentCraftingBlueprintType() {}
 
-    public static final PersistentDataType<PersistentDataContainer, BlueprintInstance> TYPE = new PersistentCraftingBlueprintType();
+    private static final String RECIPE = "networks:blueprint_recipe";
+    private static final String OUTPUT = "networks:blueprint_output";
 
-    public static final NamespacedKey RECIPE = Keys.newKey("recipe");
-    public static final NamespacedKey OUTPUT = Keys.newKey("output");
-
-    @Override
-    @Nonnull
-    public Class<PersistentDataContainer> getPrimitiveType() {
-        return PersistentDataContainer.class;
-    }
-
-    @Override
-    @Nonnull
-    public Class<BlueprintInstance> getComplexType() {
-        return BlueprintInstance.class;
-    }
-
-    @Override
-    @Nonnull
-    public PersistentDataContainer toPrimitive(@Nonnull BlueprintInstance complex, @Nonnull PersistentDataAdapterContext context) {
-        final PersistentDataContainer container = context.newPersistentDataContainer();
-
-        container.set(RECIPE, DataType.ITEM_STACK_ARRAY, complex.getRecipeItems());
-        container.set(OUTPUT, DataType.ITEM_STACK, complex.getItemStack());
-        return container;
-    }
-
-    @Override
-    @Nonnull
-    public BlueprintInstance fromPrimitive(@Nonnull PersistentDataContainer primitive, @Nonnull PersistentDataAdapterContext context) {
-        final ItemStack[] recipe = primitive.get(RECIPE, DataType.ITEM_STACK_ARRAY);
-        final ItemStack output = primitive.get(OUTPUT, DataType.ITEM_STACK);
-
+    @Nullable
+    public static BlueprintInstance read(@Nonnull ItemMeta meta) {
+        if (!Pdc.hasString(meta, RECIPE)) {
+            return null;
+        }
+        final ItemStack[] recipe = SerializationUtils.itemStackArrayFromString(Pdc.getString(meta, RECIPE, null));
+        final ItemStack output = SerializationUtils.itemStackFromString(Pdc.getString(meta, OUTPUT, null));
+        if (recipe == null || output == null) {
+            return null;
+        }
         return new BlueprintInstance(recipe, output);
+    }
+
+    public static void store(@Nonnull ItemMeta meta, @Nonnull BlueprintInstance instance) {
+        final String recipe = SerializationUtils.itemStackArrayToString(instance.getRecipeItems());
+        final String output = SerializationUtils.itemStackToString(instance.getItemStack());
+        if (recipe != null) {
+            Pdc.setString(meta, RECIPE, recipe);
+        }
+        if (output != null) {
+            Pdc.setString(meta, OUTPUT, output);
+        }
     }
 }

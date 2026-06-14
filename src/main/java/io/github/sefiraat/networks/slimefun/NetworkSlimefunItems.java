@@ -35,10 +35,12 @@ import io.github.sefiraat.networks.slimefun.tools.NetworkProbe;
 import io.github.sefiraat.networks.slimefun.tools.NetworkRake;
 import io.github.sefiraat.networks.slimefun.tools.NetworkRemote;
 import io.github.sefiraat.networks.slimefun.tools.NetworkWirelessConfigurator;
+import io.github.sefiraat.networks.utils.MaterialCompat;
 import io.github.sefiraat.networks.utils.StackUtils;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun5.implementation.items.blocks.UnplaceableBlock;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
@@ -113,7 +115,7 @@ public class NetworkSlimefunItems {
 
     static {
 
-        final ItemStack glass = new ItemStack(Material.GLASS);
+        final ItemStack glass = MaterialCompat.stack(XMaterial.GLASS);
 
         SYNTHETIC_EMERALD_SHARD = new UnplaceableBlock(
             NetworksItemGroups.MATERIALS,
@@ -157,7 +159,7 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 OPTIC_GLASS.getItem(), OPTIC_CABLE.getItem(), OPTIC_GLASS.getItem(),
-                OPTIC_CABLE.getItem(), new ItemStack(Material.NETHER_STAR), OPTIC_CABLE.getItem(),
+                OPTIC_CABLE.getItem(), MaterialCompat.stack(XMaterial.NETHER_STAR), OPTIC_CABLE.getItem(),
                 OPTIC_GLASS.getItem(), OPTIC_CABLE.getItem(), OPTIC_GLASS.getItem()
             }
         );
@@ -365,7 +367,7 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 OPTIC_GLASS.getItem(), OPTIC_CABLE.getItem(), OPTIC_GLASS.getItem(),
-                new ItemStack(Material.HOPPER), NETWORK_GRABBER.getItem(), new ItemStack(Material.HOPPER),
+                MaterialCompat.stack(XMaterial.HOPPER), NETWORK_GRABBER.getItem(), MaterialCompat.stack(XMaterial.HOPPER),
                 OPTIC_GLASS.getItem(), OPTIC_CABLE.getItem(), OPTIC_GLASS.getItem(),
             }
         );
@@ -375,9 +377,9 @@ public class NetworkSlimefunItems {
             NetworksSlimefunItemStacks.NETWORK_VANILLA_PUSHER,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                OPTIC_GLASS.getItem(), new ItemStack(Material.HOPPER), OPTIC_GLASS.getItem(),
+                OPTIC_GLASS.getItem(), MaterialCompat.stack(XMaterial.HOPPER), OPTIC_GLASS.getItem(),
                 OPTIC_CABLE.getItem(), NETWORK_PUSHER.getItem(), OPTIC_CABLE.getItem(),
-                OPTIC_GLASS.getItem(), new ItemStack(Material.HOPPER), OPTIC_GLASS.getItem(),
+                OPTIC_GLASS.getItem(), MaterialCompat.stack(XMaterial.HOPPER), OPTIC_GLASS.getItem(),
             }
         );
 
@@ -420,7 +422,7 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 NETWORK_BRIDGE.getItem(), OPTIC_CABLE.getItem(), NETWORK_BRIDGE.getItem(),
-                OPTIC_CABLE.getItem(), new ItemStack(Material.NETHER_STAR), OPTIC_CABLE.getItem(),
+                OPTIC_CABLE.getItem(), MaterialCompat.stack(XMaterial.NETHER_STAR), OPTIC_CABLE.getItem(),
                 NETWORK_BRIDGE.getItem(), OPTIC_CABLE.getItem(), NETWORK_BRIDGE.getItem(),
             }
         );
@@ -442,7 +444,7 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 NETWORK_BRIDGE.getItem(), OPTIC_CABLE.getItem(), NETWORK_BRIDGE.getItem(),
-                OPTIC_CABLE.getItem(), new ItemStack(Material.CHEST), OPTIC_CABLE.getItem(),
+                OPTIC_CABLE.getItem(), MaterialCompat.stack(XMaterial.CHEST), OPTIC_CABLE.getItem(),
                 NETWORK_BRIDGE.getItem(), OPTIC_CABLE.getItem(), NETWORK_BRIDGE.getItem(),
             }
         );
@@ -691,7 +693,7 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 OPTIC_CABLE.getItem(), OPTIC_CABLE.getItem(), OPTIC_CABLE.getItem(),
-                OPTIC_CABLE.getItem(), new ItemStack(Material.PAPER), OPTIC_CABLE.getItem(),
+                OPTIC_CABLE.getItem(), MaterialCompat.stack(XMaterial.PAPER), OPTIC_CABLE.getItem(),
                 OPTIC_CABLE.getItem(), OPTIC_CABLE.getItem(), OPTIC_CABLE.getItem()
             }
         );
@@ -761,8 +763,8 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 null, OPTIC_CABLE.getItem(), null,
-                null, new ItemStack(Material.HONEYCOMB), null,
-                null, new ItemStack(Material.HONEYCOMB), null
+                null, MaterialCompat.stack(XMaterial.HONEYCOMB), null,
+                null, MaterialCompat.stack(XMaterial.HONEYCOMB), null
             }
         );
 
@@ -794,7 +796,7 @@ public class NetworkSlimefunItems {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 null, RADIOACTIVE_OPTIC_STAR.getItem(), null,
-                null, new ItemStack(Material.DIAMOND_SWORD), null,
+                null, MaterialCompat.stack(XMaterial.DIAMOND_SWORD), null,
                 null, SYNTHETIC_EMERALD_SHARD.getItem(), null
             },
             250

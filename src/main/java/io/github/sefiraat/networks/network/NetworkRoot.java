@@ -11,6 +11,8 @@ import io.github.sefiraat.networks.slimefun.network.NetworkDirectional;
 import io.github.sefiraat.networks.slimefun.network.NetworkGreedyBlock;
 import io.github.sefiraat.networks.slimefun.network.NetworkPowerNode;
 import io.github.sefiraat.networks.slimefun.network.NetworkQuantumStorage;
+import io.github.sefiraat.networks.utils.MaterialCompat;
+import io.github.sefiraat.networks.utils.ParticleCompat;
 import io.github.sefiraat.networks.utils.StackUtils;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
@@ -124,7 +126,7 @@ public class NetworkRoot extends NetworkNode {
             for (int x = 0; x <= 1; x++) {
                 for (int y = 0; y <= 1; y++) {
                     for (int z = 0; z <= 1; z++) {
-                        loc.getWorld().spawnParticle(Particle.EXPLOSION_NORMAL, loc.clone().add(x, y, z), 0);
+                        ParticleCompat.spawn(loc.clone().add(x, y, z), 0, 0, 0, 0, "EXPLOSION_NORMAL", "POOF", "EXPLOSION");
                     }
                 }
             }
@@ -791,7 +793,7 @@ public class NetworkRoot extends NetworkNode {
             int i = 0;
             for (ItemStack itemStack : blockMenu.getContents()) {
                 // If this is an empty slot - move on, if it's our first, store it for later.
-                if (itemStack == null || itemStack.getType().isAir()) {
+                if (itemStack == null || MaterialCompat.isAir(itemStack.getType())) {
                     if (fallbackBlockMenu == null) {
                         fallbackBlockMenu = blockMenu;
                         fallBackSlot = i;

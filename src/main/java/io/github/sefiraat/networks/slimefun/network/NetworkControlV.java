@@ -7,6 +7,7 @@ import io.github.sefiraat.networks.managers.SupportedPluginManager;
 import io.github.sefiraat.networks.network.NodeDefinition;
 import io.github.sefiraat.networks.network.NodeType;
 import io.github.sefiraat.networks.network.stackcaches.ItemRequest;
+import io.github.sefiraat.networks.utils.MaterialCompat;
 import io.github.sefiraat.networks.utils.Theme;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
@@ -15,6 +16,7 @@ import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.slimefun5.utils.tags.SlimefunTag;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
@@ -52,7 +54,7 @@ public class NetworkControlV extends NetworkDirectional {
     private final Set<BlockPosition> blockCache = new HashSet<>();
 
     public static final ItemStack TEMPLATE_BACKGROUND_STACK = CustomItemStack.create(
-        Material.BLUE_STAINED_GLASS_PANE, Theme.PASSIVE + "Paste items matching template"
+        MaterialCompat.material(XMaterial.BLUE_STAINED_GLASS_PANE), Theme.PASSIVE + "Paste items matching template"
     );
 
     public NetworkControlV(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
@@ -99,7 +101,7 @@ public class NetworkControlV extends NetworkDirectional {
 
         final Material material = targetBlock.getType();
 
-        if (!material.isAir()) {
+        if (!MaterialCompat.isAir(material)) {
             return;
         }
 
@@ -139,7 +141,7 @@ public class NetworkControlV extends NetworkDirectional {
         Bukkit.getScheduler().runTask(Networks.getInstance(), bukkitTask -> {
             targetBlock.setType(fetchedStack.getType(), true);
             Location centre = targetBlock.getLocation().clone().add(0.5, 0.5, 0.5);
-            centre.getWorld().spawnParticle(Particle.CRIT_MAGIC, centre, 1, 0.2, 0.2, 0.2);
+            io.github.sefiraat.networks.utils.ParticleCompat.spawn(centre, 1, 0.2, 0.2, 0.2, "CRIT_MAGIC", "CRIT");
         });
     }
 
@@ -197,8 +199,8 @@ public class NetworkControlV extends NetworkDirectional {
     }
 
     @Override
-    protected Particle.DustOptions getDustOptions() {
-        return new Particle.DustOptions(Color.MAROON, 1);
+    protected Color getDustColor() {
+        return Color.MAROON;
     }
 }
 

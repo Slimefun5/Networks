@@ -3,9 +3,7 @@ package io.github.sefiraat.networks.commands;
 import io.github.sefiraat.networks.network.stackcaches.QuantumCache;
 import io.github.sefiraat.networks.slimefun.NetworkSlimefunItems;
 import io.github.sefiraat.networks.slimefun.network.NetworkQuantumStorage;
-import io.github.sefiraat.networks.utils.Keys;
 import io.github.sefiraat.networks.utils.Theme;
-import io.github.sefiraat.networks.utils.datatypes.DataTypeMethods;
 import io.github.sefiraat.networks.utils.datatypes.PersistentQuantumStorageType;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
 import org.bukkit.Material;
@@ -74,11 +72,7 @@ public class NetworksMain implements CommandExecutor {
         }
 
         ItemMeta meta = itemStack.getItemMeta();
-        final QuantumCache quantumCache = DataTypeMethods.getCustom(
-            meta,
-            Keys.QUANTUM_STORAGE_INSTANCE,
-            PersistentQuantumStorageType.TYPE
-        );
+        final QuantumCache quantumCache = PersistentQuantumStorageType.read(meta);
 
         if (quantumCache == null || quantumCache.getItemStack() == null) {
             player.sendMessage(Theme.ERROR + "This card has either not been set to an item yet or is a corrupted Quantum Storage.");
@@ -86,7 +80,7 @@ public class NetworksMain implements CommandExecutor {
         }
 
         quantumCache.setAmount(amount);
-        DataTypeMethods.setCustom(meta, Keys.QUANTUM_STORAGE_INSTANCE, PersistentQuantumStorageType.TYPE, quantumCache);
+        PersistentQuantumStorageType.store(meta, quantumCache);
         quantumCache.updateMetaLore(meta);
         itemStack.setItemMeta(meta);
         player.sendMessage(Theme.SUCCESS + "Item updated");

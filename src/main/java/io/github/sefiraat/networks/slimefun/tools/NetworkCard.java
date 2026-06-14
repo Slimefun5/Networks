@@ -1,9 +1,7 @@
 package io.github.sefiraat.networks.slimefun.tools;
 
 import io.github.sefiraat.networks.network.stackcaches.CardInstance;
-import io.github.sefiraat.networks.utils.Keys;
 import io.github.sefiraat.networks.utils.Theme;
-import io.github.sefiraat.networks.utils.datatypes.DataTypeMethods;
 import io.github.sefiraat.networks.utils.datatypes.PersistentCardInstanceType;
 import io.github.thebusybiscuit.slimefun5.api.events.PlayerRightClickEvent;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
@@ -12,7 +10,6 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.core.handlers.ItemUseHandler;
 import org.bukkit.Material;
-import org.bukkit.Tag;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -59,12 +56,10 @@ public class NetworkCard extends SlimefunItem {
                 if (cardItem instanceof NetworkCard) {
                     NetworkCard networkCard = (NetworkCard) cardItem;
                     final ItemMeta cardMeta = card.getItemMeta();
-                    final CardInstance cardInstance = DataTypeMethods.getCustom(
-                        cardMeta,
-                        Keys.CARD_INSTANCE,
-                        PersistentCardInstanceType.TYPE,
-                        new CardInstance(null, 0, networkCard.getSize())
-                    );
+                    CardInstance cardInstance = PersistentCardInstanceType.read(cardMeta);
+                    if (cardInstance == null) {
+                        cardInstance = new CardInstance(null, 0, networkCard.getSize());
+                    }
 
                     if (cardInstance.getAmount() > 0) {
                         e.getPlayer().sendMessage(Theme.WARNING + "A card must be empty before trying to assign an item.");
@@ -72,7 +67,7 @@ public class NetworkCard extends SlimefunItem {
                     }
 
                     cardInstance.setItemStack(stackToSet);
-                    DataTypeMethods.setCustom(cardMeta, Keys.CARD_INSTANCE, PersistentCardInstanceType.TYPE, cardInstance);
+                    PersistentCardInstanceType.store(cardMeta, cardInstance);
                     cardInstance.updateLore(cardMeta);
                     card.setItemMeta(cardMeta);
                 }
@@ -83,7 +78,8 @@ public class NetworkCard extends SlimefunItem {
     private boolean isBlacklisted(@Nonnull ItemStack itemStack) {
         return itemStack.getType() == Material.AIR
             || itemStack.getType().getMaxDurability() < 0
-            || Tag.SHULKER_BOXES.isTagged(itemStack.getType());
+            // Version-safe replacement for Tag.SHULKER_BOXES (Tag system is 1.13+, shulker boxes 1.11+).
+            || itemStack.getType().name().endsWith("SHULKER_BOX");
     }
 
     public int getSize() {

@@ -1,66 +1,48 @@
 package io.github.sefiraat.networks.utils.datatypes;
 
-import com.jeff_media.morepersistentdatatypes.DataType;
-import io.github.sefiraat.networks.network.stackcaches.CardInstance;
 import io.github.sefiraat.networks.network.stackcaches.QuantumCache;
-import io.github.sefiraat.networks.utils.Keys;
-import org.bukkit.NamespacedKey;
+import io.github.sefiraat.networks.compat.Pdc;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.persistence.PersistentDataAdapterContext;
-import org.bukkit.persistence.PersistentDataContainer;
-import org.bukkit.persistence.PersistentDataType;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 /**
- * A {@link PersistentDataType} for {@link CardInstance}
- * Creatively thieved from {@see <a href="https://github.com/baked-libs/dough/blob/main/dough-data/src/main/java/io/github/bakedlibs/dough/data/persistent/PersistentUUIDDataType.java">PersistentUUIDDataType}
- *
- * @author Sfiguz7
- * @author Walshy
+ * Version-safe persistence for {@link QuantumCache}.
+ * <p>
+ * The legacy implementation stored a nested {@code PersistentDataContainer} (1.14+). This class instead
+ * stores the cache as flat String-keyed values through {@link PersistentDataAPI}, so it never references
+ * {@code org.bukkit.persistence.*} in bytecode and is safe to link at enable on 1.8.
  */
+public final class PersistentQuantumStorageType {
 
-public class PersistentQuantumStorageType implements PersistentDataType<PersistentDataContainer, QuantumCache> {
+    private PersistentQuantumStorageType() {}
 
-    public static final PersistentDataType<PersistentDataContainer, QuantumCache> TYPE = new PersistentQuantumStorageType();
+    private static final String ITEM = "networks:quantum_item";
+    private static final String AMOUNT = "networks:quantum_amount";
+    private static final String MAX_AMOUNT = "networks:quantum_max_amount";
+    private static final String VOID = "networks:quantum_void";
 
-    public static final NamespacedKey ITEM = Keys.newKey("item");
-    public static final NamespacedKey AMOUNT = Keys.newKey("amount");
-    public static final NamespacedKey MAX_AMOUNT = Keys.newKey("max_amount");
-    public static final NamespacedKey VOID = Keys.newKey("void");
-
-    @Override
-    @Nonnull
-    public Class<PersistentDataContainer> getPrimitiveType() {
-        return PersistentDataContainer.class;
-    }
-
-    @Override
-    @Nonnull
-    public Class<QuantumCache> getComplexType() {
-        return QuantumCache.class;
-    }
-
-    @Override
-    @Nonnull
-    public PersistentDataContainer toPrimitive(@Nonnull QuantumCache complex, @Nonnull PersistentDataAdapterContext context) {
-        final PersistentDataContainer container = context.newPersistentDataContainer();
-
-        container.set(ITEM, DataType.ITEM_STACK, complex.getItemStack());
-        container.set(AMOUNT, DataType.INTEGER, complex.getAmount());
-        container.set(MAX_AMOUNT, DataType.INTEGER, complex.getLimit());
-        container.set(VOID, DataType.BOOLEAN, complex.isVoidExcess());
-        return container;
-    }
-
-    @Override
-    @Nonnull
-    public QuantumCache fromPrimitive(@Nonnull PersistentDataContainer primitive, @Nonnull PersistentDataAdapterContext context) {
-        final ItemStack item = primitive.get(ITEM, DataType.ITEM_STACK);
-        final int amount = primitive.get(AMOUNT, DataType.INTEGER);
-        final int limit = primitive.get(MAX_AMOUNT, DataType.INTEGER);
-        final boolean voidExcess = primitive.get(VOID, DataType.BOOLEAN);
-
+    @Nullable
+    public static QuantumCache read(@Nonnull ItemMeta meta) {
+        if (!Pdc.hasString(meta, ITEM) && !Pdc.hasInt(meta, AMOUNT)) {
+            return null;
+        }
+        final ItemStack item = SerializationUtils.itemStackFromString(Pdc.getString(meta, ITEM, null));
+        final int amount = Pdc.getInt(meta, AMOUNT, 0);
+        final int limit = Pdc.getInt(meta, MAX_AMOUNT, 0);
+        final boolean voidExcess = Pdc.getBoolean(meta, VOID);
         return new QuantumCache(item, amount, limit, voidExcess);
+    }
+
+    public static void store(@Nonnull ItemMeta meta, @Nonnull QuantumCache cache) {
+        final String serialized = SerializationUtils.itemStackToString(cache.getItemStack());
+        if (serialized != null) {
+            Pdc.setString(meta, ITEM, serialized);
+        }
+        Pdc.setInt(meta, AMOUNT, cache.getAmount());
+        Pdc.setInt(meta, MAX_AMOUNT, cache.getLimit());
+        Pdc.setBoolean(meta, VOID, cache.isVoidExcess());
     }
 }
