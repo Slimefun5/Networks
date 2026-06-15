@@ -1,6 +1,7 @@
 package io.github.sefiraat.networks.slimefun.tools;
 
 import io.github.sefiraat.networks.network.stackcaches.CardInstance;
+import io.github.sefiraat.networks.utils.HandCompat;
 import io.github.sefiraat.networks.utils.Theme;
 import io.github.sefiraat.networks.utils.datatypes.PersistentCardInstanceType;
 import io.github.thebusybiscuit.slimefun5.api.events.PlayerRightClickEvent;
@@ -39,7 +40,7 @@ public class NetworkCard extends SlimefunItem {
             public void onRightClick(PlayerRightClickEvent e) {
                 final Player player = e.getPlayer();
                 final ItemStack card = player.getInventory().getItemInHand();
-                final ItemStack stackToSet = player.getInventory().getItemInOffHand().clone();
+                final ItemStack stackToSet = HandCompat.offHandItem(player.getInventory()).clone();
 
                 e.cancel();
                 if (card.getAmount() > 1) {
