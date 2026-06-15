@@ -58,7 +58,7 @@ public class NetworksMain implements CommandExecutor {
     }
 
     public void fillQuantum(Player player, int amount) {
-        final ItemStack itemStack = player.getInventory().getItemInMainHand();
+        final ItemStack itemStack = player.getInventory().getItemInHand();
         if (itemStack == null || itemStack.getType() == Material.AIR) {
             player.sendMessage(Theme.ERROR + "Item in hand must be a Quantum Storage.");
             return;

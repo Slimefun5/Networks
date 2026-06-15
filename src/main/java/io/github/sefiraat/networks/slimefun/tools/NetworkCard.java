@@ -38,7 +38,7 @@ public class NetworkCard extends SlimefunItem {
             @Override
             public void onRightClick(PlayerRightClickEvent e) {
                 final Player player = e.getPlayer();
-                final ItemStack card = player.getInventory().getItemInMainHand();
+                final ItemStack card = player.getInventory().getItemInHand();
                 final ItemStack stackToSet = player.getInventory().getItemInOffHand().clone();
 
                 e.cancel();
