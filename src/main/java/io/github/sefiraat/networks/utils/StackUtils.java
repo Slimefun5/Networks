@@ -29,6 +29,42 @@ import java.util.Optional;
 public class StackUtils {
     private StackUtils() {}
 
+    // ItemMeta#hasCustomModelData()/getCustomModelData() are 1.14+; resolve reflectively so the
+    // item-comparison runs on 1.8 (NoSuchMethodError otherwise).
+    private static final java.lang.reflect.Method HAS_CMD = cmdMethod("hasCustomModelData");
+    private static final java.lang.reflect.Method GET_CMD = cmdMethod("getCustomModelData");
+
+    private static java.lang.reflect.Method cmdMethod(String name) {
+        try {
+            return ItemMeta.class.getMethod(name);
+        } catch (NoSuchMethodException e) {
+            return null;
+        }
+    }
+
+    private static boolean hasCustomModelData(ItemMeta meta) {
+        if (meta == null || HAS_CMD == null) {
+            return false;
+        }
+        try {
+            return Boolean.TRUE.equals(HAS_CMD.invoke(meta));
+        } catch (ReflectiveOperationException e) {
+            return false;
+        }
+    }
+
+    private static int getCustomModelData(ItemMeta meta) {
+        if (meta == null || GET_CMD == null) {
+            return 0;
+        }
+        try {
+            Object value = GET_CMD.invoke(meta);
+            return value instanceof Integer ? (Integer) value : 0;
+        } catch (ReflectiveOperationException e) {
+            return 0;
+        }
+    }
+
     @Nonnull
     public static ItemStack getAsQuantity(@Nonnull ItemStack itemStack, int amount) {
         ItemStack clone = itemStack.clone();
@@ -75,10 +111,10 @@ public class StackUtils {
             return false;
         }
 
-        final boolean hasCustomOne = itemMeta.hasCustomModelData();
-        final boolean hasCustomTwo = cachedMeta.hasCustomModelData();
+        final boolean hasCustomOne = hasCustomModelData(itemMeta);
+        final boolean hasCustomTwo = hasCustomModelData(cachedMeta);
         if (hasCustomOne) {
-            if (!hasCustomTwo || itemMeta.getCustomModelData() != cachedMeta.getCustomModelData()) {
+            if (!hasCustomTwo || getCustomModelData(itemMeta) != getCustomModelData(cachedMeta)) {
                 return false;
             }
         } else if (hasCustomTwo) {
