@@ -53,7 +53,7 @@ tasks {
         enabled = false
     }
     shadowJar {
-        archiveFileName.set("Networks v${project.version}.jar")
+        archiveFileName.set("Networks-1.0.0-UNOFFICIAL.jar")
         exclude("META-INF/**")
     }
     build {
