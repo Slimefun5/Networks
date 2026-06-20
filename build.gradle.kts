@@ -31,7 +31,7 @@ repositories {
 }
 
 dependencies {
-    githubCompileOnly("Slimefun5:Slimefun5:v5.2.1")
+    githubCompileOnly("Slimefun5:Slimefun5:gh-v5.2.3.1")
     compileOnly("org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
     compileOnly("org.jetbrains:annotations:23.0.0")

@@ -67,6 +67,13 @@ public final class NetworksItemGroups {
     static {
         final Networks plugin = Networks.getInstance();
 
+        NetworksItemGroups.MAIN.setTheme("logistics");
+        NetworksItemGroups.MATERIALS.setTheme("resources");
+        NetworksItemGroups.TOOLS.setTheme("tools");
+        NetworksItemGroups.NETWORK_ITEMS.setTheme("logistics");
+        NetworksItemGroups.NETWORK_QUANTUMS.setTheme("logistics");
+        NetworksItemGroups.DISABLED_ITEMS.setTheme("misc");
+
         NetworksItemGroups.MAIN.register(plugin);
         NetworksItemGroups.MATERIALS.register(plugin);
         NetworksItemGroups.TOOLS.register(plugin);
