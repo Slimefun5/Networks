@@ -123,19 +123,25 @@ public class NetworkNode {
     }
 
     private void killAdditionalController(@Nonnull Location location) {
+        // Do the retrieve + drop + block clear atomically on the main thread. The network ticker runs
+        // async, so retrieving (which clears BlockStorage) here and dropping a tick later left a window
+        // where the controller block still existed and could be processed/broken again - a duplication
+        // vector. Running it all in one main-thread task also makes it idempotent: a second kill of the
+        // same location finds no block info (retrieve returns null) and does nothing.
         final Block block = location.getBlock();
-        final ItemStack toDrop = BlockStorage.retrieve(block);
-        if (toDrop != null) {
-            BukkitRunnable runnable = new BukkitRunnable() {
-                @Override
-                public void run() {
+
+        new BukkitRunnable() {
+            @Override
+            public void run() {
+                final ItemStack toDrop = BlockStorage.retrieve(block);
+
+                if (toDrop != null) {
                     location.getWorld().dropItemNaturally(location, toDrop);
                     block.setType(Material.AIR);
+                    NetworkController.wipeNetwork(location);
                 }
-            };
-            runnable.runTask(Networks.getInstance());
-            NetworkController.wipeNetwork(location);
-        }
+            }
+        }.runTask(Networks.getInstance());
     }
 
     protected long retrieveBlockCharge() {
