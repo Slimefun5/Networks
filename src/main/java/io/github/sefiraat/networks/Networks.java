@@ -59,6 +59,22 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
         setupMetrics();
 
         Slimefun.getItemTranslationService().registerTranslations(this);
+        registerWiki();
+    }
+
+    private void registerWiki() {
+        io.github.thebusybiscuit.slimefun5.core.guide.wiki.WikiText wiki = io.github.thebusybiscuit.slimefun5.implementation.Slimefun.getWikiText();
+        String topicId = "addon_networks";
+        wiki.registerTopic(new io.github.thebusybiscuit.slimefun5.core.guide.wiki.WikiTopic(topicId, "Networks", io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial.HOPPER, "&7Item storage & transport networks"));
+        wiki.setMechanic(topicId, java.util.Arrays.asList(
+            "&7Item storage & transport networks.", "",
+            "&7An alternative to cargo: quantum storage", "&7cells, crafting grids and import/export", "&7nodes wired to a central Controller.", "",
+            "&7Click an item below for its recipe."));
+        java.util.List<String> items = new java.util.ArrayList<>();
+        for (io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem item : io.github.thebusybiscuit.slimefun5.implementation.Slimefun.getRegistry().getEnabledSlimefunItems()) {
+            try { if (item.getAddon() == this) { items.add(item.getId()); } } catch (Exception | LinkageError ignored) { }
+        }
+        wiki.setTopicItems(topicId, items);
     }
 
     public void tryUpdate() {
