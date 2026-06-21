@@ -1,0 +1,63 @@
+# Spanish item translations for Networks. Keyed by Slimefun item id.
+# name = display name, lore = list of lines, '&' colour codes. Missing items fall back to English.
+
+NTW_CONTROLLER:
+  name: "&3Controlador de red"
+  lore:
+    - "&7El controlador de red es el cerebro"
+    - "&7de toda la red. Máx. 1 por red."
+
+NTW_BRIDGE:
+  name: "&3Puente de red"
+  lore:
+    - "&7El puente permite conectar los objetos"
+    - "&7de la red entre sí de forma económica."
+
+NTW_MONITOR:
+  name: "&3Monitor de red"
+  lore:
+    - "&7El monitor de red permite una sencilla"
+    - "&7interacción de importación/exportación con"
+    - "&7los objetos adyacentes."
+    - ""
+    - "&7Actualmente compatible con:"
+    - "&7Barriles Infinity"
+    - "&7Carcasas de red"
+
+NTW_IMPORT:
+  name: "&3Importador de red"
+  lore:
+    - "&7El importador de red introduce en la red"
+    - "&7cualquier objeto que contenga, hasta"
+    - "&79 pilas por tick de SF."
+    - "&7Acepta objetos entrantes del carguero."
+
+NTW_EXPORT:
+  name: "&3Exportador de red"
+  lore:
+    - "&7El exportador de red puede configurarse"
+    - "&7para exportar continuamente 1 pila de"
+    - "&7cualquier objeto dado."
+    - "&7Permite la retirada de objetos al carguero."
+
+NTW_GRID:
+  name: "&3Cuadrícula de red"
+  lore:
+    - "&7La cuadrícula de red te muestra todos"
+    - "&7los objetos que tienes en la red y te"
+    - "&7permite insertar o retirar directamente."
+
+NTW_CRAFTING_GRID:
+  name: "&3Cuadrícula de fabricación de red"
+  lore:
+    - "&7La cuadrícula de fabricación actúa como"
+    - "&7una normal pero muestra menos objetos y"
+    - "&7permite fabricar usando objetos directamente"
+    - "&7desde la red."
+
+NTW_CELL:
+  name: "&3Celda de red"
+  lore:
+    - "&7La celda de red es un inventario grande"
+    - "&7(cofre doble) al que se puede acceder"
+    - "&7tanto desde la red como en el mundo."

@@ -8,6 +8,7 @@ import io.github.sefiraat.networks.managers.SupportedPluginManager;
 import io.github.sefiraat.networks.slimefun.NetworkSlimefunItems;
 import io.github.sefiraat.networks.slimefun.network.NetworkController;
 import io.github.thebusybiscuit.slimefun5.api.SlimefunAddon;
+import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.updater.BlobBuildUpdater;
 
 import org.bukkit.plugin.PluginManager;
@@ -56,6 +57,8 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
         this.getCommand("networks").setExecutor(new NetworksMain());
 
         setupMetrics();
+
+        Slimefun.getItemTranslationService().registerTranslations(this);
     }
 
     public void tryUpdate() {

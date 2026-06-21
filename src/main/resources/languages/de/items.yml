@@ -1,0 +1,64 @@
+# German item translations for Networks. Keyed by Slimefun item id.
+# name = display name, lore = list of lines, '&' colour codes. Missing items fall back to English.
+
+NTW_CONTROLLER:
+  name: "&3Netzwerk-Controller"
+  lore:
+    - "&7Der Netzwerk-Controller ist das Gehirn"
+    - "&7des gesamten Netzwerks. Max. 1 pro Netzwerk."
+
+NTW_BRIDGE:
+  name: "&3Netzwerk-Brücke"
+  lore:
+    - "&7Die Brücke verbindet Netzwerkobjekte"
+    - "&7kostengünstig miteinander."
+
+NTW_MONITOR:
+  name: "&3Netzwerk-Monitor"
+  lore:
+    - "&7Der Netzwerk-Monitor ermöglicht einfaches"
+    - "&7Import-/Export-Zusammenspiel mit benachbarten"
+    - "&7Objekten."
+    - ""
+    - "&7Derzeit unterstützt:"
+    - "&7Infinity-Fässer"
+    - "&7Netzwerk-Hüllen"
+
+NTW_IMPORT:
+  name: "&3Netzwerk-Importeur"
+  lore:
+    - "&7Der Netzwerk-Importeur bringt jeden"
+    - "&7darin liegenden Gegenstand ins Netzwerk,"
+    - "&7bis zu 9 Stapel pro SF-Tick."
+    - "&7Nimmt Gegenstände aus der Fracht auf."
+
+NTW_EXPORT:
+  name: "&3Netzwerk-Exporteur"
+  lore:
+    - "&7Der Netzwerk-Exporteur kann so eingestellt"
+    - "&7werden, dass er ständig 1 Stapel eines"
+    - "&7beliebigen Gegenstands ausgibt."
+    - "&7Erlaubt Entnahme aus der Fracht."
+
+NTW_GRID:
+  name: "&3Netzwerk-Raster"
+  lore:
+    - "&7Das Netzwerk-Raster zeigt dir alle"
+    - "&7Gegenstände im Netzwerk und lässt"
+    - "&7dich direkt einlagern oder entnehmen."
+
+NTW_CRAFTING_GRID:
+  name: "&3Netzwerk-Handwerksraster"
+  lore:
+    - "&7Das Netzwerk-Handwerksraster funktioniert"
+    - "&7wie ein normales Raster, zeigt aber weniger"
+    - "&7Gegenstände und erlaubt das Herstellen mit"
+    - "&7Gegenständen direkt aus dem Netzwerk."
+
+NTW_CELL:
+  name: "&3Netzwerk-Zelle"
+  lore:
+    - "&7Die Netzwerk-Zelle ist ein großes"
+    - "&7(Doppelkisten-)Inventar, auf das sowohl"
+    - "&7aus dem Netzwerk als auch in der Welt"
+    - "&7zugegriffen werden kann."

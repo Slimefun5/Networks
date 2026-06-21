@@ -1,0 +1,64 @@
+# French item translations for Networks. Keyed by Slimefun item id.
+# name = display name, lore = list of lines, '&' colour codes. Missing items fall back to English.
+
+NTW_CONTROLLER:
+  name: "&3Contrôleur de réseau"
+  lore:
+    - "&7Le contrôleur de réseau est le cerveau"
+    - "&7de tout le réseau. Max. 1 par réseau."
+
+NTW_BRIDGE:
+  name: "&3Pont de réseau"
+  lore:
+    - "&7Le pont permet de relier les objets"
+    - "&7du réseau entre eux à moindre coût."
+
+NTW_MONITOR:
+  name: "&3Moniteur de réseau"
+  lore:
+    - "&7Le moniteur de réseau permet une simple"
+    - "&7interaction d'import/export avec les objets"
+    - "&7adjacents."
+    - ""
+    - "&7Actuellement pris en charge :"
+    - "&7Tonneaux Infinity"
+    - "&7Coques de réseau"
+
+NTW_IMPORT:
+  name: "&3Importateur de réseau"
+  lore:
+    - "&7L'importateur de réseau fait entrer tout"
+    - "&7objet placé dedans dans le réseau,"
+    - "&7jusqu'à 9 piles par tick SF."
+    - "&7Accepte les objets venant du fret."
+
+NTW_EXPORT:
+  name: "&3Exportateur de réseau"
+  lore:
+    - "&7L'exportateur de réseau peut être réglé"
+    - "&7pour exporter en continu 1 pile de"
+    - "&7n'importe quel objet."
+    - "&7Permet le retrait d'objets vers le fret."
+
+NTW_GRID:
+  name: "&3Grille de réseau"
+  lore:
+    - "&7La grille de réseau vous montre tous"
+    - "&7les objets de votre réseau et vous permet"
+    - "&7d'insérer ou de retirer directement."
+
+NTW_CRAFTING_GRID:
+  name: "&3Grille de fabrication de réseau"
+  lore:
+    - "&7La grille de fabrication agit comme une"
+    - "&7grille normale mais affiche moins d'objets"
+    - "&7tout en permettant la fabrication avec des"
+    - "&7objets directement issus du réseau."
+
+NTW_CELL:
+  name: "&3Cellule de réseau"
+  lore:
+    - "&7La cellule de réseau est un grand"
+    - "&7inventaire (double coffre) accessible"
+    - "&7à la fois depuis le réseau et dans"
+    - "&7le monde."
