@@ -1,7 +1,6 @@
 package io.github.sefiraat.networks.slimefun.groups;
 
 import io.github.sefiraat.networks.slimefun.NetworksItemGroups;
-import io.github.sefiraat.networks.utils.MaterialCompat;
 import io.github.sefiraat.networks.utils.Theme;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.groups.FlexItemGroup;
@@ -11,12 +10,7 @@ import io.github.thebusybiscuit.slimefun5.core.guide.SlimefunGuideMode;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.utils.ChestMenuUtils;
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
-import net.md_5.bungee.api.ChatColor;
-import net.md_5.bungee.api.chat.ClickEvent;
-import net.md_5.bungee.api.chat.TextComponent;
 import io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey;
-import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
-import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
@@ -27,17 +21,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
  */
 public class MainFlexGroup extends FlexItemGroup {
 
-    private static final ItemStack DOCS_ITEM_STACK = Theme.themedItemStack(
-        MaterialCompat.material(XMaterial.BOOK),
-        Theme.GUIDE,
-        "Documentation Wiki",
-        "Click to get the link to the",
-        "documentation Wiki for Networks",
-        "and other Sefiraat addons."
-    );
-
     private static final int GUIDE_BACK = 1;
-    private static final int DOCS = 9;
     private static final int MATERIALS = 10;
     private static final int TOOLS = 11;
     private static final int NETWORK_ITEMS = 12;
@@ -98,16 +82,6 @@ public class MainFlexGroup extends FlexItemGroup {
             return false;
         });
 
-        // Docs
-        menu.replaceExistingItem(DOCS, DOCS_ITEM_STACK);
-        menu.addMenuClickHandler(DOCS, (player1, i1, itemStack1, clickAction) -> {
-            final TextComponent link = new TextComponent("To access the documentation Wiki, please click here");
-            link.setColor(ChatColor.YELLOW);
-            link.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://sefiraat.dev/"));
-            sendComponent(player, link);
-            return false;
-        });
-
         // Materials
         menu.replaceExistingItem(MATERIALS, NetworksItemGroups.MATERIALS.getItem(player));
         menu.addMenuClickHandler(MATERIALS, (player1, i1, itemStack1, clickAction) ->
@@ -131,17 +105,6 @@ public class MainFlexGroup extends FlexItemGroup {
         menu.addMenuClickHandler(NETWORK_QUANTUMS, (player1, i1, itemStack1, clickAction) ->
             openPage(profile, NetworksItemGroups.NETWORK_QUANTUMS, mode, 1)
         );
-    }
-
-    private void sendComponent(Player player, TextComponent component) {
-        try {
-            Object spigot = player.spigot();
-            spigot.getClass()
-                .getMethod("sendMessage", net.md_5.bungee.api.chat.BaseComponent.class)
-                .invoke(spigot, component);
-        } catch (ReflectiveOperationException | RuntimeException e) {
-            player.sendMessage(component.toLegacyText());
-        }
     }
 
     @ParametersAreNonnullByDefault

@@ -42,7 +42,7 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
     private SupportedPluginManager supportedPluginManager;
 
     public Networks() {
-        this.username = "Sefiraat";
+        this.username = "Slimefun5";
         this.repo = "Networks";
         this.branch = "master";
     }
