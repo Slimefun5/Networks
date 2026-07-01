@@ -8,7 +8,6 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Slimefun5/Networks/total)
 [![GitHub Followers](https://img.shields.io/github/followers/Slimefun5?style=social)](https://github.com/Slimefun5)
 [![GitHub Stars](https://img.shields.io/github/stars/Slimefun5/Networks?style=social)](https://github.com/Slimefun5/Networks)
-[![bStats](https://bStats.org/signatures/bukkit/Networks.svg)](https://bStats.org/plugin/bukkit/Networks/31391)
 
 A Slimefun addon that adds digital storage networks, crafting grids, and item transport.
 
@@ -130,7 +129,7 @@ plugins {
 }
 
 dependencies {
-    "githubCompileOnly"("Slimefun5:Networks:v1.0.1")
+    "githubCompileOnly"("Slimefun5:Networks:v1.0.2")
 }
 ```
 
