@@ -69,6 +69,11 @@ public class MainFlexGroup extends FlexItemGroup {
             menu.addMenuClickHandler(slot, ((player1, i, itemStack, clickAction) -> false));
         }
 
+        // The former external "Docs" button (slot 9) was removed; keep the slot as background so it
+        // doesn't leave an empty gap next to the group buttons.
+        menu.replaceExistingItem(9, ChestMenuUtils.getBackground());
+        menu.addMenuClickHandler(9, (player1, i, itemStack, clickAction) -> false);
+
         // Back
         menu.replaceExistingItem(
             GUIDE_BACK,
