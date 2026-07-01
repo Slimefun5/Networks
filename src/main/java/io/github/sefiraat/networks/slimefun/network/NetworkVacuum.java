@@ -1,6 +1,5 @@
 package io.github.sefiraat.networks.slimefun.network;
 
-import dev.sefiraat.sefilib.misc.ParticleUtils;
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.Networks;
 import io.github.sefiraat.networks.network.NodeDefinition;
@@ -24,6 +23,8 @@ import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
 import org.bukkit.Bukkit;
 import org.bukkit.Color;
 import org.bukkit.Location;
+import io.github.sefiraat.networks.utils.MaterialCompat;
+import io.github.sefiraat.networks.utils.ParticleCompat;
 import org.bukkit.Material;
 import org.bukkit.Particle;
 import org.bukkit.block.Block;
@@ -85,19 +86,20 @@ public class NetworkVacuum extends NetworkObject {
     private void findItem(@Nonnull BlockMenu blockMenu) {
         for (int inputSlot : INPUT_SLOTS) {
             final ItemStack inSlot = blockMenu.getItemInSlot(inputSlot);
-            if (inSlot == null || inSlot.getType().isAir()) {
+            if (inSlot == null || MaterialCompat.isAir(inSlot.getType())) {
                 final Location location = blockMenu.getLocation().clone().add(0.5, 0.5, 0.5);
                 final int range = this.vacuumRange.getValue();
                 Collection<Entity> items = location.getWorld()
                     .getNearbyEntities(location, range, range, range, Item.class::isInstance);
                 Optional<Entity> optionalEntity = items.stream().findFirst();
-                if (optionalEntity.isEmpty() || !(optionalEntity.get() instanceof Item item)) {
+                if (!optionalEntity.isPresent() || !(optionalEntity.get() instanceof Item)) {
                     return;
                 }
+                Item item = (Item) optionalEntity.get();
                 if (item.getPickupDelay() <= 0 && !SlimefunUtils.hasNoPickupFlag(item)) {
                     final ItemStack itemStack = item.getItemStack();
                     blockMenu.replaceExistingItem(inputSlot, itemStack);
-                    ParticleUtils.displayParticleRandomly(item, 1, 5, new Particle.DustOptions(Color.BLUE, 1));
+                    ParticleCompat.spawnDust(item.getLocation(), Color.BLUE, 1);
                     item.remove();
                 }
                 return;

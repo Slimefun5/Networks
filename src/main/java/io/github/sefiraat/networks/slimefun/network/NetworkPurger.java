@@ -5,6 +5,8 @@ import io.github.sefiraat.networks.network.NodeDefinition;
 import io.github.sefiraat.networks.network.NodeType;
 import io.github.sefiraat.networks.network.stackcaches.ItemRequest;
 import io.github.sefiraat.networks.slimefun.NetworkSlimefunItems;
+import io.github.sefiraat.networks.utils.MaterialCompat;
+import io.github.sefiraat.networks.utils.ParticleCompat;
 import io.github.sefiraat.networks.utils.Theme;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemSetting;
@@ -16,6 +18,7 @@ import io.github.thebusybiscuit.slimefun5.core.handlers.BlockBreakHandler;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
@@ -40,7 +43,7 @@ public class NetworkPurger extends NetworkObject {
     private static final int[] TEST_ITEM_BACKDROP = {3, 4, 5, 12, 14, 21, 22, 23};
 
     private static final ItemStack TEST_BACKDROP_STACK = CustomItemStack.create(
-        Material.GREEN_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.GREEN_STAINED_GLASS_PANE),
         Theme.SUCCESS + "Purge Item Matching"
     );
 
@@ -109,7 +112,7 @@ public class NetworkPurger extends NetworkObject {
             retrieved.setAmount(0);
             Location location = blockMenu.getLocation().clone().add(0.5, 1.2, 0.5);
             if (definition.getNode().getRoot().isDisplayParticles()) {
-                location.getWorld().spawnParticle(Particle.SMOKE, location, 0, 0, 0.05, 0);
+                ParticleCompat.spawn(location, 0, 0, 0.05, 0, "SMOKE_NORMAL", "SMOKE");
             }
         }
     }

@@ -28,8 +28,8 @@ import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.implementation.items.LimitedUseItem;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
+import io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey;
 import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
@@ -42,7 +42,7 @@ import java.util.Set;
 
 public class NetworkRake extends LimitedUseItem {
 
-    private static final NamespacedKey key = Keys.newKey("uses");
+    private static final NamespacedKey key = new NamespacedKey(Networks.getInstance(), "uses");
 
     private final Set<Class<? extends NetworkObject>> viableObjects = new HashSet<>();
 

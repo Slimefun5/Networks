@@ -1,7 +1,5 @@
 package io.github.sefiraat.networks.utils;
 
-import com.jeff_media.morepersistentdatatypes.DataType;
-
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.network.NetworkNode;
 import io.github.sefiraat.networks.network.NodeDefinition;
@@ -26,7 +24,7 @@ import javax.annotation.Nonnull;
 public class NetworkUtils {
 
     public static void applyConfig(@Nonnull NetworkDirectional directional, @Nonnull BlockMenu blockMenu, @Nonnull Player player) {
-        ItemStack itemStack = player.getInventory().getItemInOffHand();
+        ItemStack itemStack = HandCompat.offHandItem(player.getInventory());
 
         if (SlimefunItem.getByItem(itemStack) instanceof NetworkConfigurator) {
             applyConfig(directional, itemStack, blockMenu, player);
@@ -35,8 +33,8 @@ public class NetworkUtils {
 
     public static void applyConfig(@Nonnull NetworkDirectional directional, @Nonnull ItemStack itemStack, @Nonnull BlockMenu blockMenu, @Nonnull Player player) {
         final ItemMeta itemMeta = itemStack.getItemMeta();
-        final ItemStack[] templateStacks = DataTypeMethods.getCustom(itemMeta, Keys.ITEM, DataType.ITEM_STACK_ARRAY);
-        final String string = DataTypeMethods.getCustom(itemMeta, Keys.FACE, DataType.STRING);
+        final ItemStack[] templateStacks = DataTypeMethods.getItemStackArray(itemMeta, Keys.ITEM.toString());
+        final String string = DataTypeMethods.getString(itemMeta, Keys.FACE.toString());
 
         if (string == null) {
             player.sendMessage(Theme.ERROR + "Direction: " + Theme.PASSIVE + "Not supplied");

@@ -5,6 +5,7 @@ import io.github.sefiraat.networks.network.NodeDefinition;
 import io.github.sefiraat.networks.network.NodeType;
 import io.github.sefiraat.networks.network.stackcaches.ItemRequest;
 import io.github.sefiraat.networks.slimefun.NetworkSlimefunItems;
+import io.github.sefiraat.networks.utils.MaterialCompat;
 import io.github.sefiraat.networks.utils.Theme;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemSetting;
@@ -16,6 +17,7 @@ import io.github.thebusybiscuit.slimefun5.core.handlers.BlockBreakHandler;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
@@ -40,12 +42,12 @@ public class NetworkExport extends NetworkObject {
     private static final int[] OUTPUT_ITEM_BACKDROP = {14, 15, 16, 23, 25, 32, 33, 34};
 
     private static final ItemStack TEST_BACKDROP_STACK = CustomItemStack.create(
-        Material.GREEN_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.GREEN_STAINED_GLASS_PANE),
         Theme.SUCCESS + "Export Item Matching"
     );
 
     private static final ItemStack OUTPUT_BACKDROP_STACK = CustomItemStack.create(
-        Material.ORANGE_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.ORANGE_STAINED_GLASS_PANE),
         Theme.SUCCESS + "Output Slot"
     );
 

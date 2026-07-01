@@ -7,6 +7,7 @@ import io.github.sefiraat.networks.network.NodeType;
 import io.github.sefiraat.networks.network.SupportedRecipes;
 import io.github.sefiraat.networks.slimefun.NetworkSlimefunItems;
 import io.github.sefiraat.networks.slimefun.tools.CraftingBlueprint;
+import io.github.sefiraat.networks.utils.MaterialCompat;
 import io.github.sefiraat.networks.utils.StackUtils;
 import io.github.sefiraat.networks.utils.Theme;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
@@ -16,6 +17,7 @@ import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
@@ -49,11 +51,11 @@ public class NetworkEncoder extends NetworkObject {
     private static final int CHARGE_COST = 20000;
 
     public static final ItemStack BLUEPRINT_BACK_STACK = CustomItemStack.create(
-        Material.BLUE_STAINED_GLASS_PANE, Theme.PASSIVE + "Blank Blueprint"
+        MaterialCompat.material(XMaterial.BLUE_STAINED_GLASS_PANE), Theme.PASSIVE + "Blank Blueprint"
     );
 
     public static final ItemStack ENCODE_STACK = CustomItemStack.create(
-        Material.BLUE_STAINED_GLASS_PANE, Theme.PASSIVE + "Click to encode when valid"
+        MaterialCompat.material(XMaterial.BLUE_STAINED_GLASS_PANE), Theme.PASSIVE + "Click to encode when valid"
     );
 
     public NetworkEncoder(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
@@ -150,10 +152,7 @@ public class NetworkEncoder extends NetworkObject {
             }
         }
 
-        // If no slimefun recipe found, try a vanilla one
-        if (crafted == null) {
-            crafted = Bukkit.craftItem(inputs.clone(), player.getWorld(), player);
-        }
+        // vanilla craftItem() is 1.18+ — skip on legacy
 
         // If no item crafted OR result doesn't fit, escape
         if (crafted.getType() == Material.AIR) {

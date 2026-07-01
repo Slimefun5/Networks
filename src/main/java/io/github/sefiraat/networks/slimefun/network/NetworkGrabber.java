@@ -65,8 +65,8 @@ public class NetworkGrabber extends NetworkDirectional {
     }
 
     @Override
-    protected Particle.DustOptions getDustOptions() {
-        return new Particle.DustOptions(Color.FUCHSIA, 1);
+    protected Color getDustColor() {
+        return Color.FUCHSIA;
     }
 }
 

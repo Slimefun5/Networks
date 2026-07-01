@@ -1,0 +1,191 @@
+# ru item translations for Networks. Auto-generated; name only.
+
+
+NTW_SYNTHETIC_EMERALD_SHARD:
+  name: "&bСинтетический изумрудный осколок"
+
+NTW_OPTIC_GLASS:
+  name: "&bОптическое стекло"
+
+NTW_OPTIC_CABLE:
+  name: "&bОптический кабель"
+
+NTW_OPTIC_STAR:
+  name: "&bОптическая звезда"
+
+NTW_RADIOACTIVE_OPTIC_STAR:
+  name: "&bРадиоактивная оптическая звезда"
+
+NTW_SHRINKING_BASE:
+  name: "&bУменьшающая основа"
+
+NTW_SIMPLE_NANOBOTS:
+  name: "&bПростые наноботы"
+
+NTW_ADVANCED_NANOBOTS:
+  name: "&bПродвинутые наноботы"
+
+NTW_AI_CORE:
+  name: "&bЯдро ИИ"
+
+NTW_EMPOWERED_AI_CORE:
+  name: "&bУсиленное ядро ИИ"
+
+NTW_PRISTINE_AI_CORE:
+  name: "&bБезупречное ядро ИИ"
+
+NTW_INTERDIMENSIONAL_PRESENCE:
+  name: "&bМежпространственное присутствие"
+
+NTW_CONTROLLER:
+  name: "&3Контроллер сети"
+
+NTW_BRIDGE:
+  name: "&3Сетевой мост"
+
+NTW_MONITOR:
+  name: "&3Сетевой монитор"
+
+NTW_IMPORT:
+  name: "&3Сетевой импортёр"
+
+NTW_EXPORT:
+  name: "&3Сетевой экспортёр"
+
+NTW_GRABBER:
+  name: "&3Сетевой захватчик"
+
+NTW_PUSHER:
+  name: "&3Сетевой толкатель"
+
+NTW_CONTROL_X:
+  name: "&3Управление сетью: X"
+
+NTW_CONTROL_V:
+  name: "&3Управление сетью: V"
+
+NTW_VACUUM:
+  name: "&3Сетевой пылесос"
+
+NTW_VANILLA_GRABBER:
+  name: "&3Сетевой ванильный захватчик"
+
+NTW_VANILLA_PUSHER:
+  name: "&3Сетевой ванильный толкатель"
+
+NTW_NETWORK_WIRELESS_TRANSMITTER:
+  name: "&3Беспроводной сетевой передатчик"
+
+NTW_NETWORK_WIRELESS_RECEIVER:
+  name: "&3Беспроводной сетевой приёмник"
+
+NTW_TRASH:
+  name: "&3Сетевой уничтожитель"
+
+NTW_GRID:
+  name: "&3Сетевая сетка"
+
+NTW_CRAFTING_GRID:
+  name: "&3Сетевая сетка крафта"
+
+NTW_CELL:
+  name: "&3Сетевая ячейка"
+
+NTW_GREEDY_BLOCK:
+  name: "&3Жадный сетевой блок"
+
+NTW_QUANTUM_WORKBENCH:
+  name: "&3Сетевой квантовый верстак"
+
+NTW_QUANTUM_STORAGE_1:
+  name: "&3Сетевое квантовое хранилище (4K)"
+
+NTW_QUANTUM_STORAGE_2:
+  name: "&3Сетевое квантовое хранилище (32K)"
+
+NTW_QUANTUM_STORAGE_3:
+  name: "&3Сетевое квантовое хранилище (262K)"
+
+NTW_QUANTUM_STORAGE_4:
+  name: "&3Сетевое квантовое хранилище (2M)"
+
+NTW_QUANTUM_STORAGE_5:
+  name: "&3Сетевое квантовое хранилище (16M)"
+
+NTW_QUANTUM_STORAGE_6:
+  name: "&3Сетевое квантовое хранилище (134M)"
+
+NTW_QUANTUM_STORAGE_7:
+  name: "&3Сетевое квантовое хранилище (1B)"
+
+NTW_QUANTUM_STORAGE_8:
+  name: "&3Сетевое квантовое хранилище (∞)"
+
+NTW_CAPACITOR_1:
+  name: "&3Сетевой накопитель (1)"
+
+NTW_CAPACITOR_2:
+  name: "&3Сетевой накопитель (2)"
+
+NTW_CAPACITOR_3:
+  name: "&3Сетевой накопитель (3)"
+
+NTW_CAPACITOR_4:
+  name: "&3Сетевой накопитель (4)"
+
+NTW_POWER_OUTLET_1:
+  name: "&3Сетевая розетка (1)"
+
+NTW_POWER_OUTLET_2:
+  name: "&3Сетевая розетка (2)"
+
+NTW_POWER_DISPLAY:
+  name: "&3Сетевой дисплей энергии"
+
+NTW_RECIPE_ENCODER:
+  name: "&3Сетевой кодировщик рецептов"
+
+NTW_AUTO_CRAFTER:
+  name: "&3Сетевой автокрафтер"
+
+NTW_AUTO_CRAFTER_WITHHOLDING:
+  name: "&3Сетевой автокрафтер (с удержанием)"
+
+NTW_CRAFTING_BLUEPRINT:
+  name: "&5Чертёж крафта"
+
+NTW_PROBE:
+  name: "&5Сетевой зонд"
+
+NTW_REMOTE:
+  name: "&5Сетевой пульт"
+
+NTW_REMOTE_EMPOWERED:
+  name: "&5Усиленный сетевой пульт"
+
+NTW_REMOTE_PRISTINE:
+  name: "&5Безупречный сетевой пульт"
+
+NTW_REMOTE_ULTIMATE:
+  name: "&5Совершенный сетевой пульт"
+
+NTW_CRAYON:
+  name: "&5Сетевой мелок"
+
+NTW_CONFIGURATOR:
+  name: "&5Сетевой конфигуратор"
+
+NTW_WIRELESS_CONFIGURATOR:
+  name: "&5Беспроводной сетевой конфигуратор"
+
+NTW_RAKE_1:
+  name: "&5Сетевые грабли (1)"
+
+NTW_RAKE_2:
+  name: "&5Сетевые грабли (2)"
+
+NTW_RAKE_3:
+  name: "&5Сетевые грабли (3)"
+
+NTW_DEBUG_STICK:
+  name: "&5Сетевая палка отладки"

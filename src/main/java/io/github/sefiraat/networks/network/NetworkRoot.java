@@ -11,6 +11,8 @@ import io.github.sefiraat.networks.slimefun.network.NetworkDirectional;
 import io.github.sefiraat.networks.slimefun.network.NetworkGreedyBlock;
 import io.github.sefiraat.networks.slimefun.network.NetworkPowerNode;
 import io.github.sefiraat.networks.slimefun.network.NetworkQuantumStorage;
+import io.github.sefiraat.networks.utils.MaterialCompat;
+import io.github.sefiraat.networks.utils.ParticleCompat;
 import io.github.sefiraat.networks.utils.StackUtils;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
@@ -76,28 +78,29 @@ public class NetworkRoot extends NetworkNode {
     public void registerNode(@Nonnull Location location, @Nonnull NodeType type) {
         nodeLocations.add(location);
         switch (type) {
-            case CONTROLLER -> this.controller = location;
-            case BRIDGE -> bridges.add(location);
-            case STORAGE_MONITOR -> monitors.add(location);
-            case IMPORT -> importers.add(location);
-            case EXPORT -> exporters.add(location);
-            case GRID -> grids.add(location);
-            case CELL -> cells.add(location);
-            case WIPER -> wipers.add(location);
-            case GRABBER -> grabbers.add(location);
-            case PUSHER -> pushers.add(location);
-            case CUTTER -> cutters.add(location);
-            case PASTER -> pasters.add(location);
-            case VACUUM -> vacuums.add(location);
-            case PURGER -> purgers.add(location);
-            case CRAFTER -> crafters.add(location);
-            case POWER_NODE -> powerNodes.add(location);
-            case POWER_OUTLET -> powerOutlets.add(location);
-            case POWER_DISPLAY -> powerDisplays.add(location);
-            case ENCODER -> encoders.add(location);
-            case GREEDY_BLOCK -> greedyBlocks.add(location);
-            case WIRELESS_TRANSMITTER -> wirelessTransmitters.add(location);
-            case WIRELESS_RECEIVER -> wirelessReceivers.add(location);
+            case CONTROLLER: this.controller = location; break;
+            case BRIDGE: bridges.add(location); break;
+            case STORAGE_MONITOR: monitors.add(location); break;
+            case IMPORT: importers.add(location); break;
+            case EXPORT: exporters.add(location); break;
+            case GRID: grids.add(location); break;
+            case CELL: cells.add(location); break;
+            case WIPER: wipers.add(location); break;
+            case GRABBER: grabbers.add(location); break;
+            case PUSHER: pushers.add(location); break;
+            case CUTTER: cutters.add(location); break;
+            case PASTER: pasters.add(location); break;
+            case VACUUM: vacuums.add(location); break;
+            case PURGER: purgers.add(location); break;
+            case CRAFTER: crafters.add(location); break;
+            case POWER_NODE: powerNodes.add(location); break;
+            case POWER_OUTLET: powerOutlets.add(location); break;
+            case POWER_DISPLAY: powerDisplays.add(location); break;
+            case ENCODER: encoders.add(location); break;
+            case GREEDY_BLOCK: greedyBlocks.add(location); break;
+            case WIRELESS_TRANSMITTER: wirelessTransmitters.add(location); break;
+            case WIRELESS_RECEIVER: wirelessReceivers.add(location); break;
+            default: break;
         }
     }
 
@@ -123,7 +126,7 @@ public class NetworkRoot extends NetworkNode {
             for (int x = 0; x <= 1; x++) {
                 for (int y = 0; y <= 1; y++) {
                     for (int z = 0; z <= 1; z++) {
-                        loc.getWorld().spawnParticle(Particle.POOF, loc.clone().add(x, y, z), 0);
+                        ParticleCompat.spawn(loc.clone().add(x, y, z), 0, 0, 0, 0, "EXPLOSION_NORMAL", "POOF", "EXPLOSION");
                     }
                 }
             }
@@ -342,7 +345,8 @@ public class NetworkRoot extends NetworkNode {
             final SlimefunItem slimefunItem = BlockStorage.check(testLocation);
 
             if (Networks.getSupportedPluginManager()
-                .isInfinityExpansion() && slimefunItem instanceof StorageUnit unit) {
+                .isInfinityExpansion() && slimefunItem instanceof StorageUnit) {
+                StorageUnit unit = (StorageUnit) slimefunItem;
                 final BlockMenu menu = BlockStorage.getInventory(testLocation);
                 final InfinityBarrel infinityBarrel = getInfinityBarrel(menu, unit);
                 if (infinityBarrel != null) {
@@ -789,7 +793,7 @@ public class NetworkRoot extends NetworkNode {
             int i = 0;
             for (ItemStack itemStack : blockMenu.getContents()) {
                 // If this is an empty slot - move on, if it's our first, store it for later.
-                if (itemStack == null || itemStack.getType().isAir()) {
+                if (itemStack == null || MaterialCompat.isAir(itemStack.getType())) {
                     if (fallbackBlockMenu == null) {
                         fallbackBlockMenu = blockMenu;
                         fallBackSlot = i;
@@ -847,7 +851,8 @@ public class NetworkRoot extends NetworkNode {
         int removed = 0;
         for (Location node : powerNodes) {
             final SlimefunItem item = BlockStorage.check(node);
-            if (item instanceof NetworkPowerNode powerNode) {
+            if (item instanceof NetworkPowerNode) {
+                NetworkPowerNode powerNode = (NetworkPowerNode) item;
                 final int charge = powerNode.getCharge(node);
                 if (charge <= 0) {
                     continue;

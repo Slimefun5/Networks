@@ -49,9 +49,10 @@ public class NetworkPowerOutlet extends NetworkDirectional {
         final Block targetBlock = b.getRelative(blockFace);
         final SlimefunItem slimefunItem = BlockStorage.check(targetBlock);
 
-        if (!(slimefunItem instanceof EnergyNetComponent component) || slimefunItem instanceof NetworkObject) {
+        if (!(slimefunItem instanceof EnergyNetComponent) || slimefunItem instanceof NetworkObject) {
             return;
         }
+        EnergyNetComponent component = (EnergyNetComponent) slimefunItem;
 
         final String charge = BlockStorage.getLocationInfo(targetBlock.getLocation(), "energy-charge");
         int chargeInt = 0;

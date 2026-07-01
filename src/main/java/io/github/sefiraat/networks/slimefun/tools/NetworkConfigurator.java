@@ -1,6 +1,5 @@
 package io.github.sefiraat.networks.slimefun.tools;
 
-import com.jeff_media.morepersistentdatatypes.DataType;
 import io.github.sefiraat.networks.slimefun.network.NetworkDirectional;
 import io.github.sefiraat.networks.slimefun.network.NetworkPusher;
 import io.github.sefiraat.networks.utils.Keys;
@@ -15,12 +14,11 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.core.handlers.ItemUseHandler;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
-import io.github.thebusybiscuit.slimefun5.libraries.dough.data.persistent.PersistentDataAPI;
+import io.github.sefiraat.networks.compat.Pdc;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Player;
@@ -44,8 +42,9 @@ public class NetworkConfigurator extends SlimefunItem {
                         final Block block = optional.get();
                         final SlimefunItem slimefunItem = BlockStorage.check(block);
                         if (Slimefun.getProtectionManager().hasPermission(player, block, Interaction.INTERACT_BLOCK)
-                            && slimefunItem instanceof NetworkDirectional directional
+                            && slimefunItem instanceof NetworkDirectional
                         ) {
+                            NetworkDirectional directional = (NetworkDirectional) slimefunItem;
                             final BlockMenu blockMenu = BlockStorage.getInventory(block);
                             if (player.isSneaking()) {
                                 setConfigurator(directional, e.getItem(), blockMenu, player);
@@ -83,12 +82,12 @@ public class NetworkConfigurator extends SlimefunItem {
                 }
                 i++;
             }
-            DataTypeMethods.setCustom(itemMeta, Keys.ITEM, DataType.ITEM_STACK_ARRAY, itemStacks);
+            DataTypeMethods.setItemStackArray(itemMeta, Keys.ITEM.toString(), itemStacks);
         } else {
-            PersistentDataAPI.remove(itemMeta, Keys.ITEM);
+            Pdc.remove(itemMeta, Keys.ITEM.toString());
         }
 
-        DataTypeMethods.setCustom(itemMeta, Keys.FACE, DataType.STRING, blockFace.name());
+        DataTypeMethods.setString(itemMeta, Keys.FACE.toString(), blockFace.name());
         itemStack.setItemMeta(itemMeta);
         player.sendMessage(Theme.SUCCESS + "Configuration copied.");
     }

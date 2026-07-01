@@ -3,8 +3,10 @@ package io.github.sefiraat.networks.slimefun;
 import io.github.sefiraat.networks.slimefun.network.NetworkQuantumStorage;
 import io.github.sefiraat.networks.slimefun.tools.NetworkRemote;
 import io.github.sefiraat.networks.utils.Theme;
+import io.github.sefiraat.networks.utils.MaterialCompat;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.collections.Pair;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
@@ -94,7 +96,7 @@ public class NetworksSlimefunItemStacks {
 
         SYNTHETIC_EMERALD_SHARD = Theme.themedSlimefunItemStack(
             "NTW_SYNTHETIC_EMERALD_SHARD",
-            new ItemStack(Material.LIME_DYE),
+            MaterialCompat.stack(XMaterial.LIME_DYE),
             Theme.CRAFTING,
             "Synthetic Emerald Shard",
             "A shard of synthetic emerald that",
@@ -104,7 +106,7 @@ public class NetworksSlimefunItemStacks {
 
         OPTIC_GLASS = Theme.themedSlimefunItemStack(
             "NTW_OPTIC_GLASS",
-            new ItemStack(Material.GLASS),
+            MaterialCompat.stack(XMaterial.GLASS),
             Theme.CRAFTING,
             "Optic Glass",
             "A simple glass that is able to",
@@ -113,7 +115,7 @@ public class NetworksSlimefunItemStacks {
 
         OPTIC_CABLE = Theme.themedSlimefunItemStack(
             "NTW_OPTIC_CABLE",
-            new ItemStack(Material.STRING),
+            MaterialCompat.stack(XMaterial.STRING),
             Theme.CRAFTING,
             "Optic Cable",
             "A simple wire that is able to",
@@ -122,7 +124,7 @@ public class NetworksSlimefunItemStacks {
 
         OPTIC_STAR = Theme.themedSlimefunItemStack(
             "NTW_OPTIC_STAR",
-            new ItemStack(Material.NETHER_STAR),
+            MaterialCompat.stack(XMaterial.NETHER_STAR),
             Theme.CRAFTING,
             "Optic Star",
             "A crystalline star structure that",
@@ -131,7 +133,7 @@ public class NetworksSlimefunItemStacks {
 
         RADIOACTIVE_OPTIC_STAR = Theme.themedSlimefunItemStack(
             "NTW_RADIOACTIVE_OPTIC_STAR",
-            getPreEnchantedItemStack(Material.NETHER_STAR, true, new Pair<>(Enchantment.POWER, 1)),
+            getPreEnchantedItemStack(MaterialCompat.material(XMaterial.NETHER_STAR), true, new Pair<>(Enchantment.ARROW_DAMAGE, 1)),
             Theme.CRAFTING,
             "Radioactive Optic Star",
             "A crystalline star structure that",
@@ -140,7 +142,7 @@ public class NetworksSlimefunItemStacks {
 
         SHRINKING_BASE = Theme.themedSlimefunItemStack(
             "NTW_SHRINKING_BASE",
-            getPreEnchantedItemStack(Material.PISTON, true, new Pair<>(Enchantment.POWER, 1)),
+            getPreEnchantedItemStack(MaterialCompat.material(XMaterial.PISTON), true, new Pair<>(Enchantment.ARROW_DAMAGE, 1)),
             Theme.CRAFTING,
             "Shrinking Base",
             "An advanced construct able to make",
@@ -149,7 +151,7 @@ public class NetworksSlimefunItemStacks {
 
         SIMPLE_NANOBOTS = Theme.themedSlimefunItemStack(
             "NTW_SIMPLE_NANOBOTS",
-            new ItemStack(Material.MELON_SEEDS),
+            MaterialCompat.stack(XMaterial.MELON_SEEDS),
             Theme.CRAFTING,
             "Simple Nanobots",
             "Teeny Tiny little bots that can",
@@ -158,7 +160,7 @@ public class NetworksSlimefunItemStacks {
 
         ADVANCED_NANOBOTS = Theme.themedSlimefunItemStack(
             "NTW_ADVANCED_NANOBOTS",
-            getPreEnchantedItemStack(Material.MELON_SEEDS, true, new Pair<>(Enchantment.POWER, 1)),
+            getPreEnchantedItemStack(MaterialCompat.material(XMaterial.MELON_SEEDS), true, new Pair<>(Enchantment.ARROW_DAMAGE, 1)),
             Theme.CRAFTING,
             "Advanced Nanobots",
             "Teeny Tiny little bots that can",
@@ -168,7 +170,7 @@ public class NetworksSlimefunItemStacks {
 
         AI_CORE = Theme.themedSlimefunItemStack(
             "NTW_AI_CORE",
-            new ItemStack(Material.BRAIN_CORAL_BLOCK),
+            MaterialCompat.stack(XMaterial.BRAIN_CORAL_BLOCK),
             Theme.CRAFTING,
             "A.I. Core",
             "A burgeoning artificial intelligence",
@@ -177,7 +179,7 @@ public class NetworksSlimefunItemStacks {
 
         EMPOWERED_AI_CORE = Theme.themedSlimefunItemStack(
             "NTW_EMPOWERED_AI_CORE",
-            new ItemStack(Material.TUBE_CORAL_BLOCK),
+            MaterialCompat.stack(XMaterial.TUBE_CORAL_BLOCK),
             Theme.CRAFTING,
             "Empowered A.I. Core",
             "A flourishing artificial intelligence",
@@ -186,7 +188,7 @@ public class NetworksSlimefunItemStacks {
 
         PRISTINE_AI_CORE = Theme.themedSlimefunItemStack(
             "NTW_PRISTINE_AI_CORE",
-            getPreEnchantedItemStack(Material.TUBE_CORAL_BLOCK, true, new Pair<>(Enchantment.POWER, 1)),
+            getPreEnchantedItemStack(MaterialCompat.material(XMaterial.TUBE_CORAL_BLOCK), true, new Pair<>(Enchantment.ARROW_DAMAGE, 1)),
             Theme.CRAFTING,
             "Pristine A.I. Core",
             "A perfected artificial intelligence",
@@ -195,7 +197,7 @@ public class NetworksSlimefunItemStacks {
 
         INTERDIMENSIONAL_PRESENCE = Theme.themedSlimefunItemStack(
             "NTW_INTERDIMENSIONAL_PRESENCE",
-            getPreEnchantedItemStack(Material.ARMOR_STAND, true, new Pair<>(Enchantment.POWER, 1)),
+            getPreEnchantedItemStack(MaterialCompat.material(XMaterial.ARMOR_STAND), true, new Pair<>(Enchantment.ARROW_DAMAGE, 1)),
             Theme.CRAFTING,
             "Interdimensional Presence",
             "An artificial intelligence that has",
@@ -205,7 +207,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_CONTROLLER = Theme.themedSlimefunItemStack(
             "NTW_CONTROLLER",
-            new ItemStack(Material.BLACK_STAINED_GLASS),
+            MaterialCompat.stack(XMaterial.BLACK_STAINED_GLASS),
             Theme.MACHINE,
             "Network Controller"
             , "The Network controller is the brain",
@@ -214,7 +216,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_BRIDGE = Theme.themedSlimefunItemStack(
             "NTW_BRIDGE",
-            new ItemStack(Material.WHITE_STAINED_GLASS),
+            MaterialCompat.stack(XMaterial.WHITE_STAINED_GLASS),
             Theme.MACHINE,
             "Network Bridge"
             , "The bridge allows you to cheaply",
@@ -223,7 +225,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_MONITOR = Theme.themedSlimefunItemStack(
             "NTW_MONITOR",
-            new ItemStack(Material.GREEN_STAINED_GLASS),
+            MaterialCompat.stack(XMaterial.GREEN_STAINED_GLASS),
             Theme.MACHINE,
             "Network Monitor",
             "The Network Monitor allows simple",
@@ -237,7 +239,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_IMPORT = Theme.themedSlimefunItemStack(
             "NTW_IMPORT",
-            new ItemStack(Material.RED_STAINED_GLASS),
+            MaterialCompat.stack(XMaterial.RED_STAINED_GLASS),
             Theme.MACHINE,
             "Network Importer",
             "The Network Importer brings any",
@@ -248,7 +250,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_EXPORT = Theme.themedSlimefunItemStack(
             "NTW_EXPORT",
-            new ItemStack(Material.BLUE_STAINED_GLASS),
+            MaterialCompat.stack(XMaterial.BLUE_STAINED_GLASS),
             Theme.MACHINE,
             "Network Exporter",
             "The Network Exporter can be set to",
@@ -259,7 +261,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_GRABBER = Theme.themedSlimefunItemStack(
             "NTW_GRABBER",
-            new ItemStack(Material.MAGENTA_STAINED_GLASS),
+            MaterialCompat.stack(XMaterial.MAGENTA_STAINED_GLASS),
             Theme.MACHINE,
             "Network Grabber",
             "The Network Grabber will try",
@@ -269,7 +271,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_PUSHER = Theme.themedSlimefunItemStack(
             "NTW_PUSHER",
-            new ItemStack(Material.BROWN_STAINED_GLASS),
+            MaterialCompat.stack(XMaterial.BROWN_STAINED_GLASS),
             Theme.MACHINE,
             "Network Pusher",
             "The Network Pusher will try",
@@ -279,7 +281,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_CONTROL_X = Theme.themedSlimefunItemStack(
             "NTW_CONTROL_X",
-            new ItemStack(Material.WHITE_GLAZED_TERRACOTTA),
+            MaterialCompat.stack(XMaterial.WHITE_GLAZED_TERRACOTTA),
             Theme.MACHINE,
             "Network Control: X",
             "The Network Control: X will try",
@@ -293,7 +295,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_CONTROL_V = Theme.themedSlimefunItemStack(
             "NTW_CONTROL_V",
-            new ItemStack(Material.PURPLE_GLAZED_TERRACOTTA),
+            MaterialCompat.stack(XMaterial.PURPLE_GLAZED_TERRACOTTA),
             Theme.MACHINE,
             "Network Control: V",
             "The Network Control: V will try",
@@ -306,7 +308,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_VACUUM = Theme.themedSlimefunItemStack(
             "NTW_VACUUM",
-            new ItemStack(Material.ORANGE_GLAZED_TERRACOTTA),
+            MaterialCompat.stack(XMaterial.ORANGE_GLAZED_TERRACOTTA),
             Theme.MACHINE,
             "Network Vacuum",
             "The Network Vacuum will suck",
@@ -320,7 +322,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_VANILLA_GRABBER = Theme.themedSlimefunItemStack(
             "NTW_VANILLA_GRABBER",
-            new ItemStack(Material.ORANGE_STAINED_GLASS),
+            MaterialCompat.stack(XMaterial.ORANGE_STAINED_GLASS),
             Theme.MACHINE,
             "Network Vanilla Grabber",
             "The Network Vanilla Pusher will try",
@@ -332,7 +334,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_VANILLA_PUSHER = Theme.themedSlimefunItemStack(
             "NTW_VANILLA_PUSHER",
-            new ItemStack(Material.LIME_STAINED_GLASS),
+            MaterialCompat.stack(XMaterial.LIME_STAINED_GLASS),
             Theme.MACHINE,
             "Network Vanilla Pusher",
             "The Network Vanilla Pusher will try",
@@ -344,7 +346,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_WIRELESS_TRANSMITTER = Theme.themedSlimefunItemStack(
             "NTW_NETWORK_WIRELESS_TRANSMITTER",
-            new ItemStack(Material.CYAN_STAINED_GLASS),
+            MaterialCompat.stack(XMaterial.CYAN_STAINED_GLASS),
             Theme.MACHINE,
             "Network Wireless Transmitter",
             "The Network Wireless Transmitter will",
@@ -358,7 +360,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_WIRELESS_RECEIVER = Theme.themedSlimefunItemStack(
             "NTW_NETWORK_WIRELESS_RECEIVER",
-            new ItemStack(Material.PURPLE_STAINED_GLASS),
+            MaterialCompat.stack(XMaterial.PURPLE_STAINED_GLASS),
             Theme.MACHINE,
             "Network Wireless Receiver",
             "The Network Wireless Receiver is",
@@ -371,7 +373,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_PURGER = Theme.themedSlimefunItemStack(
             "NTW_TRASH",
-            new ItemStack(Material.OBSERVER),
+            MaterialCompat.stack(XMaterial.OBSERVER),
             Theme.MACHINE,
             "Network Purger",
             "The Network Purger will pull",
@@ -382,7 +384,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_GRID = Theme.themedSlimefunItemStack(
             "NTW_GRID",
-            new ItemStack(Material.NOTE_BLOCK),
+            MaterialCompat.stack(XMaterial.NOTE_BLOCK),
             Theme.MACHINE,
             "Network Grid",
             "The Network Grid shows you all",
@@ -393,7 +395,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_CRAFTING_GRID = Theme.themedSlimefunItemStack(
             "NTW_CRAFTING_GRID",
-            new ItemStack(Material.REDSTONE_LAMP),
+            MaterialCompat.stack(XMaterial.REDSTONE_LAMP),
             Theme.MACHINE,
             "Network Crafting Grid",
             "The Network Crafting Grid acts",
@@ -404,7 +406,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_CELL = Theme.themedSlimefunItemStack(
             "NTW_CELL",
-            new ItemStack(Material.HONEYCOMB_BLOCK),
+            MaterialCompat.stack(XMaterial.HONEYCOMB_BLOCK),
             Theme.MACHINE,
             "Network Cell",
             "The Network Cell is a large",
@@ -415,7 +417,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_GREEDY_BLOCK = Theme.themedSlimefunItemStack(
             "NTW_GREEDY_BLOCK",
-            new ItemStack(Material.SHROOMLIGHT),
+            MaterialCompat.stack(XMaterial.SHROOMLIGHT),
             Theme.MACHINE,
             "Network Greedy Block",
             "The Network Greedy Block can",
@@ -428,7 +430,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_QUANTUM_WORKBENCH = Theme.themedSlimefunItemStack(
             "NTW_QUANTUM_WORKBENCH",
-            new ItemStack(Material.DRIED_KELP_BLOCK),
+            MaterialCompat.stack(XMaterial.DRIED_KELP_BLOCK),
             Theme.MACHINE,
             "Network Quantum Workbench",
             "Allows the crafting of Quantum Storages."
@@ -437,7 +439,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_QUANTUM_STORAGE_1 = Theme.themedSlimefunItemStack(
             "NTW_QUANTUM_STORAGE_1",
-            new ItemStack(Material.WHITE_TERRACOTTA),
+            MaterialCompat.stack(XMaterial.WHITE_TERRACOTTA),
             Theme.MACHINE,
             "Network Quantum Storage (4K)",
             "Stores " + NetworkQuantumStorage.getSizes()[0] + " items",
@@ -448,7 +450,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_QUANTUM_STORAGE_2 = Theme.themedSlimefunItemStack(
             "NTW_QUANTUM_STORAGE_2",
-            new ItemStack(Material.LIGHT_GRAY_TERRACOTTA),
+            MaterialCompat.stack(XMaterial.LIGHT_GRAY_TERRACOTTA),
             Theme.MACHINE,
             "Network Quantum Storage (32K)",
             "Stores " + NetworkQuantumStorage.getSizes()[1] + " items",
@@ -459,7 +461,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_QUANTUM_STORAGE_3 = Theme.themedSlimefunItemStack(
             "NTW_QUANTUM_STORAGE_3",
-            new ItemStack(Material.GRAY_TERRACOTTA),
+            MaterialCompat.stack(XMaterial.GRAY_TERRACOTTA),
             Theme.MACHINE,
             "Network Quantum Storage (262K)",
             "Stores " + NetworkQuantumStorage.getSizes()[2] + " items",
@@ -470,7 +472,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_QUANTUM_STORAGE_4 = Theme.themedSlimefunItemStack(
             "NTW_QUANTUM_STORAGE_4",
-            new ItemStack(Material.BROWN_TERRACOTTA),
+            MaterialCompat.stack(XMaterial.BROWN_TERRACOTTA),
             Theme.MACHINE,
             "Network Quantum Storage (2M)",
             "Stores " + NetworkQuantumStorage.getSizes()[3] + " items",
@@ -481,7 +483,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_QUANTUM_STORAGE_5 = Theme.themedSlimefunItemStack(
             "NTW_QUANTUM_STORAGE_5",
-            new ItemStack(Material.BLACK_TERRACOTTA),
+            MaterialCompat.stack(XMaterial.BLACK_TERRACOTTA),
             Theme.MACHINE,
             "Network Quantum Storage (16M)",
             "Stores " + NetworkQuantumStorage.getSizes()[4] + " items",
@@ -492,7 +494,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_QUANTUM_STORAGE_6 = Theme.themedSlimefunItemStack(
             "NTW_QUANTUM_STORAGE_6",
-            new ItemStack(Material.PURPLE_TERRACOTTA),
+            MaterialCompat.stack(XMaterial.PURPLE_TERRACOTTA),
             Theme.MACHINE,
             "Network Quantum Storage (134M)",
             "Stores " + NetworkQuantumStorage.getSizes()[5] + " items",
@@ -503,7 +505,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_QUANTUM_STORAGE_7 = Theme.themedSlimefunItemStack(
             "NTW_QUANTUM_STORAGE_7",
-            new ItemStack(Material.MAGENTA_TERRACOTTA),
+            MaterialCompat.stack(XMaterial.MAGENTA_TERRACOTTA),
             Theme.MACHINE,
             "Network Quantum Storage (1B)",
             "Stores " + NetworkQuantumStorage.getSizes()[6] + " items",
@@ -514,7 +516,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_QUANTUM_STORAGE_8 = Theme.themedSlimefunItemStack(
             "NTW_QUANTUM_STORAGE_8",
-            new ItemStack(Material.RED_TERRACOTTA),
+            MaterialCompat.stack(XMaterial.RED_TERRACOTTA),
             Theme.MACHINE,
             "Network Quantum Storage (∞)",
             "Stores ∞ items... almost",
@@ -525,7 +527,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_CAPACITOR_1 = Theme.themedSlimefunItemStack(
             "NTW_CAPACITOR_1",
-            new ItemStack(Material.BROWN_GLAZED_TERRACOTTA),
+            MaterialCompat.stack(XMaterial.BROWN_GLAZED_TERRACOTTA),
             Theme.MACHINE,
             "Network Capacitor (1)",
             "The Network Capacitor can take",
@@ -537,7 +539,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_CAPACITOR_2 = Theme.themedSlimefunItemStack(
             "NTW_CAPACITOR_2",
-            new ItemStack(Material.GREEN_GLAZED_TERRACOTTA),
+            MaterialCompat.stack(XMaterial.GREEN_GLAZED_TERRACOTTA),
             Theme.MACHINE,
             "Network Capacitor (2)",
             "The Network Capacitor can take",
@@ -549,7 +551,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_CAPACITOR_3 = Theme.themedSlimefunItemStack(
             "NTW_CAPACITOR_3",
-            new ItemStack(Material.BLACK_GLAZED_TERRACOTTA),
+            MaterialCompat.stack(XMaterial.BLACK_GLAZED_TERRACOTTA),
             Theme.MACHINE,
             "Network Capacitor (3)",
             "The Network Capacitor can take",
@@ -561,7 +563,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_CAPACITOR_4 = Theme.themedSlimefunItemStack(
                 "NTW_CAPACITOR_4",
-                new ItemStack(Material.GRAY_GLAZED_TERRACOTTA),
+                MaterialCompat.stack(XMaterial.GRAY_GLAZED_TERRACOTTA),
                 Theme.MACHINE,
                 "Network Capacitor (4)",
                 "The Network Capacitor can take",
@@ -573,7 +575,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_POWER_OUTLET_1 = Theme.themedSlimefunItemStack(
             "NTW_POWER_OUTLET_1",
-            new ItemStack(Material.YELLOW_GLAZED_TERRACOTTA),
+            MaterialCompat.stack(XMaterial.YELLOW_GLAZED_TERRACOTTA),
             Theme.MACHINE,
             "Network Power Outlet (1)",
             "The Network Capacitor can take",
@@ -588,7 +590,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_POWER_OUTLET_2 = Theme.themedSlimefunItemStack(
             "NTW_POWER_OUTLET_2",
-            new ItemStack(Material.RED_GLAZED_TERRACOTTA),
+            MaterialCompat.stack(XMaterial.RED_GLAZED_TERRACOTTA),
             Theme.MACHINE,
             "Network Power Outlet (2)",
             "The Network Capacitor can take",
@@ -603,7 +605,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_POWER_DISPLAY = Theme.themedSlimefunItemStack(
             "NTW_POWER_DISPLAY",
-            new ItemStack(Material.TINTED_GLASS),
+            MaterialCompat.stack(XMaterial.GLASS),
             Theme.MACHINE,
             "Network Power Display",
             "The Network Power Display will",
@@ -613,7 +615,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_RECIPE_ENCODER = Theme.themedSlimefunItemStack(
             "NTW_RECIPE_ENCODER",
-            new ItemStack(Material.TARGET),
+            MaterialCompat.stack(XMaterial.TARGET),
             Theme.MACHINE,
             "Network Recipe Encoder",
             "Used to form a Crafting Blueprint",
@@ -624,7 +626,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_AUTO_CRAFTER = Theme.themedSlimefunItemStack(
             "NTW_AUTO_CRAFTER",
-            new ItemStack(Material.BLACK_GLAZED_TERRACOTTA),
+            MaterialCompat.stack(XMaterial.BLACK_GLAZED_TERRACOTTA),
             Theme.MACHINE,
             "Network Auto Crafter",
             "The Network Auto Crafter accepts",
@@ -639,7 +641,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_AUTO_CRAFTER_WITHHOLDING = Theme.themedSlimefunItemStack(
             "NTW_AUTO_CRAFTER_WITHHOLDING",
-            new ItemStack(Material.WHITE_GLAZED_TERRACOTTA),
+            MaterialCompat.stack(XMaterial.WHITE_GLAZED_TERRACOTTA),
             Theme.MACHINE,
             "Network Auto Crafter (Withholding)",
             "The Network Auto Crafter accepts",
@@ -660,7 +662,7 @@ public class NetworksSlimefunItemStacks {
 
         CRAFTING_BLUEPRINT = Theme.themedSlimefunItemStack(
             "NTW_CRAFTING_BLUEPRINT",
-            new ItemStack(Material.BLUE_DYE),
+            MaterialCompat.stack(XMaterial.BLUE_DYE),
             Theme.TOOL,
             "Crafting Blueprint",
             "A blank blueprint that can",
@@ -670,7 +672,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_PROBE = Theme.themedSlimefunItemStack(
             "NTW_PROBE",
-            new ItemStack(Material.CLOCK),
+            MaterialCompat.stack(XMaterial.CLOCK),
             Theme.TOOL,
             "Network Probe",
             "When used on a controller, this will",
@@ -679,7 +681,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_REMOTE = Theme.themedSlimefunItemStack(
             "NTW_REMOTE",
-            new ItemStack(Material.PAINTING),
+            MaterialCompat.stack(XMaterial.PAINTING),
             Theme.TOOL,
             "Network Remote",
             "Opens a bound grid wirelessly.",
@@ -690,7 +692,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_REMOTE_EMPOWERED = Theme.themedSlimefunItemStack(
             "NTW_REMOTE_EMPOWERED",
-            new ItemStack(Material.ITEM_FRAME),
+            MaterialCompat.stack(XMaterial.ITEM_FRAME),
             Theme.TOOL,
             "Network Remote Empowered",
             "Opens a bound grid wirelessly.",
@@ -701,7 +703,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_REMOTE_PRISTINE = Theme.themedSlimefunItemStack(
             "NTW_REMOTE_PRISTINE",
-            new ItemStack(Material.GLOW_ITEM_FRAME),
+            MaterialCompat.stack(XMaterial.ITEM_FRAME),
             Theme.TOOL,
             "Network Remote Pristine",
             "Opens a bound grid wirelessly.",
@@ -712,7 +714,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_REMOTE_ULTIMATE = Theme.themedSlimefunItemStack(
             "NTW_REMOTE_ULTIMATE",
-            getPreEnchantedItemStack(Material.GLOW_ITEM_FRAME, true, new Pair<>(Enchantment.POWER, 1)),
+            getPreEnchantedItemStack(MaterialCompat.material(XMaterial.ITEM_FRAME), true, new Pair<>(Enchantment.ARROW_DAMAGE, 1)),
             Theme.TOOL,
             "Network Remote Ultimate",
             "Opens a bound grid wirelessly.",
@@ -723,7 +725,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_CRAYON = Theme.themedSlimefunItemStack(
             "NTW_CRAYON",
-            new ItemStack(Material.RED_CANDLE),
+            MaterialCompat.stack(XMaterial.REDSTONE),
             Theme.TOOL,
             "Network Crayon",
             "When used on a controller, this will",
@@ -733,7 +735,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_CONFIGURATOR = Theme.themedSlimefunItemStack(
             "NTW_CONFIGURATOR",
-            new ItemStack(Material.BLAZE_ROD),
+            MaterialCompat.stack(XMaterial.BLAZE_ROD),
             Theme.TOOL,
             "Network Configurator",
             "Used to copy and paste the",
@@ -746,7 +748,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_WIRELESS_CONFIGURATOR = Theme.themedSlimefunItemStack(
             "NTW_WIRELESS_CONFIGURATOR",
-            new ItemStack(Material.BLAZE_ROD),
+            MaterialCompat.stack(XMaterial.BLAZE_ROD),
             Theme.TOOL,
             "Network Wireless Configurator",
             "Used to store a Receiver location",
@@ -758,7 +760,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_RAKE_1 = Theme.themedSlimefunItemStack(
             "NTW_RAKE_1",
-            new ItemStack(Material.TWISTING_VINES),
+            MaterialCompat.stack(XMaterial.TWISTING_VINES),
             Theme.TOOL,
             "Network Rake (1)",
             "Right click a Network Object to",
@@ -769,7 +771,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_RAKE_2 = Theme.themedSlimefunItemStack(
             "NTW_RAKE_2",
-            new ItemStack(Material.WEEPING_VINES),
+            MaterialCompat.stack(XMaterial.WEEPING_VINES),
             Theme.TOOL,
             "Network Rake (2)",
             "Right click a Network Object to",
@@ -780,7 +782,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_RAKE_3 = Theme.themedSlimefunItemStack(
             "NTW_RAKE_3",
-            getPreEnchantedItemStack(Material.WEEPING_VINES, true, new Pair<>(Enchantment.LUCK_OF_THE_SEA, 1)),
+            getPreEnchantedItemStack(MaterialCompat.material(XMaterial.WEEPING_VINES), true, new Pair<>(Enchantment.LUCK, 1)),
             Theme.TOOL,
             "Network Rake (3)",
             "Right click a Network Object to",
@@ -791,7 +793,7 @@ public class NetworksSlimefunItemStacks {
 
         NETWORK_DEBUG_STICK = Theme.themedSlimefunItemStack(
             "NTW_DEBUG_STICK",
-            getPreEnchantedItemStack(Material.STICK, true, new Pair<>(Enchantment.LUCK_OF_THE_SEA, 1)),
+            getPreEnchantedItemStack(MaterialCompat.material(XMaterial.STICK), true, new Pair<>(Enchantment.LUCK, 1)),
             Theme.TOOL,
             "Network Debug Stick",
             "Right click a Network Object to",

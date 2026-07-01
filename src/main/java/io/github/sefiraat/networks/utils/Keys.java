@@ -1,9 +1,11 @@
 package io.github.sefiraat.networks.utils;
 
 import io.github.sefiraat.networks.Networks;
-import org.bukkit.NamespacedKey;
+import io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey;
+import io.github.thebusybiscuit.slimefun5.utils.compatibility.BukkitKeys;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 
 public class Keys {
@@ -20,5 +22,15 @@ public class Keys {
     public static NamespacedKey newKey(@Nonnull String value) {
         return new NamespacedKey(Networks.getInstance(), value);
     }
-}
 
+    /**
+     * Converts one of the addon's version-safe {@link NamespacedKey keys} to the real
+     * {@code org.bukkit.NamespacedKey} required by the (1.14+) PersistentData API. Returns {@code null}
+     * on legacy servers (1.8&ndash;1.13) where {@code org.bukkit.NamespacedKey} is absent, so the PDC
+     * boundary degrades to a no-op instead of throwing at load.
+     */
+    @Nullable
+    public static org.bukkit.NamespacedKey bukkit(@Nonnull NamespacedKey key) {
+        return (org.bukkit.NamespacedKey) BukkitKeys.toBukkit(key);
+    }
+}

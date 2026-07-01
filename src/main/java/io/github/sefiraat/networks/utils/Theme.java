@@ -19,17 +19,17 @@ public enum Theme {
     NOTICE(ChatColor.WHITE, "Notice"),
     PASSIVE(ChatColor.GRAY, ""),
     SUCCESS(ChatColor.GREEN, "Success"),
-    MAIN(ChatColor.of("#21588f"), "Alone"),
-    CLICK_INFO(ChatColor.of("#e4ed32"), "Click here"),
-    RESEARCH(ChatColor.of("#a60e03"), "Research"),
-    CRAFTING(ChatColor.of("#dbcea9"), "Crafting Material"),
-    MACHINE(ChatColor.of("#3295a8"), "Machine"),
-    TOOL(ChatColor.of("#6b32a8"), "Tool"),
-    MECHANISM(ChatColor.of("#3295a8"), "Mechanism"),
-    FUEL(ChatColor.of("#112211"), "Fossil Fuel"),
-    MATERIAL_CLASS(ChatColor.of("#a4c2ba"), "Material Class"),
-    RECIPE_TYPE(ChatColor.of("#ffe89c"), "Recipe Type"),
-    GUIDE(ChatColor.of("#444444"), "Guide");
+    MAIN(ColorCompat.of("#21588f"), "Alone"),
+    CLICK_INFO(ColorCompat.of("#e4ed32"), "Click here"),
+    RESEARCH(ColorCompat.of("#a60e03"), "Research"),
+    CRAFTING(ColorCompat.of("#dbcea9"), "Crafting Material"),
+    MACHINE(ColorCompat.of("#3295a8"), "Machine"),
+    TOOL(ColorCompat.of("#6b32a8"), "Tool"),
+    MECHANISM(ColorCompat.of("#3295a8"), "Mechanism"),
+    FUEL(ColorCompat.of("#112211"), "Fossil Fuel"),
+    MATERIAL_CLASS(ColorCompat.of("#a4c2ba"), "Material Class"),
+    RECIPE_TYPE(ColorCompat.of("#ffe89c"), "Recipe Type"),
+    GUIDE(ColorCompat.of("#444444"), "Guide");
 
     protected static final Theme[] cachedValues = values();
     private final ChatColor color;
@@ -55,14 +55,11 @@ public enum Theme {
     }
 
     @Nonnull
-    public Particle.DustOptions getDustOptions(float size) {
-        return new Particle.DustOptions(
-            Color.fromRGB(
-                color.getColor().getRed(),
-                color.getColor().getGreen(),
-                color.getColor().getBlue()
-            ),
-            size
+    public Color getDustColor() {
+        return Color.fromRGB(
+            color.getColor().getRed(),
+            color.getColor().getGreen(),
+            color.getColor().getBlue()
         );
     }
 

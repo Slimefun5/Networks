@@ -1,11 +1,14 @@
 package io.github.sefiraat.networks.slimefun.network.grid;
 
 import io.github.sefiraat.networks.NetworkStorage;
+import java.util.Arrays;
+import java.util.stream.Collectors;
 import io.github.sefiraat.networks.network.GridItemRequest;
 import io.github.sefiraat.networks.network.NetworkRoot;
 import io.github.sefiraat.networks.network.NodeDefinition;
 import io.github.sefiraat.networks.network.NodeType;
 import io.github.sefiraat.networks.slimefun.network.NetworkObject;
+import io.github.sefiraat.networks.utils.MaterialCompat;
 import io.github.sefiraat.networks.utils.StackUtils;
 import io.github.sefiraat.networks.utils.Theme;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
@@ -15,6 +18,7 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.api.items.settings.IntRangeSetting;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.slimefun5.utils.ChatUtils;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ClickAction;
@@ -43,27 +47,27 @@ import java.util.Map;
 public abstract class AbstractGrid extends NetworkObject {
 
     private static final ItemStack BLANK_SLOT_STACK = CustomItemStack.create(
-        Material.LIGHT_GRAY_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.LIGHT_GRAY_STAINED_GLASS_PANE),
         " "
     );
 
     private static final ItemStack PAGE_PREVIOUS_STACK = CustomItemStack.create(
-        Material.RED_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.RED_STAINED_GLASS_PANE),
         Theme.CLICK_INFO.getColor() + "Previous Page"
     );
 
     private static final ItemStack PAGE_NEXT_STACK = CustomItemStack.create(
-        Material.RED_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.RED_STAINED_GLASS_PANE),
         Theme.CLICK_INFO.getColor() + "Next Page"
     );
 
     private static final ItemStack CHANGE_SORT_STACK = CustomItemStack.create(
-        Material.BLUE_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.BLUE_STAINED_GLASS_PANE),
         Theme.CLICK_INFO.getColor() + "Change Sort Order"
     );
 
     private static final ItemStack FILTER_STACK = CustomItemStack.create(
-        Material.NAME_TAG,
+        MaterialCompat.material(XMaterial.NAME_TAG),
         Theme.CLICK_INFO.getColor() + "Set Filter (Right Click to Clear)"
     );
 
@@ -229,7 +233,7 @@ public abstract class AbstractGrid extends NetworkObject {
                 return name.contains(cache.getFilter());
             })
             .sorted(cache.getSortOrder() == GridCache.SortOrder.ALPHABETICAL ? ALPHABETICAL_SORT : NUMERICAL_SORT.reversed())
-            .toList();
+            .collect(Collectors.toList());
     }
 
     protected boolean setFilter(@Nonnull Player player, @Nonnull BlockMenu blockMenu, @Nonnull GridCache gridCache, @Nonnull ClickAction action) {
@@ -239,7 +243,7 @@ public abstract class AbstractGrid extends NetworkObject {
             player.closeInventory();
             player.sendMessage(Theme.WARNING + "Type what you would like to filter this grid to");
             ChatUtils.awaitInput(player, s -> {
-                if (s.isBlank()) {
+                if (s.trim().isEmpty()) {
                     return;
                 }
                 gridCache.setFilter(s.toLowerCase(Locale.ROOT));
@@ -374,7 +378,7 @@ public abstract class AbstractGrid extends NetworkObject {
     @Nonnull
     private static List<String> getLoreAddition(int amount) {
         final MessageFormat format = new MessageFormat("{0}Amount: {1}{2}", Locale.ROOT);
-        return List.of(
+        return Arrays.asList(
             "",
             format.format(new Object[]{Theme.CLICK_INFO.getColor(), Theme.PASSIVE.getColor(), amount}, new StringBuffer(), null).toString()
         );

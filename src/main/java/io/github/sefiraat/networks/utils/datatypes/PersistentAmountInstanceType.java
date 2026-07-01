@@ -1,62 +1,37 @@
 package io.github.sefiraat.networks.utils.datatypes;
 
-import com.jeff_media.morepersistentdatatypes.DataType;
 import io.github.sefiraat.networks.network.stackcaches.CardInstance;
-import io.github.sefiraat.networks.utils.Keys;
-import org.bukkit.NamespacedKey;
-import org.bukkit.persistence.PersistentDataAdapterContext;
-import org.bukkit.persistence.PersistentDataContainer;
-import org.bukkit.persistence.PersistentDataType;
+import io.github.sefiraat.networks.compat.Pdc;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 /**
- * A {@link PersistentDataType} for {@link CardInstance}
- * Creatively thieved from {@see <a href="https://github.com/baked-libs/dough/blob/main/dough-data/src/main/java/io/github/bakedlibs/dough/data/persistent/PersistentUUIDDataType.java">PersistentUUIDDataType}
- *
- * @author Sfiguz7
- * @author Walshy
+ * Version-safe persistence for the amount/limit of a {@link CardInstance} (item intentionally omitted).
+ * <p>
+ * Stores flat String-keyed values through {@link PersistentDataAPI} instead of a nested
+ * {@code PersistentDataContainer}, so it never references {@code org.bukkit.persistence.*} in bytecode.
  */
+public final class PersistentAmountInstanceType {
 
-public class PersistentAmountInstanceType implements PersistentDataType<PersistentDataContainer, CardInstance> {
+    private PersistentAmountInstanceType() {}
 
-    public static final PersistentDataType<PersistentDataContainer, CardInstance> TYPE = new PersistentAmountInstanceType();
+    private static final String AMOUNT = "networks:amount_amount";
+    private static final String LIMIT = "networks:amount_limit";
 
-    public static final NamespacedKey ITEM = Keys.newKey("item");
-    public static final NamespacedKey AMOUNT = Keys.newKey("amount");
-    public static final NamespacedKey LIMIT = Keys.newKey("limit");
-    public static final NamespacedKey UNSTACK = Keys.newKey("time");
-
-    @Override
-    @Nonnull
-    public Class<PersistentDataContainer> getPrimitiveType() {
-        return PersistentDataContainer.class;
-    }
-
-    @Override
-    @Nonnull
-    public Class<CardInstance> getComplexType() {
-        return CardInstance.class;
-    }
-
-    @Override
-    @Nonnull
-    public PersistentDataContainer toPrimitive(@Nonnull CardInstance complex, @Nonnull PersistentDataAdapterContext context) {
-        final PersistentDataContainer container = context.newPersistentDataContainer();
-
-        container.set(ITEM, DataType.ITEM_STACK, complex.getItemStack());
-        container.set(AMOUNT, DataType.INTEGER, complex.getAmount());
-        container.set(LIMIT, DataType.INTEGER, complex.getLimit());
-        container.set(UNSTACK, DataType.LONG, System.currentTimeMillis());
-        return container;
-    }
-
-    @Override
-    @Nonnull
-    public CardInstance fromPrimitive(@Nonnull PersistentDataContainer primitive, @Nonnull PersistentDataAdapterContext context) {
-        final int amount = primitive.get(AMOUNT, DataType.INTEGER);
-        final int limit = primitive.get(LIMIT, DataType.INTEGER);
-
+    @Nullable
+    public static CardInstance read(@Nonnull ItemMeta meta) {
+        if (!Pdc.hasInt(meta, AMOUNT)) {
+            return null;
+        }
+        final int amount = Pdc.getInt(meta, AMOUNT, 0);
+        final int limit = Pdc.getInt(meta, LIMIT, 0);
         return new CardInstance(null, amount, limit);
+    }
+
+    public static void store(@Nonnull ItemMeta meta, @Nonnull CardInstance instance) {
+        Pdc.setInt(meta, AMOUNT, instance.getAmount());
+        Pdc.setInt(meta, LIMIT, instance.getLimit());
     }
 }

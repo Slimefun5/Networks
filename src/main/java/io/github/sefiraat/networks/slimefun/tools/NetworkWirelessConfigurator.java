@@ -1,10 +1,10 @@
 package io.github.sefiraat.networks.slimefun.tools;
 
-import com.jeff_media.morepersistentdatatypes.DataType;
 import io.github.sefiraat.networks.slimefun.network.NetworkWirelessReceiver;
 import io.github.sefiraat.networks.slimefun.network.NetworkWirelessTransmitter;
 import io.github.sefiraat.networks.utils.Keys;
 import io.github.sefiraat.networks.utils.Theme;
+import io.github.sefiraat.networks.utils.datatypes.DataTypeMethods;
 import io.github.thebusybiscuit.slimefun5.api.events.PlayerRightClickEvent;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
@@ -12,12 +12,11 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.core.handlers.ItemUseHandler;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
-import io.github.thebusybiscuit.slimefun5.libraries.dough.data.persistent.PersistentDataAPI;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import org.bukkit.Location;
-import org.bukkit.NamespacedKey;
+import io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -46,9 +45,10 @@ public class NetworkWirelessConfigurator extends SlimefunItem {
                         final Block block = optional.get();
                         final SlimefunItem slimefunItem = BlockStorage.check(block);
                         if (Slimefun.getProtectionManager().hasPermission(player, block, Interaction.INTERACT_BLOCK)) {
-                            final ItemStack heldItem = player.getInventory().getItemInMainHand();
+                            final ItemStack heldItem = player.getInventory().getItemInHand();
                             final BlockMenu blockMenu = BlockStorage.getInventory(block);
-                            if (slimefunItem instanceof NetworkWirelessTransmitter transmitter && player.isSneaking()) {
+                            if (slimefunItem instanceof NetworkWirelessTransmitter && player.isSneaking()) {
+                                NetworkWirelessTransmitter transmitter = (NetworkWirelessTransmitter) slimefunItem;
                                 setTransmitter(transmitter, heldItem, blockMenu, player);
                             } else if (slimefunItem instanceof NetworkWirelessReceiver && !player.isSneaking()) {
                                 setReceiver(heldItem, blockMenu, player);
@@ -69,7 +69,7 @@ public class NetworkWirelessConfigurator extends SlimefunItem {
                                 @Nonnull Player player
     ) {
         final ItemMeta itemMeta = itemStack.getItemMeta();
-        final Location location = PersistentDataAPI.get(itemMeta, TARGET_LOCATION, DataType.LOCATION);
+        final Location location = DataTypeMethods.getLocation(itemMeta, TARGET_LOCATION.toString());
 
         if (location == null) {
             player.sendMessage(Theme.ERROR + "No Wireless Receiver has been set.");
@@ -88,7 +88,7 @@ public class NetworkWirelessConfigurator extends SlimefunItem {
     private void setReceiver(@Nonnull ItemStack itemStack, @Nonnull BlockMenu blockMenu, @Nonnull Player player) {
         final Location location = blockMenu.getLocation();
         final ItemMeta itemMeta = itemStack.getItemMeta();
-        PersistentDataAPI.set(itemMeta, TARGET_LOCATION, DataType.LOCATION, location);
+        DataTypeMethods.setLocation(itemMeta, TARGET_LOCATION.toString(), location);
         itemStack.setItemMeta(itemMeta);
         player.sendMessage(Theme.SUCCESS + "Wireless Receiver set.");
     }

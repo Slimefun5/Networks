@@ -9,7 +9,9 @@ import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
+import io.github.sefiraat.networks.utils.MaterialCompat;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.inventory.InvUtils;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
@@ -80,9 +82,10 @@ public class NetworkVanillaPusher extends NetworkDirectional {
 
         final BlockState blockState = targetBlock.getState();
 
-        if (!(blockState instanceof InventoryHolder holder)) {
+        if (!(blockState instanceof InventoryHolder)) {
             return;
         }
+        InventoryHolder holder = (InventoryHolder) blockState;
 
         final Inventory inventory = holder.getInventory();
         final ItemStack stack = blockMenu.getItemInSlot(INPUT_SLOT);
@@ -97,10 +100,10 @@ public class NetworkVanillaPusher extends NetworkDirectional {
         sendDebugMessage(block.getLocation(), "WildChests detected: " + wildChests);
         sendDebugMessage(block.getLocation(), "Block detected as chest: " + isChest);
 
-        if (inventory instanceof FurnaceInventory furnace) {
-            handleFurnace(stack, furnace);
-        } else if (inventory instanceof BrewerInventory brewer) {
-            handleBrewingStand(stack, brewer);
+        if (inventory instanceof FurnaceInventory) {
+            handleFurnace(stack, (FurnaceInventory) inventory);
+        } else if (inventory instanceof BrewerInventory) {
+            handleBrewingStand(stack, (BrewerInventory) inventory);
         } else if (wildChests && isChest) {
             sendDebugMessage(block.getLocation(), "WildChest test failed, escaping");
             return;
@@ -112,17 +115,17 @@ public class NetworkVanillaPusher extends NetworkDirectional {
     }
 
     private void handleFurnace(@Nonnull ItemStack stack, @Nonnull FurnaceInventory furnace) {
-        if (stack.getType().isFuel() && (furnace.getFuel() == null || furnace.getFuel().getType() == Material.AIR)) {
+        if (MaterialCompat.isFuel(stack.getType()) && (furnace.getFuel() == null || furnace.getFuel().getType() == Material.AIR)) {
             furnace.setFuel(stack.clone());
             stack.setAmount(0);
-        } else if (!stack.getType().isFuel() && (furnace.getSmelting() == null || furnace.getSmelting().getType() == Material.AIR)) {
+        } else if (!MaterialCompat.isFuel(stack.getType()) && (furnace.getSmelting() == null || furnace.getSmelting().getType() == Material.AIR)) {
             furnace.setSmelting(stack.clone());
             stack.setAmount(0);
         }
     }
 
     private void handleBrewingStand(@Nonnull ItemStack stack, @Nonnull BrewerInventory brewer) {
-        if (stack.getType() == Material.BLAZE_POWDER) {
+        if (stack.getType() == MaterialCompat.material(XMaterial.BLAZE_POWDER)) {
             if (brewer.getFuel() == null || brewer.getFuel().getType() == Material.AIR) {
                 brewer.setFuel(stack.clone());
                 stack.setAmount(0);
@@ -130,7 +133,7 @@ public class NetworkVanillaPusher extends NetworkDirectional {
                 brewer.setIngredient(stack.clone());
                 stack.setAmount(0);
             }
-        } else if (stack.getType() == Material.POTION) {
+        } else if (stack.getType() == MaterialCompat.material(XMaterial.POTION)) {
             for (int i = 0; i < 3; i++) {
                 final ItemStack stackInSlot = brewer.getContents()[i];
                 if (stackInSlot == null || stackInSlot.getType() == Material.AIR) {
@@ -194,8 +197,8 @@ public class NetworkVanillaPusher extends NetworkDirectional {
     }
 
     @Override
-    protected Particle.DustOptions getDustOptions() {
-        return new Particle.DustOptions(Color.MAROON, 1);
+    protected Color getDustColor() {
+        return Color.MAROON;
     }
 }
 

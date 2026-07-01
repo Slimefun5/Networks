@@ -1,0 +1,191 @@
+# pt-BR item translations for Networks. Auto-generated; name only.
+
+
+NTW_SYNTHETIC_EMERALD_SHARD:
+  name: "&bFragmento de Esmeralda Sintética"
+
+NTW_OPTIC_GLASS:
+  name: "&bVidro Óptico"
+
+NTW_OPTIC_CABLE:
+  name: "&bCabo Óptico"
+
+NTW_OPTIC_STAR:
+  name: "&bEstrela Óptica"
+
+NTW_RADIOACTIVE_OPTIC_STAR:
+  name: "&bEstrela Óptica Radioativa"
+
+NTW_SHRINKING_BASE:
+  name: "&bBase de Encolhimento"
+
+NTW_SIMPLE_NANOBOTS:
+  name: "&bNanobots Simples"
+
+NTW_ADVANCED_NANOBOTS:
+  name: "&bNanobots Avançados"
+
+NTW_AI_CORE:
+  name: "&bNúcleo de I.A."
+
+NTW_EMPOWERED_AI_CORE:
+  name: "&bNúcleo de I.A. Fortalecido"
+
+NTW_PRISTINE_AI_CORE:
+  name: "&bNúcleo de I.A. Imaculado"
+
+NTW_INTERDIMENSIONAL_PRESENCE:
+  name: "&bPresença Interdimensional"
+
+NTW_CONTROLLER:
+  name: "&3Controlador de Rede"
+
+NTW_BRIDGE:
+  name: "&3Ponte de Rede"
+
+NTW_MONITOR:
+  name: "&3Monitor de Rede"
+
+NTW_IMPORT:
+  name: "&3Importador de Rede"
+
+NTW_EXPORT:
+  name: "&3Exportador de Rede"
+
+NTW_GRABBER:
+  name: "&3Agarrador de Rede"
+
+NTW_PUSHER:
+  name: "&3Empurrador de Rede"
+
+NTW_CONTROL_X:
+  name: "&3Controle de Rede: X"
+
+NTW_CONTROL_V:
+  name: "&3Controle de Rede: V"
+
+NTW_VACUUM:
+  name: "&3Aspirador de Rede"
+
+NTW_VANILLA_GRABBER:
+  name: "&3Agarrador Vanilla de Rede"
+
+NTW_VANILLA_PUSHER:
+  name: "&3Empurrador Vanilla de Rede"
+
+NTW_NETWORK_WIRELESS_TRANSMITTER:
+  name: "&3Transmissor Sem Fio de Rede"
+
+NTW_NETWORK_WIRELESS_RECEIVER:
+  name: "&3Receptor Sem Fio de Rede"
+
+NTW_TRASH:
+  name: "&3Purgador de Rede"
+
+NTW_GRID:
+  name: "&3Grade de Rede"
+
+NTW_CRAFTING_GRID:
+  name: "&3Grade de Criação de Rede"
+
+NTW_CELL:
+  name: "&3Célula de Rede"
+
+NTW_GREEDY_BLOCK:
+  name: "&3Bloco Ganancioso de Rede"
+
+NTW_QUANTUM_WORKBENCH:
+  name: "&3Bancada Quântica de Rede"
+
+NTW_QUANTUM_STORAGE_1:
+  name: "&3Armazenamento Quântico de Rede (4K)"
+
+NTW_QUANTUM_STORAGE_2:
+  name: "&3Armazenamento Quântico de Rede (32K)"
+
+NTW_QUANTUM_STORAGE_3:
+  name: "&3Armazenamento Quântico de Rede (262K)"
+
+NTW_QUANTUM_STORAGE_4:
+  name: "&3Armazenamento Quântico de Rede (2M)"
+
+NTW_QUANTUM_STORAGE_5:
+  name: "&3Armazenamento Quântico de Rede (16M)"
+
+NTW_QUANTUM_STORAGE_6:
+  name: "&3Armazenamento Quântico de Rede (134M)"
+
+NTW_QUANTUM_STORAGE_7:
+  name: "&3Armazenamento Quântico de Rede (1B)"
+
+NTW_QUANTUM_STORAGE_8:
+  name: "&3Armazenamento Quântico de Rede (∞)"
+
+NTW_CAPACITOR_1:
+  name: "&3Capacitor de Rede (1)"
+
+NTW_CAPACITOR_2:
+  name: "&3Capacitor de Rede (2)"
+
+NTW_CAPACITOR_3:
+  name: "&3Capacitor de Rede (3)"
+
+NTW_CAPACITOR_4:
+  name: "&3Capacitor de Rede (4)"
+
+NTW_POWER_OUTLET_1:
+  name: "&3Tomada de Rede (1)"
+
+NTW_POWER_OUTLET_2:
+  name: "&3Tomada de Rede (2)"
+
+NTW_POWER_DISPLAY:
+  name: "&3Visor de Energia de Rede"
+
+NTW_RECIPE_ENCODER:
+  name: "&3Codificador de Receitas de Rede"
+
+NTW_AUTO_CRAFTER:
+  name: "&3Autocriador de Rede"
+
+NTW_AUTO_CRAFTER_WITHHOLDING:
+  name: "&3Autocriador de Rede (Retenção)"
+
+NTW_CRAFTING_BLUEPRINT:
+  name: "&5Projeto de Criação"
+
+NTW_PROBE:
+  name: "&5Sonda de Rede"
+
+NTW_REMOTE:
+  name: "&5Controle Remoto de Rede"
+
+NTW_REMOTE_EMPOWERED:
+  name: "&5Controle Remoto de Rede Fortalecido"
+
+NTW_REMOTE_PRISTINE:
+  name: "&5Controle Remoto de Rede Imaculado"
+
+NTW_REMOTE_ULTIMATE:
+  name: "&5Controle Remoto de Rede Supremo"
+
+NTW_CRAYON:
+  name: "&5Giz de Cera de Rede"
+
+NTW_CONFIGURATOR:
+  name: "&5Configurador de Rede"
+
+NTW_WIRELESS_CONFIGURATOR:
+  name: "&5Configurador Sem Fio de Rede"
+
+NTW_RAKE_1:
+  name: "&5Ancinho de Rede (1)"
+
+NTW_RAKE_2:
+  name: "&5Ancinho de Rede (2)"
+
+NTW_RAKE_3:
+  name: "&5Ancinho de Rede (3)"
+
+NTW_DEBUG_STICK:
+  name: "&5Bastão de Depuração de Rede"

@@ -1,81 +1,51 @@
 package io.github.sefiraat.networks.utils.datatypes;
 
-import io.github.thebusybiscuit.slimefun5.libraries.dough.data.persistent.PersistentDataAPI;
-import org.bukkit.NamespacedKey;
-import org.bukkit.persistence.PersistentDataContainer;
-import org.bukkit.persistence.PersistentDataHolder;
-import org.bukkit.persistence.PersistentDataType;
+import io.github.sefiraat.networks.compat.Pdc;
+import org.bukkit.Location;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
-import java.util.Optional;
 
-public class DataTypeMethods {
+/**
+ * Version-safe persistent-data helpers keyed by plain {@link String}s.
+ * <p>
+ * The legacy implementation routed through {@code org.bukkit.persistence.*} (1.14+) which the JVM verifier
+ * links at enable, breaking 1.8. Every value is now stored as a flat String-keyed entry through
+ * {@link PersistentDataAPI}, so no {@code org.bukkit.persistence.*} type appears in bytecode.
+ */
+public final class DataTypeMethods {
 
-    /**
-     * Get an object based on the provided {@link PersistentDataType} in a {@link PersistentDataContainer}, if the key doesn't exist it returns null.
-     *
-     * @param holder The {@link PersistentDataHolder} to retrieve the data from
-     * @param key    The key of the data to retrieve
-     * @return An object associated with this key or null if it doesn't exist
-     */
+    private DataTypeMethods() {}
+
+    public static void setItemStackArray(@Nonnull ItemMeta meta, @Nonnull String key, @Nullable ItemStack[] value) {
+        final String serialized = SerializationUtils.itemStackArrayToString(value);
+        if (serialized != null) {
+            Pdc.setString(meta, key, serialized);
+        }
+    }
+
     @Nullable
-    public static <T, Z> Z getCustom(@Nonnull PersistentDataHolder holder, @Nonnull NamespacedKey key, @Nonnull PersistentDataType<T, Z> type) {
-        return holder.getPersistentDataContainer().get(key, type);
+    public static ItemStack[] getItemStackArray(@Nonnull ItemMeta meta, @Nonnull String key) {
+        return SerializationUtils.itemStackArrayFromString(Pdc.getString(meta, key, null));
     }
 
-    /**
-     * This method returns an {@link Optional} describing the object defined by the {@link PersistentDataType}
-     * found under the given key. An empty {@link Optional} will be returned if no value has been found.
-     *
-     * @param holder The {@link PersistentDataHolder} to retrieve the data from
-     * @param key    The key of the data to retrieve
-     * @return An {@link Optional} describing the result
-     * @see PersistentDataAPI#getCustom(PersistentDataHolder, NamespacedKey, PersistentDataType)
-     */
-    @Nonnull
-    public static <T, Z> Optional<Z> getOptionalCustom(@Nonnull PersistentDataHolder holder, @Nonnull NamespacedKey key, @Nonnull PersistentDataType<T, Z> type) {
-        return Optional.ofNullable(getCustom(holder, key, type));
+    public static void setString(@Nonnull ItemMeta meta, @Nonnull String key, @Nonnull String value) {
+        Pdc.setString(meta, key, value);
     }
 
-    /**
-     * Get an object based on the provided {@link PersistentDataType} in a {@link PersistentDataContainer} or the default value if the key doesn't exist.
-     *
-     * @param holder     The {@link PersistentDataHolder} to retrieve the data from
-     * @param key        The key of the data to retrieve
-     * @param defaultVal The default value to use if no key is found
-     * @return The object associated with this key or the default value if it doesn't exist
-     */
-    public static <T, Z> Z getCustom(@Nonnull PersistentDataHolder holder, @Nonnull NamespacedKey key, @Nonnull PersistentDataType<T, Z> type, @Nonnull Z defaultVal) {
-        return holder.getPersistentDataContainer().getOrDefault(key, type, defaultVal);
+    @Nullable
+    public static String getString(@Nonnull ItemMeta meta, @Nonnull String key) {
+        return Pdc.getString(meta, key, null);
     }
 
-    /**
-     * Checks if the specified {@link PersistentDataHolder} has a {@link PersistentDataContainer} with the specified
-     * key.
-     *
-     * @param holder The {@link PersistentDataHolder} to check
-     * @param key    The key to check for
-     * @return {@code true} if the holder has a {@link PersistentDataContainer} with the specified key.
-     */
-    public static <T, Z> boolean hasCustom(@Nonnull PersistentDataHolder holder, @Nonnull NamespacedKey key, @Nonnull PersistentDataType<T, Z> type) {
-        return holder.getPersistentDataContainer().has(key, type);
+    public static void setLocation(@Nonnull ItemMeta meta, @Nonnull String key, @Nonnull Location value) {
+        Pdc.setString(meta, key, SerializationUtils.locationToString(value));
     }
 
-    /**
-     * Set a custom {@link PersistentDataType} in a {@link PersistentDataContainer}
-     *
-     * @param holder The {@link PersistentDataHolder} to add the data to
-     * @param key    The key of the data to set
-     * @param type   The {@link PersistentDataType} to be used.
-     * @param obj    The object to put in the container
-     */
-    public static <T, Z> void setCustom(@Nonnull PersistentDataHolder holder, @Nonnull NamespacedKey key, @Nonnull PersistentDataType<T, Z> type, @Nonnull Z obj) {
-        holder.getPersistentDataContainer().set(key, type, obj);
+    @Nullable
+    public static Location getLocation(@Nonnull ItemMeta meta, @Nonnull String key) {
+        return SerializationUtils.locationFromString(Pdc.getString(meta, key, null));
     }
 }
-
-
-
-
-

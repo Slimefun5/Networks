@@ -1,12 +1,12 @@
 package io.github.sefiraat.networks.slimefun.network;
 
-import dev.sefiraat.sefilib.misc.ParticleUtils;
-import dev.sefiraat.sefilib.world.LocationUtils;
-import io.github.bakedlibs.dough.blocks.BlockPosition;
+import io.github.thebusybiscuit.slimefun5.libraries.dough.blocks.BlockPosition;
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.Networks;
 import io.github.sefiraat.networks.network.NodeDefinition;
 import io.github.sefiraat.networks.network.NodeType;
+import io.github.sefiraat.networks.utils.MaterialCompat;
+import io.github.sefiraat.networks.utils.ParticleCompat;
 import io.github.sefiraat.networks.utils.Theme;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
@@ -15,12 +15,14 @@ import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.slimefun5.libraries.paperlib.PaperLib;
 import io.github.thebusybiscuit.slimefun5.libraries.paperlib.features.blockstatesnapshot.BlockStateSnapshotResult;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import org.bukkit.Bukkit;
 import org.bukkit.Color;
+import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.Particle;
@@ -53,11 +55,11 @@ public class NetworkControlX extends NetworkDirectional {
     private final Set<BlockPosition> blockCache = new HashSet<>();
 
     public static final ItemStack TEMPLATE_BACKGROUND_STACK = CustomItemStack.create(
-        Material.BLUE_STAINED_GLASS_PANE,
+        MaterialCompat.material(XMaterial.BLUE_STAINED_GLASS_PANE),
         Theme.PASSIVE + "Cut items matching template.",
         Theme.PASSIVE + "Leaving blank will cut anything"
     );
-    private static final Particle.DustOptions DUST_OPTIONS = new Particle.DustOptions(Color.GRAY, 1);
+    private static final Color DUST_COLOR = Color.GRAY;
 
     public NetworkControlX(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe, NodeType.CUTTER);
@@ -102,7 +104,7 @@ public class NetworkControlX extends NetworkDirectional {
 
         final Material material = targetBlock.getType();
 
-        if (material.getHardness() < 0 || material.isAir()) {
+        if (material.getHardness() < 0 || MaterialCompat.isAir(material)) {
             return;
         }
 
@@ -113,7 +115,7 @@ public class NetworkControlX extends NetworkDirectional {
         }
 
         final ItemStack templateStack = blockMenu.getItemInSlot(TEMPLATE_SLOT);
-        boolean mustMatch = templateStack != null && !templateStack.getType().isAir();
+        boolean mustMatch = templateStack != null && !MaterialCompat.isAir(templateStack.getType());
 
         if ((mustMatch && (targetBlock.getType() != templateStack.getType()))
             || (SlimefunItem.getByItem(templateStack) != null)
@@ -142,12 +144,8 @@ public class NetworkControlX extends NetworkDirectional {
                 }
 
                 targetBlock.setType(Material.AIR, true);
-                ParticleUtils.displayParticleRandomly(
-                    LocationUtils.centre(targetBlock.getLocation()),
-                    1,
-                    5,
-                    DUST_OPTIONS
-                );
+                Location centre = targetBlock.getLocation().clone().add(0.5, 0.5, 0.5);
+                ParticleCompat.spawnDust(centre, DUST_COLOR, 1);
                 definition.getNode().getRoot().removeRootPower(REQUIRED_POWER);
             });
         }
@@ -207,8 +205,8 @@ public class NetworkControlX extends NetworkDirectional {
     }
 
     @Override
-    protected Particle.DustOptions getDustOptions() {
-        return DUST_OPTIONS;
+    protected Color getDustColor() {
+        return DUST_COLOR;
     }
 }
 

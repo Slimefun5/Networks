@@ -5,6 +5,7 @@ import io.github.sefiraat.networks.network.GridItemRequest;
 import io.github.sefiraat.networks.network.NodeDefinition;
 import io.github.sefiraat.networks.network.SupportedRecipes;
 import io.github.sefiraat.networks.slimefun.NetworkSlimefunItems;
+import io.github.sefiraat.networks.utils.MaterialCompat;
 import io.github.sefiraat.networks.utils.Theme;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
@@ -13,6 +14,7 @@ import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.ItemUtils;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
@@ -51,7 +53,7 @@ public class NetworkCraftingGrid extends AbstractGrid {
     private static final int CRAFT_OUTPUT_SLOT = 43;
 
     private static final ItemStack CRAFT_BUTTON_STACK = CustomItemStack.create(
-        Material.CRAFTING_TABLE,
+        MaterialCompat.material(XMaterial.CRAFTING_TABLE),
         Theme.CLICK_INFO.getColor() + "Craft",
         Theme.CLICK_INFO + "Left Click: " + Theme.PASSIVE + "Try to Craft",
         Theme.CLICK_INFO + "Shift Left Click: " + Theme.PASSIVE + "Try to return items"
@@ -217,10 +219,7 @@ public class NetworkCraftingGrid extends AbstractGrid {
             }
         }
 
-        // If no slimefun recipe found, try a vanilla one
-        if (crafted == null) {
-            crafted = Bukkit.craftItem(inputs, player.getWorld(), player);
-        }
+        // vanilla craftItem() is 1.18+ — skip on legacy
 
         // If no item crafted OR result doesn't fit, escape
         if (crafted.getType() == Material.AIR || !menu.fits(crafted, CRAFT_OUTPUT_SLOT)) {
