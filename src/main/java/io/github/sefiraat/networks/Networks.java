@@ -16,13 +16,8 @@ import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.updater.BlobBuildUpdater;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
-<<<<<<< HEAD
-import org.bstats.charts.AdvancedPie;
-=======
->>>>>>> origin/experimental
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-import dev.walshy.sfmetrics.MetricsModule;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -54,8 +49,6 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
-        MetricsModule.setup(this, 31391);
-
         instance = this;
 
         // Startup banner intentionally omitted: Slimefun core logs every installed addon uniformly.
@@ -482,18 +475,7 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
     }
 
     public void setupMetrics() {
-<<<<<<< HEAD
-        final 
-        AdvancedPie networksChart = new AdvancedPie("networks", () -> {
-            Map<String, Integer> networksMap = new HashMap<>();
-            networksMap.put("Number of networks", NetworkController.getNetworks().size());
-            return networksMap;
-        });
-
-        metrics.addCustomChart(networksChart);
-=======
         // bStats removed for Java 8 / legacy compatibility
->>>>>>> origin/experimental
     }
 
     @Nonnull
