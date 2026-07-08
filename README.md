@@ -129,7 +129,7 @@ plugins {
 }
 
 dependencies {
-    "githubCompileOnly"("Slimefun5:Networks:v1.0.2.2")
+    "githubCompileOnly"("Slimefun5:Networks:v1.0.2.3")
 }
 ```
 
