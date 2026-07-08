@@ -58,9 +58,7 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
 
         instance = this;
 
-        getLogger().info("########################################");
-        getLogger().info("         Networks - By Sefiraat         ");
-        getLogger().info("########################################");
+        // Startup banner intentionally omitted: Slimefun core logs every installed addon uniformly.
 
         saveDefaultConfig();
         tryUpdate();

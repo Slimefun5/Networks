@@ -1,0 +1,617 @@
+# en item translations for Networks. Unified block-lore (name/type/description/stats/usage).
+
+NTW_SYNTHETIC_EMERALD_SHARD:
+  name: "&bSynthetic Emerald Shard"
+  type:
+    - "&7&oComponent"
+
+NTW_OPTIC_GLASS:
+  name: "&bOptic Glass"
+  type:
+    - "&7&oComponent"
+
+NTW_OPTIC_CABLE:
+  name: "&bOptic Cable"
+  type:
+    - "&7&oComponent"
+
+NTW_OPTIC_STAR:
+  name: "&bOptic Star"
+  type:
+    - "&7&oComponent"
+
+NTW_RADIOACTIVE_OPTIC_STAR:
+  name: "&bRadioactive Optic Star"
+  type:
+    - "&7&oComponent"
+
+NTW_SHRINKING_BASE:
+  name: "&bShrinking Base"
+  type:
+    - "&7&oComponent"
+
+NTW_SIMPLE_NANOBOTS:
+  name: "&bSimple Nanobots"
+  type:
+    - "&7&oComponent"
+
+NTW_ADVANCED_NANOBOTS:
+  name: "&bAdvanced Nanobots"
+  type:
+    - "&7&oComponent"
+
+NTW_AI_CORE:
+  name: "&bA.I. Core"
+  type:
+    - "&7&oComponent"
+
+NTW_EMPOWERED_AI_CORE:
+  name: "&bEmpowered A.I. Core"
+  type:
+    - "&7&oComponent"
+
+NTW_PRISTINE_AI_CORE:
+  name: "&bPristine A.I. Core"
+  type:
+    - "&7&oComponent"
+
+NTW_INTERDIMENSIONAL_PRESENCE:
+  name: "&bInterdimensional Presence"
+  type:
+    - "&7&oComponent"
+
+NTW_CONTROLLER:
+  name: "&3Network Controller"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Controller is the brain"
+    - "&7for the whole network."
+  stats:
+    - "&7Limit: &eMax 1&7 per network"
+
+NTW_BRIDGE:
+  name: "&3Network Bridge"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Bridge allows you to cheaply"
+    - "&7connect network objects together."
+
+NTW_MONITOR:
+  name: "&3Network Monitor"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Monitor allows simple"
+    - "&7import/export interaction with adjacent"
+    - "&7objects."
+    - "&7Currently Supports:"
+    - "&7Infinity Barrels"
+    - "&7Network Shells"
+
+NTW_IMPORT:
+  name: "&3Network Importer"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Importer brings any"
+    - "&7item inside it into the network."
+    - "&7Accepts items in from cargo."
+  stats:
+    - "&7Import Rate: &eUp to 9 stacks&7/tick"
+
+NTW_EXPORT:
+  name: "&3Network Exporter"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Exporter can be set to"
+    - "&7constantly export 1 stack of any"
+    - "&7given item."
+    - "&7Accepts item withdrawal from cargo."
+
+NTW_GRABBER:
+  name: "&3Network Grabber"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Grabber will try"
+    - "&7to grab the first item it finds"
+    - "&7from within the selected machine."
+
+NTW_PUSHER:
+  name: "&3Network Pusher"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Pusher will try"
+    - "&7to push a matching item from a"
+    - "&7given item into the chosen machine."
+
+NTW_CONTROL_X:
+  name: "&3Network Control: X"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Control: X will try"
+    - "&7to 'cut' a block out of the world"
+    - "&7and put it into the Network."
+    - "&7Only works on Vanilla blocks without"
+    - "&7inventories."
+  stats:
+    - "&7Network Drain: &e100&7/cut"
+
+NTW_CONTROL_V:
+  name: "&3Network Control: V"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Control: V will try"
+    - "&7to 'paste' a block from the Network"
+    - "&7into the world."
+    - "&7Only works with Vanilla blocks."
+  stats:
+    - "&7Network Drain: &e100&7/paste"
+
+NTW_VACUUM:
+  name: "&3Network Vacuum"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Vacuum will suck"
+    - "&7items into itself within a"
+    - "&74 x 4 range centered on itself."
+    - "&7Vacuumed items will try to push"
+    - "&7into the Network."
+  stats:
+    - "&7Network Drain: &e100&7/tick"
+
+NTW_VANILLA_GRABBER:
+  name: "&3Network Vanilla Grabber"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Vanilla Pusher will try"
+    - "&7to grab the first possible item from"
+    - "&7the chosen vanilla inventory."
+    - "&7You need to grab items from this"
+    - "&7node using a Grabber."
+
+NTW_VANILLA_PUSHER:
+  name: "&3Network Vanilla Pusher"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Vanilla Pusher will try"
+    - "&7to push any item inside itself into"
+    - "&7the chosen vanilla inventory."
+    - "&7You need to push items into this"
+    - "&7node from a Pusher."
+
+NTW_NETWORK_WIRELESS_TRANSMITTER:
+  name: "&3Network Wireless Transmitter"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Wireless Transmitter will"
+    - "&7try to transmit any item inside itself"
+    - "&7to a linked Network Wireless Receiver"
+    - "&7located within the same world."
+    - "&7Use the Wireless Configurator to"
+    - "&7setup the Wireless Transmitter."
+  stats:
+    - "&7Requires 500 Network Power per transfer."
+
+NTW_NETWORK_WIRELESS_RECEIVER:
+  name: "&3Network Wireless Receiver"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Wireless Receiver is"
+    - "&7able to receive items from a linked"
+    - "&7wireless transmitter located within"
+    - "&7the same world."
+    - "&7It will try to push received items"
+    - "&7into the Network each tick."
+
+NTW_TRASH:
+  name: "&3Network Purger"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Purger will pull"
+    - "&7matching items from the network"
+    - "&7and instantly void them."
+    - "&7Use with great care!"
+
+NTW_GRID:
+  name: "&3Network Grid"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Grid shows you all"
+    - "&7the items you have in the network"
+    - "&7and lets you insert or withdraw"
+    - "&7directly."
+
+NTW_CRAFTING_GRID:
+  name: "&3Network Crafting Grid"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Crafting Grid acts"
+    - "&7like a normal grid but displays less"
+    - "&7items but allows crafting using items"
+    - "&7directly from the network."
+
+NTW_CELL:
+  name: "&3Network Cell"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Cell is a large"
+    - "&7(double chest) inventory that can"
+    - "&7be accessed both from the network"
+    - "&7and in the world."
+
+NTW_GREEDY_BLOCK:
+  name: "&3Network Greedy Block"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Greedy Block can"
+    - "&7be set to one item which it will"
+    - "&7then greedily hold on to a single"
+    - "&7stack of. If more incoming items"
+    - "&7do not fit, they will not enter"
+    - "&7the network."
+
+NTW_QUANTUM_WORKBENCH:
+  name: "&3Network Quantum Workbench"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Allows the crafting of Quantum Storages."
+
+NTW_QUANTUM_STORAGE_1:
+  name: "&3Network Quantum Storage (4K)"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Stores items in mass quantities within"
+    - "&7a quantum singularity."
+  stats:
+    - "&7Stores &e4096&7 items"
+
+NTW_QUANTUM_STORAGE_2:
+  name: "&3Network Quantum Storage (32K)"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Stores items in mass quantities within"
+    - "&7a quantum singularity."
+  stats:
+    - "&7Stores &e32768&7 items"
+
+NTW_QUANTUM_STORAGE_3:
+  name: "&3Network Quantum Storage (262K)"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Stores items in mass quantities within"
+    - "&7a quantum singularity."
+  stats:
+    - "&7Stores &e262144&7 items"
+
+NTW_QUANTUM_STORAGE_4:
+  name: "&3Network Quantum Storage (2M)"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Stores items in mass quantities within"
+    - "&7a quantum singularity."
+  stats:
+    - "&7Stores &e2097152&7 items"
+
+NTW_QUANTUM_STORAGE_5:
+  name: "&3Network Quantum Storage (16M)"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Stores items in mass quantities within"
+    - "&7a quantum singularity."
+  stats:
+    - "&7Stores &e16777216&7 items"
+
+NTW_QUANTUM_STORAGE_6:
+  name: "&3Network Quantum Storage (134M)"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Stores items in mass quantities within"
+    - "&7a quantum singularity."
+  stats:
+    - "&7Stores &e134217728&7 items"
+
+NTW_QUANTUM_STORAGE_7:
+  name: "&3Network Quantum Storage (1B)"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Stores items in mass quantities within"
+    - "&7a quantum singularity."
+  stats:
+    - "&7Stores &e1073741824&7 items"
+
+NTW_QUANTUM_STORAGE_8:
+  name: "&3Network Quantum Storage (∞)"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Stores items in mass quantities within"
+    - "&7a quantum singularity."
+  stats:
+    - "&7Stores &e∞&7 items... almost"
+
+NTW_CAPACITOR_1:
+  name: "&3Network Capacitor (1)"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Capacitor can take"
+    - "&7power in and store it for use"
+    - "&7within the network."
+  stats:
+    - "&7Capacity: &e1000"
+
+NTW_CAPACITOR_2:
+  name: "&3Network Capacitor (2)"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Capacitor can take"
+    - "&7power in and store it for use"
+    - "&7within the network."
+  stats:
+    - "&7Capacity: &e10000"
+
+NTW_CAPACITOR_3:
+  name: "&3Network Capacitor (3)"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Capacitor can take"
+    - "&7power in and store it for use"
+    - "&7within the network."
+  stats:
+    - "&7Capacity: &e100000"
+
+NTW_CAPACITOR_4:
+  name: "&3Network Capacitor (4)"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Capacitor can take"
+    - "&7power in and store it for use"
+    - "&7within the network."
+  stats:
+    - "&7Capacity: &e1000000"
+
+NTW_POWER_OUTLET_1:
+  name: "&3Network Power Outlet (1)"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Capacitor can take"
+    - "&7power from the Network to power"
+    - "&7machines or feed back into an"
+    - "&7EnergyNet network."
+  stats:
+    - "&7Operates at a 20% loss rate."
+    - "&7Max Transfer: &e500"
+
+NTW_POWER_OUTLET_2:
+  name: "&3Network Power Outlet (2)"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Capacitor can take"
+    - "&7power from the Network to power"
+    - "&7machines or feed back into an"
+    - "&7EnergyNet network."
+  stats:
+    - "&7Operates at a 20% loss rate."
+    - "&7Max Transfer: &e2000"
+
+NTW_POWER_DISPLAY:
+  name: "&3Network Power Display"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Power Display will"
+    - "&7display the power in the network."
+    - "&7Simple, right?"
+
+NTW_RECIPE_ENCODER:
+  name: "&3Network Recipe Encoder"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Used to form a Crafting Blueprint"
+    - "&7from input items."
+  stats:
+    - "&7Network Drain: &e20000&7/encode"
+
+NTW_AUTO_CRAFTER:
+  name: "&3Network Auto Crafter"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Auto Crafter accepts"
+    - "&7a crafting blueprint. When the"
+    - "&7blueprint output item is requested"
+    - "&7while there is none in the network"
+    - "&7it will be crafted if you have"
+    - "&7materials."
+  stats:
+    - "&7Network Drain: &e64&7/craft"
+
+NTW_AUTO_CRAFTER_WITHHOLDING:
+  name: "&3Network Auto Crafter (Withholding)"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Auto Crafter accepts"
+    - "&7a crafting blueprint. When the"
+    - "&7blueprint output item is requested"
+    - "&7while there is none in the network"
+    - "&7it will be crafted if you have"
+    - "&7materials."
+    - "&7A Withholding Crafter will keep"
+    - "&7a stack in the output and stop"
+    - "&7crafting. The stack can been seen"
+    - "&7in the Network and also allows for"
+    - "&7cargo."
+  stats:
+    - "&7Network Drain: &e128&7/craft"
+
+NTW_CRAFTING_BLUEPRINT:
+  name: "&5Crafting Blueprint"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7A blank blueprint that can"
+    - "&7be used to store a crafting"
+    - "&7recipe."
+
+NTW_PROBE:
+  name: "&5Network Probe"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7Reveals a summary of a Network,"
+    - "&7including its power, item counts"
+    - "&7and node totals."
+  usage:
+    - "&eRight Click&7 a Network Controller to view the summary."
+
+NTW_REMOTE:
+  name: "&5Network Remote"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7Opens a bound grid wirelessly."
+    - "&7The grid must be chunk loaded."
+  stats:
+    - "&7Range: &e150"
+
+NTW_REMOTE_EMPOWERED:
+  name: "&5Network Remote Empowered"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7Opens a bound grid wirelessly."
+    - "&7The grid must be chunk loaded."
+  stats:
+    - "&7Range: &e500"
+
+NTW_REMOTE_PRISTINE:
+  name: "&5Network Remote Pristine"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7Opens a bound grid wirelessly."
+    - "&7The grid must be chunk loaded."
+  stats:
+    - "&7Range: &eUnlimited"
+
+NTW_REMOTE_ULTIMATE:
+  name: "&5Network Remote Ultimate"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7Opens a bound grid wirelessly."
+    - "&7The grid must be chunk loaded."
+  stats:
+    - "&7Range: &eCross Dimensional"
+
+NTW_CRAYON:
+  name: "&5Network Crayon"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7Toggles a network-wide debug particle"
+    - "&7display, visualizing node activity"
+    - "&7as it works."
+  usage:
+    - "&eRight Click&7 a Network Controller to toggle particle display."
+
+NTW_CONFIGURATOR:
+  name: "&5Network Configurator"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7Used to copy and paste the"
+    - "&7configurations of directional"
+    - "&7interfaces."
+  usage:
+    - "&eRight Click&7: Apply Config"
+    - "&eShift Right Click&7: Store Config"
+
+NTW_WIRELESS_CONFIGURATOR:
+  name: "&5Network Wireless Configurator"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7Used to store a Receiver location"
+    - "&7and then to apply to a Transmitter."
+  usage:
+    - "&eRight Click&7: Store Receiver Location"
+    - "&eShift Right Click&7: Set Location to Transmitter"
+
+NTW_RAKE_1:
+  name: "&5Network Rake (1)"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7A handheld tool for quickly dismantling"
+    - "&7Network Objects without machinery."
+  stats:
+    - "&e250 Uses &7left"
+  usage:
+    - "&eRight Click&7 a Network Object to break it instantly."
+
+NTW_RAKE_2:
+  name: "&5Network Rake (2)"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7A handheld tool for quickly dismantling"
+    - "&7Network Objects without machinery."
+  stats:
+    - "&e1000 Uses &7left"
+  usage:
+    - "&eRight Click&7 a Network Object to break it instantly."
+
+NTW_RAKE_3:
+  name: "&5Network Rake (3)"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7A handheld tool for quickly dismantling"
+    - "&7Network Objects without machinery."
+  stats:
+    - "&e9999 Uses &7left"
+  usage:
+    - "&eRight Click&7 a Network Object to break it instantly."
+
+NTW_DEBUG_STICK:
+  name: "&5Network Debug Stick"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7An operator-only diagnostic tool used"
+    - "&7to debug the behavior of Network blocks."
+  usage:
+    - "&eRight Click&7 a Network Object to turn on debugging."

@@ -86,6 +86,20 @@ public enum Theme {
      * @param lore      The lore lines for the {@link SlimefunItemStack}. Lore is book-ended with empty strings.
      * @return Returns the new {@link SlimefunItemStack}
      */
+    /**
+     * Gets an id-only {@link SlimefunItemStack}. Name/lore are resolved from the addon's
+     * {@code languages/en/items.yml} at runtime instead of being hardcoded here.
+     *
+     * @param id        The ID for the new {@link SlimefunItemStack}
+     * @param itemStack The vanilla {@link ItemStack} used to base the {@link SlimefunItemStack} on
+     * @return Returns the new {@link SlimefunItemStack}
+     */
+    @Nonnull
+    @ParametersAreNonnullByDefault
+    public static SlimefunItemStack themedSlimefunItemStack(String id, ItemStack itemStack) {
+        return new SlimefunItemStack(id, itemStack);
+    }
+
     @Nonnull
     @ParametersAreNonnullByDefault
     public static SlimefunItemStack themedSlimefunItemStack(String id, ItemStack itemStack, Theme themeType, String name, String... lore) {
