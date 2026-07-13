@@ -54,11 +54,16 @@ public class NetworkGrabber extends NetworkDirectional {
             final ItemStack itemStack = targetMenu.getItemInSlot(slot);
 
             if (itemStack != null && itemStack.getType() != Material.AIR) {
-                int before = itemStack.getAmount();
-                definition.getNode().getRoot().addItemStack(itemStack);
-                if (definition.getNode().getRoot().isDisplayParticles() && itemStack.getAmount() < before) {
-                    showParticle(blockMenu.getLocation(), direction);
-                }
+                // addItemStack decrements the foreign source stack (a player-viewable inventory) off the
+                // async network thread. Run it on the main thread while that inventory is watched so the
+                // decrement can't race the viewer's clicks; inline otherwise (async fast path).
+                BlockStorage.mutateInventorySafely(() -> {
+                    int before = itemStack.getAmount();
+                    definition.getNode().getRoot().addItemStack(itemStack);
+                    if (definition.getNode().getRoot().isDisplayParticles() && itemStack.getAmount() < before) {
+                        showParticle(blockMenu.getLocation(), direction);
+                    }
+                }, targetMenu.getLocation());
                 break;
             }
         }
