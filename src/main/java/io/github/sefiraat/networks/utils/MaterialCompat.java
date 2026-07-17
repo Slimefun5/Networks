@@ -1,10 +1,14 @@
 package io.github.sefiraat.networks.utils;
 
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
+import org.bukkit.World;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 /**
  * Version-safe {@link Material} helpers for APIs added after Minecraft 1.8.8.
@@ -132,6 +136,37 @@ public final class MaterialCompat {
         }
         try {
             return (Boolean) method.invoke(material);
+        } catch (Throwable ignored) {
+            return null;
+        }
+    }
+
+    // Bukkit#craftItem(ItemStack[], World, Player) is 1.18+; resolve reflectively so this class still
+    // links on 1.8-1.17 servers where the method is absent (NoSuchMethodError otherwise).
+    private static final java.lang.reflect.Method CRAFT_ITEM_METHOD = resolveCraftItemMethod();
+
+    private static java.lang.reflect.Method resolveCraftItemMethod() {
+        try {
+            return Bukkit.class.getMethod("craftItem", ItemStack[].class, World.class, Player.class);
+        } catch (Throwable ignored) {
+            return null;
+        }
+    }
+
+    /**
+     * Version-safe replacement for {@code Bukkit#craftItem(ItemStack[], World, Player)} (added in
+     * Minecraft 1.18), used to resolve vanilla crafting-grid recipes that Slimefun itself doesn't
+     * know about. On servers where the method doesn't exist (pre-1.18) this returns {@code null}
+     * instead of throwing, so callers should treat a {@code null} result as "no vanilla fallback
+     * available here" rather than "not a valid recipe".
+     */
+    @Nullable
+    public static ItemStack craftVanillaResult(@Nonnull ItemStack[] matrix, @Nonnull World world, @Nonnull Player player) {
+        if (CRAFT_ITEM_METHOD == null) {
+            return null;
+        }
+        try {
+            return (ItemStack) CRAFT_ITEM_METHOD.invoke(null, matrix, world, player);
         } catch (Throwable ignored) {
             return null;
         }
