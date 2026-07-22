@@ -9,15 +9,23 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 public class DummyItemGroup extends ItemGroup {
 
+    private final boolean hidden;
+
     @ParametersAreNonnullByDefault
     public DummyItemGroup(NamespacedKey key, ItemStack item) {
+        this(key, item, true);
+    }
+
+    @ParametersAreNonnullByDefault
+    public DummyItemGroup(NamespacedKey key, ItemStack item, boolean hidden) {
         super(key, item);
+        this.hidden = hidden;
     }
 
     @Override
     @ParametersAreNonnullByDefault
     public boolean isHidden(Player p) {
-        return true;
+        return hidden;
     }
 
 }
