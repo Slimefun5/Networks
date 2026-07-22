@@ -37,6 +37,7 @@ import io.github.sefiraat.networks.slimefun.tools.NetworkRemote;
 import io.github.sefiraat.networks.slimefun.tools.NetworkWirelessConfigurator;
 import io.github.sefiraat.networks.utils.MaterialCompat;
 import io.github.sefiraat.networks.utils.StackUtils;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun5.implementation.items.blocks.UnplaceableBlock;
@@ -834,8 +835,40 @@ public class NetworkSlimefunItems {
         );
     }
 
+    private static void categorize(String guideType, SlimefunItem... items) {
+        for (SlimefunItem item : items) {
+            item.setGuideType(guideType);
+        }
+    }
+
     public static void setup() {
         Networks plugin = Networks.getInstance();
+
+        // Declare categorized-guide types. Capacitors (EnergyNetComponent) auto-classify, so are left unset.
+        categorize("resources",
+            SYNTHETIC_EMERALD_SHARD, OPTIC_GLASS, OPTIC_CABLE, OPTIC_STAR, RADIOACTIVE_OPTIC_STAR,
+            SHRINKING_BASE, SIMPLE_NANOBOTS, ADVANCED_NANOBOTS, AI_CORE, EMPOWERED_AI_CORE,
+            PRISTINE_AI_CORE, INTERDIMENSIONAL_PRESENCE
+        );
+        categorize("tools",
+            CRAFTING_BLUEPRINT, NETWORK_PROBE, NETWORK_REMOTE, NETWORK_REMOTE_EMPOWERED,
+            NETWORK_REMOTE_PRISTINE, NETWORK_REMOTE_ULTIMATE, NETWORK_CRAYON, NETWORK_CONFIGURATOR,
+            NETWORK_WIRELESS_CONFIGURATOR, NETWORK_RAKE_1, NETWORK_RAKE_2, NETWORK_RAKE_3
+        );
+        categorize("energy_tech",
+            NETWORK_POWER_OUTLET_1, NETWORK_POWER_OUTLET_2, NETWORK_POWER_DISPLAY
+        );
+        categorize("logistics",
+            NETWORK_CONTROLLER, NETWORK_BRIDGE, NETWORK_MONITOR, NETWORK_IMPORT, NETWORK_EXPORT,
+            NETWORK_GRABBER, NETWORK_PUSHER, NETWORK_CONTROL_X, NETWORK_CONTROL_V, NETWORK_VACUUM,
+            NETWORK_VANILLA_GRABBER, NETWORK_VANILLA_PUSHER, NETWORK_WIRELESS_TRANSMITTER,
+            NETWORK_WIRELESS_RECEIVER, NETWORK_PURGER, NETWORK_GRID, NETWORK_CRAFTING_GRID,
+            NETWORK_CELL, NETWORK_GREEDY_BLOCK, NETWORK_RECIPE_ENCODER, NETWORK_AUTO_CRAFTER,
+            NETWORK_AUTO_CRAFTER_WITHHOLDING, NETWORK_QUANTUM_WORKBENCH,
+            NETWORK_QUANTUM_STORAGE_1, NETWORK_QUANTUM_STORAGE_2, NETWORK_QUANTUM_STORAGE_3,
+            NETWORK_QUANTUM_STORAGE_4, NETWORK_QUANTUM_STORAGE_5, NETWORK_QUANTUM_STORAGE_6,
+            NETWORK_QUANTUM_STORAGE_7, NETWORK_QUANTUM_STORAGE_8
+        );
 
         SYNTHETIC_EMERALD_SHARD.register(plugin);
         OPTIC_GLASS.register(plugin);
