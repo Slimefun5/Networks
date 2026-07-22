@@ -253,7 +253,10 @@ public abstract class NetworkDirectional extends NetworkObject {
         if (targetMenu != null) {
             final Location location = targetMenu.getLocation();
             final SlimefunItem item = BlockStorage.check(location);
-            if (item.canUse(player, true)
+            // Null-guard the target block: a menu can exist for a block that is not a SlimefunItem, and
+            // dereferencing item#canUse then threw an NPE (the Networks-Exp monitor-duplication fix).
+            if (item != null
+                && item.canUse(player, true)
                 && Slimefun.getProtectionManager().hasPermission(player, blockMenu.getLocation(), Interaction.INTERACT_BLOCK)
             ) {
                 targetMenu.open(player);
