@@ -27,7 +27,9 @@ import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
 import org.bukkit.Location;
+import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ClickAction;
 import org.bukkit.Material;
+import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
@@ -63,6 +65,24 @@ public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveIt
     public static final int ITEM_SLOT = 4;
     public static final int ITEM_SET_SLOT = 13;
     public static final int OUTPUT_SLOT = 7;
+    // Repurpose two background slots (part of BACKGROUND_SLOTS) as quick deposit / extract buttons.
+    public static final int QUICK_DEPOSIT_SLOT = 16;
+    public static final int QUICK_EXTRACT_SLOT = 17;
+
+    private static final ItemStack QUICK_DEPOSIT = CustomItemStack.create(
+        MaterialCompat.material(XMaterial.PINK_STAINED_GLASS_PANE),
+        Theme.CLICK_INFO + "Quick Deposit",
+        Theme.PASSIVE + "Click to deposit every matching item",
+        Theme.PASSIVE + "from your inventory into storage."
+    );
+
+    private static final ItemStack QUICK_EXTRACT = CustomItemStack.create(
+        MaterialCompat.material(XMaterial.RED_STAINED_GLASS_PANE),
+        Theme.CLICK_INFO + "Quick Extract",
+        Theme.PASSIVE + "Left click: fill your inventory",
+        Theme.PASSIVE + "Right click: take out 1",
+        Theme.PASSIVE + "Shift + right click: take out 64"
+    );
 
     private static final ItemStack BACK_INPUT = CustomItemStack.create(
         MaterialCompat.material(XMaterial.GREEN_STAINED_GLASS_PANE),
@@ -218,6 +238,92 @@ public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveIt
         CACHES.put(blockMenu.getLocation(), cache);
     }
 
+    /** Quick Deposit: pulls every matching item from the player's inventory into storage (up to capacity). */
+    private void quickDeposit(@Nonnull BlockMenu blockMenu, @Nonnull Player player) {
+        final QuantumCache cache = CACHES.get(blockMenu.getLocation());
+
+        if (cache == null || cache.getItemStack() == null) {
+            return;
+        }
+
+        final PlayerInventory inventory = player.getInventory();
+        final ItemStack[] contents = inventory.getContents();
+
+        for (int i = 0; i < contents.length; i++) {
+            final ItemStack item = contents[i];
+
+            if (item == null || item.getType() == Material.AIR || !StackUtils.itemsMatch(cache, item, true)) {
+                continue;
+            }
+
+            final int space = cache.getLimit() - cache.getAmount();
+
+            if (space <= 0) {
+                break;
+            }
+
+            final int toAdd = Math.min(item.getAmount(), space);
+
+            if (toAdd > 0) {
+                cache.increaseAmount(toAdd);
+                item.setAmount(item.getAmount() - toAdd);
+
+                if (item.getAmount() <= 0) {
+                    inventory.setItem(i, null);
+                }
+            }
+        }
+
+        updateDisplayItem(blockMenu, cache);
+        syncBlock(blockMenu.getLocation(), cache);
+        CACHES.put(blockMenu.getLocation(), cache);
+    }
+
+    /** Quick Extract: left click fills the inventory, right click takes 1, shift + right click takes 64. */
+    private void quickExtract(@Nonnull BlockMenu blockMenu, @Nonnull Player player, @Nonnull ClickAction action) {
+        final QuantumCache cache = CACHES.get(blockMenu.getLocation());
+
+        if (cache == null || cache.getItemStack() == null || cache.getAmount() <= 0) {
+            return;
+        }
+
+        if (action.isRightClicked()) {
+            final ItemStack extracted = cache.withdrawItem(action.isShiftClicked() ? 64 : 1);
+
+            if (extracted != null && extracted.getType() != Material.AIR) {
+                giveOrDrop(player, extracted);
+            }
+        } else {
+            final ItemStack stored = cache.getItemStack();
+            final int maxStack = stored.getMaxStackSize();
+            final PlayerInventory inventory = player.getInventory();
+            final ItemStack[] contents = inventory.getStorageContents();
+
+            for (int i = 0; i < contents.length && cache.getAmount() > 0; i++) {
+                if (contents[i] == null || contents[i].getType() == Material.AIR) {
+                    final int amount = Math.min(cache.getAmount(), maxStack);
+                    final ItemStack give = stored.clone();
+                    give.setAmount(amount);
+                    contents[i] = give;
+                    cache.reduceAmount(amount);
+                }
+            }
+
+            inventory.setStorageContents(contents);
+        }
+
+        updateDisplayItem(blockMenu, cache);
+        syncBlock(blockMenu.getLocation(), cache);
+        CACHES.put(blockMenu.getLocation(), cache);
+    }
+
+    /** Adds the item to the player's inventory, dropping any overflow at their feet. */
+    private void giveOrDrop(@Nonnull Player player, @Nonnull ItemStack item) {
+        for (ItemStack rest : player.getInventory().addItem(item).values()) {
+            player.getWorld().dropItemNaturally(player.getLocation(), rest);
+        }
+    }
+
     @Override
     public void postRegister() {
         new BlockMenuPreset(this.getId(), this.getItemName()) {
@@ -261,6 +367,18 @@ public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveIt
                     } else {
                         setItem(menu, p);
                     }
+                    return false;
+                });
+
+                // Quick deposit / extract buttons (repurposed background slots).
+                menu.replaceExistingItem(QUICK_DEPOSIT_SLOT, QUICK_DEPOSIT);
+                menu.addMenuClickHandler(QUICK_DEPOSIT_SLOT, (p, slot, item, action) -> {
+                    quickDeposit(menu, p);
+                    return false;
+                });
+                menu.replaceExistingItem(QUICK_EXTRACT_SLOT, QUICK_EXTRACT);
+                menu.addMenuClickHandler(QUICK_EXTRACT_SLOT, (p, slot, item, action) -> {
+                    quickExtract(menu, p, action);
                     return false;
                 });
 
