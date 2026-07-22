@@ -17,6 +17,7 @@ import io.github.sefiraat.networks.slimefun.network.NetworkPowerDisplay;
 import io.github.sefiraat.networks.slimefun.network.NetworkPowerNode;
 import io.github.sefiraat.networks.slimefun.network.NetworkPowerOutlet;
 import io.github.sefiraat.networks.slimefun.network.NetworkPurger;
+import io.github.sefiraat.networks.slimefun.network.NetworkBestPusher;
 import io.github.sefiraat.networks.slimefun.network.NetworkPusher;
 import io.github.sefiraat.networks.slimefun.network.NetworkQuantumStorage;
 import io.github.sefiraat.networks.slimefun.network.NetworkQuantumWorkbench;
@@ -68,6 +69,7 @@ public class NetworkSlimefunItems {
     public static final NetworkExport NETWORK_EXPORT;
     public static final NetworkGrabber NETWORK_GRABBER;
     public static final NetworkPusher NETWORK_PUSHER;
+    public static final NetworkBestPusher NETWORK_BEST_PUSHER;
     public static final NetworkControlX NETWORK_CONTROL_X;
     public static final NetworkControlV NETWORK_CONTROL_V;
     public static final NetworkVacuum NETWORK_VACUUM;
@@ -325,6 +327,17 @@ public class NetworkSlimefunItems {
             new ItemStack[]{
                 OPTIC_GLASS.getItem(), OPTIC_CABLE.getItem(), OPTIC_GLASS.getItem(),
                 OPTIC_CABLE.getItem(), NETWORK_EXPORT.getItem(), OPTIC_CABLE.getItem(),
+                OPTIC_GLASS.getItem(), OPTIC_CABLE.getItem(), OPTIC_GLASS.getItem(),
+            }
+        );
+
+        NETWORK_BEST_PUSHER = new NetworkBestPusher(
+            NetworksItemGroups.NETWORK_ITEMS,
+            NetworksSlimefunItemStacks.NETWORK_BEST_PUSHER,
+            RecipeType.ENHANCED_CRAFTING_TABLE,
+            new ItemStack[]{
+                NetworksSlimefunItemStacks.NETWORK_PUSHER.item(), OPTIC_CABLE.getItem(), NetworksSlimefunItemStacks.NETWORK_PUSHER.item(),
+                OPTIC_CABLE.getItem(), NetworksSlimefunItemStacks.NETWORK_PUSHER.item(), OPTIC_CABLE.getItem(),
                 OPTIC_GLASS.getItem(), OPTIC_CABLE.getItem(), OPTIC_GLASS.getItem(),
             }
         );
@@ -860,7 +873,7 @@ public class NetworkSlimefunItems {
         );
         categorize("logistics",
             NETWORK_CONTROLLER, NETWORK_BRIDGE, NETWORK_MONITOR, NETWORK_IMPORT, NETWORK_EXPORT,
-            NETWORK_GRABBER, NETWORK_PUSHER, NETWORK_CONTROL_X, NETWORK_CONTROL_V, NETWORK_VACUUM,
+            NETWORK_GRABBER, NETWORK_PUSHER, NETWORK_BEST_PUSHER, NETWORK_CONTROL_X, NETWORK_CONTROL_V, NETWORK_VACUUM,
             NETWORK_VANILLA_GRABBER, NETWORK_VANILLA_PUSHER, NETWORK_WIRELESS_TRANSMITTER,
             NETWORK_WIRELESS_RECEIVER, NETWORK_PURGER, NETWORK_GRID, NETWORK_CRAFTING_GRID,
             NETWORK_CELL, NETWORK_GREEDY_BLOCK, NETWORK_RECIPE_ENCODER, NETWORK_AUTO_CRAFTER,
@@ -890,6 +903,7 @@ public class NetworkSlimefunItems {
         NETWORK_EXPORT.register(plugin);
         NETWORK_GRABBER.register(plugin);
         NETWORK_PUSHER.register(plugin);
+        NETWORK_BEST_PUSHER.register(plugin);
         NETWORK_CONTROL_X.register(plugin);
         NETWORK_CONTROL_V.register(plugin);
         NETWORK_VACUUM.register(plugin);

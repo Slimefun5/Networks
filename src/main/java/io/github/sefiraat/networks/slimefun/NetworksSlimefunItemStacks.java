@@ -41,6 +41,7 @@ public class NetworksSlimefunItemStacks {
     public static final SlimefunItemStack NETWORK_EXPORT;
     public static final SlimefunItemStack NETWORK_GRABBER;
     public static final SlimefunItemStack NETWORK_PUSHER;
+    public static final SlimefunItemStack NETWORK_BEST_PUSHER;
     public static final SlimefunItemStack NETWORK_CONTROL_X;
     public static final SlimefunItemStack NETWORK_CONTROL_V;
     public static final SlimefunItemStack NETWORK_VACUUM;
@@ -183,6 +184,19 @@ public class NetworksSlimefunItemStacks {
         NETWORK_PUSHER = Theme.themedSlimefunItemStack(
             "NTW_PUSHER",
             MaterialCompat.stack(XMaterial.BROWN_STAINED_GLASS)
+        );
+
+        NETWORK_BEST_PUSHER = Theme.themedSlimefunItemStack(
+            "NTW_BEST_PUSHER",
+            MaterialCompat.stack(XMaterial.BROWN_STAINED_GLASS),
+            Theme.MACHINE,
+            "Network Advanced Pusher",
+            "The Network Advanced Pusher will try",
+            "to push matching items from up to",
+            "twelve given templates into the",
+            "chosen machine.",
+            "",
+            "Advanced (high-throughput) Network Pusher"
         );
 
         NETWORK_CONTROL_X = Theme.themedSlimefunItemStack(

@@ -45,7 +45,9 @@ public class NetworkPusher extends NetworkDirectional {
 
     public NetworkPusher(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe, NodeType.PUSHER);
-        for (int slot : TEMPLATE_SLOTS) {
+        // Use the overridable item-slot layout (a static array) so subclasses such as NetworkBestPusher
+        // register their own template slots as drop-slots; identical to TEMPLATE_SLOTS for this class.
+        for (int slot : getItemSlots()) {
             this.getSlotsToDrop().add(slot);
         }
     }
