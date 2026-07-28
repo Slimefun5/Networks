@@ -615,3 +615,13 @@ NTW_DEBUG_STICK:
     - "&7to debug the behavior of Network blocks."
   usage:
     - "&eRight Click&7 a Network Object to turn on debugging."
+
+NTW_BEST_PUSHER:
+  name: "&3Network Advanced Pusher"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7The Network Advanced Pusher will try"
+    - "&7to push matching items from up to"
+    - "&7twelve given templates into the"
+    - "&7chosen machine."
