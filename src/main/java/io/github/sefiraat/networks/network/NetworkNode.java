@@ -90,7 +90,6 @@ public class NetworkNode {
     }
 
     public void addAllChildren() {
-        // Loop through all possible locations
         for (BlockFace face : VALID_FACES) {
             final Location testLocation = this.nodePosition.clone().add(face.getDirection());
             final NodeDefinition testDefinition = NetworkStorage.getAllNetworkObjects().get(testLocation);
@@ -101,13 +100,11 @@ public class NetworkNode {
 
             final NodeType testType = testDefinition.getType();
 
-            // Kill additional controllers if it isn't the root
             if (testType == NodeType.CONTROLLER && !testLocation.equals(getRoot().nodePosition)) {
                 killAdditionalController(testLocation);
                 continue;
             }
 
-            // Check if it's in the network already and, if not, create a child node and propagate further.
             if (testType != NodeType.CONTROLLER && !this.networkContains(testLocation)) {
                 if (this.getRoot().getNodeCount() >= root.getMaxNodes()) {
                     this.getRoot().setOverburdened(true);

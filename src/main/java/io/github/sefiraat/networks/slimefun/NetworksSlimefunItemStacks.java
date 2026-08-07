@@ -19,7 +19,6 @@ import javax.annotation.Nonnull;
  */
 public class NetworksSlimefunItemStacks {
 
-    // Materials
     public static final SlimefunItemStack SYNTHETIC_EMERALD_SHARD;
     public static final SlimefunItemStack OPTIC_GLASS;
     public static final SlimefunItemStack OPTIC_CABLE;
@@ -33,7 +32,6 @@ public class NetworksSlimefunItemStacks {
     public static final SlimefunItemStack PRISTINE_AI_CORE;
     public static final SlimefunItemStack INTERDIMENSIONAL_PRESENCE;
 
-    // Network Items
     public static final SlimefunItemStack NETWORK_CONTROLLER;
     public static final SlimefunItemStack NETWORK_BRIDGE;
     public static final SlimefunItemStack NETWORK_MONITOR;
@@ -74,7 +72,6 @@ public class NetworksSlimefunItemStacks {
     public static final SlimefunItemStack NETWORK_AUTO_CRAFTER;
     public static final SlimefunItemStack NETWORK_AUTO_CRAFTER_WITHHOLDING;
 
-    // Tools
     public static final SlimefunItemStack CRAFTING_BLUEPRINT;
     public static final SlimefunItemStack NETWORK_PROBE;
     public static final SlimefunItemStack NETWORK_REMOTE;

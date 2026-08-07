@@ -157,13 +157,9 @@ public class NetworkAutoCrafter extends NetworkObject {
     }
 
     private boolean tryCraft(@Nonnull BlockMenu blockMenu, @Nonnull BlueprintInstance instance, @Nonnull NetworkRoot root) {
-        // Get the recipe input
         final ItemStack[] inputs = new ItemStack[9];
 
-        /* Make sure the network has the required items
-         * Needs to be revisited as matching is happening stacks 2x when I should
-         * only need the one
-         */
+        // Matching double-counts stacks (needs one but requires two) - revisit.
         HashMap<ItemStack, Integer> requiredItems = new HashMap<>();
         for (int i = 0; i < 9; i++) {
             final ItemStack requested = instance.getRecipeItems()[i];
@@ -178,7 +174,6 @@ public class NetworkAutoCrafter extends NetworkObject {
             }
         }
 
-        // Then fetch the actual items
         for (int i = 0; i < 9; i++) {
             final ItemStack requested = instance.getRecipeItems()[i];
             if (requested != null) {
@@ -191,7 +186,6 @@ public class NetworkAutoCrafter extends NetworkObject {
 
         ItemStack crafted = null;
 
-        // Go through each slimefun recipe, test and set the ItemStack if found
         for (Map.Entry<ItemStack[], ItemStack> entry : SupportedRecipes.getRecipes().entrySet()) {
             if (SupportedRecipes.testRecipe(inputs, entry.getKey())) {
                 crafted = entry.getValue().clone();
@@ -199,7 +193,7 @@ public class NetworkAutoCrafter extends NetworkObject {
             }
         }
 
-        // If no slimefun recipe found, try a vanilla one
+        // Fall back to a vanilla recipe if Slimefun doesn't own one.
         if (crafted == null) {
             instance.generateVanillaRecipe(blockMenu.getLocation().getWorld());
             if (instance.getRecipe() == null) {
@@ -211,13 +205,11 @@ public class NetworkAutoCrafter extends NetworkObject {
             }
         }
 
-        // If no item crafted OR result doesn't fit, escape
         if (crafted == null || crafted.getType() == Material.AIR) {
             returnItems(root, inputs);
             return false;
         }
 
-        // Push item
         final Location location = blockMenu.getLocation().clone().add(0.5, 1.1, 0.5);
         if (root.isDisplayParticles()) {
             ParticleCompat.spawn(location, 0, 0, 4, 0, "VILLAGER_HAPPY", "HAPPY_VILLAGER");

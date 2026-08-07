@@ -228,7 +228,6 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
     @Nullable
     private List<String> describeItem(@Nonnull String itemId) {
         switch (itemId) {
-            // --- Core network blocks ---
             case "NTW_CONTROLLER":
                 return Arrays.asList(
                     "&7The root of every network. Place exactly one.",
@@ -331,7 +330,6 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
                     "&7An auto-crafter that withholds a buffer of",
                     "&7ingredients, keeping the network stocked."
                 );
-            // --- Wireless ---
             case "NTW_NETWORK_WIRELESS_TRANSMITTER":
                 return Arrays.asList(
                     "&7Beams items out of the network to a paired",
@@ -342,7 +340,6 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
                     "&7Receives items beamed from a paired Wireless",
                     "&7Transmitter into the network."
                 );
-            // --- Power ---
             case "NTW_CAPACITOR_1":
             case "NTW_CAPACITOR_2":
             case "NTW_CAPACITOR_3":
@@ -362,7 +359,6 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
                     "&7Shows the current stored power of the network",
                     "&7it is connected to."
                 );
-            // --- Quantum storage ---
             case "NTW_QUANTUM_WORKBENCH":
                 return Arrays.asList(
                     "&7The crafting station for Quantum Storage cells.",
@@ -381,7 +377,6 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
                     "&7Drop an item in to set its type, then fill it",
                     "&7via the network. Higher tiers store far more."
                 );
-            // --- Tools ---
             case "NTW_REMOTE":
             case "NTW_REMOTE_EMPOWERED":
             case "NTW_REMOTE_PRISTINE":
@@ -422,7 +417,6 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
                     "&7Stores a crafting recipe encoded by the Recipe",
                     "&7Encoder for use in the Auto-Crafter."
                 );
-            // --- Key materials ---
             case "NTW_OPTIC_GLASS":
                 return Arrays.asList(
                     "&7A glass that carries small amounts of data.",

@@ -185,20 +185,16 @@ public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveIt
             updateDisplayItem(blockMenu, cache);
         }
 
-        // Move items from the input slot into the card
         final ItemStack input = blockMenu.getItemInSlot(INPUT_SLOT);
         if (input != null && input.getType() != Material.AIR) {
             tryInputItem(blockMenu.getLocation(), new ItemStack[]{input}, cache);
         }
 
-        // Output items
         final ItemStack output = blockMenu.getItemInSlot(OUTPUT_SLOT);
         ItemStack fetched = null;
         if (output == null || output.getType() == Material.AIR) {
-            // No item in output, try output
             fetched = cache.withdrawItem();
         } else if (StackUtils.itemsMatch(cache, output, true) && output.getAmount() < output.getMaxStackSize()) {
-            // There is an item, but it's not filled so lets top it up if we can
             final int requestAmount = output.getMaxStackSize() - output.getAmount();
             fetched = cache.withdrawItem(requestAmount);
         }
@@ -514,7 +510,7 @@ public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveIt
     @Nullable
     public static ItemStack getItemStack(@Nonnull QuantumCache cache, @Nonnull BlockMenu blockMenu, int amount) {
         if (cache.getAmount() < amount) {
-            // Storage has no content or not enough, mix and match!
+            // Storage alone can't fill the request, so combine it with the output slot
             ItemStack output = blockMenu.getItemInSlot(OUTPUT_SLOT);
             ItemStack fetched = cache.withdrawItem(amount);
 
@@ -522,16 +518,13 @@ public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveIt
                 && output.getType() != Material.AIR
                 && StackUtils.itemsMatch(cache, output, true)
             ) {
-                // We have an output item we can use also
                 if (fetched == null || fetched.getType() == Material.AIR) {
-                    // Storage is totally empty - just use output slot
                     fetched = output.clone();
                     if (fetched.getAmount() > amount) {
                         fetched.setAmount(amount);
                     }
                     output.setAmount(output.getAmount() - fetched.getAmount());
                 } else {
-                    // Storage has content, lets add on top of it
                     int additional = Math.min(amount - fetched.getAmount(), output.getAmount());
                     output.setAmount(output.getAmount() - additional);
                     fetched.setAmount(fetched.getAmount() + additional);
@@ -540,7 +533,6 @@ public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveIt
             syncBlock(blockMenu.getLocation(), cache);
             return fetched;
         } else {
-            // Storage has everything we need
             syncBlock(blockMenu.getLocation(), cache);
             return cache.withdrawItem(amount);
         }
