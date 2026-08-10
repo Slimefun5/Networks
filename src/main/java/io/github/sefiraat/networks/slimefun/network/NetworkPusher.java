@@ -101,9 +101,7 @@ public class NetworkPusher extends NetworkDirectional {
 
                 ItemStack retrieved = definition.getNode().getRoot().getItemStack(itemRequest);
                 if (retrieved != null) {
-                    // The push writes a foreign, player-viewable inventory off the async network thread.
-                    // Run it on the main thread while that inventory is being watched so it can't race the
-                    // viewer's clicks (item in cursor AND slot); inline otherwise (async fast path).
+                    // Foreign player-viewable inventory: mutate on the main thread so it can't race the viewer's clicks.
                     BlockStorage.mutateInventorySafely(() -> targetMenu.pushItem(retrieved, slots), targetMenu.getLocation());
                     if (definition.getNode().getRoot().isDisplayParticles()) {
                         showParticle(blockMenu.getLocation(), direction);

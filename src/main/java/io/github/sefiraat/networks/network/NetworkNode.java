@@ -119,12 +119,14 @@ public class NetworkNode {
         }
     }
 
+    /**
+     * @implNote Retrieve + drop + block clear run as one main-thread task. The network ticker is async, so
+     *           retrieving (which clears BlockStorage) here and dropping a tick later left a window where the
+     *           controller block still existed and could be processed/broken again - a duplication vector.
+     *           Doing it all in one task also makes it idempotent: a second kill finds no block info
+     *           (retrieve returns null) and does nothing.
+     */
     private void killAdditionalController(@Nonnull Location location) {
-        // Do the retrieve + drop + block clear atomically on the main thread. The network ticker runs
-        // async, so retrieving (which clears BlockStorage) here and dropping a tick later left a window
-        // where the controller block still existed and could be processed/broken again - a duplication
-        // vector. Running it all in one main-thread task also makes it idempotent: a second kill of the
-        // same location finds no block info (retrieve returns null) and does nothing.
         final Block block = location.getBlock();
 
         new BukkitRunnable() {

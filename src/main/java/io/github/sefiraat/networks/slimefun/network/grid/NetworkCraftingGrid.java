@@ -216,9 +216,7 @@ public class NetworkCraftingGrid extends AbstractGrid {
             }
         }
 
-        // Fall back to the vanilla 3x3 crafting grid for recipes Slimefun doesn't own. Bukkit#craftItem()
-        // is 1.18+; MaterialCompat resolves it reflectively and returns null when unavailable (pre-1.18),
-        // in which case this grid simply doesn't support vanilla recipes on that server.
+        // Fall back to a vanilla recipe if Slimefun doesn't own one (null pre-1.18, see MaterialCompat#craftVanillaResult).
         if (crafted == null) {
             final ItemStack vanillaResult = MaterialCompat.craftVanillaResult(inputs, player.getWorld(), player);
             if (vanillaResult != null && vanillaResult.getType() != Material.AIR) {
