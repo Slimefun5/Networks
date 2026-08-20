@@ -108,7 +108,6 @@ public class NetworkQuantumWorkbench extends SlimefunItem {
     public void craft(@Nonnull BlockMenu menu) {
         final ItemStack itemInOutput = menu.getItemInSlot(OUTPUT_SLOT);
 
-        // Quick escape, we only allow crafting if the output is empty
         if (itemInOutput != null) {
             return;
         }
@@ -116,7 +115,6 @@ public class NetworkQuantumWorkbench extends SlimefunItem {
         final ItemStack[] inputs = new ItemStack[RECIPE_SLOTS.length];
         int i = 0;
 
-        // Fill the inputs
         for (int recipeSlot : RECIPE_SLOTS) {
             ItemStack stack = menu.getItemInSlot(recipeSlot);
             inputs[i] = stack;
@@ -125,7 +123,6 @@ public class NetworkQuantumWorkbench extends SlimefunItem {
 
         ItemStack crafted = null;
 
-        // Go through each recipe, test and set the ItemStack if found
         for (Map.Entry<ItemStack[], ItemStack> entry : RECIPES.entrySet()) {
             if (testRecipe(inputs, entry.getKey())) {
                 crafted = entry.getValue().clone();

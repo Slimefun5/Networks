@@ -194,13 +194,11 @@ public class NetworkCraftingGrid extends AbstractGrid {
     }
 
     private void tryCraft(@Nonnull BlockMenu menu, @Nonnull Player player) {
-        // Get node and, if it doesn't exist - escape
         final NodeDefinition definition = NetworkStorage.getAllNetworkObjects().get(menu.getLocation());
         if (definition.getNode() == null) {
             return;
         }
 
-        // Get the recipe input
         final ItemStack[] inputs = new ItemStack[CRAFT_ITEMS.length];
         int i = 0;
         for (int recipeSlot : CRAFT_ITEMS) {
@@ -211,7 +209,6 @@ public class NetworkCraftingGrid extends AbstractGrid {
 
         ItemStack crafted = null;
 
-        // Go through each slimefun recipe, test and set the ItemStack if found
         for (Map.Entry<ItemStack[], ItemStack> entry : SupportedRecipes.getRecipes().entrySet()) {
             if (SupportedRecipes.testRecipe(inputs, entry.getKey())) {
                 crafted = entry.getValue().clone();
@@ -219,9 +216,7 @@ public class NetworkCraftingGrid extends AbstractGrid {
             }
         }
 
-        // Fall back to the vanilla 3x3 crafting grid for recipes Slimefun doesn't own. Bukkit#craftItem()
-        // is 1.18+; MaterialCompat resolves it reflectively and returns null when unavailable (pre-1.18),
-        // in which case this grid simply doesn't support vanilla recipes on that server.
+        // Fall back to a vanilla recipe if Slimefun doesn't own one (null pre-1.18, see MaterialCompat#craftVanillaResult).
         if (crafted == null) {
             final ItemStack vanillaResult = MaterialCompat.craftVanillaResult(inputs, player.getWorld(), player);
             if (vanillaResult != null && vanillaResult.getType() != Material.AIR) {
@@ -229,25 +224,19 @@ public class NetworkCraftingGrid extends AbstractGrid {
             }
         }
 
-        // If no item crafted OR result doesn't fit, escape
         if (crafted == null || crafted.getType() == Material.AIR || !menu.fits(crafted, CRAFT_OUTPUT_SLOT)) {
             return;
         }
 
-        // Push item
         menu.pushItem(crafted, CRAFT_OUTPUT_SLOT);
 
-        // Let's clear down all the items
         for (int recipeSlot : CRAFT_ITEMS) {
             final ItemStack itemInSlot = menu.getItemInSlot(recipeSlot);
             if (itemInSlot != null) {
-                // Grab a clone for potential retrieval
                 final ItemStack itemInSlotClone = itemInSlot.clone();
                 itemInSlotClone.setAmount(1);
                 ItemUtils.consumeItem(menu.getItemInSlot(recipeSlot), 1, true);
-                // We have consumed a slot item and now the slot it empty - try to refill
                 if (menu.getItemInSlot(recipeSlot) == null) {
-                    // Process item request
                     final GridItemRequest request = new GridItemRequest(itemInSlotClone, 1, player);
                     final ItemStack requestingStack = definition.getNode().getRoot().getItemStack(request);
                     if (requestingStack != null) {
@@ -259,7 +248,6 @@ public class NetworkCraftingGrid extends AbstractGrid {
     }
 
     private void tryReturnItems(@Nonnull BlockMenu menu) {
-        // Get node and, if it doesn't exist - escape
         final NodeDefinition definition = NetworkStorage.getAllNetworkObjects().get(menu.getLocation());
 
         if (definition.getNode() == null) {

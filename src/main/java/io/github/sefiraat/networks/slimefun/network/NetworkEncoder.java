@@ -130,7 +130,6 @@ public class NetworkEncoder extends NetworkObject {
             return;
         }
 
-        // Get the recipe input
         final ItemStack[] inputs = new ItemStack[RECIPE_SLOTS.length];
         int i = 0;
         for (int recipeSlot : RECIPE_SLOTS) {
@@ -144,7 +143,6 @@ public class NetworkEncoder extends NetworkObject {
 
         ItemStack crafted = null;
 
-        // Go through each slimefun recipe, test and set the ItemStack if found
         for (Map.Entry<ItemStack[], ItemStack> entry : SupportedRecipes.getRecipes().entrySet()) {
             if (SupportedRecipes.testRecipe(inputs, entry.getKey())) {
                 crafted = new ItemStack(entry.getValue().clone());
@@ -152,9 +150,7 @@ public class NetworkEncoder extends NetworkObject {
             }
         }
 
-        // Fall back to the vanilla 3x3 crafting grid for recipes Slimefun doesn't own. Bukkit#craftItem()
-        // is 1.18+; MaterialCompat resolves it reflectively and returns null when unavailable (pre-1.18),
-        // in which case the encoder simply doesn't support vanilla recipes on that server.
+        // Fall back to a vanilla recipe if Slimefun doesn't own one (null pre-1.18, see MaterialCompat#craftVanillaResult).
         if (crafted == null) {
             final ItemStack vanillaResult = MaterialCompat.craftVanillaResult(inputs, player.getWorld(), player);
             if (vanillaResult != null && vanillaResult.getType() != Material.AIR) {
@@ -162,7 +158,6 @@ public class NetworkEncoder extends NetworkObject {
             }
         }
 
-        // If no item crafted OR result doesn't fit, escape
         if (crafted == null || crafted.getType() == Material.AIR) {
             player.sendMessage(Theme.WARNING + "Doesn't look like this is a valid recipe.");
             return;

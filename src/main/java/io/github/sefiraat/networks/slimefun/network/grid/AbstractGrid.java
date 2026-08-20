@@ -142,20 +142,17 @@ public abstract class AbstractGrid extends NetworkObject {
     }
 
     protected void updateDisplay(@Nonnull BlockMenu blockMenu) {
-        // No viewer - lets not bother updating
         if (!blockMenu.hasViewer()) {
             return;
         }
 
         final NodeDefinition definition = NetworkStorage.getAllNetworkObjects().get(blockMenu.getLocation());
 
-        // No node located, weird
         if (definition == null || definition.getNode() == null) {
             clearDisplay(blockMenu);
             return;
         }
 
-        // Update Screen
         final NetworkRoot root = definition.getNode().getRoot();
         final GridCache gridCache = getCacheMap().get(blockMenu.getLocation().clone());
         final List<Map.Entry<ItemStack, Integer>> entries = getEntries(root, gridCache);
@@ -163,13 +160,12 @@ public abstract class AbstractGrid extends NetworkObject {
 
         gridCache.setMaxPages(pages);
 
-        // Set everything to blank and return if there are no pages (no items)
+        // pages < 0 means the network holds no items
         if (pages < 0) {
             clearDisplay(blockMenu);
             return;
         }
 
-        // Reset selected page if it no longer exists due to items being removed
         if (gridCache.getPage() > pages) {
             gridCache.setPage(0);
         }
@@ -255,7 +251,7 @@ public abstract class AbstractGrid extends NetworkObject {
 
     @ParametersAreNonnullByDefault
     protected void retrieveItem(Player player, NodeDefinition definition, @Nullable ItemStack itemStack, ClickAction action, BlockMenu blockMenu) {
-        // Todo Item can be null here. No idea how - investigate later
+        // TODO: itemStack is occasionally null here for reasons not yet understood
         if (itemStack == null || itemStack.getType() == Material.AIR) {
             return;
         }
@@ -304,7 +300,6 @@ public abstract class AbstractGrid extends NetworkObject {
     private void addToCursor(Player player, NodeDefinition definition, GridItemRequest request, ClickAction action) {
         final ItemStack cursor = player.getItemOnCursor();
 
-        // Quickly check if the cursor has an item and if we can add more to it
         if (cursor.getType() != Material.AIR && !canAddMore(action, cursor, request)) {
             return;
         }

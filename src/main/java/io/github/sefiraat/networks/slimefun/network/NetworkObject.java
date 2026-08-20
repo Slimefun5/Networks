@@ -139,20 +139,17 @@ public abstract class NetworkObject extends SlimefunItem implements AdminDebugga
             for (BlockFace checkFace : CHECK_FACES) {
                 Block checkBlock = target.getRelative(checkFace);
 
-                // Check for node definitions. If there isn't one, we don't care
                 NodeDefinition definition = NetworkStorage.getAllNetworkObjects().get(checkBlock.getLocation());
                 if (definition == null) {
                     continue;
                 }
 
-                // There is a definition, if it has a node, then it's part of an active network.
                 if (definition.getNode() != null) {
                     NetworkRoot networkRoot = definition.getNode().getRoot();
                     if (controllerLocation == null) {
-                        // First network found, store root location
                         controllerLocation = networkRoot.getController();
                     } else if (!controllerLocation.equals(networkRoot.getController())) {
-                        // Location differs from that previously recorded, would result in two controllers
+                        // Differs from the first controller found - would connect two controllers
                         cancelPlace(event);
                     }
                 }

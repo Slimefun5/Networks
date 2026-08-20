@@ -90,7 +90,6 @@ public class NetworkNode {
     }
 
     public void addAllChildren() {
-        // Loop through all possible locations
         for (BlockFace face : VALID_FACES) {
             final Location testLocation = this.nodePosition.clone().add(face.getDirection());
             final NodeDefinition testDefinition = NetworkStorage.getAllNetworkObjects().get(testLocation);
@@ -101,13 +100,11 @@ public class NetworkNode {
 
             final NodeType testType = testDefinition.getType();
 
-            // Kill additional controllers if it isn't the root
             if (testType == NodeType.CONTROLLER && !testLocation.equals(getRoot().nodePosition)) {
                 killAdditionalController(testLocation);
                 continue;
             }
 
-            // Check if it's in the network already and, if not, create a child node and propagate further.
             if (testType != NodeType.CONTROLLER && !this.networkContains(testLocation)) {
                 if (this.getRoot().getNodeCount() >= root.getMaxNodes()) {
                     this.getRoot().setOverburdened(true);
@@ -122,12 +119,14 @@ public class NetworkNode {
         }
     }
 
+    /**
+     * @implNote Retrieve + drop + block clear run as one main-thread task. The network ticker is async, so
+     *           retrieving (which clears BlockStorage) here and dropping a tick later left a window where the
+     *           controller block still existed and could be processed/broken again - a duplication vector.
+     *           Doing it all in one task also makes it idempotent: a second kill finds no block info
+     *           (retrieve returns null) and does nothing.
+     */
     private void killAdditionalController(@Nonnull Location location) {
-        // Do the retrieve + drop + block clear atomically on the main thread. The network ticker runs
-        // async, so retrieving (which clears BlockStorage) here and dropping a tick later left a window
-        // where the controller block still existed and could be processed/broken again - a duplication
-        // vector. Running it all in one main-thread task also makes it idempotent: a second kill of the
-        // same location finds no block info (retrieve returns null) and does nothing.
         final Block block = location.getBlock();
 
         new BukkitRunnable() {

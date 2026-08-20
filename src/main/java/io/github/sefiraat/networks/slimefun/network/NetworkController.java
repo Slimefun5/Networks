@@ -90,19 +90,16 @@ public class NetworkController extends NetworkObject {
                 Block checkBlock = target.getRelative(checkFace);
                 SlimefunItem slimefunItem = BlockStorage.check(checkBlock);
 
-                // For directly adjacent controllers
                 if (slimefunItem instanceof NetworkController) {
                     cancelPlace(event);
                     return;
                 }
 
-                // Check for node definitions. If there isn't one, we don't care
                 NodeDefinition definition = NetworkStorage.getAllNetworkObjects().get(checkBlock.getLocation());
                 if (definition == null) {
                     continue;
                 }
 
-                // There is a definition, if it has a node, then it's part of an active network.
                 if (definition.getNode() != null) {
                     cancelPlace(event);
                     return;

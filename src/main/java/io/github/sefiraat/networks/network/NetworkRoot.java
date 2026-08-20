@@ -227,7 +227,6 @@ public class NetworkRoot extends NetworkNode {
     public Map<ItemStack, Integer> getAllNetworkItems() {
         final Map<ItemStack, Integer> itemStacks = new HashMap<>();
 
-        // Barrels
         for (BarrelIdentity barrelIdentity : getBarrels()) {
             final Integer currentAmount = itemStacks.get(barrelIdentity.getItemStack());
             final int newAmount;
@@ -484,7 +483,6 @@ public class NetworkRoot extends NetworkNode {
     public ItemStack getItemStack(@Nonnull ItemRequest request) {
         ItemStack stackToReturn = null;
 
-        // Cells first
         for (BlockMenu blockMenu : getCellMenus()) {
             for (ItemStack itemStack : blockMenu.getContents()) {
                 if (itemStack == null
@@ -497,7 +495,6 @@ public class NetworkRoot extends NetworkNode {
                 // Mark the Cell as dirty otherwise the changes will not save on shutdown
                 blockMenu.markDirty();
 
-                // If the return stack is null, we need to set it up
                 if (stackToReturn == null) {
                     stackToReturn = itemStack.clone();
                     stackToReturn.setAmount(1);
@@ -505,18 +502,15 @@ public class NetworkRoot extends NetworkNode {
                     itemStack.setAmount(itemStack.getAmount() - 1);
                 }
 
-                // Escape if fulfilled request
                 if (request.getAmount() <= 0) {
                     return stackToReturn;
                 }
 
                 if (request.getAmount() <= itemStack.getAmount()) {
-                    // We can't take more than this stack. Level to request amount, remove items and then return
                     stackToReturn.setAmount(stackToReturn.getAmount() + request.getAmount());
                     itemStack.setAmount(itemStack.getAmount() - request.getAmount());
                     return stackToReturn;
                 } else {
-                    // We can take more than what is here, consume before trying to take more
                     stackToReturn.setAmount(stackToReturn.getAmount() + itemStack.getAmount());
                     request.receiveAmount(itemStack.getAmount());
                     itemStack.setAmount(0);
@@ -524,7 +518,6 @@ public class NetworkRoot extends NetworkNode {
             }
         }
 
-        // Crafters
         for (BlockMenu blockMenu : getCrafterOutputs()) {
             int[] slots = blockMenu.getPreset().getSlotsAccessedByItemTransport(ItemTransportFlow.WITHDRAW);
             for (int slot : slots) {
@@ -537,7 +530,6 @@ public class NetworkRoot extends NetworkNode {
                     continue;
                 }
 
-                // Stack is null, so we can fill it here
                 if (stackToReturn == null) {
                     stackToReturn = itemStack.clone();
                     stackToReturn.setAmount(1);
@@ -545,7 +537,6 @@ public class NetworkRoot extends NetworkNode {
                     itemStack.setAmount(itemStack.getAmount() - 1);
                 }
 
-                // Escape if fulfilled request
                 if (request.getAmount() <= 0) {
                     return stackToReturn;
                 }
@@ -562,7 +553,6 @@ public class NetworkRoot extends NetworkNode {
             }
         }
 
-        // Greedy Blocks
         for (BlockMenu blockMenu : getGreedyBlocks()) {
             final ItemStack itemStack = blockMenu.getItemInSlot(NetworkGreedyBlock.INPUT_SLOT);
             if (itemStack == null
@@ -575,7 +565,6 @@ public class NetworkRoot extends NetworkNode {
             // Mark the Cell as dirty otherwise the changes will not save on shutdown
             blockMenu.markDirty();
 
-            // If the return stack is null, we need to set it up
             if (stackToReturn == null) {
                 stackToReturn = itemStack.clone();
                 stackToReturn.setAmount(1);
@@ -583,25 +572,21 @@ public class NetworkRoot extends NetworkNode {
                 itemStack.setAmount(itemStack.getAmount() - 1);
             }
 
-            // Escape if fulfilled request
             if (request.getAmount() <= 0) {
                 return stackToReturn;
             }
 
             if (request.getAmount() <= itemStack.getAmount()) {
-                // We can't take more than this stack. Level to request amount, remove items and then return
                 stackToReturn.setAmount(stackToReturn.getAmount() + request.getAmount());
                 itemStack.setAmount(itemStack.getAmount() - request.getAmount());
                 return stackToReturn;
             } else {
-                // We can take more than what is here, consume before trying to take more
                 stackToReturn.setAmount(stackToReturn.getAmount() + itemStack.getAmount());
                 request.receiveAmount(itemStack.getAmount());
                 itemStack.setAmount(0);
             }
         }
 
-        // Barrels
         for (BarrelIdentity barrelIdentity : getBarrels()) {
 
             final ItemStack itemStack = barrelIdentity.getItemStack();
@@ -616,7 +601,6 @@ public class NetworkRoot extends NetworkNode {
                 continue;
             }
 
-            // Stack is null, so we can fill it here
             if (stackToReturn == null) {
                 stackToReturn = fetched.clone();
                 stackToReturn.setAmount(1);
@@ -624,7 +608,6 @@ public class NetworkRoot extends NetworkNode {
                 fetched.setAmount(fetched.getAmount() - 1);
             }
 
-            // Escape if fulfilled request
             if (request.getAmount() <= 0) {
                 return stackToReturn;
             }
@@ -658,7 +641,6 @@ public class NetworkRoot extends NetworkNode {
     public boolean contains(@Nonnull ItemRequest request) {
         int found = 0;
 
-        // Cells first
         for (BlockMenu blockMenu : getCellMenus()) {
             for (ItemStack itemStack : blockMenu.getContents()) {
                 if (itemStack == null
@@ -670,14 +652,12 @@ public class NetworkRoot extends NetworkNode {
 
                 found += itemStack.getAmount();
 
-                // Escape if found all we need
                 if (found >= request.getAmount()) {
                     return true;
                 }
             }
         }
 
-        // Crafters
         for (BlockMenu blockMenu : getCrafterOutputs()) {
             int[] slots = blockMenu.getPreset().getSlotsAccessedByItemTransport(ItemTransportFlow.WITHDRAW);
             for (int slot : slots) {
@@ -691,14 +671,12 @@ public class NetworkRoot extends NetworkNode {
 
                 found += itemStack.getAmount();
 
-                // Escape if found all we need
                 if (found >= request.getAmount()) {
                     return true;
                 }
             }
         }
 
-        // Barrels
         for (BarrelIdentity barrelIdentity : getBarrels()) {
             final ItemStack itemStack = barrelIdentity.getItemStack();
 
@@ -714,13 +692,11 @@ public class NetworkRoot extends NetworkNode {
                 found += barrelIdentity.getAmount();
             }
 
-            // Escape if found all we need
             if (found >= request.getAmount()) {
                 return true;
             }
         }
 
-        // Greedy Blocks
         for (BlockMenu blockMenu : getGreedyBlocks()) {
             final ItemStack itemStack = blockMenu.getItemInSlot(NetworkGreedyBlock.INPUT_SLOT);
             if (itemStack == null
@@ -732,7 +708,6 @@ public class NetworkRoot extends NetworkNode {
 
             found += itemStack.getAmount();
 
-            // Escape if found all we need
             if (found >= request.getAmount()) {
                 return true;
             }
@@ -742,7 +717,6 @@ public class NetworkRoot extends NetworkNode {
     }
 
     public void addItemStack(@Nonnull ItemStack incoming) {
-        // Run for matching greedy blocks
         for (BlockMenu blockMenu : getGreedyBlocks()) {
             final ItemStack template = blockMenu.getItemInSlot(NetworkGreedyBlock.TEMPLATE_SLOT);
 
@@ -771,28 +745,24 @@ public class NetworkRoot extends NetworkNode {
             return;
         }
 
-        // Run for matching barrels
         for (BarrelIdentity barrelIdentity : getBarrels()) {
             if (StackUtils.itemsMatch(barrelIdentity, incoming, true)) {
 
                 barrelIdentity.depositItemStack(incoming);
 
-                // All distributed, can escape
                 if (incoming.getAmount() == 0) {
                     return;
                 }
             }
         }
 
-        // Then run for matching items in cells
-        // Prepare a fallback menu and slot. This way we don't have to scan more than once
+        // Fallback menu/slot recorded on the first pass so we don't scan the cells twice.
         BlockMenu fallbackBlockMenu = null;
         int fallBackSlot = 0;
 
         for (BlockMenu blockMenu : getCellMenus()) {
             int i = 0;
             for (ItemStack itemStack : blockMenu.getContents()) {
-                // If this is an empty slot - move on, if it's our first, store it for later.
                 if (itemStack == null || MaterialCompat.isAir(itemStack.getType())) {
                     if (fallbackBlockMenu == null) {
                         fallbackBlockMenu = blockMenu;
@@ -814,7 +784,6 @@ public class NetworkRoot extends NetworkNode {
                     // Mark dirty otherwise changes will not save
                     blockMenu.markDirty();
 
-                    // All distributed, can escape
                     if (incomingStackAmount == 0) {
                         return;
                     }
@@ -823,7 +792,6 @@ public class NetworkRoot extends NetworkNode {
             }
         }
 
-        // Add to fallback slot
         if (fallbackBlockMenu != null) {
             fallbackBlockMenu.replaceExistingItem(fallBackSlot, incoming.clone());
             incoming.setAmount(0);
