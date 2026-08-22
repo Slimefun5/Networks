@@ -54,6 +54,7 @@ public class NetworkGrid extends AbstractGrid {
 
             @Override
             public void init() {
+                optOutOfHeaderItem();
                 drawBackground(getBackgroundSlots());
                 setSize(54);
             }

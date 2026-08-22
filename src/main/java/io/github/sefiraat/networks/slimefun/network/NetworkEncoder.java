@@ -74,6 +74,7 @@ public class NetworkEncoder extends NetworkObject {
 
             @Override
             public void init() {
+                optOutOfHeaderItem();
                 drawBackground(BACKGROUND);
                 drawBackground(BLUEPRINT_BACK_STACK, BLUEPRINT_BACK);
 

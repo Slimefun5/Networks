@@ -82,6 +82,7 @@ public class NetworkCraftingGrid extends AbstractGrid {
 
             @Override
             public void init() {
+                optOutOfHeaderItem();
                 drawBackground(BACKGROUND_SLOTS);
             }
 

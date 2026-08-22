@@ -185,6 +185,7 @@ public class NetworkWirelessTransmitter extends NetworkObject {
 
             @Override
             public void init() {
+                optOutOfHeaderItem();
                 drawBackground(BACKGROUND_SLOTS);
                 drawBackground(TEMPLATE_BACKGROUND_STACK, BACKGROUND_SLOTS_TEMPLATE);
             }

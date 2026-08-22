@@ -91,6 +91,7 @@ public class NetworkImport extends NetworkObject {
 
             @Override
             public void init() {
+                optOutOfHeaderItem();
                 setSize(9);
             }
 

@@ -43,6 +43,7 @@ public class NetworkCell extends NetworkObject {
 
             @Override
             public void init() {
+                optOutOfHeaderItem();
                 setSize(54);
             }
 

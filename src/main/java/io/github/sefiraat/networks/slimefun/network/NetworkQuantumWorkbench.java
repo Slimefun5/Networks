@@ -77,6 +77,7 @@ public class NetworkQuantumWorkbench extends SlimefunItem {
         new BlockMenuPreset(this.getId(), this.getItemName()) {
             @Override
             public void init() {
+                optOutOfHeaderItem();
                 drawBackground(BACKGROUND_SLOTS);
                 addItem(CRAFT_SLOT, CRAFT_BUTTON_STACK, (p, slot, item, action) -> false);
             }

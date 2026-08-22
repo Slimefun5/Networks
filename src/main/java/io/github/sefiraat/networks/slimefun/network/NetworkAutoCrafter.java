@@ -245,6 +245,7 @@ public class NetworkAutoCrafter extends NetworkObject {
 
             @Override
             public void init() {
+                optOutOfHeaderItem();
                 drawBackground(BACKGROUND_SLOTS);
                 drawBackground(BLUEPRINT_BACKGROUND_STACK, BLUEPRINT_BACKGROUND);
                 drawBackground(OUTPUT_BACKGROUND_STACK, OUTPUT_BACKGROUND);

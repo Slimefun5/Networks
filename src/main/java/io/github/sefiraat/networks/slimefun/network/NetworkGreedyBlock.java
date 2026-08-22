@@ -56,6 +56,7 @@ public class NetworkGreedyBlock extends NetworkObject {
 
             @Override
             public void init() {
+                optOutOfHeaderItem();
                 drawBackground(BACKGROUND_SLOTS);
                 drawBackground(TEMPLATE_BACKGROUND_STACK, BACKGROUND_SLOTS_TEMPLATE);
                 drawBackground(STORAGE_BACKGROUND_STACK, BACKGROUND_SLOTS_INPUT);

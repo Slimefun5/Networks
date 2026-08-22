@@ -83,6 +83,7 @@ public class NetworkPowerDisplay extends NetworkObject {
 
             @Override
             public void init() {
+                optOutOfHeaderItem();
                 drawBackground(BACKGROUND_SLOTS);
                 addItem(DISPLAY_SLOT, getChargeStack(0), (player, i, itemStack, clickAction) -> false);
             }

@@ -326,6 +326,7 @@ public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveIt
 
             @Override
             public void init() {
+                optOutOfHeaderItem();
                 for (int i : INPUT_SLOTS) {
                     addItem(i, BACK_INPUT, (p, slot, item, action) -> false);
                 }

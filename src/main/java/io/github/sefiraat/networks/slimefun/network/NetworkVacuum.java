@@ -130,6 +130,7 @@ public class NetworkVacuum extends NetworkObject {
 
             @Override
             public void init() {
+                optOutOfHeaderItem();
                 setSize(9);
             }
 

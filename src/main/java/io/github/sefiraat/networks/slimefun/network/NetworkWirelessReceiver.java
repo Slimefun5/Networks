@@ -94,6 +94,7 @@ public class NetworkWirelessReceiver extends NetworkObject {
 
             @Override
             public void init() {
+                optOutOfHeaderItem();
                 drawBackground(BACKGROUND_SLOTS);
                 drawBackground(RECEIVED_BACKGROUND_STACK, RECEIVED_SLOTS_TEMPLATE);
             }

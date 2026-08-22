@@ -123,6 +123,7 @@ public class NetworkPurger extends NetworkObject {
 
             @Override
             public void init() {
+                optOutOfHeaderItem();
                 drawBackground(BACKGROUND_SLOTS);
                 drawBackground(TEST_BACKDROP_STACK, TEST_ITEM_BACKDROP);
             }

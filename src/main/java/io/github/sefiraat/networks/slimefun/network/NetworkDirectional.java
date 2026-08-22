@@ -178,6 +178,7 @@ public abstract class NetworkDirectional extends NetworkObject {
 
             @Override
             public void init() {
+                optOutOfHeaderItem();
                 drawBackground(getBackgroundSlots());
 
                 if (getOtherBackgroundSlots() != null && getOtherBackgroundStack() != null) {
