@@ -6,6 +6,7 @@ import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.Recipe;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -167,6 +168,37 @@ public final class MaterialCompat {
         }
         try {
             return (ItemStack) CRAFT_ITEM_METHOD.invoke(null, matrix, world, player);
+        } catch (Throwable ignored) {
+            return null;
+        }
+    }
+
+    // Bukkit#getCraftingRecipe(ItemStack[], World) is 1.18+; resolve reflectively so this class still
+    // links on 1.8-1.17 servers where the method is absent (NoSuchMethodError otherwise).
+    private static final java.lang.reflect.Method CRAFTING_RECIPE_METHOD = resolveCraftingRecipeMethod();
+
+    private static java.lang.reflect.Method resolveCraftingRecipeMethod() {
+        try {
+            return Bukkit.class.getMethod("getCraftingRecipe", ItemStack[].class, World.class);
+        } catch (Throwable ignored) {
+            return null;
+        }
+    }
+
+    /**
+     * Version-safe replacement for {@code Bukkit#getCraftingRecipe(ItemStack[], World)} (added in
+     * Minecraft 1.18), used to resolve the vanilla recipe a blueprint encodes so the auto crafter can
+     * execute it. On servers where the method doesn't exist (pre-1.18) this returns {@code null}
+     * instead of throwing, so callers should treat a {@code null} result as "no vanilla recipe
+     * available here" rather than "not a valid recipe".
+     */
+    @Nullable
+    public static Recipe craftingRecipe(@Nonnull ItemStack[] matrix, @Nonnull World world) {
+        if (CRAFTING_RECIPE_METHOD == null) {
+            return null;
+        }
+        try {
+            return (Recipe) CRAFTING_RECIPE_METHOD.invoke(null, matrix, world);
         } catch (Throwable ignored) {
             return null;
         }

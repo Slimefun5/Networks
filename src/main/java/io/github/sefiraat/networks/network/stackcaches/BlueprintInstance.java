@@ -1,6 +1,6 @@
 package io.github.sefiraat.networks.network.stackcaches;
 
-import org.bukkit.Bukkit;
+import io.github.sefiraat.networks.utils.MaterialCompat;
 import org.bukkit.World;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
@@ -32,7 +32,17 @@ public class BlueprintInstance extends ItemStackCache {
         this.recipe = recipe;
     }
 
+    /**
+     * Resolves the vanilla recipe this blueprint encodes, so the auto crafter can execute it.
+     *
+     * @implNote Goes through {@link MaterialCompat#craftingRecipe(ItemStack[], World)} because
+     *           {@code Bukkit#getCraftingRecipe} is 1.18+. Stubbing this out left {@link #getRecipe()}
+     *           permanently null, which made the auto crafter reject every vanilla blueprint even
+     *           though the encoder (which has its own reflective fallback) had happily written one.
+     */
     public void generateVanillaRecipe(World world) {
-        // getCraftingRecipe() is 1.18+ — skip on legacy
+        if (this.recipe == null) {
+            this.recipe = MaterialCompat.craftingRecipe(this.recipeItems, world);
+        }
     }
 }
