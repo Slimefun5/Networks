@@ -13,6 +13,8 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun5.core.guide.wiki.WikiText;
 import io.github.thebusybiscuit.slimefun5.core.guide.wiki.WikiTopic;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun5.core.guide.widgets.GuideWidget;
+import io.github.thebusybiscuit.slimefun5.core.guide.wiki.WikiIndex;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.updater.BlobBuildUpdater;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
@@ -67,6 +69,23 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
 
         Slimefun.getItemTranslationService().registerTranslations(this);
         registerWiki();
+        registerGuideWidgets();
+    }
+
+    /**
+     * Puts this addon's guides on the bottom row of its guide menu. The declared category is what also
+     * surfaces the widget in the categorized layout, which has no addon menu to hang it off.
+     */
+    private void registerGuideWidgets() {
+        Slimefun.getGuideWidgets().register(new GuideWidget(
+            "networks_guide",
+            "&bNetworks Guide",
+            XMaterial.HOPPER,
+            0,
+            GuideWidget.Position.BOTTOM,
+            (player, profile) -> WikiIndex.openAddonWiki(player, getName()),
+            getName(),
+            "logistics"));
     }
 
     private void registerWiki() {
