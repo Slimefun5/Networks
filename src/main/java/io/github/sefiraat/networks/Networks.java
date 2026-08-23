@@ -77,15 +77,24 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
      * surfaces the widget in the categorized layout, which has no addon menu to hang it off.
      */
     private void registerGuideWidgets() {
+        registerGuideWidget("logistics", "&bNetworks Guide", XMaterial.HOPPER, 0);
+        registerGuideWidget("machines", "&bAuto Crafting Guide", XMaterial.CRAFTING_TABLE, 1);
+    }
+
+    /**
+     * One guide button per category this addon has items in, so a section only offers the pages that
+     * belong to it rather than every guide the addon ships.
+     */
+    private void registerGuideWidget(String category, String name, XMaterial icon, int order) {
         Slimefun.getGuideWidgets().register(new GuideWidget(
-            "networks_guide",
-            "&bNetworks Guide",
-            XMaterial.HOPPER,
-            0,
+            "networks_guide_" + category,
+            name,
+            icon,
+            order,
             GuideWidget.Position.BOTTOM,
-            (player, profile) -> WikiIndex.openAddonWiki(player, getName()),
+            (player, profile) -> WikiIndex.openAddonWiki(player, profile, getName(), category),
             getName(),
-            "logistics"));
+            category));
     }
 
     private void registerWiki() {

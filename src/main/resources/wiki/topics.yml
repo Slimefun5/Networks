@@ -5,11 +5,14 @@ networks_basics:
   title: Building a Network
   icon: HOPPER
   summary: '&7Controllers, bridges and cells'
+  category: logistics
 networks_crafting:
   title: Blueprints & Auto Crafting
   icon: CRAFTING_TABLE
   summary: '&7Encoding recipes the crafter can run'
+  category: machines
 networks_grid:
   title: The Grid
   icon: CHEST
   summary: '&7Searching and pulling stored items'
+  category: logistics
