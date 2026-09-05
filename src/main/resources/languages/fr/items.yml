@@ -1,191 +1,255 @@
-# fr item translations for Networks. Auto-generated; name only.
-
-
-NTW_SYNTHETIC_EMERALD_SHARD:
-  name: "&bÉclat d'Émeraude Synthétique"
-
-NTW_OPTIC_GLASS:
-  name: "&bVerre Optique"
-
-NTW_OPTIC_CABLE:
-  name: "&bCâble Optique"
-
-NTW_OPTIC_STAR:
-  name: "&bÉtoile Optique"
-
-NTW_RADIOACTIVE_OPTIC_STAR:
-  name: "&bÉtoile Optique Radioactive"
-
-NTW_SHRINKING_BASE:
-  name: "&bBase de Rétrécissement"
-
-NTW_SIMPLE_NANOBOTS:
-  name: "&bNanobots Simples"
-
 NTW_ADVANCED_NANOBOTS:
-  name: "&bNanobots Avancés"
-
+  name: '&bNanobots Avancés'
+  type:
+  - '&7&oComposant'
 NTW_AI_CORE:
-  name: "&bNoyau d'I.A."
-
-NTW_EMPOWERED_AI_CORE:
-  name: "&bNoyau d'I.A. Renforcé"
-
-NTW_PRISTINE_AI_CORE:
-  name: "&bNoyau d'I.A. Immaculé"
-
-NTW_INTERDIMENSIONAL_PRESENCE:
-  name: "&bPrésence Interdimensionnelle"
-
-NTW_CONTROLLER:
-  name: "&3Contrôleur de Réseau"
-
-NTW_BRIDGE:
-  name: "&3Pont de Réseau"
-
-NTW_MONITOR:
-  name: "&3Moniteur de Réseau"
-
-NTW_IMPORT:
-  name: "&3Importateur de Réseau"
-
-NTW_EXPORT:
-  name: "&3Exportateur de Réseau"
-
-NTW_GRABBER:
-  name: "&3Préhenseur de Réseau"
-
-NTW_PUSHER:
-  name: "&3Pousseur de Réseau"
-
-NTW_CONTROL_X:
-  name: "&3Contrôle de Réseau : X"
-
-NTW_CONTROL_V:
-  name: "&3Contrôle de Réseau : V"
-
-NTW_VACUUM:
-  name: "&3Aspirateur de Réseau"
-
-NTW_VANILLA_GRABBER:
-  name: "&3Préhenseur Vanilla de Réseau"
-
-NTW_VANILLA_PUSHER:
-  name: "&3Pousseur Vanilla de Réseau"
-
-NTW_NETWORK_WIRELESS_TRANSMITTER:
-  name: "&3Émetteur Sans Fil de Réseau"
-
-NTW_NETWORK_WIRELESS_RECEIVER:
-  name: "&3Récepteur Sans Fil de Réseau"
-
-NTW_TRASH:
-  name: "&3Purgeur de Réseau"
-
-NTW_GRID:
-  name: "&3Grille de Réseau"
-
-NTW_CRAFTING_GRID:
-  name: "&3Grille de Fabrication de Réseau"
-
-NTW_CELL:
-  name: "&3Cellule de Réseau"
-
-NTW_GREEDY_BLOCK:
-  name: "&3Bloc Avide de Réseau"
-
-NTW_QUANTUM_WORKBENCH:
-  name: "&3Établi Quantique de Réseau"
-
-NTW_QUANTUM_STORAGE_1:
-  name: "&3Stockage Quantique de Réseau (4K)"
-
-NTW_QUANTUM_STORAGE_2:
-  name: "&3Stockage Quantique de Réseau (32K)"
-
-NTW_QUANTUM_STORAGE_3:
-  name: "&3Stockage Quantique de Réseau (262K)"
-
-NTW_QUANTUM_STORAGE_4:
-  name: "&3Stockage Quantique de Réseau (2M)"
-
-NTW_QUANTUM_STORAGE_5:
-  name: "&3Stockage Quantique de Réseau (16M)"
-
-NTW_QUANTUM_STORAGE_6:
-  name: "&3Stockage Quantique de Réseau (134M)"
-
-NTW_QUANTUM_STORAGE_7:
-  name: "&3Stockage Quantique de Réseau (1B)"
-
-NTW_QUANTUM_STORAGE_8:
-  name: "&3Stockage Quantique de Réseau (∞)"
-
-NTW_CAPACITOR_1:
-  name: "&3Condensateur de Réseau (1)"
-
-NTW_CAPACITOR_2:
-  name: "&3Condensateur de Réseau (2)"
-
-NTW_CAPACITOR_3:
-  name: "&3Condensateur de Réseau (3)"
-
-NTW_CAPACITOR_4:
-  name: "&3Condensateur de Réseau (4)"
-
-NTW_POWER_OUTLET_1:
-  name: "&3Prise de Réseau (1)"
-
-NTW_POWER_OUTLET_2:
-  name: "&3Prise de Réseau (2)"
-
-NTW_POWER_DISPLAY:
-  name: "&3Affichage d'Énergie de Réseau"
-
-NTW_RECIPE_ENCODER:
-  name: "&3Encodeur de Recette de Réseau"
-
+  name: '&bNoyau d''I.A.'
+  type:
+  - '&7&oComposant'
 NTW_AUTO_CRAFTER:
-  name: "&3Auto-Fabricateur de Réseau"
-
+  name: '&3Auto-Fabricateur de Réseau'
+  type:
+  - '&7&oMachine'
 NTW_AUTO_CRAFTER_WITHHOLDING:
-  name: "&3Auto-Fabricateur de Réseau (Rétention)"
-
-NTW_CRAFTING_BLUEPRINT:
-  name: "&5Plan de Fabrication"
-
-NTW_PROBE:
-  name: "&5Sonde de Réseau"
-
-NTW_REMOTE:
-  name: "&5Télécommande de Réseau"
-
-NTW_REMOTE_EMPOWERED:
-  name: "&5Télécommande de Réseau Renforcée"
-
-NTW_REMOTE_PRISTINE:
-  name: "&5Télécommande de Réseau Immaculée"
-
-NTW_REMOTE_ULTIMATE:
-  name: "&5Télécommande de Réseau Ultime"
-
-NTW_CRAYON:
-  name: "&5Crayon de Réseau"
-
+  name: '&3Auto-Fabricateur de Réseau (Rétention)'
+  type:
+  - '&7&oMachine'
+NTW_BEST_PUSHER:
+  type:
+  - '&7&oMachine'
+NTW_BRIDGE:
+  name: '&3Pont de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_CAPACITOR_1:
+  name: '&3Condensateur de Réseau (1)'
+  type:
+  - '&7&oMachine'
+NTW_CAPACITOR_2:
+  name: '&3Condensateur de Réseau (2)'
+  type:
+  - '&7&oMachine'
+NTW_CAPACITOR_3:
+  name: '&3Condensateur de Réseau (3)'
+  type:
+  - '&7&oMachine'
+NTW_CAPACITOR_4:
+  name: '&3Condensateur de Réseau (4)'
+  type:
+  - '&7&oMachine'
+NTW_CELL:
+  name: '&3Cellule de Réseau'
+  type:
+  - '&7&oMachine'
 NTW_CONFIGURATOR:
-  name: "&5Configurateur de Réseau"
-
-NTW_WIRELESS_CONFIGURATOR:
-  name: "&5Configurateur Sans Fil de Réseau"
-
-NTW_RAKE_1:
-  name: "&5Râteau de Réseau (1)"
-
-NTW_RAKE_2:
-  name: "&5Râteau de Réseau (2)"
-
-NTW_RAKE_3:
-  name: "&5Râteau de Réseau (3)"
-
+  name: '&5Configurateur de Réseau'
+  type:
+  - '&7&oOutil'
+NTW_CONTROLLER:
+  name: '&3Contrôleur de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_CONTROL_V:
+  name: '&3Contrôle de Réseau : V'
+  type:
+  - '&7&oMachine'
+NTW_CONTROL_X:
+  name: '&3Contrôle de Réseau : X'
+  type:
+  - '&7&oMachine'
+NTW_CRAFTING_BLUEPRINT:
+  name: '&5Plan de Fabrication'
+  type:
+  - '&7&oOutil'
+NTW_CRAFTING_GRID:
+  name: '&3Grille de Fabrication de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_CRAYON:
+  name: '&5Crayon de Réseau'
+  type:
+  - '&7&oOutil'
 NTW_DEBUG_STICK:
-  name: "&5Bâton de Débogage de Réseau"
+  name: '&5Bâton de Débogage de Réseau'
+  type:
+  - '&7&oOutil'
+NTW_EMPOWERED_AI_CORE:
+  name: '&bNoyau d''I.A. Renforcé'
+  type:
+  - '&7&oComposant'
+NTW_EXPORT:
+  name: '&3Exportateur de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_GRABBER:
+  name: '&3Préhenseur de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_GREEDY_BLOCK:
+  name: '&3Bloc Avide de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_GRID:
+  name: '&3Grille de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_IMPORT:
+  name: '&3Importateur de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_INTERDIMENSIONAL_PRESENCE:
+  name: '&bPrésence Interdimensionnelle'
+  type:
+  - '&7&oComposant'
+NTW_MONITOR:
+  name: '&3Moniteur de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_NETWORK_WIRELESS_RECEIVER:
+  name: '&3Récepteur Sans Fil de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_NETWORK_WIRELESS_TRANSMITTER:
+  name: '&3Émetteur Sans Fil de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_OPTIC_CABLE:
+  name: '&bCâble Optique'
+  type:
+  - '&7&oComposant'
+NTW_OPTIC_GLASS:
+  name: '&bVerre Optique'
+  type:
+  - '&7&oComposant'
+NTW_OPTIC_STAR:
+  name: '&bÉtoile Optique'
+  type:
+  - '&7&oComposant'
+NTW_POWER_DISPLAY:
+  name: '&3Affichage d''Énergie de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_POWER_OUTLET_1:
+  name: '&3Prise de Réseau (1)'
+  type:
+  - '&7&oMachine'
+NTW_POWER_OUTLET_2:
+  name: '&3Prise de Réseau (2)'
+  type:
+  - '&7&oMachine'
+NTW_PRISTINE_AI_CORE:
+  name: '&bNoyau d''I.A. Immaculé'
+  type:
+  - '&7&oComposant'
+NTW_PROBE:
+  name: '&5Sonde de Réseau'
+  type:
+  - '&7&oOutil'
+NTW_PUSHER:
+  name: '&3Pousseur de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_QUANTUM_STORAGE_1:
+  name: '&3Stockage Quantique de Réseau (4K)'
+  type:
+  - '&7&oMachine'
+NTW_QUANTUM_STORAGE_2:
+  name: '&3Stockage Quantique de Réseau (32K)'
+  type:
+  - '&7&oMachine'
+NTW_QUANTUM_STORAGE_3:
+  name: '&3Stockage Quantique de Réseau (262K)'
+  type:
+  - '&7&oMachine'
+NTW_QUANTUM_STORAGE_4:
+  name: '&3Stockage Quantique de Réseau (2M)'
+  type:
+  - '&7&oMachine'
+NTW_QUANTUM_STORAGE_5:
+  name: '&3Stockage Quantique de Réseau (16M)'
+  type:
+  - '&7&oMachine'
+NTW_QUANTUM_STORAGE_6:
+  name: '&3Stockage Quantique de Réseau (134M)'
+  type:
+  - '&7&oMachine'
+NTW_QUANTUM_STORAGE_7:
+  name: '&3Stockage Quantique de Réseau (1B)'
+  type:
+  - '&7&oMachine'
+NTW_QUANTUM_STORAGE_8:
+  name: '&3Stockage Quantique de Réseau (∞)'
+  type:
+  - '&7&oMachine'
+NTW_QUANTUM_WORKBENCH:
+  name: '&3Établi Quantique de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_RADIOACTIVE_OPTIC_STAR:
+  name: '&bÉtoile Optique Radioactive'
+  type:
+  - '&7&oComposant'
+NTW_RAKE_1:
+  name: '&5Râteau de Réseau (1)'
+  type:
+  - '&7&oOutil'
+NTW_RAKE_2:
+  name: '&5Râteau de Réseau (2)'
+  type:
+  - '&7&oOutil'
+NTW_RAKE_3:
+  name: '&5Râteau de Réseau (3)'
+  type:
+  - '&7&oOutil'
+NTW_RECIPE_ENCODER:
+  name: '&3Encodeur de Recette de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_REMOTE:
+  name: '&5Télécommande de Réseau'
+  type:
+  - '&7&oOutil'
+NTW_REMOTE_EMPOWERED:
+  name: '&5Télécommande de Réseau Renforcée'
+  type:
+  - '&7&oOutil'
+NTW_REMOTE_PRISTINE:
+  name: '&5Télécommande de Réseau Immaculée'
+  type:
+  - '&7&oOutil'
+NTW_REMOTE_ULTIMATE:
+  name: '&5Télécommande de Réseau Ultime'
+  type:
+  - '&7&oOutil'
+NTW_SHRINKING_BASE:
+  name: '&bBase de Rétrécissement'
+  type:
+  - '&7&oComposant'
+NTW_SIMPLE_NANOBOTS:
+  name: '&bNanobots Simples'
+  type:
+  - '&7&oComposant'
+NTW_SYNTHETIC_EMERALD_SHARD:
+  name: '&bÉclat d''Émeraude Synthétique'
+  type:
+  - '&7&oComposant'
+NTW_TRASH:
+  name: '&3Purgeur de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_VACUUM:
+  name: '&3Aspirateur de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_VANILLA_GRABBER:
+  name: '&3Préhenseur Vanilla de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_VANILLA_PUSHER:
+  name: '&3Pousseur Vanilla de Réseau'
+  type:
+  - '&7&oMachine'
+NTW_WIRELESS_CONFIGURATOR:
+  name: '&5Configurateur Sans Fil de Réseau'
+  type:
+  - '&7&oOutil'

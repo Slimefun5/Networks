@@ -1,191 +1,255 @@
-# pl item translations for Networks. Auto-generated; name only.
-
-
-NTW_SYNTHETIC_EMERALD_SHARD:
-  name: "&bOdłamek Syntetycznego Szmaragdu"
-
-NTW_OPTIC_GLASS:
-  name: "&bSzkło Optyczne"
-
-NTW_OPTIC_CABLE:
-  name: "&bKabel Optyczny"
-
-NTW_OPTIC_STAR:
-  name: "&bGwiazda Optyczna"
-
-NTW_RADIOACTIVE_OPTIC_STAR:
-  name: "&bRadioaktywna Gwiazda Optyczna"
-
-NTW_SHRINKING_BASE:
-  name: "&bBaza Zmniejszająca"
-
-NTW_SIMPLE_NANOBOTS:
-  name: "&bProste Nanoboty"
-
 NTW_ADVANCED_NANOBOTS:
-  name: "&bZaawansowane Nanoboty"
-
+  name: '&bZaawansowane Nanoboty'
+  type:
+  - '&7&oKomponent'
 NTW_AI_CORE:
-  name: "&bRdzeń S.I."
-
-NTW_EMPOWERED_AI_CORE:
-  name: "&bWzmocniony Rdzeń S.I."
-
-NTW_PRISTINE_AI_CORE:
-  name: "&bNieskazitelny Rdzeń S.I."
-
-NTW_INTERDIMENSIONAL_PRESENCE:
-  name: "&bMiędzywymiarowa Obecność"
-
-NTW_CONTROLLER:
-  name: "&3Kontroler Sieci"
-
-NTW_BRIDGE:
-  name: "&3Most Sieciowy"
-
-NTW_MONITOR:
-  name: "&3Monitor Sieci"
-
-NTW_IMPORT:
-  name: "&3Importer Sieciowy"
-
-NTW_EXPORT:
-  name: "&3Eksporter Sieciowy"
-
-NTW_GRABBER:
-  name: "&3Chwytak Sieciowy"
-
-NTW_PUSHER:
-  name: "&3Popychacz Sieciowy"
-
-NTW_CONTROL_X:
-  name: "&3Sterowanie Sieci: X"
-
-NTW_CONTROL_V:
-  name: "&3Sterowanie Sieci: V"
-
-NTW_VACUUM:
-  name: "&3Odkurzacz Sieciowy"
-
-NTW_VANILLA_GRABBER:
-  name: "&3Chwytak Sieciowy Vanilla"
-
-NTW_VANILLA_PUSHER:
-  name: "&3Popychacz Sieciowy Vanilla"
-
-NTW_NETWORK_WIRELESS_TRANSMITTER:
-  name: "&3Bezprzewodowy Nadajnik Sieciowy"
-
-NTW_NETWORK_WIRELESS_RECEIVER:
-  name: "&3Bezprzewodowy Odbiornik Sieciowy"
-
-NTW_TRASH:
-  name: "&3Niszczarka Sieciowa"
-
-NTW_GRID:
-  name: "&3Siatka Sieciowa"
-
-NTW_CRAFTING_GRID:
-  name: "&3Siatka Tworzenia Sieciowa"
-
-NTW_CELL:
-  name: "&3Komórka Sieciowa"
-
-NTW_GREEDY_BLOCK:
-  name: "&3Chciwy Blok Sieciowy"
-
-NTW_QUANTUM_WORKBENCH:
-  name: "&3Stół Kwantowy Sieciowy"
-
-NTW_QUANTUM_STORAGE_1:
-  name: "&3Magazyn Kwantowy Sieciowy (4K)"
-
-NTW_QUANTUM_STORAGE_2:
-  name: "&3Magazyn Kwantowy Sieciowy (32K)"
-
-NTW_QUANTUM_STORAGE_3:
-  name: "&3Magazyn Kwantowy Sieciowy (262K)"
-
-NTW_QUANTUM_STORAGE_4:
-  name: "&3Magazyn Kwantowy Sieciowy (2M)"
-
-NTW_QUANTUM_STORAGE_5:
-  name: "&3Magazyn Kwantowy Sieciowy (16M)"
-
-NTW_QUANTUM_STORAGE_6:
-  name: "&3Magazyn Kwantowy Sieciowy (134M)"
-
-NTW_QUANTUM_STORAGE_7:
-  name: "&3Magazyn Kwantowy Sieciowy (1B)"
-
-NTW_QUANTUM_STORAGE_8:
-  name: "&3Magazyn Kwantowy Sieciowy (∞)"
-
-NTW_CAPACITOR_1:
-  name: "&3Kondensator Sieciowy (1)"
-
-NTW_CAPACITOR_2:
-  name: "&3Kondensator Sieciowy (2)"
-
-NTW_CAPACITOR_3:
-  name: "&3Kondensator Sieciowy (3)"
-
-NTW_CAPACITOR_4:
-  name: "&3Kondensator Sieciowy (4)"
-
-NTW_POWER_OUTLET_1:
-  name: "&3Gniazdo Zasilania Sieciowe (1)"
-
-NTW_POWER_OUTLET_2:
-  name: "&3Gniazdo Zasilania Sieciowe (2)"
-
-NTW_POWER_DISPLAY:
-  name: "&3Wyświetlacz Energii Sieciowy"
-
-NTW_RECIPE_ENCODER:
-  name: "&3Koder Receptur Sieciowy"
-
+  name: '&bRdzeń S.I.'
+  type:
+  - '&7&oKomponent'
 NTW_AUTO_CRAFTER:
-  name: "&3Automatyczny Krafter Sieciowy"
-
+  name: '&3Automatyczny Krafter Sieciowy'
+  type:
+  - '&7&oMaszyna'
 NTW_AUTO_CRAFTER_WITHHOLDING:
-  name: "&3Automatyczny Krafter Sieciowy (Wstrzymujący)"
-
-NTW_CRAFTING_BLUEPRINT:
-  name: "&5Schemat Tworzenia"
-
-NTW_PROBE:
-  name: "&5Sonda Sieciowa"
-
-NTW_REMOTE:
-  name: "&5Pilot Sieciowy"
-
-NTW_REMOTE_EMPOWERED:
-  name: "&5Wzmocniony Pilot Sieciowy"
-
-NTW_REMOTE_PRISTINE:
-  name: "&5Nieskazitelny Pilot Sieciowy"
-
-NTW_REMOTE_ULTIMATE:
-  name: "&5Ostateczny Pilot Sieciowy"
-
-NTW_CRAYON:
-  name: "&5Kredka Sieciowa"
-
+  name: '&3Automatyczny Krafter Sieciowy (Wstrzymujący)'
+  type:
+  - '&7&oMaszyna'
+NTW_BEST_PUSHER:
+  type:
+  - '&7&oMaszyna'
+NTW_BRIDGE:
+  name: '&3Most Sieciowy'
+  type:
+  - '&7&oMaszyna'
+NTW_CAPACITOR_1:
+  name: '&3Kondensator Sieciowy (1)'
+  type:
+  - '&7&oMaszyna'
+NTW_CAPACITOR_2:
+  name: '&3Kondensator Sieciowy (2)'
+  type:
+  - '&7&oMaszyna'
+NTW_CAPACITOR_3:
+  name: '&3Kondensator Sieciowy (3)'
+  type:
+  - '&7&oMaszyna'
+NTW_CAPACITOR_4:
+  name: '&3Kondensator Sieciowy (4)'
+  type:
+  - '&7&oMaszyna'
+NTW_CELL:
+  name: '&3Komórka Sieciowa'
+  type:
+  - '&7&oMaszyna'
 NTW_CONFIGURATOR:
-  name: "&5Konfigurator Sieciowy"
-
-NTW_WIRELESS_CONFIGURATOR:
-  name: "&5Bezprzewodowy Konfigurator Sieciowy"
-
-NTW_RAKE_1:
-  name: "&5Grabie Sieciowe (1)"
-
-NTW_RAKE_2:
-  name: "&5Grabie Sieciowe (2)"
-
-NTW_RAKE_3:
-  name: "&5Grabie Sieciowe (3)"
-
+  name: '&5Konfigurator Sieciowy'
+  type:
+  - '&7&oNarzędzie'
+NTW_CONTROLLER:
+  name: '&3Kontroler Sieci'
+  type:
+  - '&7&oMaszyna'
+NTW_CONTROL_V:
+  name: '&3Sterowanie Sieci: V'
+  type:
+  - '&7&oMaszyna'
+NTW_CONTROL_X:
+  name: '&3Sterowanie Sieci: X'
+  type:
+  - '&7&oMaszyna'
+NTW_CRAFTING_BLUEPRINT:
+  name: '&5Schemat Tworzenia'
+  type:
+  - '&7&oNarzędzie'
+NTW_CRAFTING_GRID:
+  name: '&3Siatka Tworzenia Sieciowa'
+  type:
+  - '&7&oMaszyna'
+NTW_CRAYON:
+  name: '&5Kredka Sieciowa'
+  type:
+  - '&7&oNarzędzie'
 NTW_DEBUG_STICK:
-  name: "&5Patyk Debugowania Sieciowy"
+  name: '&5Patyk Debugowania Sieciowy'
+  type:
+  - '&7&oNarzędzie'
+NTW_EMPOWERED_AI_CORE:
+  name: '&bWzmocniony Rdzeń S.I.'
+  type:
+  - '&7&oKomponent'
+NTW_EXPORT:
+  name: '&3Eksporter Sieciowy'
+  type:
+  - '&7&oMaszyna'
+NTW_GRABBER:
+  name: '&3Chwytak Sieciowy'
+  type:
+  - '&7&oMaszyna'
+NTW_GREEDY_BLOCK:
+  name: '&3Chciwy Blok Sieciowy'
+  type:
+  - '&7&oMaszyna'
+NTW_GRID:
+  name: '&3Siatka Sieciowa'
+  type:
+  - '&7&oMaszyna'
+NTW_IMPORT:
+  name: '&3Importer Sieciowy'
+  type:
+  - '&7&oMaszyna'
+NTW_INTERDIMENSIONAL_PRESENCE:
+  name: '&bMiędzywymiarowa Obecność'
+  type:
+  - '&7&oKomponent'
+NTW_MONITOR:
+  name: '&3Monitor Sieci'
+  type:
+  - '&7&oMaszyna'
+NTW_NETWORK_WIRELESS_RECEIVER:
+  name: '&3Bezprzewodowy Odbiornik Sieciowy'
+  type:
+  - '&7&oMaszyna'
+NTW_NETWORK_WIRELESS_TRANSMITTER:
+  name: '&3Bezprzewodowy Nadajnik Sieciowy'
+  type:
+  - '&7&oMaszyna'
+NTW_OPTIC_CABLE:
+  name: '&bKabel Optyczny'
+  type:
+  - '&7&oKomponent'
+NTW_OPTIC_GLASS:
+  name: '&bSzkło Optyczne'
+  type:
+  - '&7&oKomponent'
+NTW_OPTIC_STAR:
+  name: '&bGwiazda Optyczna'
+  type:
+  - '&7&oKomponent'
+NTW_POWER_DISPLAY:
+  name: '&3Wyświetlacz Energii Sieciowy'
+  type:
+  - '&7&oMaszyna'
+NTW_POWER_OUTLET_1:
+  name: '&3Gniazdo Zasilania Sieciowe (1)'
+  type:
+  - '&7&oMaszyna'
+NTW_POWER_OUTLET_2:
+  name: '&3Gniazdo Zasilania Sieciowe (2)'
+  type:
+  - '&7&oMaszyna'
+NTW_PRISTINE_AI_CORE:
+  name: '&bNieskazitelny Rdzeń S.I.'
+  type:
+  - '&7&oKomponent'
+NTW_PROBE:
+  name: '&5Sonda Sieciowa'
+  type:
+  - '&7&oNarzędzie'
+NTW_PUSHER:
+  name: '&3Popychacz Sieciowy'
+  type:
+  - '&7&oMaszyna'
+NTW_QUANTUM_STORAGE_1:
+  name: '&3Magazyn Kwantowy Sieciowy (4K)'
+  type:
+  - '&7&oMaszyna'
+NTW_QUANTUM_STORAGE_2:
+  name: '&3Magazyn Kwantowy Sieciowy (32K)'
+  type:
+  - '&7&oMaszyna'
+NTW_QUANTUM_STORAGE_3:
+  name: '&3Magazyn Kwantowy Sieciowy (262K)'
+  type:
+  - '&7&oMaszyna'
+NTW_QUANTUM_STORAGE_4:
+  name: '&3Magazyn Kwantowy Sieciowy (2M)'
+  type:
+  - '&7&oMaszyna'
+NTW_QUANTUM_STORAGE_5:
+  name: '&3Magazyn Kwantowy Sieciowy (16M)'
+  type:
+  - '&7&oMaszyna'
+NTW_QUANTUM_STORAGE_6:
+  name: '&3Magazyn Kwantowy Sieciowy (134M)'
+  type:
+  - '&7&oMaszyna'
+NTW_QUANTUM_STORAGE_7:
+  name: '&3Magazyn Kwantowy Sieciowy (1B)'
+  type:
+  - '&7&oMaszyna'
+NTW_QUANTUM_STORAGE_8:
+  name: '&3Magazyn Kwantowy Sieciowy (∞)'
+  type:
+  - '&7&oMaszyna'
+NTW_QUANTUM_WORKBENCH:
+  name: '&3Stół Kwantowy Sieciowy'
+  type:
+  - '&7&oMaszyna'
+NTW_RADIOACTIVE_OPTIC_STAR:
+  name: '&bRadioaktywna Gwiazda Optyczna'
+  type:
+  - '&7&oKomponent'
+NTW_RAKE_1:
+  name: '&5Grabie Sieciowe (1)'
+  type:
+  - '&7&oNarzędzie'
+NTW_RAKE_2:
+  name: '&5Grabie Sieciowe (2)'
+  type:
+  - '&7&oNarzędzie'
+NTW_RAKE_3:
+  name: '&5Grabie Sieciowe (3)'
+  type:
+  - '&7&oNarzędzie'
+NTW_RECIPE_ENCODER:
+  name: '&3Koder Receptur Sieciowy'
+  type:
+  - '&7&oMaszyna'
+NTW_REMOTE:
+  name: '&5Pilot Sieciowy'
+  type:
+  - '&7&oNarzędzie'
+NTW_REMOTE_EMPOWERED:
+  name: '&5Wzmocniony Pilot Sieciowy'
+  type:
+  - '&7&oNarzędzie'
+NTW_REMOTE_PRISTINE:
+  name: '&5Nieskazitelny Pilot Sieciowy'
+  type:
+  - '&7&oNarzędzie'
+NTW_REMOTE_ULTIMATE:
+  name: '&5Ostateczny Pilot Sieciowy'
+  type:
+  - '&7&oNarzędzie'
+NTW_SHRINKING_BASE:
+  name: '&bBaza Zmniejszająca'
+  type:
+  - '&7&oKomponent'
+NTW_SIMPLE_NANOBOTS:
+  name: '&bProste Nanoboty'
+  type:
+  - '&7&oKomponent'
+NTW_SYNTHETIC_EMERALD_SHARD:
+  name: '&bOdłamek Syntetycznego Szmaragdu'
+  type:
+  - '&7&oKomponent'
+NTW_TRASH:
+  name: '&3Niszczarka Sieciowa'
+  type:
+  - '&7&oMaszyna'
+NTW_VACUUM:
+  name: '&3Odkurzacz Sieciowy'
+  type:
+  - '&7&oMaszyna'
+NTW_VANILLA_GRABBER:
+  name: '&3Chwytak Sieciowy Vanilla'
+  type:
+  - '&7&oMaszyna'
+NTW_VANILLA_PUSHER:
+  name: '&3Popychacz Sieciowy Vanilla'
+  type:
+  - '&7&oMaszyna'
+NTW_WIRELESS_CONFIGURATOR:
+  name: '&5Bezprzewodowy Konfigurator Sieciowy'
+  type:
+  - '&7&oNarzędzie'

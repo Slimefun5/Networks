@@ -1,191 +1,255 @@
-# nl item translations for Networks. Auto-generated; name only.
-
-
-NTW_SYNTHETIC_EMERALD_SHARD:
-  name: "&bSynthetische Smaragdscherf"
-
-NTW_OPTIC_GLASS:
-  name: "&bOptisch Glas"
-
-NTW_OPTIC_CABLE:
-  name: "&bOptische Kabel"
-
-NTW_OPTIC_STAR:
-  name: "&bOptische Ster"
-
-NTW_RADIOACTIVE_OPTIC_STAR:
-  name: "&bRadioactieve Optische Ster"
-
-NTW_SHRINKING_BASE:
-  name: "&bKrimpbasis"
-
-NTW_SIMPLE_NANOBOTS:
-  name: "&bEenvoudige Nanobots"
-
 NTW_ADVANCED_NANOBOTS:
-  name: "&bGeavanceerde Nanobots"
-
+  name: '&bGeavanceerde Nanobots'
+  type:
+  - '&7&oOnderdeel'
 NTW_AI_CORE:
-  name: "&bA.I.-Kern"
-
-NTW_EMPOWERED_AI_CORE:
-  name: "&bVersterkte A.I.-Kern"
-
-NTW_PRISTINE_AI_CORE:
-  name: "&bOnberispelijke A.I.-Kern"
-
-NTW_INTERDIMENSIONAL_PRESENCE:
-  name: "&bInterdimensionale Aanwezigheid"
-
-NTW_CONTROLLER:
-  name: "&3Netwerk-Controller"
-
-NTW_BRIDGE:
-  name: "&3Netwerk-Brug"
-
-NTW_MONITOR:
-  name: "&3Netwerk-Monitor"
-
-NTW_IMPORT:
-  name: "&3Netwerk-Importeur"
-
-NTW_EXPORT:
-  name: "&3Netwerk-Exporteur"
-
-NTW_GRABBER:
-  name: "&3Netwerk-Grijper"
-
-NTW_PUSHER:
-  name: "&3Netwerk-Duwer"
-
-NTW_CONTROL_X:
-  name: "&3Netwerk-Besturing: X"
-
-NTW_CONTROL_V:
-  name: "&3Netwerk-Besturing: V"
-
-NTW_VACUUM:
-  name: "&3Netwerk-Zuiger"
-
-NTW_VANILLA_GRABBER:
-  name: "&3Netwerk-Vanilla-Grijper"
-
-NTW_VANILLA_PUSHER:
-  name: "&3Netwerk-Vanilla-Duwer"
-
-NTW_NETWORK_WIRELESS_TRANSMITTER:
-  name: "&3Draadloze Netwerk-Zender"
-
-NTW_NETWORK_WIRELESS_RECEIVER:
-  name: "&3Draadloze Netwerk-Ontvanger"
-
-NTW_TRASH:
-  name: "&3Netwerk-Vernietiger"
-
-NTW_GRID:
-  name: "&3Netwerk-Raster"
-
-NTW_CRAFTING_GRID:
-  name: "&3Netwerk-Maakraster"
-
-NTW_CELL:
-  name: "&3Netwerk-Cel"
-
-NTW_GREEDY_BLOCK:
-  name: "&3Hebzuchtig Netwerk-Blok"
-
-NTW_QUANTUM_WORKBENCH:
-  name: "&3Netwerk-Kwantumwerkbank"
-
-NTW_QUANTUM_STORAGE_1:
-  name: "&3Netwerk-Kwantumopslag (4K)"
-
-NTW_QUANTUM_STORAGE_2:
-  name: "&3Netwerk-Kwantumopslag (32K)"
-
-NTW_QUANTUM_STORAGE_3:
-  name: "&3Netwerk-Kwantumopslag (262K)"
-
-NTW_QUANTUM_STORAGE_4:
-  name: "&3Netwerk-Kwantumopslag (2M)"
-
-NTW_QUANTUM_STORAGE_5:
-  name: "&3Netwerk-Kwantumopslag (16M)"
-
-NTW_QUANTUM_STORAGE_6:
-  name: "&3Netwerk-Kwantumopslag (134M)"
-
-NTW_QUANTUM_STORAGE_7:
-  name: "&3Netwerk-Kwantumopslag (1B)"
-
-NTW_QUANTUM_STORAGE_8:
-  name: "&3Netwerk-Kwantumopslag (∞)"
-
-NTW_CAPACITOR_1:
-  name: "&3Netwerk-Condensator (1)"
-
-NTW_CAPACITOR_2:
-  name: "&3Netwerk-Condensator (2)"
-
-NTW_CAPACITOR_3:
-  name: "&3Netwerk-Condensator (3)"
-
-NTW_CAPACITOR_4:
-  name: "&3Netwerk-Condensator (4)"
-
-NTW_POWER_OUTLET_1:
-  name: "&3Netwerk-Stopcontact (1)"
-
-NTW_POWER_OUTLET_2:
-  name: "&3Netwerk-Stopcontact (2)"
-
-NTW_POWER_DISPLAY:
-  name: "&3Netwerk-Energiedisplay"
-
-NTW_RECIPE_ENCODER:
-  name: "&3Netwerk-Receptcodeerder"
-
+  name: '&bA.I.-Kern'
+  type:
+  - '&7&oOnderdeel'
 NTW_AUTO_CRAFTER:
-  name: "&3Netwerk-Automaker"
-
+  name: '&3Netwerk-Automaker'
+  type:
+  - '&7&oMachine'
 NTW_AUTO_CRAFTER_WITHHOLDING:
-  name: "&3Netwerk-Automaker (Inhoudend)"
-
-NTW_CRAFTING_BLUEPRINT:
-  name: "&5Maakblauwdruk"
-
-NTW_PROBE:
-  name: "&5Netwerk-Sonde"
-
-NTW_REMOTE:
-  name: "&5Netwerk-Afstandsbediening"
-
-NTW_REMOTE_EMPOWERED:
-  name: "&5Versterkte Netwerk-Afstandsbediening"
-
-NTW_REMOTE_PRISTINE:
-  name: "&5Onberispelijke Netwerk-Afstandsbediening"
-
-NTW_REMOTE_ULTIMATE:
-  name: "&5Ultieme Netwerk-Afstandsbediening"
-
-NTW_CRAYON:
-  name: "&5Netwerk-Krijt"
-
+  name: '&3Netwerk-Automaker (Inhoudend)'
+  type:
+  - '&7&oMachine'
+NTW_BEST_PUSHER:
+  type:
+  - '&7&oMachine'
+NTW_BRIDGE:
+  name: '&3Netwerk-Brug'
+  type:
+  - '&7&oMachine'
+NTW_CAPACITOR_1:
+  name: '&3Netwerk-Condensator (1)'
+  type:
+  - '&7&oMachine'
+NTW_CAPACITOR_2:
+  name: '&3Netwerk-Condensator (2)'
+  type:
+  - '&7&oMachine'
+NTW_CAPACITOR_3:
+  name: '&3Netwerk-Condensator (3)'
+  type:
+  - '&7&oMachine'
+NTW_CAPACITOR_4:
+  name: '&3Netwerk-Condensator (4)'
+  type:
+  - '&7&oMachine'
+NTW_CELL:
+  name: '&3Netwerk-Cel'
+  type:
+  - '&7&oMachine'
 NTW_CONFIGURATOR:
-  name: "&5Netwerk-Configurator"
-
-NTW_WIRELESS_CONFIGURATOR:
-  name: "&5Draadloze Netwerk-Configurator"
-
-NTW_RAKE_1:
-  name: "&5Netwerk-Hark (1)"
-
-NTW_RAKE_2:
-  name: "&5Netwerk-Hark (2)"
-
-NTW_RAKE_3:
-  name: "&5Netwerk-Hark (3)"
-
+  name: '&5Netwerk-Configurator'
+  type:
+  - '&7&oGereedschap'
+NTW_CONTROLLER:
+  name: '&3Netwerk-Controller'
+  type:
+  - '&7&oMachine'
+NTW_CONTROL_V:
+  name: '&3Netwerk-Besturing: V'
+  type:
+  - '&7&oMachine'
+NTW_CONTROL_X:
+  name: '&3Netwerk-Besturing: X'
+  type:
+  - '&7&oMachine'
+NTW_CRAFTING_BLUEPRINT:
+  name: '&5Maakblauwdruk'
+  type:
+  - '&7&oGereedschap'
+NTW_CRAFTING_GRID:
+  name: '&3Netwerk-Maakraster'
+  type:
+  - '&7&oMachine'
+NTW_CRAYON:
+  name: '&5Netwerk-Krijt'
+  type:
+  - '&7&oGereedschap'
 NTW_DEBUG_STICK:
-  name: "&5Netwerk-Debugstok"
+  name: '&5Netwerk-Debugstok'
+  type:
+  - '&7&oGereedschap'
+NTW_EMPOWERED_AI_CORE:
+  name: '&bVersterkte A.I.-Kern'
+  type:
+  - '&7&oOnderdeel'
+NTW_EXPORT:
+  name: '&3Netwerk-Exporteur'
+  type:
+  - '&7&oMachine'
+NTW_GRABBER:
+  name: '&3Netwerk-Grijper'
+  type:
+  - '&7&oMachine'
+NTW_GREEDY_BLOCK:
+  name: '&3Hebzuchtig Netwerk-Blok'
+  type:
+  - '&7&oMachine'
+NTW_GRID:
+  name: '&3Netwerk-Raster'
+  type:
+  - '&7&oMachine'
+NTW_IMPORT:
+  name: '&3Netwerk-Importeur'
+  type:
+  - '&7&oMachine'
+NTW_INTERDIMENSIONAL_PRESENCE:
+  name: '&bInterdimensionale Aanwezigheid'
+  type:
+  - '&7&oOnderdeel'
+NTW_MONITOR:
+  name: '&3Netwerk-Monitor'
+  type:
+  - '&7&oMachine'
+NTW_NETWORK_WIRELESS_RECEIVER:
+  name: '&3Draadloze Netwerk-Ontvanger'
+  type:
+  - '&7&oMachine'
+NTW_NETWORK_WIRELESS_TRANSMITTER:
+  name: '&3Draadloze Netwerk-Zender'
+  type:
+  - '&7&oMachine'
+NTW_OPTIC_CABLE:
+  name: '&bOptische Kabel'
+  type:
+  - '&7&oOnderdeel'
+NTW_OPTIC_GLASS:
+  name: '&bOptisch Glas'
+  type:
+  - '&7&oOnderdeel'
+NTW_OPTIC_STAR:
+  name: '&bOptische Ster'
+  type:
+  - '&7&oOnderdeel'
+NTW_POWER_DISPLAY:
+  name: '&3Netwerk-Energiedisplay'
+  type:
+  - '&7&oMachine'
+NTW_POWER_OUTLET_1:
+  name: '&3Netwerk-Stopcontact (1)'
+  type:
+  - '&7&oMachine'
+NTW_POWER_OUTLET_2:
+  name: '&3Netwerk-Stopcontact (2)'
+  type:
+  - '&7&oMachine'
+NTW_PRISTINE_AI_CORE:
+  name: '&bOnberispelijke A.I.-Kern'
+  type:
+  - '&7&oOnderdeel'
+NTW_PROBE:
+  name: '&5Netwerk-Sonde'
+  type:
+  - '&7&oGereedschap'
+NTW_PUSHER:
+  name: '&3Netwerk-Duwer'
+  type:
+  - '&7&oMachine'
+NTW_QUANTUM_STORAGE_1:
+  name: '&3Netwerk-Kwantumopslag (4K)'
+  type:
+  - '&7&oMachine'
+NTW_QUANTUM_STORAGE_2:
+  name: '&3Netwerk-Kwantumopslag (32K)'
+  type:
+  - '&7&oMachine'
+NTW_QUANTUM_STORAGE_3:
+  name: '&3Netwerk-Kwantumopslag (262K)'
+  type:
+  - '&7&oMachine'
+NTW_QUANTUM_STORAGE_4:
+  name: '&3Netwerk-Kwantumopslag (2M)'
+  type:
+  - '&7&oMachine'
+NTW_QUANTUM_STORAGE_5:
+  name: '&3Netwerk-Kwantumopslag (16M)'
+  type:
+  - '&7&oMachine'
+NTW_QUANTUM_STORAGE_6:
+  name: '&3Netwerk-Kwantumopslag (134M)'
+  type:
+  - '&7&oMachine'
+NTW_QUANTUM_STORAGE_7:
+  name: '&3Netwerk-Kwantumopslag (1B)'
+  type:
+  - '&7&oMachine'
+NTW_QUANTUM_STORAGE_8:
+  name: '&3Netwerk-Kwantumopslag (∞)'
+  type:
+  - '&7&oMachine'
+NTW_QUANTUM_WORKBENCH:
+  name: '&3Netwerk-Kwantumwerkbank'
+  type:
+  - '&7&oMachine'
+NTW_RADIOACTIVE_OPTIC_STAR:
+  name: '&bRadioactieve Optische Ster'
+  type:
+  - '&7&oOnderdeel'
+NTW_RAKE_1:
+  name: '&5Netwerk-Hark (1)'
+  type:
+  - '&7&oGereedschap'
+NTW_RAKE_2:
+  name: '&5Netwerk-Hark (2)'
+  type:
+  - '&7&oGereedschap'
+NTW_RAKE_3:
+  name: '&5Netwerk-Hark (3)'
+  type:
+  - '&7&oGereedschap'
+NTW_RECIPE_ENCODER:
+  name: '&3Netwerk-Receptcodeerder'
+  type:
+  - '&7&oMachine'
+NTW_REMOTE:
+  name: '&5Netwerk-Afstandsbediening'
+  type:
+  - '&7&oGereedschap'
+NTW_REMOTE_EMPOWERED:
+  name: '&5Versterkte Netwerk-Afstandsbediening'
+  type:
+  - '&7&oGereedschap'
+NTW_REMOTE_PRISTINE:
+  name: '&5Onberispelijke Netwerk-Afstandsbediening'
+  type:
+  - '&7&oGereedschap'
+NTW_REMOTE_ULTIMATE:
+  name: '&5Ultieme Netwerk-Afstandsbediening'
+  type:
+  - '&7&oGereedschap'
+NTW_SHRINKING_BASE:
+  name: '&bKrimpbasis'
+  type:
+  - '&7&oOnderdeel'
+NTW_SIMPLE_NANOBOTS:
+  name: '&bEenvoudige Nanobots'
+  type:
+  - '&7&oOnderdeel'
+NTW_SYNTHETIC_EMERALD_SHARD:
+  name: '&bSynthetische Smaragdscherf'
+  type:
+  - '&7&oOnderdeel'
+NTW_TRASH:
+  name: '&3Netwerk-Vernietiger'
+  type:
+  - '&7&oMachine'
+NTW_VACUUM:
+  name: '&3Netwerk-Zuiger'
+  type:
+  - '&7&oMachine'
+NTW_VANILLA_GRABBER:
+  name: '&3Netwerk-Vanilla-Grijper'
+  type:
+  - '&7&oMachine'
+NTW_VANILLA_PUSHER:
+  name: '&3Netwerk-Vanilla-Duwer'
+  type:
+  - '&7&oMachine'
+NTW_WIRELESS_CONFIGURATOR:
+  name: '&5Draadloze Netwerk-Configurator'
+  type:
+  - '&7&oGereedschap'

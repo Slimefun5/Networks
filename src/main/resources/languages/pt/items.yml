@@ -1,255 +1,192 @@
 NTW_ADVANCED_NANOBOTS:
-  name: '&bNanobots Avanzados'
   type:
   - '&7&oComponente'
 NTW_AI_CORE:
-  name: '&bNúcleo de I.A.'
   type:
   - '&7&oComponente'
 NTW_AUTO_CRAFTER:
-  name: '&3Autofabricador de Red'
   type:
   - '&7&oMáquina'
 NTW_AUTO_CRAFTER_WITHHOLDING:
-  name: '&3Autofabricador de Red (Retención)'
   type:
   - '&7&oMáquina'
 NTW_BEST_PUSHER:
   type:
   - '&7&oMáquina'
 NTW_BRIDGE:
-  name: '&3Puente de Red'
   type:
   - '&7&oMáquina'
 NTW_CAPACITOR_1:
-  name: '&3Condensador de Red (1)'
   type:
   - '&7&oMáquina'
 NTW_CAPACITOR_2:
-  name: '&3Condensador de Red (2)'
   type:
   - '&7&oMáquina'
 NTW_CAPACITOR_3:
-  name: '&3Condensador de Red (3)'
   type:
   - '&7&oMáquina'
 NTW_CAPACITOR_4:
-  name: '&3Condensador de Red (4)'
   type:
   - '&7&oMáquina'
 NTW_CELL:
-  name: '&3Celda de Red'
   type:
   - '&7&oMáquina'
 NTW_CONFIGURATOR:
-  name: '&5Configurador de Red'
   type:
-  - '&7&oHerramienta'
+  - '&7&oFerramenta'
 NTW_CONTROLLER:
-  name: '&3Controlador de Red'
   type:
   - '&7&oMáquina'
 NTW_CONTROL_V:
-  name: '&3Control de Red: V'
   type:
   - '&7&oMáquina'
 NTW_CONTROL_X:
-  name: '&3Control de Red: X'
   type:
   - '&7&oMáquina'
 NTW_CRAFTING_BLUEPRINT:
-  name: '&5Plano de Fabricación'
   type:
-  - '&7&oHerramienta'
+  - '&7&oFerramenta'
 NTW_CRAFTING_GRID:
-  name: '&3Rejilla de Fabricación de Red'
   type:
   - '&7&oMáquina'
 NTW_CRAYON:
-  name: '&5Crayón de Red'
   type:
-  - '&7&oHerramienta'
+  - '&7&oFerramenta'
 NTW_DEBUG_STICK:
-  name: '&5Palo de Depuración de Red'
   type:
-  - '&7&oHerramienta'
+  - '&7&oFerramenta'
 NTW_EMPOWERED_AI_CORE:
-  name: '&bNúcleo de I.A. Potenciado'
   type:
   - '&7&oComponente'
 NTW_EXPORT:
-  name: '&3Exportador de Red'
   type:
   - '&7&oMáquina'
 NTW_GRABBER:
-  name: '&3Agarrador de Red'
   type:
   - '&7&oMáquina'
 NTW_GREEDY_BLOCK:
-  name: '&3Bloque Codicioso de Red'
   type:
   - '&7&oMáquina'
 NTW_GRID:
-  name: '&3Rejilla de Red'
   type:
   - '&7&oMáquina'
 NTW_IMPORT:
-  name: '&3Importador de Red'
   type:
   - '&7&oMáquina'
 NTW_INTERDIMENSIONAL_PRESENCE:
-  name: '&bPresencia Interdimensional'
   type:
   - '&7&oComponente'
 NTW_MONITOR:
-  name: '&3Monitor de Red'
   type:
   - '&7&oMáquina'
 NTW_NETWORK_WIRELESS_RECEIVER:
-  name: '&3Receptor Inalámbrico de Red'
   type:
   - '&7&oMáquina'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
-  name: '&3Transmisor Inalámbrico de Red'
   type:
   - '&7&oMáquina'
 NTW_OPTIC_CABLE:
-  name: '&bCable Óptico'
   type:
   - '&7&oComponente'
 NTW_OPTIC_GLASS:
-  name: '&bVidrio Óptico'
   type:
   - '&7&oComponente'
 NTW_OPTIC_STAR:
-  name: '&bEstrella Óptica'
   type:
   - '&7&oComponente'
 NTW_POWER_DISPLAY:
-  name: '&3Pantalla de Energía de Red'
   type:
   - '&7&oMáquina'
 NTW_POWER_OUTLET_1:
-  name: '&3Toma de Corriente de Red (1)'
   type:
   - '&7&oMáquina'
 NTW_POWER_OUTLET_2:
-  name: '&3Toma de Corriente de Red (2)'
   type:
   - '&7&oMáquina'
 NTW_PRISTINE_AI_CORE:
-  name: '&bNúcleo de I.A. Prístino'
   type:
   - '&7&oComponente'
 NTW_PROBE:
-  name: '&5Sonda de Red'
   type:
-  - '&7&oHerramienta'
+  - '&7&oFerramenta'
 NTW_PUSHER:
-  name: '&3Empujador de Red'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_1:
-  name: '&3Almacenamiento Cuántico de Red (4K)'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_2:
-  name: '&3Almacenamiento Cuántico de Red (32K)'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_3:
-  name: '&3Almacenamiento Cuántico de Red (262K)'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_4:
-  name: '&3Almacenamiento Cuántico de Red (2M)'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_5:
-  name: '&3Almacenamiento Cuántico de Red (16M)'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_6:
-  name: '&3Almacenamiento Cuántico de Red (134M)'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_7:
-  name: '&3Almacenamiento Cuántico de Red (1B)'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_8:
-  name: '&3Almacenamiento Cuántico de Red (∞)'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_WORKBENCH:
-  name: '&3Mesa de Trabajo Cuántica de Red'
   type:
   - '&7&oMáquina'
 NTW_RADIOACTIVE_OPTIC_STAR:
-  name: '&bEstrella Óptica Radiactiva'
   type:
   - '&7&oComponente'
 NTW_RAKE_1:
-  name: '&5Rastrillo de Red (1)'
   type:
-  - '&7&oHerramienta'
+  - '&7&oFerramenta'
 NTW_RAKE_2:
-  name: '&5Rastrillo de Red (2)'
   type:
-  - '&7&oHerramienta'
+  - '&7&oFerramenta'
 NTW_RAKE_3:
-  name: '&5Rastrillo de Red (3)'
   type:
-  - '&7&oHerramienta'
+  - '&7&oFerramenta'
 NTW_RECIPE_ENCODER:
-  name: '&3Codificador de Recetas de Red'
   type:
   - '&7&oMáquina'
 NTW_REMOTE:
-  name: '&5Control Remoto de Red'
   type:
-  - '&7&oHerramienta'
+  - '&7&oFerramenta'
 NTW_REMOTE_EMPOWERED:
-  name: '&5Control Remoto de Red Potenciado'
   type:
-  - '&7&oHerramienta'
+  - '&7&oFerramenta'
 NTW_REMOTE_PRISTINE:
-  name: '&5Control Remoto de Red Prístino'
   type:
-  - '&7&oHerramienta'
+  - '&7&oFerramenta'
 NTW_REMOTE_ULTIMATE:
-  name: '&5Control Remoto de Red Definitivo'
   type:
-  - '&7&oHerramienta'
+  - '&7&oFerramenta'
 NTW_SHRINKING_BASE:
-  name: '&bBase de Reducción'
   type:
   - '&7&oComponente'
 NTW_SIMPLE_NANOBOTS:
-  name: '&bNanobots Simples'
   type:
   - '&7&oComponente'
 NTW_SYNTHETIC_EMERALD_SHARD:
-  name: '&bFragmento de Esmeralda Sintética'
   type:
   - '&7&oComponente'
 NTW_TRASH:
-  name: '&3Purgador de Red'
   type:
   - '&7&oMáquina'
 NTW_VACUUM:
-  name: '&3Aspirador de Red'
   type:
   - '&7&oMáquina'
 NTW_VANILLA_GRABBER:
-  name: '&3Agarrador Vanilla de Red'
   type:
   - '&7&oMáquina'
 NTW_VANILLA_PUSHER:
-  name: '&3Empujador Vanilla de Red'
   type:
   - '&7&oMáquina'
 NTW_WIRELESS_CONFIGURATOR:
-  name: '&5Configurador Inalámbrico de Red'
   type:
-  - '&7&oHerramienta'
+  - '&7&oFerramenta'
