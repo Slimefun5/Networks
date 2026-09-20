@@ -127,7 +127,7 @@ NTW_CONTROL_V:
   - '&7Tinklo valdymas: V bandys'
   - '&7„įklijuoti“ bloką iš tinklo'
   - '&7į pasaulį.'
-  - '&7Veikia tik su vaniliniais blokais.'
+  - '&7Veikia tik su standartiniais blokais.'
   name: '&3Tinklo valdymas: V'
   stats:
   - '&7Tinklo sąnaudos: &e100&7/įklijavimą'
@@ -138,7 +138,7 @@ NTW_CONTROL_X:
   - '&7Tinklo valdymas: X bandys'
   - '&7„iškirpti“ bloką iš pasaulio'
   - '&7ir įdėti jį į tinklą.'
-  - '&7Veikia tik su vaniliniais blokais be'
+  - '&7Veikia tik su standartiniais blokais be'
   - '&7inventoriaus.'
   name: '&3Tinklo valdymas: X'
   stats:
@@ -532,22 +532,22 @@ NTW_VACUUM:
   - '&7&oMašina'
 NTW_VANILLA_GRABBER:
   description:
-  - '&7Tinklo vanilinis griebtuvas bandys'
+  - '&7Tinklo standartinis griebtuvas bandys'
   - '&7paimti pirmą galimą daiktą iš'
-  - '&7pasirinkto vanilinio inventoriaus.'
+  - '&7pasirinkto standartinio inventoriaus.'
   - '&7Daiktus iš šio mazgo reikia'
   - '&7paimti griebtuvu.'
-  name: '&3Tinklo vanilinis griebtuvas'
+  name: '&3Tinklo standartinis griebtuvas'
   type:
   - '&7&oMašina'
 NTW_VANILLA_PUSHER:
   description:
-  - '&7Tinklo vanilinis stūmiklis bandys'
+  - '&7Tinklo standartinis stūmiklis bandys'
   - '&7pastumti bet kokį savyje esantį daiktą į'
-  - '&7pasirinkto vanilinio inventoriaus.'
+  - '&7pasirinkto standartinio inventoriaus.'
   - '&7Daiktus į šį mazgą reikia'
   - '&7pastumti stūmikliu.'
-  name: '&3Tinklo vanilinis stūmiklis'
+  name: '&3Tinklo standartinis stūmiklis'
   type:
   - '&7&oMašina'
 NTW_WIRELESS_CONFIGURATOR:
