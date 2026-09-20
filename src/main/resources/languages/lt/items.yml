@@ -1,192 +1,562 @@
 NTW_ADVANCED_NANOBOTS:
+  name: '&bPažangūs nanobotai'
   type:
   - '&7&oKomponentas'
 NTW_AI_CORE:
+  name: '&bD.I. šerdis'
   type:
   - '&7&oKomponentas'
 NTW_AUTO_CRAFTER:
+  description:
+  - '&7Tinklo automatinis gamintojas priima'
+  - '&7gaminimo brėžinį. Kai'
+  - '&7prašoma brėžinio išvesties daikto,'
+  - '&7o tinkle jo nėra,'
+  - '&7jis bus pagamintas, jei turite'
+  - '&7medžiagų.'
+  name: '&3Tinklo automatinis gamintojas'
+  stats:
+  - '&7Tinklo sąnaudos: &e64&7/gaminį'
   type:
   - '&7&oMašina'
 NTW_AUTO_CRAFTER_WITHHOLDING:
+  description:
+  - '&7Tinklo automatinis gamintojas priima'
+  - '&7gaminimo brėžinį. Kai'
+  - '&7prašoma brėžinio išvesties daikto,'
+  - '&7o tinkle jo nėra,'
+  - '&7jis bus pagamintas, jei turite'
+  - '&7medžiagų.'
+  - '&7Sulaikantis gamintojas laikys'
+  - '&7krūvą išvestyje ir nustos'
+  - '&7gaminti. Krūva matoma'
+  - '&7tinkle ir taip pat leidžia naudoti'
+  - '&7krovinį.'
+  name: '&3Tinklo automatinis gamintojas (sulaikantis)'
+  stats:
+  - '&7Tinklo sąnaudos: &e128&7/gaminį'
   type:
   - '&7&oMašina'
 NTW_BEST_PUSHER:
+  description:
+  - '&7Tinklo pažangus stūmiklis bandys'
+  - '&7stumti atitinkamus daiktus pagal iki'
+  - '&7dvylikos pateiktų šablonų į'
+  - '&7pasirinktą mašiną.'
+  name: '&3Tinklo pažangus stūmiklis'
   type:
   - '&7&oMašina'
 NTW_BRIDGE:
+  description:
+  - '&7Tiltas leidžia pigiai'
+  - '&7sujungti tinklo objektus.'
+  name: '&3Tinklo tiltas'
   type:
   - '&7&oMašina'
 NTW_CAPACITOR_1:
+  description:
+  - '&7Tinklo kondensatorius gali priimti'
+  - '&7galią ir ją saugoti naudojimui'
+  - '&7tinkle.'
+  name: '&3Tinklo kondensatorius (1)'
+  stats:
+  - '&7Talpa: &e1000'
   type:
   - '&7&oMašina'
 NTW_CAPACITOR_2:
+  description:
+  - '&7Tinklo kondensatorius gali priimti'
+  - '&7galią ir ją saugoti naudojimui'
+  - '&7tinkle.'
+  name: '&3Tinklo kondensatorius (2)'
+  stats:
+  - '&7Talpa: &e10000'
   type:
   - '&7&oMašina'
 NTW_CAPACITOR_3:
+  description:
+  - '&7Tinklo kondensatorius gali priimti'
+  - '&7galią ir ją saugoti naudojimui'
+  - '&7tinkle.'
+  name: '&3Tinklo kondensatorius (3)'
+  stats:
+  - '&7Talpa: &e100000'
   type:
   - '&7&oMašina'
 NTW_CAPACITOR_4:
+  description:
+  - '&7Tinklo kondensatorius gali priimti'
+  - '&7galią ir ją saugoti naudojimui'
+  - '&7tinkle.'
+  name: '&3Tinklo kondensatorius (4)'
+  stats:
+  - '&7Talpa: &e1000000'
   type:
   - '&7&oMašina'
 NTW_CELL:
+  description:
+  - '&7Tinklo celė yra didelis'
+  - '&7(dvigubos skrynios) inventorius,'
+  - '&7pasiekiamas ir iš tinklo,'
+  - '&7ir pasaulyje.'
+  name: '&3Tinklo celė'
   type:
   - '&7&oMašina'
 NTW_CONFIGURATOR:
+  description:
+  - '&7Naudojamas kopijuoti ir įklijuoti'
+  - '&7kryptinių sąsajų'
+  - '&7konfigūracijas.'
+  name: '&5Tinklo konfigūratorius'
   type:
   - '&7&oĮrankis'
+  usage:
+  - '&eSpustelėjimas dešiniuoju&7: pritaikyti konfigūraciją'
+  - '&eShift + spustelėjimas dešiniuoju&7: išsaugoti konfigūraciją'
 NTW_CONTROLLER:
+  description:
+  - '&7Tinklo valdiklis yra viso'
+  - '&7tinklo smegenys.'
+  name: '&3Tinklo valdiklis'
+  stats:
+  - '&7Riba: &eDaugiausiai 1&7 tinkle'
   type:
   - '&7&oMašina'
 NTW_CONTROL_V:
+  description:
+  - '&7Tinklo valdymas: V bandys'
+  - '&7„įklijuoti“ bloką iš tinklo'
+  - '&7į pasaulį.'
+  - '&7Veikia tik su vaniliniais blokais.'
+  name: '&3Tinklo valdymas: V'
+  stats:
+  - '&7Tinklo sąnaudos: &e100&7/įklijavimą'
   type:
   - '&7&oMašina'
 NTW_CONTROL_X:
+  description:
+  - '&7Tinklo valdymas: X bandys'
+  - '&7„iškirpti“ bloką iš pasaulio'
+  - '&7ir įdėti jį į tinklą.'
+  - '&7Veikia tik su vaniliniais blokais be'
+  - '&7inventoriaus.'
+  name: '&3Tinklo valdymas: X'
+  stats:
+  - '&7Tinklo sąnaudos: &e100&7/iškirpimą'
   type:
   - '&7&oMašina'
 NTW_CRAFTING_BLUEPRINT:
+  description:
+  - '&7Tuščias brėžinys, kurį galima'
+  - '&7naudoti gaminimo receptui'
+  - '&7išsaugoti.'
+  name: '&5Gaminimo brėžinys'
   type:
   - '&7&oĮrankis'
 NTW_CRAFTING_GRID:
+  description:
+  - '&7Tinklo gaminimo lentelė veikia'
+  - '&7kaip įprasta lentelė, bet rodo mažiau'
+  - '&7daiktų, užtat leidžia gaminti iš daiktų,'
+  - '&7paimtų tiesiai iš tinklo.'
+  name: '&3Tinklo gaminimo lentelė'
   type:
   - '&7&oMašina'
 NTW_CRAYON:
+  description:
+  - '&7Įjungia arba išjungia viso tinklo derinimo dalelių'
+  - '&7rodymą, vaizduojantį mazgų veiklą'
+  - '&7jiems veikiant.'
+  name: '&5Tinklo kreidelė'
   type:
   - '&7&oĮrankis'
+  usage:
+  - '&eSpustelėkite dešiniuoju&7 tinklo valdiklį, kad perjungtumėte dalelių rodymą.'
 NTW_DEBUG_STICK:
+  description:
+  - '&7Tik operatoriams skirtas diagnostikos įrankis,'
+  - '&7skirtas tinklo blokų elgsenai derinti.'
+  name: '&5Tinklo derinimo lazdelė'
   type:
   - '&7&oĮrankis'
+  usage:
+  - '&eSpustelėkite dešiniuoju&7 tinklo objektą, kad įjungtumėte derinimą.'
 NTW_EMPOWERED_AI_CORE:
+  name: '&bĮgalinta D.I. šerdis'
   type:
   - '&7&oKomponentas'
 NTW_EXPORT:
+  description:
+  - '&7Tinklo eksportuotoją galima nustatyti'
+  - '&7nuolat eksportuoti 1 krūvą bet kurio'
+  - '&7nurodyto daikto.'
+  - '&7Leidžia krovinio sistemai paimti daiktus.'
+  name: '&3Tinklo eksportuotojas'
   type:
   - '&7&oMašina'
 NTW_GRABBER:
+  description:
+  - '&7Tinklo griebtuvas bandys'
+  - '&7paimti pirmą rastą daiktą'
+  - '&7iš pasirinktos mašinos.'
+  name: '&3Tinklo griebtuvas'
   type:
   - '&7&oMašina'
 NTW_GREEDY_BLOCK:
+  description:
+  - '&7Godų tinklo bloką galima'
+  - '&7nustatyti vienam daiktui, kurio jis'
+  - '&7godžiai laikys vieną'
+  - '&7krūvą. Jei ateinantys daiktai'
+  - '&7netilps, jie nepateks'
+  - '&7į tinklą.'
+  name: '&3Godus tinklo blokas'
   type:
   - '&7&oMašina'
 NTW_GRID:
+  description:
+  - '&7Tinklo lentelė parodo visus'
+  - '&7tinkle turimus daiktus ir leidžia'
+  - '&7juos įdėti arba paimti'
+  - '&7tiesiogiai.'
+  name: '&3Tinklo lentelė'
   type:
   - '&7&oMašina'
 NTW_IMPORT:
+  description:
+  - '&7Tinklo importuotojas perkelia bet kokį'
+  - '&7jame esantį daiktą į tinklą.'
+  - '&7Priima daiktus iš krovinio.'
+  name: '&3Tinklo importuotojas'
+  stats:
+  - '&7Importo sparta: &eIki 9 krūvų&7/tiktelėjimą'
   type:
   - '&7&oMašina'
 NTW_INTERDIMENSIONAL_PRESENCE:
+  name: '&bTarpdimensinis buvimas'
   type:
   - '&7&oKomponentas'
 NTW_MONITOR:
+  description:
+  - '&7Tinklo monitorius leidžia paprastai'
+  - '&7importuoti ir eksportuoti į gretimus'
+  - '&7objektus.'
+  - '&7Šiuo metu palaiko:'
+  - '&7Begalybės statines'
+  - '&7Tinklo kiautus'
+  name: '&3Tinklo monitorius'
   type:
   - '&7&oMašina'
 NTW_NETWORK_WIRELESS_RECEIVER:
+  description:
+  - '&7Tinklo belaidis imtuvas gali'
+  - '&7priimti daiktus iš susieto belaidžio'
+  - '&7siųstuvo, esančio tame pačiame'
+  - '&7pasaulyje.'
+  - '&7Kiekvieną tiktelėjimą jis bandys stumti'
+  - '&7gautus daiktus į tinklą.'
+  name: '&3Tinklo belaidis imtuvas'
   type:
   - '&7&oMašina'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
+  description:
+  - '&7Tinklo belaidis siųstuvas bandys'
+  - '&7perduoti bet kokį savyje esantį daiktą'
+  - '&7susietam tinklo belaidžiam imtuvui,'
+  - '&7esančiam tame pačiame pasaulyje.'
+  - '&7Siųstuvui sukonfigūruoti naudok'
+  - '&7belaidį konfigūratorių.'
+  name: '&3Tinklo belaidis siųstuvas'
+  stats:
+  - '&7Vienam perdavimui reikia 500 tinklo galios.'
   type:
   - '&7&oMašina'
 NTW_OPTIC_CABLE:
+  name: '&bOptinis kabelis'
   type:
   - '&7&oKomponentas'
 NTW_OPTIC_GLASS:
+  name: '&bOptinis stiklas'
   type:
   - '&7&oKomponentas'
 NTW_OPTIC_STAR:
+  name: '&bOptinė žvaigždė'
   type:
   - '&7&oKomponentas'
 NTW_POWER_DISPLAY:
+  description:
+  - '&7Tinklo galios ekranas'
+  - '&7rodo galią tinkle.'
+  - '&7Paprasta, tiesa?'
+  name: '&3Tinklo galios ekranas'
   type:
   - '&7&oMašina'
 NTW_POWER_OUTLET_1:
+  description:
+  - '&7Tinklo kondensatorius gali priimti'
+  - '&7galią iš tinklo mašinoms maitinti'
+  - '&7mašinas arba grąžinti atgal į'
+  - '&7EnergyNet tinklą.'
+  name: '&3Tinklo galios lizdas (1)'
+  stats:
+  - '&7Veikia su 20% nuostolių norma.'
+  - '&7Maks. perdavimas: &e500'
   type:
   - '&7&oMašina'
 NTW_POWER_OUTLET_2:
+  description:
+  - '&7Tinklo kondensatorius gali priimti'
+  - '&7galią iš tinklo mašinoms maitinti'
+  - '&7mašinas arba grąžinti atgal į'
+  - '&7EnergyNet tinklą.'
+  name: '&3Tinklo maitinimo lizdas (2)'
+  stats:
+  - '&7Veikia su 20% nuostolių norma.'
+  - '&7Maks. perdavimas: &e2000'
   type:
   - '&7&oMašina'
 NTW_PRISTINE_AI_CORE:
+  name: '&bTobula D.I. šerdis'
   type:
   - '&7&oKomponentas'
 NTW_PROBE:
+  description:
+  - '&7Parodo tinklo suvestinę,'
+  - '&7įskaitant jo galią, daiktų kiekius'
+  - '&7ir mazgų sumas.'
+  name: '&5Tinklo zondas'
   type:
   - '&7&oĮrankis'
+  usage:
+  - '&eSpustelėkite dešiniuoju&7 tinklo valdiklį, kad pamatytumėte suvestinę.'
 NTW_PUSHER:
+  description:
+  - '&7Tinklo stūmiklis bandys'
+  - '&7pastumti atitinkamą daiktą pagal'
+  - '&7nurodytą pavyzdį į pasirinktą mašiną.'
+  name: '&3Tinklo stūmiklis'
   type:
   - '&7&oMašina'
 NTW_QUANTUM_STORAGE_1:
+  description:
+  - '&7Saugo daiktus masiniais kiekiais'
+  - '&7kvantiniame singuliarume.'
+  name: '&3Tinklo kvantinė saugykla (4K)'
+  stats:
+  - '&7Saugo &e4096&7 daiktų'
   type:
   - '&7&oMašina'
 NTW_QUANTUM_STORAGE_2:
+  description:
+  - '&7Saugo daiktus masiniais kiekiais'
+  - '&7kvantiniame singuliarume.'
+  name: '&3Tinklo kvantinė saugykla (32K)'
+  stats:
+  - '&7Saugo &e32768&7 daiktų'
   type:
   - '&7&oMašina'
 NTW_QUANTUM_STORAGE_3:
+  description:
+  - '&7Saugo daiktus masiniais kiekiais'
+  - '&7kvantiniame singuliarume.'
+  name: '&3Tinklo kvantinė saugykla (262K)'
+  stats:
+  - '&7Saugo &e262144&7 daiktų'
   type:
   - '&7&oMašina'
 NTW_QUANTUM_STORAGE_4:
+  description:
+  - '&7Saugo daiktus masiniais kiekiais'
+  - '&7kvantiniame singuliarume.'
+  name: '&3Tinklo kvantinė saugykla (2M)'
+  stats:
+  - '&7Saugo &e2097152&7 daiktų'
   type:
   - '&7&oMašina'
 NTW_QUANTUM_STORAGE_5:
+  description:
+  - '&7Saugo daiktus masiniais kiekiais'
+  - '&7kvantiniame singuliarume.'
+  name: '&3Tinklo kvantinė saugykla (16M)'
+  stats:
+  - '&7Saugo &e16777216&7 daiktų'
   type:
   - '&7&oMašina'
 NTW_QUANTUM_STORAGE_6:
+  description:
+  - '&7Saugo daiktus masiniais kiekiais'
+  - '&7kvantiniame singuliarume.'
+  name: '&3Tinklo kvantinė saugykla (134M)'
+  stats:
+  - '&7Saugo &e134217728&7 daiktų'
   type:
   - '&7&oMašina'
 NTW_QUANTUM_STORAGE_7:
+  description:
+  - '&7Saugo daiktus masiniais kiekiais'
+  - '&7kvantiniame singuliarume.'
+  name: '&3Tinklo kvantinė saugykla (1B)'
+  stats:
+  - '&7Saugo &e1073741824&7 daiktų'
   type:
   - '&7&oMašina'
 NTW_QUANTUM_STORAGE_8:
+  description:
+  - '&7Saugo daiktus masiniais kiekiais'
+  - '&7kvantiniame singuliarume.'
+  name: '&3Tinklo kvantinė saugykla (∞)'
+  stats:
+  - '&7Saugo &e∞&7 daiktų... beveik'
   type:
   - '&7&oMašina'
 NTW_QUANTUM_WORKBENCH:
+  description:
+  - '&7Leidžia gaminti kvantines saugyklas.'
+  name: '&3Tinklo kvantinis darbastalis'
   type:
   - '&7&oMašina'
 NTW_RADIOACTIVE_OPTIC_STAR:
+  name: '&bRadioaktyvi optinė žvaigždė'
   type:
   - '&7&oKomponentas'
 NTW_RAKE_1:
+  description:
+  - '&7Rankinis įrankis, greitai išardantis'
+  - '&7tinklo objektus be mechanizmų.'
+  name: '&5Tinklo grėblys (1)'
+  stats:
+  - '&e250 panaudojimų &7liko'
   type:
   - '&7&oĮrankis'
+  usage:
+  - '&eSpustelėkite dešiniuoju&7 tinklo objektą, kad jį akimirksniu sulaužytumėte.'
 NTW_RAKE_2:
+  description:
+  - '&7Rankinis įrankis, greitai išardantis'
+  - '&7tinklo objektus be mechanizmų.'
+  name: '&5Tinklo grėblys (2)'
+  stats:
+  - '&e1000 panaudojimų &7liko'
   type:
   - '&7&oĮrankis'
+  usage:
+  - '&eSpustelėkite dešiniuoju&7 tinklo objektą, kad jį akimirksniu sulaužytumėte.'
 NTW_RAKE_3:
+  description:
+  - '&7Rankinis įrankis, greitai išardantis'
+  - '&7tinklo objektus be mechanizmų.'
+  name: '&5Tinklo grėblys (3)'
+  stats:
+  - '&e9999 panaudojimų &7liko'
   type:
   - '&7&oĮrankis'
+  usage:
+  - '&eSpustelėkite dešiniuoju&7 tinklo objektą, kad jį akimirksniu sulaužytumėte.'
 NTW_RECIPE_ENCODER:
+  description:
+  - '&7Naudojamas gaminimo brėžiniui sudaryti'
+  - '&7iš įvesties daiktų.'
+  name: '&3Tinklo receptų koduoklis'
+  stats:
+  - '&7Tinklo sąnaudos: &e20000&7/kodavimą'
   type:
   - '&7&oMašina'
 NTW_REMOTE:
+  description:
+  - '&7Belaidžiu būdu atidaro susietą tinklelį.'
+  - '&7Tinklelio gabalas turi būti įkeltas.'
+  name: '&5Tinklo nuotolinis pultas'
+  stats:
+  - '&7Nuotolis: &e150'
   type:
   - '&7&oĮrankis'
 NTW_REMOTE_EMPOWERED:
+  description:
+  - '&7Belaidžiu būdu atidaro susietą tinklelį.'
+  - '&7Tinklelio gabalas turi būti įkeltas.'
+  name: '&5Sustiprintas tinklo nuotolinis pultas'
+  stats:
+  - '&7Nuotolis: &e500'
   type:
   - '&7&oĮrankis'
 NTW_REMOTE_PRISTINE:
+  description:
+  - '&7Belaidžiu būdu atidaro susietą tinklelį.'
+  - '&7Tinklelio gabalas turi būti įkeltas.'
+  name: '&5Tobulas tinklo nuotolinis pultas'
+  stats:
+  - '&7Nuotolis: &eNeribotas'
   type:
   - '&7&oĮrankis'
 NTW_REMOTE_ULTIMATE:
+  description:
+  - '&7Belaidžiu būdu atidaro susietą tinklelį.'
+  - '&7Tinklelio gabalas turi būti įkeltas.'
+  name: '&5Galutinis tinklo nuotolinis pultas'
+  stats:
+  - '&7Nuotolis: &eTarpdimensinis'
   type:
   - '&7&oĮrankis'
 NTW_SHRINKING_BASE:
+  name: '&bMažinimo pagrindas'
   type:
   - '&7&oKomponentas'
 NTW_SIMPLE_NANOBOTS:
+  name: '&bPaprasti nanobotai'
   type:
   - '&7&oKomponentas'
 NTW_SYNTHETIC_EMERALD_SHARD:
+  name: '&bSintetinė smaragdo skeveldra'
   type:
   - '&7&oKomponentas'
 NTW_TRASH:
+  description:
+  - '&7Tinklo naikintuvas ištrauks'
+  - '&7atitinkamus daiktus iš tinklo'
+  - '&7ir akimirksniu juos sunaikins.'
+  - '&7Naudok labai atsargiai!'
+  name: '&3Tinklo naikintuvas'
   type:
   - '&7&oMašina'
 NTW_VACUUM:
+  description:
+  - '&7Tinklo siurblys įtrauks'
+  - '&7daiktus į save'
+  - '&74 x 4 spinduliu aplink save.'
+  - '&7Įtraukti daiktai bandys patekti'
+  - '&7į tinklą.'
+  name: '&3Tinklo siurblys'
+  stats:
+  - '&7Tinklo sąnaudos: &e100&7/tiktelėjimą'
   type:
   - '&7&oMašina'
 NTW_VANILLA_GRABBER:
+  description:
+  - '&7Tinklo vanilinis griebtuvas bandys'
+  - '&7paimti pirmą galimą daiktą iš'
+  - '&7pasirinkto vanilinio inventoriaus.'
+  - '&7Daiktus iš šio mazgo reikia'
+  - '&7paimti griebtuvu.'
+  name: '&3Tinklo vanilinis griebtuvas'
   type:
   - '&7&oMašina'
 NTW_VANILLA_PUSHER:
+  description:
+  - '&7Tinklo vanilinis stūmiklis bandys'
+  - '&7pastumti bet kokį savyje esantį daiktą į'
+  - '&7pasirinkto vanilinio inventoriaus.'
+  - '&7Daiktus į šį mazgą reikia'
+  - '&7pastumti stūmikliu.'
+  name: '&3Tinklo vanilinis stūmiklis'
   type:
   - '&7&oMašina'
 NTW_WIRELESS_CONFIGURATOR:
+  description:
+  - '&7Naudojamas imtuvo vietai išsaugoti'
+  - '&7ir vėliau pritaikyti siųstuvui.'
+  name: '&5Tinklo belaidis konfigūratorius'
   type:
   - '&7&oĮrankis'
+  usage:
+  - '&eSpustelėjimas dešiniuoju&7: išsaugoti imtuvo vietą'
+  - '&eShift + spustelėjimas dešiniuoju&7: nustatyti vietą siųstuvui'
