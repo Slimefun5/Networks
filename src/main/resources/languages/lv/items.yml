@@ -1,192 +1,562 @@
 NTW_ADVANCED_NANOBOTS:
+  name: '&bProgresīvi nanoboti'
   type:
   - '&7&oSastāvdaļa'
 NTW_AI_CORE:
+  name: '&bM.I. kodols'
   type:
   - '&7&oSastāvdaļa'
 NTW_AUTO_CRAFTER:
+  description:
+  - '&7Tīkla automātiskais izgatavotājs pieņem'
+  - '&7izgatavošanas rasējumu. Kad'
+  - '&7rasējuma izvades priekšmets tiek pieprasīts'
+  - '&7un tīklā tāda vairs nav,'
+  - '&7tas tiks izgatavots, ja tev ir'
+  - '&7materiāli.'
+  name: '&3Tīkla automātiskais izgatavotājs'
+  stats:
+  - '&7Tīkla patēriņš: &e64&7/izgatavošana'
   type:
   - '&7&oMašīna'
 NTW_AUTO_CRAFTER_WITHHOLDING:
+  description:
+  - '&7Tīkla automātiskais izgatavotājs pieņem'
+  - '&7izgatavošanas rasējumu. Kad'
+  - '&7rasējuma izvades priekšmets tiek pieprasīts'
+  - '&7un tīklā tāda vairs nav,'
+  - '&7tas tiks izgatavots, ja tev ir'
+  - '&7materiāli.'
+  - '&7Aizturošais izgatavotājs paturēs'
+  - '&7vienu steku izvadē un pārtrauks'
+  - '&7izgatavošanu. Steks ir redzams'
+  - '&7tīklā un ir pieejams arī'
+  - '&7kravai.'
+  name: '&3Tīkla automātiskais izgatavotājs (aizturošais)'
+  stats:
+  - '&7Tīkla patēriņš: &e128&7/izgatavošana'
   type:
   - '&7&oMašīna'
 NTW_BEST_PUSHER:
+  description:
+  - '&7Tīkla progresīvais stūmējs mēģinās'
+  - '&7iestumt atbilstošus priekšmetus no līdz pat'
+  - '&7divpadsmit norādītām veidnēm'
+  - '&7izvēlētajā mašīnā.'
+  name: '&3Tīkla progresīvais stūmējs'
   type:
   - '&7&oMašīna'
 NTW_BRIDGE:
+  description:
+  - '&7Tilts ļauj lēti'
+  - '&7savienot tīkla objektus kopā.'
+  name: '&3Tīkla tilts'
   type:
   - '&7&oMašīna'
 NTW_CAPACITOR_1:
+  description:
+  - '&7Tīkla kondensators var uzņemt'
+  - '&7enerģiju un uzglabāt to lietošanai'
+  - '&7tīkla robežās.'
+  name: '&3Tīkla kondensators (1)'
+  stats:
+  - '&7Ietilpība: &e1000'
   type:
   - '&7&oMašīna'
 NTW_CAPACITOR_2:
+  description:
+  - '&7Tīkla kondensators var uzņemt'
+  - '&7enerģiju un uzglabāt to lietošanai'
+  - '&7tīkla robežās.'
+  name: '&3Tīkla kondensators (2)'
+  stats:
+  - '&7Ietilpība: &e10000'
   type:
   - '&7&oMašīna'
 NTW_CAPACITOR_3:
+  description:
+  - '&7Tīkla kondensators var uzņemt'
+  - '&7enerģiju un uzglabāt to lietošanai'
+  - '&7tīkla robežās.'
+  name: '&3Tīkla kondensators (3)'
+  stats:
+  - '&7Ietilpība: &e100000'
   type:
   - '&7&oMašīna'
 NTW_CAPACITOR_4:
+  description:
+  - '&7Tīkla kondensators var uzņemt'
+  - '&7enerģiju un uzglabāt to lietošanai'
+  - '&7tīkla robežās.'
+  name: '&3Tīkla kondensators (4)'
+  stats:
+  - '&7Ietilpība: &e1000000'
   type:
   - '&7&oMašīna'
 NTW_CELL:
+  description:
+  - '&7Tīkla šūna ir liels'
+  - '&7(dubultlādes) inventārs, kuram var'
+  - '&7piekļūt gan no tīkla,'
+  - '&7gan pasaulē.'
+  name: '&3Tīkla šūna'
   type:
   - '&7&oMašīna'
 NTW_CONFIGURATOR:
+  description:
+  - '&7Izmanto, lai kopētu un ielīmētu'
+  - '&7virziena saskarņu'
+  - '&7konfigurācijas.'
+  name: '&5Tīkla konfigurators'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7: pielietot konfigurāciju'
+  - '&eShift labais klikšķis&7: saglabāt konfigurāciju'
 NTW_CONTROLLER:
+  description:
+  - '&7Tīkla kontrolieris ir smadzenes'
+  - '&7visam tīklam.'
+  name: '&3Tīkla kontrolieris'
+  stats:
+  - '&7Ierobežojums: &eMaks. 1&7 uz tīklu'
   type:
   - '&7&oMašīna'
 NTW_CONTROL_V:
+  description:
+  - '&7Tīkla vadība: V mēģinās'
+  - '&7''ielīmēt'' bloku no tīkla'
+  - '&7pasaulē.'
+  - '&7Darbojas tikai ar parastiem blokiem.'
+  name: '&3Tīkla vadība: V'
+  stats:
+  - '&7Tīkla patēriņš: &e100&7/ielīmēšana'
   type:
   - '&7&oMašīna'
 NTW_CONTROL_X:
+  description:
+  - '&7Tīkla vadība: X mēģinās'
+  - '&7''izgriezt'' bloku no pasaules'
+  - '&7un ielikt to tīklā.'
+  - '&7Darbojas tikai ar parastiem blokiem bez'
+  - '&7inventāriem.'
+  name: '&3Tīkla vadība: X'
+  stats:
+  - '&7Tīkla patēriņš: &e100&7/izgriešana'
   type:
   - '&7&oMašīna'
 NTW_CRAFTING_BLUEPRINT:
+  description:
+  - '&7Tukšs rasējums, ko var'
+  - '&7izmantot izgatavošanas receptes'
+  - '&7glabāšanai.'
+  name: '&5Izgatavošanas rasējums'
   type:
   - '&7&oRīks'
 NTW_CRAFTING_GRID:
+  description:
+  - '&7Tīkla izgatavošanas režģis darbojas'
+  - '&7kā parasts režģis, bet rāda mazāk'
+  - '&7priekšmetu, toties ļauj izgatavot ar priekšmetiem'
+  - '&7tieši no tīkla.'
+  name: '&3Tīkla izgatavošanas režģis'
   type:
   - '&7&oMašīna'
 NTW_CRAYON:
+  description:
+  - '&7Pārslēdz visa tīkla atkļūdošanas daļiņu'
+  - '&7attēlojumu, parādot mezglu darbību'
+  - '&7tās norises laikā.'
+  name: '&5Tīkla krītiņš'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7 uz tīkla kontroliera, lai pārslēgtu daļiņu attēlojumu.'
 NTW_DEBUG_STICK:
+  description:
+  - '&7Tikai operatoriem paredzēts diagnostikas rīks'
+  - '&7tīkla bloku darbības atkļūdošanai.'
+  name: '&5Tīkla atkļūdošanas nūja'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7 uz tīkla objekta, lai ieslēgtu atkļūdošanu.'
 NTW_EMPOWERED_AI_CORE:
+  name: '&bStiprināts M.I. kodols'
   type:
   - '&7&oSastāvdaļa'
 NTW_EXPORT:
+  description:
+  - '&7Tīkla eksportētāju var iestatīt, lai tas'
+  - '&7pastāvīgi eksportē 1 steku jebkura'
+  - '&7norādītā priekšmeta.'
+  - '&7Pieņem priekšmetu izņemšanu ar kravu.'
+  name: '&3Tīkla eksportētājs'
   type:
   - '&7&oMašīna'
 NTW_GRABBER:
+  description:
+  - '&7Tīkla satvērējs mēģinās'
+  - '&7satvert pirmo priekšmetu, ko atrod'
+  - '&7izvēlētajā mašīnā.'
+  name: '&3Tīkla satvērējs'
   type:
   - '&7&oMašīna'
 NTW_GREEDY_BLOCK:
+  description:
+  - '&7Tīkla alkatīgo bloku var'
+  - '&7iestatīt uz vienu priekšmetu, kura'
+  - '&7vienu steku tas alkatīgi paturēs'
+  - '&7pie sevis. Ja vairāk ienākošo priekšmetu'
+  - '&7neietilps, tie neiekļūs'
+  - '&7tīklā.'
+  name: '&3Tīkla alkatīgais bloks'
   type:
   - '&7&oMašīna'
 NTW_GRID:
+  description:
+  - '&7Tīkla režģis parāda visus'
+  - '&7priekšmetus, kas tev ir tīklā,'
+  - '&7un ļauj tos ievietot vai izņemt'
+  - '&7tieši.'
+  name: '&3Tīkla režģis'
   type:
   - '&7&oMašīna'
 NTW_IMPORT:
+  description:
+  - '&7Tīkla importētājs ievieš jebkuru'
+  - '&7priekšmetu no sevis tīklā.'
+  - '&7Pieņem priekšmetus no kravas.'
+  name: '&3Tīkla importētājs'
+  stats:
+  - '&7Importa ātrums: &eLīdz 9 stekiem&7/tiks'
   type:
   - '&7&oMašīna'
 NTW_INTERDIMENSIONAL_PRESENCE:
+  name: '&bStarpdimensiju klātbūtne'
   type:
   - '&7&oSastāvdaļa'
 NTW_MONITOR:
+  description:
+  - '&7Tīkla monitors ļauj vienkārši'
+  - '&7importēt un eksportēt ar blakus esošiem'
+  - '&7objektiem.'
+  - '&7Pašlaik atbalsta:'
+  - '&7Bezgalības mucas'
+  - '&7Tīkla čaulas'
+  name: '&3Tīkla monitors'
   type:
   - '&7&oMašīna'
 NTW_NETWORK_WIRELESS_RECEIVER:
+  description:
+  - '&7Tīkla bezvadu uztvērējs spēj'
+  - '&7saņemt priekšmetus no saistīta'
+  - '&7bezvadu raidītāja, kas atrodas'
+  - '&7tajā pašā pasaulē.'
+  - '&7Tas mēģinās iestumt saņemtos priekšmetus'
+  - '&7tīklā katru tiku.'
+  name: '&3Tīkla bezvadu uztvērējs'
   type:
   - '&7&oMašīna'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
+  description:
+  - '&7Tīkla bezvadu raidītājs mēģinās'
+  - '&7pārraidīt jebkuru priekšmetu no sevis'
+  - '&7uz saistītu tīkla bezvadu uztvērēju,'
+  - '&7kas atrodas tajā pašā pasaulē.'
+  - '&7Izmanto bezvadu konfiguratoru, lai'
+  - '&7iestatītu bezvadu raidītāju.'
+  name: '&3Tīkla bezvadu raidītājs'
+  stats:
+  - '&7Nepieciešama 500 tīkla enerģija uz pārsūtīšanu.'
   type:
   - '&7&oMašīna'
 NTW_OPTIC_CABLE:
+  name: '&bOptiskais kabelis'
   type:
   - '&7&oSastāvdaļa'
 NTW_OPTIC_GLASS:
+  name: '&bOptiskais stikls'
   type:
   - '&7&oSastāvdaļa'
 NTW_OPTIC_STAR:
+  name: '&bOptiskā zvaigzne'
   type:
   - '&7&oSastāvdaļa'
 NTW_POWER_DISPLAY:
+  description:
+  - '&7Tīkla enerģijas displejs rādīs'
+  - '&7tīklā esošo enerģiju.'
+  - '&7Vienkārši, vai ne?'
+  name: '&3Tīkla enerģijas displejs'
   type:
   - '&7&oMašīna'
 NTW_POWER_OUTLET_1:
+  description:
+  - '&7Tīkla kondensators var uzņemt'
+  - '&7enerģiju no tīkla, lai darbinātu'
+  - '&7mašīnas vai atgrieztu enerģiju'
+  - '&7EnergyNet tīklā.'
+  name: '&3Tīkla enerģijas izvads (1)'
+  stats:
+  - '&7Darbojas ar 20% zudumiem.'
+  - '&7Maks. pārsūtīšana: &e500'
   type:
   - '&7&oMašīna'
 NTW_POWER_OUTLET_2:
+  description:
+  - '&7Tīkla kondensators var uzņemt'
+  - '&7enerģiju no tīkla, lai darbinātu'
+  - '&7mašīnas vai atgrieztu enerģiju'
+  - '&7EnergyNet tīklā.'
+  name: '&3Tīkla enerģijas izvads (2)'
+  stats:
+  - '&7Darbojas ar 20% zudumiem.'
+  - '&7Maks. pārsūtīšana: &e2000'
   type:
   - '&7&oMašīna'
 NTW_PRISTINE_AI_CORE:
+  name: '&bNevainojams M.I. kodols'
   type:
   - '&7&oSastāvdaļa'
 NTW_PROBE:
+  description:
+  - '&7Atklāj tīkla kopsavilkumu,'
+  - '&7tostarp tā enerģiju, priekšmetu skaitu'
+  - '&7un mezglu kopskaitu.'
+  name: '&5Tīkla zonde'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7 uz tīkla kontroliera, lai skatītu kopsavilkumu.'
 NTW_PUSHER:
+  description:
+  - '&7Tīkla stūmējs mēģinās'
+  - '&7iestumt atbilstošu priekšmetu no'
+  - '&7norādītā priekšmeta izvēlētajā mašīnā.'
+  name: '&3Tīkla stūmējs'
   type:
   - '&7&oMašīna'
 NTW_QUANTUM_STORAGE_1:
+  description:
+  - '&7Uzglabā priekšmetus masveida daudzumos'
+  - '&7kvantu singularitātē.'
+  name: '&3Tīkla kvantu krātuve (4K)'
+  stats:
+  - '&7Uzglabā &e4096&7 priekšmetus'
   type:
   - '&7&oMašīna'
 NTW_QUANTUM_STORAGE_2:
+  description:
+  - '&7Uzglabā priekšmetus masveida daudzumos'
+  - '&7kvantu singularitātē.'
+  name: '&3Tīkla kvantu krātuve (32K)'
+  stats:
+  - '&7Uzglabā &e32768&7 priekšmetus'
   type:
   - '&7&oMašīna'
 NTW_QUANTUM_STORAGE_3:
+  description:
+  - '&7Uzglabā priekšmetus masveida daudzumos'
+  - '&7kvantu singularitātē.'
+  name: '&3Tīkla kvantu krātuve (262K)'
+  stats:
+  - '&7Uzglabā &e262144&7 priekšmetus'
   type:
   - '&7&oMašīna'
 NTW_QUANTUM_STORAGE_4:
+  description:
+  - '&7Uzglabā priekšmetus masveida daudzumos'
+  - '&7kvantu singularitātē.'
+  name: '&3Tīkla kvantu krātuve (2M)'
+  stats:
+  - '&7Uzglabā &e2097152&7 priekšmetus'
   type:
   - '&7&oMašīna'
 NTW_QUANTUM_STORAGE_5:
+  description:
+  - '&7Uzglabā priekšmetus masveida daudzumos'
+  - '&7kvantu singularitātē.'
+  name: '&3Tīkla kvantu krātuve (16M)'
+  stats:
+  - '&7Uzglabā &e16777216&7 priekšmetus'
   type:
   - '&7&oMašīna'
 NTW_QUANTUM_STORAGE_6:
+  description:
+  - '&7Uzglabā priekšmetus masveida daudzumos'
+  - '&7kvantu singularitātē.'
+  name: '&3Tīkla kvantu krātuve (134M)'
+  stats:
+  - '&7Uzglabā &e134217728&7 priekšmetus'
   type:
   - '&7&oMašīna'
 NTW_QUANTUM_STORAGE_7:
+  description:
+  - '&7Uzglabā priekšmetus masveida daudzumos'
+  - '&7kvantu singularitātē.'
+  name: '&3Tīkla kvantu krātuve (1B)'
+  stats:
+  - '&7Uzglabā &e1073741824&7 priekšmetus'
   type:
   - '&7&oMašīna'
 NTW_QUANTUM_STORAGE_8:
+  description:
+  - '&7Uzglabā priekšmetus masveida daudzumos'
+  - '&7kvantu singularitātē.'
+  name: '&3Tīkla kvantu krātuve (∞)'
+  stats:
+  - '&7Uzglabā &e∞&7 priekšmetus... gandrīz'
   type:
   - '&7&oMašīna'
 NTW_QUANTUM_WORKBENCH:
+  description:
+  - '&7Ļauj izgatavot kvantu krātuves.'
+  name: '&3Tīkla kvantu darbgalds'
   type:
   - '&7&oMašīna'
 NTW_RADIOACTIVE_OPTIC_STAR:
+  name: '&bRadioaktīvā optiskā zvaigzne'
   type:
   - '&7&oSastāvdaļa'
 NTW_RAKE_1:
+  description:
+  - '&7Rokas rīks tīkla objektu ātrai'
+  - '&7demontāžai bez mehānismiem.'
+  name: '&5Tīkla grābeklis (1)'
+  stats:
+  - '&e250 lietojumu &7atlikuši'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7 uz tīkla objekta, lai to uzreiz salauztu.'
 NTW_RAKE_2:
+  description:
+  - '&7Rokas rīks tīkla objektu ātrai'
+  - '&7demontāžai bez mehānismiem.'
+  name: '&5Tīkla grābeklis (2)'
+  stats:
+  - '&e1000 lietojumu &7atlikuši'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7 uz tīkla objekta, lai to uzreiz salauztu.'
 NTW_RAKE_3:
+  description:
+  - '&7Rokas rīks tīkla objektu ātrai'
+  - '&7demontāžai bez mehānismiem.'
+  name: '&5Tīkla grābeklis (3)'
+  stats:
+  - '&e9999 lietojumu &7atlikuši'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7 uz tīkla objekta, lai to uzreiz salauztu.'
 NTW_RECIPE_ENCODER:
+  description:
+  - '&7Izmanto, lai no ievades priekšmetiem'
+  - '&7izveidotu izgatavošanas rasējumu.'
+  name: '&3Tīkla recepšu kodētājs'
+  stats:
+  - '&7Tīkla patēriņš: &e20000&7/kodēšana'
   type:
   - '&7&oMašīna'
 NTW_REMOTE:
+  description:
+  - '&7Bezvadu veidā atver piesaistītu režģi.'
+  - '&7Režģa gabalam jābūt ielādētam.'
+  name: '&5Tīkla tālvadība'
+  stats:
+  - '&7Darbības rādiuss: &e150'
   type:
   - '&7&oRīks'
 NTW_REMOTE_EMPOWERED:
+  description:
+  - '&7Bezvadu veidā atver piesaistītu režģi.'
+  - '&7Režģa gabalam jābūt ielādētam.'
+  name: '&5Stiprināta tīkla tālvadība'
+  stats:
+  - '&7Darbības rādiuss: &e500'
   type:
   - '&7&oRīks'
 NTW_REMOTE_PRISTINE:
+  description:
+  - '&7Bezvadu veidā atver piesaistītu režģi.'
+  - '&7Režģa gabalam jābūt ielādētam.'
+  name: '&5Nevainojama tīkla tālvadība'
+  stats:
+  - '&7Darbības rādiuss: &eNeierobežots'
   type:
   - '&7&oRīks'
 NTW_REMOTE_ULTIMATE:
+  description:
+  - '&7Bezvadu veidā atver piesaistītu režģi.'
+  - '&7Režģa gabalam jābūt ielādētam.'
+  name: '&5Galējā tīkla tālvadība'
+  stats:
+  - '&7Darbības rādiuss: &eStarpdimensiju'
   type:
   - '&7&oRīks'
 NTW_SHRINKING_BASE:
+  name: '&bSaraušanās bāze'
   type:
   - '&7&oSastāvdaļa'
 NTW_SIMPLE_NANOBOTS:
+  name: '&bVienkārši nanoboti'
   type:
   - '&7&oSastāvdaļa'
 NTW_SYNTHETIC_EMERALD_SHARD:
+  name: '&bSintētiska smaragda šķemba'
   type:
   - '&7&oSastāvdaļa'
 NTW_TRASH:
+  description:
+  - '&7Tīkla iznīcinātājs izvilks'
+  - '&7atbilstošos priekšmetus no tīkla'
+  - '&7un uzreiz tos iznīcinās.'
+  - '&7Lieto ar lielu piesardzību!'
+  name: '&3Tīkla iznīcinātājs'
   type:
   - '&7&oMašīna'
 NTW_VACUUM:
+  description:
+  - '&7Tīkla iesūcējs iesūks'
+  - '&7priekšmetus sevī'
+  - '&74 x 4 rādiusā ap sevi.'
+  - '&7Iesūktie priekšmeti mēģinās iestumties'
+  - '&7tīklā.'
+  name: '&3Tīkla iesūcējs'
+  stats:
+  - '&7Tīkla patēriņš: &e100&7/tiks'
   type:
   - '&7&oMašīna'
 NTW_VANILLA_GRABBER:
+  description:
+  - '&7Tīkla parasto bloku satvērējs mēģinās'
+  - '&7satvert pirmo iespējamo priekšmetu no'
+  - '&7izvēlētā parastā inventāra.'
+  - '&7Priekšmeti jāsatver no šī'
+  - '&7mezgla, izmantojot satvērēju.'
+  name: '&3Tīkla parasto bloku satvērējs'
   type:
   - '&7&oMašīna'
 NTW_VANILLA_PUSHER:
+  description:
+  - '&7Tīkla parasto bloku stūmējs mēģinās'
+  - '&7iestumt jebkuru priekšmetu no sevis'
+  - '&7izvēlētā parastā inventāra.'
+  - '&7Priekšmeti jāiestumj šajā'
+  - '&7mezglā ar stūmēju.'
+  name: '&3Tīkla parasto bloku stūmējs'
   type:
   - '&7&oMašīna'
 NTW_WIRELESS_CONFIGURATOR:
+  description:
+  - '&7Izmanto, lai saglabātu uztvērēja atrašanās vietu'
+  - '&7un pēc tam to pielietotu raidītājam.'
+  name: '&5Tīkla bezvadu konfigurators'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7: saglabāt uztvērēja vietu'
+  - '&eShift labais klikšķis&7: iestatīt vietu raidītājam'
