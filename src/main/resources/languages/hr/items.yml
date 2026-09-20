@@ -1,192 +1,562 @@
 NTW_ADVANCED_NANOBOTS:
+  name: '&bNapredni nanoboti'
   type:
   - '&7&oKomponenta'
 NTW_AI_CORE:
+  name: '&bU.I. jezgra'
   type:
   - '&7&oKomponenta'
 NTW_AUTO_CRAFTER:
+  description:
+  - '&7Mrežni automatski izrađivač prima'
+  - '&7nacrt za izradu. Kada se'
+  - '&7izlazni predmet nacrta zatraži'
+  - '&7dok ga u mreži nema,'
+  - '&7bit će izrađen ako imate'
+  - '&7materijale.'
+  name: '&3Mrežni automatski izrađivač'
+  stats:
+  - '&7Mrežno trošenje: &e64&7/izradu'
   type:
   - '&7&oStroj'
 NTW_AUTO_CRAFTER_WITHHOLDING:
+  description:
+  - '&7Mrežni automatski izrađivač prima'
+  - '&7nacrt za izradu. Kada se'
+  - '&7izlazni predmet nacrta zatraži'
+  - '&7dok ga u mreži nema,'
+  - '&7bit će izrađen ako imate'
+  - '&7materijale.'
+  - '&7Zadržavajući izrađivač čuvat će'
+  - '&7hrpu u izlazu i zaustaviti'
+  - '&7izradu. Hrpa je vidljiva'
+  - '&7u mreži i omogućuje'
+  - '&7teret.'
+  name: '&3Mrežni automatski izrađivač (zadržavajući)'
+  stats:
+  - '&7Mrežno trošenje: &e128&7/izradu'
   type:
   - '&7&oStroj'
 NTW_BEST_PUSHER:
+  description:
+  - '&7Mrežni napredni gurač pokušat će'
+  - '&7gurnuti odgovarajuće predmete iz najviše'
+  - '&7dvanaest zadanih predložaka u'
+  - '&7odabrani stroj.'
+  name: '&3Mrežni napredni gurač'
   type:
   - '&7&oStroj'
 NTW_BRIDGE:
+  description:
+  - '&7Most vam omogućuje da jeftino'
+  - '&7povežete mrežne objekte.'
+  name: '&3Mrežni most'
   type:
   - '&7&oStroj'
 NTW_CAPACITOR_1:
+  description:
+  - '&7Mrežni kondenzator može primiti'
+  - '&7energiju i pohraniti je za upotrebu'
+  - '&7unutar mreže.'
+  name: '&3Mrežni kondenzator (1)'
+  stats:
+  - '&7Kapacitet: &e1000'
   type:
   - '&7&oStroj'
 NTW_CAPACITOR_2:
+  description:
+  - '&7Mrežni kondenzator može primiti'
+  - '&7energiju i pohraniti je za upotrebu'
+  - '&7unutar mreže.'
+  name: '&3Mrežni kondenzator (2)'
+  stats:
+  - '&7Kapacitet: &e10000'
   type:
   - '&7&oStroj'
 NTW_CAPACITOR_3:
+  description:
+  - '&7Mrežni kondenzator može primiti'
+  - '&7energiju i pohraniti je za upotrebu'
+  - '&7unutar mreže.'
+  name: '&3Mrežni kondenzator (3)'
+  stats:
+  - '&7Kapacitet: &e100000'
   type:
   - '&7&oStroj'
 NTW_CAPACITOR_4:
+  description:
+  - '&7Mrežni kondenzator može primiti'
+  - '&7energiju i pohraniti je za upotrebu'
+  - '&7unutar mreže.'
+  name: '&3Mrežni kondenzator (4)'
+  stats:
+  - '&7Kapacitet: &e1000000'
   type:
   - '&7&oStroj'
 NTW_CELL:
+  description:
+  - '&7Mrežna ćelija je velik'
+  - '&7inventar (dvostruka škrinja) kojem se'
+  - '&7može pristupiti i iz mreže'
+  - '&7i u svijetu.'
+  name: '&3Mrežna ćelija'
   type:
   - '&7&oStroj'
 NTW_CONFIGURATOR:
+  description:
+  - '&7Koristi se za kopiranje i lijepljenje'
+  - '&7postavki usmjerenih'
+  - '&7sučelja.'
+  name: '&5Mrežni konfigurator'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7: Primijeni postavke'
+  - '&eShift desni klik&7: Pohrani postavke'
 NTW_CONTROLLER:
+  description:
+  - '&7Mrežni kontroler je mozak'
+  - '&7cijele mreže.'
+  name: '&3Mrežni kontroler'
+  stats:
+  - '&7Ograničenje: &eNajviše 1&7 po mreži'
   type:
   - '&7&oStroj'
 NTW_CONTROL_V:
+  description:
+  - '&7Mrežna kontrola: V pokušat će'
+  - '&7''zalijepiti'' blok iz mreže'
+  - '&7u svijet.'
+  - '&7Radi samo s vanilla blokovima.'
+  name: '&3Mrežna kontrola: V'
+  stats:
+  - '&7Mrežno trošenje: &e100&7/lijepljenje'
   type:
   - '&7&oStroj'
 NTW_CONTROL_X:
+  description:
+  - '&7Mrežna kontrola: X pokušat će'
+  - '&7''izrezati'' blok iz svijeta'
+  - '&7i staviti ga u mrežu.'
+  - '&7Radi samo na vanilla blokovima bez'
+  - '&7inventara.'
+  name: '&3Mrežna kontrola: X'
+  stats:
+  - '&7Mrežno trošenje: &e100&7/rez'
   type:
   - '&7&oStroj'
 NTW_CRAFTING_BLUEPRINT:
+  description:
+  - '&7Prazan nacrt koji se može'
+  - '&7upotrijebiti za pohranu recepta'
+  - '&7za izradu.'
+  name: '&5Nacrt za izradu'
   type:
   - '&7&oAlat'
 NTW_CRAFTING_GRID:
+  description:
+  - '&7Mrežna rešetka za izradu ponaša se'
+  - '&7kao obična rešetka, ali prikazuje manje'
+  - '&7predmeta, a omogućuje izradu predmetima'
+  - '&7izravno iz mreže.'
+  name: '&3Mrežna rešetka za izradu'
   type:
   - '&7&oStroj'
 NTW_CRAYON:
+  description:
+  - '&7Uključuje prikaz čestica za otklanjanje'
+  - '&7pogrešaka u cijeloj mreži, prikazujući rad čvorova'
+  - '&7dok se odvija.'
+  name: '&5Mrežna bojica'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7 na mrežni kontroler uključuje prikaz čestica.'
 NTW_DEBUG_STICK:
+  description:
+  - '&7Dijagnostički alat samo za operatere koji'
+  - '&7služi za ispitivanje rada mrežnih blokova.'
+  name: '&5Mrežni štap za otklanjanje pogrešaka'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7 na mrežni objekt uključuje ispitivanje.'
 NTW_EMPOWERED_AI_CORE:
+  name: '&bOsnažena U.I. jezgra'
   type:
   - '&7&oKomponenta'
 NTW_EXPORT:
+  description:
+  - '&7Mrežni izvoznik može se postaviti da'
+  - '&7neprestano izvozi 1 hrpu bilo kojeg'
+  - '&7zadanog predmeta.'
+  - '&7Dopušta podizanje predmeta iz tereta.'
+  name: '&3Mrežni izvoznik'
   type:
   - '&7&oStroj'
 NTW_GRABBER:
+  description:
+  - '&7Mrežni hvatač pokušat će'
+  - '&7zgrabiti prvi predmet koji pronađe'
+  - '&7unutar odabranog stroja.'
+  name: '&3Mrežni hvatač'
   type:
   - '&7&oStroj'
 NTW_GREEDY_BLOCK:
+  description:
+  - '&7Mrežni pohlepni blok može se'
+  - '&7postaviti na jedan predmet, čiju će'
+  - '&7jednu hrpu zatim pohlepno'
+  - '&7čuvati. Ako dodatni predmeti'
+  - '&7ne stanu, neće ući u'
+  - '&7mrežu.'
+  name: '&3Mrežni pohlepni blok'
   type:
   - '&7&oStroj'
 NTW_GRID:
+  description:
+  - '&7Mrežna rešetka prikazuje vam sve'
+  - '&7predmete koje imate u mreži'
+  - '&7te vam omogućuje umetanje i podizanje'
+  - '&7izravno.'
+  name: '&3Mrežna rešetka'
   type:
   - '&7&oStroj'
 NTW_IMPORT:
+  description:
+  - '&7Mrežni uvoznik unosi svaki'
+  - '&7predmet iz sebe u mrežu.'
+  - '&7Prima predmete iz tereta.'
+  name: '&3Mrežni uvoznik'
+  stats:
+  - '&7Stopa uvoza: &eDo 9 hrpa&7/tik'
   type:
   - '&7&oStroj'
 NTW_INTERDIMENSIONAL_PRESENCE:
+  name: '&bMeđudimenzionalna prisutnost'
   type:
   - '&7&oKomponenta'
 NTW_MONITOR:
+  description:
+  - '&7Mrežni monitor omogućuje jednostavnu'
+  - '&7uvoznu/izvoznu interakciju sa susjednim'
+  - '&7objektima.'
+  - '&7Trenutno podržava:'
+  - '&7Beskonačne bačve'
+  - '&7Mrežne ljuske'
+  name: '&3Mrežni monitor'
   type:
   - '&7&oStroj'
 NTW_NETWORK_WIRELESS_RECEIVER:
+  description:
+  - '&7Mrežni bežični prijamnik može'
+  - '&7primati predmete od povezanog'
+  - '&7bežičnog odašiljača koji se nalazi u'
+  - '&7istom svijetu.'
+  - '&7Pokušat će gurnuti primljene predmete'
+  - '&7u mrežu svakog tika.'
+  name: '&3Mrežni bežični prijamnik'
   type:
   - '&7&oStroj'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
+  description:
+  - '&7Mrežni bežični odašiljač pokušat će'
+  - '&7prenijeti svaki predmet iz sebe'
+  - '&7povezanom mrežnom bežičnom prijamniku'
+  - '&7koji se nalazi u istom svijetu.'
+  - '&7Upotrijebite bežični konfigurator za'
+  - '&7postavljanje bežičnog odašiljača.'
+  name: '&3Mrežni bežični odašiljač'
+  stats:
+  - '&7Zahtijeva 500 mrežne energije po prijenosu.'
   type:
   - '&7&oStroj'
 NTW_OPTIC_CABLE:
+  name: '&bOptički kabel'
   type:
   - '&7&oKomponenta'
 NTW_OPTIC_GLASS:
+  name: '&bOptičko staklo'
   type:
   - '&7&oKomponenta'
 NTW_OPTIC_STAR:
+  name: '&bOptička zvijezda'
   type:
   - '&7&oKomponenta'
 NTW_POWER_DISPLAY:
+  description:
+  - '&7Mrežni prikaz energije prikazat će'
+  - '&7energiju u mreži.'
+  - '&7Jednostavno, zar ne?'
+  name: '&3Mrežni prikaz energije'
   type:
   - '&7&oStroj'
 NTW_POWER_OUTLET_1:
+  description:
+  - '&7Mrežni kondenzator može primiti'
+  - '&7energiju iz mreže za napajanje'
+  - '&7strojeva ili vraćanje u'
+  - '&7EnergyNet mrežu.'
+  name: '&3Mrežna energetska utičnica (1)'
+  stats:
+  - '&7Radi uz gubitak od 20%.'
+  - '&7Najveći prijenos: &e500'
   type:
   - '&7&oStroj'
 NTW_POWER_OUTLET_2:
+  description:
+  - '&7Mrežni kondenzator može primiti'
+  - '&7energiju iz mreže za napajanje'
+  - '&7strojeva ili vraćanje u'
+  - '&7EnergyNet mrežu.'
+  name: '&3Mrežna energetska utičnica (2)'
+  stats:
+  - '&7Radi uz gubitak od 20%.'
+  - '&7Najveći prijenos: &e2000'
   type:
   - '&7&oStroj'
 NTW_PRISTINE_AI_CORE:
+  name: '&bBesprijekorna U.I. jezgra'
   type:
   - '&7&oKomponenta'
 NTW_PROBE:
+  description:
+  - '&7Otkriva sažetak mreže,'
+  - '&7uključujući njezinu energiju, broj predmeta'
+  - '&7i ukupan broj čvorova.'
+  name: '&5Mrežna sonda'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7 na mrežni kontroler za prikaz sažetka.'
 NTW_PUSHER:
+  description:
+  - '&7Mrežni gurač pokušat će'
+  - '&7gurnuti odgovarajući predmet iz'
+  - '&7zadanog predmeta u odabrani stroj.'
+  name: '&3Mrežni gurač'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_STORAGE_1:
+  description:
+  - '&7Pohranjuje predmete u masovnim količinama unutar'
+  - '&7kvantnog singulariteta.'
+  name: '&3Mrežna kvantna pohrana (4K)'
+  stats:
+  - '&7Pohranjuje &e4096&7 predmeta'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_STORAGE_2:
+  description:
+  - '&7Pohranjuje predmete u masovnim količinama unutar'
+  - '&7kvantnog singulariteta.'
+  name: '&3Mrežna kvantna pohrana (32K)'
+  stats:
+  - '&7Pohranjuje &e32768&7 predmeta'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_STORAGE_3:
+  description:
+  - '&7Pohranjuje predmete u masovnim količinama unutar'
+  - '&7kvantnog singulariteta.'
+  name: '&3Mrežna kvantna pohrana (262K)'
+  stats:
+  - '&7Pohranjuje &e262144&7 predmeta'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_STORAGE_4:
+  description:
+  - '&7Pohranjuje predmete u masovnim količinama unutar'
+  - '&7kvantnog singulariteta.'
+  name: '&3Mrežna kvantna pohrana (2M)'
+  stats:
+  - '&7Pohranjuje &e2097152&7 predmeta'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_STORAGE_5:
+  description:
+  - '&7Pohranjuje predmete u masovnim količinama unutar'
+  - '&7kvantnog singulariteta.'
+  name: '&3Mrežna kvantna pohrana (16M)'
+  stats:
+  - '&7Pohranjuje &e16777216&7 predmeta'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_STORAGE_6:
+  description:
+  - '&7Pohranjuje predmete u masovnim količinama unutar'
+  - '&7kvantnog singulariteta.'
+  name: '&3Mrežna kvantna pohrana (134M)'
+  stats:
+  - '&7Pohranjuje &e134217728&7 predmeta'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_STORAGE_7:
+  description:
+  - '&7Pohranjuje predmete u masovnim količinama unutar'
+  - '&7kvantnog singulariteta.'
+  name: '&3Mrežna kvantna pohrana (1B)'
+  stats:
+  - '&7Pohranjuje &e1073741824&7 predmeta'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_STORAGE_8:
+  description:
+  - '&7Pohranjuje predmete u masovnim količinama unutar'
+  - '&7kvantnog singulariteta.'
+  name: '&3Mrežna kvantna pohrana (∞)'
+  stats:
+  - '&7Pohranjuje &e∞&7 predmeta... gotovo'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_WORKBENCH:
+  description:
+  - '&7Omogućuje izradu kvantnih pohrana.'
+  name: '&3Mrežni kvantni radni stol'
   type:
   - '&7&oStroj'
 NTW_RADIOACTIVE_OPTIC_STAR:
+  name: '&bRadioaktivna optička zvijezda'
   type:
   - '&7&oKomponenta'
 NTW_RAKE_1:
+  description:
+  - '&7Ručni alat za brzo rastavljanje'
+  - '&7mrežnih objekata bez strojeva.'
+  name: '&5Mrežne grablje (1)'
+  stats:
+  - '&e250 upotreba &7preostalo'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7 na mrežni objekt razbija ga trenutno.'
 NTW_RAKE_2:
+  description:
+  - '&7Ručni alat za brzo rastavljanje'
+  - '&7mrežnih objekata bez strojeva.'
+  name: '&5Mrežne grablje (2)'
+  stats:
+  - '&e1000 upotreba &7preostalo'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7 na mrežni objekt razbija ga trenutno.'
 NTW_RAKE_3:
+  description:
+  - '&7Ručni alat za brzo rastavljanje'
+  - '&7mrežnih objekata bez strojeva.'
+  name: '&5Mrežne grablje (3)'
+  stats:
+  - '&e9999 upotreba &7preostalo'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7 na mrežni objekt razbija ga trenutno.'
 NTW_RECIPE_ENCODER:
+  description:
+  - '&7Koristi se za oblikovanje nacrta za izradu'
+  - '&7iz ulaznih predmeta.'
+  name: '&3Mrežni koder recepata'
+  stats:
+  - '&7Mrežno trošenje: &e20000&7/kodiranje'
   type:
   - '&7&oStroj'
 NTW_REMOTE:
+  description:
+  - '&7Bežično otvara povezanu rešetku.'
+  - '&7Rešetka mora biti u učitanom chunku.'
+  name: '&5Mrežni daljinski'
+  stats:
+  - '&7Domet: &e150'
   type:
   - '&7&oAlat'
 NTW_REMOTE_EMPOWERED:
+  description:
+  - '&7Bežično otvara povezanu rešetku.'
+  - '&7Rešetka mora biti u učitanom chunku.'
+  name: '&5Mrežni daljinski osnaženi'
+  stats:
+  - '&7Domet: &e500'
   type:
   - '&7&oAlat'
 NTW_REMOTE_PRISTINE:
+  description:
+  - '&7Bežično otvara povezanu rešetku.'
+  - '&7Rešetka mora biti u učitanom chunku.'
+  name: '&5Mrežni daljinski besprijekorni'
+  stats:
+  - '&7Domet: &eNeograničen'
   type:
   - '&7&oAlat'
 NTW_REMOTE_ULTIMATE:
+  description:
+  - '&7Bežično otvara povezanu rešetku.'
+  - '&7Rešetka mora biti u učitanom chunku.'
+  name: '&5Mrežni daljinski konačni'
+  stats:
+  - '&7Domet: &eMeđudimenzionalni'
   type:
   - '&7&oAlat'
 NTW_SHRINKING_BASE:
+  name: '&bBaza za smanjivanje'
   type:
   - '&7&oKomponenta'
 NTW_SIMPLE_NANOBOTS:
+  name: '&bJednostavni nanoboti'
   type:
   - '&7&oKomponenta'
 NTW_SYNTHETIC_EMERALD_SHARD:
+  name: '&bSintetički ulomak smaragda'
   type:
   - '&7&oKomponenta'
 NTW_TRASH:
+  description:
+  - '&7Mrežni čistač povlačit će'
+  - '&7odgovarajuće predmete iz mreže'
+  - '&7i trenutno ih uništiti.'
+  - '&7Koristite s velikim oprezom!'
+  name: '&3Mrežni čistač'
   type:
   - '&7&oStroj'
 NTW_VACUUM:
+  description:
+  - '&7Mrežni usisavač usisavat će'
+  - '&7predmete u sebe unutar'
+  - '&7dometa 4 x 4 sa sobom u središtu.'
+  - '&7Usisani predmeti pokušat će ući'
+  - '&7u mrežu.'
+  name: '&3Mrežni usisavač'
+  stats:
+  - '&7Mrežno trošenje: &e100&7/tik'
   type:
   - '&7&oStroj'
 NTW_VANILLA_GRABBER:
+  description:
+  - '&7Mrežni vanilla hvatač pokušat će'
+  - '&7zgrabiti prvi mogući predmet iz'
+  - '&7odabranog vanilla inventara.'
+  - '&7Predmete iz ovog čvora morate'
+  - '&7zgrabiti pomoću hvatača.'
+  name: '&3Mrežni vanilla hvatač'
   type:
   - '&7&oStroj'
 NTW_VANILLA_PUSHER:
+  description:
+  - '&7Mrežni vanilla gurač pokušat će'
+  - '&7gurnuti svaki predmet iz sebe u'
+  - '&7odabranog vanilla inventara.'
+  - '&7Predmete u ovaj čvor morate'
+  - '&7gurnuti pomoću gurača.'
+  name: '&3Mrežni vanilla gurač'
   type:
   - '&7&oStroj'
 NTW_WIRELESS_CONFIGURATOR:
+  description:
+  - '&7Koristi se za pohranu lokacije prijamnika'
+  - '&7i zatim za primjenu na odašiljač.'
+  name: '&5Mrežni bežični konfigurator'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7: Pohrani lokaciju prijamnika'
+  - '&eShift desni klik&7: Postavi lokaciju na odašiljač'
