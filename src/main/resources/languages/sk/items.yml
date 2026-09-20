@@ -1,192 +1,562 @@
 NTW_ADVANCED_NANOBOTS:
+  name: '&bPokročilé nanoboty'
   type:
   - '&7&oKomponent'
 NTW_AI_CORE:
+  name: '&bJadro A.I.'
   type:
   - '&7&oKomponent'
 NTW_AUTO_CRAFTER:
+  description:
+  - '&7Sieťový automatický výrobník prijíma'
+  - '&7výrobný plán. Keď je'
+  - '&7výstupný predmet plánu vyžiadaný'
+  - '&7a v sieti žiadny nie je,'
+  - '&7vyrobí sa, ak máš'
+  - '&7materiály.'
+  name: '&3Sieťový automatický výrobník'
+  stats:
+  - '&7Odber siete: &e64&7/výrobok'
   type:
   - '&7&oStroj'
 NTW_AUTO_CRAFTER_WITHHOLDING:
+  description:
+  - '&7Sieťový automatický výrobník prijíma'
+  - '&7výrobný plán. Keď je'
+  - '&7výstupný predmet plánu vyžiadaný'
+  - '&7a v sieti žiadny nie je,'
+  - '&7vyrobí sa, ak máš'
+  - '&7materiály.'
+  - '&7Zadržiavací výrobník si ponechá'
+  - '&7hŕbu vo výstupe a zastaví'
+  - '&7výrobu. Hŕbu vidno'
+  - '&7v sieti a umožňuje aj'
+  - '&7náklad.'
+  name: '&3Sieťový automatický výrobník (zadržiavací)'
+  stats:
+  - '&7Odber siete: &e128&7/výrobok'
   type:
   - '&7&oStroj'
 NTW_BEST_PUSHER:
+  description:
+  - '&7Sieťový pokročilý vtláčač sa pokúsi'
+  - '&7vtlačiť zodpovedajúce predmety z až'
+  - '&7dvanástich zadaných predlôh do'
+  - '&7zvoleného stroja.'
+  name: '&3Sieťový pokročilý vtláčač'
   type:
   - '&7&oStroj'
 NTW_BRIDGE:
+  description:
+  - '&7Most ti umožňuje lacno'
+  - '&7prepojiť sieťové objekty.'
+  name: '&3Sieťový most'
   type:
   - '&7&oStroj'
 NTW_CAPACITOR_1:
+  description:
+  - '&7Sieťový kondenzátor dokáže prijať'
+  - '&7energiu a uložiť ju na použitie'
+  - '&7v rámci siete.'
+  name: '&3Sieťový kondenzátor (1)'
+  stats:
+  - '&7Kapacita: &e1000'
   type:
   - '&7&oStroj'
 NTW_CAPACITOR_2:
+  description:
+  - '&7Sieťový kondenzátor dokáže prijať'
+  - '&7energiu a uložiť ju na použitie'
+  - '&7v rámci siete.'
+  name: '&3Sieťový kondenzátor (2)'
+  stats:
+  - '&7Kapacita: &e10000'
   type:
   - '&7&oStroj'
 NTW_CAPACITOR_3:
+  description:
+  - '&7Sieťový kondenzátor dokáže prijať'
+  - '&7energiu a uložiť ju na použitie'
+  - '&7v rámci siete.'
+  name: '&3Sieťový kondenzátor (3)'
+  stats:
+  - '&7Kapacita: &e100000'
   type:
   - '&7&oStroj'
 NTW_CAPACITOR_4:
+  description:
+  - '&7Sieťový kondenzátor dokáže prijať'
+  - '&7energiu a uložiť ju na použitie'
+  - '&7v rámci siete.'
+  name: '&3Sieťový kondenzátor (4)'
+  stats:
+  - '&7Kapacita: &e1000000'
   type:
   - '&7&oStroj'
 NTW_CELL:
+  description:
+  - '&7Sieťový článok je veľký'
+  - '&7inventár (dvojitá truhlica), ku ktorému'
+  - '&7sa dá pristúpiť zo siete'
+  - '&7aj vo svete.'
+  name: '&3Sieťový článok'
   type:
   - '&7&oStroj'
 NTW_CONFIGURATOR:
+  description:
+  - '&7Používa sa na kopírovanie a vkladanie'
+  - '&7nastavení smerových'
+  - '&7rozhraní.'
+  name: '&5Sieťový konfigurátor'
   type:
   - '&7&oNástroj'
+  usage:
+  - '&ePravý klik&7: Použiť nastavenie'
+  - '&eShift + pravý klik&7: Uložiť nastavenie'
 NTW_CONTROLLER:
+  description:
+  - '&7Sieťový ovládač je mozgom'
+  - '&7celej siete.'
+  name: '&3Sieťový ovládač'
+  stats:
+  - '&7Limit: &eMax 1&7 na sieť'
   type:
   - '&7&oStroj'
 NTW_CONTROL_V:
+  description:
+  - '&7Sieťové ovládanie: V sa pokúsi'
+  - '&7''prilepiť'' blok zo siete'
+  - '&7do sveta.'
+  - '&7Funguje len s vanilla blokmi.'
+  name: '&3Sieťové ovládanie: V'
+  stats:
+  - '&7Odber siete: &e100&7/prilepenie'
   type:
   - '&7&oStroj'
 NTW_CONTROL_X:
+  description:
+  - '&7Sieťové ovládanie: X sa pokúsi'
+  - '&7''vystrihnúť'' blok zo sveta'
+  - '&7a vložiť ho do siete.'
+  - '&7Funguje len na vanilla blokoch bez'
+  - '&7inventárov.'
+  name: '&3Sieťové ovládanie: X'
+  stats:
+  - '&7Odber siete: &e100&7/vystrihnutie'
   type:
   - '&7&oStroj'
 NTW_CRAFTING_BLUEPRINT:
+  description:
+  - '&7Prázdny plán, ktorý sa dá'
+  - '&7použiť na uloženie výrobného'
+  - '&7receptu.'
+  name: '&5Výrobný plán'
   type:
   - '&7&oNástroj'
 NTW_CRAFTING_GRID:
+  description:
+  - '&7Sieťová výrobná mriežka sa správa'
+  - '&7ako bežná mriežka, ale zobrazí menej'
+  - '&7predmetov, zato umožní výrobu z predmetov'
+  - '&7priamo zo siete.'
+  name: '&3Sieťová výrobná mriežka'
   type:
   - '&7&oStroj'
 NTW_CRAYON:
+  description:
+  - '&7Prepína ladiace zobrazenie častíc'
+  - '&7v celej sieti, znázorňuje činnosť uzlov'
+  - '&7počas prevádzky.'
+  name: '&5Sieťová pastelka'
   type:
   - '&7&oNástroj'
+  usage:
+  - '&ePravý klik&7 na sieťový ovládač prepne zobrazenie častíc.'
 NTW_DEBUG_STICK:
+  description:
+  - '&7Diagnostický nástroj len pre operátorov,'
+  - '&7slúži na ladenie správania sieťových blokov.'
+  name: '&5Sieťová ladiaca palica'
   type:
   - '&7&oNástroj'
+  usage:
+  - '&ePravý klik&7 na sieťový objekt zapne ladenie.'
 NTW_EMPOWERED_AI_CORE:
+  name: '&bPosilnené jadro A.I.'
   type:
   - '&7&oKomponent'
 NTW_EXPORT:
+  description:
+  - '&7Sieťový exportér sa dá nastaviť tak,'
+  - '&7aby neustále exportoval 1 hŕbu'
+  - '&7zadaného predmetu.'
+  - '&7Umožňuje výber predmetov nákladom.'
+  name: '&3Sieťový exportér'
   type:
   - '&7&oStroj'
 NTW_GRABBER:
+  description:
+  - '&7Sieťový uchopovač sa pokúsi'
+  - '&7uchopiť prvý predmet, ktorý nájde'
+  - '&7vo vybranom stroji.'
+  name: '&3Sieťový uchopovač'
   type:
   - '&7&oStroj'
 NTW_GREEDY_BLOCK:
+  description:
+  - '&7Sieťový lakomý blok sa dá'
+  - '&7nastaviť na jeden predmet, z ktorého si'
+  - '&7potom lakomo podrží jedinú'
+  - '&7hŕbu. Ak sa ďalšie prichádzajúce predmety'
+  - '&7nezmestia, nevstúpia do'
+  - '&7siete.'
+  name: '&3Sieťový lakomý blok'
   type:
   - '&7&oStroj'
 NTW_GRID:
+  description:
+  - '&7Sieťová mriežka ti ukáže všetky'
+  - '&7predmety, ktoré máš v sieti,'
+  - '&7a umožní ti ich vkladať či vyberať'
+  - '&7priamo.'
+  name: '&3Sieťová mriežka'
   type:
   - '&7&oStroj'
 NTW_IMPORT:
+  description:
+  - '&7Sieťový importér prenesie každý'
+  - '&7predmet vo svojom vnútri do siete.'
+  - '&7Prijíma predmety z nákladu.'
+  name: '&3Sieťový importér'
+  stats:
+  - '&7Miera importu: &eAž 9 hŕb&7/tik'
   type:
   - '&7&oStroj'
 NTW_INTERDIMENSIONAL_PRESENCE:
+  name: '&bMedzidimenzionálna prítomnosť'
   type:
   - '&7&oKomponent'
 NTW_MONITOR:
+  description:
+  - '&7Sieťový monitor umožňuje jednoduchý'
+  - '&7import a export so susednými'
+  - '&7objektmi.'
+  - '&7Momentálne podporuje:'
+  - '&7Nekonečné sudy'
+  - '&7Sieťové schránky'
+  name: '&3Sieťový monitor'
   type:
   - '&7&oStroj'
 NTW_NETWORK_WIRELESS_RECEIVER:
+  description:
+  - '&7Sieťový bezdrôtový prijímač dokáže'
+  - '&7prijímať predmety z prepojeného'
+  - '&7bezdrôtového vysielača, ktorý sa nachádza'
+  - '&7v tom istom svete.'
+  - '&7Prijaté predmety sa pokúsi vtlačiť'
+  - '&7do siete každý tik.'
+  name: '&3Sieťový bezdrôtový prijímač'
   type:
   - '&7&oStroj'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
+  description:
+  - '&7Sieťový bezdrôtový vysielač sa'
+  - '&7pokúsi preniesť každý predmet vo svojom vnútri'
+  - '&7do prepojeného sieťového bezdrôtového prijímača'
+  - '&7v tom istom svete.'
+  - '&7Na nastavenie bezdrôtového vysielača'
+  - '&7použi bezdrôtový konfigurátor.'
+  name: '&3Sieťový bezdrôtový vysielač'
+  stats:
+  - '&7Vyžaduje 500 sieťovej energie na prenos.'
   type:
   - '&7&oStroj'
 NTW_OPTIC_CABLE:
+  name: '&bOptický kábel'
   type:
   - '&7&oKomponent'
 NTW_OPTIC_GLASS:
+  name: '&bOptické sklo'
   type:
   - '&7&oKomponent'
 NTW_OPTIC_STAR:
+  name: '&bOptická hviezda'
   type:
   - '&7&oKomponent'
 NTW_POWER_DISPLAY:
+  description:
+  - '&7Sieťový displej energie zobrazí'
+  - '&7množstvo energie v sieti.'
+  - '&7Jednoduché, však?'
+  name: '&3Sieťový displej energie'
   type:
   - '&7&oStroj'
 NTW_POWER_OUTLET_1:
+  description:
+  - '&7Sieťový kondenzátor dokáže prijať'
+  - '&7energiu zo siete na napájanie'
+  - '&7strojov alebo spätné napájanie do'
+  - '&7siete EnergyNet.'
+  name: '&3Sieťová energetická zásuvka (1)'
+  stats:
+  - '&7Pracuje so stratou 20%.'
+  - '&7Max prenos: &e500'
   type:
   - '&7&oStroj'
 NTW_POWER_OUTLET_2:
+  description:
+  - '&7Sieťový kondenzátor dokáže prijať'
+  - '&7energiu zo siete na napájanie'
+  - '&7strojov alebo spätné napájanie do'
+  - '&7siete EnergyNet.'
+  name: '&3Sieťová energetická zásuvka (2)'
+  stats:
+  - '&7Pracuje so stratou 20%.'
+  - '&7Max prenos: &e2000'
   type:
   - '&7&oStroj'
 NTW_PRISTINE_AI_CORE:
+  name: '&bDokonalé jadro A.I.'
   type:
   - '&7&oKomponent'
 NTW_PROBE:
+  description:
+  - '&7Odhalí prehľad siete vrátane'
+  - '&7jej energie, počtu predmetov'
+  - '&7a súhrnu uzlov.'
+  name: '&5Sieťová sonda'
   type:
   - '&7&oNástroj'
+  usage:
+  - '&ePravý klik&7 na sieťový ovládač zobrazí prehľad.'
 NTW_PUSHER:
+  description:
+  - '&7Sieťový vtláčač sa pokúsi'
+  - '&7vtlačiť zodpovedajúci predmet zo'
+  - '&7zadaného predmetu do zvoleného stroja.'
+  name: '&3Sieťový vtláčač'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_STORAGE_1:
+  description:
+  - '&7Ukladá predmety v hromadných množstvách v'
+  - '&7kvantovej singularite.'
+  name: '&3Sieťové kvantové úložisko (4K)'
+  stats:
+  - '&7Ukladá &e4096&7 predmetov'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_STORAGE_2:
+  description:
+  - '&7Ukladá predmety v hromadných množstvách v'
+  - '&7kvantovej singularite.'
+  name: '&3Sieťové kvantové úložisko (32K)'
+  stats:
+  - '&7Ukladá &e32768&7 predmetov'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_STORAGE_3:
+  description:
+  - '&7Ukladá predmety v hromadných množstvách v'
+  - '&7kvantovej singularite.'
+  name: '&3Sieťové kvantové úložisko (262K)'
+  stats:
+  - '&7Ukladá &e262144&7 predmetov'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_STORAGE_4:
+  description:
+  - '&7Ukladá predmety v hromadných množstvách v'
+  - '&7kvantovej singularite.'
+  name: '&3Sieťové kvantové úložisko (2M)'
+  stats:
+  - '&7Ukladá &e2097152&7 predmetov'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_STORAGE_5:
+  description:
+  - '&7Ukladá predmety v hromadných množstvách v'
+  - '&7kvantovej singularite.'
+  name: '&3Sieťové kvantové úložisko (16M)'
+  stats:
+  - '&7Ukladá &e16777216&7 predmetov'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_STORAGE_6:
+  description:
+  - '&7Ukladá predmety v hromadných množstvách v'
+  - '&7kvantovej singularite.'
+  name: '&3Sieťové kvantové úložisko (134M)'
+  stats:
+  - '&7Ukladá &e134217728&7 predmetov'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_STORAGE_7:
+  description:
+  - '&7Ukladá predmety v hromadných množstvách v'
+  - '&7kvantovej singularite.'
+  name: '&3Sieťové kvantové úložisko (1B)'
+  stats:
+  - '&7Ukladá &e1073741824&7 predmetov'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_STORAGE_8:
+  description:
+  - '&7Ukladá predmety v hromadných množstvách v'
+  - '&7kvantovej singularite.'
+  name: '&3Sieťové kvantové úložisko (∞)'
+  stats:
+  - '&7Ukladá &e∞&7 predmetov... takmer'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_WORKBENCH:
+  description:
+  - '&7Umožňuje výrobu kvantových úložísk.'
+  name: '&3Sieťový kvantový pracovný stôl'
   type:
   - '&7&oStroj'
 NTW_RADIOACTIVE_OPTIC_STAR:
+  name: '&bRádioaktívna optická hviezda'
   type:
   - '&7&oKomponent'
 NTW_RAKE_1:
+  description:
+  - '&7Príručný nástroj na rýchle rozoberanie'
+  - '&7sieťových objektov bez strojov.'
+  name: '&5Sieťové hrable (1)'
+  stats:
+  - '&e250 použití &7zostáva'
   type:
   - '&7&oNástroj'
+  usage:
+  - '&ePravý klik&7 na sieťový objekt ho okamžite rozbije.'
 NTW_RAKE_2:
+  description:
+  - '&7Príručný nástroj na rýchle rozoberanie'
+  - '&7sieťových objektov bez strojov.'
+  name: '&5Sieťové hrable (2)'
+  stats:
+  - '&e1000 použití &7zostáva'
   type:
   - '&7&oNástroj'
+  usage:
+  - '&ePravý klik&7 na sieťový objekt ho okamžite rozbije.'
 NTW_RAKE_3:
+  description:
+  - '&7Príručný nástroj na rýchle rozoberanie'
+  - '&7sieťových objektov bez strojov.'
+  name: '&5Sieťové hrable (3)'
+  stats:
+  - '&e9999 použití &7zostáva'
   type:
   - '&7&oNástroj'
+  usage:
+  - '&ePravý klik&7 na sieťový objekt ho okamžite rozbije.'
 NTW_RECIPE_ENCODER:
+  description:
+  - '&7Používa sa na vytvorenie výrobného plánu'
+  - '&7zo vstupných predmetov.'
+  name: '&3Sieťový kódovač receptov'
+  stats:
+  - '&7Odber siete: &e20000&7/zakódovanie'
   type:
   - '&7&oStroj'
 NTW_REMOTE:
+  description:
+  - '&7Bezdrôtovo otvorí priradenú mriežku.'
+  - '&7Mriežka musí mať načítaný chunk.'
+  name: '&5Sieťový diaľkový ovládač'
+  stats:
+  - '&7Dosah: &e150'
   type:
   - '&7&oNástroj'
 NTW_REMOTE_EMPOWERED:
+  description:
+  - '&7Bezdrôtovo otvorí priradenú mriežku.'
+  - '&7Mriežka musí mať načítaný chunk.'
+  name: '&5Sieťový diaľkový ovládač posilnený'
+  stats:
+  - '&7Dosah: &e500'
   type:
   - '&7&oNástroj'
 NTW_REMOTE_PRISTINE:
+  description:
+  - '&7Bezdrôtovo otvorí priradenú mriežku.'
+  - '&7Mriežka musí mať načítaný chunk.'
+  name: '&5Sieťový diaľkový ovládač dokonalý'
+  stats:
+  - '&7Dosah: &eNeobmedzený'
   type:
   - '&7&oNástroj'
 NTW_REMOTE_ULTIMATE:
+  description:
+  - '&7Bezdrôtovo otvorí priradenú mriežku.'
+  - '&7Mriežka musí mať načítaný chunk.'
+  name: '&5Sieťový diaľkový ovládač absolútny'
+  stats:
+  - '&7Dosah: &eNaprieč dimenziami'
   type:
   - '&7&oNástroj'
 NTW_SHRINKING_BASE:
+  name: '&bZmenšovacia základňa'
   type:
   - '&7&oKomponent'
 NTW_SIMPLE_NANOBOTS:
+  name: '&bJednoduché nanoboty'
   type:
   - '&7&oKomponent'
 NTW_SYNTHETIC_EMERALD_SHARD:
+  name: '&bSyntetický smaragdový úlomok'
   type:
   - '&7&oKomponent'
 NTW_TRASH:
+  description:
+  - '&7Sieťový likvidátor vytiahne'
+  - '&7zodpovedajúce predmety zo siete'
+  - '&7a okamžite ich zničí.'
+  - '&7Používaj veľmi opatrne!'
+  name: '&3Sieťový likvidátor'
   type:
   - '&7&oStroj'
 NTW_VACUUM:
+  description:
+  - '&7Sieťový vysávač nasaje'
+  - '&7predmety do seba v okruhu'
+  - '&74 x 4 so stredom na sebe.'
+  - '&7Nasaté predmety sa pokúsia vtlačiť'
+  - '&7do siete.'
+  name: '&3Sieťový vysávač'
+  stats:
+  - '&7Odber siete: &e100&7/tik'
   type:
   - '&7&oStroj'
 NTW_VANILLA_GRABBER:
+  description:
+  - '&7Sieťový vanilla uchopovač sa pokúsi'
+  - '&7uchopiť prvý možný predmet z'
+  - '&7zvoleného vanilla inventára.'
+  - '&7Predmety z tohto uzla musíš'
+  - '&7uchopiť pomocou uchopovača.'
+  name: '&3Sieťový vanilla uchopovač'
   type:
   - '&7&oStroj'
 NTW_VANILLA_PUSHER:
+  description:
+  - '&7Sieťový vanilla vtláčač sa pokúsi'
+  - '&7vtlačiť každý predmet vo svojom vnútri do'
+  - '&7zvoleného vanilla inventára.'
+  - '&7Predmety do tohto uzla musíš'
+  - '&7vtlačiť vtláčačom.'
+  name: '&3Sieťový vanilla vtláčač'
   type:
   - '&7&oStroj'
 NTW_WIRELESS_CONFIGURATOR:
+  description:
+  - '&7Ukladá do pamäte polohu prijímača'
+  - '&7a potom ju použije na vysielači.'
+  name: '&5Sieťový bezdrôtový konfigurátor'
   type:
   - '&7&oNástroj'
+  usage:
+  - '&ePravý klik&7: Uložiť polohu prijímača'
+  - '&eShift + pravý klik&7: Nastaviť polohu vysielaču'
