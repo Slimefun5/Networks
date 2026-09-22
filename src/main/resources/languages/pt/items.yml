@@ -1,192 +1,562 @@
 NTW_ADVANCED_NANOBOTS:
+  name: '&bNanorrobôs Avançados'
   type:
   - '&7&oComponente'
 NTW_AI_CORE:
+  name: '&bNúcleo de I.A.'
   type:
   - '&7&oComponente'
 NTW_AUTO_CRAFTER:
+  description:
+  - '&7O Fabricador Automático de Rede aceita'
+  - '&7uma planta de fabrico. Quando o'
+  - '&7item de saída da planta for pedido'
+  - '&7e não houver nenhum na rede,'
+  - '&7será fabricado se tiveres os'
+  - '&7materiais.'
+  name: '&3Fabricador Automático de Rede'
+  stats:
+  - '&7Consumo de Rede: &e64&7/fabrico'
   type:
   - '&7&oMáquina'
 NTW_AUTO_CRAFTER_WITHHOLDING:
+  description:
+  - '&7O Fabricador Automático de Rede aceita'
+  - '&7uma planta de fabrico. Quando o'
+  - '&7item de saída da planta for pedido'
+  - '&7e não houver nenhum na rede,'
+  - '&7será fabricado se tiveres os'
+  - '&7materiais.'
+  - '&7Um Fabricador Retentor mantém'
+  - '&7uma pilha na saída e para de'
+  - '&7fabricar. A pilha pode ser vista'
+  - '&7na Rede e também permite'
+  - '&7carga.'
+  name: '&3Fabricador Automático de Rede (Retentor)'
+  stats:
+  - '&7Consumo de Rede: &e128&7/fabrico'
   type:
   - '&7&oMáquina'
 NTW_BEST_PUSHER:
+  description:
+  - '&7O Empurrador Avançado de Rede tentará'
+  - '&7empurrar itens correspondentes a até'
+  - '&7doze modelos dados para a'
+  - '&7máquina escolhida.'
+  name: '&3Empurrador Avançado de Rede'
   type:
   - '&7&oMáquina'
 NTW_BRIDGE:
+  description:
+  - '&7A Ponte permite-te ligar objetos'
+  - '&7da rede de forma barata.'
+  name: '&3Ponte de Rede'
   type:
   - '&7&oMáquina'
 NTW_CAPACITOR_1:
+  description:
+  - '&7O Condensador de Rede pode receber'
+  - '&7energia e armazená-la para uso'
+  - '&7dentro da rede.'
+  name: '&3Condensador de Rede (1)'
+  stats:
+  - '&7Capacidade: &e1000'
   type:
   - '&7&oMáquina'
 NTW_CAPACITOR_2:
+  description:
+  - '&7O Condensador de Rede pode receber'
+  - '&7energia e armazená-la para uso'
+  - '&7dentro da rede.'
+  name: '&3Condensador de Rede (2)'
+  stats:
+  - '&7Capacidade: &e10000'
   type:
   - '&7&oMáquina'
 NTW_CAPACITOR_3:
+  description:
+  - '&7O Condensador de Rede pode receber'
+  - '&7energia e armazená-la para uso'
+  - '&7dentro da rede.'
+  name: '&3Condensador de Rede (3)'
+  stats:
+  - '&7Capacidade: &e100000'
   type:
   - '&7&oMáquina'
 NTW_CAPACITOR_4:
+  description:
+  - '&7O Condensador de Rede pode receber'
+  - '&7energia e armazená-la para uso'
+  - '&7dentro da rede.'
+  name: '&3Condensador de Rede (4)'
+  stats:
+  - '&7Capacidade: &e1000000'
   type:
   - '&7&oMáquina'
 NTW_CELL:
+  description:
+  - '&7A Célula de Rede é um inventário'
+  - '&7grande (baú duplo) que pode'
+  - '&7ser acedido tanto a partir da rede'
+  - '&7como no mundo.'
+  name: '&3Célula de Rede'
   type:
   - '&7&oMáquina'
 NTW_CONFIGURATOR:
+  description:
+  - '&7Usado para copiar e colar as'
+  - '&7configurações de interfaces'
+  - '&7direcionais.'
+  name: '&5Configurador de Rede'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7: Aplicar Configuração'
+  - '&eShift + Clique Direito&7: Guardar Configuração'
 NTW_CONTROLLER:
+  description:
+  - '&7O Controlador de Rede é o cérebro'
+  - '&7de toda a rede.'
+  name: '&3Controlador de Rede'
+  stats:
+  - '&7Limite: &eMáx 1&7 por rede'
   type:
   - '&7&oMáquina'
 NTW_CONTROL_V:
+  description:
+  - '&7O Controlo de Rede: V tentará'
+  - '&7''colar'' um bloco da Rede'
+  - '&7no mundo.'
+  - '&7Só funciona com blocos vanilla.'
+  name: '&3Controlo de Rede: V'
+  stats:
+  - '&7Consumo de Rede: &e100&7/colagem'
   type:
   - '&7&oMáquina'
 NTW_CONTROL_X:
+  description:
+  - '&7O Controlo de Rede: X tentará'
+  - '&7''cortar'' um bloco do mundo'
+  - '&7e colocá-lo na Rede.'
+  - '&7Só funciona em blocos vanilla sem'
+  - '&7inventários.'
+  name: '&3Controlo de Rede: X'
+  stats:
+  - '&7Consumo de Rede: &e100&7/corte'
   type:
   - '&7&oMáquina'
 NTW_CRAFTING_BLUEPRINT:
+  description:
+  - '&7Uma planta em branco que pode'
+  - '&7ser usada para guardar uma'
+  - '&7receita de fabrico.'
+  name: '&5Planta de Fabrico'
   type:
   - '&7&oFerramenta'
 NTW_CRAFTING_GRID:
+  description:
+  - '&7A Grelha de Fabrico de Rede funciona'
+  - '&7como uma grelha normal, mas mostra menos'
+  - '&7itens e permite fabricar com itens'
+  - '&7diretamente da rede.'
+  name: '&3Grelha de Fabrico de Rede'
   type:
   - '&7&oMáquina'
 NTW_CRAYON:
+  description:
+  - '&7Alterna um ecrã de partículas de depuração'
+  - '&7em toda a rede, mostrando a atividade dos nós'
+  - '&7enquanto funciona.'
+  name: '&5Lápis de Cera de Rede'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7 num Controlador de Rede para alternar o ecrã de partículas.'
 NTW_DEBUG_STICK:
+  description:
+  - '&7Uma ferramenta de diagnóstico só para operadores,'
+  - '&7usada para depurar o comportamento dos blocos de Rede.'
+  name: '&5Vara de Depuração de Rede'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7 num Objeto de Rede para ligar a depuração.'
 NTW_EMPOWERED_AI_CORE:
+  name: '&bNúcleo de I.A. Potenciado'
   type:
   - '&7&oComponente'
 NTW_EXPORT:
+  description:
+  - '&7O Exportador de Rede pode ser definido'
+  - '&7para exportar constantemente 1 pilha de'
+  - '&7um item indicado.'
+  - '&7Aceita a retirada de itens pela carga.'
+  name: '&3Exportador de Rede'
   type:
   - '&7&oMáquina'
 NTW_GRABBER:
+  description:
+  - '&7O Agarrador de Rede tentará'
+  - '&7agarrar o primeiro item que encontrar'
+  - '&7dentro da máquina selecionada.'
+  name: '&3Agarrador de Rede'
   type:
   - '&7&oMáquina'
 NTW_GREEDY_BLOCK:
+  description:
+  - '&7O Bloco Ganancioso de Rede pode'
+  - '&7ser definido para um item, que depois'
+  - '&7guardará avidamente até uma única'
+  - '&7pilha. Se chegarem mais itens'
+  - '&7e não couberem, não entrarão'
+  - '&7na rede.'
+  name: '&3Bloco Ganancioso de Rede'
   type:
   - '&7&oMáquina'
 NTW_GRID:
+  description:
+  - '&7A Grelha de Rede mostra-te todos'
+  - '&7os itens que tens na rede'
+  - '&7e deixa-te inserir ou retirar'
+  - '&7diretamente.'
+  name: '&3Grelha de Rede'
   type:
   - '&7&oMáquina'
 NTW_IMPORT:
+  description:
+  - '&7O Importador de Rede leva qualquer'
+  - '&7item no seu interior para a rede.'
+  - '&7Aceita itens vindos da carga.'
+  name: '&3Importador de Rede'
+  stats:
+  - '&7Taxa de Importação: &eAté 9 pilhas&7/tick'
   type:
   - '&7&oMáquina'
 NTW_INTERDIMENSIONAL_PRESENCE:
+  name: '&bPresença Interdimensional'
   type:
   - '&7&oComponente'
 NTW_MONITOR:
+  description:
+  - '&7O Monitor de Rede permite uma simples'
+  - '&7interação de importação/exportação com'
+  - '&7objetos adjacentes.'
+  - '&7Suporta atualmente:'
+  - '&7Barris Infinitos'
+  - '&7Invólucros de Rede'
+  name: '&3Monitor de Rede'
   type:
   - '&7&oMáquina'
 NTW_NETWORK_WIRELESS_RECEIVER:
+  description:
+  - '&7O Recetor Sem Fios de Rede é'
+  - '&7capaz de receber itens de um transmissor'
+  - '&7sem fios ligado que se encontre'
+  - '&7no mesmo mundo.'
+  - '&7Tentará empurrar os itens recebidos'
+  - '&7para a Rede a cada tick.'
+  name: '&3Recetor Sem Fios de Rede'
   type:
   - '&7&oMáquina'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
+  description:
+  - '&7O Transmissor Sem Fios de Rede'
+  - '&7tentará transmitir qualquer item em si'
+  - '&7para um Recetor Sem Fios de Rede ligado'
+  - '&7situado no mesmo mundo.'
+  - '&7Usa o Configurador Sem Fios para'
+  - '&7preparar o Transmissor Sem Fios.'
+  name: '&3Transmissor Sem Fios de Rede'
+  stats:
+  - '&7Requer 500 de Energia de Rede por transferência.'
   type:
   - '&7&oMáquina'
 NTW_OPTIC_CABLE:
+  name: '&bCabo Ótico'
   type:
   - '&7&oComponente'
 NTW_OPTIC_GLASS:
+  name: '&bVidro Ótico'
   type:
   - '&7&oComponente'
 NTW_OPTIC_STAR:
+  name: '&bEstrela Ótica'
   type:
   - '&7&oComponente'
 NTW_POWER_DISPLAY:
+  description:
+  - '&7O Mostrador de Energia de Rede'
+  - '&7mostra a energia que há na rede.'
+  - '&7Simples, não é?'
+  name: '&3Mostrador de Energia de Rede'
   type:
   - '&7&oMáquina'
 NTW_POWER_OUTLET_1:
+  description:
+  - '&7O Condensador de Rede pode receber'
+  - '&7energia da Rede para alimentar'
+  - '&7máquinas ou devolvê-la a uma'
+  - '&7rede EnergyNet.'
+  name: '&3Tomada de Energia de Rede (1)'
+  stats:
+  - '&7Funciona com uma taxa de perda de 20%.'
+  - '&7Transferência Máx: &e500'
   type:
   - '&7&oMáquina'
 NTW_POWER_OUTLET_2:
+  description:
+  - '&7O Condensador de Rede pode receber'
+  - '&7energia da Rede para alimentar'
+  - '&7máquinas ou devolvê-la a uma'
+  - '&7rede EnergyNet.'
+  name: '&3Tomada de Energia de Rede (2)'
+  stats:
+  - '&7Funciona com uma taxa de perda de 20%.'
+  - '&7Transferência Máx: &e2000'
   type:
   - '&7&oMáquina'
 NTW_PRISTINE_AI_CORE:
+  name: '&bNúcleo de I.A. Imaculado'
   type:
   - '&7&oComponente'
 NTW_PROBE:
+  description:
+  - '&7Revela um resumo de uma Rede,'
+  - '&7incluindo a sua energia, contagens de itens'
+  - '&7e totais de nós.'
+  name: '&5Sonda de Rede'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7 num Controlador de Rede para ver o resumo.'
 NTW_PUSHER:
+  description:
+  - '&7O Empurrador de Rede tentará'
+  - '&7empurrar um item correspondente a'
+  - '&7um item dado para a máquina escolhida.'
+  name: '&3Empurrador de Rede'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_1:
+  description:
+  - '&7Armazena itens em quantidades em massa dentro'
+  - '&7de uma singularidade quântica.'
+  name: '&3Armazenamento Quântico de Rede (4K)'
+  stats:
+  - '&7Armazena &e4096&7 itens'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_2:
+  description:
+  - '&7Armazena itens em quantidades em massa dentro'
+  - '&7de uma singularidade quântica.'
+  name: '&3Armazenamento Quântico de Rede (32K)'
+  stats:
+  - '&7Armazena &e32768&7 itens'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_3:
+  description:
+  - '&7Armazena itens em quantidades em massa dentro'
+  - '&7de uma singularidade quântica.'
+  name: '&3Armazenamento Quântico de Rede (262K)'
+  stats:
+  - '&7Armazena &e262144&7 itens'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_4:
+  description:
+  - '&7Armazena itens em quantidades em massa dentro'
+  - '&7de uma singularidade quântica.'
+  name: '&3Armazenamento Quântico de Rede (2M)'
+  stats:
+  - '&7Armazena &e2097152&7 itens'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_5:
+  description:
+  - '&7Armazena itens em quantidades em massa dentro'
+  - '&7de uma singularidade quântica.'
+  name: '&3Armazenamento Quântico de Rede (16M)'
+  stats:
+  - '&7Armazena &e16777216&7 itens'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_6:
+  description:
+  - '&7Armazena itens em quantidades em massa dentro'
+  - '&7de uma singularidade quântica.'
+  name: '&3Armazenamento Quântico de Rede (134M)'
+  stats:
+  - '&7Armazena &e134217728&7 itens'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_7:
+  description:
+  - '&7Armazena itens em quantidades em massa dentro'
+  - '&7de uma singularidade quântica.'
+  name: '&3Armazenamento Quântico de Rede (1B)'
+  stats:
+  - '&7Armazena &e1073741824&7 itens'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_8:
+  description:
+  - '&7Armazena itens em quantidades em massa dentro'
+  - '&7de uma singularidade quântica.'
+  name: '&3Armazenamento Quântico de Rede (∞)'
+  stats:
+  - '&7Armazena &e∞&7 itens... quase'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_WORKBENCH:
+  description:
+  - '&7Permite fabricar Armazenamentos Quânticos.'
+  name: '&3Bancada Quântica de Rede'
   type:
   - '&7&oMáquina'
 NTW_RADIOACTIVE_OPTIC_STAR:
+  name: '&bEstrela Ótica Radioativa'
   type:
   - '&7&oComponente'
 NTW_RAKE_1:
+  description:
+  - '&7Uma ferramenta de mão para desmontar rapidamente'
+  - '&7Objetos de Rede sem maquinaria.'
+  name: '&5Ancinho de Rede (1)'
+  stats:
+  - '&e250 Usos &7restantes'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7 num Objeto de Rede para o partir instantaneamente.'
 NTW_RAKE_2:
+  description:
+  - '&7Uma ferramenta de mão para desmontar rapidamente'
+  - '&7Objetos de Rede sem maquinaria.'
+  name: '&5Ancinho de Rede (2)'
+  stats:
+  - '&e1000 Usos &7restantes'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7 num Objeto de Rede para o partir instantaneamente.'
 NTW_RAKE_3:
+  description:
+  - '&7Uma ferramenta de mão para desmontar rapidamente'
+  - '&7Objetos de Rede sem maquinaria.'
+  name: '&5Ancinho de Rede (3)'
+  stats:
+  - '&e9999 Usos &7restantes'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7 num Objeto de Rede para o partir instantaneamente.'
 NTW_RECIPE_ENCODER:
+  description:
+  - '&7Usado para formar uma Planta de Fabrico'
+  - '&7a partir dos itens de entrada.'
+  name: '&3Codificador de Receitas de Rede'
+  stats:
+  - '&7Consumo de Rede: &e20000&7/codificação'
   type:
   - '&7&oMáquina'
 NTW_REMOTE:
+  description:
+  - '&7Abre sem fios uma grelha associada.'
+  - '&7A grelha tem de estar com o chunk carregado.'
+  name: '&5Comando de Rede'
+  stats:
+  - '&7Alcance: &e150'
   type:
   - '&7&oFerramenta'
 NTW_REMOTE_EMPOWERED:
+  description:
+  - '&7Abre sem fios uma grelha associada.'
+  - '&7A grelha tem de estar com o chunk carregado.'
+  name: '&5Comando de Rede Potenciado'
+  stats:
+  - '&7Alcance: &e500'
   type:
   - '&7&oFerramenta'
 NTW_REMOTE_PRISTINE:
+  description:
+  - '&7Abre sem fios uma grelha associada.'
+  - '&7A grelha tem de estar com o chunk carregado.'
+  name: '&5Comando de Rede Imaculado'
+  stats:
+  - '&7Alcance: &eIlimitado'
   type:
   - '&7&oFerramenta'
 NTW_REMOTE_ULTIMATE:
+  description:
+  - '&7Abre sem fios uma grelha associada.'
+  - '&7A grelha tem de estar com o chunk carregado.'
+  name: '&5Comando de Rede Derradeiro'
+  stats:
+  - '&7Alcance: &eInterdimensional'
   type:
   - '&7&oFerramenta'
 NTW_SHRINKING_BASE:
+  name: '&bBase de Encolhimento'
   type:
   - '&7&oComponente'
 NTW_SIMPLE_NANOBOTS:
+  name: '&bNanorrobôs Simples'
   type:
   - '&7&oComponente'
 NTW_SYNTHETIC_EMERALD_SHARD:
+  name: '&bFragmento de Esmeralda Sintética'
   type:
   - '&7&oComponente'
 NTW_TRASH:
+  description:
+  - '&7O Purgador de Rede retira'
+  - '&7itens correspondentes da rede'
+  - '&7e elimina-os instantaneamente.'
+  - '&7Usa com muito cuidado!'
+  name: '&3Purgador de Rede'
   type:
   - '&7&oMáquina'
 NTW_VACUUM:
+  description:
+  - '&7O Aspirador de Rede suga os'
+  - '&7itens para dentro de si num'
+  - '&7alcance de 4 x 4 centrado em si.'
+  - '&7Os itens aspirados tentarão passar'
+  - '&7para a Rede.'
+  name: '&3Aspirador de Rede'
+  stats:
+  - '&7Consumo de Rede: &e100&7/tick'
   type:
   - '&7&oMáquina'
 NTW_VANILLA_GRABBER:
+  description:
+  - '&7O Agarrador Vanilla de Rede tentará'
+  - '&7agarrar o primeiro item possível do'
+  - '&7inventário vanilla escolhido.'
+  - '&7Tens de agarrar os itens deste'
+  - '&7nó com um Agarrador.'
+  name: '&3Agarrador Vanilla de Rede'
   type:
   - '&7&oMáquina'
 NTW_VANILLA_PUSHER:
+  description:
+  - '&7O Empurrador Vanilla de Rede tentará'
+  - '&7empurrar qualquer item no seu interior para'
+  - '&7inventário vanilla escolhido.'
+  - '&7Tens de empurrar os itens para este'
+  - '&7nó a partir de um Empurrador.'
+  name: '&3Empurrador Vanilla de Rede'
   type:
   - '&7&oMáquina'
 NTW_WIRELESS_CONFIGURATOR:
+  description:
+  - '&7Usado para guardar a localização de um Recetor'
+  - '&7e depois aplicá-la a um Transmissor.'
+  name: '&5Configurador Sem Fios de Rede'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7: Guardar Localização do Recetor'
+  - '&eShift + Clique Direito&7: Definir Localização no Transmissor'
