@@ -1,192 +1,562 @@
 NTW_ADVANCED_NANOBOTS:
+  name: '&bGevorderde Nanobotte'
   type:
   - '&7&oKomponent'
 NTW_AI_CORE:
+  name: '&bK.I.-kern'
   type:
   - '&7&oKomponent'
 NTW_AUTO_CRAFTER:
+  description:
+  - '&7Die Netwerk-outovervaardiger aanvaar'
+  - '&7''n vervaardigingsbloudruk. Wanneer die'
+  - '&7bloudruk se uitsetitem aangevra word'
+  - '&7terwyl daar geen in die netwerk is nie,'
+  - '&7sal dit vervaardig word as jy die'
+  - '&7materiale het.'
+  name: '&3Netwerk-outovervaardiger'
+  stats:
+  - '&7Netwerkverbruik: &e64&7/vervaardig'
   type:
   - '&7&oMasjien'
 NTW_AUTO_CRAFTER_WITHHOLDING:
+  description:
+  - '&7Die Netwerk-outovervaardiger aanvaar'
+  - '&7''n vervaardigingsbloudruk. Wanneer die'
+  - '&7bloudruk se uitsetitem aangevra word'
+  - '&7terwyl daar geen in die netwerk is nie,'
+  - '&7sal dit vervaardig word as jy die'
+  - '&7materiale het.'
+  - '&7''n Terughoudende Vervaardiger sal'
+  - '&7''n stapel in die uitset hou en ophou'
+  - '&7vervaardig. Die stapel is sigbaar'
+  - '&7in die Netwerk en laat ook'
+  - '&7vrag toe.'
+  name: '&3Netwerk-outovervaardiger (Terughoudend)'
+  stats:
+  - '&7Netwerkverbruik: &e128&7/vervaardig'
   type:
   - '&7&oMasjien'
 NTW_BEST_PUSHER:
+  description:
+  - '&7Die Netwerk Gevorderde Stoter sal probeer'
+  - '&7om passende items van tot twaalf'
+  - '&7gegewe sjablone in die gekose'
+  - '&7masjien te stoot.'
+  name: '&3Netwerk Gevorderde Stoter'
   type:
   - '&7&oMasjien'
 NTW_BRIDGE:
+  description:
+  - '&7Die Brug laat jou toe om netwerk-'
+  - '&7voorwerpe goedkoop te verbind.'
+  name: '&3Netwerkbrug'
   type:
   - '&7&oMasjien'
 NTW_CAPACITOR_1:
+  description:
+  - '&7Die Netwerkkapasitor kan krag'
+  - '&7inneem en dit stoor vir gebruik'
+  - '&7binne die netwerk.'
+  name: '&3Netwerkkapasitor (1)'
+  stats:
+  - '&7Kapasiteit: &e1000'
   type:
   - '&7&oMasjien'
 NTW_CAPACITOR_2:
+  description:
+  - '&7Die Netwerkkapasitor kan krag'
+  - '&7inneem en dit stoor vir gebruik'
+  - '&7binne die netwerk.'
+  name: '&3Netwerkkapasitor (2)'
+  stats:
+  - '&7Kapasiteit: &e10000'
   type:
   - '&7&oMasjien'
 NTW_CAPACITOR_3:
+  description:
+  - '&7Die Netwerkkapasitor kan krag'
+  - '&7inneem en dit stoor vir gebruik'
+  - '&7binne die netwerk.'
+  name: '&3Netwerkkapasitor (3)'
+  stats:
+  - '&7Kapasiteit: &e100000'
   type:
   - '&7&oMasjien'
 NTW_CAPACITOR_4:
+  description:
+  - '&7Die Netwerkkapasitor kan krag'
+  - '&7inneem en dit stoor vir gebruik'
+  - '&7binne die netwerk.'
+  name: '&3Netwerkkapasitor (4)'
+  stats:
+  - '&7Kapasiteit: &e1000000'
   type:
   - '&7&oMasjien'
 NTW_CELL:
+  description:
+  - '&7Die Netwerksel is ''n groot'
+  - '&7(dubbelkis) inventaris wat sowel'
+  - '&7vanaf die netwerk as'
+  - '&7in die wêreld bereikbaar is.'
+  name: '&3Netwerksel'
   type:
   - '&7&oMasjien'
 NTW_CONFIGURATOR:
+  description:
+  - '&7Gebruik om die konfigurasies van'
+  - '&7rigtinggewende koppelvlakke te'
+  - '&7kopieer en te plak.'
+  name: '&5Netwerkkonfigureerder'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7: Pas Konfigurasie Toe'
+  - '&eShift Regsklik&7: Stoor Konfigurasie'
 NTW_CONTROLLER:
+  description:
+  - '&7Die Netwerkbeheerder is die brein'
+  - '&7vir die hele netwerk.'
+  name: '&3Netwerkbeheerder'
+  stats:
+  - '&7Limiet: &eMaks 1&7 per netwerk'
   type:
   - '&7&oMasjien'
 NTW_CONTROL_V:
+  description:
+  - '&7Die Netwerkbeheer: V sal probeer'
+  - '&7om ''n blok vanaf die Netwerk'
+  - '&7in die wêreld te ''plak''.'
+  - '&7Werk slegs met standaardblokke.'
+  name: '&3Netwerkbeheer: V'
+  stats:
+  - '&7Netwerkverbruik: &e100&7/plak'
   type:
   - '&7&oMasjien'
 NTW_CONTROL_X:
+  description:
+  - '&7Die Netwerkbeheer: X sal probeer'
+  - '&7om ''n blok uit die wêreld te ''knip'''
+  - '&7en dit in die Netwerk te sit.'
+  - '&7Werk slegs op standaardblokke sonder'
+  - '&7inventarisse.'
+  name: '&3Netwerkbeheer: X'
+  stats:
+  - '&7Netwerkverbruik: &e100&7/knip'
   type:
   - '&7&oMasjien'
 NTW_CRAFTING_BLUEPRINT:
+  description:
+  - '&7''n Leë bloudruk wat gebruik'
+  - '&7kan word om ''n vervaardigings-'
+  - '&7resep te stoor.'
+  name: '&5Vervaardigingsbloudruk'
   type:
   - '&7&oGereedskap'
 NTW_CRAFTING_GRID:
+  description:
+  - '&7Die Netwerkvervaardigingsrooster werk'
+  - '&7soos ''n gewone rooster maar wys minder'
+  - '&7items en laat vervaardiging toe met items'
+  - '&7direk uit die netwerk.'
+  name: '&3Netwerkvervaardigingsrooster'
   type:
   - '&7&oMasjien'
 NTW_CRAYON:
+  description:
+  - '&7Skakel ''n netwerkwye ontfoutingsdeeltjie-'
+  - '&7vertoning aan of af, wat nodusaktiwiteit'
+  - '&7visualiseer terwyl dit werk.'
+  name: '&5Netwerkkryt'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7 op ''n Netwerkbeheerder om deeltjievertoning te wissel.'
 NTW_DEBUG_STICK:
+  description:
+  - '&7''n Diagnostiese werktuig slegs vir operateurs,'
+  - '&7gebruik om Netwerkblokke se gedrag te ontfout.'
+  name: '&5Netwerkontfoutstok'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7 op ''n Netwerkvoorwerp om ontfouting aan te skakel.'
 NTW_EMPOWERED_AI_CORE:
+  name: '&bBemagtigde K.I.-kern'
   type:
   - '&7&oKomponent'
 NTW_EXPORT:
+  description:
+  - '&7Die Netwerkuitvoerder kan gestel word om'
+  - '&7voortdurend 1 stapel van enige'
+  - '&7gegewe item uit te voer.'
+  - '&7Aanvaar itemonttrekking vanaf vrag.'
+  name: '&3Netwerkuitvoerder'
   type:
   - '&7&oMasjien'
 NTW_GRABBER:
+  description:
+  - '&7Die Netwerkgryper sal probeer'
+  - '&7om die eerste item wat dit vind'
+  - '&7binne die gekose masjien te gryp.'
+  name: '&3Netwerkgryper'
   type:
   - '&7&oMasjien'
 NTW_GREEDY_BLOCK:
+  description:
+  - '&7Die Netwerk Gulsige Blok kan'
+  - '&7op een item gestel word waarvan dit'
+  - '&7dan gulsig aan ''n enkele stapel'
+  - '&7sal vashou. As meer inkomende items'
+  - '&7nie pas nie, sal hulle nie'
+  - '&7die netwerk binnegaan nie.'
+  name: '&3Netwerk Gulsige Blok'
   type:
   - '&7&oMasjien'
 NTW_GRID:
+  description:
+  - '&7Die Netwerkrooster wys jou al'
+  - '&7die items wat jy in die netwerk het'
+  - '&7en laat jou direk invoeg of'
+  - '&7onttrek.'
+  name: '&3Netwerkrooster'
   type:
   - '&7&oMasjien'
 NTW_IMPORT:
+  description:
+  - '&7Die Netwerkinvoerder bring enige'
+  - '&7item binne-in dit die netwerk in.'
+  - '&7Aanvaar items vanaf vrag.'
+  name: '&3Netwerkinvoerder'
+  stats:
+  - '&7Invoertempo: &eTot 9 stapels&7/tik'
   type:
   - '&7&oMasjien'
 NTW_INTERDIMENSIONAL_PRESENCE:
+  name: '&bInterdimensionele Teenwoordigheid'
   type:
   - '&7&oKomponent'
 NTW_MONITOR:
+  description:
+  - '&7Die Netwerkmonitor laat eenvoudige'
+  - '&7invoer/uitvoer-interaksie met aangrensende'
+  - '&7voorwerpe toe.'
+  - '&7Ondersteun tans:'
+  - '&7Oneindigheidsvate'
+  - '&7Netwerkdoppe'
+  name: '&3Netwerkmonitor'
   type:
   - '&7&oMasjien'
 NTW_NETWORK_WIRELESS_RECEIVER:
+  description:
+  - '&7Die Netwerk Draadlose Ontvanger kan'
+  - '&7items ontvang vanaf ''n gekoppelde'
+  - '&7draadlose sender wat in'
+  - '&7dieselfde wêreld geleë is.'
+  - '&7Dit sal probeer om ontvangde items'
+  - '&7elke tik in die Netwerk te stoot.'
+  name: '&3Netwerk Draadlose Ontvanger'
   type:
   - '&7&oMasjien'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
+  description:
+  - '&7Die Netwerk Draadlose Sender sal'
+  - '&7probeer om enige item binne-in homself'
+  - '&7te stuur na ''n gekoppelde Netwerk Draadlose Ontvanger'
+  - '&7wat in dieselfde wêreld geleë is.'
+  - '&7Gebruik die Draadlose Konfigureerder om'
+  - '&7die Draadlose Sender op te stel.'
+  name: '&3Netwerk Draadlose Sender'
+  stats:
+  - '&7Vereis 500 Netwerkkrag per oordrag.'
   type:
   - '&7&oMasjien'
 NTW_OPTIC_CABLE:
+  name: '&bOptiese Kabel'
   type:
   - '&7&oKomponent'
 NTW_OPTIC_GLASS:
+  name: '&bOptiese Glas'
   type:
   - '&7&oKomponent'
 NTW_OPTIC_STAR:
+  name: '&bOptiese Ster'
   type:
   - '&7&oKomponent'
 NTW_POWER_DISPLAY:
+  description:
+  - '&7Die Netwerkkragvertoning sal die'
+  - '&7krag in die netwerk vertoon.'
+  - '&7Eenvoudig, nè?'
+  name: '&3Netwerkkragvertoning'
   type:
   - '&7&oMasjien'
 NTW_POWER_OUTLET_1:
+  description:
+  - '&7Die Netwerkkapasitor kan krag'
+  - '&7krag vanaf die Netwerk om masjiene'
+  - '&7aan te dryf of terug te voer na ''n'
+  - '&7EnergyNet-netwerk.'
+  name: '&3Netwerkkraguitlaat (1)'
+  stats:
+  - '&7Werk teen ''n 20% verliestempo.'
+  - '&7Maks Oordrag: &e500'
   type:
   - '&7&oMasjien'
 NTW_POWER_OUTLET_2:
+  description:
+  - '&7Die Netwerkkapasitor kan krag'
+  - '&7krag vanaf die Netwerk om masjiene'
+  - '&7aan te dryf of terug te voer na ''n'
+  - '&7EnergyNet-netwerk.'
+  name: '&3Netwerkkraguitlaat (2)'
+  stats:
+  - '&7Werk teen ''n 20% verliestempo.'
+  - '&7Maks Oordrag: &e2000'
   type:
   - '&7&oMasjien'
 NTW_PRISTINE_AI_CORE:
+  name: '&bOngerepte K.I.-kern'
   type:
   - '&7&oKomponent'
 NTW_PROBE:
+  description:
+  - '&7Onthul ''n opsomming van ''n Netwerk,'
+  - '&7insluitend sy krag, itemtellings'
+  - '&7en nodustotale.'
+  name: '&5Netwerksonde'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7 op ''n Netwerkbeheerder om die opsomming te sien.'
 NTW_PUSHER:
+  description:
+  - '&7Die Netwerkstoter sal probeer'
+  - '&7om ''n passende item van ''n'
+  - '&7gegewe item in die gekose masjien te stoot.'
+  name: '&3Netwerkstoter'
   type:
   - '&7&oMasjien'
 NTW_QUANTUM_STORAGE_1:
+  description:
+  - '&7Stoor items in massahoeveelhede binne'
+  - '&7''n kwantumsingulariteit.'
+  name: '&3Netwerkkwantumberging (4K)'
+  stats:
+  - '&7Stoor &e4096&7 items'
   type:
   - '&7&oMasjien'
 NTW_QUANTUM_STORAGE_2:
+  description:
+  - '&7Stoor items in massahoeveelhede binne'
+  - '&7''n kwantumsingulariteit.'
+  name: '&3Netwerkkwantumberging (32K)'
+  stats:
+  - '&7Stoor &e32768&7 items'
   type:
   - '&7&oMasjien'
 NTW_QUANTUM_STORAGE_3:
+  description:
+  - '&7Stoor items in massahoeveelhede binne'
+  - '&7''n kwantumsingulariteit.'
+  name: '&3Netwerkkwantumberging (262K)'
+  stats:
+  - '&7Stoor &e262144&7 items'
   type:
   - '&7&oMasjien'
 NTW_QUANTUM_STORAGE_4:
+  description:
+  - '&7Stoor items in massahoeveelhede binne'
+  - '&7''n kwantumsingulariteit.'
+  name: '&3Netwerkkwantumberging (2M)'
+  stats:
+  - '&7Stoor &e2097152&7 items'
   type:
   - '&7&oMasjien'
 NTW_QUANTUM_STORAGE_5:
+  description:
+  - '&7Stoor items in massahoeveelhede binne'
+  - '&7''n kwantumsingulariteit.'
+  name: '&3Netwerkkwantumberging (16M)'
+  stats:
+  - '&7Stoor &e16777216&7 items'
   type:
   - '&7&oMasjien'
 NTW_QUANTUM_STORAGE_6:
+  description:
+  - '&7Stoor items in massahoeveelhede binne'
+  - '&7''n kwantumsingulariteit.'
+  name: '&3Netwerkkwantumberging (134M)'
+  stats:
+  - '&7Stoor &e134217728&7 items'
   type:
   - '&7&oMasjien'
 NTW_QUANTUM_STORAGE_7:
+  description:
+  - '&7Stoor items in massahoeveelhede binne'
+  - '&7''n kwantumsingulariteit.'
+  name: '&3Netwerkkwantumberging (1B)'
+  stats:
+  - '&7Stoor &e1073741824&7 items'
   type:
   - '&7&oMasjien'
 NTW_QUANTUM_STORAGE_8:
+  description:
+  - '&7Stoor items in massahoeveelhede binne'
+  - '&7''n kwantumsingulariteit.'
+  name: '&3Netwerkkwantumberging (∞)'
+  stats:
+  - '&7Stoor &e∞&7 items... amper'
   type:
   - '&7&oMasjien'
 NTW_QUANTUM_WORKBENCH:
+  description:
+  - '&7Laat die vervaardiging van Kwantumbergings toe.'
+  name: '&3Netwerkkwantumwerkbank'
   type:
   - '&7&oMasjien'
 NTW_RADIOACTIVE_OPTIC_STAR:
+  name: '&bRadioaktiewe Optiese Ster'
   type:
   - '&7&oKomponent'
 NTW_RAKE_1:
+  description:
+  - '&7''n Handgehoue werktuig om Netwerkvoorwerpe'
+  - '&7vinnig sonder masjinerie af te breek.'
+  name: '&5Netwerkhark (1)'
+  stats:
+  - '&e250 Gebruike &7oor'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7 op ''n Netwerkvoorwerp om dit onmiddellik te breek.'
 NTW_RAKE_2:
+  description:
+  - '&7''n Handgehoue werktuig om Netwerkvoorwerpe'
+  - '&7vinnig sonder masjinerie af te breek.'
+  name: '&5Netwerkhark (2)'
+  stats:
+  - '&e1000 Gebruike &7oor'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7 op ''n Netwerkvoorwerp om dit onmiddellik te breek.'
 NTW_RAKE_3:
+  description:
+  - '&7''n Handgehoue werktuig om Netwerkvoorwerpe'
+  - '&7vinnig sonder masjinerie af te breek.'
+  name: '&5Netwerkhark (3)'
+  stats:
+  - '&e9999 Gebruike &7oor'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7 op ''n Netwerkvoorwerp om dit onmiddellik te breek.'
 NTW_RECIPE_ENCODER:
+  description:
+  - '&7Gebruik om ''n Vervaardigingsbloudruk'
+  - '&7uit insetitems te vorm.'
+  name: '&3Netwerkreseponkodeerder'
+  stats:
+  - '&7Netwerkverbruik: &e20000&7/enkodeer'
   type:
   - '&7&oMasjien'
 NTW_REMOTE:
+  description:
+  - '&7Maak ''n gebinde rooster draadloos oop.'
+  - '&7Die rooster se brok moet gelaai wees.'
+  name: '&5Netwerkafstandbeheer'
+  stats:
+  - '&7Bereik: &e150'
   type:
   - '&7&oGereedskap'
 NTW_REMOTE_EMPOWERED:
+  description:
+  - '&7Maak ''n gebinde rooster draadloos oop.'
+  - '&7Die rooster se brok moet gelaai wees.'
+  name: '&5Netwerkafstandbeheer Bemagtig'
+  stats:
+  - '&7Bereik: &e500'
   type:
   - '&7&oGereedskap'
 NTW_REMOTE_PRISTINE:
+  description:
+  - '&7Maak ''n gebinde rooster draadloos oop.'
+  - '&7Die rooster se brok moet gelaai wees.'
+  name: '&5Netwerkafstandbeheer Ongerep'
+  stats:
+  - '&7Bereik: &eOnbeperk'
   type:
   - '&7&oGereedskap'
 NTW_REMOTE_ULTIMATE:
+  description:
+  - '&7Maak ''n gebinde rooster draadloos oop.'
+  - '&7Die rooster se brok moet gelaai wees.'
+  name: '&5Netwerkafstandbeheer Ultiem'
+  stats:
+  - '&7Bereik: &eOordimensioneel'
   type:
   - '&7&oGereedskap'
 NTW_SHRINKING_BASE:
+  name: '&bKrimpbasis'
   type:
   - '&7&oKomponent'
 NTW_SIMPLE_NANOBOTS:
+  name: '&bEenvoudige Nanobotte'
   type:
   - '&7&oKomponent'
 NTW_SYNTHETIC_EMERALD_SHARD:
+  name: '&bSintetiese Smaragskerf'
   type:
   - '&7&oKomponent'
 NTW_TRASH:
+  description:
+  - '&7Die Netwerksuiweraar sal passende'
+  - '&7items uit die netwerk trek'
+  - '&7en hulle onmiddellik vernietig.'
+  - '&7Gebruik met groot omsigtigheid!'
+  name: '&3Netwerksuiweraar'
   type:
   - '&7&oMasjien'
 NTW_VACUUM:
+  description:
+  - '&7Die Netwerkstofsuier sal items'
+  - '&7in homself insuig binne ''n'
+  - '&74 x 4 bereik gesentreer op homself.'
+  - '&7Opgesuigde items sal probeer om in'
+  - '&7die Netwerk in te stoot.'
+  name: '&3Netwerkstofsuier'
+  stats:
+  - '&7Netwerkverbruik: &e100&7/tik'
   type:
   - '&7&oMasjien'
 NTW_VANILLA_GRABBER:
+  description:
+  - '&7Die Netwerk Standaardgryper sal probeer'
+  - '&7om die eerste moontlike item te gryp uit'
+  - '&7die gekose standaardinventaris.'
+  - '&7Jy moet items uit hierdie nodus'
+  - '&7gryp met behulp van ''n Gryper.'
+  name: '&3Netwerk Standaardgryper'
   type:
   - '&7&oMasjien'
 NTW_VANILLA_PUSHER:
+  description:
+  - '&7Die Netwerk Standaardstoter sal probeer'
+  - '&7om enige item binne-in homself te stoot na'
+  - '&7die gekose standaardinventaris.'
+  - '&7Jy moet items in hierdie nodus'
+  - '&7instoot vanaf ''n Stoter.'
+  name: '&3Netwerk Standaardstoter'
   type:
   - '&7&oMasjien'
 NTW_WIRELESS_CONFIGURATOR:
+  description:
+  - '&7Gebruik om ''n Ontvanger se ligging te stoor'
+  - '&7en dit dan op ''n Sender toe te pas.'
+  name: '&5Netwerk Draadlose Konfigureerder'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7: Stoor Ontvangerligging'
+  - '&eShift Regsklik&7: Stel Ligging op Sender'
