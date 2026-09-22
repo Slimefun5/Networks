@@ -1,192 +1,562 @@
 NTW_ADVANCED_NANOBOTS:
+  name: '&bAvancerade nanorobotar'
   type:
   - '&7&oKomponent'
 NTW_AI_CORE:
+  name: '&bA.I.-kärna'
   type:
   - '&7&oKomponent'
 NTW_AUTO_CRAFTER:
+  description:
+  - '&7Nätverkets autotillverkare tar emot'
+  - '&7en tillverkningsritning. När'
+  - '&7ritningens utgångsföremål begärs'
+  - '&7och inget finns i nätverket'
+  - '&7tillverkas det om du har'
+  - '&7material.'
+  name: '&3Nätverkets autotillverkare'
+  stats:
+  - '&7Nätverksförbrukning: &e64&7/tillverkning'
   type:
   - '&7&oMaskin'
 NTW_AUTO_CRAFTER_WITHHOLDING:
+  description:
+  - '&7Nätverkets autotillverkare tar emot'
+  - '&7en tillverkningsritning. När'
+  - '&7ritningens utgångsföremål begärs'
+  - '&7och inget finns i nätverket'
+  - '&7tillverkas det om du har'
+  - '&7material.'
+  - '&7En undanhållande tillverkare behåller'
+  - '&7en stack i utgången och slutar'
+  - '&7tillverka. Stacken syns'
+  - '&7i nätverket och möjliggör även'
+  - '&7last.'
+  name: '&3Nätverkets autotillverkare (Undanhållande)'
+  stats:
+  - '&7Nätverksförbrukning: &e128&7/tillverkning'
   type:
   - '&7&oMaskin'
 NTW_BEST_PUSHER:
+  description:
+  - '&7Nätverkets avancerade matare försöker'
+  - '&7mata in matchande föremål från upp till'
+  - '&7tolv angivna mallar i den'
+  - '&7valda maskinen.'
+  name: '&3Nätverkets avancerade matare'
   type:
   - '&7&oMaskin'
 NTW_BRIDGE:
+  description:
+  - '&7Bryggan låter dig billigt'
+  - '&7koppla ihop nätverksobjekt.'
+  name: '&3Nätverksbrygga'
   type:
   - '&7&oMaskin'
 NTW_CAPACITOR_1:
+  description:
+  - '&7Nätverkskondensatorn kan ta emot'
+  - '&7kraft och lagra den för användning'
+  - '&7inom nätverket.'
+  name: '&3Nätverkskondensator (1)'
+  stats:
+  - '&7Kapacitet: &e1000'
   type:
   - '&7&oMaskin'
 NTW_CAPACITOR_2:
+  description:
+  - '&7Nätverkskondensatorn kan ta emot'
+  - '&7kraft och lagra den för användning'
+  - '&7inom nätverket.'
+  name: '&3Nätverkskondensator (2)'
+  stats:
+  - '&7Kapacitet: &e10000'
   type:
   - '&7&oMaskin'
 NTW_CAPACITOR_3:
+  description:
+  - '&7Nätverkskondensatorn kan ta emot'
+  - '&7kraft och lagra den för användning'
+  - '&7inom nätverket.'
+  name: '&3Nätverkskondensator (3)'
+  stats:
+  - '&7Kapacitet: &e100000'
   type:
   - '&7&oMaskin'
 NTW_CAPACITOR_4:
+  description:
+  - '&7Nätverkskondensatorn kan ta emot'
+  - '&7kraft och lagra den för användning'
+  - '&7inom nätverket.'
+  name: '&3Nätverkskondensator (4)'
+  stats:
+  - '&7Kapacitet: &e1000000'
   type:
   - '&7&oMaskin'
 NTW_CELL:
+  description:
+  - '&7Nätverkscellen är ett stort'
+  - '&7inventarie (dubbelkista) som kan'
+  - '&7nås både från nätverket'
+  - '&7och ute i världen.'
+  name: '&3Nätverkscell'
   type:
   - '&7&oMaskin'
 NTW_CONFIGURATOR:
+  description:
+  - '&7Används för att kopiera och klistra in'
+  - '&7inställningarna för riktade'
+  - '&7gränssnitt.'
+  name: '&5Nätverkskonfigurator'
   type:
   - '&7&oVerktyg'
+  usage:
+  - '&eHögerklicka&7: Tillämpa inställning'
+  - '&eShift + högerklick&7: Lagra inställning'
 NTW_CONTROLLER:
+  description:
+  - '&7Nätverksstyrenheten är hjärnan'
+  - '&7för hela nätverket.'
+  name: '&3Nätverksstyrenhet'
+  stats:
+  - '&7Gräns: &eMax 1&7 per nätverk'
   type:
   - '&7&oMaskin'
 NTW_CONTROL_V:
+  description:
+  - '&7Nätverkskontroll: V försöker'
+  - '&7att ''klistra in'' ett block från nätverket'
+  - '&7ut i världen.'
+  - '&7Fungerar bara med vanilla-block.'
+  name: '&3Nätverkskontroll: V'
+  stats:
+  - '&7Nätverksförbrukning: &e100&7/klistra'
   type:
   - '&7&oMaskin'
 NTW_CONTROL_X:
+  description:
+  - '&7Nätverkskontroll: X försöker'
+  - '&7att ''klippa ut'' ett block ur världen'
+  - '&7och lägga det i nätverket.'
+  - '&7Fungerar bara på vanilla-block utan'
+  - '&7inventarier.'
+  name: '&3Nätverkskontroll: X'
+  stats:
+  - '&7Nätverksförbrukning: &e100&7/klipp'
   type:
   - '&7&oMaskin'
 NTW_CRAFTING_BLUEPRINT:
+  description:
+  - '&7En tom ritning som kan'
+  - '&7användas för att lagra ett'
+  - '&7tillverkningsrecept.'
+  name: '&5Tillverkningsritning'
   type:
   - '&7&oVerktyg'
 NTW_CRAFTING_GRID:
+  description:
+  - '&7Nätverkets tillverkningsrutnät fungerar'
+  - '&7som ett vanligt rutnät men visar färre'
+  - '&7föremål men tillåter tillverkning med föremål'
+  - '&7direkt från nätverket.'
+  name: '&3Nätverkets tillverkningsrutnät'
   type:
   - '&7&oMaskin'
 NTW_CRAYON:
+  description:
+  - '&7Växlar en nätverksomfattande felsökningsvisning'
+  - '&7med partiklar, som visar nodaktivitet'
+  - '&7medan den pågår.'
+  name: '&5Nätverkskrita'
   type:
   - '&7&oVerktyg'
+  usage:
+  - '&eHögerklicka&7 på en nätverksstyrenhet för att växla partikelvisning.'
 NTW_DEBUG_STICK:
+  description:
+  - '&7Ett diagnosverktyg endast för operatörer som'
+  - '&7används för att felsöka nätverksblockens beteende.'
+  name: '&5Nätverkets felsökningspinne'
   type:
   - '&7&oVerktyg'
+  usage:
+  - '&eHögerklicka&7 på ett nätverksobjekt för att slå på felsökning.'
 NTW_EMPOWERED_AI_CORE:
+  name: '&bFörstärkt A.I.-kärna'
   type:
   - '&7&oKomponent'
 NTW_EXPORT:
+  description:
+  - '&7Nätverksexporteraren kan ställas in på att'
+  - '&7ständigt exportera 1 stack av ett'
+  - '&7angivet föremål.'
+  - '&7Tillåter uttag av föremål via last.'
+  name: '&3Nätverksexporterare'
   type:
   - '&7&oMaskin'
 NTW_GRABBER:
+  description:
+  - '&7Nätverksgriparen försöker'
+  - '&7gripa det första föremålet den hittar'
+  - '&7inuti den valda maskinen.'
+  name: '&3Nätverksgripare'
   type:
   - '&7&oMaskin'
 NTW_GREEDY_BLOCK:
+  description:
+  - '&7Nätverkets giriga block kan'
+  - '&7ställas in på ett föremål som det sedan'
+  - '&7girigt håller kvar en enda'
+  - '&7stack av. Om fler inkommande föremål'
+  - '&7inte får plats kommer de inte in i'
+  - '&7nätverket.'
+  name: '&3Nätverkets giriga block'
   type:
   - '&7&oMaskin'
 NTW_GRID:
+  description:
+  - '&7Nätverksrutnätet visar dig alla'
+  - '&7föremål du har i nätverket'
+  - '&7och låter dig sätta in eller ta ut'
+  - '&7direkt.'
+  name: '&3Nätverksrutnät'
   type:
   - '&7&oMaskin'
 NTW_IMPORT:
+  description:
+  - '&7Nätverksimporteraren för in varje'
+  - '&7föremål i den till nätverket.'
+  - '&7Tar emot föremål från last.'
+  name: '&3Nätverksimporterare'
+  stats:
+  - '&7Importtakt: &eUpp till 9 stackar&7/tick'
   type:
   - '&7&oMaskin'
 NTW_INTERDIMENSIONAL_PRESENCE:
+  name: '&bInterdimensionell närvaro'
   type:
   - '&7&oKomponent'
 NTW_MONITOR:
+  description:
+  - '&7Nätverksövervakaren möjliggör enkel'
+  - '&7import/export-interaktion med intilliggande'
+  - '&7objekt.'
+  - '&7Stöder för närvarande:'
+  - '&7Oändlighetstunnor'
+  - '&7Nätverksskal'
+  name: '&3Nätverksövervakare'
   type:
   - '&7&oMaskin'
 NTW_NETWORK_WIRELESS_RECEIVER:
+  description:
+  - '&7Nätverkets trådlösa mottagare kan'
+  - '&7ta emot föremål från en länkad'
+  - '&7trådlös sändare som finns i'
+  - '&7samma värld.'
+  - '&7Den försöker mata in mottagna föremål'
+  - '&7i nätverket varje tick.'
+  name: '&3Nätverkets trådlösa mottagare'
   type:
   - '&7&oMaskin'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
+  description:
+  - '&7Nätverkets trådlösa sändare'
+  - '&7försöker sända varje föremål i sig själv'
+  - '&7till en länkad trådlös nätverksmottagare'
+  - '&7som finns i samma värld.'
+  - '&7Använd den trådlösa konfiguratorn för att'
+  - '&7ställa in den trådlösa sändaren.'
+  name: '&3Nätverkets trådlösa sändare'
+  stats:
+  - '&7Kräver 500 nätverkskraft per överföring.'
   type:
   - '&7&oMaskin'
 NTW_OPTIC_CABLE:
+  name: '&bOptisk kabel'
   type:
   - '&7&oKomponent'
 NTW_OPTIC_GLASS:
+  name: '&bOptiskt glas'
   type:
   - '&7&oKomponent'
 NTW_OPTIC_STAR:
+  name: '&bOptisk stjärna'
   type:
   - '&7&oKomponent'
 NTW_POWER_DISPLAY:
+  description:
+  - '&7Nätverkets kraftskärm visar'
+  - '&7kraften som finns i nätverket.'
+  - '&7Enkelt, eller hur?'
+  name: '&3Nätverkets kraftskärm'
   type:
   - '&7&oMaskin'
 NTW_POWER_OUTLET_1:
+  description:
+  - '&7Nätverkskondensatorn kan ta emot'
+  - '&7kraft från nätverket för att driva'
+  - '&7maskiner eller mata tillbaka till ett'
+  - '&7EnergyNet-nätverk.'
+  name: '&3Nätverkets kraftuttag (1)'
+  stats:
+  - '&7Arbetar med 20% förlust.'
+  - '&7Max överföring: &e500'
   type:
   - '&7&oMaskin'
 NTW_POWER_OUTLET_2:
+  description:
+  - '&7Nätverkskondensatorn kan ta emot'
+  - '&7kraft från nätverket för att driva'
+  - '&7maskiner eller mata tillbaka till ett'
+  - '&7EnergyNet-nätverk.'
+  name: '&3Nätverkets kraftuttag (2)'
+  stats:
+  - '&7Arbetar med 20% förlust.'
+  - '&7Max överföring: &e2000'
   type:
   - '&7&oMaskin'
 NTW_PRISTINE_AI_CORE:
+  name: '&bOrörd A.I.-kärna'
   type:
   - '&7&oKomponent'
 NTW_PROBE:
+  description:
+  - '&7Visar en sammanfattning av ett nätverk,'
+  - '&7inklusive dess kraft, antal föremål'
+  - '&7och antal noder.'
+  name: '&5Nätverkssond'
   type:
   - '&7&oVerktyg'
+  usage:
+  - '&eHögerklicka&7 på en nätverksstyrenhet för att se sammanfattningen.'
 NTW_PUSHER:
+  description:
+  - '&7Nätverksmataren försöker'
+  - '&7mata in ett matchande föremål från ett'
+  - '&7angivet föremål i den valda maskinen.'
+  name: '&3Nätverksmatare'
   type:
   - '&7&oMaskin'
 NTW_QUANTUM_STORAGE_1:
+  description:
+  - '&7Lagrar föremål i stora kvantiteter inom'
+  - '&7en kvantsingularitet.'
+  name: '&3Nätverkets kvantlagring (4K)'
+  stats:
+  - '&7Lagrar &e4096&7 föremål'
   type:
   - '&7&oMaskin'
 NTW_QUANTUM_STORAGE_2:
+  description:
+  - '&7Lagrar föremål i stora kvantiteter inom'
+  - '&7en kvantsingularitet.'
+  name: '&3Nätverkets kvantlagring (32K)'
+  stats:
+  - '&7Lagrar &e32768&7 föremål'
   type:
   - '&7&oMaskin'
 NTW_QUANTUM_STORAGE_3:
+  description:
+  - '&7Lagrar föremål i stora kvantiteter inom'
+  - '&7en kvantsingularitet.'
+  name: '&3Nätverkets kvantlagring (262K)'
+  stats:
+  - '&7Lagrar &e262144&7 föremål'
   type:
   - '&7&oMaskin'
 NTW_QUANTUM_STORAGE_4:
+  description:
+  - '&7Lagrar föremål i stora kvantiteter inom'
+  - '&7en kvantsingularitet.'
+  name: '&3Nätverkets kvantlagring (2M)'
+  stats:
+  - '&7Lagrar &e2097152&7 föremål'
   type:
   - '&7&oMaskin'
 NTW_QUANTUM_STORAGE_5:
+  description:
+  - '&7Lagrar föremål i stora kvantiteter inom'
+  - '&7en kvantsingularitet.'
+  name: '&3Nätverkets kvantlagring (16M)'
+  stats:
+  - '&7Lagrar &e16777216&7 föremål'
   type:
   - '&7&oMaskin'
 NTW_QUANTUM_STORAGE_6:
+  description:
+  - '&7Lagrar föremål i stora kvantiteter inom'
+  - '&7en kvantsingularitet.'
+  name: '&3Nätverkets kvantlagring (134M)'
+  stats:
+  - '&7Lagrar &e134217728&7 föremål'
   type:
   - '&7&oMaskin'
 NTW_QUANTUM_STORAGE_7:
+  description:
+  - '&7Lagrar föremål i stora kvantiteter inom'
+  - '&7en kvantsingularitet.'
+  name: '&3Nätverkets kvantlagring (1B)'
+  stats:
+  - '&7Lagrar &e1073741824&7 föremål'
   type:
   - '&7&oMaskin'
 NTW_QUANTUM_STORAGE_8:
+  description:
+  - '&7Lagrar föremål i stora kvantiteter inom'
+  - '&7en kvantsingularitet.'
+  name: '&3Nätverkets kvantlagring (∞)'
+  stats:
+  - '&7Lagrar &e∞&7 föremål... nästan'
   type:
   - '&7&oMaskin'
 NTW_QUANTUM_WORKBENCH:
+  description:
+  - '&7Möjliggör tillverkning av kvantlagringar.'
+  name: '&3Nätverkets kvantarbetsbänk'
   type:
   - '&7&oMaskin'
 NTW_RADIOACTIVE_OPTIC_STAR:
+  name: '&bRadioaktiv optisk stjärna'
   type:
   - '&7&oKomponent'
 NTW_RAKE_1:
+  description:
+  - '&7Ett handhållet verktyg för att snabbt montera ner'
+  - '&7nätverksobjekt utan maskineri.'
+  name: '&5Nätverksräfsa (1)'
+  stats:
+  - '&e250 användningar &7kvar'
   type:
   - '&7&oVerktyg'
+  usage:
+  - '&eHögerklicka&7 på ett nätverksobjekt för att bryta det omedelbart.'
 NTW_RAKE_2:
+  description:
+  - '&7Ett handhållet verktyg för att snabbt montera ner'
+  - '&7nätverksobjekt utan maskineri.'
+  name: '&5Nätverksräfsa (2)'
+  stats:
+  - '&e1000 användningar &7kvar'
   type:
   - '&7&oVerktyg'
+  usage:
+  - '&eHögerklicka&7 på ett nätverksobjekt för att bryta det omedelbart.'
 NTW_RAKE_3:
+  description:
+  - '&7Ett handhållet verktyg för att snabbt montera ner'
+  - '&7nätverksobjekt utan maskineri.'
+  name: '&5Nätverksräfsa (3)'
+  stats:
+  - '&e9999 användningar &7kvar'
   type:
   - '&7&oVerktyg'
+  usage:
+  - '&eHögerklicka&7 på ett nätverksobjekt för att bryta det omedelbart.'
 NTW_RECIPE_ENCODER:
+  description:
+  - '&7Används för att skapa en tillverkningsritning'
+  - '&7av inmatade föremål.'
+  name: '&3Nätverkets receptkodare'
+  stats:
+  - '&7Nätverksförbrukning: &e20000&7/kodning'
   type:
   - '&7&oMaskin'
 NTW_REMOTE:
+  description:
+  - '&7Öppnar ett bundet rutnät trådlöst.'
+  - '&7Rutnätet måste vara chunkladdat.'
+  name: '&5Nätverksfjärrkontroll'
+  stats:
+  - '&7Räckvidd: &e150'
   type:
   - '&7&oVerktyg'
 NTW_REMOTE_EMPOWERED:
+  description:
+  - '&7Öppnar ett bundet rutnät trådlöst.'
+  - '&7Rutnätet måste vara chunkladdat.'
+  name: '&5Nätverksfjärrkontroll förstärkt'
+  stats:
+  - '&7Räckvidd: &e500'
   type:
   - '&7&oVerktyg'
 NTW_REMOTE_PRISTINE:
+  description:
+  - '&7Öppnar ett bundet rutnät trådlöst.'
+  - '&7Rutnätet måste vara chunkladdat.'
+  name: '&5Nätverksfjärrkontroll orörd'
+  stats:
+  - '&7Räckvidd: &eObegränsad'
   type:
   - '&7&oVerktyg'
 NTW_REMOTE_ULTIMATE:
+  description:
+  - '&7Öppnar ett bundet rutnät trådlöst.'
+  - '&7Rutnätet måste vara chunkladdat.'
+  name: '&5Nätverksfjärrkontroll ultimat'
+  stats:
+  - '&7Räckvidd: &eTvärdimensionell'
   type:
   - '&7&oVerktyg'
 NTW_SHRINKING_BASE:
+  name: '&bKrympande bas'
   type:
   - '&7&oKomponent'
 NTW_SIMPLE_NANOBOTS:
+  name: '&bEnkla nanorobotar'
   type:
   - '&7&oKomponent'
 NTW_SYNTHETIC_EMERALD_SHARD:
+  name: '&bSyntetisk smaragdskärva'
   type:
   - '&7&oKomponent'
 NTW_TRASH:
+  description:
+  - '&7Nätverksrensaren drar ut'
+  - '&7matchande föremål ur nätverket'
+  - '&7och förintar dem omedelbart.'
+  - '&7Använd med stor försiktighet!'
+  name: '&3Nätverksrensare'
   type:
   - '&7&oMaskin'
 NTW_VACUUM:
+  description:
+  - '&7Nätverkssuget suger in'
+  - '&7föremål i sig själv inom en'
+  - '&74 x 4-räckvidd centrerad på sig själv.'
+  - '&7Uppsugna föremål försöker matas'
+  - '&7in i nätverket.'
+  name: '&3Nätverkssug'
+  stats:
+  - '&7Nätverksförbrukning: &e100&7/tick'
   type:
   - '&7&oMaskin'
 NTW_VANILLA_GRABBER:
+  description:
+  - '&7Nätverkets vanilla-gripare försöker'
+  - '&7gripa det första möjliga föremålet från'
+  - '&7det valda vanilla-inventariet.'
+  - '&7Du behöver gripa föremål från denna'
+  - '&7nod med en Gripare.'
+  name: '&3Nätverkets vanilla-gripare'
   type:
   - '&7&oMaskin'
 NTW_VANILLA_PUSHER:
+  description:
+  - '&7Nätverkets vanilla-matare försöker'
+  - '&7mata in varje föremål i sig själv i'
+  - '&7det valda vanilla-inventariet.'
+  - '&7Du behöver mata in föremål i denna'
+  - '&7nod från en Matare.'
+  name: '&3Nätverkets vanilla-matare'
   type:
   - '&7&oMaskin'
 NTW_WIRELESS_CONFIGURATOR:
+  description:
+  - '&7Används för att lagra en mottagarposition'
+  - '&7och sedan tillämpa den på en sändare.'
+  name: '&5Nätverkets trådlösa konfigurator'
   type:
   - '&7&oVerktyg'
+  usage:
+  - '&eHögerklicka&7: Lagra mottagarposition'
+  - '&eShift + högerklick&7: Sätt positionen på sändaren'
