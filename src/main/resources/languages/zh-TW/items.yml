@@ -1,192 +1,562 @@
 NTW_ADVANCED_NANOBOTS:
+  name: '&b進階奈米機器人'
   type:
   - '&7&o元件'
 NTW_AI_CORE:
+  name: '&b人工智慧核心'
   type:
   - '&7&o元件'
 NTW_AUTO_CRAFTER:
+  description:
+  - '&7網路自動合成器可放入'
+  - '&7一張合成藍圖。當網路中'
+  - '&7沒有藍圖產出的物品'
+  - '&7卻有人請求時，'
+  - '&7只要你擁有材料，'
+  - '&7它就會自動合成。'
+  name: '&3網路自動合成器'
+  stats:
+  - '&7網路消耗：&e64&7/合成'
   type:
   - '&7&o機器'
 NTW_AUTO_CRAFTER_WITHHOLDING:
+  description:
+  - '&7網路自動合成器可放入'
+  - '&7一張合成藍圖。當網路中'
+  - '&7沒有藍圖產出的物品'
+  - '&7卻有人請求時，'
+  - '&7只要你擁有材料，'
+  - '&7它就會自動合成。'
+  - '&7保留式合成器會在產出欄中'
+  - '&7保留一組物品並停止合成。'
+  - '&7這組物品可在網路中看見，'
+  - '&7同時也可用於'
+  - '&7貨物運輸。'
+  name: '&3網路自動合成器（保留式）'
+  stats:
+  - '&7網路消耗：&e128&7/合成'
   type:
   - '&7&o機器'
 NTW_BEST_PUSHER:
+  description:
+  - '&7網路進階推送器會嘗試依據'
+  - '&7最多十二個指定樣板，將對應的'
+  - '&7物品推入'
+  - '&7所選的機器。'
+  name: '&3網路進階推送器'
   type:
   - '&7&o機器'
 NTW_BRIDGE:
+  description:
+  - '&7橋接器讓你能以低廉的成本'
+  - '&7將網路物件連接在一起。'
+  name: '&3網路橋接器'
   type:
   - '&7&o機器'
 NTW_CAPACITOR_1:
+  description:
+  - '&7網路電容器可以接收電力'
+  - '&7並將其儲存起來，'
+  - '&7供網路內使用。'
+  name: '&3網路電容器 (1)'
+  stats:
+  - '&7容量：&e1000'
   type:
   - '&7&o機器'
 NTW_CAPACITOR_2:
+  description:
+  - '&7網路電容器可以接收電力'
+  - '&7並將其儲存起來，'
+  - '&7供網路內使用。'
+  name: '&3網路電容器 (2)'
+  stats:
+  - '&7容量：&e10000'
   type:
   - '&7&o機器'
 NTW_CAPACITOR_3:
+  description:
+  - '&7網路電容器可以接收電力'
+  - '&7並將其儲存起來，'
+  - '&7供網路內使用。'
+  name: '&3網路電容器 (3)'
+  stats:
+  - '&7容量：&e100000'
   type:
   - '&7&o機器'
 NTW_CAPACITOR_4:
+  description:
+  - '&7網路電容器可以接收電力'
+  - '&7並將其儲存起來，'
+  - '&7供網路內使用。'
+  name: '&3網路電容器 (4)'
+  stats:
+  - '&7容量：&e1000000'
   type:
   - '&7&o機器'
 NTW_CELL:
+  description:
+  - '&7網路單元是一個大型'
+  - '&7（大箱子）物品欄，'
+  - '&7可從網路中存取，'
+  - '&7也可在世界中存取。'
+  name: '&3網路單元'
   type:
   - '&7&o機器'
 NTW_CONFIGURATOR:
+  description:
+  - '&7用來複製與貼上'
+  - '&7方向性介面的'
+  - '&7設定。'
+  name: '&5網路設定器'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7：套用設定'
+  - '&eShift 右鍵點擊&7：儲存設定'
 NTW_CONTROLLER:
+  description:
+  - '&7網路控制器是整個網路'
+  - '&7的中樞大腦。'
+  name: '&3網路控制器'
+  stats:
+  - '&7限制：每個網路最多 &e1&7 個'
   type:
   - '&7&o機器'
 NTW_CONTROL_V:
+  description:
+  - '&7網路控制：V 會嘗試將網路中的'
+  - '&7方塊「貼上」'
+  - '&7到世界中。'
+  - '&7僅適用於原版方塊。'
+  name: '&3網路控制：V'
+  stats:
+  - '&7網路消耗：&e100&7/貼上'
   type:
   - '&7&o機器'
 NTW_CONTROL_X:
+  description:
+  - '&7網路控制：X 會嘗試將方塊'
+  - '&7從世界中「剪下」，'
+  - '&7並放入網路中。'
+  - '&7僅適用於沒有物品欄的'
+  - '&7原版方塊。'
+  name: '&3網路控制：X'
+  stats:
+  - '&7網路消耗：&e100&7/剪下'
   type:
   - '&7&o機器'
 NTW_CRAFTING_BLUEPRINT:
+  description:
+  - '&7一張空白藍圖，'
+  - '&7可用來儲存一份'
+  - '&7合成配方。'
+  name: '&5合成藍圖'
   type:
   - '&7&o工具'
 NTW_CRAFTING_GRID:
+  description:
+  - '&7網路合成網格的運作方式'
+  - '&7像一般網格，但顯示的物品較少，'
+  - '&7不過可以直接使用網路中的'
+  - '&7物品進行合成。'
+  name: '&3網路合成網格'
   type:
   - '&7&o機器'
 NTW_CRAYON:
+  description:
+  - '&7切換全網路的除錯粒子'
+  - '&7顯示，將節點運作情形'
+  - '&7即時視覺化。'
+  name: '&5網路蠟筆'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7網路控制器以切換粒子顯示。'
 NTW_DEBUG_STICK:
+  description:
+  - '&7僅限管理員使用的診斷工具，'
+  - '&7用來除錯網路方塊的行為。'
+  name: '&5網路除錯棒'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7網路物件即可開啟除錯。'
 NTW_EMPOWERED_AI_CORE:
+  name: '&b強化人工智慧核心'
   type:
   - '&7&o元件'
 NTW_EXPORT:
+  description:
+  - '&7網路匯出器可設定為持續'
+  - '&7持續匯出 1 組'
+  - '&7任一指定的物品。'
+  - '&7可接受貨物系統的物品提取。'
+  name: '&3網路匯出器'
   type:
   - '&7&o機器'
 NTW_GRABBER:
+  description:
+  - '&7網路抓取器會嘗試從所選的'
+  - '&7機器中抓取它找到的'
+  - '&7第一件物品。'
+  name: '&3網路抓取器'
   type:
   - '&7&o機器'
 NTW_GREEDY_BLOCK:
+  description:
+  - '&7網路貪婪方塊可設定為'
+  - '&7單一物品，並貪婪地'
+  - '&7保留該物品的一組。'
+  - '&7若有更多物品送入'
+  - '&7而放不下，它們就不會進入'
+  - '&7網路。'
+  name: '&3網路貪婪方塊'
   type:
   - '&7&o機器'
 NTW_GRID:
+  description:
+  - '&7網路網格會顯示你在網路中'
+  - '&7擁有的所有物品，'
+  - '&7並讓你直接存入或'
+  - '&7取出。'
+  name: '&3網路網格'
   type:
   - '&7&o機器'
 NTW_IMPORT:
+  description:
+  - '&7網路匯入器會將其內部的'
+  - '&7任何物品送入網路。'
+  - '&7可接受貨物系統送入的物品。'
+  name: '&3網路匯入器'
+  stats:
+  - '&7匯入速率：&e最多 9 組&7/刻'
   type:
   - '&7&o機器'
 NTW_INTERDIMENSIONAL_PRESENCE:
+  name: '&b跨次元存在'
   type:
   - '&7&o元件'
 NTW_MONITOR:
+  description:
+  - '&7網路監視器可與相鄰的物件'
+  - '&7進行簡單的匯入/匯出'
+  - '&7互動。'
+  - '&7目前支援：'
+  - '&7無限木桶'
+  - '&7網路外殼'
+  name: '&3網路監視器'
   type:
   - '&7&o機器'
 NTW_NETWORK_WIRELESS_RECEIVER:
+  description:
+  - '&7網路無線接收器能夠接收'
+  - '&7來自已連結無線傳輸器的物品，'
+  - '&7該傳輸器須位於'
+  - '&7同一個世界。'
+  - '&7它會在每一刻嘗試將收到的物品'
+  - '&7推入網路。'
+  name: '&3網路無線接收器'
   type:
   - '&7&o機器'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
+  description:
+  - '&7網路無線傳輸器會嘗試將其'
+  - '&7內部的任何物品傳送至'
+  - '&7已連結的網路無線接收器，'
+  - '&7接收器須位於同一個世界。'
+  - '&7請使用無線設定器來'
+  - '&7設定無線傳輸器。'
+  name: '&3網路無線傳輸器'
+  stats:
+  - '&7每次傳送需要 500 網路電力。'
   type:
   - '&7&o機器'
 NTW_OPTIC_CABLE:
+  name: '&b光纖纜線'
   type:
   - '&7&o元件'
 NTW_OPTIC_GLASS:
+  name: '&b光學玻璃'
   type:
   - '&7&o元件'
 NTW_OPTIC_STAR:
+  name: '&b光學之星'
   type:
   - '&7&o元件'
 NTW_POWER_DISPLAY:
+  description:
+  - '&7網路電力顯示器會顯示'
+  - '&7網路中的電力。'
+  - '&7很簡單吧？'
+  name: '&3網路電力顯示器'
   type:
   - '&7&o機器'
 NTW_POWER_OUTLET_1:
+  description:
+  - '&7網路電容器可以接收電力'
+  - '&7從網路取得電力，用來驅動'
+  - '&7機器，或回饋至'
+  - '&7EnergyNet 能源網路。'
+  name: '&3網路電力輸出座 (1)'
+  stats:
+  - '&7運作時會有 20% 的損耗率。'
+  - '&7最大傳輸量：&e500'
   type:
   - '&7&o機器'
 NTW_POWER_OUTLET_2:
+  description:
+  - '&7網路電容器可以接收電力'
+  - '&7從網路取得電力，用來驅動'
+  - '&7機器，或回饋至'
+  - '&7EnergyNet 能源網路。'
+  name: '&3網路電力輸出座 (2)'
+  stats:
+  - '&7運作時會有 20% 的損耗率。'
+  - '&7最大傳輸量：&e2000'
   type:
   - '&7&o機器'
 NTW_PRISTINE_AI_CORE:
+  name: '&b完美人工智慧核心'
   type:
   - '&7&o元件'
 NTW_PROBE:
+  description:
+  - '&7顯示網路的摘要資訊，'
+  - '&7包含電力、物品數量'
+  - '&7與節點總數。'
+  name: '&5網路探測器'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7網路控制器以檢視摘要。'
 NTW_PUSHER:
+  description:
+  - '&7網路推送器會嘗試將指定'
+  - '&7物品中對應的物品推入'
+  - '&7所選的機器。'
+  name: '&3網路推送器'
   type:
   - '&7&o機器'
 NTW_QUANTUM_STORAGE_1:
+  description:
+  - '&7在量子奇點中大量'
+  - '&7儲存物品。'
+  name: '&3網路量子儲存 (4K)'
+  stats:
+  - '&7儲存 &e4096&7 個物品'
   type:
   - '&7&o機器'
 NTW_QUANTUM_STORAGE_2:
+  description:
+  - '&7在量子奇點中大量'
+  - '&7儲存物品。'
+  name: '&3網路量子儲存 (32K)'
+  stats:
+  - '&7儲存 &e32768&7 個物品'
   type:
   - '&7&o機器'
 NTW_QUANTUM_STORAGE_3:
+  description:
+  - '&7在量子奇點中大量'
+  - '&7儲存物品。'
+  name: '&3網路量子儲存 (262K)'
+  stats:
+  - '&7儲存 &e262144&7 個物品'
   type:
   - '&7&o機器'
 NTW_QUANTUM_STORAGE_4:
+  description:
+  - '&7在量子奇點中大量'
+  - '&7儲存物品。'
+  name: '&3網路量子儲存 (2M)'
+  stats:
+  - '&7儲存 &e2097152&7 個物品'
   type:
   - '&7&o機器'
 NTW_QUANTUM_STORAGE_5:
+  description:
+  - '&7在量子奇點中大量'
+  - '&7儲存物品。'
+  name: '&3網路量子儲存 (16M)'
+  stats:
+  - '&7儲存 &e16777216&7 個物品'
   type:
   - '&7&o機器'
 NTW_QUANTUM_STORAGE_6:
+  description:
+  - '&7在量子奇點中大量'
+  - '&7儲存物品。'
+  name: '&3網路量子儲存 (134M)'
+  stats:
+  - '&7儲存 &e134217728&7 個物品'
   type:
   - '&7&o機器'
 NTW_QUANTUM_STORAGE_7:
+  description:
+  - '&7在量子奇點中大量'
+  - '&7儲存物品。'
+  name: '&3網路量子儲存 (1B)'
+  stats:
+  - '&7儲存 &e1073741824&7 個物品'
   type:
   - '&7&o機器'
 NTW_QUANTUM_STORAGE_8:
+  description:
+  - '&7在量子奇點中大量'
+  - '&7儲存物品。'
+  name: '&3網路量子儲存 (∞)'
+  stats:
+  - '&7儲存 &e∞&7 個物品... 差不多啦'
   type:
   - '&7&o機器'
 NTW_QUANTUM_WORKBENCH:
+  description:
+  - '&7可用來合成量子儲存裝置。'
+  name: '&3網路量子工作台'
   type:
   - '&7&o機器'
 NTW_RADIOACTIVE_OPTIC_STAR:
+  name: '&b放射性光學之星'
   type:
   - '&7&o元件'
 NTW_RAKE_1:
+  description:
+  - '&7一種手持工具，可快速拆除'
+  - '&7網路物件，無需任何機械。'
+  name: '&5網路耙 (1)'
+  stats:
+  - '&e剩餘 250 次&7可使用'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7網路物件即可立即破壞它。'
 NTW_RAKE_2:
+  description:
+  - '&7一種手持工具，可快速拆除'
+  - '&7網路物件，無需任何機械。'
+  name: '&5網路耙 (2)'
+  stats:
+  - '&e剩餘 1000 次&7可使用'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7網路物件即可立即破壞它。'
 NTW_RAKE_3:
+  description:
+  - '&7一種手持工具，可快速拆除'
+  - '&7網路物件，無需任何機械。'
+  name: '&5網路耙 (3)'
+  stats:
+  - '&e剩餘 9999 次&7可使用'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7網路物件即可立即破壞它。'
 NTW_RECIPE_ENCODER:
+  description:
+  - '&7用於從輸入的物品'
+  - '&7製作合成藍圖。'
+  name: '&3網路配方編碼器'
+  stats:
+  - '&7網路消耗：&e20000&7/編碼'
   type:
   - '&7&o機器'
 NTW_REMOTE:
+  description:
+  - '&7無線開啟已綁定的網格。'
+  - '&7該網格所在的區塊必須已載入。'
+  name: '&5網路遙控器'
+  stats:
+  - '&7範圍：&e150'
   type:
   - '&7&o工具'
 NTW_REMOTE_EMPOWERED:
+  description:
+  - '&7無線開啟已綁定的網格。'
+  - '&7該網格所在的區塊必須已載入。'
+  name: '&5強化網路遙控器'
+  stats:
+  - '&7範圍：&e500'
   type:
   - '&7&o工具'
 NTW_REMOTE_PRISTINE:
+  description:
+  - '&7無線開啟已綁定的網格。'
+  - '&7該網格所在的區塊必須已載入。'
+  name: '&5完美網路遙控器'
+  stats:
+  - '&7範圍：&e無限'
   type:
   - '&7&o工具'
 NTW_REMOTE_ULTIMATE:
+  description:
+  - '&7無線開啟已綁定的網格。'
+  - '&7該網格所在的區塊必須已載入。'
+  name: '&5終極網路遙控器'
+  stats:
+  - '&7範圍：&e跨次元'
   type:
   - '&7&o工具'
 NTW_SHRINKING_BASE:
+  name: '&b縮小基座'
   type:
   - '&7&o元件'
 NTW_SIMPLE_NANOBOTS:
+  name: '&b簡易奈米機器人'
   type:
   - '&7&o元件'
 NTW_SYNTHETIC_EMERALD_SHARD:
+  name: '&b合成綠寶石碎片'
   type:
   - '&7&o元件'
 NTW_TRASH:
+  description:
+  - '&7網路清除器會從網路中抽出'
+  - '&7對應的物品，'
+  - '&7並立即將其銷毀。'
+  - '&7請務必小心使用！'
+  name: '&3網路清除器'
   type:
   - '&7&o機器'
 NTW_VACUUM:
+  description:
+  - '&7網路吸塵器會將物品吸入自身，'
+  - '&7範圍為以自身為中心的'
+  - '&74 x 4 區域。'
+  - '&7被吸入的物品會嘗試推入'
+  - '&7網路中。'
+  name: '&3網路吸塵器'
+  stats:
+  - '&7網路消耗：&e100&7/刻'
   type:
   - '&7&o機器'
 NTW_VANILLA_GRABBER:
+  description:
+  - '&7網路原版抓取器會嘗試抓取'
+  - '&7第一件可取得的物品，來源為'
+  - '&7所選的原版物品欄。'
+  - '&7你需要使用抓取器從這個'
+  - '&7節點取出物品。'
+  name: '&3網路原版抓取器'
   type:
   - '&7&o機器'
 NTW_VANILLA_PUSHER:
+  description:
+  - '&7網路原版推送器會嘗試將其內部的'
+  - '&7任何物品推入'
+  - '&7所選的原版物品欄。'
+  - '&7你需要使用推送器將物品推入'
+  - '&7這個節點。'
+  name: '&3網路原版推送器'
   type:
   - '&7&o機器'
 NTW_WIRELESS_CONFIGURATOR:
+  description:
+  - '&7用來儲存接收器的位置，'
+  - '&7再將其套用到傳輸器上。'
+  name: '&5網路無線設定器'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7：儲存接收器位置'
+  - '&eShift 右鍵點擊&7：將位置設定至傳輸器'
