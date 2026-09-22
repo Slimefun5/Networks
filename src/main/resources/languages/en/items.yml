@@ -172,7 +172,7 @@ NTW_VANILLA_GRABBER:
   type:
     - "&7&oMachine"
   description:
-    - "&7The Network Vanilla Pusher will try"
+    - "&7The Network Vanilla Grabber will try"
     - "&7to grab the first possible item from"
     - "&7the chosen vanilla inventory."
     - "&7You need to grab items from this"
