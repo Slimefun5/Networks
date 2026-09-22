@@ -1,192 +1,562 @@
 NTW_ADVANCED_NANOBOTS:
+  name: '&bAvancerede nanorobotter'
   type:
   - '&7&oKomponent'
 NTW_AI_CORE:
+  name: '&bA.I.-kerne'
   type:
   - '&7&oKomponent'
 NTW_AUTO_CRAFTER:
+  description:
+  - '&7Netværkets autofremstiller modtager'
+  - '&7en fremstillingstegning. Når'
+  - '&7tegningens udgangsgenstand efterspørges,'
+  - '&7mens der ingen er i netværket,'
+  - '&7bliver den fremstillet, hvis du har'
+  - '&7materialerne.'
+  name: '&3Netværkets autofremstiller'
+  stats:
+  - '&7Netværksforbrug: &e64&7/fremstilling'
   type:
   - '&7&oMaskine'
 NTW_AUTO_CRAFTER_WITHHOLDING:
+  description:
+  - '&7Netværkets autofremstiller modtager'
+  - '&7en fremstillingstegning. Når'
+  - '&7tegningens udgangsgenstand efterspørges,'
+  - '&7mens der ingen er i netværket,'
+  - '&7bliver den fremstillet, hvis du har'
+  - '&7materialerne.'
+  - '&7En tilbageholdende fremstiller beholder'
+  - '&7en stak i udgangen og stopper'
+  - '&7fremstillingen. Stakken kan ses'
+  - '&7i netværket og giver også adgang til'
+  - '&7fragt.'
+  name: '&3Netværkets autofremstiller (tilbageholdende)'
+  stats:
+  - '&7Netværksforbrug: &e128&7/fremstilling'
   type:
   - '&7&oMaskine'
 NTW_BEST_PUSHER:
+  description:
+  - '&7Den avancerede netværksskubber vil forsøge'
+  - '&7at skubbe tilsvarende genstande fra op til'
+  - '&7tolv angivne skabeloner ind i den'
+  - '&7valgte maskine.'
+  name: '&3Avanceret netværksskubber'
   type:
   - '&7&oMaskine'
 NTW_BRIDGE:
+  description:
+  - '&7Broen lader dig billigt'
+  - '&7forbinde netværksobjekter med hinanden.'
+  name: '&3Netværksbro'
   type:
   - '&7&oMaskine'
 NTW_CAPACITOR_1:
+  description:
+  - '&7Netværkskondensatoren kan optage'
+  - '&7strøm og gemme den til brug'
+  - '&7inde i netværket.'
+  name: '&3Netværkskondensator (1)'
+  stats:
+  - '&7Kapacitet: &e1000'
   type:
   - '&7&oMaskine'
 NTW_CAPACITOR_2:
+  description:
+  - '&7Netværkskondensatoren kan optage'
+  - '&7strøm og gemme den til brug'
+  - '&7inde i netværket.'
+  name: '&3Netværkskondensator (2)'
+  stats:
+  - '&7Kapacitet: &e10000'
   type:
   - '&7&oMaskine'
 NTW_CAPACITOR_3:
+  description:
+  - '&7Netværkskondensatoren kan optage'
+  - '&7strøm og gemme den til brug'
+  - '&7inde i netværket.'
+  name: '&3Netværkskondensator (3)'
+  stats:
+  - '&7Kapacitet: &e100000'
   type:
   - '&7&oMaskine'
 NTW_CAPACITOR_4:
+  description:
+  - '&7Netværkskondensatoren kan optage'
+  - '&7strøm og gemme den til brug'
+  - '&7inde i netværket.'
+  name: '&3Netværkskondensator (4)'
+  stats:
+  - '&7Kapacitet: &e1000000'
   type:
   - '&7&oMaskine'
 NTW_CELL:
+  description:
+  - '&7Netværkscellen er et stort'
+  - '&7inventar (dobbeltkiste), som kan'
+  - '&7tilgås både fra netværket'
+  - '&7og ude i verden.'
+  name: '&3Netværkscelle'
   type:
   - '&7&oMaskine'
 NTW_CONFIGURATOR:
+  description:
+  - '&7Bruges til at kopiere og indsætte'
+  - '&7konfigurationen af retningsbestemte'
+  - '&7grænseflader.'
+  name: '&5Netværkskonfigurator'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7: Anvend konfiguration'
+  - '&eShift + højreklik&7: Gem konfiguration'
 NTW_CONTROLLER:
+  description:
+  - '&7Netværksstyreenheden er hjernen'
+  - '&7for hele netværket.'
+  name: '&3Netværksstyreenhed'
+  stats:
+  - '&7Grænse: &eMaks 1&7 pr. netværk'
   type:
   - '&7&oMaskine'
 NTW_CONTROL_V:
+  description:
+  - '&7Netværkskontrol: V vil forsøge'
+  - '&7at ''indsætte'' en blok fra netværket'
+  - '&7ud i verden.'
+  - '&7Virker kun med vanilla-blokke.'
+  name: '&3Netværkskontrol: V'
+  stats:
+  - '&7Netværksforbrug: &e100&7/indsætning'
   type:
   - '&7&oMaskine'
 NTW_CONTROL_X:
+  description:
+  - '&7Netværkskontrol: X vil forsøge'
+  - '&7at ''klippe'' en blok ud af verden'
+  - '&7og lægge den ind i netværket.'
+  - '&7Virker kun på vanilla-blokke uden'
+  - '&7inventarer.'
+  name: '&3Netværkskontrol: X'
+  stats:
+  - '&7Netværksforbrug: &e100&7/klip'
   type:
   - '&7&oMaskine'
 NTW_CRAFTING_BLUEPRINT:
+  description:
+  - '&7En blank tegning, der kan'
+  - '&7bruges til at gemme en'
+  - '&7opskrift.'
+  name: '&5Fremstillingstegning'
   type:
   - '&7&oVærktøj'
 NTW_CRAFTING_GRID:
+  description:
+  - '&7Netværkets fremstillingsgitter virker'
+  - '&7som et normalt gitter, men viser færre'
+  - '&7genstande og tillader fremstilling med genstande'
+  - '&7direkte fra netværket.'
+  name: '&3Netværkets fremstillingsgitter'
   type:
   - '&7&oMaskine'
 NTW_CRAYON:
+  description:
+  - '&7Slår en netværksdækkende visning af'
+  - '&7fejlfindingspartikler til og fra, som viser'
+  - '&7nodeaktiviteten, mens den kører.'
+  name: '&5Netværksfarvekridt'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7 på en netværksstyreenhed for at slå partikelvisningen til og fra.'
 NTW_DEBUG_STICK:
+  description:
+  - '&7Et diagnoseværktøj kun for operatører, som'
+  - '&7bruges til at fejlfinde netværksblokkes opførsel.'
+  name: '&5Netværkets fejlfindingspind'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7 på et netværksobjekt for at slå fejlfinding til.'
 NTW_EMPOWERED_AI_CORE:
+  name: '&bStyrket A.I.-kerne'
   type:
   - '&7&oKomponent'
 NTW_EXPORT:
+  description:
+  - '&7Netværkseksportøren kan indstilles til'
+  - '&7konstant at eksportere 1 stak af en'
+  - '&7given genstand.'
+  - '&7Tillader udtag af genstande via fragt.'
+  name: '&3Netværkseksportør'
   type:
   - '&7&oMaskine'
 NTW_GRABBER:
+  description:
+  - '&7Netværksgriberen vil forsøge'
+  - '&7at gribe den første genstand, den finder'
+  - '&7inde i den valgte maskine.'
+  name: '&3Netværksgriber'
   type:
   - '&7&oMaskine'
 NTW_GREEDY_BLOCK:
+  description:
+  - '&7Den grådige netværksblok kan'
+  - '&7indstilles til én genstand, som den'
+  - '&7derefter grådigt holder på i en enkelt'
+  - '&7stak. Hvis flere indkommende genstande'
+  - '&7ikke kan være der, kommer de ikke ind i'
+  - '&7netværket.'
+  name: '&3Grådig netværksblok'
   type:
   - '&7&oMaskine'
 NTW_GRID:
+  description:
+  - '&7Netværksgitteret viser dig alle'
+  - '&7de genstande, du har i netværket,'
+  - '&7og lader dig indsætte eller udtage'
+  - '&7direkte.'
+  name: '&3Netværksgitter'
   type:
   - '&7&oMaskine'
 NTW_IMPORT:
+  description:
+  - '&7Netværksimportøren fører enhver'
+  - '&7genstand i den ind i netværket.'
+  - '&7Modtager genstande ind fra fragt.'
+  name: '&3Netværksimportør'
+  stats:
+  - '&7Importrate: &eOp til 9 stakke&7/tick'
   type:
   - '&7&oMaskine'
 NTW_INTERDIMENSIONAL_PRESENCE:
+  name: '&bInterdimensional tilstedeværelse'
   type:
   - '&7&oKomponent'
 NTW_MONITOR:
+  description:
+  - '&7Netværksmonitoren tillader simpel'
+  - '&7import/eksport-samspil med tilstødende'
+  - '&7objekter.'
+  - '&7Understøtter i øjeblikket:'
+  - '&7Uendelighedstønder'
+  - '&7Netværksskaller'
+  name: '&3Netværksmonitor'
   type:
   - '&7&oMaskine'
 NTW_NETWORK_WIRELESS_RECEIVER:
+  description:
+  - '&7Den trådløse netværksmodtager er'
+  - '&7i stand til at modtage genstande fra en forbundet'
+  - '&7trådløs sender, der befinder sig i'
+  - '&7den samme verden.'
+  - '&7Den forsøger at skubbe modtagne genstande'
+  - '&7ind i netværket hver tick.'
+  name: '&3Trådløs netværksmodtager'
   type:
   - '&7&oMaskine'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
+  description:
+  - '&7Den trådløse netværkssender vil'
+  - '&7forsøge at sende enhver genstand i sig selv'
+  - '&7til en forbundet trådløs netværksmodtager'
+  - '&7i den samme verden.'
+  - '&7Brug den trådløse konfigurator til at'
+  - '&7opsætte den trådløse sender.'
+  name: '&3Trådløs netværkssender'
+  stats:
+  - '&7Kræver 500 netværksstrøm pr. overførsel.'
   type:
   - '&7&oMaskine'
 NTW_OPTIC_CABLE:
+  name: '&bOptisk kabel'
   type:
   - '&7&oKomponent'
 NTW_OPTIC_GLASS:
+  name: '&bOptisk glas'
   type:
   - '&7&oKomponent'
 NTW_OPTIC_STAR:
+  name: '&bOptisk stjerne'
   type:
   - '&7&oKomponent'
 NTW_POWER_DISPLAY:
+  description:
+  - '&7Netværkets strømvisning vil'
+  - '&7vise strømmen i netværket.'
+  - '&7Simpelt, ikke?'
+  name: '&3Netværkets strømvisning'
   type:
   - '&7&oMaskine'
 NTW_POWER_OUTLET_1:
+  description:
+  - '&7Netværkskondensatoren kan optage'
+  - '&7strøm fra netværket til at drive'
+  - '&7maskiner eller føre den tilbage til et'
+  - '&7EnergyNet-netværk.'
+  name: '&3Netværksstrømudtag (1)'
+  stats:
+  - '&7Arbejder med et tab på 20%.'
+  - '&7Maks. overførsel: &e500'
   type:
   - '&7&oMaskine'
 NTW_POWER_OUTLET_2:
+  description:
+  - '&7Netværkskondensatoren kan optage'
+  - '&7strøm fra netværket til at drive'
+  - '&7maskiner eller føre den tilbage til et'
+  - '&7EnergyNet-netværk.'
+  name: '&3Netværksstrømudtag (2)'
+  stats:
+  - '&7Arbejder med et tab på 20%.'
+  - '&7Maks. overførsel: &e2000'
   type:
   - '&7&oMaskine'
 NTW_PRISTINE_AI_CORE:
+  name: '&bUplettet A.I.-kerne'
   type:
   - '&7&oKomponent'
 NTW_PROBE:
+  description:
+  - '&7Viser en oversigt over et netværk,'
+  - '&7herunder dets strøm, antal genstande'
+  - '&7og antal noder.'
+  name: '&5Netværkssonde'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7 på en netværksstyreenhed for at se oversigten.'
 NTW_PUSHER:
+  description:
+  - '&7Netværksskubberen vil forsøge'
+  - '&7at skubbe en tilsvarende genstand fra en'
+  - '&7given genstand ind i den valgte maskine.'
+  name: '&3Netværksskubber'
   type:
   - '&7&oMaskine'
 NTW_QUANTUM_STORAGE_1:
+  description:
+  - '&7Opbevarer genstande i store mængder inde i'
+  - '&7en kvantesingularitet.'
+  name: '&3Netværkskvanteopbevaring (4K)'
+  stats:
+  - '&7Opbevarer &e4096&7 genstande'
   type:
   - '&7&oMaskine'
 NTW_QUANTUM_STORAGE_2:
+  description:
+  - '&7Opbevarer genstande i store mængder inde i'
+  - '&7en kvantesingularitet.'
+  name: '&3Netværkskvanteopbevaring (32K)'
+  stats:
+  - '&7Opbevarer &e32768&7 genstande'
   type:
   - '&7&oMaskine'
 NTW_QUANTUM_STORAGE_3:
+  description:
+  - '&7Opbevarer genstande i store mængder inde i'
+  - '&7en kvantesingularitet.'
+  name: '&3Netværkskvanteopbevaring (262K)'
+  stats:
+  - '&7Opbevarer &e262144&7 genstande'
   type:
   - '&7&oMaskine'
 NTW_QUANTUM_STORAGE_4:
+  description:
+  - '&7Opbevarer genstande i store mængder inde i'
+  - '&7en kvantesingularitet.'
+  name: '&3Netværkskvanteopbevaring (2M)'
+  stats:
+  - '&7Opbevarer &e2097152&7 genstande'
   type:
   - '&7&oMaskine'
 NTW_QUANTUM_STORAGE_5:
+  description:
+  - '&7Opbevarer genstande i store mængder inde i'
+  - '&7en kvantesingularitet.'
+  name: '&3Netværkskvanteopbevaring (16M)'
+  stats:
+  - '&7Opbevarer &e16777216&7 genstande'
   type:
   - '&7&oMaskine'
 NTW_QUANTUM_STORAGE_6:
+  description:
+  - '&7Opbevarer genstande i store mængder inde i'
+  - '&7en kvantesingularitet.'
+  name: '&3Netværkskvanteopbevaring (134M)'
+  stats:
+  - '&7Opbevarer &e134217728&7 genstande'
   type:
   - '&7&oMaskine'
 NTW_QUANTUM_STORAGE_7:
+  description:
+  - '&7Opbevarer genstande i store mængder inde i'
+  - '&7en kvantesingularitet.'
+  name: '&3Netværkskvanteopbevaring (1B)'
+  stats:
+  - '&7Opbevarer &e1073741824&7 genstande'
   type:
   - '&7&oMaskine'
 NTW_QUANTUM_STORAGE_8:
+  description:
+  - '&7Opbevarer genstande i store mængder inde i'
+  - '&7en kvantesingularitet.'
+  name: '&3Netværkskvanteopbevaring (∞)'
+  stats:
+  - '&7Opbevarer &e∞&7 genstande... næsten'
   type:
   - '&7&oMaskine'
 NTW_QUANTUM_WORKBENCH:
+  description:
+  - '&7Tillader fremstilling af kvanteopbevaringer.'
+  name: '&3Netværkets kvantearbejdsbænk'
   type:
   - '&7&oMaskine'
 NTW_RADIOACTIVE_OPTIC_STAR:
+  name: '&bRadioaktiv optisk stjerne'
   type:
   - '&7&oKomponent'
 NTW_RAKE_1:
+  description:
+  - '&7Et håndholdt værktøj til hurtigt at skille'
+  - '&7netværksobjekter ad uden maskineri.'
+  name: '&5Netværksrive (1)'
+  stats:
+  - '&e250 anvendelser &7tilbage'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7 på et netværksobjekt for at bryde det øjeblikkeligt.'
 NTW_RAKE_2:
+  description:
+  - '&7Et håndholdt værktøj til hurtigt at skille'
+  - '&7netværksobjekter ad uden maskineri.'
+  name: '&5Netværksrive (2)'
+  stats:
+  - '&e1000 anvendelser &7tilbage'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7 på et netværksobjekt for at bryde det øjeblikkeligt.'
 NTW_RAKE_3:
+  description:
+  - '&7Et håndholdt værktøj til hurtigt at skille'
+  - '&7netværksobjekter ad uden maskineri.'
+  name: '&5Netværksrive (3)'
+  stats:
+  - '&e9999 anvendelser &7tilbage'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7 på et netværksobjekt for at bryde det øjeblikkeligt.'
 NTW_RECIPE_ENCODER:
+  description:
+  - '&7Bruges til at danne en fremstillingstegning'
+  - '&7ud fra de indsatte genstande.'
+  name: '&3Netværkets opskriftskoder'
+  stats:
+  - '&7Netværksforbrug: &e20000&7/kodning'
   type:
   - '&7&oMaskine'
 NTW_REMOTE:
+  description:
+  - '&7Åbner et bundet gitter trådløst.'
+  - '&7Gitteret skal være chunk-indlæst.'
+  name: '&5Netværksfjernbetjening'
+  stats:
+  - '&7Rækkevidde: &e150'
   type:
   - '&7&oVærktøj'
 NTW_REMOTE_EMPOWERED:
+  description:
+  - '&7Åbner et bundet gitter trådløst.'
+  - '&7Gitteret skal være chunk-indlæst.'
+  name: '&5Styrket netværksfjernbetjening'
+  stats:
+  - '&7Rækkevidde: &e500'
   type:
   - '&7&oVærktøj'
 NTW_REMOTE_PRISTINE:
+  description:
+  - '&7Åbner et bundet gitter trådløst.'
+  - '&7Gitteret skal være chunk-indlæst.'
+  name: '&5Uplettet netværksfjernbetjening'
+  stats:
+  - '&7Rækkevidde: &eUbegrænset'
   type:
   - '&7&oVærktøj'
 NTW_REMOTE_ULTIMATE:
+  description:
+  - '&7Åbner et bundet gitter trådløst.'
+  - '&7Gitteret skal være chunk-indlæst.'
+  name: '&5Ultimativ netværksfjernbetjening'
+  stats:
+  - '&7Rækkevidde: &ePå tværs af dimensioner'
   type:
   - '&7&oVærktøj'
 NTW_SHRINKING_BASE:
+  name: '&bKrympebase'
   type:
   - '&7&oKomponent'
 NTW_SIMPLE_NANOBOTS:
+  name: '&bSimple nanorobotter'
   type:
   - '&7&oKomponent'
 NTW_SYNTHETIC_EMERALD_SHARD:
+  name: '&bSyntetisk smaragdskår'
   type:
   - '&7&oKomponent'
 NTW_TRASH:
+  description:
+  - '&7Netværksudrenseren trækker'
+  - '&7tilsvarende genstande ud af netværket'
+  - '&7og sletter dem øjeblikkeligt.'
+  - '&7Brug den med stor forsigtighed!'
+  name: '&3Netværksudrenser'
   type:
   - '&7&oMaskine'
 NTW_VACUUM:
+  description:
+  - '&7Netværksstøvsugeren suger'
+  - '&7genstande ind i sig selv inden for et'
+  - '&74 x 4 område med sig selv i midten.'
+  - '&7Opsugede genstande forsøger at skubbe sig'
+  - '&7ind i netværket.'
+  name: '&3Netværksstøvsuger'
+  stats:
+  - '&7Netværksforbrug: &e100&7/tick'
   type:
   - '&7&oMaskine'
 NTW_VANILLA_GRABBER:
+  description:
+  - '&7Netværkets vanilla-griber vil forsøge'
+  - '&7at gribe den første mulige genstand fra'
+  - '&7det valgte vanilla-inventar.'
+  - '&7Du skal hente genstande fra denne'
+  - '&7node med en griber.'
+  name: '&3Netværkets vanilla-griber'
   type:
   - '&7&oMaskine'
 NTW_VANILLA_PUSHER:
+  description:
+  - '&7Netværkets vanilla-skubber vil forsøge'
+  - '&7at skubbe enhver genstand i sig selv ind i'
+  - '&7det valgte vanilla-inventar.'
+  - '&7Du skal skubbe genstande ind i denne'
+  - '&7node fra en skubber.'
+  name: '&3Netværkets vanilla-skubber'
   type:
   - '&7&oMaskine'
 NTW_WIRELESS_CONFIGURATOR:
+  description:
+  - '&7Bruges til at gemme en modtagers position'
+  - '&7og derefter anvende den på en sender.'
+  name: '&5Trådløs netværkskonfigurator'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7: Gem modtagerposition'
+  - '&eShift + højreklik&7: Sæt positionen på senderen'
