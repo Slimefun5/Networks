@@ -1,192 +1,562 @@
 NTW_ADVANCED_NANOBOTS:
+  name: '&bNanobot Lanjutan'
   type:
   - '&7&oKomponen'
 NTW_AI_CORE:
+  name: '&bTeras A.I.'
   type:
   - '&7&oKomponen'
 NTW_AUTO_CRAFTER:
+  description:
+  - '&7Pembuat Automatik Rangkaian menerima'
+  - '&7pelan pembuatan. Apabila item'
+  - '&7keluaran pelan itu diminta'
+  - '&7sedangkan tiada dalam rangkaian'
+  - '&7ia akan dibuat jika anda mempunyai'
+  - '&7bahannya.'
+  name: '&3Pembuat Automatik Rangkaian'
+  stats:
+  - '&7Susutan Rangkaian: &e64&7/buatan'
   type:
   - '&7&oMesin'
 NTW_AUTO_CRAFTER_WITHHOLDING:
+  description:
+  - '&7Pembuat Automatik Rangkaian menerima'
+  - '&7pelan pembuatan. Apabila item'
+  - '&7keluaran pelan itu diminta'
+  - '&7sedangkan tiada dalam rangkaian'
+  - '&7ia akan dibuat jika anda mempunyai'
+  - '&7bahannya.'
+  - '&7Pembuat Penahan akan menyimpan'
+  - '&7satu tindanan dalam keluaran dan berhenti'
+  - '&7membuat. Tindanan itu boleh dilihat'
+  - '&7dalam Rangkaian dan turut membenarkan'
+  - '&7kargo.'
+  name: '&3Pembuat Automatik Rangkaian (Penahan)'
+  stats:
+  - '&7Susutan Rangkaian: &e128&7/buatan'
   type:
   - '&7&oMesin'
 NTW_BEST_PUSHER:
+  description:
+  - '&7Penolak Lanjutan Rangkaian akan cuba'
+  - '&7menolak item sepadan daripada sehingga'
+  - '&7dua belas templat yang diberikan ke dalam'
+  - '&7mesin yang dipilih.'
+  name: '&3Penolak Lanjutan Rangkaian'
   type:
   - '&7&oMesin'
 NTW_BRIDGE:
+  description:
+  - '&7Jambatan membolehkan anda menyambung'
+  - '&7objek rangkaian dengan murah.'
+  name: '&3Jambatan Rangkaian'
   type:
   - '&7&oMesin'
 NTW_CAPACITOR_1:
+  description:
+  - '&7Kapasitor Rangkaian boleh menerima'
+  - '&7kuasa dan menyimpannya untuk digunakan'
+  - '&7dalam rangkaian.'
+  name: '&3Kapasitor Rangkaian (1)'
+  stats:
+  - '&7Kapasiti: &e1000'
   type:
   - '&7&oMesin'
 NTW_CAPACITOR_2:
+  description:
+  - '&7Kapasitor Rangkaian boleh menerima'
+  - '&7kuasa dan menyimpannya untuk digunakan'
+  - '&7dalam rangkaian.'
+  name: '&3Kapasitor Rangkaian (2)'
+  stats:
+  - '&7Kapasiti: &e10000'
   type:
   - '&7&oMesin'
 NTW_CAPACITOR_3:
+  description:
+  - '&7Kapasitor Rangkaian boleh menerima'
+  - '&7kuasa dan menyimpannya untuk digunakan'
+  - '&7dalam rangkaian.'
+  name: '&3Kapasitor Rangkaian (3)'
+  stats:
+  - '&7Kapasiti: &e100000'
   type:
   - '&7&oMesin'
 NTW_CAPACITOR_4:
+  description:
+  - '&7Kapasitor Rangkaian boleh menerima'
+  - '&7kuasa dan menyimpannya untuk digunakan'
+  - '&7dalam rangkaian.'
+  name: '&3Kapasitor Rangkaian (4)'
+  stats:
+  - '&7Kapasiti: &e1000000'
   type:
   - '&7&oMesin'
 NTW_CELL:
+  description:
+  - '&7Sel Rangkaian ialah inventori besar'
+  - '&7(peti berkembar) yang boleh'
+  - '&7dicapai dari rangkaian'
+  - '&7dan juga di dalam dunia.'
+  name: '&3Sel Rangkaian'
   type:
   - '&7&oMesin'
 NTW_CONFIGURATOR:
+  description:
+  - '&7Digunakan untuk menyalin dan menampal'
+  - '&7konfigurasi antara muka'
+  - '&7berarah.'
+  name: '&5Pengkonfigur Rangkaian'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7: Terapkan Konfigurasi'
+  - '&eShift Klik Kanan&7: Simpan Konfigurasi'
 NTW_CONTROLLER:
+  description:
+  - '&7Pengawal Rangkaian ialah otak'
+  - '&7bagi keseluruhan rangkaian.'
+  name: '&3Pengawal Rangkaian'
+  stats:
+  - '&7Had: &eMaks 1&7 setiap rangkaian'
   type:
   - '&7&oMesin'
 NTW_CONTROL_V:
+  description:
+  - '&7Kawalan Rangkaian: V akan cuba'
+  - '&7''menampal'' sesuatu blok dari Rangkaian'
+  - '&7ke dalam dunia.'
+  - '&7Hanya berfungsi dengan blok Asli.'
+  name: '&3Kawalan Rangkaian: V'
+  stats:
+  - '&7Susutan Rangkaian: &e100&7/tampal'
   type:
   - '&7&oMesin'
 NTW_CONTROL_X:
+  description:
+  - '&7Kawalan Rangkaian: X akan cuba'
+  - '&7''memotong'' sesuatu blok dari dunia'
+  - '&7dan meletakkannya ke dalam Rangkaian.'
+  - '&7Hanya berfungsi pada blok Asli tanpa'
+  - '&7inventori.'
+  name: '&3Kawalan Rangkaian: X'
+  stats:
+  - '&7Susutan Rangkaian: &e100&7/potong'
   type:
   - '&7&oMesin'
 NTW_CRAFTING_BLUEPRINT:
+  description:
+  - '&7Pelan kosong yang boleh'
+  - '&7digunakan untuk menyimpan resipi'
+  - '&7pembuatan.'
+  name: '&5Pelan Pembuatan'
   type:
   - '&7&oAlat'
 NTW_CRAFTING_GRID:
+  description:
+  - '&7Grid Pembuatan Rangkaian berfungsi'
+  - '&7seperti grid biasa tetapi memaparkan lebih sedikit'
+  - '&7item namun membolehkan pembuatan menggunakan item'
+  - '&7terus dari rangkaian.'
+  name: '&3Grid Pembuatan Rangkaian'
   type:
   - '&7&oMesin'
 NTW_CRAYON:
+  description:
+  - '&7Menogol paparan zarah nyahpepijat seluruh'
+  - '&7rangkaian, menggambarkan aktiviti nod'
+  - '&7semasa ia berfungsi.'
+  name: '&5Krayon Rangkaian'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7 Pengawal Rangkaian untuk menogol paparan zarah.'
 NTW_DEBUG_STICK:
+  description:
+  - '&7Alat diagnostik khas pengendali yang digunakan'
+  - '&7untuk menyahpepijat kelakuan blok Rangkaian.'
+  name: '&5Kayu Nyahpepijat Rangkaian'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7 Objek Rangkaian untuk menghidupkan nyahpepijat.'
 NTW_EMPOWERED_AI_CORE:
+  name: '&bTeras A.I. Diperkasa'
   type:
   - '&7&oKomponen'
 NTW_EXPORT:
+  description:
+  - '&7Pengeksport Rangkaian boleh ditetapkan untuk'
+  - '&7sentiasa mengeksport 1 tindanan bagi'
+  - '&7item yang diberikan.'
+  - '&7Menerima pengeluaran item daripada kargo.'
+  name: '&3Pengeksport Rangkaian'
   type:
   - '&7&oMesin'
 NTW_GRABBER:
+  description:
+  - '&7Pencapai Rangkaian akan cuba'
+  - '&7mencapai item pertama yang ditemuinya'
+  - '&7dari dalam mesin yang dipilih.'
+  name: '&3Pencapai Rangkaian'
   type:
   - '&7&oMesin'
 NTW_GREEDY_BLOCK:
+  description:
+  - '&7Blok Tamak Rangkaian boleh'
+  - '&7ditetapkan kepada satu item yang'
+  - '&7kemudian disimpannya dengan tamak sebanyak satu'
+  - '&7tindanan. Jika item masuk yang lain'
+  - '&7tidak muat, ia tidak akan masuk'
+  - '&7ke dalam rangkaian.'
+  name: '&3Blok Tamak Rangkaian'
   type:
   - '&7&oMesin'
 NTW_GRID:
+  description:
+  - '&7Grid Rangkaian menunjukkan kepada anda semua'
+  - '&7item yang anda ada dalam rangkaian'
+  - '&7dan membolehkan anda memasukkan atau mengeluarkannya'
+  - '&7secara terus.'
+  name: '&3Grid Rangkaian'
   type:
   - '&7&oMesin'
 NTW_IMPORT:
+  description:
+  - '&7Pengimport Rangkaian membawa apa-apa'
+  - '&7item di dalamnya ke dalam rangkaian.'
+  - '&7Menerima item masuk daripada kargo.'
+  name: '&3Pengimport Rangkaian'
+  stats:
+  - '&7Kadar Import: &eSehingga 9 tindanan&7/tik'
   type:
   - '&7&oMesin'
 NTW_INTERDIMENSIONAL_PRESENCE:
+  name: '&bKehadiran Antara Dimensi'
   type:
   - '&7&oKomponen'
 NTW_MONITOR:
+  description:
+  - '&7Pemantau Rangkaian membenarkan interaksi'
+  - '&7import/eksport ringkas dengan objek'
+  - '&7bersebelahan.'
+  - '&7Kini Menyokong:'
+  - '&7Tong Infiniti'
+  - '&7Cangkerang Rangkaian'
+  name: '&3Pemantau Rangkaian'
   type:
   - '&7&oMesin'
 NTW_NETWORK_WIRELESS_RECEIVER:
+  description:
+  - '&7Penerima Tanpa Wayar Rangkaian'
+  - '&7mampu menerima item daripada pemancar'
+  - '&7tanpa wayar terpaut yang terletak dalam'
+  - '&7dunia yang sama.'
+  - '&7Ia akan cuba menolak item yang diterima'
+  - '&7ke dalam Rangkaian setiap tik.'
+  name: '&3Penerima Tanpa Wayar Rangkaian'
   type:
   - '&7&oMesin'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
+  description:
+  - '&7Pemancar Tanpa Wayar Rangkaian akan'
+  - '&7cuba memancarkan apa-apa item di dalamnya'
+  - '&7ke Penerima Tanpa Wayar Rangkaian terpaut'
+  - '&7yang terletak dalam dunia yang sama.'
+  - '&7Guna Pengkonfigur Tanpa Wayar untuk'
+  - '&7menyediakan Pemancar Tanpa Wayar.'
+  name: '&3Pemancar Tanpa Wayar Rangkaian'
+  stats:
+  - '&7Memerlukan 500 Kuasa Rangkaian setiap pemindahan.'
   type:
   - '&7&oMesin'
 NTW_OPTIC_CABLE:
+  name: '&bKabel Optik'
   type:
   - '&7&oKomponen'
 NTW_OPTIC_GLASS:
+  name: '&bKaca Optik'
   type:
   - '&7&oKomponen'
 NTW_OPTIC_STAR:
+  name: '&bBintang Optik'
   type:
   - '&7&oKomponen'
 NTW_POWER_DISPLAY:
+  description:
+  - '&7Paparan Kuasa Rangkaian akan'
+  - '&7memaparkan kuasa dalam rangkaian.'
+  - '&7Ringkas, bukan?'
+  name: '&3Paparan Kuasa Rangkaian'
   type:
   - '&7&oMesin'
 NTW_POWER_OUTLET_1:
+  description:
+  - '&7Kapasitor Rangkaian boleh menerima'
+  - '&7kuasa daripada Rangkaian untuk menggerakkan'
+  - '&7mesin atau menyalurkannya semula ke dalam'
+  - '&7rangkaian EnergyNet.'
+  name: '&3Soket Kuasa Rangkaian (1)'
+  stats:
+  - '&7Beroperasi pada kadar kehilangan 20%.'
+  - '&7Pemindahan Maks: &e500'
   type:
   - '&7&oMesin'
 NTW_POWER_OUTLET_2:
+  description:
+  - '&7Kapasitor Rangkaian boleh menerima'
+  - '&7kuasa daripada Rangkaian untuk menggerakkan'
+  - '&7mesin atau menyalurkannya semula ke dalam'
+  - '&7rangkaian EnergyNet.'
+  name: '&3Soket Kuasa Rangkaian (2)'
+  stats:
+  - '&7Beroperasi pada kadar kehilangan 20%.'
+  - '&7Pemindahan Maks: &e2000'
   type:
   - '&7&oMesin'
 NTW_PRISTINE_AI_CORE:
+  name: '&bTeras A.I. Murni'
   type:
   - '&7&oKomponen'
 NTW_PROBE:
+  description:
+  - '&7Mendedahkan ringkasan sesuatu Rangkaian,'
+  - '&7termasuk kuasanya, bilangan item'
+  - '&7dan jumlah nod.'
+  name: '&5Penduga Rangkaian'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7 Pengawal Rangkaian untuk melihat ringkasan.'
 NTW_PUSHER:
+  description:
+  - '&7Penolak Rangkaian akan cuba'
+  - '&7menolak item sepadan daripada'
+  - '&7item yang diberikan ke dalam mesin pilihan.'
+  name: '&3Penolak Rangkaian'
   type:
   - '&7&oMesin'
 NTW_QUANTUM_STORAGE_1:
+  description:
+  - '&7Menyimpan item dalam kuantiti pukal di dalam'
+  - '&7singulariti kuantum.'
+  name: '&3Penyimpanan Kuantum Rangkaian (4K)'
+  stats:
+  - '&7Menyimpan &e4096&7 item'
   type:
   - '&7&oMesin'
 NTW_QUANTUM_STORAGE_2:
+  description:
+  - '&7Menyimpan item dalam kuantiti pukal di dalam'
+  - '&7singulariti kuantum.'
+  name: '&3Penyimpanan Kuantum Rangkaian (32K)'
+  stats:
+  - '&7Menyimpan &e32768&7 item'
   type:
   - '&7&oMesin'
 NTW_QUANTUM_STORAGE_3:
+  description:
+  - '&7Menyimpan item dalam kuantiti pukal di dalam'
+  - '&7singulariti kuantum.'
+  name: '&3Penyimpanan Kuantum Rangkaian (262K)'
+  stats:
+  - '&7Menyimpan &e262144&7 item'
   type:
   - '&7&oMesin'
 NTW_QUANTUM_STORAGE_4:
+  description:
+  - '&7Menyimpan item dalam kuantiti pukal di dalam'
+  - '&7singulariti kuantum.'
+  name: '&3Penyimpanan Kuantum Rangkaian (2M)'
+  stats:
+  - '&7Menyimpan &e2097152&7 item'
   type:
   - '&7&oMesin'
 NTW_QUANTUM_STORAGE_5:
+  description:
+  - '&7Menyimpan item dalam kuantiti pukal di dalam'
+  - '&7singulariti kuantum.'
+  name: '&3Penyimpanan Kuantum Rangkaian (16M)'
+  stats:
+  - '&7Menyimpan &e16777216&7 item'
   type:
   - '&7&oMesin'
 NTW_QUANTUM_STORAGE_6:
+  description:
+  - '&7Menyimpan item dalam kuantiti pukal di dalam'
+  - '&7singulariti kuantum.'
+  name: '&3Penyimpanan Kuantum Rangkaian (134M)'
+  stats:
+  - '&7Menyimpan &e134217728&7 item'
   type:
   - '&7&oMesin'
 NTW_QUANTUM_STORAGE_7:
+  description:
+  - '&7Menyimpan item dalam kuantiti pukal di dalam'
+  - '&7singulariti kuantum.'
+  name: '&3Penyimpanan Kuantum Rangkaian (1B)'
+  stats:
+  - '&7Menyimpan &e1073741824&7 item'
   type:
   - '&7&oMesin'
 NTW_QUANTUM_STORAGE_8:
+  description:
+  - '&7Menyimpan item dalam kuantiti pukal di dalam'
+  - '&7singulariti kuantum.'
+  name: '&3Penyimpanan Kuantum Rangkaian (∞)'
+  stats:
+  - '&7Menyimpan &e∞&7 item... hampir'
   type:
   - '&7&oMesin'
 NTW_QUANTUM_WORKBENCH:
+  description:
+  - '&7Membolehkan pembuatan Penyimpanan Kuantum.'
+  name: '&3Meja Kerja Kuantum Rangkaian'
   type:
   - '&7&oMesin'
 NTW_RADIOACTIVE_OPTIC_STAR:
+  name: '&bBintang Optik Radioaktif'
   type:
   - '&7&oKomponen'
 NTW_RAKE_1:
+  description:
+  - '&7Alat genggam untuk merungkai Objek'
+  - '&7Rangkaian dengan pantas tanpa jentera.'
+  name: '&5Penggaru Rangkaian (1)'
+  stats:
+  - '&e250 Penggunaan &7berbaki'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7 Objek Rangkaian untuk memecahkannya serta-merta.'
 NTW_RAKE_2:
+  description:
+  - '&7Alat genggam untuk merungkai Objek'
+  - '&7Rangkaian dengan pantas tanpa jentera.'
+  name: '&5Penggaru Rangkaian (2)'
+  stats:
+  - '&e1000 Penggunaan &7berbaki'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7 Objek Rangkaian untuk memecahkannya serta-merta.'
 NTW_RAKE_3:
+  description:
+  - '&7Alat genggam untuk merungkai Objek'
+  - '&7Rangkaian dengan pantas tanpa jentera.'
+  name: '&5Penggaru Rangkaian (3)'
+  stats:
+  - '&e9999 Penggunaan &7berbaki'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7 Objek Rangkaian untuk memecahkannya serta-merta.'
 NTW_RECIPE_ENCODER:
+  description:
+  - '&7Digunakan untuk membentuk Pelan Pembuatan'
+  - '&7daripada item masukan.'
+  name: '&3Pengekod Resipi Rangkaian'
+  stats:
+  - '&7Susutan Rangkaian: &e20000&7/kod'
   type:
   - '&7&oMesin'
 NTW_REMOTE:
+  description:
+  - '&7Membuka grid terikat secara tanpa wayar.'
+  - '&7Grid itu mesti berada dalam chunk yang dimuatkan.'
+  name: '&5Alat Kawalan Jauh Rangkaian'
+  stats:
+  - '&7Julat: &e150'
   type:
   - '&7&oAlat'
 NTW_REMOTE_EMPOWERED:
+  description:
+  - '&7Membuka grid terikat secara tanpa wayar.'
+  - '&7Grid itu mesti berada dalam chunk yang dimuatkan.'
+  name: '&5Alat Kawalan Jauh Rangkaian Diperkasa'
+  stats:
+  - '&7Julat: &e500'
   type:
   - '&7&oAlat'
 NTW_REMOTE_PRISTINE:
+  description:
+  - '&7Membuka grid terikat secara tanpa wayar.'
+  - '&7Grid itu mesti berada dalam chunk yang dimuatkan.'
+  name: '&5Alat Kawalan Jauh Rangkaian Murni'
+  stats:
+  - '&7Julat: &eTanpa Had'
   type:
   - '&7&oAlat'
 NTW_REMOTE_ULTIMATE:
+  description:
+  - '&7Membuka grid terikat secara tanpa wayar.'
+  - '&7Grid itu mesti berada dalam chunk yang dimuatkan.'
+  name: '&5Alat Kawalan Jauh Rangkaian Muktamad'
+  stats:
+  - '&7Julat: &eRentas Dimensi'
   type:
   - '&7&oAlat'
 NTW_SHRINKING_BASE:
+  name: '&bTapak Pengecutan'
   type:
   - '&7&oKomponen'
 NTW_SIMPLE_NANOBOTS:
+  name: '&bNanobot Ringkas'
   type:
   - '&7&oKomponen'
 NTW_SYNTHETIC_EMERALD_SHARD:
+  name: '&bSerpihan Zamrud Sintetik'
   type:
   - '&7&oKomponen'
 NTW_TRASH:
+  description:
+  - '&7Pelupus Rangkaian akan menarik'
+  - '&7item sepadan dari rangkaian'
+  - '&7dan melenyapkannya serta-merta.'
+  - '&7Guna dengan penuh berhati-hati!'
+  name: '&3Pelupus Rangkaian'
   type:
   - '&7&oMesin'
 NTW_VACUUM:
+  description:
+  - '&7Vakum Rangkaian akan menyedut'
+  - '&7item ke dalam dirinya dalam'
+  - '&7julat 4 x 4 berpusatkan dirinya.'
+  - '&7Item yang disedut akan cuba ditolak'
+  - '&7ke dalam Rangkaian.'
+  name: '&3Vakum Rangkaian'
+  stats:
+  - '&7Susutan Rangkaian: &e100&7/tik'
   type:
   - '&7&oMesin'
 NTW_VANILLA_GRABBER:
+  description:
+  - '&7Pencapai Asli Rangkaian akan cuba'
+  - '&7mencapai item pertama yang mungkin dari'
+  - '&7inventori asli yang dipilih.'
+  - '&7Anda perlu mencapai item daripada'
+  - '&7nod ini menggunakan Pencapai.'
+  name: '&3Pencapai Asli Rangkaian'
   type:
   - '&7&oMesin'
 NTW_VANILLA_PUSHER:
+  description:
+  - '&7Penolak Asli Rangkaian akan cuba'
+  - '&7menolak apa-apa item di dalam dirinya ke'
+  - '&7inventori asli yang dipilih.'
+  - '&7Anda perlu menolak item ke dalam'
+  - '&7nod ini daripada Penolak.'
+  name: '&3Penolak Asli Rangkaian'
   type:
   - '&7&oMesin'
 NTW_WIRELESS_CONFIGURATOR:
+  description:
+  - '&7Digunakan untuk menyimpan lokasi Penerima'
+  - '&7dan kemudian menerapkannya pada Pemancar.'
+  name: '&5Pengkonfigur Tanpa Wayar Rangkaian'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7: Simpan Lokasi Penerima'
+  - '&eShift Klik Kanan&7: Tetapkan Lokasi pada Pemancar'
