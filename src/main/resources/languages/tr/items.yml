@@ -1,192 +1,562 @@
 NTW_ADVANCED_NANOBOTS:
+  name: '&bGelişmiş Nanobotlar'
   type:
   - '&7&oBileşen'
 NTW_AI_CORE:
+  name: '&bY.Z. Çekirdeği'
   type:
   - '&7&oBileşen'
 NTW_AUTO_CRAFTER:
+  description:
+  - '&7Ağ Otomatik Üreticisi bir üretim'
+  - '&7planı kabul eder. Plandaki çıkış'
+  - '&7eşyası talep edildiğinde, ağda'
+  - '&7o eşyadan yoksa, üretim için'
+  - '&7gereken tüm'
+  - '&7malzemeleriniz varsa üretilir.'
+  name: '&3Ağ Otomatik Üreticisi'
+  stats:
+  - '&7Ağ Tüketimi: &e64&7/üretim'
   type:
   - '&7&oMakine'
 NTW_AUTO_CRAFTER_WITHHOLDING:
+  description:
+  - '&7Ağ Otomatik Üreticisi bir üretim'
+  - '&7planı kabul eder. Plandaki çıkış'
+  - '&7eşyası talep edildiğinde, ağda'
+  - '&7o eşyadan yoksa, üretim için'
+  - '&7gereken tüm'
+  - '&7malzemeleriniz varsa üretilir.'
+  - '&7Stoklayan Üretici çıkışta bir'
+  - '&7yığın tutar ve üretimi durdurur.'
+  - '&7Bu yığın Ağda görünür ve ayrıca'
+  - '&7şuna da olanak tanır:'
+  - '&7kargo.'
+  name: '&3Ağ Otomatik Üreticisi (Stoklayan)'
+  stats:
+  - '&7Ağ Tüketimi: &e128&7/üretim'
   type:
   - '&7&oMakine'
 NTW_BEST_PUSHER:
+  description:
+  - '&7Ağ Gelişmiş İticisi, verilen on iki'
+  - '&7şablona kadar eşleşen eşyaları'
+  - '&7seçilen makinenin içine itmeye'
+  - '&7çalışır.'
+  name: '&3Ağ Gelişmiş İticisi'
   type:
   - '&7&oMakine'
 NTW_BRIDGE:
+  description:
+  - '&7Köprü, ağ nesnelerini birbirine ucuza'
+  - '&7bağlamanı sağlar.'
+  name: '&3Ağ Köprüsü'
   type:
   - '&7&oMakine'
 NTW_CAPACITOR_1:
+  description:
+  - '&7Ağ Kapasitörü güç alabilir ve'
+  - '&7bu gücü ağ içinde kullanılmak'
+  - '&7üzere depolar.'
+  name: '&3Ağ Kapasitörü (1)'
+  stats:
+  - '&7Kapasite: &e1000'
   type:
   - '&7&oMakine'
 NTW_CAPACITOR_2:
+  description:
+  - '&7Ağ Kapasitörü güç alabilir ve'
+  - '&7bu gücü ağ içinde kullanılmak'
+  - '&7üzere depolar.'
+  name: '&3Ağ Kapasitörü (2)'
+  stats:
+  - '&7Kapasite: &e10000'
   type:
   - '&7&oMakine'
 NTW_CAPACITOR_3:
+  description:
+  - '&7Ağ Kapasitörü güç alabilir ve'
+  - '&7bu gücü ağ içinde kullanılmak'
+  - '&7üzere depolar.'
+  name: '&3Ağ Kapasitörü (3)'
+  stats:
+  - '&7Kapasite: &e100000'
   type:
   - '&7&oMakine'
 NTW_CAPACITOR_4:
+  description:
+  - '&7Ağ Kapasitörü güç alabilir ve'
+  - '&7bu gücü ağ içinde kullanılmak'
+  - '&7üzere depolar.'
+  name: '&3Ağ Kapasitörü (4)'
+  stats:
+  - '&7Kapasite: &e1000000'
   type:
   - '&7&oMakine'
 NTW_CELL:
+  description:
+  - '&7Ağ Hücresi, hem ağdan hem de'
+  - '&7dünyadan erişilebilen büyük'
+  - '&7(çift sandık) bir'
+  - '&7envanterdir.'
+  name: '&3Ağ Hücresi'
   type:
   - '&7&oMakine'
 NTW_CONFIGURATOR:
+  description:
+  - '&7Yönlü arayüzlerin ayarlarını'
+  - '&7kopyalayıp yapıştırmak için'
+  - '&7kullanılır.'
+  name: '&5Ağ Yapılandırıcısı'
   type:
   - '&7&oAlet'
+  usage:
+  - '&eSağ Tık&7: Ayarı Uygula'
+  - '&eShift Sağ Tık&7: Ayarı Sakla'
 NTW_CONTROLLER:
+  description:
+  - '&7Ağ Kontrolcüsü, tüm ağın'
+  - '&7beynidir.'
+  name: '&3Ağ Kontrolcüsü'
+  stats:
+  - '&7Sınır: &eEn fazla 1&7 ağ başına'
   type:
   - '&7&oMakine'
 NTW_CONTROL_V:
+  description:
+  - '&7Ağ Kontrol: V, Ağdaki bir bloğu'
+  - '&7dünyaya ''yapıştırmaya'''
+  - '&7çalışır.'
+  - '&7Yalnızca vanilla bloklarla çalışır.'
+  name: '&3Ağ Kontrol: V'
+  stats:
+  - '&7Ağ Tüketimi: &e100&7/yapıştırma'
   type:
   - '&7&oMakine'
 NTW_CONTROL_X:
+  description:
+  - '&7Ağ Kontrol: X, dünyadaki bir bloğu'
+  - '&7''kesmeye'' ve onu Ağın içine'
+  - '&7koymaya çalışır.'
+  - '&7Yalnızca envanteri olmayan vanilla'
+  - '&7bloklarda çalışır.'
+  name: '&3Ağ Kontrol: X'
+  stats:
+  - '&7Ağ Tüketimi: &e100&7/kesme'
   type:
   - '&7&oMakine'
 NTW_CRAFTING_BLUEPRINT:
+  description:
+  - '&7Bir üretim tarifi saklamak için'
+  - '&7kullanılabilen boş bir'
+  - '&7plan.'
+  name: '&5Üretim Planı'
   type:
   - '&7&oAlet'
 NTW_CRAFTING_GRID:
+  description:
+  - '&7Ağ Üretim Izgarası normal bir ızgara'
+  - '&7gibi çalışır, daha az eşya gösterir'
+  - '&7ama doğrudan ağdaki eşyalarla'
+  - '&7üretim yapmanı sağlar.'
+  name: '&3Ağ Üretim Izgarası'
   type:
   - '&7&oMakine'
 NTW_CRAYON:
+  description:
+  - '&7Ağ genelinde hata ayıklama parçacık'
+  - '&7gösterimini açıp kapatır; düğüm'
+  - '&7etkinliğini görselleştirir.'
+  name: '&5Ağ Boya Kalemi'
   type:
   - '&7&oAlet'
+  usage:
+  - '&eSağ Tık&7 ile bir Ağ Kontrolcüsünde parçacık gösterimini aç/kapat.'
 NTW_DEBUG_STICK:
+  description:
+  - '&7Ağ bloklarının davranışını ayıklamak'
+  - '&7için yalnızca yetkililere özel bir tanı aleti.'
+  name: '&5Ağ Hata Ayıklama Çubuğu'
   type:
   - '&7&oAlet'
+  usage:
+  - '&eSağ Tık&7 ile bir Ağ Nesnesinde hata ayıklamayı aç.'
 NTW_EMPOWERED_AI_CORE:
+  name: '&bGüçlendirilmiş Y.Z. Çekirdeği'
   type:
   - '&7&oBileşen'
 NTW_EXPORT:
+  description:
+  - '&7Ağ Dışa Aktarıcısı, belirlenen bir'
+  - '&7eşyadan sürekli 1 yığın dışa'
+  - '&7aktaracak şekilde ayarlanabilir.'
+  - '&7Kargoya eşya çekilmesine izin verir.'
+  name: '&3Ağ Dışa Aktarıcısı'
   type:
   - '&7&oMakine'
 NTW_GRABBER:
+  description:
+  - '&7Ağ Tutucusu, seçilen makinenin'
+  - '&7içinde bulduğu ilk eşyayı'
+  - '&7almaya çalışır.'
+  name: '&3Ağ Tutucusu'
   type:
   - '&7&oMakine'
 NTW_GREEDY_BLOCK:
+  description:
+  - '&7Ağ Açgözlü Bloğu tek bir eşyaya'
+  - '&7ayarlanabilir ve o eşyadan tek bir'
+  - '&7yığını açgözlülükle kendinde'
+  - '&7tutar. Gelen fazla eşyalar sığmazsa'
+  - '&7onlar ağa'
+  - '&7giremez.'
+  name: '&3Ağ Açgözlü Bloğu'
   type:
   - '&7&oMakine'
 NTW_GRID:
+  description:
+  - '&7Ağ Izgarası, ağda bulunan tüm'
+  - '&7eşyaları gösterir ve doğrudan'
+  - '&7eşya koymanı ya da çekmeni'
+  - '&7sağlar.'
+  name: '&3Ağ Izgarası'
   type:
   - '&7&oMakine'
 NTW_IMPORT:
+  description:
+  - '&7Ağ İçe Aktarıcısı, içindeki her'
+  - '&7eşyayı ağa taşır.'
+  - '&7Kargodan eşya kabul eder.'
+  name: '&3Ağ İçe Aktarıcısı'
+  stats:
+  - '&7İçe Aktarma Hızı: &e9 yığına kadar&7/tik'
   type:
   - '&7&oMakine'
 NTW_INTERDIMENSIONAL_PRESENCE:
+  name: '&bBoyutlar Arası Varlık'
   type:
   - '&7&oBileşen'
 NTW_MONITOR:
+  description:
+  - '&7Ağ Monitörü, bitişik nesnelerle basit'
+  - '&7içe/dışa aktarma etkileşimi'
+  - '&7kurmanı sağlar.'
+  - '&7Şu An Desteklenenler:'
+  - '&7Sonsuzluk Fıçıları'
+  - '&7Ağ Kabukları'
+  name: '&3Ağ Monitörü'
   type:
   - '&7&oMakine'
 NTW_NETWORK_WIRELESS_RECEIVER:
+  description:
+  - '&7Ağ Kablosuz Alıcısı, bağlı bir'
+  - '&7kablosuz vericiden eşya alabilir;'
+  - '&7verici aynı dünyada'
+  - '&7bulunmalıdır.'
+  - '&7Aldığı eşyaları her tik Ağın içine'
+  - '&7itmeye çalışır.'
+  name: '&3Ağ Kablosuz Alıcısı'
   type:
   - '&7&oMakine'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
+  description:
+  - '&7Ağ Kablosuz Vericisi, içindeki her eşyayı'
+  - '&7aynı dünyada bulunan bağlı bir'
+  - '&7Ağ Kablosuz Alıcısına iletmeye'
+  - '&7çalışır.'
+  - '&7Kablosuz Vericiyi ayarlamak için'
+  - '&7Kablosuz Yapılandırıcıyı kullan.'
+  name: '&3Ağ Kablosuz Vericisi'
+  stats:
+  - '&7Aktarım başına 500 Ağ Gücü gerektirir.'
   type:
   - '&7&oMakine'
 NTW_OPTIC_CABLE:
+  name: '&bOptik Kablo'
   type:
   - '&7&oBileşen'
 NTW_OPTIC_GLASS:
+  name: '&bOptik Cam'
   type:
   - '&7&oBileşen'
 NTW_OPTIC_STAR:
+  name: '&bOptik Yıldız'
   type:
   - '&7&oBileşen'
 NTW_POWER_DISPLAY:
+  description:
+  - '&7Ağ Güç Göstergesi, ağdaki gücü'
+  - '&7ekranda gösterir.'
+  - '&7Basit, değil mi?'
+  name: '&3Ağ Güç Göstergesi'
   type:
   - '&7&oMakine'
 NTW_POWER_OUTLET_1:
+  description:
+  - '&7Ağ Kapasitörü güç alabilir ve'
+  - '&7Ağdan güç alarak makineleri'
+  - '&7makinelere aktarır ya da bir'
+  - '&7EnergyNet ağına geri besler.'
+  name: '&3Ağ Güç Çıkışı (1)'
+  stats:
+  - '&7%20 kayıp oranıyla çalışır.'
+  - '&7Azami Aktarım: &e500'
   type:
   - '&7&oMakine'
 NTW_POWER_OUTLET_2:
+  description:
+  - '&7Ağ Kapasitörü güç alabilir ve'
+  - '&7Ağdan güç alarak makineleri'
+  - '&7makinelere aktarır ya da bir'
+  - '&7EnergyNet ağına geri besler.'
+  name: '&3Ağ Güç Çıkışı (2)'
+  stats:
+  - '&7%20 kayıp oranıyla çalışır.'
+  - '&7Azami Aktarım: &e2000'
   type:
   - '&7&oMakine'
 NTW_PRISTINE_AI_CORE:
+  name: '&bKusursuz Y.Z. Çekirdeği'
   type:
   - '&7&oBileşen'
 NTW_PROBE:
+  description:
+  - '&7Bir Ağın özetini gösterir;'
+  - '&7gücünü, eşya sayılarını'
+  - '&7ve düğüm toplamlarını içerir.'
+  name: '&5Ağ Sondası'
   type:
   - '&7&oAlet'
+  usage:
+  - '&eSağ Tık&7 ile bir Ağ Kontrolcüsünde özeti görüntüle.'
 NTW_PUSHER:
+  description:
+  - '&7Ağ İticisi, verilen bir eşyayla'
+  - '&7eşleşen bir eşyayı seçilen'
+  - '&7makineye itmeye çalışır.'
+  name: '&3Ağ İticisi'
   type:
   - '&7&oMakine'
 NTW_QUANTUM_STORAGE_1:
+  description:
+  - '&7Eşyaları bir kuantum tekilliğinde'
+  - '&7büyük miktarlarda depolar.'
+  name: '&3Ağ Kuantum Depolama (4K)'
+  stats:
+  - '&7Depolar: &e4096&7 eşya'
   type:
   - '&7&oMakine'
 NTW_QUANTUM_STORAGE_2:
+  description:
+  - '&7Eşyaları bir kuantum tekilliğinde'
+  - '&7büyük miktarlarda depolar.'
+  name: '&3Ağ Kuantum Depolama (32K)'
+  stats:
+  - '&7Depolar: &e32768&7 eşya'
   type:
   - '&7&oMakine'
 NTW_QUANTUM_STORAGE_3:
+  description:
+  - '&7Eşyaları bir kuantum tekilliğinde'
+  - '&7büyük miktarlarda depolar.'
+  name: '&3Ağ Kuantum Depolama (262K)'
+  stats:
+  - '&7Depolar: &e262144&7 eşya'
   type:
   - '&7&oMakine'
 NTW_QUANTUM_STORAGE_4:
+  description:
+  - '&7Eşyaları bir kuantum tekilliğinde'
+  - '&7büyük miktarlarda depolar.'
+  name: '&3Ağ Kuantum Depolama (2M)'
+  stats:
+  - '&7Depolar: &e2097152&7 eşya'
   type:
   - '&7&oMakine'
 NTW_QUANTUM_STORAGE_5:
+  description:
+  - '&7Eşyaları bir kuantum tekilliğinde'
+  - '&7büyük miktarlarda depolar.'
+  name: '&3Ağ Kuantum Depolama (16M)'
+  stats:
+  - '&7Depolar: &e16777216&7 eşya'
   type:
   - '&7&oMakine'
 NTW_QUANTUM_STORAGE_6:
+  description:
+  - '&7Eşyaları bir kuantum tekilliğinde'
+  - '&7büyük miktarlarda depolar.'
+  name: '&3Ağ Kuantum Depolama (134M)'
+  stats:
+  - '&7Depolar: &e134217728&7 eşya'
   type:
   - '&7&oMakine'
 NTW_QUANTUM_STORAGE_7:
+  description:
+  - '&7Eşyaları bir kuantum tekilliğinde'
+  - '&7büyük miktarlarda depolar.'
+  name: '&3Ağ Kuantum Depolama (1B)'
+  stats:
+  - '&7Depolar: &e1073741824&7 eşya'
   type:
   - '&7&oMakine'
 NTW_QUANTUM_STORAGE_8:
+  description:
+  - '&7Eşyaları bir kuantum tekilliğinde'
+  - '&7büyük miktarlarda depolar.'
+  name: '&3Ağ Kuantum Depolama (∞)'
+  stats:
+  - '&7Depolar: &e∞&7 eşya... neredeyse'
   type:
   - '&7&oMakine'
 NTW_QUANTUM_WORKBENCH:
+  description:
+  - '&7Kuantum Depolamaların üretilmesini sağlar.'
+  name: '&3Ağ Kuantum Tezgahı'
   type:
   - '&7&oMakine'
 NTW_RADIOACTIVE_OPTIC_STAR:
+  name: '&bRadyoaktif Optik Yıldız'
   type:
   - '&7&oBileşen'
 NTW_RAKE_1:
+  description:
+  - '&7Ağ Nesnelerini makine olmadan hızlıca'
+  - '&7sökmek için el tipi bir alet.'
+  name: '&5Ağ Tırmığı (1)'
+  stats:
+  - '&e250 Kullanım &7kaldı'
   type:
   - '&7&oAlet'
+  usage:
+  - '&eSağ Tık&7 ile bir Ağ Nesnesini anında kır.'
 NTW_RAKE_2:
+  description:
+  - '&7Ağ Nesnelerini makine olmadan hızlıca'
+  - '&7sökmek için el tipi bir alet.'
+  name: '&5Ağ Tırmığı (2)'
+  stats:
+  - '&e1000 Kullanım &7kaldı'
   type:
   - '&7&oAlet'
+  usage:
+  - '&eSağ Tık&7 ile bir Ağ Nesnesini anında kır.'
 NTW_RAKE_3:
+  description:
+  - '&7Ağ Nesnelerini makine olmadan hızlıca'
+  - '&7sökmek için el tipi bir alet.'
+  name: '&5Ağ Tırmığı (3)'
+  stats:
+  - '&e9999 Kullanım &7kaldı'
   type:
   - '&7&oAlet'
+  usage:
+  - '&eSağ Tık&7 ile bir Ağ Nesnesini anında kır.'
 NTW_RECIPE_ENCODER:
+  description:
+  - '&7Girdi eşyalarından bir Üretim Planı'
+  - '&7oluşturmak için kullanılır.'
+  name: '&3Ağ Tarif Kodlayıcısı'
+  stats:
+  - '&7Ağ Tüketimi: &e20000&7/kodlama'
   type:
   - '&7&oMakine'
 NTW_REMOTE:
+  description:
+  - '&7Bağlı bir ızgarayı kablosuz açar.'
+  - '&7Izgaranın bulunduğu bölüm yüklü olmalı.'
+  name: '&5Ağ Kumandası'
+  stats:
+  - '&7Menzil: &e150'
   type:
   - '&7&oAlet'
 NTW_REMOTE_EMPOWERED:
+  description:
+  - '&7Bağlı bir ızgarayı kablosuz açar.'
+  - '&7Izgaranın bulunduğu bölüm yüklü olmalı.'
+  name: '&5Ağ Kumandası Güçlendirilmiş'
+  stats:
+  - '&7Menzil: &e500'
   type:
   - '&7&oAlet'
 NTW_REMOTE_PRISTINE:
+  description:
+  - '&7Bağlı bir ızgarayı kablosuz açar.'
+  - '&7Izgaranın bulunduğu bölüm yüklü olmalı.'
+  name: '&5Ağ Kumandası Kusursuz'
+  stats:
+  - '&7Menzil: &eSınırsız'
   type:
   - '&7&oAlet'
 NTW_REMOTE_ULTIMATE:
+  description:
+  - '&7Bağlı bir ızgarayı kablosuz açar.'
+  - '&7Izgaranın bulunduğu bölüm yüklü olmalı.'
+  name: '&5Ağ Kumandası Nihai'
+  stats:
+  - '&7Menzil: &eBoyutlar Arası'
   type:
   - '&7&oAlet'
 NTW_SHRINKING_BASE:
+  name: '&bKüçültme Tabanı'
   type:
   - '&7&oBileşen'
 NTW_SIMPLE_NANOBOTS:
+  name: '&bBasit Nanobotlar'
   type:
   - '&7&oBileşen'
 NTW_SYNTHETIC_EMERALD_SHARD:
+  name: '&bSentetik Zümrüt Parçası'
   type:
   - '&7&oBileşen'
 NTW_TRASH:
+  description:
+  - '&7Ağ Temizleyicisi, eşleşen eşyaları'
+  - '&7ağdan çeker ve'
+  - '&7anında yok eder.'
+  - '&7Çok dikkatli kullan!'
+  name: '&3Ağ Temizleyicisi'
   type:
   - '&7&oMakine'
 NTW_VACUUM:
+  description:
+  - '&7Ağ Süpürgesi, çevresindeki'
+  - '&7eşyaları kendi içine çeker;'
+  - '&7menzili kendi merkezli 4 x 4 kadardır.'
+  - '&7Çekilen eşyalar Ağın içine'
+  - '&7itilmeye çalışılır.'
+  name: '&3Ağ Süpürgesi'
+  stats:
+  - '&7Ağ Tüketimi: &e100&7/tik'
   type:
   - '&7&oMakine'
 NTW_VANILLA_GRABBER:
+  description:
+  - '&7Ağ Vanilla Tutucusu şuradan ilk'
+  - '&7alınabilecek eşyayı almaya çalışır:'
+  - '&7seçilen vanilla envanteri.'
+  - '&7Bu düğümden eşyaları bir Tutucu'
+  - '&7kullanarak almalısın.'
+  name: '&3Ağ Vanilla Tutucusu'
   type:
   - '&7&oMakine'
 NTW_VANILLA_PUSHER:
+  description:
+  - '&7Ağ Vanilla İticisi, içindeki her eşyayı'
+  - '&7şuraya itmeye çalışır:'
+  - '&7seçilen vanilla envanteri.'
+  - '&7Bu düğüme eşyaları bir İticiyle'
+  - '&7itmelisin.'
+  name: '&3Ağ Vanilla İticisi'
   type:
   - '&7&oMakine'
 NTW_WIRELESS_CONFIGURATOR:
+  description:
+  - '&7Bir Alıcı konumunu saklayıp sonra'
+  - '&7bir Vericiye uygulamak için kullanılır.'
+  name: '&5Ağ Kablosuz Yapılandırıcısı'
   type:
   - '&7&oAlet'
+  usage:
+  - '&eSağ Tık&7: Alıcı Konumunu Sakla'
+  - '&eShift Sağ Tık&7: Konumu Vericiye Ata'
