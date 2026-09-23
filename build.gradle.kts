@@ -7,7 +7,7 @@ plugins {
 group = "io.github.sefiraat"
 description = "Networks is a Slimefun addon that brings item storage and transportation networks."
 
-apply(from = "https://raw.githubusercontent.com/Slimefun5/gradle/stable/slimefun-addon.gradle")
+apply(from = "https://raw.githubusercontent.com/Slimefun5/gradle/main/slimefun-addon.gradle")
 
 repositories {
     maven("https://nexus.neetgames.com/repository/maven-public/")
