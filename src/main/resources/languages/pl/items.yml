@@ -7,94 +7,229 @@ NTW_AI_CORE:
   type:
   - '&7&oKomponent'
 NTW_AUTO_CRAFTER:
+  description:
+  - '&7Sieciowy automatyczny wytwórca przyjmuje'
+  - '&7plan rzemieślniczy. Gdy przedmiot'
+  - '&7wyjściowy planu zostanie zamówiony,'
+  - '&7a w sieci go nie ma,'
+  - '&7zostanie wytworzony, jeśli masz'
+  - '&7materiały.'
   name: '&3Automatyczny Krafter Sieciowy'
+  stats:
+  - '&7Zużycie sieci: &e64&7/wytworzenie'
   type:
   - '&7&oMaszyna'
 NTW_AUTO_CRAFTER_WITHHOLDING:
+  description:
+  - '&7Sieciowy automatyczny wytwórca przyjmuje'
+  - '&7plan rzemieślniczy. Gdy przedmiot'
+  - '&7wyjściowy planu zostanie zamówiony,'
+  - '&7a w sieci go nie ma,'
+  - '&7zostanie wytworzony, jeśli masz'
+  - '&7materiały.'
+  - '&7Wstrzymujący wytwórca zatrzyma'
+  - '&7stos na wyjściu i przerwie'
+  - '&7wytwarzanie. Stos jest widoczny'
+  - '&7w Sieci i pozwala też na'
+  - '&7cargo.'
   name: '&3Automatyczny Krafter Sieciowy (Wstrzymujący)'
+  stats:
+  - '&7Zużycie sieci: &e128&7/wytworzenie'
   type:
   - '&7&oMaszyna'
 NTW_BEST_PUSHER:
+  description:
+  - '&7Sieciowy zaawansowany popychacz spróbuje'
+  - '&7wepchnąć pasujące przedmioty z maksymalnie'
+  - '&7dwunastu zadanych wzorców do'
+  - '&7wybranej maszyny.'
+  name: '&3Sieciowy zaawansowany popychacz'
   type:
   - '&7&oMaszyna'
 NTW_BRIDGE:
+  description:
+  - '&7Mostek pozwala tanio'
+  - '&7łączyć obiekty sieci ze sobą.'
   name: '&3Most Sieciowy'
   type:
   - '&7&oMaszyna'
 NTW_CAPACITOR_1:
+  description:
+  - '&7Kondensator sieciowy może przyjmować'
+  - '&7moc i magazynować ją do użytku'
+  - '&7w sieci.'
   name: '&3Kondensator Sieciowy (1)'
+  stats:
+  - '&7Pojemność: &e1000'
   type:
   - '&7&oMaszyna'
 NTW_CAPACITOR_2:
+  description:
+  - '&7Kondensator sieciowy może przyjmować'
+  - '&7moc i magazynować ją do użytku'
+  - '&7w sieci.'
   name: '&3Kondensator Sieciowy (2)'
+  stats:
+  - '&7Pojemność: &e10000'
   type:
   - '&7&oMaszyna'
 NTW_CAPACITOR_3:
+  description:
+  - '&7Kondensator sieciowy może przyjmować'
+  - '&7moc i magazynować ją do użytku'
+  - '&7w sieci.'
   name: '&3Kondensator Sieciowy (3)'
+  stats:
+  - '&7Pojemność: &e100000'
   type:
   - '&7&oMaszyna'
 NTW_CAPACITOR_4:
+  description:
+  - '&7Kondensator sieciowy może przyjmować'
+  - '&7moc i magazynować ją do użytku'
+  - '&7w sieci.'
   name: '&3Kondensator Sieciowy (4)'
+  stats:
+  - '&7Pojemność: &e1000000'
   type:
   - '&7&oMaszyna'
 NTW_CELL:
+  description:
+  - '&7Ogniwo sieciowe to duży'
+  - '&7ekwipunek (podwójna skrzynia), do którego'
+  - '&7można sięgnąć zarówno z sieci,'
+  - '&7jak i w świecie.'
   name: '&3Komórka Sieciowa'
   type:
   - '&7&oMaszyna'
 NTW_CONFIGURATOR:
+  description:
+  - '&7Służy do kopiowania i wklejania'
+  - '&7ustawień interfejsów'
+  - '&7kierunkowych.'
   name: '&5Konfigurator Sieciowy'
   type:
   - '&7&oNarzędzie'
+  usage:
+  - '&eKliknij prawym&7: zastosuj konfigurację'
+  - '&eShift i kliknij prawym&7: zapisz konfigurację'
 NTW_CONTROLLER:
+  description:
+  - '&7Kontroler sieciowy to mózg'
+  - '&7całej sieci.'
   name: '&3Kontroler Sieci'
+  stats:
+  - '&7Limit: &eMaks. 1&7 na sieć'
   type:
   - '&7&oMaszyna'
 NTW_CONTROL_V:
+  description:
+  - '&7Sterowanie sieciowe: V spróbuje'
+  - '&7"wkleić" blok z Sieci'
+  - '&7do świata.'
+  - '&7Działa tylko z blokami vanilla.'
   name: '&3Sterowanie Sieci: V'
+  stats:
+  - '&7Zużycie sieci: &e100&7/wklejenie'
   type:
   - '&7&oMaszyna'
 NTW_CONTROL_X:
+  description:
+  - '&7Sterowanie sieciowe: X spróbuje'
+  - '&7"wyciąć" blok ze świata'
+  - '&7i umieścić go w Sieci.'
+  - '&7Działa tylko na blokach vanilla bez'
+  - '&7ekwipunku.'
   name: '&3Sterowanie Sieci: X'
+  stats:
+  - '&7Zużycie sieci: &e100&7/cięcie'
   type:
   - '&7&oMaszyna'
 NTW_CRAFTING_BLUEPRINT:
+  description:
+  - '&7Pusty plan, który można'
+  - '&7wykorzystać do zapisania przepisu'
+  - '&7rzemieślniczego.'
   name: '&5Schemat Tworzenia'
   type:
   - '&7&oNarzędzie'
 NTW_CRAFTING_GRID:
+  description:
+  - '&7Rzemieślnicza siatka sieciowa działa'
+  - '&7jak zwykła siatka, lecz pokazuje mniej'
+  - '&7przedmiotów, za to pozwala wytwarzać z przedmiotów'
+  - '&7prosto z sieci.'
   name: '&3Siatka Tworzenia Sieciowa'
   type:
   - '&7&oMaszyna'
 NTW_CRAYON:
+  description:
+  - '&7Przełącza ogólnosieciowy podgląd cząsteczek'
+  - '&7diagnostycznych, pokazujący pracę węzłów'
+  - '&7na żywo.'
   name: '&5Kredka Sieciowa'
   type:
   - '&7&oNarzędzie'
+  usage:
+  - '&eKliknij prawym&7 kontroler sieciowy, aby przełączyć podgląd cząsteczek.'
 NTW_DEBUG_STICK:
+  description:
+  - '&7Narzędzie diagnostyczne tylko dla operatorów,'
+  - '&7służące do badania działania bloków sieci.'
   name: '&5Patyk Debugowania Sieciowy'
   type:
   - '&7&oNarzędzie'
+  usage:
+  - '&eKliknij prawym&7 obiekt sieci, aby włączyć diagnostykę.'
 NTW_EMPOWERED_AI_CORE:
   name: '&bWzmocniony Rdzeń S.I.'
   type:
   - '&7&oKomponent'
 NTW_EXPORT:
+  description:
+  - '&7Eksporter sieciowy można ustawić tak,'
+  - '&7by stale eksportował 1 stos dowolnego'
+  - '&7wskazanego przedmiotu.'
+  - '&7Pozwala cargo pobierać przedmioty.'
   name: '&3Eksporter Sieciowy'
   type:
   - '&7&oMaszyna'
 NTW_GRABBER:
+  description:
+  - '&7Chwytak sieciowy spróbuje'
+  - '&7chwycić pierwszy znaleziony przedmiot'
+  - '&7z wnętrza wybranej maszyny.'
   name: '&3Chwytak Sieciowy'
   type:
   - '&7&oMaszyna'
 NTW_GREEDY_BLOCK:
+  description:
+  - '&7Zachłanny blok sieciowy można'
+  - '&7ustawić na jeden przedmiot, którego'
+  - '&7będzie potem zachłannie trzymał jeden'
+  - '&7stos. Jeśli kolejne przedmioty'
+  - '&7się nie zmieszczą, nie trafią do'
+  - '&7sieci.'
   name: '&3Chciwy Blok Sieciowy'
   type:
   - '&7&oMaszyna'
 NTW_GRID:
+  description:
+  - '&7Siatka sieciowa pokazuje wszystkie'
+  - '&7przedmioty, które masz w sieci,'
+  - '&7i pozwala je wkładać lub wyjmować'
+  - '&7bezpośrednio.'
   name: '&3Siatka Sieciowa'
   type:
   - '&7&oMaszyna'
 NTW_IMPORT:
+  description:
+  - '&7Importer sieciowy wprowadza każdy'
+  - '&7przedmiot z jego wnętrza do sieci.'
+  - '&7Przyjmuje przedmioty z cargo.'
   name: '&3Importer Sieciowy'
+  stats:
+  - '&7Tempo importu: &eDo 9 stosów&7/tick'
   type:
   - '&7&oMaszyna'
 NTW_INTERDIMENSIONAL_PRESENCE:
@@ -102,15 +237,38 @@ NTW_INTERDIMENSIONAL_PRESENCE:
   type:
   - '&7&oKomponent'
 NTW_MONITOR:
+  description:
+  - '&7Monitor sieciowy umożliwia prosty'
+  - '&7import i eksport w kontakcie z sąsiednimi'
+  - '&7obiektami.'
+  - '&7Obecnie obsługuje:'
+  - '&7Nieskończone beczki'
+  - '&7Powłoki sieci'
   name: '&3Monitor Sieci'
   type:
   - '&7&oMaszyna'
 NTW_NETWORK_WIRELESS_RECEIVER:
+  description:
+  - '&7Sieciowy odbiornik bezprzewodowy potrafi'
+  - '&7odbierać przedmioty z połączonego'
+  - '&7nadajnika bezprzewodowego znajdującego się w'
+  - '&7tym samym świecie.'
+  - '&7Odebrane przedmioty spróbuje wepchnąć'
+  - '&7do Sieci w każdym ticku.'
   name: '&3Bezprzewodowy Odbiornik Sieciowy'
   type:
   - '&7&oMaszyna'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
+  description:
+  - '&7Sieciowy nadajnik bezprzewodowy'
+  - '&7spróbuje przesłać każdy przedmiot ze swego wnętrza'
+  - '&7do połączonego sieciowego odbiornika bezprzewodowego'
+  - '&7znajdującego się w tym samym świecie.'
+  - '&7Użyj Konfiguratora bezprzewodowego, aby'
+  - '&7skonfigurować nadajnik bezprzewodowy.'
   name: '&3Bezprzewodowy Nadajnik Sieciowy'
+  stats:
+  - '&7Wymaga 500 mocy sieci na każdy przesył.'
   type:
   - '&7&oMaszyna'
 NTW_OPTIC_CABLE:
@@ -126,15 +284,35 @@ NTW_OPTIC_STAR:
   type:
   - '&7&oKomponent'
 NTW_POWER_DISPLAY:
+  description:
+  - '&7Sieciowy wyświetlacz mocy pokaże'
+  - '&7ilość mocy w sieci.'
+  - '&7Proste, prawda?'
   name: '&3Wyświetlacz Energii Sieciowy'
   type:
   - '&7&oMaszyna'
 NTW_POWER_OUTLET_1:
+  description:
+  - '&7Kondensator sieciowy może przyjmować'
+  - '&7moc z Sieci, aby zasilać'
+  - '&7maszyny albo oddawać ją z powrotem do'
+  - '&7sieci EnergyNet.'
   name: '&3Gniazdo Zasilania Sieciowe (1)'
+  stats:
+  - '&7Działa ze stratą na poziomie 20%.'
+  - '&7Maks. przesył: &e500'
   type:
   - '&7&oMaszyna'
 NTW_POWER_OUTLET_2:
+  description:
+  - '&7Kondensator sieciowy może przyjmować'
+  - '&7moc z Sieci, aby zasilać'
+  - '&7maszyny albo oddawać ją z powrotem do'
+  - '&7sieci EnergyNet.'
   name: '&3Gniazdo Zasilania Sieciowe (2)'
+  stats:
+  - '&7Działa ze stratą na poziomie 20%.'
+  - '&7Maks. przesył: &e2000'
   type:
   - '&7&oMaszyna'
 NTW_PRISTINE_AI_CORE:
@@ -142,46 +320,98 @@ NTW_PRISTINE_AI_CORE:
   type:
   - '&7&oKomponent'
 NTW_PROBE:
+  description:
+  - '&7Ujawnia podsumowanie Sieci,'
+  - '&7w tym jej moc, liczbę przedmiotów'
+  - '&7i sumę węzłów.'
   name: '&5Sonda Sieciowa'
   type:
   - '&7&oNarzędzie'
+  usage:
+  - '&eKliknij prawym&7 kontroler sieciowy, aby zobaczyć podsumowanie.'
 NTW_PUSHER:
+  description:
+  - '&7Popychacz sieciowy spróbuje'
+  - '&7wepchnąć przedmiot pasujący do'
+  - '&7wzorca do wybranej maszyny.'
   name: '&3Popychacz Sieciowy'
   type:
   - '&7&oMaszyna'
 NTW_QUANTUM_STORAGE_1:
+  description:
+  - '&7Przechowuje przedmioty w masowych ilościach w'
+  - '&7kwantowej osobliwości.'
   name: '&3Magazyn Kwantowy Sieciowy (4K)'
+  stats:
+  - '&7Przechowuje &e4096&7 przedmiotów'
   type:
   - '&7&oMaszyna'
 NTW_QUANTUM_STORAGE_2:
+  description:
+  - '&7Przechowuje przedmioty w masowych ilościach w'
+  - '&7kwantowej osobliwości.'
   name: '&3Magazyn Kwantowy Sieciowy (32K)'
+  stats:
+  - '&7Przechowuje &e32768&7 przedmiotów'
   type:
   - '&7&oMaszyna'
 NTW_QUANTUM_STORAGE_3:
+  description:
+  - '&7Przechowuje przedmioty w masowych ilościach w'
+  - '&7kwantowej osobliwości.'
   name: '&3Magazyn Kwantowy Sieciowy (262K)'
+  stats:
+  - '&7Przechowuje &e262144&7 przedmiotów'
   type:
   - '&7&oMaszyna'
 NTW_QUANTUM_STORAGE_4:
+  description:
+  - '&7Przechowuje przedmioty w masowych ilościach w'
+  - '&7kwantowej osobliwości.'
   name: '&3Magazyn Kwantowy Sieciowy (2M)'
+  stats:
+  - '&7Przechowuje &e2097152&7 przedmiotów'
   type:
   - '&7&oMaszyna'
 NTW_QUANTUM_STORAGE_5:
+  description:
+  - '&7Przechowuje przedmioty w masowych ilościach w'
+  - '&7kwantowej osobliwości.'
   name: '&3Magazyn Kwantowy Sieciowy (16M)'
+  stats:
+  - '&7Przechowuje &e16777216&7 przedmiotów'
   type:
   - '&7&oMaszyna'
 NTW_QUANTUM_STORAGE_6:
+  description:
+  - '&7Przechowuje przedmioty w masowych ilościach w'
+  - '&7kwantowej osobliwości.'
   name: '&3Magazyn Kwantowy Sieciowy (134M)'
+  stats:
+  - '&7Przechowuje &e134217728&7 przedmiotów'
   type:
   - '&7&oMaszyna'
 NTW_QUANTUM_STORAGE_7:
+  description:
+  - '&7Przechowuje przedmioty w masowych ilościach w'
+  - '&7kwantowej osobliwości.'
   name: '&3Magazyn Kwantowy Sieciowy (1B)'
+  stats:
+  - '&7Przechowuje &e1073741824&7 przedmiotów'
   type:
   - '&7&oMaszyna'
 NTW_QUANTUM_STORAGE_8:
+  description:
+  - '&7Przechowuje przedmioty w masowych ilościach w'
+  - '&7kwantowej osobliwości.'
   name: '&3Magazyn Kwantowy Sieciowy (∞)'
+  stats:
+  - '&7Przechowuje &e∞&7 przedmiotów... prawie'
   type:
   - '&7&oMaszyna'
 NTW_QUANTUM_WORKBENCH:
+  description:
+  - '&7Pozwala wytwarzać magazyny kwantowe.'
   name: '&3Stół Kwantowy Sieciowy'
   type:
   - '&7&oMaszyna'
@@ -190,35 +420,81 @@ NTW_RADIOACTIVE_OPTIC_STAR:
   type:
   - '&7&oKomponent'
 NTW_RAKE_1:
+  description:
+  - '&7Podręczne narzędzie do szybkiego demontażu'
+  - '&7obiektów sieci bez użycia maszyn.'
   name: '&5Grabie Sieciowe (1)'
+  stats:
+  - '&e250 użyć &7pozostało'
   type:
   - '&7&oNarzędzie'
+  usage:
+  - '&eKliknij prawym&7 obiekt sieci, aby natychmiast go rozbić.'
 NTW_RAKE_2:
+  description:
+  - '&7Podręczne narzędzie do szybkiego demontażu'
+  - '&7obiektów sieci bez użycia maszyn.'
   name: '&5Grabie Sieciowe (2)'
+  stats:
+  - '&e1000 użyć &7pozostało'
   type:
   - '&7&oNarzędzie'
+  usage:
+  - '&eKliknij prawym&7 obiekt sieci, aby natychmiast go rozbić.'
 NTW_RAKE_3:
+  description:
+  - '&7Podręczne narzędzie do szybkiego demontażu'
+  - '&7obiektów sieci bez użycia maszyn.'
   name: '&5Grabie Sieciowe (3)'
+  stats:
+  - '&e9999 użyć &7pozostało'
   type:
   - '&7&oNarzędzie'
+  usage:
+  - '&eKliknij prawym&7 obiekt sieci, aby natychmiast go rozbić.'
 NTW_RECIPE_ENCODER:
+  description:
+  - '&7Służy do utworzenia Planu rzemieślniczego'
+  - '&7z włożonych przedmiotów.'
   name: '&3Koder Receptur Sieciowy'
+  stats:
+  - '&7Zużycie sieci: &e20000&7/zapis'
   type:
   - '&7&oMaszyna'
 NTW_REMOTE:
+  description:
+  - '&7Otwiera powiązaną siatkę bezprzewodowo.'
+  - '&7Chunk z siatką musi być wczytany.'
   name: '&5Pilot Sieciowy'
+  stats:
+  - '&7Zasięg: &e150'
   type:
   - '&7&oNarzędzie'
 NTW_REMOTE_EMPOWERED:
+  description:
+  - '&7Otwiera powiązaną siatkę bezprzewodowo.'
+  - '&7Chunk z siatką musi być wczytany.'
   name: '&5Wzmocniony Pilot Sieciowy'
+  stats:
+  - '&7Zasięg: &e500'
   type:
   - '&7&oNarzędzie'
 NTW_REMOTE_PRISTINE:
+  description:
+  - '&7Otwiera powiązaną siatkę bezprzewodowo.'
+  - '&7Chunk z siatką musi być wczytany.'
   name: '&5Nieskazitelny Pilot Sieciowy'
+  stats:
+  - '&7Zasięg: &eNieograniczony'
   type:
   - '&7&oNarzędzie'
 NTW_REMOTE_ULTIMATE:
+  description:
+  - '&7Otwiera powiązaną siatkę bezprzewodowo.'
+  - '&7Chunk z siatką musi być wczytany.'
   name: '&5Ostateczny Pilot Sieciowy'
+  stats:
+  - '&7Zasięg: &eMiędzywymiarowy'
   type:
   - '&7&oNarzędzie'
 NTW_SHRINKING_BASE:
@@ -234,22 +510,53 @@ NTW_SYNTHETIC_EMERALD_SHARD:
   type:
   - '&7&oKomponent'
 NTW_TRASH:
+  description:
+  - '&7Czyściciel sieciowy wyciągnie'
+  - '&7pasujące przedmioty z sieci'
+  - '&7i natychmiast je unicestwi.'
+  - '&7Używaj z wielką ostrożnością!'
   name: '&3Niszczarka Sieciowa'
   type:
   - '&7&oMaszyna'
 NTW_VACUUM:
+  description:
+  - '&7Odkurzacz sieciowy wciąga'
+  - '&7przedmioty do siebie w'
+  - '&7zasięgu 4 x 4 wokół siebie.'
+  - '&7Zassane przedmioty spróbują trafić'
+  - '&7do Sieci.'
   name: '&3Odkurzacz Sieciowy'
+  stats:
+  - '&7Zużycie sieci: &e100&7/tick'
   type:
   - '&7&oMaszyna'
 NTW_VANILLA_GRABBER:
+  description:
+  - '&7Sieciowy chwytak vanilla spróbuje'
+  - '&7chwycić pierwszy możliwy przedmiot z'
+  - '&7wybranego ekwipunku vanilla.'
+  - '&7Przedmioty z tego węzła musisz'
+  - '&7pobierać Chwytakiem.'
   name: '&3Chwytak Sieciowy Vanilla'
   type:
   - '&7&oMaszyna'
 NTW_VANILLA_PUSHER:
+  description:
+  - '&7Sieciowy popychacz vanilla spróbuje'
+  - '&7wepchnąć każdy przedmiot ze swego wnętrza do'
+  - '&7wybranego ekwipunku vanilla.'
+  - '&7Przedmioty do tego węzła musisz'
+  - '&7wpychać Popychaczem.'
   name: '&3Popychacz Sieciowy Vanilla'
   type:
   - '&7&oMaszyna'
 NTW_WIRELESS_CONFIGURATOR:
+  description:
+  - '&7Służy do zapisania pozycji odbiornika'
+  - '&7i przypisania jej do nadajnika.'
   name: '&5Bezprzewodowy Konfigurator Sieciowy'
   type:
   - '&7&oNarzędzie'
+  usage:
+  - '&eKliknij prawym&7: zapisz pozycję odbiornika'
+  - '&eShift i kliknij prawym&7: przypisz pozycję nadajnikowi'
