@@ -7,94 +7,229 @@ NTW_AI_CORE:
   type:
   - '&7&oComposant'
 NTW_AUTO_CRAFTER:
+  description:
+  - '&7Le Fabricateur auto de réseau accepte'
+  - '&7un plan de fabrication. Quand'
+  - '&7l''objet produit par le plan est demandé'
+  - '&7alors qu''il n''y en a aucun dans le réseau'
+  - '&7il sera fabriqué si vous avez les'
+  - '&7matériaux.'
   name: '&3Auto-Fabricateur de Réseau'
+  stats:
+  - '&7Consommation du réseau : &e64&7/fabrication'
   type:
   - '&7&oMachine'
 NTW_AUTO_CRAFTER_WITHHOLDING:
+  description:
+  - '&7Le Fabricateur auto de réseau accepte'
+  - '&7un plan de fabrication. Quand'
+  - '&7l''objet produit par le plan est demandé'
+  - '&7alors qu''il n''y en a aucun dans le réseau'
+  - '&7il sera fabriqué si vous avez les'
+  - '&7matériaux.'
+  - '&7Un Fabricateur de rétention gardera'
+  - '&7une pile en sortie et arrêtera'
+  - '&7de fabriquer. La pile est visible'
+  - '&7dans le Réseau et permet aussi le'
+  - '&7cargo.'
   name: '&3Auto-Fabricateur de Réseau (Rétention)'
+  stats:
+  - '&7Consommation du réseau : &e128&7/fabrication'
   type:
   - '&7&oMachine'
 NTW_BEST_PUSHER:
+  description:
+  - '&7Le Pousseur avancé de réseau essaiera'
+  - '&7de pousser les objets correspondant à'
+  - '&7jusqu''à douze modèles donnés dans la'
+  - '&7machine choisie.'
+  name: '&3Pousseur avancé de réseau'
   type:
   - '&7&oMachine'
 NTW_BRIDGE:
+  description:
+  - '&7Le Pont vous permet de relier'
+  - '&7les objets du réseau à moindre coût.'
   name: '&3Pont de Réseau'
   type:
   - '&7&oMachine'
 NTW_CAPACITOR_1:
+  description:
+  - '&7Le Condensateur de réseau peut absorber'
+  - '&7l''énergie et la stocker pour l''utiliser'
+  - '&7dans le réseau.'
   name: '&3Condensateur de Réseau (1)'
+  stats:
+  - '&7Capacité : &e1000'
   type:
   - '&7&oMachine'
 NTW_CAPACITOR_2:
+  description:
+  - '&7Le Condensateur de réseau peut absorber'
+  - '&7l''énergie et la stocker pour l''utiliser'
+  - '&7dans le réseau.'
   name: '&3Condensateur de Réseau (2)'
+  stats:
+  - '&7Capacité : &e10000'
   type:
   - '&7&oMachine'
 NTW_CAPACITOR_3:
+  description:
+  - '&7Le Condensateur de réseau peut absorber'
+  - '&7l''énergie et la stocker pour l''utiliser'
+  - '&7dans le réseau.'
   name: '&3Condensateur de Réseau (3)'
+  stats:
+  - '&7Capacité : &e100000'
   type:
   - '&7&oMachine'
 NTW_CAPACITOR_4:
+  description:
+  - '&7Le Condensateur de réseau peut absorber'
+  - '&7l''énergie et la stocker pour l''utiliser'
+  - '&7dans le réseau.'
   name: '&3Condensateur de Réseau (4)'
+  stats:
+  - '&7Capacité : &e1000000'
   type:
   - '&7&oMachine'
 NTW_CELL:
+  description:
+  - '&7La Cellule de réseau est un grand'
+  - '&7inventaire (double coffre) accessible'
+  - '&7à la fois depuis le réseau'
+  - '&7et dans le monde.'
   name: '&3Cellule de Réseau'
   type:
   - '&7&oMachine'
 NTW_CONFIGURATOR:
+  description:
+  - '&7Utilisé pour copier et coller les'
+  - '&7configurations des interfaces'
+  - '&7directionnelles.'
   name: '&5Configurateur de Réseau'
   type:
   - '&7&oOutil'
+  usage:
+  - '&eClic droit&7 : Appliquer la config'
+  - '&eShift + Clic droit&7 : Enregistrer la config'
 NTW_CONTROLLER:
+  description:
+  - '&7Le Contrôleur de réseau est le cerveau'
+  - '&7de tout le réseau.'
   name: '&3Contrôleur de Réseau'
+  stats:
+  - '&7Limite : &eMax 1&7 par réseau'
   type:
   - '&7&oMachine'
 NTW_CONTROL_V:
+  description:
+  - '&7Le Contrôle de réseau : V essaiera'
+  - '&7de "coller" un bloc du Réseau'
+  - '&7dans le monde.'
+  - '&7Ne fonctionne qu''avec les blocs vanilla.'
   name: '&3Contrôle de Réseau : V'
+  stats:
+  - '&7Consommation du réseau : &e100&7/collage'
   type:
   - '&7&oMachine'
 NTW_CONTROL_X:
+  description:
+  - '&7Le Contrôle de réseau : X essaiera'
+  - '&7de "couper" un bloc du monde'
+  - '&7et de le mettre dans le Réseau.'
+  - '&7Ne fonctionne que sur les blocs vanilla sans'
+  - '&7inventaire.'
   name: '&3Contrôle de Réseau : X'
+  stats:
+  - '&7Consommation du réseau : &e100&7/coupe'
   type:
   - '&7&oMachine'
 NTW_CRAFTING_BLUEPRINT:
+  description:
+  - '&7Un plan vierge qui peut'
+  - '&7servir à enregistrer une recette'
+  - '&7de fabrication.'
   name: '&5Plan de Fabrication'
   type:
   - '&7&oOutil'
 NTW_CRAFTING_GRID:
+  description:
+  - '&7La Grille de fabrication de réseau agit'
+  - '&7comme une grille normale mais affiche moins'
+  - '&7d''objets tout en permettant de fabriquer avec les objets'
+  - '&7directement issus du réseau.'
   name: '&3Grille de Fabrication de Réseau'
   type:
   - '&7&oMachine'
 NTW_CRAYON:
+  description:
+  - '&7Active ou désactive un affichage de particules'
+  - '&7de débogage sur tout le réseau, montrant l''activité'
+  - '&7des nœuds en fonctionnement.'
   name: '&5Crayon de Réseau'
   type:
   - '&7&oOutil'
+  usage:
+  - '&eClic droit&7 sur un Contrôleur de réseau pour basculer l''affichage des particules.'
 NTW_DEBUG_STICK:
+  description:
+  - '&7Un outil de diagnostic réservé aux opérateurs,'
+  - '&7servant à déboguer le comportement des blocs de réseau.'
   name: '&5Bâton de Débogage de Réseau'
   type:
   - '&7&oOutil'
+  usage:
+  - '&eClic droit&7 sur un Objet de réseau pour activer le débogage.'
 NTW_EMPOWERED_AI_CORE:
   name: '&bNoyau d''I.A. Renforcé'
   type:
   - '&7&oComposant'
 NTW_EXPORT:
+  description:
+  - '&7L''Exportateur de réseau peut être réglé'
+  - '&7pour exporter sans cesse 1 pile de'
+  - '&7n''importe quel objet donné.'
+  - '&7Accepte le retrait d''objets par le cargo.'
   name: '&3Exportateur de Réseau'
   type:
   - '&7&oMachine'
 NTW_GRABBER:
+  description:
+  - '&7Le Saisisseur de réseau essaiera'
+  - '&7de saisir le premier objet qu''il trouve'
+  - '&7dans la machine sélectionnée.'
   name: '&3Préhenseur de Réseau'
   type:
   - '&7&oMachine'
 NTW_GREEDY_BLOCK:
+  description:
+  - '&7Le Bloc avide de réseau peut'
+  - '&7être réglé sur un objet dont il'
+  - '&7gardera avidement une seule'
+  - '&7pile. Si d''autres objets entrants'
+  - '&7ne tiennent pas, ils n''entreront pas'
+  - '&7dans le réseau.'
   name: '&3Bloc Avide de Réseau'
   type:
   - '&7&oMachine'
 NTW_GRID:
+  description:
+  - '&7La Grille de réseau vous montre tous'
+  - '&7les objets que vous avez dans le réseau'
+  - '&7et vous laisse insérer ou retirer'
+  - '&7directement.'
   name: '&3Grille de Réseau'
   type:
   - '&7&oMachine'
 NTW_IMPORT:
+  description:
+  - '&7L''Importateur de réseau amène tout'
+  - '&7objet placé en lui dans le réseau.'
+  - '&7Accepte les objets venant du cargo.'
   name: '&3Importateur de Réseau'
+  stats:
+  - '&7Taux d''importation : &eJusqu''à 9 piles&7/tick'
   type:
   - '&7&oMachine'
 NTW_INTERDIMENSIONAL_PRESENCE:
@@ -102,15 +237,38 @@ NTW_INTERDIMENSIONAL_PRESENCE:
   type:
   - '&7&oComposant'
 NTW_MONITOR:
+  description:
+  - '&7Le Moniteur de réseau permet une simple'
+  - '&7interaction d''import/export avec les objets'
+  - '&7adjacents.'
+  - '&7Actuellement pris en charge :'
+  - '&7Tonneaux infinis'
+  - '&7Coques de réseau'
   name: '&3Moniteur de Réseau'
   type:
   - '&7&oMachine'
 NTW_NETWORK_WIRELESS_RECEIVER:
+  description:
+  - '&7Le Récepteur sans fil de réseau est'
+  - '&7capable de recevoir des objets d''un'
+  - '&7émetteur sans fil lié situé dans'
+  - '&7le même monde.'
+  - '&7Il essaiera de pousser les objets reçus'
+  - '&7dans le Réseau à chaque tick.'
   name: '&3Récepteur Sans Fil de Réseau'
   type:
   - '&7&oMachine'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
+  description:
+  - '&7L''Émetteur sans fil de réseau'
+  - '&7essaiera de transmettre tout objet en lui'
+  - '&7vers un Récepteur sans fil de réseau lié'
+  - '&7situé dans le même monde.'
+  - '&7Utilisez le Configurateur sans fil pour'
+  - '&7paramétrer l''Émetteur sans fil.'
   name: '&3Émetteur Sans Fil de Réseau'
+  stats:
+  - '&7Nécessite 500 d''énergie de réseau par transfert.'
   type:
   - '&7&oMachine'
 NTW_OPTIC_CABLE:
@@ -126,15 +284,35 @@ NTW_OPTIC_STAR:
   type:
   - '&7&oComposant'
 NTW_POWER_DISPLAY:
+  description:
+  - '&7L''Afficheur d''énergie du réseau'
+  - '&7affiche l''énergie présente dans le réseau.'
+  - '&7Simple, non ?'
   name: '&3Affichage d''Énergie de Réseau'
   type:
   - '&7&oMachine'
 NTW_POWER_OUTLET_1:
+  description:
+  - '&7Le Condensateur de réseau peut absorber'
+  - '&7l''énergie du Réseau pour alimenter'
+  - '&7des machines ou la renvoyer vers un'
+  - '&7réseau EnergyNet.'
   name: '&3Prise de Réseau (1)'
+  stats:
+  - '&7Fonctionne avec un taux de perte de 20%.'
+  - '&7Transfert max : &e500'
   type:
   - '&7&oMachine'
 NTW_POWER_OUTLET_2:
+  description:
+  - '&7Le Condensateur de réseau peut absorber'
+  - '&7l''énergie du Réseau pour alimenter'
+  - '&7des machines ou la renvoyer vers un'
+  - '&7réseau EnergyNet.'
   name: '&3Prise de Réseau (2)'
+  stats:
+  - '&7Fonctionne avec un taux de perte de 20%.'
+  - '&7Transfert max : &e2000'
   type:
   - '&7&oMachine'
 NTW_PRISTINE_AI_CORE:
@@ -142,46 +320,98 @@ NTW_PRISTINE_AI_CORE:
   type:
   - '&7&oComposant'
 NTW_PROBE:
+  description:
+  - '&7Révèle un résumé d''un Réseau,'
+  - '&7dont son énergie, le nombre d''objets'
+  - '&7et le total des nœuds.'
   name: '&5Sonde de Réseau'
   type:
   - '&7&oOutil'
+  usage:
+  - '&eClic droit&7 sur un Contrôleur de réseau pour voir le résumé.'
 NTW_PUSHER:
+  description:
+  - '&7Le Pousseur de réseau essaiera'
+  - '&7de pousser un objet correspondant à un'
+  - '&7objet donné dans la machine choisie.'
   name: '&3Pousseur de Réseau'
   type:
   - '&7&oMachine'
 NTW_QUANTUM_STORAGE_1:
+  description:
+  - '&7Stocke les objets en quantités massives dans'
+  - '&7une singularité quantique.'
   name: '&3Stockage Quantique de Réseau (4K)'
+  stats:
+  - '&7Stocke &e4096&7 objets'
   type:
   - '&7&oMachine'
 NTW_QUANTUM_STORAGE_2:
+  description:
+  - '&7Stocke les objets en quantités massives dans'
+  - '&7une singularité quantique.'
   name: '&3Stockage Quantique de Réseau (32K)'
+  stats:
+  - '&7Stocke &e32768&7 objets'
   type:
   - '&7&oMachine'
 NTW_QUANTUM_STORAGE_3:
+  description:
+  - '&7Stocke les objets en quantités massives dans'
+  - '&7une singularité quantique.'
   name: '&3Stockage Quantique de Réseau (262K)'
+  stats:
+  - '&7Stocke &e262144&7 objets'
   type:
   - '&7&oMachine'
 NTW_QUANTUM_STORAGE_4:
+  description:
+  - '&7Stocke les objets en quantités massives dans'
+  - '&7une singularité quantique.'
   name: '&3Stockage Quantique de Réseau (2M)'
+  stats:
+  - '&7Stocke &e2097152&7 objets'
   type:
   - '&7&oMachine'
 NTW_QUANTUM_STORAGE_5:
+  description:
+  - '&7Stocke les objets en quantités massives dans'
+  - '&7une singularité quantique.'
   name: '&3Stockage Quantique de Réseau (16M)'
+  stats:
+  - '&7Stocke &e16777216&7 objets'
   type:
   - '&7&oMachine'
 NTW_QUANTUM_STORAGE_6:
+  description:
+  - '&7Stocke les objets en quantités massives dans'
+  - '&7une singularité quantique.'
   name: '&3Stockage Quantique de Réseau (134M)'
+  stats:
+  - '&7Stocke &e134217728&7 objets'
   type:
   - '&7&oMachine'
 NTW_QUANTUM_STORAGE_7:
+  description:
+  - '&7Stocke les objets en quantités massives dans'
+  - '&7une singularité quantique.'
   name: '&3Stockage Quantique de Réseau (1B)'
+  stats:
+  - '&7Stocke &e1073741824&7 objets'
   type:
   - '&7&oMachine'
 NTW_QUANTUM_STORAGE_8:
+  description:
+  - '&7Stocke les objets en quantités massives dans'
+  - '&7une singularité quantique.'
   name: '&3Stockage Quantique de Réseau (∞)'
+  stats:
+  - '&7Stocke &e∞&7 objets... presque'
   type:
   - '&7&oMachine'
 NTW_QUANTUM_WORKBENCH:
+  description:
+  - '&7Permet de fabriquer des Stockages quantiques.'
   name: '&3Établi Quantique de Réseau'
   type:
   - '&7&oMachine'
@@ -190,35 +420,81 @@ NTW_RADIOACTIVE_OPTIC_STAR:
   type:
   - '&7&oComposant'
 NTW_RAKE_1:
+  description:
+  - '&7Un outil portatif pour démonter rapidement'
+  - '&7les Objets de réseau sans machinerie.'
   name: '&5Râteau de Réseau (1)'
+  stats:
+  - '&e250 utilisations &7restantes'
   type:
   - '&7&oOutil'
+  usage:
+  - '&eClic droit&7 sur un Objet de réseau pour le casser instantanément.'
 NTW_RAKE_2:
+  description:
+  - '&7Un outil portatif pour démonter rapidement'
+  - '&7les Objets de réseau sans machinerie.'
   name: '&5Râteau de Réseau (2)'
+  stats:
+  - '&e1000 utilisations &7restantes'
   type:
   - '&7&oOutil'
+  usage:
+  - '&eClic droit&7 sur un Objet de réseau pour le casser instantanément.'
 NTW_RAKE_3:
+  description:
+  - '&7Un outil portatif pour démonter rapidement'
+  - '&7les Objets de réseau sans machinerie.'
   name: '&5Râteau de Réseau (3)'
+  stats:
+  - '&e9999 utilisations &7restantes'
   type:
   - '&7&oOutil'
+  usage:
+  - '&eClic droit&7 sur un Objet de réseau pour le casser instantanément.'
 NTW_RECIPE_ENCODER:
+  description:
+  - '&7Utilisé pour créer un Plan de fabrication'
+  - '&7à partir des objets d''entrée.'
   name: '&3Encodeur de Recette de Réseau'
+  stats:
+  - '&7Consommation du réseau : &e20000&7/encodage'
   type:
   - '&7&oMachine'
 NTW_REMOTE:
+  description:
+  - '&7Ouvre une grille liée sans fil.'
+  - '&7La grille doit être dans un tronçon chargé.'
   name: '&5Télécommande de Réseau'
+  stats:
+  - '&7Portée : &e150'
   type:
   - '&7&oOutil'
 NTW_REMOTE_EMPOWERED:
+  description:
+  - '&7Ouvre une grille liée sans fil.'
+  - '&7La grille doit être dans un tronçon chargé.'
   name: '&5Télécommande de Réseau Renforcée'
+  stats:
+  - '&7Portée : &e500'
   type:
   - '&7&oOutil'
 NTW_REMOTE_PRISTINE:
+  description:
+  - '&7Ouvre une grille liée sans fil.'
+  - '&7La grille doit être dans un tronçon chargé.'
   name: '&5Télécommande de Réseau Immaculée'
+  stats:
+  - '&7Portée : &eIllimitée'
   type:
   - '&7&oOutil'
 NTW_REMOTE_ULTIMATE:
+  description:
+  - '&7Ouvre une grille liée sans fil.'
+  - '&7La grille doit être dans un tronçon chargé.'
   name: '&5Télécommande de Réseau Ultime'
+  stats:
+  - '&7Portée : &eInterdimensionnelle'
   type:
   - '&7&oOutil'
 NTW_SHRINKING_BASE:
@@ -234,22 +510,53 @@ NTW_SYNTHETIC_EMERALD_SHARD:
   type:
   - '&7&oComposant'
 NTW_TRASH:
+  description:
+  - '&7L''Épurateur de réseau retirera'
+  - '&7les objets correspondants du réseau'
+  - '&7et les détruira instantanément.'
+  - '&7À utiliser avec la plus grande prudence !'
   name: '&3Purgeur de Réseau'
   type:
   - '&7&oMachine'
 NTW_VACUUM:
+  description:
+  - '&7L''Aspirateur de réseau aspirera'
+  - '&7les objets vers lui dans une'
+  - '&7portée de 4 x 4 centrée sur lui.'
+  - '&7Les objets aspirés essaieront d''entrer'
+  - '&7dans le Réseau.'
   name: '&3Aspirateur de Réseau'
+  stats:
+  - '&7Consommation du réseau : &e100&7/tick'
   type:
   - '&7&oMachine'
 NTW_VANILLA_GRABBER:
+  description:
+  - '&7Le Saisisseur vanilla de réseau essaiera'
+  - '&7de saisir le premier objet possible dans'
+  - '&7l''inventaire vanilla choisi.'
+  - '&7Vous devez récupérer les objets de ce'
+  - '&7nœud à l''aide d''un Saisisseur.'
   name: '&3Préhenseur Vanilla de Réseau'
   type:
   - '&7&oMachine'
 NTW_VANILLA_PUSHER:
+  description:
+  - '&7Le Pousseur vanilla de réseau essaiera'
+  - '&7de pousser tout objet qu''il contient dans'
+  - '&7l''inventaire vanilla choisi.'
+  - '&7Vous devez pousser les objets dans ce'
+  - '&7nœud depuis un Pousseur.'
   name: '&3Pousseur Vanilla de Réseau'
   type:
   - '&7&oMachine'
 NTW_WIRELESS_CONFIGURATOR:
+  description:
+  - '&7Utilisé pour enregistrer la position d''un Récepteur'
+  - '&7puis pour l''appliquer à un Émetteur.'
   name: '&5Configurateur Sans Fil de Réseau'
   type:
   - '&7&oOutil'
+  usage:
+  - '&eClic droit&7 : Enregistrer la position du Récepteur'
+  - '&eShift + Clic droit&7 : Appliquer la position à l''Émetteur'
