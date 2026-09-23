@@ -7,94 +7,229 @@ NTW_AI_CORE:
   type:
   - '&7&oComponente'
 NTW_AUTO_CRAFTER:
+  description:
+  - '&7El Autofabricador de Red acepta'
+  - '&7un plano de fabricación. Cuando se'
+  - '&7pide el objeto resultante del plano'
+  - '&7y no hay ninguno en la red,'
+  - '&7se fabricará si tienes los'
+  - '&7materiales.'
   name: '&3Autofabricador de Red'
+  stats:
+  - '&7Consumo de Red: &e64&7/fabricación'
   type:
   - '&7&oMáquina'
 NTW_AUTO_CRAFTER_WITHHOLDING:
+  description:
+  - '&7El Autofabricador de Red acepta'
+  - '&7un plano de fabricación. Cuando se'
+  - '&7pide el objeto resultante del plano'
+  - '&7y no hay ninguno en la red,'
+  - '&7se fabricará si tienes los'
+  - '&7materiales.'
+  - '&7Un Fabricador Retenedor mantendrá'
+  - '&7una pila en la salida y dejará'
+  - '&7de fabricar. La pila se ve'
+  - '&7en la Red y también permite'
+  - '&7carga.'
   name: '&3Autofabricador de Red (Retención)'
+  stats:
+  - '&7Consumo de Red: &e128&7/fabricación'
   type:
   - '&7&oMáquina'
 NTW_BEST_PUSHER:
+  description:
+  - '&7El Empujador Avanzado de Red intentará'
+  - '&7empujar objetos correspondientes desde hasta'
+  - '&7doce plantillas dadas hacia la'
+  - '&7máquina elegida.'
+  name: '&3Empujador Avanzado de Red'
   type:
   - '&7&oMáquina'
 NTW_BRIDGE:
+  description:
+  - '&7El Puente te permite conectar'
+  - '&7objetos de red de forma barata.'
   name: '&3Puente de Red'
   type:
   - '&7&oMáquina'
 NTW_CAPACITOR_1:
+  description:
+  - '&7El Condensador de Red puede recibir'
+  - '&7energía y almacenarla para usarla'
+  - '&7dentro de la red.'
   name: '&3Condensador de Red (1)'
+  stats:
+  - '&7Capacidad: &e1000'
   type:
   - '&7&oMáquina'
 NTW_CAPACITOR_2:
+  description:
+  - '&7El Condensador de Red puede recibir'
+  - '&7energía y almacenarla para usarla'
+  - '&7dentro de la red.'
   name: '&3Condensador de Red (2)'
+  stats:
+  - '&7Capacidad: &e10000'
   type:
   - '&7&oMáquina'
 NTW_CAPACITOR_3:
+  description:
+  - '&7El Condensador de Red puede recibir'
+  - '&7energía y almacenarla para usarla'
+  - '&7dentro de la red.'
   name: '&3Condensador de Red (3)'
+  stats:
+  - '&7Capacidad: &e100000'
   type:
   - '&7&oMáquina'
 NTW_CAPACITOR_4:
+  description:
+  - '&7El Condensador de Red puede recibir'
+  - '&7energía y almacenarla para usarla'
+  - '&7dentro de la red.'
   name: '&3Condensador de Red (4)'
+  stats:
+  - '&7Capacidad: &e1000000'
   type:
   - '&7&oMáquina'
 NTW_CELL:
+  description:
+  - '&7La Celda de Red es un inventario grande'
+  - '&7(cofre doble) al que se puede'
+  - '&7acceder tanto desde la red'
+  - '&7como en el mundo.'
   name: '&3Celda de Red'
   type:
   - '&7&oMáquina'
 NTW_CONFIGURATOR:
+  description:
+  - '&7Se usa para copiar y pegar las'
+  - '&7configuraciones de interfaces'
+  - '&7direccionales.'
   name: '&5Configurador de Red'
   type:
   - '&7&oHerramienta'
+  usage:
+  - '&eClic derecho&7: Aplicar configuración'
+  - '&eShift + Clic derecho&7: Guardar configuración'
 NTW_CONTROLLER:
+  description:
+  - '&7El Controlador de Red es el cerebro'
+  - '&7de toda la red.'
   name: '&3Controlador de Red'
+  stats:
+  - '&7Límite: &eMáx 1&7 por red'
   type:
   - '&7&oMáquina'
 NTW_CONTROL_V:
+  description:
+  - '&7El Control de Red: V intentará'
+  - '&7''pegar'' un bloque de la Red'
+  - '&7en el mundo.'
+  - '&7Solo funciona con bloques vanilla.'
   name: '&3Control de Red: V'
+  stats:
+  - '&7Consumo de Red: &e100&7/pegado'
   type:
   - '&7&oMáquina'
 NTW_CONTROL_X:
+  description:
+  - '&7El Control de Red: X intentará'
+  - '&7''cortar'' un bloque del mundo'
+  - '&7y ponerlo en la Red.'
+  - '&7Solo funciona en bloques vanilla sin'
+  - '&7inventarios.'
   name: '&3Control de Red: X'
+  stats:
+  - '&7Consumo de Red: &e100&7/corte'
   type:
   - '&7&oMáquina'
 NTW_CRAFTING_BLUEPRINT:
+  description:
+  - '&7Un plano en blanco que se puede'
+  - '&7usar para guardar una receta'
+  - '&7de fabricación.'
   name: '&5Plano de Fabricación'
   type:
   - '&7&oHerramienta'
 NTW_CRAFTING_GRID:
+  description:
+  - '&7La Cuadrícula de Fabricación de Red actúa'
+  - '&7como una cuadrícula normal, muestra menos'
+  - '&7objetos pero permite fabricar con objetos'
+  - '&7directamente de la red.'
   name: '&3Rejilla de Fabricación de Red'
   type:
   - '&7&oMáquina'
 NTW_CRAYON:
+  description:
+  - '&7Activa o desactiva una visualización de partículas'
+  - '&7de depuración en toda la red, mostrando la actividad'
+  - '&7de los nodos mientras funciona.'
   name: '&5Crayón de Red'
   type:
   - '&7&oHerramienta'
+  usage:
+  - '&eClic derecho&7 en un Controlador de Red para alternar las partículas.'
 NTW_DEBUG_STICK:
+  description:
+  - '&7Una herramienta de diagnóstico solo para operadores,'
+  - '&7usada para depurar el comportamiento de los bloques de Red.'
   name: '&5Palo de Depuración de Red'
   type:
   - '&7&oHerramienta'
+  usage:
+  - '&eClic derecho&7 en un Objeto de Red para activar la depuración.'
 NTW_EMPOWERED_AI_CORE:
   name: '&bNúcleo de I.A. Potenciado'
   type:
   - '&7&oComponente'
 NTW_EXPORT:
+  description:
+  - '&7El Exportador de Red puede configurarse'
+  - '&7para exportar constantemente 1 pila de'
+  - '&7cualquier objeto dado.'
+  - '&7Acepta la retirada de objetos desde la carga.'
   name: '&3Exportador de Red'
   type:
   - '&7&oMáquina'
 NTW_GRABBER:
+  description:
+  - '&7El Agarrador de Red intentará'
+  - '&7agarrar el primer objeto que encuentre'
+  - '&7dentro de la máquina seleccionada.'
   name: '&3Agarrador de Red'
   type:
   - '&7&oMáquina'
 NTW_GREEDY_BLOCK:
+  description:
+  - '&7El Bloque Avaro de Red se puede'
+  - '&7configurar con un objeto del que luego'
+  - '&7retendrá con avaricia una sola'
+  - '&7pila. Si no caben más objetos'
+  - '&7entrantes, no entrarán en'
+  - '&7la red.'
   name: '&3Bloque Codicioso de Red'
   type:
   - '&7&oMáquina'
 NTW_GRID:
+  description:
+  - '&7La Cuadrícula de Red te muestra todos'
+  - '&7los objetos que tienes en la red'
+  - '&7y te deja insertarlos o retirarlos'
+  - '&7directamente.'
   name: '&3Rejilla de Red'
   type:
   - '&7&oMáquina'
 NTW_IMPORT:
+  description:
+  - '&7El Importador de Red lleva cualquier'
+  - '&7objeto que contenga hacia la red.'
+  - '&7Acepta objetos entrantes desde la carga.'
   name: '&3Importador de Red'
+  stats:
+  - '&7Tasa de importación: &eHasta 9 pilas&7/tick'
   type:
   - '&7&oMáquina'
 NTW_INTERDIMENSIONAL_PRESENCE:
@@ -102,15 +237,38 @@ NTW_INTERDIMENSIONAL_PRESENCE:
   type:
   - '&7&oComponente'
 NTW_MONITOR:
+  description:
+  - '&7El Monitor de Red permite una interacción'
+  - '&7simple de importación/exportación con objetos'
+  - '&7adyacentes.'
+  - '&7Compatible actualmente con:'
+  - '&7Barriles Infinitos'
+  - '&7Carcasas de Red'
   name: '&3Monitor de Red'
   type:
   - '&7&oMáquina'
 NTW_NETWORK_WIRELESS_RECEIVER:
+  description:
+  - '&7El Receptor Inalámbrico de Red puede'
+  - '&7recibir objetos de un transmisor'
+  - '&7inalámbrico vinculado situado dentro'
+  - '&7del mismo mundo.'
+  - '&7Intentará empujar los objetos recibidos'
+  - '&7hacia la Red en cada tick.'
   name: '&3Receptor Inalámbrico de Red'
   type:
   - '&7&oMáquina'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
+  description:
+  - '&7El Transmisor Inalámbrico de Red intentará'
+  - '&7transmitir cualquier objeto que contenga'
+  - '&7a un Receptor Inalámbrico de Red vinculado'
+  - '&7situado dentro del mismo mundo.'
+  - '&7Usa el Configurador Inalámbrico para'
+  - '&7configurar el Transmisor Inalámbrico.'
   name: '&3Transmisor Inalámbrico de Red'
+  stats:
+  - '&7Requiere 500 de Energía de Red por transferencia.'
   type:
   - '&7&oMáquina'
 NTW_OPTIC_CABLE:
@@ -126,15 +284,35 @@ NTW_OPTIC_STAR:
   type:
   - '&7&oComponente'
 NTW_POWER_DISPLAY:
+  description:
+  - '&7La Pantalla de Energía de Red mostrará'
+  - '&7la energía que hay en la red.'
+  - '&7Sencillo, ¿verdad?'
   name: '&3Pantalla de Energía de Red'
   type:
   - '&7&oMáquina'
 NTW_POWER_OUTLET_1:
+  description:
+  - '&7El Condensador de Red puede recibir'
+  - '&7energía de la Red para alimentar'
+  - '&7máquinas o devolverla a una'
+  - '&7red EnergyNet.'
   name: '&3Toma de Corriente de Red (1)'
+  stats:
+  - '&7Funciona con una tasa de pérdida del 20%.'
+  - '&7Transferencia máx: &e500'
   type:
   - '&7&oMáquina'
 NTW_POWER_OUTLET_2:
+  description:
+  - '&7El Condensador de Red puede recibir'
+  - '&7energía de la Red para alimentar'
+  - '&7máquinas o devolverla a una'
+  - '&7red EnergyNet.'
   name: '&3Toma de Corriente de Red (2)'
+  stats:
+  - '&7Funciona con una tasa de pérdida del 20%.'
+  - '&7Transferencia máx: &e2000'
   type:
   - '&7&oMáquina'
 NTW_PRISTINE_AI_CORE:
@@ -142,46 +320,98 @@ NTW_PRISTINE_AI_CORE:
   type:
   - '&7&oComponente'
 NTW_PROBE:
+  description:
+  - '&7Revela un resumen de una Red,'
+  - '&7incluyendo su energía, recuentos de objetos'
+  - '&7y totales de nodos.'
   name: '&5Sonda de Red'
   type:
   - '&7&oHerramienta'
+  usage:
+  - '&eClic derecho&7 en un Controlador de Red para ver el resumen.'
 NTW_PUSHER:
+  description:
+  - '&7El Empujador de Red intentará'
+  - '&7empujar un objeto correspondiente desde'
+  - '&7un objeto dado hacia la máquina elegida.'
   name: '&3Empujador de Red'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_1:
+  description:
+  - '&7Almacena objetos en cantidades masivas dentro de'
+  - '&7una singularidad cuántica.'
   name: '&3Almacenamiento Cuántico de Red (4K)'
+  stats:
+  - '&7Almacena &e4096&7 objetos'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_2:
+  description:
+  - '&7Almacena objetos en cantidades masivas dentro de'
+  - '&7una singularidad cuántica.'
   name: '&3Almacenamiento Cuántico de Red (32K)'
+  stats:
+  - '&7Almacena &e32768&7 objetos'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_3:
+  description:
+  - '&7Almacena objetos en cantidades masivas dentro de'
+  - '&7una singularidad cuántica.'
   name: '&3Almacenamiento Cuántico de Red (262K)'
+  stats:
+  - '&7Almacena &e262144&7 objetos'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_4:
+  description:
+  - '&7Almacena objetos en cantidades masivas dentro de'
+  - '&7una singularidad cuántica.'
   name: '&3Almacenamiento Cuántico de Red (2M)'
+  stats:
+  - '&7Almacena &e2097152&7 objetos'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_5:
+  description:
+  - '&7Almacena objetos en cantidades masivas dentro de'
+  - '&7una singularidad cuántica.'
   name: '&3Almacenamiento Cuántico de Red (16M)'
+  stats:
+  - '&7Almacena &e16777216&7 objetos'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_6:
+  description:
+  - '&7Almacena objetos en cantidades masivas dentro de'
+  - '&7una singularidad cuántica.'
   name: '&3Almacenamiento Cuántico de Red (134M)'
+  stats:
+  - '&7Almacena &e134217728&7 objetos'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_7:
+  description:
+  - '&7Almacena objetos en cantidades masivas dentro de'
+  - '&7una singularidad cuántica.'
   name: '&3Almacenamiento Cuántico de Red (1B)'
+  stats:
+  - '&7Almacena &e1073741824&7 objetos'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_STORAGE_8:
+  description:
+  - '&7Almacena objetos en cantidades masivas dentro de'
+  - '&7una singularidad cuántica.'
   name: '&3Almacenamiento Cuántico de Red (∞)'
+  stats:
+  - '&7Almacena &e∞&7 objetos... casi'
   type:
   - '&7&oMáquina'
 NTW_QUANTUM_WORKBENCH:
+  description:
+  - '&7Permite fabricar Almacenamientos Cuánticos.'
   name: '&3Mesa de Trabajo Cuántica de Red'
   type:
   - '&7&oMáquina'
@@ -190,35 +420,81 @@ NTW_RADIOACTIVE_OPTIC_STAR:
   type:
   - '&7&oComponente'
 NTW_RAKE_1:
+  description:
+  - '&7Una herramienta de mano para desmontar rápidamente'
+  - '&7Objetos de Red sin maquinaria.'
   name: '&5Rastrillo de Red (1)'
+  stats:
+  - '&e250 usos &7restantes'
   type:
   - '&7&oHerramienta'
+  usage:
+  - '&eClic derecho&7 en un Objeto de Red para romperlo al instante.'
 NTW_RAKE_2:
+  description:
+  - '&7Una herramienta de mano para desmontar rápidamente'
+  - '&7Objetos de Red sin maquinaria.'
   name: '&5Rastrillo de Red (2)'
+  stats:
+  - '&e1000 usos &7restantes'
   type:
   - '&7&oHerramienta'
+  usage:
+  - '&eClic derecho&7 en un Objeto de Red para romperlo al instante.'
 NTW_RAKE_3:
+  description:
+  - '&7Una herramienta de mano para desmontar rápidamente'
+  - '&7Objetos de Red sin maquinaria.'
   name: '&5Rastrillo de Red (3)'
+  stats:
+  - '&e9999 usos &7restantes'
   type:
   - '&7&oHerramienta'
+  usage:
+  - '&eClic derecho&7 en un Objeto de Red para romperlo al instante.'
 NTW_RECIPE_ENCODER:
+  description:
+  - '&7Se usa para formar un Plano de Fabricación'
+  - '&7a partir de los objetos de entrada.'
   name: '&3Codificador de Recetas de Red'
+  stats:
+  - '&7Consumo de Red: &e20000&7/codificación'
   type:
   - '&7&oMáquina'
 NTW_REMOTE:
+  description:
+  - '&7Abre una cuadrícula vinculada de forma inalámbrica.'
+  - '&7La cuadrícula debe estar en un chunk cargado.'
   name: '&5Control Remoto de Red'
+  stats:
+  - '&7Alcance: &e150'
   type:
   - '&7&oHerramienta'
 NTW_REMOTE_EMPOWERED:
+  description:
+  - '&7Abre una cuadrícula vinculada de forma inalámbrica.'
+  - '&7La cuadrícula debe estar en un chunk cargado.'
   name: '&5Control Remoto de Red Potenciado'
+  stats:
+  - '&7Alcance: &e500'
   type:
   - '&7&oHerramienta'
 NTW_REMOTE_PRISTINE:
+  description:
+  - '&7Abre una cuadrícula vinculada de forma inalámbrica.'
+  - '&7La cuadrícula debe estar en un chunk cargado.'
   name: '&5Control Remoto de Red Prístino'
+  stats:
+  - '&7Alcance: &eIlimitado'
   type:
   - '&7&oHerramienta'
 NTW_REMOTE_ULTIMATE:
+  description:
+  - '&7Abre una cuadrícula vinculada de forma inalámbrica.'
+  - '&7La cuadrícula debe estar en un chunk cargado.'
   name: '&5Control Remoto de Red Definitivo'
+  stats:
+  - '&7Alcance: &eInterdimensional'
   type:
   - '&7&oHerramienta'
 NTW_SHRINKING_BASE:
@@ -234,22 +510,53 @@ NTW_SYNTHETIC_EMERALD_SHARD:
   type:
   - '&7&oComponente'
 NTW_TRASH:
+  description:
+  - '&7El Purgador de Red extraerá'
+  - '&7los objetos correspondientes de la red'
+  - '&7y los destruirá al instante.'
+  - '&7¡Úsalo con mucho cuidado!'
   name: '&3Purgador de Red'
   type:
   - '&7&oMáquina'
 NTW_VACUUM:
+  description:
+  - '&7La Aspiradora de Red absorberá'
+  - '&7objetos hacia sí misma en un'
+  - '&7alcance de 4 x 4 centrado en ella.'
+  - '&7Los objetos aspirados intentarán pasar'
+  - '&7a la Red.'
   name: '&3Aspirador de Red'
+  stats:
+  - '&7Consumo de Red: &e100&7/tick'
   type:
   - '&7&oMáquina'
 NTW_VANILLA_GRABBER:
+  description:
+  - '&7El Agarrador Vanilla de Red intentará'
+  - '&7agarrar el primer objeto posible del'
+  - '&7inventario vanilla elegido.'
+  - '&7Necesitas agarrar objetos de este'
+  - '&7nodo usando un Agarrador.'
   name: '&3Agarrador Vanilla de Red'
   type:
   - '&7&oMáquina'
 NTW_VANILLA_PUSHER:
+  description:
+  - '&7El Empujador Vanilla de Red intentará'
+  - '&7empujar cualquier objeto que contenga hacia'
+  - '&7inventario vanilla elegido.'
+  - '&7Necesitas empujar objetos hacia este'
+  - '&7nodo desde un Empujador.'
   name: '&3Empujador Vanilla de Red'
   type:
   - '&7&oMáquina'
 NTW_WIRELESS_CONFIGURATOR:
+  description:
+  - '&7Se usa para guardar la ubicación de un Receptor'
+  - '&7y luego aplicarla a un Transmisor.'
   name: '&5Configurador Inalámbrico de Red'
   type:
   - '&7&oHerramienta'
+  usage:
+  - '&eClic derecho&7: Guardar ubicación del Receptor'
+  - '&eShift + Clic derecho&7: Asignar la ubicación al Transmisor'
