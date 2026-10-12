@@ -1,5 +1,6 @@
 package io.github.sefiraat.networks.slimefun.network;
 
+import io.github.sefiraat.networks.utils.Messages;
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.network.NetworkRoot;
 import io.github.sefiraat.networks.network.NodeDefinition;
@@ -158,7 +159,7 @@ public abstract class NetworkObject extends SlimefunItem implements AdminDebugga
     }
 
     protected void cancelPlace(PlayerRightClickEvent event) {
-        event.getPlayer().sendMessage(Theme.ERROR.getColor() + "This placement would connect two controllers!");
+        Messages.send(event.getPlayer(), Theme.ERROR, "controller.would-connect-two", "This placement would connect two controllers!");
         event.cancel();
     }
 

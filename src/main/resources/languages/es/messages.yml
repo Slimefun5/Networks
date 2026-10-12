@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "El objeto en la mano debe ser un Almacenamiento Cuántico de Red."
+  unset-or-corrupt: "Esta tarjeta aún no se ha asignado a un objeto o es un Almacenamiento Cuántico de Red corrupto."
+  item-updated: "Objeto actualizado"
+  must-be-empty: "El Almacenamiento Cuántico de Red debe estar vacío antes de cambiar el objeto asignado."
+
+card:
+  unstack-first: "Separa las tarjetas antes de asignar un objeto."
+  item-not-storable: "Este tipo de objeto no se puede guardar en una Tarjeta de Red."
+  must-be-empty: "Una tarjeta debe estar vacía antes de intentar asignarle un objeto."
+
+controller:
+  already-present: "¡Esta red ya tiene un controlador!"
+  would-connect-two: "¡Esta colocación conectaría dos controladores!"
+
+encoder:
+  not-enough-power: "No hay suficiente energía de red para realizar esta tarea."
+  output-must-be-empty: "La ranura de salida debe estar vacía."
+  needs-blank-blueprint: "Debes proporcionar un plano en blanco"
+  invalid-recipe: "No parece que esta sea una receta válida."
+
+grid:
+  filter-prompt: "Escribe aquello por lo que quieres filtrar esta rejilla"
+  filter-applied: "Filtro aplicado"
+
+configurator:
+  needs-directional: "Debes apuntar a una interfaz direccional de Networks."
+  no-direction-set: "Este elemento direccional aún no tiene una dirección establecida"
+  copied: "Configuración copiada."
+  direction-label: "Dirección: "
+  direction-not-supplied: "No proporcionada"
+  direction-applied: "Aplicada correctamente"
+  item-label: "Objeto [%slot%]: "
+  item-added: "Objeto añadido al filtro"
+  not-enough-items: "No hay suficientes objetos para llenar el filtro"
+  no-item-stored: "No hay ningún objeto en la configuración guardada"
+  items-label: "Objetos: "
+  no-items-stored: "No hay objetos en la configuración guardada"
+
+wireless:
+  needs-wireless-block: "Debes apuntar a un bloque inalámbrico de Red."
+  no-receiver-set: "No se ha establecido ningún Receptor Inalámbrico de Red."
+  receiver-other-world: "El Receptor Inalámbrico de Red está en otro mundo."
+  transmitter-set: "Posición del receptor del transmisor establecida."
+  receiver-set: "Receptor Inalámbrico de Red establecido."
+
+remote:
+  needs-grid: "Debe estar asignado a una Rejilla de Red (no a una rejilla de fabricación)."
+  bound: "La rejilla se ha vinculado al control remoto."
+  grid-not-loaded: "La rejilla vinculada no está cargada."
+  grid-out-of-reach: "La rejilla vinculada está fuera de alcance."
+  not-bound: "El control remoto no está vinculado a ninguna rejilla."
+  grid-gone: "Ya no se encuentra la rejilla vinculada."
+
+crayon:
+  removed: "Crayón retirado de la red."
+  added: "Crayón añadido a la red."
+
+debug:
+  state-set: "La depuración de este bloque se ha establecido en %state%."
+  until-restart: "Durará hasta un reinicio o hasta que lo desactives."
+  op-only: "Solo puedes usar esta herramienta como jugador con permisos de operador."
+
+tool:
+  on-cooldown: "Esto aún está en tiempo de reutilización"
+
+probe:
+  summary-title: "      Resumen de la Red       "
+  bridges: "Puentes"
+  monitors: "Monitores"
+  importers: "Importadores"
+  exporters: "Exportadores"
+  grids: "Rejillas"
+  cells: "Celdas"
+  wipers: "Borradores"
+  grabbers: "Agarradores"
+  pushers: "Empujadores"
+  cutters: "Cortadores"
+  pasters: "Pegadores"
+  vacuums: "Aspiradores"
+  purgers: "Purgadores"
+  crafters: "Autofabricadores"
+  power-nodes: "Nodos de energía"
+  power-outlets: "Tomas de corriente"
+  power-displays: "Pantallas de energía"
+  encoders: "Codificadores"
+  greedy-blocks: "Bloques codiciosos"
+  wireless-transmitters: "Transmisores inalámbricos"
+  wireless-receivers: "Receptores inalámbricos"
+  distinct-items: "Objetos distintos"
+  total-items: "Objetos en total"
+  root-power: "Energía de la raíz"
+  total-nodes: "Nodos en total"
+  warning-label: "Advertencia: "
+  overburdened: "Tu red ha alcanzado o superado el límite máximo de nodos. Los nodos que superen el límite no funcionarán, y no siempre serán los mismos. Reduce el número total de nodos."

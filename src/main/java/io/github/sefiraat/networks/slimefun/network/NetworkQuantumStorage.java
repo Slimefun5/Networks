@@ -1,5 +1,6 @@
 package io.github.sefiraat.networks.slimefun.network;
 
+import io.github.sefiraat.networks.utils.Messages;
 import io.github.sefiraat.networks.network.stackcaches.QuantumCache;
 import io.github.sefiraat.networks.utils.Keys;
 import io.github.sefiraat.networks.utils.MaterialCompat;
@@ -224,7 +225,7 @@ public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveIt
 
         final QuantumCache cache = CACHES.get(blockMenu.getLocation());
         if (cache == null || cache.getAmount() > 0) {
-            player.sendMessage(Theme.WARNING + "Quantum Storage must be empty before changing the set item.");
+            Messages.send(player, Theme.WARNING, "quantum.must-be-empty", "Quantum Storage must be empty before changing the set item.");
             return;
         }
         itemStack.setAmount(1);

@@ -1,5 +1,6 @@
 package io.github.sefiraat.networks.slimefun.network;
 
+import io.github.sefiraat.networks.utils.Messages;
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.network.NetworkRoot;
 import io.github.sefiraat.networks.network.NodeDefinition;
@@ -113,21 +114,21 @@ public class NetworkEncoder extends NetworkObject {
         final long networkCharge = root.getRootPower();
 
         if (networkCharge < CHARGE_COST) {
-            player.sendMessage(Theme.WARNING + "Not enough Network power to fulfill this task.");
+            Messages.send(player, Theme.WARNING, "encoder.not-enough-power", "Not enough Network power to fulfill this task.");
             return;
         }
 
         final ItemStack outputStack = blockMenu.getItemInSlot(OUTPUT_SLOT);
 
         if (outputStack != null && outputStack.getType() != Material.AIR) {
-            player.sendMessage(Theme.WARNING + "The output slot must be empty.");
+            Messages.send(player, Theme.WARNING, "encoder.output-must-be-empty", "The output slot must be empty.");
             return;
         }
 
         ItemStack blueprint = blockMenu.getItemInSlot(BLANK_BLUEPRINT_SLOT);
 
         if (!(SlimefunItem.getByItem(blueprint) instanceof CraftingBlueprint)) {
-            player.sendMessage(Theme.WARNING + "You need to provide a blank blueprint");
+            Messages.send(player, Theme.WARNING, "encoder.needs-blank-blueprint", "You need to provide a blank blueprint");
             return;
         }
 
@@ -160,7 +161,7 @@ public class NetworkEncoder extends NetworkObject {
         }
 
         if (crafted == null || crafted.getType() == Material.AIR) {
-            player.sendMessage(Theme.WARNING + "Doesn't look like this is a valid recipe.");
+            Messages.send(player, Theme.WARNING, "encoder.invalid-recipe", "Doesn't look like this is a valid recipe.");
             return;
         }
 

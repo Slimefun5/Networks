@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Item in hand must be a Quantum Storage."
+  unset-or-corrupt: "This card has either not been set to an item yet or is a corrupted Quantum Storage."
+  item-updated: "Item updated"
+  must-be-empty: "Quantum Storage must be empty before changing the set item."
+
+card:
+  unstack-first: "Unstack cards before assigning an item."
+  item-not-storable: "This type of item cannot be stored in a Network Card."
+  must-be-empty: "A card must be empty before trying to assign an item."
+
+controller:
+  already-present: "This network already has a controller!"
+  would-connect-two: "This placement would connect two controllers!"
+
+encoder:
+  not-enough-power: "Not enough Network power to fulfill this task."
+  output-must-be-empty: "The output slot must be empty."
+  needs-blank-blueprint: "You need to provide a blank blueprint"
+  invalid-recipe: "Doesn't look like this is a valid recipe."
+
+grid:
+  filter-prompt: "Type what you would like to filter this grid to"
+  filter-applied: "Filter applied"
+
+configurator:
+  needs-directional: "Must target a directional Networks interface."
+  no-direction-set: "This directional does not yet have a direction set"
+  copied: "Configuration copied."
+  direction-label: "Direction: "
+  direction-not-supplied: "Not supplied"
+  direction-applied: "Successfully applied"
+  item-label: "Item [%slot%]: "
+  item-added: "Item added into filter"
+  not-enough-items: "Not enough items to fill filter"
+  no-item-stored: "No item in stored config"
+  items-label: "Items: "
+  no-items-stored: "No items in stored config"
+
+wireless:
+  needs-wireless-block: "Must target a Network Wireless block."
+  no-receiver-set: "No Wireless Receiver has been set."
+  receiver-other-world: "The Wireless Receiver is in a different world."
+  transmitter-set: "Set Transmitter's receiver location."
+  receiver-set: "Wireless Receiver set."
+
+remote:
+  needs-grid: "Must be set to a Network Grid (not crafting grid)."
+  bound: "Grid has been bound to the remote."
+  grid-not-loaded: "The bound grid is not loaded."
+  grid-out-of-reach: "The bound grid is not within reach."
+  not-bound: "Remote is not bound to a grid."
+  grid-gone: "The bound grid can no longer be found."
+
+crayon:
+  removed: "Crayon removed from network."
+  added: "Crayon added to network."
+
+debug:
+  state-set: "Debugging for this block has been set to: %state%."
+  until-restart: "It will last until a restart or you toggle it off."
+  op-only: "You can only use this tool as an op'd player."
+
+tool:
+  on-cooldown: "This is still on cooldown"
+
+probe:
+  summary-title: "       Network Summary        "
+  bridges: "Bridges"
+  monitors: "Monitors"
+  importers: "Importers"
+  exporters: "Exporters"
+  grids: "Grids"
+  cells: "Cells"
+  wipers: "Wipers"
+  grabbers: "Grabbers"
+  pushers: "Pushers"
+  cutters: "Cutters"
+  pasters: "Pasters"
+  vacuums: "Vacuums"
+  purgers: "Purgers"
+  crafters: "Crafters"
+  power-nodes: "Power Nodes"
+  power-outlets: "Power Outlets"
+  power-displays: "Power Displays"
+  encoders: "Encoders"
+  greedy-blocks: "Greedy Blocks"
+  wireless-transmitters: "Wireless Transmitters"
+  wireless-receivers: "Wireless Receivers"
+  distinct-items: "Distinct Items"
+  total-items: "Total Items"
+  root-power: "Root Power"
+  total-nodes: "Total Nodes"
+  warning-label: "Warning: "
+  overburdened: "Your network has reached or exceeded the maximum node limit. Nodes beyond the limit will not function, which nodes these are may not always be the same. Reduce your total nodes."

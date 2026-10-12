@@ -1,5 +1,6 @@
 package io.github.sefiraat.networks.slimefun.network;
 
+import io.github.sefiraat.networks.utils.Messages;
 import io.github.sefiraat.networks.Networks;
 import io.github.sefiraat.networks.utils.Theme;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
@@ -26,9 +27,10 @@ public interface AdminDebuggable {
         final boolean isDebug = isDebug(location);
         final boolean nextState = !isDebug;
         setDebug(location, nextState);
-        player.sendMessage(Theme.SUCCESS + "Debugging for this block has been set to: " + nextState + ".");
+        Messages.send(player, Theme.SUCCESS, "debug.state-set", "Debugging for this block has been set to: %state%.",
+            line -> line.replace("%state%", String.valueOf(nextState)));
         if (nextState) {
-            player.sendMessage(Theme.SUCCESS + "It will last until a restart or you toggle it off.");
+            Messages.send(player, Theme.SUCCESS, "debug.until-restart", "It will last until a restart or you toggle it off.");
         }
     }
 

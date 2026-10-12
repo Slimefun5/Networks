@@ -1,5 +1,6 @@
 package io.github.sefiraat.networks.slimefun.tools;
 
+import io.github.sefiraat.networks.utils.Messages;
 import io.github.sefiraat.networks.slimefun.network.NetworkController;
 import io.github.sefiraat.networks.utils.Theme;
 import io.github.thebusybiscuit.slimefun5.api.events.PlayerRightClickEvent;
@@ -42,10 +43,10 @@ public class NetworkCrayon extends SlimefunItem {
     public void toggleCrayon(@Nonnull Block block, @Nonnull Player player) {
         if (NetworkController.hasCrayon(block.getLocation())) {
             NetworkController.removeCrayon(block.getLocation());
-            player.sendMessage(Theme.WARNING + "Crayon removed from network.");
+            Messages.send(player, Theme.WARNING, "crayon.removed", "Crayon removed from network.");
         } else {
             NetworkController.addCrayon(block.getLocation());
-            player.sendMessage(Theme.SUCCESS + "Crayon added to network.");
+            Messages.send(player, Theme.SUCCESS, "crayon.added", "Crayon added to network.");
         }
     }
 }

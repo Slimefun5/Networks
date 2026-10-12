@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "L'objet en main doit être un Stockage Quantique de Réseau."
+  unset-or-corrupt: "Cette carte n'a pas encore été associée à un objet, ou bien c'est un Stockage Quantique de Réseau corrompu."
+  item-updated: "Objet mis à jour"
+  must-be-empty: "Le Stockage Quantique de Réseau doit être vide avant de changer l'objet associé."
+
+card:
+  unstack-first: "Séparez les cartes avant d'associer un objet."
+  item-not-storable: "Ce type d'objet ne peut pas être stocké dans une Carte de Réseau."
+  must-be-empty: "Une carte doit être vide avant d'essayer de lui associer un objet."
+
+controller:
+  already-present: "Ce réseau possède déjà un contrôleur !"
+  would-connect-two: "Ce placement relierait deux contrôleurs !"
+
+encoder:
+  not-enough-power: "Énergie de réseau insuffisante pour accomplir cette tâche."
+  output-must-be-empty: "L'emplacement de sortie doit être vide."
+  needs-blank-blueprint: "Vous devez fournir un plan vierge"
+  invalid-recipe: "Cela ne ressemble pas à une recette valide."
+
+grid:
+  filter-prompt: "Saisissez ce sur quoi vous voulez filtrer cette grille"
+  filter-applied: "Filtre appliqué"
+
+configurator:
+  needs-directional: "Vous devez viser une interface directionnelle de Networks."
+  no-direction-set: "Cet élément directionnel n'a pas encore de direction définie"
+  copied: "Configuration copiée."
+  direction-label: "Direction : "
+  direction-not-supplied: "Non fournie"
+  direction-applied: "Appliquée avec succès"
+  item-label: "Objet [%slot%] : "
+  item-added: "Objet ajouté au filtre"
+  not-enough-items: "Pas assez d'objets pour remplir le filtre"
+  no-item-stored: "Aucun objet dans la configuration enregistrée"
+  items-label: "Objets : "
+  no-items-stored: "Aucun objet dans la configuration enregistrée"
+
+wireless:
+  needs-wireless-block: "Vous devez viser un bloc sans fil de Réseau."
+  no-receiver-set: "Aucun Récepteur Sans Fil de Réseau n'a été défini."
+  receiver-other-world: "Le Récepteur Sans Fil de Réseau se trouve dans un autre monde."
+  transmitter-set: "Position du récepteur de l'émetteur définie."
+  receiver-set: "Récepteur Sans Fil de Réseau défini."
+
+remote:
+  needs-grid: "Doit être associé à une Grille de Réseau (pas une grille de fabrication)."
+  bound: "La grille a été associée à la télécommande."
+  grid-not-loaded: "La grille associée n'est pas chargée."
+  grid-out-of-reach: "La grille associée est hors de portée."
+  not-bound: "La télécommande n'est associée à aucune grille."
+  grid-gone: "La grille associée est introuvable."
+
+crayon:
+  removed: "Crayon retiré du réseau."
+  added: "Crayon ajouté au réseau."
+
+debug:
+  state-set: "Le débogage de ce bloc a été réglé sur %state%."
+  until-restart: "Cela durera jusqu'à un redémarrage ou jusqu'à ce que vous le désactiviez."
+  op-only: "Vous ne pouvez utiliser cet outil qu'en tant que joueur opérateur."
+
+tool:
+  on-cooldown: "Ceci est encore en temps de recharge"
+
+probe:
+  summary-title: "       Résumé du Réseau       "
+  bridges: "Ponts"
+  monitors: "Moniteurs"
+  importers: "Importateurs"
+  exporters: "Exportateurs"
+  grids: "Grilles"
+  cells: "Cellules"
+  wipers: "Effaceurs"
+  grabbers: "Préhenseurs"
+  pushers: "Pousseurs"
+  cutters: "Couteaux"
+  pasters: "Colleurs"
+  vacuums: "Aspirateurs"
+  purgers: "Purgeurs"
+  crafters: "Auto-Fabricateurs"
+  power-nodes: "Nœuds d'énergie"
+  power-outlets: "Prises"
+  power-displays: "Affichages d'énergie"
+  encoders: "Encodeurs"
+  greedy-blocks: "Blocs avides"
+  wireless-transmitters: "Émetteurs sans fil"
+  wireless-receivers: "Récepteurs sans fil"
+  distinct-items: "Objets distincts"
+  total-items: "Objets au total"
+  root-power: "Énergie de la racine"
+  total-nodes: "Nœuds au total"
+  warning-label: "Avertissement : "
+  overburdened: "Votre réseau a atteint ou dépassé la limite de nœuds. Les nœuds au-delà de la limite ne fonctionneront pas, et il ne s'agit pas toujours des mêmes. Réduisez votre nombre total de nœuds."

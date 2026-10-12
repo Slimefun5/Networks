@@ -1,5 +1,6 @@
 package io.github.sefiraat.networks.slimefun.tools;
 
+import io.github.sefiraat.networks.utils.Messages;
 import io.github.sefiraat.networks.network.NetworkRoot;
 import io.github.sefiraat.networks.slimefun.network.NetworkController;
 import io.github.sefiraat.networks.utils.Theme;
@@ -24,6 +25,7 @@ import java.util.Optional;
 public class NetworkProbe extends SlimefunItem implements CanCooldown {
 
     private static final MessageFormat MESSAGE_FORMAT = new MessageFormat("{0}{1}: {2}{3}", Locale.ROOT);
+    private static final String DIVIDER = "------------------------------";
 
     public NetworkProbe(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
@@ -49,6 +51,11 @@ public class NetworkProbe extends SlimefunItem implements CanCooldown {
                 }
             }
         }
+    }
+
+    private static void row(@Nonnull Player player, ChatColor labelColor, ChatColor valueColor, @Nonnull String key, @Nonnull String english, @Nonnull Object value) {
+        String label = Messages.get(player, "probe." + key, english);
+        player.sendMessage(MESSAGE_FORMAT.format(new Object[] { labelColor, label, valueColor, value }, new StringBuffer(), null).toString());
     }
 
     private void displayToPlayer(@Nonnull Block block, @Nonnull Player player) {
@@ -88,47 +95,47 @@ public class NetworkProbe extends SlimefunItem implements CanCooldown {
             final ChatColor c = Theme.CLICK_INFO.getColor();
             final ChatColor p = Theme.PASSIVE.getColor();
 
-            player.sendMessage("------------------------------");
-            player.sendMessage("       Network Summary        ");
-            player.sendMessage("------------------------------");
+            player.sendMessage(DIVIDER);
+            player.sendMessage(Messages.get(player, "probe.summary-title", "       Network Summary        "));
+            player.sendMessage(DIVIDER);
 
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Bridges", p, bridges}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Monitors", p, monitors}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Importers", p, importers}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Exporters", p, exporters}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Grids", p, grids}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Cells", p, cells}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Wipers", p, wipers}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Grabbers", p, grabbers}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Pushers", p, pushers}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Cutters", p, cutters}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Pasters", p, pasters}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Vacuums", p, vacuums}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Purgers", p, purgers}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Crafters", p, crafters}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Power Nodes", p, powerNodes}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Power Outlets", p, powerOutlets}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Power Displays", p, powerDisplays}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Encoders", p, encoders}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Greedy Blocks", p, greedyBlocks}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Wireless Transmitters", p, wirelessTransmitters}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Wireless Receivers", p, wirelessReceivers}, new StringBuffer(), null).toString());
+            row(player, c, p, "bridges", "Bridges", bridges);
+            row(player, c, p, "monitors", "Monitors", monitors);
+            row(player, c, p, "importers", "Importers", importers);
+            row(player, c, p, "exporters", "Exporters", exporters);
+            row(player, c, p, "grids", "Grids", grids);
+            row(player, c, p, "cells", "Cells", cells);
+            row(player, c, p, "wipers", "Wipers", wipers);
+            row(player, c, p, "grabbers", "Grabbers", grabbers);
+            row(player, c, p, "pushers", "Pushers", pushers);
+            row(player, c, p, "cutters", "Cutters", cutters);
+            row(player, c, p, "pasters", "Pasters", pasters);
+            row(player, c, p, "vacuums", "Vacuums", vacuums);
+            row(player, c, p, "purgers", "Purgers", purgers);
+            row(player, c, p, "crafters", "Crafters", crafters);
+            row(player, c, p, "power-nodes", "Power Nodes", powerNodes);
+            row(player, c, p, "power-outlets", "Power Outlets", powerOutlets);
+            row(player, c, p, "power-displays", "Power Displays", powerDisplays);
+            row(player, c, p, "encoders", "Encoders", encoders);
+            row(player, c, p, "greedy-blocks", "Greedy Blocks", greedyBlocks);
+            row(player, c, p, "wireless-transmitters", "Wireless Transmitters", wirelessTransmitters);
+            row(player, c, p, "wireless-receivers", "Wireless Receivers", wirelessReceivers);
 
-            player.sendMessage("------------------------------");
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Distinct Items", p, distinctItems}, new StringBuffer(), null).toString());
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Total Items", p, totalItems}, new StringBuffer(), null).toString());
+            player.sendMessage(DIVIDER);
+            row(player, c, p, "distinct-items", "Distinct Items", distinctItems);
+            row(player, c, p, "total-items", "Total Items", totalItems);
 
-            player.sendMessage("------------------------------");
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Root Power", p, rootPower}, new StringBuffer(), null).toString());
+            player.sendMessage(DIVIDER);
+            row(player, c, p, "root-power", "Root Power", rootPower);
 
-            player.sendMessage("------------------------------");
-            player.sendMessage(MESSAGE_FORMAT.format(new Object[]{c, "Total Nodes", p, nodeCount + "/" + root.getMaxNodes()}, new StringBuffer(), null).toString());
+            player.sendMessage(DIVIDER);
+            row(player, c, p, "total-nodes", "Total Nodes", nodeCount + "/" + root.getMaxNodes());
             if (root.isOverburdened()) {
-                player.sendMessage(Theme.ERROR + "Warning: " + Theme.PASSIVE +
-                                       "Your network has reached or exceeded the maximum node limit. " +
-                                       "Nodes beyond the limit will not function, which nodes these are " +
-                                       "may not always be the same. Reduce your total nodes."
-                );
+                player.sendMessage(Theme.ERROR + Messages.get(player, "probe.warning-label", "Warning: ") + Theme.PASSIVE
+                    + Messages.get(player, "probe.overburdened",
+                        "Your network has reached or exceeded the maximum node limit. "
+                            + "Nodes beyond the limit will not function, which nodes these are "
+                            + "may not always be the same. Reduce your total nodes."));
             }
         }
     }

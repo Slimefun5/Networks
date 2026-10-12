@@ -1,5 +1,6 @@
 package io.github.sefiraat.networks.slimefun.tools;
 
+import io.github.sefiraat.networks.utils.Messages;
 import io.github.sefiraat.networks.network.stackcaches.CardInstance;
 import io.github.sefiraat.networks.utils.HandCompat;
 import io.github.sefiraat.networks.utils.Theme;
@@ -44,12 +45,12 @@ public class NetworkCard extends SlimefunItem {
 
                 e.cancel();
                 if (card.getAmount() > 1) {
-                    player.sendMessage(Theme.WARNING + "Unstack cards before assigning an item.");
+                    Messages.send(player, Theme.WARNING, "card.unstack-first", "Unstack cards before assigning an item.");
                     return;
                 }
 
                 if (isBlacklisted(stackToSet)) {
-                    player.sendMessage(Theme.WARNING + "This type of item cannot be stored in a Network Card.");
+                    Messages.send(player, Theme.WARNING, "card.item-not-storable", "This type of item cannot be stored in a Network Card.");
                     return;
                 }
 
@@ -63,7 +64,7 @@ public class NetworkCard extends SlimefunItem {
                     }
 
                     if (cardInstance.getAmount() > 0) {
-                        e.getPlayer().sendMessage(Theme.WARNING + "A card must be empty before trying to assign an item.");
+                        Messages.send(e.getPlayer(), Theme.WARNING, "card.must-be-empty", "A card must be empty before trying to assign an item.");
                         return;
                     }
 

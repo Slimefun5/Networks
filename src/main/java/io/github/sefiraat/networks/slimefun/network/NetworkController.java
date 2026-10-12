@@ -1,5 +1,6 @@
 package io.github.sefiraat.networks.slimefun.network;
 
+import io.github.sefiraat.networks.utils.Messages;
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.network.NetworkNode;
 import io.github.sefiraat.networks.network.NetworkRoot;
@@ -110,7 +111,7 @@ public class NetworkController extends NetworkObject {
 
     @Override
     protected void cancelPlace(PlayerRightClickEvent event) {
-        event.getPlayer().sendMessage(Theme.ERROR.getColor() + "This network already has a controller!");
+        Messages.send(event.getPlayer(), Theme.ERROR, "controller.already-present", "This network already has a controller!");
         event.cancel();
     }
 

@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "L'oggetto in mano deve essere uno Stoccaggio Quantistico di Rete."
+  unset-or-corrupt: "Questa scheda non è ancora stata associata a un oggetto oppure è uno Stoccaggio Quantistico di Rete corrotto."
+  item-updated: "Oggetto aggiornato"
+  must-be-empty: "Lo Stoccaggio Quantistico di Rete deve essere vuoto prima di cambiare l'oggetto associato."
+
+card:
+  unstack-first: "Separa le schede prima di associare un oggetto."
+  item-not-storable: "Questo tipo di oggetto non può essere conservato in una Scheda di Rete."
+  must-be-empty: "Una scheda deve essere vuota prima di provare ad associarle un oggetto."
+
+controller:
+  already-present: "Questa rete ha già un controllore!"
+  would-connect-two: "Questo piazzamento collegherebbe due controllori!"
+
+encoder:
+  not-enough-power: "Energia di rete insufficiente per svolgere questo compito."
+  output-must-be-empty: "Lo slot di uscita deve essere vuoto."
+  needs-blank-blueprint: "Devi fornire un progetto vuoto"
+  invalid-recipe: "Non sembra che questa sia una ricetta valida."
+
+grid:
+  filter-prompt: "Scrivi ciò in base a cui vuoi filtrare questa griglia"
+  filter-applied: "Filtro applicato"
+
+configurator:
+  needs-directional: "Devi mirare a un'interfaccia direzionale di Networks."
+  no-direction-set: "Questo elemento direzionale non ha ancora una direzione impostata"
+  copied: "Configurazione copiata."
+  direction-label: "Direzione: "
+  direction-not-supplied: "Non fornita"
+  direction-applied: "Applicata con successo"
+  item-label: "Oggetto [%slot%]: "
+  item-added: "Oggetto aggiunto al filtro"
+  not-enough-items: "Non ci sono abbastanza oggetti per riempire il filtro"
+  no-item-stored: "Nessun oggetto nella configurazione salvata"
+  items-label: "Oggetti: "
+  no-items-stored: "Nessun oggetto nella configurazione salvata"
+
+wireless:
+  needs-wireless-block: "Devi mirare a un blocco wireless di Rete."
+  no-receiver-set: "Non è stato impostato alcun Ricevitore Wireless di Rete."
+  receiver-other-world: "Il Ricevitore Wireless di Rete si trova in un altro mondo."
+  transmitter-set: "Posizione del ricevitore del trasmettitore impostata."
+  receiver-set: "Ricevitore Wireless di Rete impostato."
+
+remote:
+  needs-grid: "Deve essere associato a una Griglia di Rete (non a una griglia di creazione)."
+  bound: "La griglia è stata associata al telecomando."
+  grid-not-loaded: "La griglia associata non è caricata."
+  grid-out-of-reach: "La griglia associata non è a portata."
+  not-bound: "Il telecomando non è associato a nessuna griglia."
+  grid-gone: "La griglia associata non si trova più."
+
+crayon:
+  removed: "Pastello rimosso dalla rete."
+  added: "Pastello aggiunto alla rete."
+
+debug:
+  state-set: "Il debug di questo blocco è stato impostato su %state%."
+  until-restart: "Durerà fino a un riavvio o finché non lo disattivi."
+  op-only: "Puoi usare questo strumento solo come giocatore operatore."
+
+tool:
+  on-cooldown: "Questo è ancora in ricarica"
+
+probe:
+  summary-title: "      Riepilogo di Rete       "
+  bridges: "Ponti"
+  monitors: "Monitor"
+  importers: "Importatori"
+  exporters: "Esportatori"
+  grids: "Griglie"
+  cells: "Celle"
+  wipers: "Cancellatori"
+  grabbers: "Afferratori"
+  pushers: "Spintori"
+  cutters: "Tagliatori"
+  pasters: "Incollatori"
+  vacuums: "Aspiratori"
+  purgers: "Eliminatori"
+  crafters: "Auto-Creatori"
+  power-nodes: "Nodi di energia"
+  power-outlets: "Prese"
+  power-displays: "Display di energia"
+  encoders: "Codificatori"
+  greedy-blocks: "Blocchi avidi"
+  wireless-transmitters: "Trasmettitori wireless"
+  wireless-receivers: "Ricevitori wireless"
+  distinct-items: "Oggetti distinti"
+  total-items: "Oggetti in totale"
+  root-power: "Energia della radice"
+  total-nodes: "Nodi in totale"
+  warning-label: "Attenzione: "
+  overburdened: "La tua rete ha raggiunto o superato il limite massimo di nodi. I nodi oltre il limite non funzioneranno, e non sono sempre gli stessi. Riduci il numero totale di nodi."

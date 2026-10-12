@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Das Item in der Hand muss ein Netzwerk-Quantenspeicher sein."
+  unset-or-corrupt: "Diese Karte wurde entweder noch nicht auf ein Item gesetzt oder ist ein beschädigter Netzwerk-Quantenspeicher."
+  item-updated: "Item aktualisiert"
+  must-be-empty: "Der Netzwerk-Quantenspeicher muss leer sein, bevor das gesetzte Item geändert wird."
+
+card:
+  unstack-first: "Entstapel die Karten, bevor du ein Item zuweist."
+  item-not-storable: "Dieser Item-Typ kann nicht in einer Netzwerk-Karte gespeichert werden."
+  must-be-empty: "Eine Karte muss leer sein, bevor du ihr ein Item zuweist."
+
+controller:
+  already-present: "Dieses Netzwerk hat bereits einen Controller!"
+  would-connect-two: "Diese Platzierung würde zwei Controller verbinden!"
+
+encoder:
+  not-enough-power: "Nicht genug Netzwerk-Energie für diese Aufgabe."
+  output-must-be-empty: "Der Ausgabe-Slot muss leer sein."
+  needs-blank-blueprint: "Du musst einen leeren Bauplan bereitstellen"
+  invalid-recipe: "Das sieht nicht nach einem gültigen Rezept aus."
+
+grid:
+  filter-prompt: "Gib ein, worauf du dieses Raster filtern möchtest"
+  filter-applied: "Filter angewendet"
+
+configurator:
+  needs-directional: "Du musst eine gerichtete Networks-Schnittstelle anvisieren."
+  no-direction-set: "Für dieses gerichtete Element ist noch keine Richtung gesetzt"
+  copied: "Konfiguration kopiert."
+  direction-label: "Richtung: "
+  direction-not-supplied: "Nicht angegeben"
+  direction-applied: "Erfolgreich angewendet"
+  item-label: "Item [%slot%]: "
+  item-added: "Item in den Filter aufgenommen"
+  not-enough-items: "Nicht genug Items, um den Filter zu füllen"
+  no-item-stored: "Kein Item in der gespeicherten Konfiguration"
+  items-label: "Items: "
+  no-items-stored: "Keine Items in der gespeicherten Konfiguration"
+
+wireless:
+  needs-wireless-block: "Du musst einen Netzwerk-Funkblock anvisieren."
+  no-receiver-set: "Es wurde kein Netzwerk-Funkempfänger gesetzt."
+  receiver-other-world: "Der Netzwerk-Funkempfänger befindet sich in einer anderen Welt."
+  transmitter-set: "Empfängerposition des Funksenders gesetzt."
+  receiver-set: "Netzwerk-Funkempfänger gesetzt."
+
+remote:
+  needs-grid: "Muss auf ein Netzwerk-Raster gesetzt sein (kein Handwerks-Raster)."
+  bound: "Das Raster wurde an die Fernbedienung gebunden."
+  grid-not-loaded: "Das gebundene Raster ist nicht geladen."
+  grid-out-of-reach: "Das gebundene Raster ist nicht in Reichweite."
+  not-bound: "Die Fernbedienung ist an kein Raster gebunden."
+  grid-gone: "Das gebundene Raster kann nicht mehr gefunden werden."
+
+crayon:
+  removed: "Buntstift aus dem Netzwerk entfernt."
+  added: "Buntstift zum Netzwerk hinzugefügt."
+
+debug:
+  state-set: "Debugging für diesen Block wurde auf %state% gesetzt."
+  until-restart: "Es gilt bis zu einem Neustart oder bis du es wieder ausschaltest."
+  op-only: "Du kannst dieses Werkzeug nur als OP-Spieler verwenden."
+
+tool:
+  on-cooldown: "Das ist noch in der Abklingzeit"
+
+probe:
+  summary-title: "      Netzwerk-Übersicht      "
+  bridges: "Brücken"
+  monitors: "Monitore"
+  importers: "Importeure"
+  exporters: "Exporteure"
+  grids: "Raster"
+  cells: "Zellen"
+  wipers: "Löscher"
+  grabbers: "Greifer"
+  pushers: "Schieber"
+  cutters: "Schneider"
+  pasters: "Einfüger"
+  vacuums: "Sauger"
+  purgers: "Vernichter"
+  crafters: "Autohandwerker"
+  power-nodes: "Energieknoten"
+  power-outlets: "Steckdosen"
+  power-displays: "Energieanzeigen"
+  encoders: "Rezeptkodierer"
+  greedy-blocks: "Gierige Blöcke"
+  wireless-transmitters: "Funksender"
+  wireless-receivers: "Funkempfänger"
+  distinct-items: "Verschiedene Items"
+  total-items: "Items insgesamt"
+  root-power: "Energie der Wurzel"
+  total-nodes: "Knoten insgesamt"
+  warning-label: "Warnung: "
+  overburdened: "Dein Netzwerk hat die maximale Knotenzahl erreicht oder überschritten. Knoten jenseits der Grenze funktionieren nicht, und welche das sind, kann sich jedes Mal ändern. Reduziere die Gesamtzahl deiner Knoten."

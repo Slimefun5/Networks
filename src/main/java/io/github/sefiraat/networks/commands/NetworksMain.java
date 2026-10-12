@@ -1,5 +1,6 @@
 package io.github.sefiraat.networks.commands;
 
+import io.github.sefiraat.networks.utils.Messages;
 import io.github.sefiraat.networks.network.stackcaches.QuantumCache;
 import io.github.sefiraat.networks.slimefun.NetworkSlimefunItems;
 import io.github.sefiraat.networks.slimefun.network.NetworkQuantumStorage;
@@ -60,14 +61,14 @@ public class NetworksMain implements CommandExecutor {
     public void fillQuantum(Player player, int amount) {
         final ItemStack itemStack = player.getInventory().getItemInHand();
         if (itemStack == null || itemStack.getType() == Material.AIR) {
-            player.sendMessage(Theme.ERROR + "Item in hand must be a Quantum Storage.");
+            Messages.send(player, Theme.ERROR, "quantum.must-be-storage", "Item in hand must be a Quantum Storage.");
             return;
         }
 
         SlimefunItem slimefunItem = SlimefunItem.getByItem(itemStack);
 
         if (!(slimefunItem instanceof NetworkQuantumStorage)) {
-            player.sendMessage(Theme.ERROR + "Item in hand must be a Quantum Storage.");
+            Messages.send(player, Theme.ERROR, "quantum.must-be-storage", "Item in hand must be a Quantum Storage.");
             return;
         }
 
@@ -75,7 +76,7 @@ public class NetworksMain implements CommandExecutor {
         final QuantumCache quantumCache = PersistentQuantumStorageType.read(meta);
 
         if (quantumCache == null || quantumCache.getItemStack() == null) {
-            player.sendMessage(Theme.ERROR + "This card has either not been set to an item yet or is a corrupted Quantum Storage.");
+            Messages.send(player, Theme.ERROR, "quantum.unset-or-corrupt", "This card has either not been set to an item yet or is a corrupted Quantum Storage.");
             return;
         }
 
@@ -83,7 +84,7 @@ public class NetworksMain implements CommandExecutor {
         PersistentQuantumStorageType.store(meta, quantumCache);
         quantumCache.updateMetaLore(meta);
         itemStack.setItemMeta(meta);
-        player.sendMessage(Theme.SUCCESS + "Item updated");
+        Messages.send(player, Theme.SUCCESS, "quantum.item-updated", "Item updated");
     }
 }
 

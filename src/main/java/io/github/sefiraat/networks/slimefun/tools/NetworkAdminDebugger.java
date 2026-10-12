@@ -1,5 +1,6 @@
 package io.github.sefiraat.networks.slimefun.tools;
 
+import io.github.sefiraat.networks.utils.Messages;
 import io.github.sefiraat.networks.slimefun.network.AdminDebuggable;
 import io.github.sefiraat.networks.utils.Theme;
 import io.github.thebusybiscuit.slimefun5.api.events.PlayerRightClickEvent;
@@ -38,7 +39,7 @@ public class NetworkAdminDebugger extends SlimefunItem {
             final Player player = e.getPlayer();
             final SlimefunItem slimefunItem = BlockStorage.check(block);
             if (!player.isOp()) {
-                player.sendMessage(Theme.ERROR + "You can only use this tool as an op'd player.");
+                Messages.send(player, Theme.ERROR, "debug.op-only", "You can only use this tool as an op'd player.");
                 return;
             }
             if (slimefunItem instanceof AdminDebuggable) {

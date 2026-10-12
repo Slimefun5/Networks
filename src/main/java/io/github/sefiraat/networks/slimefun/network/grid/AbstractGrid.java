@@ -1,5 +1,6 @@
 package io.github.sefiraat.networks.slimefun.network.grid;
 
+import io.github.sefiraat.networks.utils.Messages;
 import io.github.sefiraat.networks.NetworkStorage;
 import java.util.Arrays;
 import java.util.stream.Collectors;
@@ -237,13 +238,13 @@ public abstract class AbstractGrid extends NetworkObject {
             gridCache.setFilter(null);
         } else {
             player.closeInventory();
-            player.sendMessage(Theme.WARNING + "Type what you would like to filter this grid to");
+            Messages.send(player, Theme.WARNING, "grid.filter-prompt", "Type what you would like to filter this grid to");
             ChatUtils.awaitInput(player, s -> {
                 if (s.trim().isEmpty()) {
                     return;
                 }
                 gridCache.setFilter(s.toLowerCase(Locale.ROOT));
-                player.sendMessage(Theme.SUCCESS + "Filter applied");
+                Messages.send(player, Theme.SUCCESS, "grid.filter-applied", "Filter applied");
             });
         }
         return false;

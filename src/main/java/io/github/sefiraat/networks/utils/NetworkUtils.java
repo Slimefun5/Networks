@@ -23,6 +23,11 @@ import javax.annotation.Nonnull;
 
 public class NetworkUtils {
 
+    @Nonnull
+    private static String itemLabel(@Nonnull Player player, int slot) {
+        return Messages.get(player, "configurator.item-label", "Item [%slot%]: ").replace("%slot%", String.valueOf(slot));
+    }
+
     public static void applyConfig(@Nonnull NetworkDirectional directional, @Nonnull BlockMenu blockMenu, @Nonnull Player player) {
         ItemStack itemStack = HandCompat.offHandItem(player.getInventory());
 
@@ -37,12 +42,14 @@ public class NetworkUtils {
         final String string = DataTypeMethods.getString(itemMeta, Keys.FACE.toString());
 
         if (string == null) {
-            player.sendMessage(Theme.ERROR + "Direction: " + Theme.PASSIVE + "Not supplied");
+            player.sendMessage(Theme.ERROR + Messages.get(player, "configurator.direction-label", "Direction: ")
+                + Theme.PASSIVE + Messages.get(player, "configurator.direction-not-supplied", "Not supplied"));
             return;
         }
 
         directional.setDirection(blockMenu, BlockFace.valueOf(string));
-        player.sendMessage(Theme.ERROR + "Direction: " + Theme.PASSIVE + "Successfully applied");
+        player.sendMessage(Theme.ERROR + Messages.get(player, "configurator.direction-label", "Direction: ")
+            + Theme.PASSIVE + Messages.get(player, "configurator.direction-applied", "Successfully applied"));
 
 
         if (directional.getItemSlots().length > 0) {
@@ -65,21 +72,25 @@ public class NetworkUtils {
                             final ItemStack stackClone = StackUtils.getAsQuantity(stack, 1);
                             stack.setAmount(stack.getAmount() - 1);
                             blockMenu.replaceExistingItem(directional.getItemSlots()[i], stackClone);
-                            player.sendMessage(Theme.SUCCESS + "Item [" + i + "]: " + Theme.PASSIVE + "Item added into filter");
+                            player.sendMessage(Theme.SUCCESS + itemLabel(player, i)
+                                + Theme.PASSIVE + Messages.get(player, "configurator.item-added", "Item added into filter"));
                             worked = true;
                             break;
                         }
                     }
                     if (!worked) {
-                        player.sendMessage(Theme.WARNING + "Item [" + i + "]: " + Theme.PASSIVE + "Not enough items to fill filter");
+                        player.sendMessage(Theme.WARNING + itemLabel(player, i)
+                            + Theme.PASSIVE + Messages.get(player, "configurator.not-enough-items", "Not enough items to fill filter"));
                     }
                 } else if (directional instanceof NetworkPusher) {
-                    player.sendMessage(Theme.WARNING + "Item [" + i + "]: " + Theme.PASSIVE + "No item in stored config");
+                    player.sendMessage(Theme.WARNING + itemLabel(player, i)
+                        + Theme.PASSIVE + Messages.get(player, "configurator.no-item-stored", "No item in stored config"));
                 }
                 i++;
             }
         } else {
-            player.sendMessage(Theme.WARNING + "Items: " + Theme.PASSIVE + "No items in stored config");
+            player.sendMessage(Theme.WARNING + Messages.get(player, "configurator.items-label", "Items: ")
+                + Theme.PASSIVE + Messages.get(player, "configurator.no-items-stored", "No items in stored config"));
         }
     }
 

@@ -1,5 +1,6 @@
 package io.github.sefiraat.networks.slimefun.tools;
 
+import io.github.sefiraat.networks.utils.Messages;
 import io.github.sefiraat.networks.slimefun.network.NetworkDirectional;
 import io.github.sefiraat.networks.slimefun.network.NetworkPusher;
 import io.github.sefiraat.networks.utils.Keys;
@@ -52,7 +53,7 @@ public class NetworkConfigurator extends SlimefunItem {
                                 NetworkUtils.applyConfig(directional, e.getItem(), blockMenu, player);
                             }
                         } else {
-                            player.sendMessage(Theme.ERROR + "Must target a directional Networks interface.");
+                            Messages.send(player, Theme.ERROR, "configurator.needs-directional", "Must target a directional Networks interface.");
                         }
                     }
                     e.cancel();
@@ -65,7 +66,7 @@ public class NetworkConfigurator extends SlimefunItem {
         final BlockFace blockFace = NetworkDirectional.getSelectedFace(blockMenu.getLocation());
 
         if (blockFace == null) {
-            player.sendMessage(Theme.ERROR + "This directional does not yet have a direction set");
+            Messages.send(player, Theme.ERROR, "configurator.no-direction-set", "This directional does not yet have a direction set");
             return;
         }
 
@@ -89,7 +90,7 @@ public class NetworkConfigurator extends SlimefunItem {
 
         DataTypeMethods.setString(itemMeta, Keys.FACE.toString(), blockFace.name());
         itemStack.setItemMeta(itemMeta);
-        player.sendMessage(Theme.SUCCESS + "Configuration copied.");
+        Messages.send(player, Theme.SUCCESS, "configurator.copied", "Configuration copied.");
     }
 }
 

@@ -1,5 +1,6 @@
 package io.github.sefiraat.networks.slimefun.tools;
 
+import io.github.sefiraat.networks.utils.Messages;
 import io.github.sefiraat.networks.slimefun.network.grid.NetworkGrid;
 import io.github.sefiraat.networks.utils.Keys;
 import io.github.sefiraat.networks.utils.Theme;
@@ -54,7 +55,7 @@ public class NetworkRemote extends SlimefunItem {
                             ) {
                                 setGrid(e.getItem(), block, player);
                             } else {
-                                player.sendMessage(Theme.ERROR + "Must be set to a Network Grid (not crafting grid).");
+                                Messages.send(player, Theme.ERROR, "remote.needs-grid", "Must be set to a Network Grid (not crafting grid).");
                             }
                         }
                     } else {
@@ -70,7 +71,7 @@ public class NetworkRemote extends SlimefunItem {
         final ItemMeta itemMeta = itemStack.getItemMeta();
         DataTypeMethods.setLocation(itemMeta, KEY.toString(), block.getLocation());
         itemStack.setItemMeta(itemMeta);
-        player.sendMessage(Theme.SUCCESS + "Grid has been bound to the remote.");
+        Messages.send(player, Theme.SUCCESS, "remote.bound", "Grid has been bound to the remote.");
     }
 
     public static void tryOpenGrid(@Nonnull ItemStack itemStack, @Nonnull Player player, int range) {
@@ -80,7 +81,7 @@ public class NetworkRemote extends SlimefunItem {
         if (location != null) {
 
             if (!location.getWorld().isChunkLoaded(location.getBlockX() / 16, location.getBlockZ() / 16)) {
-                player.sendMessage(Theme.ERROR + "The bound grid is not loaded.");
+                Messages.send(player, Theme.ERROR, "remote.grid-not-loaded", "The bound grid is not loaded.");
                 return;
             }
 
@@ -92,10 +93,10 @@ public class NetworkRemote extends SlimefunItem {
             ) {
                 openGrid(location, player);
             } else {
-                player.sendMessage(Theme.ERROR + "The bound grid is not within reach.");
+                Messages.send(player, Theme.ERROR, "remote.grid-out-of-reach", "The bound grid is not within reach.");
             }
         } else {
-            player.sendMessage(Theme.ERROR + "Remote is not bound to a grid.");
+            Messages.send(player, Theme.ERROR, "remote.not-bound", "Remote is not bound to a grid.");
         }
     }
 
@@ -107,7 +108,7 @@ public class NetworkRemote extends SlimefunItem {
         ) {
             blockMenu.open(player);
         } else {
-            player.sendMessage(Theme.ERROR + "The bound grid can no longer be found.");
+            Messages.send(player, Theme.ERROR, "remote.grid-gone", "The bound grid can no longer be found.");
         }
     }
 
