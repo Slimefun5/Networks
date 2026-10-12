@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Item di tangan harus berupa Penyimpanan Kuantum Jaringan."
+  unset-or-corrupt: "Kartu ini belum dikaitkan ke sebuah item atau merupakan Penyimpanan Kuantum Jaringan yang rusak."
+  item-updated: "Item diperbarui"
+  must-be-empty: "Penyimpanan Kuantum Jaringan harus kosong sebelum item yang dikaitkan diubah."
+
+card:
+  unstack-first: "Pisahkan kartu sebelum mengaitkan item."
+  item-not-storable: "Item jenis ini tidak dapat disimpan dalam Kartu Jaringan."
+  must-be-empty: "Kartu harus kosong sebelum kamu mencoba mengaitkan item padanya."
+
+controller:
+  already-present: "Jaringan ini sudah punya pengendali!"
+  would-connect-two: "Penempatan ini akan menghubungkan dua pengendali!"
+
+encoder:
+  not-enough-power: "Daya jaringan tidak cukup untuk menjalankan tugas ini."
+  output-must-be-empty: "Slot keluaran harus kosong."
+  needs-blank-blueprint: "Kamu harus menyediakan cetak biru kosong"
+  invalid-recipe: "Sepertinya ini bukan resep yang sah."
+
+grid:
+  filter-prompt: "Tulis berdasarkan apa kamu ingin menyaring kisi ini"
+  filter-applied: "Saringan diterapkan"
+
+configurator:
+  needs-directional: "Kamu harus membidik antarmuka Networks yang berarah."
+  no-direction-set: "Elemen berarah ini belum punya arah yang diatur"
+  copied: "Konfigurasi disalin."
+  direction-label: "Arah: "
+  direction-not-supplied: "Tidak disediakan"
+  direction-applied: "Berhasil diterapkan"
+  item-label: "Item [%slot%]: "
+  item-added: "Item ditambahkan ke saringan"
+  not-enough-items: "Item tidak cukup untuk mengisi saringan"
+  no-item-stored: "Tidak ada item dalam konfigurasi tersimpan"
+  items-label: "Item: "
+  no-items-stored: "Tidak ada item dalam konfigurasi tersimpan"
+
+wireless:
+  needs-wireless-block: "Kamu harus membidik blok nirkabel jaringan."
+  no-receiver-set: "Belum ada Penerima Nirkabel Jaringan yang diatur."
+  receiver-other-world: "Penerima Nirkabel Jaringan berada di dunia lain."
+  transmitter-set: "Posisi penerima untuk pemancar telah diatur."
+  receiver-set: "Penerima Nirkabel Jaringan telah diatur."
+
+remote:
+  needs-grid: "Harus diatur ke Kisi Jaringan (bukan kisi perakitan)."
+  bound: "Kisi telah diikat ke kendali jarak jauh."
+  grid-not-loaded: "Kisi yang diikat belum dimuat."
+  grid-out-of-reach: "Kisi yang diikat berada di luar jangkauan."
+  not-bound: "Kendali jarak jauh tidak diikat ke kisi mana pun."
+  grid-gone: "Kisi yang diikat tidak dapat ditemukan lagi."
+
+crayon:
+  removed: "Krayon dihapus dari jaringan."
+  added: "Krayon ditambahkan ke jaringan."
+
+debug:
+  state-set: "Penelusuran galat untuk blok ini diatur ke %state%."
+  until-restart: "Ini akan bertahan sampai mulai ulang atau sampai kamu mematikannya lagi."
+  op-only: "Kamu hanya bisa memakai alat ini sebagai pemain dengan hak operator."
+
+tool:
+  on-cooldown: "Ini masih dalam masa tunggu"
+
+probe:
+  summary-title: "      Ringkasan Jaringan      "
+  bridges: "Jembatan"
+  monitors: "Monitor"
+  importers: "Pengimpor"
+  exporters: "Pengekspor"
+  grids: "Kisi"
+  cells: "Sel"
+  wipers: "Penghapus"
+  grabbers: "Penyambar"
+  pushers: "Pendorong"
+  cutters: "Pemotong"
+  pasters: "Penempel"
+  vacuums: "Penyedot"
+  purgers: "Pembersih"
+  crafters: "Perakit otomatis"
+  power-nodes: "Simpul daya"
+  power-outlets: "Stopkontak daya"
+  power-displays: "Tampilan daya"
+  encoders: "Pengode resep"
+  greedy-blocks: "Blok rakus"
+  wireless-transmitters: "Pemancar nirkabel"
+  wireless-receivers: "Penerima nirkabel"
+  distinct-items: "Item berbeda"
+  total-items: "Total item"
+  root-power: "Daya akar"
+  total-nodes: "Total simpul"
+  warning-label: "Peringatan: "
+  overburdened: "Jaringanmu sudah mencapai atau melewati batas maksimum simpul. Simpul di atas batas tidak akan berfungsi, dan simpul tersebut tidak selalu sama. Kurangi jumlah total simpulmu."

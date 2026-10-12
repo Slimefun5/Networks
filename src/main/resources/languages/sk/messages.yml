@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Predmet v ruke musí byť sieťové kvantové úložisko."
+  unset-or-corrupt: "Táto karta ešte nebola priradená k predmetu, alebo je to poškodené sieťové kvantové úložisko."
+  item-updated: "Predmet aktualizovaný"
+  must-be-empty: "Sieťové kvantové úložisko musí byť prázdne, kým zmeníš priradený predmet."
+
+card:
+  unstack-first: "Rozdeľ karty, kým priradíš predmet."
+  item-not-storable: "Tento typ predmetu sa nedá uložiť do sieťovej karty."
+  must-be-empty: "Karta musí byť prázdna, kým sa jej pokúsiš priradiť predmet."
+
+controller:
+  already-present: "Táto sieť už má riadiacu jednotku!"
+  would-connect-two: "Toto umiestnenie by spojilo dve riadiace jednotky!"
+
+encoder:
+  not-enough-power: "Nedostatok sieťovej energie na splnenie tejto úlohy."
+  output-must-be-empty: "Výstupný slot musí byť prázdny."
+  needs-blank-blueprint: "Musíš poskytnúť prázdny plán"
+  invalid-recipe: "Nezdá sa, že by to bol platný recept."
+
+grid:
+  filter-prompt: "Napíš, podľa čoho chceš filtrovať túto mriežku"
+  filter-applied: "Filter použitý"
+
+configurator:
+  needs-directional: "Musíš zamerať smerové rozhranie Networks."
+  no-direction-set: "Tento smerový prvok ešte nemá nastavený smer"
+  copied: "Nastavenie skopírované."
+  direction-label: "Smer: "
+  direction-not-supplied: "Neuvedené"
+  direction-applied: "Úspešne použité"
+  item-label: "Predmet [%slot%]: "
+  item-added: "Predmet pridaný do filtra"
+  not-enough-items: "Nedostatok predmetov na zaplnenie filtra"
+  no-item-stored: "V uloženom nastavení nie je žiadny predmet"
+  items-label: "Predmety: "
+  no-items-stored: "V uloženom nastavení nie sú žiadne predmety"
+
+wireless:
+  needs-wireless-block: "Musíš zamerať sieťový bezdrôtový blok."
+  no-receiver-set: "Nebol nastavený žiadny sieťový bezdrôtový prijímač."
+  receiver-other-world: "Sieťový bezdrôtový prijímač je v inom svete."
+  transmitter-set: "Pozícia prijímača pre vysielač nastavená."
+  receiver-set: "Sieťový bezdrôtový prijímač nastavený."
+
+remote:
+  needs-grid: "Musí byť nastavený na sieťovú mriežku (nie na výrobnú mriežku)."
+  bound: "Mriežka bola spárovaná s diaľkovým ovládačom."
+  grid-not-loaded: "Spárovaná mriežka nie je načítaná."
+  grid-out-of-reach: "Spárovaná mriežka je mimo dosahu."
+  not-bound: "Diaľkový ovládač nie je spárovaný so žiadnou mriežkou."
+  grid-gone: "Spárovanú mriežku už nemožno nájsť."
+
+crayon:
+  removed: "Pastelka odobraná zo siete."
+  added: "Pastelka pridaná do siete."
+
+debug:
+  state-set: "Ladenie tohto bloku bolo nastavené na %state%."
+  until-restart: "Vydrží do reštartu alebo kým to zase nevypneš."
+  op-only: "Tento nástroj môžeš použiť len ako hráč s právami operátora."
+
+tool:
+  on-cooldown: "Toto sa ešte ochladzuje"
+
+probe:
+  summary-title: "        Prehľad siete         "
+  bridges: "Mosty"
+  monitors: "Monitory"
+  importers: "Importéry"
+  exporters: "Exportéry"
+  grids: "Mriežky"
+  cells: "Články"
+  wipers: "Mazače"
+  grabbers: "Uchopovače"
+  pushers: "Vtláčače"
+  cutters: "Vyrezávače"
+  pasters: "Vkladače"
+  vacuums: "Vysávače"
+  purgers: "Likvidátory"
+  crafters: "Automatické výrobníky"
+  power-nodes: "Energetické uzly"
+  power-outlets: "Energetické zásuvky"
+  power-displays: "Displeje energie"
+  encoders: "Kódovače receptov"
+  greedy-blocks: "Lakomé bloky"
+  wireless-transmitters: "Bezdrôtové vysielače"
+  wireless-receivers: "Bezdrôtové prijímače"
+  distinct-items: "Rôzne predmety"
+  total-items: "Predmetov celkom"
+  root-power: "Energia korena"
+  total-nodes: "Uzlov celkom"
+  warning-label: "Upozornenie: "
+  overburdened: "Tvoja sieť dosiahla alebo prekročila maximálny limit uzlov. Uzly nad limit nebudú fungovať a nie sú to vždy tie isté uzly. Zníž celkový počet uzlov."

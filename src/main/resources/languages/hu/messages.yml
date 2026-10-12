@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "A kézben tartott tárgynak Hálózati Kvantumtárolónak kell lennie."
+  unset-or-corrupt: "Ezt a kártyát még nem rendelték tárgyhoz, vagy sérült Hálózati Kvantumtároló."
+  item-updated: "Tárgy frissítve"
+  must-be-empty: "A Hálózati Kvantumtárolónak üresnek kell lennie, mielőtt a hozzárendelt tárgy megváltozik."
+
+card:
+  unstack-first: "Szedd szét a kártyákat, mielőtt tárgyat rendelsz hozzájuk."
+  item-not-storable: "Ez a tárgytípus nem tárolható Hálózati Kártyán."
+  must-be-empty: "A kártyának üresnek kell lennie, mielőtt tárgyat próbálsz hozzárendelni."
+
+controller:
+  already-present: "Ennek a hálózatnak már van vezérlője!"
+  would-connect-two: "Ez az elhelyezés két vezérlőt kapcsolna össze!"
+
+encoder:
+  not-enough-power: "Nincs elég hálózati energia ehhez a feladathoz."
+  output-must-be-empty: "A kimeneti helynek üresnek kell lennie."
+  needs-blank-blueprint: "Üres tervrajzot kell biztosítanod"
+  invalid-recipe: "Ez nem tűnik érvényes receptnek."
+
+grid:
+  filter-prompt: "Írd be, mire szeretnéd szűrni ezt a rácsot"
+  filter-applied: "Szűrő alkalmazva"
+
+configurator:
+  needs-directional: "Egy irányított Networks felületre kell céloznod."
+  no-direction-set: "Ennek az irányított elemnek még nincs beállított iránya"
+  copied: "Beállítás átmásolva."
+  direction-label: "Irány: "
+  direction-not-supplied: "Nincs megadva"
+  direction-applied: "Sikeresen alkalmazva"
+  item-label: "Tárgy [%slot%]: "
+  item-added: "Tárgy hozzáadva a szűrőhöz"
+  not-enough-items: "Nincs elég tárgy a szűrő feltöltéséhez"
+  no-item-stored: "Nincs tárgy a mentett beállításban"
+  items-label: "Tárgyak: "
+  no-items-stored: "Nincsenek tárgyak a mentett beállításban"
+
+wireless:
+  needs-wireless-block: "Egy hálózati vezeték nélküli blokkra kell céloznod."
+  no-receiver-set: "Nem lett beállítva Hálózati Vezeték nélküli Vevő."
+  receiver-other-world: "A Hálózati Vezeték nélküli Vevő egy másik világban van."
+  transmitter-set: "Az adó vevőpozíciója beállítva."
+  receiver-set: "Hálózati Vezeték nélküli Vevő beállítva."
+
+remote:
+  needs-grid: "Hálózati Rácsra kell beállítani (nem barkácsrácsra)."
+  bound: "A rács hozzá lett kötve a távirányítóhoz."
+  grid-not-loaded: "A hozzákötött rács nincs betöltve."
+  grid-out-of-reach: "A hozzákötött rács nincs elérhető közelségben."
+  not-bound: "A távirányító nincs rácshoz kötve."
+  grid-gone: "A hozzákötött rács már nem található."
+
+crayon:
+  removed: "Zsírkréta eltávolítva a hálózatból."
+  added: "Zsírkréta hozzáadva a hálózathoz."
+
+debug:
+  state-set: "Ennek a blokknak a hibakeresése %state% értékre lett állítva."
+  until-restart: "Újraindításig tart, vagy amíg újra ki nem kapcsolod."
+  op-only: "Ezt az eszközt csak operátori joggal rendelkező játékosként használhatod."
+
+tool:
+  on-cooldown: "Ez még visszatöltődik"
+
+probe:
+  summary-title: "      Hálózati összegzés      "
+  bridges: "Hidak"
+  monitors: "Monitorok"
+  importers: "Importálók"
+  exporters: "Exportálók"
+  grids: "Rácsok"
+  cells: "Cellák"
+  wipers: "Törlők"
+  grabbers: "Megfogók"
+  pushers: "Betolók"
+  cutters: "Kivágók"
+  pasters: "Beillesztők"
+  vacuums: "Szívók"
+  purgers: "Tisztítók"
+  crafters: "Automatikus barkácsolók"
+  power-nodes: "Energiacsomópontok"
+  power-outlets: "Áramkimenetek"
+  power-displays: "Áramkijelzők"
+  encoders: "Receptkódolók"
+  greedy-blocks: "Kapzsi blokkok"
+  wireless-transmitters: "Vezeték nélküli adók"
+  wireless-receivers: "Vezeték nélküli vevők"
+  distinct-items: "Különböző tárgyak"
+  total-items: "Tárgyak összesen"
+  root-power: "A gyökér energiája"
+  total-nodes: "Csomópontok összesen"
+  warning-label: "Figyelem: "
+  overburdened: "A hálózatod elérte vagy túllépte a csomópontok felső határát. A határon felüli csomópontok nem működnek, és nem mindig ugyanazok. Csökkentsd a csomópontok teljes számát."

@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Kädessä olevan esineen on oltava verkon kvanttivarasto."
+  unset-or-corrupt: "Tätä korttia ei ole vielä liitetty esineeseen, tai se on vioittunut verkon kvanttivarasto."
+  item-updated: "Esine päivitetty"
+  must-be-empty: "Verkon kvanttivaraston on oltava tyhjä, ennen kuin liitettyä esinettä vaihdetaan."
+
+card:
+  unstack-first: "Pura korttipino, ennen kuin liität esineen."
+  item-not-storable: "Tämän tyyppistä esinettä ei voi tallentaa verkkokorttiin."
+  must-be-empty: "Kortin on oltava tyhjä, ennen kuin siihen yrittää liittää esineen."
+
+controller:
+  already-present: "Tällä verkolla on jo ohjain!"
+  would-connect-two: "Tämä sijoitus yhdistäisi kaksi ohjainta!"
+
+encoder:
+  not-enough-power: "Verkon virta ei riitä tähän tehtävään."
+  output-must-be-empty: "Tulostuspaikan on oltava tyhjä."
+  needs-blank-blueprint: "Sinun on annettava tyhjä piirustus"
+  invalid-recipe: "Tämä ei näytä kelvolliselta ohjeelta."
+
+grid:
+  filter-prompt: "Kirjoita, minkä perusteella haluat suodattaa tämän ruudukon"
+  filter-applied: "Suodatin otettu käyttöön"
+
+configurator:
+  needs-directional: "Sinun on tähdättävä suunnattuun Networks-liittymään."
+  no-direction-set: "Tälle suunnatulle osalle ei ole vielä asetettu suuntaa"
+  copied: "Kokoonpano kopioitu."
+  direction-label: "Suunta: "
+  direction-not-supplied: "Ei annettu"
+  direction-applied: "Otettu onnistuneesti käyttöön"
+  item-label: "Esine [%slot%]: "
+  item-added: "Esine lisätty suodattimeen"
+  not-enough-items: "Esineitä ei ole tarpeeksi suodattimen täyttämiseen"
+  no-item-stored: "Tallennetussa kokoonpanossa ei ole esinettä"
+  items-label: "Esineet: "
+  no-items-stored: "Tallennetussa kokoonpanossa ei ole esineitä"
+
+wireless:
+  needs-wireless-block: "Sinun on tähdättävä verkon langattomaan palikkaan."
+  no-receiver-set: "Verkon langatonta vastaanotinta ei ole asetettu."
+  receiver-other-world: "Verkon langaton vastaanotin on toisessa maailmassa."
+  transmitter-set: "Lähettimen vastaanottimen sijainti asetettu."
+  receiver-set: "Verkon langaton vastaanotin asetettu."
+
+remote:
+  needs-grid: "On asetettava verkkoruudukkoon (ei valmistusruudukkoon)."
+  bound: "Ruudukko on sidottu kaukosäätimeen."
+  grid-not-loaded: "Sidottua ruudukkoa ei ole ladattu."
+  grid-out-of-reach: "Sidottu ruudukko ei ole ulottuvilla."
+  not-bound: "Kaukosäädintä ei ole sidottu mihinkään ruudukkoon."
+  grid-gone: "Sidottua ruudukkoa ei löydy enää."
+
+crayon:
+  removed: "Liitu poistettu verkosta."
+  added: "Liitu lisätty verkkoon."
+
+debug:
+  state-set: "Tämän palikan virheenjäljitys on asetettu arvoon %state%."
+  until-restart: "Se kestää uudelleenkäynnistykseen asti tai kunnes kytket sen jälleen pois."
+  op-only: "Voit käyttää tätä työkalua vain operaattoripelaajana."
+
+tool:
+  on-cooldown: "Tämä on vielä jäähtymässä"
+
+probe:
+  summary-title: "      Verkon yhteenveto       "
+  bridges: "Sillat"
+  monitors: "Monitorit"
+  importers: "Tuojat"
+  exporters: "Viejät"
+  grids: "Ruudukot"
+  cells: "Kennot"
+  wipers: "Pyyhkijät"
+  grabbers: "Nappaajat"
+  pushers: "Työntäjät"
+  cutters: "Leikkaajat"
+  pasters: "Liittäjät"
+  vacuums: "Imurit"
+  purgers: "Puhdistimet"
+  crafters: "Automaattivalmistimet"
+  power-nodes: "Virtasolmut"
+  power-outlets: "Virtapistokkeet"
+  power-displays: "Virtanäytöt"
+  encoders: "Reseptienkooderit"
+  greedy-blocks: "Ahneet palikat"
+  wireless-transmitters: "Langattomat lähettimet"
+  wireless-receivers: "Langattomat vastaanottimet"
+  distinct-items: "Eri esineitä"
+  total-items: "Esineitä yhteensä"
+  root-power: "Juuren virta"
+  total-nodes: "Solmuja yhteensä"
+  warning-label: "Varoitus: "
+  overburdened: "Verkkosi on saavuttanut solmujen enimmäisrajan tai ylittänyt sen. Rajan ylittävät solmut eivät toimi, eivätkä ne ole aina samoja. Vähennä solmujesi kokonaismäärää."

@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Predmet u ruci mora biti mrežno kvantno skladište."
+  unset-or-corrupt: "Ova kartica još nije povezana s predmetom ili je oštećeno mrežno kvantno skladište."
+  item-updated: "Predmet ažuriran"
+  must-be-empty: "Mrežno kvantno skladište mora biti prazno prije promjene povezanog predmeta."
+
+card:
+  unstack-first: "Razdvoji kartice prije povezivanja predmeta."
+  item-not-storable: "Ova vrsta predmeta ne može se čuvati u mrežnoj kartici."
+  must-be-empty: "Kartica mora biti prazna prije nego što pokušaš povezati predmet."
+
+controller:
+  already-present: "Ova mreža već ima kontroler!"
+  would-connect-two: "Ovakvo postavljanje povezalo bi dva kontrolera!"
+
+encoder:
+  not-enough-power: "Nedovoljno mrežne energije za izvršavanje ovog zadatka."
+  output-must-be-empty: "Izlazno mjesto mora biti prazno."
+  needs-blank-blueprint: "Moraš osigurati prazan nacrt"
+  invalid-recipe: "Ne izgleda kao ispravan recept."
+
+grid:
+  filter-prompt: "Upiši po čemu želiš filtrirati ovu rešetku"
+  filter-applied: "Filtar primijenjen"
+
+configurator:
+  needs-directional: "Moraš naciljati usmjereno Networks sučelje."
+  no-direction-set: "Ovaj usmjereni element još nema postavljen smjer"
+  copied: "Postavke kopirane."
+  direction-label: "Smjer: "
+  direction-not-supplied: "Nije naveden"
+  direction-applied: "Uspješno primijenjen"
+  item-label: "Predmet [%slot%]: "
+  item-added: "Predmet dodan u filtar"
+  not-enough-items: "Nema dovoljno predmeta da se filtar napuni"
+  no-item-stored: "U sačuvanim postavkama nema predmeta"
+  items-label: "Predmeti: "
+  no-items-stored: "U sačuvanim postavkama nema predmeta"
+
+wireless:
+  needs-wireless-block: "Moraš naciljati mrežni bežični blok."
+  no-receiver-set: "Nije postavljen nijedan mrežni bežični prijamnik."
+  receiver-other-world: "Mrežni bežični prijamnik je u drugom svijetu."
+  transmitter-set: "Položaj prijamnika za odašiljač postavljen."
+  receiver-set: "Mrežni bežični prijamnik postavljen."
+
+remote:
+  needs-grid: "Mora biti postavljen na mrežnu rešetku (ne na rešetku za izradu)."
+  bound: "Rešetka je povezana s daljinskim upravljačem."
+  grid-not-loaded: "Povezana rešetka nije učitana."
+  grid-out-of-reach: "Povezana rešetka nije u dosegu."
+  not-bound: "Daljinski upravljač nije povezan ni s jednom rešetkom."
+  grid-gone: "Povezanu rešetku više nije moguće naći."
+
+crayon:
+  removed: "Bojica uklonjena iz mreže."
+  added: "Bojica dodana u mrežu."
+
+debug:
+  state-set: "Otklanjanje pogrešaka za ovaj blok postavljeno je na %state%."
+  until-restart: "Trajat će do ponovnog pokretanja ili dok ga ponovno ne isključiš."
+  op-only: "Ovaj alat možeš koristiti samo kao igrač s pravima operatera."
+
+tool:
+  on-cooldown: "Ovo se još hladi"
+
+probe:
+  summary-title: "        Pregled mreže         "
+  bridges: "Mostovi"
+  monitors: "Monitori"
+  importers: "Uvoznici"
+  exporters: "Izvoznici"
+  grids: "Rešetke"
+  cells: "Ćelije"
+  wipers: "Brisači"
+  grabbers: "Hvatači"
+  pushers: "Gurači"
+  cutters: "Rezači"
+  pasters: "Umetači"
+  vacuums: "Usisavači"
+  purgers: "Čistači"
+  crafters: "Automatski izrađivači"
+  power-nodes: "Energetski čvorovi"
+  power-outlets: "Energetske utičnice"
+  power-displays: "Prikazi energije"
+  encoders: "Koderi recepata"
+  greedy-blocks: "Pohlepni blokovi"
+  wireless-transmitters: "Bežični odašiljači"
+  wireless-receivers: "Bežični prijamnici"
+  distinct-items: "Različiti predmeti"
+  total-items: "Predmeta ukupno"
+  root-power: "Energija korijena"
+  total-nodes: "Čvorova ukupno"
+  warning-label: "Upozorenje: "
+  overburdened: "Tvoja mreža dosegnula je ili prešla najveći dopušteni broj čvorova. Čvorovi iznad granice neće raditi, a to nisu uvijek isti čvorovi. Smanji ukupan broj čvorova."

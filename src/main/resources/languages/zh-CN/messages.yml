@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "手中的物品必须是网络量子存储。"
+  unset-or-corrupt: "此卡片尚未绑定物品，或者它是一个已损坏的网络量子存储。"
+  item-updated: "物品已更新"
+  must-be-empty: "更改绑定的物品之前，网络量子存储必须为空。"
+
+card:
+  unstack-first: "绑定物品之前请先把卡片拆开。"
+  item-not-storable: "这类物品无法存放在网络卡片中。"
+  must-be-empty: "尝试为卡片绑定物品之前，卡片必须为空。"
+
+controller:
+  already-present: "该网络已经有一个控制器！"
+  would-connect-two: "这样放置会把两个控制器连在一起！"
+
+encoder:
+  not-enough-power: "网络电力不足，无法完成此任务。"
+  output-must-be-empty: "输出栏必须为空。"
+  needs-blank-blueprint: "你需要提供一张空白蓝图"
+  invalid-recipe: "这看起来不是一个有效的配方。"
+
+grid:
+  filter-prompt: "请输入你想用来筛选此网格的内容"
+  filter-applied: "筛选器已应用"
+
+configurator:
+  needs-directional: "你必须瞄准一个有方向的 Networks 接口。"
+  no-direction-set: "该方向性部件尚未设置方向"
+  copied: "配置已复制。"
+  direction-label: "方向："
+  direction-not-supplied: "未提供"
+  direction-applied: "已成功应用"
+  item-label: "物品 [%slot%]："
+  item-added: "物品已加入筛选器"
+  not-enough-items: "物品不足，无法填满筛选器"
+  no-item-stored: "保存的配置中没有物品"
+  items-label: "物品："
+  no-items-stored: "保存的配置中没有任何物品"
+
+wireless:
+  needs-wireless-block: "你必须瞄准一个网络无线方块。"
+  no-receiver-set: "尚未设置任何网络无线接收器。"
+  receiver-other-world: "网络无线接收器位于另一个世界。"
+  transmitter-set: "已设置发射器的接收器位置。"
+  receiver-set: "已设置网络无线接收器。"
+
+remote:
+  needs-grid: "必须设置为网络网格（不是合成网格）。"
+  bound: "网格已绑定到遥控器。"
+  grid-not-loaded: "绑定的网格尚未加载。"
+  grid-out-of-reach: "绑定的网格不在范围内。"
+  not-bound: "遥控器尚未绑定任何网格。"
+  grid-gone: "已经找不到绑定的网格了。"
+
+crayon:
+  removed: "已从网络中移除蜡笔。"
+  added: "已向网络中加入蜡笔。"
+
+debug:
+  state-set: "此方块的调试已设置为 %state%。"
+  until-restart: "它会持续到重启，或者直到你再次关闭它。"
+  op-only: "你只能以拥有管理员权限的玩家身份使用此工具。"
+
+tool:
+  on-cooldown: "这仍在冷却中"
+
+probe:
+  summary-title: "             网络摘要             "
+  bridges: "桥"
+  monitors: "监视器"
+  importers: "导入器"
+  exporters: "导出器"
+  grids: "网格"
+  cells: "单元"
+  wipers: "擦除器"
+  grabbers: "抓取器"
+  pushers: "推送器"
+  cutters: "剪切器"
+  pasters: "粘贴器"
+  vacuums: "吸取器"
+  purgers: "清除器"
+  crafters: "自动合成器"
+  power-nodes: "电力节点"
+  power-outlets: "电源插座"
+  power-displays: "电力显示器"
+  encoders: "配方编码器"
+  greedy-blocks: "贪婪方块"
+  wireless-transmitters: "无线发射器"
+  wireless-receivers: "无线接收器"
+  distinct-items: "不同物品"
+  total-items: "物品总数"
+  root-power: "根节点电力"
+  total-nodes: "节点总数"
+  warning-label: "警告："
+  overburdened: "你的网络已达到或超过最大节点上限。超出上限的节点将无法工作，而且每次不一定是同一批节点。请减少节点总数。"

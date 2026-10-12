@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Genstanden i hånden skal være en netværkskvanteopbevaring."
+  unset-or-corrupt: "Dette kort er endnu ikke knyttet til en genstand, eller det er en beskadiget netværkskvanteopbevaring."
+  item-updated: "Genstanden opdateret"
+  must-be-empty: "Netværkskvanteopbevaringen skal være tom, før den knyttede genstand ændres."
+
+card:
+  unstack-first: "Del kortene op, før du knytter en genstand."
+  item-not-storable: "Denne type genstand kan ikke gemmes i et netværkskort."
+  must-be-empty: "Et kort skal være tomt, før du prøver at knytte en genstand til det."
+
+controller:
+  already-present: "Dette netværk har allerede en styreenhed!"
+  would-connect-two: "Denne placering ville forbinde to styreenheder!"
+
+encoder:
+  not-enough-power: "Ikke nok netværksstrøm til at udføre denne opgave."
+  output-must-be-empty: "Udgangspladsen skal være tom."
+  needs-blank-blueprint: "Du skal levere en blank tegning"
+  invalid-recipe: "Det ser ikke ud til at være en gyldig opskrift."
+
+grid:
+  filter-prompt: "Skriv, hvad du vil filtrere dette gitter efter"
+  filter-applied: "Filter anvendt"
+
+configurator:
+  needs-directional: "Du skal sigte på en retningsbestemt Networks-grænseflade."
+  no-direction-set: "Dette retningsbestemte element har endnu ingen retning sat"
+  copied: "Opsætning kopieret."
+  direction-label: "Retning: "
+  direction-not-supplied: "Ikke angivet"
+  direction-applied: "Anvendt uden problemer"
+  item-label: "Genstand [%slot%]: "
+  item-added: "Genstanden føjet til filteret"
+  not-enough-items: "Ikke nok genstande til at fylde filteret"
+  no-item-stored: "Ingen genstand i den gemte opsætning"
+  items-label: "Genstande: "
+  no-items-stored: "Ingen genstande i den gemte opsætning"
+
+wireless:
+  needs-wireless-block: "Du skal sigte på en trådløs netværksblok."
+  no-receiver-set: "Der er ikke sat nogen trådløs netværksmodtager."
+  receiver-other-world: "Den trådløse netværksmodtager er i en anden verden."
+  transmitter-set: "Senderens modtagerposition sat."
+  receiver-set: "Trådløs netværksmodtager sat."
+
+remote:
+  needs-grid: "Skal være sat til et netværksgitter (ikke et fremstillingsgitter)."
+  bound: "Gitteret er knyttet til fjernbetjeningen."
+  grid-not-loaded: "Det knyttede gitter er ikke indlæst."
+  grid-out-of-reach: "Det knyttede gitter er uden for rækkevidde."
+  not-bound: "Fjernbetjeningen er ikke knyttet til noget gitter."
+  grid-gone: "Det knyttede gitter kan ikke længere findes."
+
+crayon:
+  removed: "Farvekridtet fjernet fra netværket."
+  added: "Farvekridtet føjet til netværket."
+
+debug:
+  state-set: "Fejlfinding for denne blok er sat til %state%."
+  until-restart: "Det varer indtil en genstart, eller indtil du slår det fra igen."
+  op-only: "Du kan kun bruge dette værktøj som operatørspiller."
+
+tool:
+  on-cooldown: "Dette er stadig i afkøling"
+
+probe:
+  summary-title: "       Netværksoversigt       "
+  bridges: "Broer"
+  monitors: "Monitorer"
+  importers: "Importører"
+  exporters: "Eksportører"
+  grids: "Gitre"
+  cells: "Celler"
+  wipers: "Slettere"
+  grabbers: "Gribere"
+  pushers: "Skubbere"
+  cutters: "Klippere"
+  pasters: "Indsættere"
+  vacuums: "Støvsugere"
+  purgers: "Udrensere"
+  crafters: "Autofremstillere"
+  power-nodes: "Strømknuder"
+  power-outlets: "Strømudtag"
+  power-displays: "Strømvisninger"
+  encoders: "Opskriftskodere"
+  greedy-blocks: "Grådige blokke"
+  wireless-transmitters: "Trådløse sendere"
+  wireless-receivers: "Trådløse modtagere"
+  distinct-items: "Forskellige genstande"
+  total-items: "Genstande i alt"
+  root-power: "Rodens strøm"
+  total-nodes: "Knuder i alt"
+  warning-label: "Advarsel: "
+  overburdened: "Dit netværk har nået eller overskredet den maksimale grænse for knuder. Knuder over grænsen virker ikke, og det er ikke altid de samme. Reducer dit samlede antal knuder."

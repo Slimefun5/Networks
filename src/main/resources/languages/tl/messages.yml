@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Ang item sa kamay ay kailangang Network Quantum na Imbakan."
+  unset-or-corrupt: "Ang kard na ito ay hindi pa naiugnay sa isang item o ito ay sirang Network Quantum na Imbakan."
+  item-updated: "Na-update ang item"
+  must-be-empty: "Kailangang walang laman ang Network Quantum na Imbakan bago palitan ang naiugnay na item."
+
+card:
+  unstack-first: "Ihiwalay ang mga kard bago mag-ugnay ng item."
+  item-not-storable: "Ang uring ito ng item ay hindi maiimbak sa Network Kard."
+  must-be-empty: "Kailangang walang laman ang kard bago subukang mag-ugnay ng item dito."
+
+controller:
+  already-present: "May kontroler na ang network na ito!"
+  would-connect-two: "Ang paglalagay na ito ay mag-uugnay ng dalawang kontroler!"
+
+encoder:
+  not-enough-power: "Hindi sapat ang lakas ng network para sa gawaing ito."
+  output-must-be-empty: "Kailangang walang laman ang slot ng labasan."
+  needs-blank-blueprint: "Kailangan mong magbigay ng blangkong plano"
+  invalid-recipe: "Mukhang hindi ito tamang resipi."
+
+grid:
+  filter-prompt: "I-type ang gusto mong pagsalain sa grid na ito"
+  filter-applied: "Nailapat ang panala"
+
+configurator:
+  needs-directional: "Kailangan mong tumutok sa isang may-direksyong interface ng Networks."
+  no-direction-set: "Ang may-direksyong elementong ito ay wala pang itinakdang direksyon"
+  copied: "Nakopya ang konfigurasyon."
+  direction-label: "Direksyon: "
+  direction-not-supplied: "Hindi ibinigay"
+  direction-applied: "Matagumpay na nailapat"
+  item-label: "Item [%slot%]: "
+  item-added: "Naidagdag ang item sa panala"
+  not-enough-items: "Hindi sapat ang mga item para mapuno ang panala"
+  no-item-stored: "Walang item sa nakaimbak na konfigurasyon"
+  items-label: "Mga item: "
+  no-items-stored: "Walang mga item sa nakaimbak na konfigurasyon"
+
+wireless:
+  needs-wireless-block: "Kailangan mong tumutok sa isang walang kableng bloke ng network."
+  no-receiver-set: "Walang itinakdang Network Walang Kableng Tagatanggap."
+  receiver-other-world: "Ang Network Walang Kableng Tagatanggap ay nasa ibang mundo."
+  transmitter-set: "Naitakda ang posisyon ng tagatanggap para sa tagapadala."
+  receiver-set: "Naitakda ang Network Walang Kableng Tagatanggap."
+
+remote:
+  needs-grid: "Kailangang itakda sa Network Grid (hindi sa grid ng paggawa)."
+  bound: "Naiugnay ang grid sa remote."
+  grid-not-loaded: "Hindi nakaload ang naiugnay na grid."
+  grid-out-of-reach: "Wala sa abot ang naiugnay na grid."
+  not-bound: "Hindi naiugnay ang remote sa kahit anong grid."
+  grid-gone: "Hindi na matagpuan ang naiugnay na grid."
+
+crayon:
+  removed: "Inalis ang krayola sa network."
+  added: "Naidagdag ang krayola sa network."
+
+debug:
+  state-set: "Ang debugging para sa blokeng ito ay itinakda sa %state%."
+  until-restart: "Magtatagal ito hanggang sa pag-restart o hanggang patayin mo itong muli."
+  op-only: "Magagamit mo lang ang kasangkapang ito bilang manlalarong may karapatang operator."
+
+tool:
+  on-cooldown: "Nasa cooldown pa ito"
+
+probe:
+  summary-title: "       Buod ng Network        "
+  bridges: "Mga tulay"
+  monitors: "Mga tagasubaybay"
+  importers: "Mga tagapag-angkat"
+  exporters: "Mga tagapagluwas"
+  grids: "Mga grid"
+  cells: "Mga selda"
+  wipers: "Mga pampunas"
+  grabbers: "Mga tagasunggab"
+  pushers: "Mga tagatulak"
+  cutters: "Mga panggupit"
+  pasters: "Mga tagapaste"
+  vacuums: "Mga tagasipsip"
+  purgers: "Mga tagapuksa"
+  crafters: "Mga awtomatikong tagalikha"
+  power-nodes: "Mga nodo ng lakas"
+  power-outlets: "Mga saksakan ng lakas"
+  power-displays: "Mga tagapakita ng lakas"
+  encoders: "Mga tagakodigo ng resipi"
+  greedy-blocks: "Mga sakim na bloke"
+  wireless-transmitters: "Mga walang kableng tagapadala"
+  wireless-receivers: "Mga walang kableng tagatanggap"
+  distinct-items: "Magkakaibang item"
+  total-items: "Kabuuang item"
+  root-power: "Lakas ng ugat"
+  total-nodes: "Kabuuang nodo"
+  warning-label: "Babala: "
+  overburdened: "Naabot o nalampasan na ng network mo ang pinakamataas na bilang ng nodo. Ang mga nodong lampas sa hangganan ay hindi gagana, at hindi laging pareho ang mga ito. Bawasan ang kabuuang bilang ng nodo mo."

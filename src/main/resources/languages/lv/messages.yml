@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Rokā turētajam priekšmetam jābūt tīkla kvantu krātuvei."
+  unset-or-corrupt: "Šī karte vēl nav piesaistīta priekšmetam vai ir bojāta tīkla kvantu krātuve."
+  item-updated: "Priekšmets atjaunināts"
+  must-be-empty: "Tīkla kvantu krātuvei jābūt tukšai, pirms tiek mainīts piesaistītais priekšmets."
+
+card:
+  unstack-first: "Sadali kartes, pirms piesaisti priekšmetu."
+  item-not-storable: "Šāda veida priekšmetu nevar glabāt tīkla kartē."
+  must-be-empty: "Kartei jābūt tukšai, pirms tai mēģini piesaistīt priekšmetu."
+
+controller:
+  already-present: "Šim tīklam jau ir kontrolieris!"
+  would-connect-two: "Šāda novietošana savienotu divus kontrolierus!"
+
+encoder:
+  not-enough-power: "Nepietiek tīkla enerģijas, lai izpildītu šo uzdevumu."
+  output-must-be-empty: "Izvades vietai jābūt tukšai."
+  needs-blank-blueprint: "Tev jāiedod tukšs rasējums"
+  invalid-recipe: "Neizskatās, ka tā būtu derīga recepte."
+
+grid:
+  filter-prompt: "Ieraksti, pēc kā vēlies filtrēt šo režģi"
+  filter-applied: "Filtrs pielietots"
+
+configurator:
+  needs-directional: "Tev jāmērķē uz virzienu noteicošu Networks saskarni."
+  no-direction-set: "Šim virziena elementam vēl nav iestatīts virziens"
+  copied: "Iestatījums nokopēts."
+  direction-label: "Virziens: "
+  direction-not-supplied: "Nav norādīts"
+  direction-applied: "Veiksmīgi pielietots"
+  item-label: "Priekšmets [%slot%]: "
+  item-added: "Priekšmets pievienots filtram"
+  not-enough-items: "Nepietiek priekšmetu, lai aizpildītu filtru"
+  no-item-stored: "Saglabātajā iestatījumā nav priekšmeta"
+  items-label: "Priekšmeti: "
+  no-items-stored: "Saglabātajā iestatījumā nav priekšmetu"
+
+wireless:
+  needs-wireless-block: "Tev jāmērķē uz tīkla bezvadu bloku."
+  no-receiver-set: "Nav iestatīts neviens tīkla bezvadu uztvērējs."
+  receiver-other-world: "Tīkla bezvadu uztvērējs ir citā pasaulē."
+  transmitter-set: "Raidītāja uztvērēja pozīcija iestatīta."
+  receiver-set: "Tīkla bezvadu uztvērējs iestatīts."
+
+remote:
+  needs-grid: "Jābūt iestatītam uz tīkla režģi (nevis izgatavošanas režģi)."
+  bound: "Režģis ir piesaistīts tālvadības pultij."
+  grid-not-loaded: "Piesaistītais režģis nav ielādēts."
+  grid-out-of-reach: "Piesaistītais režģis nav sasniedzams."
+  not-bound: "Tālvadības pults nav piesaistīta nevienam režģim."
+  grid-gone: "Piesaistīto režģi vairs nevar atrast."
+
+crayon:
+  removed: "Krīts izņemts no tīkla."
+  added: "Krīts pievienots tīklam."
+
+debug:
+  state-set: "Šī bloka atkļūdošana iestatīta uz %state%."
+  until-restart: "Tas turpināsies līdz pārstartēšanai vai līdz tu to atkal izslēgsi."
+  op-only: "Šo rīku vari lietot tikai kā spēlētājs ar operatora tiesībām."
+
+tool:
+  on-cooldown: "Šis vēl atdziest"
+
+probe:
+  summary-title: "      Tīkla kopsavilkums      "
+  bridges: "Tilti"
+  monitors: "Monitori"
+  importers: "Importētāji"
+  exporters: "Eksportētāji"
+  grids: "Režģi"
+  cells: "Šūnas"
+  wipers: "Dzēsēji"
+  grabbers: "Satvērēji"
+  pushers: "Stūmēji"
+  cutters: "Griezēji"
+  pasters: "Ielīmētāji"
+  vacuums: "Iesūcēji"
+  purgers: "Iznīcinātāji"
+  crafters: "Automātiskie izgatavotāji"
+  power-nodes: "Enerģijas mezgli"
+  power-outlets: "Enerģijas izvadi"
+  power-displays: "Enerģijas displeji"
+  encoders: "Recepšu kodētāji"
+  greedy-blocks: "Alkatīgie bloki"
+  wireless-transmitters: "Bezvadu raidītāji"
+  wireless-receivers: "Bezvadu uztvērēji"
+  distinct-items: "Dažādi priekšmeti"
+  total-items: "Priekšmetu kopā"
+  root-power: "Saknes enerģija"
+  total-nodes: "Mezglu kopā"
+  warning-label: "Brīdinājums: "
+  overburdened: "Tavs tīkls ir sasniedzis vai pārsniedzis lielāko pieļaujamo mezglu skaitu. Mezgli virs robežas nedarbosies, un tie ne vienmēr ir tie paši mezgli. Samazini kopējo mezglu skaitu."

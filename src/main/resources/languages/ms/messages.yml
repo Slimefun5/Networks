@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Item di tangan mesti Simpanan Kuantum Rangkaian."
+  unset-or-corrupt: "Kad ini belum dikaitkan dengan item atau ia Simpanan Kuantum Rangkaian yang rosak."
+  item-updated: "Item dikemas kini"
+  must-be-empty: "Simpanan Kuantum Rangkaian mesti kosong sebelum item yang dikaitkan ditukar."
+
+card:
+  unstack-first: "Pisahkan kad sebelum mengaitkan item."
+  item-not-storable: "Item jenis ini tidak boleh disimpan dalam Kad Rangkaian."
+  must-be-empty: "Kad mesti kosong sebelum kamu cuba mengaitkan item padanya."
+
+controller:
+  already-present: "Rangkaian ini sudah ada pengawal!"
+  would-connect-two: "Penempatan ini akan menyambungkan dua pengawal!"
+
+encoder:
+  not-enough-power: "Kuasa rangkaian tidak cukup untuk menjalankan tugas ini."
+  output-must-be-empty: "Slot keluaran mesti kosong."
+  needs-blank-blueprint: "Kamu mesti menyediakan pelan kosong"
+  invalid-recipe: "Ini tidak kelihatan seperti resipi yang sah."
+
+grid:
+  filter-prompt: "Taip apa yang kamu mahu tapis pada grid ini"
+  filter-applied: "Penapis digunakan"
+
+configurator:
+  needs-directional: "Kamu mesti menyasarkan antara muka Networks yang berarah."
+  no-direction-set: "Elemen berarah ini belum mempunyai arah yang ditetapkan"
+  copied: "Konfigurasi disalin."
+  direction-label: "Arah: "
+  direction-not-supplied: "Tidak diberikan"
+  direction-applied: "Berjaya digunakan"
+  item-label: "Item [%slot%]: "
+  item-added: "Item ditambah ke penapis"
+  not-enough-items: "Item tidak cukup untuk mengisi penapis"
+  no-item-stored: "Tiada item dalam konfigurasi yang disimpan"
+  items-label: "Item: "
+  no-items-stored: "Tiada item dalam konfigurasi yang disimpan"
+
+wireless:
+  needs-wireless-block: "Kamu mesti menyasarkan blok tanpa wayar rangkaian."
+  no-receiver-set: "Tiada Penerima Tanpa Wayar Rangkaian ditetapkan."
+  receiver-other-world: "Penerima Tanpa Wayar Rangkaian berada di dunia lain."
+  transmitter-set: "Kedudukan penerima untuk pemancar telah ditetapkan."
+  receiver-set: "Penerima Tanpa Wayar Rangkaian telah ditetapkan."
+
+remote:
+  needs-grid: "Mesti ditetapkan kepada Grid Rangkaian (bukan grid pembuatan)."
+  bound: "Grid telah diikat kepada alat kawalan jauh."
+  grid-not-loaded: "Grid yang diikat belum dimuatkan."
+  grid-out-of-reach: "Grid yang diikat berada di luar jangkauan."
+  not-bound: "Alat kawalan jauh tidak diikat kepada mana-mana grid."
+  grid-gone: "Grid yang diikat tidak dapat ditemui lagi."
+
+crayon:
+  removed: "Krayon dibuang dari rangkaian."
+  added: "Krayon ditambah ke rangkaian."
+
+debug:
+  state-set: "Penyahpepijatan untuk blok ini ditetapkan kepada %state%."
+  until-restart: "Ia akan bertahan sehingga mula semula atau sehingga kamu menutupnya lagi."
+  op-only: "Kamu hanya boleh menggunakan alat ini sebagai pemain dengan hak operator."
+
+tool:
+  on-cooldown: "Ini masih dalam tempoh menyejuk"
+
+probe:
+  summary-title: "     Ringkasan Rangkaian      "
+  bridges: "Jambatan"
+  monitors: "Pemantau"
+  importers: "Pengimport"
+  exporters: "Pengeksport"
+  grids: "Grid"
+  cells: "Sel"
+  wipers: "Pemadam"
+  grabbers: "Pencapai"
+  pushers: "Penolak"
+  cutters: "Pemotong"
+  pasters: "Penampal"
+  vacuums: "Vakum"
+  purgers: "Pelupus"
+  crafters: "Pembuat automatik"
+  power-nodes: "Nod kuasa"
+  power-outlets: "Soket kuasa"
+  power-displays: "Paparan kuasa"
+  encoders: "Pengekod resipi"
+  greedy-blocks: "Blok tamak"
+  wireless-transmitters: "Pemancar tanpa wayar"
+  wireless-receivers: "Penerima tanpa wayar"
+  distinct-items: "Item berbeza"
+  total-items: "Jumlah item"
+  root-power: "Kuasa akar"
+  total-nodes: "Jumlah nod"
+  warning-label: "Peringatan: "
+  overburdened: "Rangkaian kamu telah mencapai atau melepasi had maksimum nod. Nod melebihi had tidak akan berfungsi, dan nod itu tidak selalu sama. Kurangkan jumlah nod kamu."

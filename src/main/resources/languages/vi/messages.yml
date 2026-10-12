@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Vật phẩm trong tay phải là Kho Lượng tử Mạng."
+  unset-or-corrupt: "Thẻ này chưa được gán cho vật phẩm nào hoặc là một Kho Lượng tử Mạng bị lỗi."
+  item-updated: "Đã cập nhật vật phẩm"
+  must-be-empty: "Kho Lượng tử Mạng phải trống trước khi thay đổi vật phẩm được gán."
+
+card:
+  unstack-first: "Hãy tách các thẻ ra trước khi gán vật phẩm."
+  item-not-storable: "Loại vật phẩm này không thể lưu trong Thẻ Mạng."
+  must-be-empty: "Thẻ phải trống trước khi bạn thử gán vật phẩm cho nó."
+
+controller:
+  already-present: "Mạng này đã có bộ điều khiển!"
+  would-connect-two: "Việc đặt như vậy sẽ nối hai bộ điều khiển!"
+
+encoder:
+  not-enough-power: "Không đủ điện năng mạng để thực hiện việc này."
+  output-must-be-empty: "Ô đầu ra phải trống."
+  needs-blank-blueprint: "Bạn cần cung cấp một bản thiết kế trắng"
+  invalid-recipe: "Trông như đây không phải một công thức hợp lệ."
+
+grid:
+  filter-prompt: "Hãy nhập thứ bạn muốn lọc trên lưới này"
+  filter-applied: "Đã áp dụng bộ lọc"
+
+configurator:
+  needs-directional: "Bạn phải nhắm vào một giao diện có hướng của Networks."
+  no-direction-set: "Phần tử có hướng này vẫn chưa được đặt hướng"
+  copied: "Đã sao chép cấu hình."
+  direction-label: "Hướng: "
+  direction-not-supplied: "Không được cung cấp"
+  direction-applied: "Đã áp dụng thành công"
+  item-label: "Vật phẩm [%slot%]: "
+  item-added: "Đã thêm vật phẩm vào bộ lọc"
+  not-enough-items: "Không đủ vật phẩm để làm đầy bộ lọc"
+  no-item-stored: "Không có vật phẩm nào trong cấu hình đã lưu"
+  items-label: "Vật phẩm: "
+  no-items-stored: "Không có vật phẩm nào trong cấu hình đã lưu"
+
+wireless:
+  needs-wireless-block: "Bạn phải nhắm vào một khối không dây của Mạng."
+  no-receiver-set: "Chưa đặt Bộ thu Mạng Không dây nào."
+  receiver-other-world: "Bộ thu Mạng Không dây đang ở một thế giới khác."
+  transmitter-set: "Đã đặt vị trí bộ thu cho bộ phát."
+  receiver-set: "Đã đặt Bộ thu Mạng Không dây."
+
+remote:
+  needs-grid: "Phải được đặt vào một Lưới Mạng (không phải lưới chế tạo)."
+  bound: "Lưới đã được gắn với điều khiển từ xa."
+  grid-not-loaded: "Lưới đã gắn chưa được tải."
+  grid-out-of-reach: "Lưới đã gắn nằm ngoài tầm với."
+  not-bound: "Điều khiển từ xa chưa được gắn với lưới nào."
+  grid-gone: "Không còn tìm thấy lưới đã gắn nữa."
+
+crayon:
+  removed: "Đã bỏ bút sáp khỏi mạng."
+  added: "Đã thêm bút sáp vào mạng."
+
+debug:
+  state-set: "Việc gỡ lỗi cho khối này đã được đặt thành %state%."
+  until-restart: "Nó sẽ duy trì đến khi khởi động lại hoặc đến khi bạn tắt lại."
+  op-only: "Bạn chỉ có thể dùng công cụ này với tư cách người chơi có quyền điều hành."
+
+tool:
+  on-cooldown: "Cái này vẫn đang hồi"
+
+probe:
+  summary-title: "         Tóm tắt Mạng         "
+  bridges: "Cầu nối"
+  monitors: "Bộ theo dõi"
+  importers: "Bộ nhập"
+  exporters: "Bộ xuất"
+  grids: "Lưới"
+  cells: "Ngăn"
+  wipers: "Bộ xóa"
+  grabbers: "Bộ gắp"
+  pushers: "Bộ đẩy"
+  cutters: "Bộ cắt"
+  pasters: "Bộ dán"
+  vacuums: "Máy hút"
+  purgers: "Bộ tiêu hủy"
+  crafters: "Máy chế tạo tự động"
+  power-nodes: "Nút điện"
+  power-outlets: "Ổ cắm điện"
+  power-displays: "Bảng hiển thị điện năng"
+  encoders: "Bộ mã hóa công thức"
+  greedy-blocks: "Khối tham lam"
+  wireless-transmitters: "Bộ phát không dây"
+  wireless-receivers: "Bộ thu không dây"
+  distinct-items: "Vật phẩm khác nhau"
+  total-items: "Tổng vật phẩm"
+  root-power: "Điện năng của gốc"
+  total-nodes: "Tổng số nút"
+  warning-label: "Cảnh báo: "
+  overburdened: "Mạng của bạn đã đạt hoặc vượt giới hạn số nút tối đa. Các nút vượt giới hạn sẽ không hoạt động, và đó không phải lúc nào cũng là những nút giống nhau. Hãy giảm tổng số nút của bạn."

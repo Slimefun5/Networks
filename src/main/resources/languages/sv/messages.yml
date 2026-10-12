@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Objektet i handen måste vara nätverkets kvantlagring."
+  unset-or-corrupt: "Det här kortet har ännu inte kopplats till ett objekt, eller så är det en skadad kvantlagring."
+  item-updated: "Objektet uppdaterat"
+  must-be-empty: "Nätverkets kvantlagring måste vara tom innan det kopplade objektet ändras."
+
+card:
+  unstack-first: "Dela upp korten innan du kopplar ett objekt."
+  item-not-storable: "Den här typen av objekt kan inte lagras i ett nätverkskort."
+  must-be-empty: "Ett kort måste vara tomt innan du försöker koppla ett objekt till det."
+
+controller:
+  already-present: "Det här nätverket har redan en styrenhet!"
+  would-connect-two: "Den här placeringen skulle koppla samman två styrenheter!"
+
+encoder:
+  not-enough-power: "Inte tillräckligt med nätverksenergi för den här uppgiften."
+  output-must-be-empty: "Utmatningsplatsen måste vara tom."
+  needs-blank-blueprint: "Du måste tillhandahålla en tom ritning"
+  invalid-recipe: "Det ser inte ut som ett giltigt recept."
+
+grid:
+  filter-prompt: "Skriv vad du vill filtrera det här rutnätet på"
+  filter-applied: "Filter tillämpat"
+
+configurator:
+  needs-directional: "Du måste sikta på ett riktat Networks-gränssnitt."
+  no-direction-set: "Det här riktade objektet har ännu ingen riktning inställd"
+  copied: "Konfigurationen kopierad."
+  direction-label: "Riktning: "
+  direction-not-supplied: "Inte angiven"
+  direction-applied: "Tillämpad utan problem"
+  item-label: "Objekt [%slot%]: "
+  item-added: "Objektet lades till i filtret"
+  not-enough-items: "Inte tillräckligt med objekt för att fylla filtret"
+  no-item-stored: "Inget objekt i den sparade konfigurationen"
+  items-label: "Objekt: "
+  no-items-stored: "Inga objekt i den sparade konfigurationen"
+
+wireless:
+  needs-wireless-block: "Du måste sikta på ett trådlöst nätverksblock."
+  no-receiver-set: "Ingen trådlös nätverksmottagare har ställts in."
+  receiver-other-world: "Den trådlösa nätverksmottagaren finns i en annan värld."
+  transmitter-set: "Sändarens mottagarposition inställd."
+  receiver-set: "Trådlös nätverksmottagare inställd."
+
+remote:
+  needs-grid: "Måste vara inställd på ett nätverksrutnät (inte ett tillverkningsrutnät)."
+  bound: "Rutnätet har kopplats till fjärrkontrollen."
+  grid-not-loaded: "Det kopplade rutnätet är inte inläst."
+  grid-out-of-reach: "Det kopplade rutnätet är utom räckhåll."
+  not-bound: "Fjärrkontrollen är inte kopplad till något rutnät."
+  grid-gone: "Det kopplade rutnätet går inte längre att hitta."
+
+crayon:
+  removed: "Kritan togs bort från nätverket."
+  added: "Kritan lades till i nätverket."
+
+debug:
+  state-set: "Felsökningen för det här blocket har ställts in på %state%."
+  until-restart: "Det varar till en omstart eller till du stänger av det igen."
+  op-only: "Du kan bara använda det här verktyget som operatörsspelare."
+
+tool:
+  on-cooldown: "Det här har fortfarande nedkylning"
+
+probe:
+  summary-title: "       Nätverksöversikt       "
+  bridges: "Bryggor"
+  monitors: "Övervakare"
+  importers: "Importerare"
+  exporters: "Exporterare"
+  grids: "Rutnät"
+  cells: "Celler"
+  wipers: "Raderare"
+  grabbers: "Gripare"
+  pushers: "Matare"
+  cutters: "Klippare"
+  pasters: "Inklistrare"
+  vacuums: "Sugare"
+  purgers: "Rensare"
+  crafters: "Autotillverkare"
+  power-nodes: "Kraftnoder"
+  power-outlets: "Kraftuttag"
+  power-displays: "Kraftskärmar"
+  encoders: "Receptkodare"
+  greedy-blocks: "Giriga block"
+  wireless-transmitters: "Trådlösa sändare"
+  wireless-receivers: "Trådlösa mottagare"
+  distinct-items: "Olika objekt"
+  total-items: "Objekt totalt"
+  root-power: "Rotens energi"
+  total-nodes: "Noder totalt"
+  warning-label: "Varning: "
+  overburdened: "Ditt nätverk har nått eller passerat den högsta tillåtna mängden noder. Noder över gränsen fungerar inte, och det är inte alltid samma noder. Minska ditt totala antal noder."

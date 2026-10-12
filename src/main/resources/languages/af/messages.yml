@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Die item in die hand moet 'n netwerkkwantumberging wees."
+  unset-or-corrupt: "Hierdie kaart is nog nie aan 'n item gekoppel nie, of dit is 'n beskadigde netwerkkwantumberging."
+  item-updated: "Item opgedateer"
+  must-be-empty: "Die netwerkkwantumberging moet leeg wees voordat die gekoppelde item verander word."
+
+card:
+  unstack-first: "Deel die kaarte op voordat jy 'n item koppel."
+  item-not-storable: "Hierdie soort item kan nie in 'n netwerkkaart gestoor word nie."
+  must-be-empty: "'n Kaart moet leeg wees voordat jy 'n item daaraan probeer koppel."
+
+controller:
+  already-present: "Hierdie netwerk het al 'n beheerder!"
+  would-connect-two: "Hierdie plasing sou twee beheerders verbind!"
+
+encoder:
+  not-enough-power: "Nie genoeg netwerkkrag om hierdie taak te verrig nie."
+  output-must-be-empty: "Die afvoerplek moet leeg wees."
+  needs-blank-blueprint: "Jy moet 'n leë bouplan verskaf"
+  invalid-recipe: "Dit lyk nie na 'n geldige resep nie."
+
+grid:
+  filter-prompt: "Tik waarop jy hierdie rooster wil filtreer"
+  filter-applied: "Filter toegepas"
+
+configurator:
+  needs-directional: "Jy moet op 'n gerigte Networks-koppelvlak mik."
+  no-direction-set: "Hierdie gerigte element het nog geen rigting gestel nie"
+  copied: "Opstelling gekopieer."
+  direction-label: "Rigting: "
+  direction-not-supplied: "Nie verskaf nie"
+  direction-applied: "Suksesvol toegepas"
+  item-label: "Item [%slot%]: "
+  item-added: "Item by die filter gevoeg"
+  not-enough-items: "Nie genoeg items om die filter te vul nie"
+  no-item-stored: "Geen item in die gestoorde opstelling nie"
+  items-label: "Items: "
+  no-items-stored: "Geen items in die gestoorde opstelling nie"
+
+wireless:
+  needs-wireless-block: "Jy moet op 'n netwerk draadlose blok mik."
+  no-receiver-set: "Geen netwerk draadlose ontvanger is gestel nie."
+  receiver-other-world: "Die netwerk draadlose ontvanger is in 'n ander wêreld."
+  transmitter-set: "Die sender se ontvangerposisie is gestel."
+  receiver-set: "Netwerk draadlose ontvanger gestel."
+
+remote:
+  needs-grid: "Moet op 'n netwerkrooster gestel wees (nie 'n vervaardigingsrooster nie)."
+  bound: "Die rooster is aan die afstandbeheer gekoppel."
+  grid-not-loaded: "Die gekoppelde rooster is nie gelaai nie."
+  grid-out-of-reach: "Die gekoppelde rooster is buite bereik."
+  not-bound: "Die afstandbeheer is aan geen rooster gekoppel nie."
+  grid-gone: "Die gekoppelde rooster kan nie meer gevind word nie."
+
+crayon:
+  removed: "Kryt uit die netwerk verwyder."
+  added: "Kryt by die netwerk gevoeg."
+
+debug:
+  state-set: "Ontfouting vir hierdie blok is op %state% gestel."
+  until-restart: "Dit duur tot 'n herbegin of tot jy dit weer afskakel."
+  op-only: "Jy kan hierdie gereedskap net as 'n operateurspeler gebruik."
+
+tool:
+  on-cooldown: "Hierdie is nog aan die afkoel"
+
+probe:
+  summary-title: "        Netwerkoorsig         "
+  bridges: "Brûe"
+  monitors: "Monitors"
+  importers: "Invoerders"
+  exporters: "Uitvoerders"
+  grids: "Roosters"
+  cells: "Selle"
+  wipers: "Uitveërs"
+  grabbers: "Grypers"
+  pushers: "Stoters"
+  cutters: "Snyers"
+  pasters: "Plakkers"
+  vacuums: "Stofsuiers"
+  purgers: "Suiweraars"
+  crafters: "Outovervaardigers"
+  power-nodes: "Kragknope"
+  power-outlets: "Kraguitlate"
+  power-displays: "Kragvertonings"
+  encoders: "Resepkodeerders"
+  greedy-blocks: "Gulsige blokke"
+  wireless-transmitters: "Draadlose senders"
+  wireless-receivers: "Draadlose ontvangers"
+  distinct-items: "Verskillende items"
+  total-items: "Items in totaal"
+  root-power: "Die wortel se krag"
+  total-nodes: "Knope in totaal"
+  warning-label: "Waarskuwing: "
+  overburdened: "Jou netwerk het die maksimum aantal knope bereik of oorskry. Knope bo die grens sal nie werk nie, en dit is nie altyd dieselfde knope nie. Verminder jou totale aantal knope."

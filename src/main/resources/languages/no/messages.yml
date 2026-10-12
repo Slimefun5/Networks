@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Gjenstanden i hånden må være en nettverkskvantelagring."
+  unset-or-corrupt: "Dette kortet er ennå ikke knyttet til en gjenstand, eller det er en skadet nettverkskvantelagring."
+  item-updated: "Gjenstanden oppdatert"
+  must-be-empty: "Nettverkskvantelagringen må være tom før den knyttede gjenstanden endres."
+
+card:
+  unstack-first: "Del opp kortene før du knytter en gjenstand."
+  item-not-storable: "Denne typen gjenstand kan ikke lagres i et nettverkskort."
+  must-be-empty: "Et kort må være tomt før du prøver å knytte en gjenstand til det."
+
+controller:
+  already-present: "Dette nettverket har allerede en kontroller!"
+  would-connect-two: "Denne plasseringen ville koblet sammen to kontrollere!"
+
+encoder:
+  not-enough-power: "Ikke nok nettverksstrøm til å utføre denne oppgaven."
+  output-must-be-empty: "Utgangsplassen må være tom."
+  needs-blank-blueprint: "Du må levere en blank tegning"
+  invalid-recipe: "Dette ser ikke ut som en gyldig oppskrift."
+
+grid:
+  filter-prompt: "Skriv hva du vil filtrere dette rutenettet på"
+  filter-applied: "Filter brukt"
+
+configurator:
+  needs-directional: "Du må sikte på et retningsbestemt Networks-grensesnitt."
+  no-direction-set: "Dette retningsbestemte elementet har ennå ingen retning satt"
+  copied: "Oppsettet kopiert."
+  direction-label: "Retning: "
+  direction-not-supplied: "Ikke oppgitt"
+  direction-applied: "Brukt uten problemer"
+  item-label: "Gjenstand [%slot%]: "
+  item-added: "Gjenstanden lagt til i filteret"
+  not-enough-items: "Ikke nok gjenstander til å fylle filteret"
+  no-item-stored: "Ingen gjenstand i det lagrede oppsettet"
+  items-label: "Gjenstander: "
+  no-items-stored: "Ingen gjenstander i det lagrede oppsettet"
+
+wireless:
+  needs-wireless-block: "Du må sikte på en trådløs nettverksblokk."
+  no-receiver-set: "Det er ikke satt noen trådløs nettverksmottaker."
+  receiver-other-world: "Den trådløse nettverksmottakeren er i en annen verden."
+  transmitter-set: "Senderens mottakerposisjon satt."
+  receiver-set: "Trådløs nettverksmottaker satt."
+
+remote:
+  needs-grid: "Må være satt til et nettverksrutenett (ikke et håndverksrutenett)."
+  bound: "Rutenettet er knyttet til fjernkontrollen."
+  grid-not-loaded: "Det knyttede rutenettet er ikke lastet inn."
+  grid-out-of-reach: "Det knyttede rutenettet er utenfor rekkevidde."
+  not-bound: "Fjernkontrollen er ikke knyttet til noe rutenett."
+  grid-gone: "Det knyttede rutenettet kan ikke lenger finnes."
+
+crayon:
+  removed: "Fargestiften fjernet fra nettverket."
+  added: "Fargestiften lagt til i nettverket."
+
+debug:
+  state-set: "Feilsøking for denne blokken er satt til %state%."
+  until-restart: "Det varer til en omstart, eller til du slår det av igjen."
+  op-only: "Du kan bare bruke dette verktøyet som operatørspiller."
+
+tool:
+  on-cooldown: "Dette er fortsatt i nedkjøling"
+
+probe:
+  summary-title: "      Nettverksoversikt       "
+  bridges: "Broer"
+  monitors: "Overvåkere"
+  importers: "Importører"
+  exporters: "Eksportører"
+  grids: "Rutenett"
+  cells: "Celler"
+  wipers: "Slettere"
+  grabbers: "Gripere"
+  pushers: "Dyttere"
+  cutters: "Klippere"
+  pasters: "Innsettere"
+  vacuums: "Støvsugere"
+  purgers: "Rensere"
+  crafters: "Autohåndverkere"
+  power-nodes: "Strømnoder"
+  power-outlets: "Strømuttak"
+  power-displays: "Kraftvisninger"
+  encoders: "Oppskriftskodere"
+  greedy-blocks: "Grådige blokker"
+  wireless-transmitters: "Trådløse sendere"
+  wireless-receivers: "Trådløse mottakere"
+  distinct-items: "Ulike gjenstander"
+  total-items: "Gjenstander totalt"
+  root-power: "Rotens strøm"
+  total-nodes: "Noder totalt"
+  warning-label: "Advarsel: "
+  overburdened: "Nettverket ditt har nådd eller gått over den høyeste grensen for noder. Noder over grensen virker ikke, og det er ikke alltid de samme. Reduser det totale antallet noder."

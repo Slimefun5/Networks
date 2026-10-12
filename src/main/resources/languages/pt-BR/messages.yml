@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "O item na mão precisa ser um Armazenamento Quântico de Rede."
+  unset-or-corrupt: "Este cartão ainda não foi associado a um item ou é um Armazenamento Quântico de Rede corrompido."
+  item-updated: "Item atualizado"
+  must-be-empty: "O Armazenamento Quântico de Rede precisa estar vazio antes de mudar o item associado."
+
+card:
+  unstack-first: "Separe os cartões antes de associar um item."
+  item-not-storable: "Esse tipo de item não pode ser guardado em um Cartão de Rede."
+  must-be-empty: "Um cartão precisa estar vazio antes de tentar associar um item a ele."
+
+controller:
+  already-present: "Esta rede já tem um controlador!"
+  would-connect-two: "Esta colocação conectaria dois controladores!"
+
+encoder:
+  not-enough-power: "Energia de rede insuficiente para cumprir esta tarefa."
+  output-must-be-empty: "O espaço de saída precisa estar vazio."
+  needs-blank-blueprint: "Você precisa fornecer um projeto em branco"
+  invalid-recipe: "Isso não parece ser uma receita válida."
+
+grid:
+  filter-prompt: "Digite aquilo pelo que você quer filtrar esta grade"
+  filter-applied: "Filtro aplicado"
+
+configurator:
+  needs-directional: "Você precisa apontar para uma interface direcional do Networks."
+  no-direction-set: "Este elemento direcional ainda não tem uma direção definida"
+  copied: "Configuração copiada."
+  direction-label: "Direção: "
+  direction-not-supplied: "Não fornecida"
+  direction-applied: "Aplicada com sucesso"
+  item-label: "Item [%slot%]: "
+  item-added: "Item adicionado ao filtro"
+  not-enough-items: "Não há itens suficientes para encher o filtro"
+  no-item-stored: "Nenhum item na configuração salva"
+  items-label: "Itens: "
+  no-items-stored: "Nenhum item na configuração salva"
+
+wireless:
+  needs-wireless-block: "Você precisa apontar para um bloco sem fio de rede."
+  no-receiver-set: "Nenhum Receptor Sem Fio de Rede foi definido."
+  receiver-other-world: "O Receptor Sem Fio de Rede está em outro mundo."
+  transmitter-set: "Posição do receptor do transmissor definida."
+  receiver-set: "Receptor Sem Fio de Rede definido."
+
+remote:
+  needs-grid: "Precisa estar definido para uma Grade de Rede (não uma grade de criação)."
+  bound: "A grade foi vinculada ao controle remoto."
+  grid-not-loaded: "A grade vinculada não está carregada."
+  grid-out-of-reach: "A grade vinculada está fora de alcance."
+  not-bound: "O controle remoto não está vinculado a nenhuma grade."
+  grid-gone: "A grade vinculada não pode mais ser encontrada."
+
+crayon:
+  removed: "Giz de cera removido da rede."
+  added: "Giz de cera adicionado à rede."
+
+debug:
+  state-set: "A depuração deste bloco foi definida para %state%."
+  until-restart: "Vai durar até uma reinicialização ou até você desligar de novo."
+  op-only: "Você só pode usar esta ferramenta como jogador com permissões de operador."
+
+tool:
+  on-cooldown: "Isso ainda está em tempo de recarga"
+
+probe:
+  summary-title: "        Resumo da Rede        "
+  bridges: "Pontes"
+  monitors: "Monitores"
+  importers: "Importadores"
+  exporters: "Exportadores"
+  grids: "Grades"
+  cells: "Células"
+  wipers: "Limpadores"
+  grabbers: "Agarradores"
+  pushers: "Empurradores"
+  cutters: "Cortadores"
+  pasters: "Coladores"
+  vacuums: "Aspiradores"
+  purgers: "Purgadores"
+  crafters: "Autocriadores"
+  power-nodes: "Nós de energia"
+  power-outlets: "Tomadas"
+  power-displays: "Visores de energia"
+  encoders: "Codificadores de receitas"
+  greedy-blocks: "Blocos gananciosos"
+  wireless-transmitters: "Transmissores sem fio"
+  wireless-receivers: "Receptores sem fio"
+  distinct-items: "Itens distintos"
+  total-items: "Itens no total"
+  root-power: "Energia da raiz"
+  total-nodes: "Nós no total"
+  warning-label: "Aviso: "
+  overburdened: "Sua rede atingiu ou passou do limite máximo de nós. Os nós acima do limite não vão funcionar, e nem sempre são os mesmos. Reduza o número total de nós."

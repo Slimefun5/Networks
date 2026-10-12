@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Obiectul din mână trebuie să fie un Depozit Cuantic de Rețea."
+  unset-or-corrupt: "Acest card nu a fost încă asociat unui obiect sau este un Depozit Cuantic de Rețea corupt."
+  item-updated: "Obiect actualizat"
+  must-be-empty: "Depozitul Cuantic de Rețea trebuie să fie gol înainte de a schimba obiectul asociat."
+
+card:
+  unstack-first: "Desparte cardurile înainte de a asocia un obiect."
+  item-not-storable: "Acest tip de obiect nu poate fi păstrat într-un Card de Rețea."
+  must-be-empty: "Un card trebuie să fie gol înainte de a încerca să îi asociezi un obiect."
+
+controller:
+  already-present: "Această rețea are deja un controler!"
+  would-connect-two: "Această amplasare ar conecta două controlere!"
+
+encoder:
+  not-enough-power: "Energie de rețea insuficientă pentru a îndeplini această sarcină."
+  output-must-be-empty: "Slotul de ieșire trebuie să fie gol."
+  needs-blank-blueprint: "Trebuie să furnizezi un plan necompletat"
+  invalid-recipe: "Nu pare să fie o rețetă valabilă."
+
+grid:
+  filter-prompt: "Scrie după ce vrei să filtrezi această grilă"
+  filter-applied: "Filtru aplicat"
+
+configurator:
+  needs-directional: "Trebuie să țintești o interfață direcțională Networks."
+  no-direction-set: "Acest element direcțional nu are încă o direcție stabilită"
+  copied: "Configurație copiată."
+  direction-label: "Direcție: "
+  direction-not-supplied: "Nu a fost furnizată"
+  direction-applied: "Aplicată cu succes"
+  item-label: "Obiect [%slot%]: "
+  item-added: "Obiect adăugat în filtru"
+  not-enough-items: "Nu sunt suficiente obiecte pentru a umple filtrul"
+  no-item-stored: "Niciun obiect în configurația salvată"
+  items-label: "Obiecte: "
+  no-items-stored: "Niciun obiect în configurația salvată"
+
+wireless:
+  needs-wireless-block: "Trebuie să țintești un bloc fără fir de rețea."
+  no-receiver-set: "Nu a fost stabilit niciun Receptor Fără fir de Rețea."
+  receiver-other-world: "Receptorul Fără fir de Rețea se află în altă lume."
+  transmitter-set: "Poziția receptorului pentru transmițător a fost stabilită."
+  receiver-set: "Receptor Fără fir de Rețea stabilit."
+
+remote:
+  needs-grid: "Trebuie să fie setat pe o Grilă de Rețea (nu pe o grilă de fabricare)."
+  bound: "Grila a fost legată la telecomandă."
+  grid-not-loaded: "Grila legată nu este încărcată."
+  grid-out-of-reach: "Grila legată nu este la îndemână."
+  not-bound: "Telecomanda nu este legată la nicio grilă."
+  grid-gone: "Grila legată nu mai poate fi găsită."
+
+crayon:
+  removed: "Creion colorat scos din rețea."
+  added: "Creion colorat adăugat în rețea."
+
+debug:
+  state-set: "Depanarea pentru acest bloc a fost setată pe %state%."
+  until-restart: "Va dura până la o repornire sau până o oprești din nou."
+  op-only: "Poți folosi această unealtă doar ca jucător cu drepturi de operator."
+
+tool:
+  on-cooldown: "Aceasta este încă în așteptare"
+
+probe:
+  summary-title: "       Sumarul Rețelei        "
+  bridges: "Punți"
+  monitors: "Monitoare"
+  importers: "Importatoare"
+  exporters: "Exportatoare"
+  grids: "Grile"
+  cells: "Celule"
+  wipers: "Ștergătoare"
+  grabbers: "Apucătoare"
+  pushers: "Împingătoare"
+  cutters: "Tăietoare"
+  pasters: "Lipitoare"
+  vacuums: "Aspiratoare"
+  purgers: "Epuratoare"
+  crafters: "Fabricatoare auto"
+  power-nodes: "Noduri de energie"
+  power-outlets: "Prize de energie"
+  power-displays: "Afișaje de energie"
+  encoders: "Codificatoare de rețete"
+  greedy-blocks: "Blocuri lacome"
+  wireless-transmitters: "Transmițătoare fără fir"
+  wireless-receivers: "Receptoare fără fir"
+  distinct-items: "Obiecte distincte"
+  total-items: "Obiecte în total"
+  root-power: "Energia rădăcinii"
+  total-nodes: "Noduri în total"
+  warning-label: "Avertisment: "
+  overburdened: "Rețeaua ta a atins sau a depășit limita maximă de noduri. Nodurile peste limită nu vor funcționa, iar acestea nu sunt mereu aceleași. Reduce numărul total de noduri."

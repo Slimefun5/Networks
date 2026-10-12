@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Het item in je hand moet een Netwerk-Kwantumopslag zijn."
+  unset-or-corrupt: "Deze kaart is nog niet aan een item gekoppeld, of het is een beschadigde Netwerk-Kwantumopslag."
+  item-updated: "Item bijgewerkt"
+  must-be-empty: "De Netwerk-Kwantumopslag moet leeg zijn voordat het gekoppelde item wordt gewijzigd."
+
+card:
+  unstack-first: "Haal de kaarten uit de stapel voordat je een item koppelt."
+  item-not-storable: "Dit soort item kan niet in een Netwerk-Kaart worden opgeslagen."
+  must-be-empty: "Een kaart moet leeg zijn voordat je er een item aan koppelt."
+
+controller:
+  already-present: "Dit netwerk heeft al een controller!"
+  would-connect-two: "Deze plaatsing zou twee controllers verbinden!"
+
+encoder:
+  not-enough-power: "Niet genoeg netwerkenergie voor deze taak."
+  output-must-be-empty: "Het uitvoervak moet leeg zijn."
+  needs-blank-blueprint: "Je moet een blanco blauwdruk aanleveren"
+  invalid-recipe: "Dit lijkt geen geldig recept te zijn."
+
+grid:
+  filter-prompt: "Typ waarop je dit raster wilt filteren"
+  filter-applied: "Filter toegepast"
+
+configurator:
+  needs-directional: "Je moet een gerichte Networks-interface aanwijzen."
+  no-direction-set: "Voor dit gerichte onderdeel is nog geen richting ingesteld"
+  copied: "Configuratie gekopieerd."
+  direction-label: "Richting: "
+  direction-not-supplied: "Niet opgegeven"
+  direction-applied: "Succesvol toegepast"
+  item-label: "Item [%slot%]: "
+  item-added: "Item aan het filter toegevoegd"
+  not-enough-items: "Niet genoeg items om het filter te vullen"
+  no-item-stored: "Geen item in de opgeslagen configuratie"
+  items-label: "Items: "
+  no-items-stored: "Geen items in de opgeslagen configuratie"
+
+wireless:
+  needs-wireless-block: "Je moet een draadloos netwerkblok aanwijzen."
+  no-receiver-set: "Er is geen Draadloze Netwerk-Ontvanger ingesteld."
+  receiver-other-world: "De Draadloze Netwerk-Ontvanger bevindt zich in een andere wereld."
+  transmitter-set: "Ontvangerpositie van de zender ingesteld."
+  receiver-set: "Draadloze Netwerk-Ontvanger ingesteld."
+
+remote:
+  needs-grid: "Moet op een Netwerk-Raster zijn ingesteld (geen maakraster)."
+  bound: "Het raster is aan de afstandsbediening gekoppeld."
+  grid-not-loaded: "Het gekoppelde raster is niet geladen."
+  grid-out-of-reach: "Het gekoppelde raster is buiten bereik."
+  not-bound: "De afstandsbediening is aan geen enkel raster gekoppeld."
+  grid-gone: "Het gekoppelde raster is niet meer te vinden."
+
+crayon:
+  removed: "Krijt uit het netwerk verwijderd."
+  added: "Krijt aan het netwerk toegevoegd."
+
+debug:
+  state-set: "Foutopsporing voor dit blok is ingesteld op %state%."
+  until-restart: "Dit blijft gelden tot een herstart of tot je het weer uitzet."
+  op-only: "Je kunt dit gereedschap alleen als op-speler gebruiken."
+
+tool:
+  on-cooldown: "Dit is nog aan het afkoelen"
+
+probe:
+  summary-title: "       Netwerkoverzicht       "
+  bridges: "Bruggen"
+  monitors: "Monitoren"
+  importers: "Importeurs"
+  exporters: "Exporteurs"
+  grids: "Rasters"
+  cells: "Cellen"
+  wipers: "Wissers"
+  grabbers: "Grijpers"
+  pushers: "Duwers"
+  cutters: "Knippers"
+  pasters: "Plakkers"
+  vacuums: "Zuigers"
+  purgers: "Vernietigers"
+  crafters: "Automakers"
+  power-nodes: "Energieknooppunten"
+  power-outlets: "Stopcontacten"
+  power-displays: "Energiedisplays"
+  encoders: "Receptcodeerders"
+  greedy-blocks: "Hebzuchtige blokken"
+  wireless-transmitters: "Draadloze zenders"
+  wireless-receivers: "Draadloze ontvangers"
+  distinct-items: "Verschillende items"
+  total-items: "Items in totaal"
+  root-power: "Energie van de wortel"
+  total-nodes: "Knooppunten in totaal"
+  warning-label: "Waarschuwing: "
+  overburdened: "Je netwerk heeft de maximale hoeveelheid knooppunten bereikt of overschreden. Knooppunten boven de grens werken niet, en dat zijn niet altijd dezelfde. Verminder je totale aantal knooppunten."

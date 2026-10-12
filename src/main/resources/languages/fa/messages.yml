@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "آیتم در دست باید انبار کوانتومی شبکه باشد."
+  unset-or-corrupt: "این کارت هنوز به آیتمی وصل نشده یا یک انبار کوانتومی شبکه آسیب‌دیده است."
+  item-updated: "آیتم به‌روزرسانی شد"
+  must-be-empty: "انبار کوانتومی شبکه باید خالی باشد تا آیتم وصل‌شده تغییر کند."
+
+card:
+  unstack-first: "پیش از وصل کردن آیتم، کارت‌ها را از هم جدا کن."
+  item-not-storable: "این نوع آیتم را نمی‌توان در کارت شبکه ذخیره کرد."
+  must-be-empty: "کارت باید خالی باشد تا بتوانی آیتمی به آن وصل کنی."
+
+controller:
+  already-present: "این شبکه از قبل یک کنترلگر دارد!"
+  would-connect-two: "این قرار دادن دو کنترلگر را به هم وصل می‌کند!"
+
+encoder:
+  not-enough-power: "نیروی شبکه برای انجام این کار کافی نیست."
+  output-must-be-empty: "خانه خروجی باید خالی باشد."
+  needs-blank-blueprint: "باید یک نقشه خالی بدهی"
+  invalid-recipe: "به نظر نمی‌رسد این یک دستور ساخت درست باشد."
+
+grid:
+  filter-prompt: "بنویس می‌خواهی این جدول را بر چه اساسی پالایش کنی"
+  filter-applied: "پالایه اعمال شد"
+
+configurator:
+  needs-directional: "باید یک رابط جهت‌دار از Networks را هدف بگیری."
+  no-direction-set: "برای این عنصر جهت‌دار هنوز جهتی تعیین نشده"
+  copied: "تنظیم رونوشت شد."
+  direction-label: "جهت: "
+  direction-not-supplied: "داده نشده"
+  direction-applied: "با موفقیت اعمال شد"
+  item-label: "آیتم [%slot%]: "
+  item-added: "آیتم به پالایه افزوده شد"
+  not-enough-items: "آیتم کافی برای پر کردن پالایه نیست"
+  no-item-stored: "در تنظیم ذخیره‌شده آیتمی نیست"
+  items-label: "آیتم‌ها: "
+  no-items-stored: "در تنظیم ذخیره‌شده هیچ آیتمی نیست"
+
+wireless:
+  needs-wireless-block: "باید یک بلوک بی‌سیم شبکه را هدف بگیری."
+  no-receiver-set: "هیچ گیرنده بی‌سیم شبکه‌ای تعیین نشده است."
+  receiver-other-world: "گیرنده بی‌سیم شبکه در جهان دیگری است."
+  transmitter-set: "موقعیت گیرنده برای فرستنده تعیین شد."
+  receiver-set: "گیرنده بی‌سیم شبکه تعیین شد."
+
+remote:
+  needs-grid: "باید روی یک جدول شبکه تنظیم شود (نه جدول ساخت)."
+  bound: "جدول به کنترل از دور بسته شد."
+  grid-not-loaded: "جدول بسته‌شده بارگذاری نشده است."
+  grid-out-of-reach: "جدول بسته‌شده در دسترس نیست."
+  not-bound: "کنترل از دور به هیچ جدولی بسته نشده است."
+  grid-gone: "جدول بسته‌شده دیگر پیدا نمی‌شود."
+
+crayon:
+  removed: "مدادشمعی از شبکه برداشته شد."
+  added: "مدادشمعی به شبکه افزوده شد."
+
+debug:
+  state-set: "اشکال‌زدایی این بلوک روی %state% تنظیم شد."
+  until-restart: "تا راه‌اندازی دوباره یا تا زمانی که خودت خاموشش کنی برجا می‌ماند."
+  op-only: "این ابزار را تنها به عنوان بازیکنی با دسترسی اپراتور می‌توانی به کار ببری."
+
+tool:
+  on-cooldown: "این هنوز در زمان انتظار است"
+
+probe:
+  summary-title: "          خلاصه شبکه          "
+  bridges: "پل‌ها"
+  monitors: "پایشگرها"
+  importers: "واردکننده‌ها"
+  exporters: "صادرکننده‌ها"
+  grids: "جدول‌ها"
+  cells: "سلول‌ها"
+  wipers: "پاک‌کننده‌ها"
+  grabbers: "قاپنده‌ها"
+  pushers: "هل‌دهنده‌ها"
+  cutters: "برنده‌ها"
+  pasters: "چسباننده‌ها"
+  vacuums: "مکنده‌ها"
+  purgers: "پاک‌سازها"
+  crafters: "سازنده‌های خودکار"
+  power-nodes: "گره‌های نیرو"
+  power-outlets: "پریزهای نیرو"
+  power-displays: "نمایشگرهای نیرو"
+  encoders: "رمزگذارهای دستور ساخت"
+  greedy-blocks: "بلوک‌های حریص"
+  wireless-transmitters: "فرستنده‌های بی‌سیم"
+  wireless-receivers: "گیرنده‌های بی‌سیم"
+  distinct-items: "آیتم‌های متمایز"
+  total-items: "مجموع آیتم‌ها"
+  root-power: "نیروی ریشه"
+  total-nodes: "مجموع گره‌ها"
+  warning-label: "هشدار: "
+  overburdened: "شبکه تو به بیشینه شمار گره‌ها رسیده یا از آن گذشته است. گره‌های فراتر از مرز کار نمی‌کنند و همیشه همان گره‌ها نیستند. شمار کل گره‌هایت را کم کن."

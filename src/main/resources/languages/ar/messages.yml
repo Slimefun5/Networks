@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "يجب أن يكون العنصر في اليد مخزنًا كميًا للشبكة."
+  unset-or-corrupt: "هذه البطاقة لم تُربط بعنصر بعد أو أنها مخزن كمي للشبكة تالف."
+  item-updated: "تم تحديث العنصر"
+  must-be-empty: "يجب أن يكون المخزن الكمي للشبكة فارغًا قبل تغيير العنصر المربوط."
+
+card:
+  unstack-first: "افصل البطاقات قبل ربط عنصر."
+  item-not-storable: "لا يمكن تخزين هذا النوع من العناصر في بطاقة الشبكة."
+  must-be-empty: "يجب أن تكون البطاقة فارغة قبل محاولة ربط عنصر بها."
+
+controller:
+  already-present: "هذه الشبكة لديها وحدة تحكم بالفعل!"
+  would-connect-two: "هذا الموضع سيصل وحدتي تحكم معًا!"
+
+encoder:
+  not-enough-power: "طاقة الشبكة غير كافية لتنفيذ هذه المهمة."
+  output-must-be-empty: "يجب أن تكون خانة الإخراج فارغة."
+  needs-blank-blueprint: "عليك توفير مخطط فارغ"
+  invalid-recipe: "لا يبدو أن هذه وصفة صحيحة."
+
+grid:
+  filter-prompt: "اكتب ما تريد تصفية هذه المصفوفة به"
+  filter-applied: "تم تطبيق المُرشِّح"
+
+configurator:
+  needs-directional: "عليك استهداف واجهة اتجاهية من Networks."
+  no-direction-set: "هذا العنصر الاتجاهي لم يُحدد له اتجاه بعد"
+  copied: "تم نسخ الإعداد."
+  direction-label: "الاتجاه: "
+  direction-not-supplied: "غير محدد"
+  direction-applied: "تم التطبيق بنجاح"
+  item-label: "العنصر [%slot%]: "
+  item-added: "أُضيف العنصر إلى المُرشِّح"
+  not-enough-items: "لا توجد عناصر كافية لتعبئة المُرشِّح"
+  no-item-stored: "لا يوجد عنصر في الإعداد المحفوظ"
+  items-label: "العناصر: "
+  no-items-stored: "لا توجد عناصر في الإعداد المحفوظ"
+
+wireless:
+  needs-wireless-block: "عليك استهداف كتلة لاسلكية للشبكة."
+  no-receiver-set: "لم يُحدد أي مستقبل لاسلكي للشبكة."
+  receiver-other-world: "مستقبل الشبكة اللاسلكي في عالم آخر."
+  transmitter-set: "تم تحديد موضع المستقبل للمُرسل."
+  receiver-set: "تم تحديد مستقبل الشبكة اللاسلكي."
+
+remote:
+  needs-grid: "يجب أن يكون محددًا على مصفوفة شبكة (لا على مصفوفة تصنيع)."
+  bound: "تم ربط المصفوفة بجهاز التحكم."
+  grid-not-loaded: "المصفوفة المربوطة غير محمَّلة."
+  grid-out-of-reach: "المصفوفة المربوطة بعيدة عن المدى."
+  not-bound: "جهاز التحكم غير مربوط بأي مصفوفة."
+  grid-gone: "لم يعد من الممكن إيجاد المصفوفة المربوطة."
+
+crayon:
+  removed: "أُزيل القلم الشمعي من الشبكة."
+  added: "أُضيف القلم الشمعي إلى الشبكة."
+
+debug:
+  state-set: "تم تعيين تنقيح هذه الكتلة على %state%."
+  until-restart: "سيستمر حتى إعادة التشغيل أو حتى تُعطّله مرة أخرى."
+  op-only: "لا يمكنك استخدام هذه الأداة إلا كلاعب يملك صلاحيات المشغّل."
+
+tool:
+  on-cooldown: "هذا لا يزال في فترة الانتظار"
+
+probe:
+  summary-title: "         ملخص الشبكة          "
+  bridges: "الجسور"
+  monitors: "المراقبون"
+  importers: "المستوردون"
+  exporters: "المُصدِّرون"
+  grids: "المصفوفات"
+  cells: "الخلايا"
+  wipers: "الماسحات"
+  grabbers: "الملتقطات"
+  pushers: "الدافعات"
+  cutters: "القاطعات"
+  pasters: "اللاصقات"
+  vacuums: "المكانس"
+  purgers: "المُطهِّرات"
+  crafters: "الصانعات التلقائية"
+  power-nodes: "عُقد الطاقة"
+  power-outlets: "مآخذ الطاقة"
+  power-displays: "شاشات الطاقة"
+  encoders: "مُرمِّزات الوصفات"
+  greedy-blocks: "الكتل الجَشِعة"
+  wireless-transmitters: "المُرسلات اللاسلكية"
+  wireless-receivers: "المستقبلات اللاسلكية"
+  distinct-items: "عناصر مختلفة"
+  total-items: "مجموع العناصر"
+  root-power: "طاقة الجذر"
+  total-nodes: "مجموع العُقد"
+  warning-label: "تحذير: "
+  overburdened: "بلغت شبكتك الحد الأقصى للعُقد أو تجاوزته. العُقد التي تتجاوز الحد لن تعمل، وهي ليست العُقد نفسها في كل مرة. قلّل العدد الكلي لعُقدك."

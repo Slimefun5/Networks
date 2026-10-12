@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "הפריט ביד חייב להיות אחסון קוונטי של רשת."
+  unset-or-corrupt: "הכרטיס הזה עדיין לא שויך לפריט או שהוא אחסון קוונטי של רשת פגום."
+  item-updated: "הפריט עודכן"
+  must-be-empty: "האחסון הקוונטי של הרשת חייב להיות ריק לפני שינוי הפריט המשויך."
+
+card:
+  unstack-first: "הפרד את הכרטיסים לפני שיוך פריט."
+  item-not-storable: "פריט מסוג זה אינו יכול להיאגר בכרטיס רשת."
+  must-be-empty: "כרטיס חייב להיות ריק לפני שתנסה לשייך לו פריט."
+
+controller:
+  already-present: "לרשת הזו כבר יש בקר!"
+  would-connect-two: "המיקום הזה היה מחבר שני בקרים!"
+
+encoder:
+  not-enough-power: "אין מספיק כוח רשת כדי לבצע את המשימה הזו."
+  output-must-be-empty: "משבצת הפלט חייבת להיות ריקה."
+  needs-blank-blueprint: "עליך לספק תרשים ריק"
+  invalid-recipe: "זה לא נראה כמו מתכון תקף."
+
+grid:
+  filter-prompt: "הקלד לפי מה אתה רוצה לסנן את הסריג הזה"
+  filter-applied: "המסנן הוחל"
+
+configurator:
+  needs-directional: "עליך לכוון אל ממשק כיווני של Networks."
+  no-direction-set: "לרכיב הכיווני הזה עדיין לא נקבע כיוון"
+  copied: "ההגדרה הועתקה."
+  direction-label: "כיוון: "
+  direction-not-supplied: "לא סופק"
+  direction-applied: "הוחל בהצלחה"
+  item-label: "פריט [%slot%]: "
+  item-added: "הפריט נוסף למסנן"
+  not-enough-items: "אין מספיק פריטים כדי למלא את המסנן"
+  no-item-stored: "אין פריט בהגדרה השמורה"
+  items-label: "פריטים: "
+  no-items-stored: "אין פריטים בהגדרה השמורה"
+
+wireless:
+  needs-wireless-block: "עליך לכוון אל בלוק אלחוטי של רשת."
+  no-receiver-set: "לא נקבע שום מקלט רשת אלחוטי."
+  receiver-other-world: "מקלט הרשת האלחוטי נמצא בעולם אחר."
+  transmitter-set: "מיקום המקלט עבור המשדר נקבע."
+  receiver-set: "מקלט הרשת האלחוטי נקבע."
+
+remote:
+  needs-grid: "חייב להיות מוגדר לסריג רשת (לא לסריג יצירה)."
+  bound: "הסריג נקשר לשלט."
+  grid-not-loaded: "הסריג הקשור אינו טעון."
+  grid-out-of-reach: "הסריג הקשור אינו בהישג יד."
+  not-bound: "השלט אינו קשור לשום סריג."
+  grid-gone: "לא ניתן למצוא יותר את הסריג הקשור."
+
+crayon:
+  removed: "הצבע הוסר מהרשת."
+  added: "הצבע נוסף לרשת."
+
+debug:
+  state-set: "ניפוי הבאגים לבלוק הזה הוגדר ל-%state%."
+  until-restart: "זה יימשך עד הפעלה מחדש או עד שתכבה את זה שוב."
+  op-only: "אתה יכול להשתמש בכלי הזה רק כשחקן עם הרשאות מפעיל."
+
+tool:
+  on-cooldown: "זה עדיין בזמן המתנה"
+
+probe:
+  summary-title: "          סיכום הרשת          "
+  bridges: "גשרים"
+  monitors: "מנטרים"
+  importers: "מייבאים"
+  exporters: "מייצאים"
+  grids: "סריגים"
+  cells: "תאים"
+  wipers: "מוחקים"
+  grabbers: "תופסים"
+  pushers: "דוחפים"
+  cutters: "חותכים"
+  pasters: "מדביקים"
+  vacuums: "שואבים"
+  purgers: "מטהרים"
+  crafters: "יוצרים אוטומטיים"
+  power-nodes: "צמתי כוח"
+  power-outlets: "שקעי כוח"
+  power-displays: "צגי כוח"
+  encoders: "מקודדי מתכונים"
+  greedy-blocks: "בלוקים חמדנים"
+  wireless-transmitters: "משדרים אלחוטיים"
+  wireless-receivers: "מקלטים אלחוטיים"
+  distinct-items: "פריטים שונים"
+  total-items: "סך הפריטים"
+  root-power: "כוח השורש"
+  total-nodes: "סך הצמתים"
+  warning-label: "אזהרה: "
+  overburdened: "הרשת שלך הגיעה אל מגבלת הצמתים המרבית או עברה אותה. צמתים מעל המגבלה לא יפעלו, ואלה לא תמיד אותם הצמתים. הפחת את מספר הצמתים הכולל שלך."

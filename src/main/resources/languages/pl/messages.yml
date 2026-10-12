@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Przedmiot w ręce musi być Magazynem Kwantowym Sieciowym."
+  unset-or-corrupt: "Ta karta nie została jeszcze przypisana do przedmiotu albo jest uszkodzonym Magazynem Kwantowym Sieciowym."
+  item-updated: "Przedmiot zaktualizowany"
+  must-be-empty: "Magazyn Kwantowy Sieciowy musi być pusty przed zmianą przypisanego przedmiotu."
+
+card:
+  unstack-first: "Rozdziel karty przed przypisaniem przedmiotu."
+  item-not-storable: "Tego typu przedmiotu nie można przechowywać w Karcie Sieciowej."
+  must-be-empty: "Karta musi być pusta, zanim spróbujesz przypisać do niej przedmiot."
+
+controller:
+  already-present: "Ta sieć ma już kontroler!"
+  would-connect-two: "To ustawienie połączyłoby dwa kontrolery!"
+
+encoder:
+  not-enough-power: "Za mało energii sieciowej, aby wykonać to zadanie."
+  output-must-be-empty: "Slot wyjściowy musi być pusty."
+  needs-blank-blueprint: "Musisz dostarczyć pusty schemat"
+  invalid-recipe: "To nie wygląda na prawidłową recepturę."
+
+grid:
+  filter-prompt: "Wpisz, według czego chcesz filtrować tę siatkę"
+  filter-applied: "Filtr zastosowany"
+
+configurator:
+  needs-directional: "Musisz wskazać kierunkowy interfejs Networks."
+  no-direction-set: "Ten element kierunkowy nie ma jeszcze ustawionego kierunku"
+  copied: "Konfiguracja skopiowana."
+  direction-label: "Kierunek: "
+  direction-not-supplied: "Nie podano"
+  direction-applied: "Zastosowano pomyślnie"
+  item-label: "Przedmiot [%slot%]: "
+  item-added: "Przedmiot dodany do filtra"
+  not-enough-items: "Za mało przedmiotów, aby zapełnić filtr"
+  no-item-stored: "Brak przedmiotu w zapisanej konfiguracji"
+  items-label: "Przedmioty: "
+  no-items-stored: "Brak przedmiotów w zapisanej konfiguracji"
+
+wireless:
+  needs-wireless-block: "Musisz wskazać bezprzewodowy blok sieciowy."
+  no-receiver-set: "Nie ustawiono żadnego Bezprzewodowego Odbiornika Sieciowego."
+  receiver-other-world: "Bezprzewodowy Odbiornik Sieciowy znajduje się w innym świecie."
+  transmitter-set: "Ustawiono pozycję odbiornika nadajnika."
+  receiver-set: "Bezprzewodowy Odbiornik Sieciowy ustawiony."
+
+remote:
+  needs-grid: "Musi być ustawiony na Siatkę Sieciową (nie na siatkę tworzenia)."
+  bound: "Siatka została powiązana z pilotem."
+  grid-not-loaded: "Powiązana siatka nie jest wczytana."
+  grid-out-of-reach: "Powiązana siatka jest poza zasięgiem."
+  not-bound: "Pilot nie jest powiązany z żadną siatką."
+  grid-gone: "Powiązanej siatki nie można już znaleźć."
+
+crayon:
+  removed: "Kredka usunięta z sieci."
+  added: "Kredka dodana do sieci."
+
+debug:
+  state-set: "Debugowanie tego bloku zostało ustawione na %state%."
+  until-restart: "Będzie działać do restartu albo dopóki go nie wyłączysz."
+  op-only: "Możesz używać tego narzędzia tylko jako gracz z uprawnieniami operatora."
+
+tool:
+  on-cooldown: "To jest jeszcze w czasie odnowienia"
+
+probe:
+  summary-title: "      Podsumowanie Sieci      "
+  bridges: "Mosty"
+  monitors: "Monitory"
+  importers: "Importery"
+  exporters: "Eksportery"
+  grids: "Siatki"
+  cells: "Komórki"
+  wipers: "Czyściki"
+  grabbers: "Chwytaki"
+  pushers: "Popychacze"
+  cutters: "Wycinaki"
+  pasters: "Wklejacze"
+  vacuums: "Odkurzacze"
+  purgers: "Niszczarki"
+  crafters: "Automatyczne kraftery"
+  power-nodes: "Węzły zasilania"
+  power-outlets: "Gniazda zasilania"
+  power-displays: "Wyświetlacze energii"
+  encoders: "Kodery receptur"
+  greedy-blocks: "Chciwe bloki"
+  wireless-transmitters: "Nadajniki bezprzewodowe"
+  wireless-receivers: "Odbiorniki bezprzewodowe"
+  distinct-items: "Różne przedmioty"
+  total-items: "Przedmioty łącznie"
+  root-power: "Energia korzenia"
+  total-nodes: "Węzły łącznie"
+  warning-label: "Ostrzeżenie: "
+  overburdened: "Twoja sieć osiągnęła lub przekroczyła maksymalny limit węzłów. Węzły powyżej limitu nie będą działać, a nie zawsze są to te same węzły. Zmniejsz łączną liczbę węzłów."

@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "අතේ ඇති අයිතමය ජාල ක්වොන්ටම් ගබඩාවක් විය යුතුය."
+  unset-or-corrupt: "මෙම කාඩ්පත තවම අයිතමයකට සම්බන්ධ කර නැත, නැතහොත් එය හානි වූ ජාල ක්වොන්ටම් ගබඩාවකි."
+  item-updated: "අයිතමය යාවත්කාලීන කළා"
+  must-be-empty: "සම්බන්ධ අයිතමය වෙනස් කිරීමට පෙර ජාල ක්වොන්ටම් ගබඩාව හිස් විය යුතුය."
+
+card:
+  unstack-first: "අයිතමයක් සම්බන්ධ කිරීමට පෙර කාඩ්පත් වෙන් කරන්න."
+  item-not-storable: "මෙම වර්ගයේ අයිතමය ජාල කාඩ්පතක ගබඩා කළ නොහැක."
+  must-be-empty: "කාඩ්පතකට අයිතමයක් සම්බන්ධ කිරීමට උත්සාහ කිරීමට පෙර එය හිස් විය යුතුය."
+
+controller:
+  already-present: "මෙම ජාලයට දැනටමත් පාලකයක් ඇත!"
+  would-connect-two: "මෙසේ තැබීමෙන් පාලක දෙකක් සම්බන්ධ වේ!"
+
+encoder:
+  not-enough-power: "මෙම කාර්යය ඉටු කිරීමට ජාල බලය ප්‍රමාණවත් නැත."
+  output-must-be-empty: "ප්‍රතිදාන කොටුව හිස් විය යුතුය."
+  needs-blank-blueprint: "ඔබ හිස් සැලසුමක් සැපයිය යුතුය"
+  invalid-recipe: "මෙය වලංගු වට්ටෝරුවක් බවක් නොපෙනේ."
+
+grid:
+  filter-prompt: "මෙම පුවරුව කුමකින් පෙරහන් කිරීමට අවශ්‍යද යන්න ලියන්න"
+  filter-applied: "පෙරහන යෙදුවා"
+
+configurator:
+  needs-directional: "ඔබ දිශානුගත Networks අතුරුමුහුණතක් ඉලක්ක කළ යුතුය."
+  no-direction-set: "මෙම දිශානුගත අංගයට තවම දිශාවක් සකසා නැත"
+  copied: "සැකසුම පිටපත් කළා."
+  direction-label: "දිශාව: "
+  direction-not-supplied: "සපයා නැත"
+  direction-applied: "සාර්ථකව යෙදුවා"
+  item-label: "අයිතමය [%slot%]: "
+  item-added: "අයිතමය පෙරහනට එකතු කළා"
+  not-enough-items: "පෙරහන පිරවීමට අයිතම ප්‍රමාණවත් නැත"
+  no-item-stored: "සුරැකි සැකසුමේ අයිතමයක් නැත"
+  items-label: "අයිතම: "
+  no-items-stored: "සුරැකි සැකසුමේ අයිතම නැත"
+
+wireless:
+  needs-wireless-block: "ඔබ ජාල නොරැහැන් කුට්ටියක් ඉලක්ක කළ යුතුය."
+  no-receiver-set: "ජාල නොරැහැන් ග්‍රාහකයක් සකසා නැත."
+  receiver-other-world: "ජාල නොරැහැන් ග්‍රාහකය වෙනත් ලෝකයක ඇත."
+  transmitter-set: "සම්ප්‍රේෂකය සඳහා ග්‍රාහක ස්ථානය සැකසුවා."
+  receiver-set: "ජාල නොරැහැන් ග්‍රාහකය සැකසුවා."
+
+remote:
+  needs-grid: "ජාල පුවරුවකට සැකසිය යුතුය (තැනීමේ පුවරුවකට නොවේ)."
+  bound: "පුවරුව දූරස්ථ පාලකයට බැඳුවා."
+  grid-not-loaded: "බැඳි පුවරුව පූරණය කර නැත."
+  grid-out-of-reach: "බැඳි පුවරුව ළඟා විය හැකි දුරින් නැත."
+  not-bound: "දූරස්ථ පාලකය කිසිම පුවරුවකට බැඳී නැත."
+  grid-gone: "බැඳි පුවරුව තවදුරටත් සොයාගත නොහැක."
+
+crayon:
+  removed: "ක්‍රේයෝනය ජාලයෙන් ඉවත් කළා."
+  added: "ක්‍රේයෝනය ජාලයට එකතු කළා."
+
+debug:
+  state-set: "මෙම කුට්ටියේ දෝෂහරණය %state% ලෙස සකසා ඇත."
+  until-restart: "නැවත ආරම්භ කරන තුරු හෝ ඔබ එය නැවත අක්‍රිය කරන තුරු පවතී."
+  op-only: "මෙම මෙවලම ක්‍රියාකරු බලතල ඇති ක්‍රීඩකයෙකු ලෙස පමණක් භාවිත කළ හැක."
+
+tool:
+  on-cooldown: "මෙය තවමත් සිසිලන කාලයේ ඇත"
+
+probe:
+  summary-title: "         ජාල සාරාංශය          "
+  bridges: "පාලම්"
+  monitors: "නිරීක්ෂක"
+  importers: "ආයාතක"
+  exporters: "නිර්යාතක"
+  grids: "පුවරු"
+  cells: "කෝෂ"
+  wipers: "මකන්නන්"
+  grabbers: "අල්ලන්නන්"
+  pushers: "තල්ලු කරන්නන්"
+  cutters: "කපන්නන්"
+  pasters: "අලවන්නන්"
+  vacuums: "රික්තක"
+  purgers: "පවිත්‍රක"
+  crafters: "ස්වයං තනන්නන්"
+  power-nodes: "බල නෝඩ"
+  power-outlets: "බල නිකුතු"
+  power-displays: "බල සංදර්ශක"
+  encoders: "වට්ටෝරු කේතක"
+  greedy-blocks: "ගිජු කුට්ටි"
+  wireless-transmitters: "නොරැහැන් සම්ප්‍රේෂක"
+  wireless-receivers: "නොරැහැන් ග්‍රාහක"
+  distinct-items: "වෙනස් අයිතම"
+  total-items: "මුළු අයිතම"
+  root-power: "මූලයේ බලය"
+  total-nodes: "මුළු නෝඩ"
+  warning-label: "අවවාදය: "
+  overburdened: "ඔබේ ජාලය උපරිම නෝඩ සීමාවට ළඟා වී හෝ එය පසු කර ඇත. සීමාව ඉක්මවූ නෝඩ ක්‍රියා නොකරයි, ඒවා සැමවිටම එකම නෝඩ නොවේ. ඔබේ මුළු නෝඩ ගණන අඩු කරන්න."

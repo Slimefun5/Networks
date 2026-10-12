@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "手上的物品必須是網路量子儲存。"
+  unset-or-corrupt: "此卡片尚未綁定物品，或者它是一個已損壞的網路量子儲存。"
+  item-updated: "物品已更新"
+  must-be-empty: "變更綁定的物品之前，網路量子儲存必須是空的。"
+
+card:
+  unstack-first: "綁定物品之前請先把卡片拆開。"
+  item-not-storable: "這類物品無法存放在網路卡片中。"
+  must-be-empty: "嘗試為卡片綁定物品之前，卡片必須是空的。"
+
+controller:
+  already-present: "這個網路已經有一個控制器了！"
+  would-connect-two: "這樣放置會把兩個控制器連在一起！"
+
+encoder:
+  not-enough-power: "網路電力不足，無法完成這項任務。"
+  output-must-be-empty: "輸出欄必須是空的。"
+  needs-blank-blueprint: "你需要提供一張空白藍圖"
+  invalid-recipe: "這看起來不是一個有效的配方。"
+
+grid:
+  filter-prompt: "請輸入你想用來篩選這個網格的內容"
+  filter-applied: "篩選器已套用"
+
+configurator:
+  needs-directional: "你必須瞄準一個有方向的 Networks 介面。"
+  no-direction-set: "這個方向性元件尚未設定方向"
+  copied: "設定已複製。"
+  direction-label: "方向："
+  direction-not-supplied: "未提供"
+  direction-applied: "已成功套用"
+  item-label: "物品 [%slot%]："
+  item-added: "物品已加入篩選器"
+  not-enough-items: "物品不足，無法填滿篩選器"
+  no-item-stored: "儲存的設定中沒有物品"
+  items-label: "物品："
+  no-items-stored: "儲存的設定中沒有任何物品"
+
+wireless:
+  needs-wireless-block: "你必須瞄準一個網路無線方塊。"
+  no-receiver-set: "尚未設定任何網路無線接收器。"
+  receiver-other-world: "網路無線接收器位於另一個世界。"
+  transmitter-set: "已設定傳輸器的接收器位置。"
+  receiver-set: "已設定網路無線接收器。"
+
+remote:
+  needs-grid: "必須設定為網路網格（不是合成網格）。"
+  bound: "網格已綁定到遙控器。"
+  grid-not-loaded: "綁定的網格尚未載入。"
+  grid-out-of-reach: "綁定的網格不在範圍內。"
+  not-bound: "遙控器尚未綁定任何網格。"
+  grid-gone: "已經找不到綁定的網格了。"
+
+crayon:
+  removed: "已從網路中移除蠟筆。"
+  added: "已向網路中加入蠟筆。"
+
+debug:
+  state-set: "這個方塊的除錯已設定為 %state%。"
+  until-restart: "它會持續到重新啟動，或者直到你再次關閉它。"
+  op-only: "你只能以擁有管理員權限的玩家身分使用這個工具。"
+
+tool:
+  on-cooldown: "這仍在冷卻中"
+
+probe:
+  summary-title: "             網路摘要             "
+  bridges: "橋接器"
+  monitors: "監視器"
+  importers: "匯入器"
+  exporters: "匯出器"
+  grids: "網格"
+  cells: "單元"
+  wipers: "擦除器"
+  grabbers: "抓取器"
+  pushers: "推送器"
+  cutters: "剪切器"
+  pasters: "貼上器"
+  vacuums: "吸塵器"
+  purgers: "清除器"
+  crafters: "自動合成器"
+  power-nodes: "電力節點"
+  power-outlets: "電力輸出座"
+  power-displays: "電力顯示器"
+  encoders: "配方編碼器"
+  greedy-blocks: "貪婪方塊"
+  wireless-transmitters: "無線傳輸器"
+  wireless-receivers: "無線接收器"
+  distinct-items: "不同物品"
+  total-items: "物品總數"
+  root-power: "根節點電力"
+  total-nodes: "節點總數"
+  warning-label: "警告："
+  overburdened: "你的網路已達到或超過最大節點上限。超出上限的節點將無法運作，而且每次不一定是同一批節點。請減少節點總數。"

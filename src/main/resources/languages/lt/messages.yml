@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Rankoje laikomas daiktas turi būti tinklo kvantinė saugykla."
+  unset-or-corrupt: "Ši kortelė dar nepriskirta daiktui arba yra sugadinta tinklo kvantinė saugykla."
+  item-updated: "Daiktas atnaujintas"
+  must-be-empty: "Tinklo kvantinė saugykla turi būti tuščia, kol nepakeistas priskirtas daiktas."
+
+card:
+  unstack-first: "Išskirstyk korteles, kol nepriskyrei daikto."
+  item-not-storable: "Tokio tipo daikto negalima laikyti tinklo kortelėje."
+  must-be-empty: "Kortelė turi būti tuščia, kol nebandai jai priskirti daikto."
+
+controller:
+  already-present: "Šis tinklas jau turi valdiklį!"
+  would-connect-two: "Toks padėjimas sujungtų du valdiklius!"
+
+encoder:
+  not-enough-power: "Nepakanka tinklo energijos šiai užduočiai atlikti."
+  output-must-be-empty: "Išvesties vieta turi būti tuščia."
+  needs-blank-blueprint: "Turi pateikti tuščią brėžinį"
+  invalid-recipe: "Neatrodo, kad tai būtų tinkamas receptas."
+
+grid:
+  filter-prompt: "Įrašyk, pagal ką nori filtruoti šią lentelę"
+  filter-applied: "Filtras pritaikytas"
+
+configurator:
+  needs-directional: "Turi nukreipti į kryptinę Networks sąsają."
+  no-direction-set: "Šiam kryptiniam elementui dar nenustatyta kryptis"
+  copied: "Nuostata nukopijuota."
+  direction-label: "Kryptis: "
+  direction-not-supplied: "Nenurodyta"
+  direction-applied: "Sėkmingai pritaikyta"
+  item-label: "Daiktas [%slot%]: "
+  item-added: "Daiktas įtrauktas į filtrą"
+  not-enough-items: "Nepakanka daiktų filtrui užpildyti"
+  no-item-stored: "Išsaugotoje nuostatoje nėra daikto"
+  items-label: "Daiktai: "
+  no-items-stored: "Išsaugotoje nuostatoje nėra daiktų"
+
+wireless:
+  needs-wireless-block: "Turi nukreipti į tinklo belaidį bloką."
+  no-receiver-set: "Nenustatytas nė vienas tinklo belaidis imtuvas."
+  receiver-other-world: "Tinklo belaidis imtuvas yra kitame pasaulyje."
+  transmitter-set: "Siųstuvo imtuvo padėtis nustatyta."
+  receiver-set: "Tinklo belaidis imtuvas nustatytas."
+
+remote:
+  needs-grid: "Turi būti nustatytas į tinklo lentelę (ne į gamybos lentelę)."
+  bound: "Lentelė susieta su nuotoliniu pulteliu."
+  grid-not-loaded: "Susieta lentelė neįkelta."
+  grid-out-of-reach: "Susieta lentelė yra per toli."
+  not-bound: "Nuotolinis pultelis nesusietas su jokia lentele."
+  grid-gone: "Susietos lentelės nebepavyksta rasti."
+
+crayon:
+  removed: "Kreidelė išimta iš tinklo."
+  added: "Kreidelė įtraukta į tinklą."
+
+debug:
+  state-set: "Šio bloko derinimas nustatytas į %state%."
+  until-restart: "Tai tęsis iki perkrovimo arba kol vėl išjungsi."
+  op-only: "Šį įrankį gali naudoti tik žaidėjas su operatoriaus teisėmis."
+
+tool:
+  on-cooldown: "Tai dar atvėsta"
+
+probe:
+  summary-title: "       Tinklo suvestinė       "
+  bridges: "Tiltai"
+  monitors: "Monitoriai"
+  importers: "Importuotojai"
+  exporters: "Eksportuotojai"
+  grids: "Lentelės"
+  cells: "Celės"
+  wipers: "Trintukai"
+  grabbers: "Griebtuvai"
+  pushers: "Stūmikliai"
+  cutters: "Kirpikliai"
+  pasters: "Įklijuotojai"
+  vacuums: "Siurbliai"
+  purgers: "Naikintuvai"
+  crafters: "Automatiniai gamintojai"
+  power-nodes: "Energijos mazgai"
+  power-outlets: "Galios lizdai"
+  power-displays: "Galios ekranai"
+  encoders: "Receptų koduokliai"
+  greedy-blocks: "Godūs blokai"
+  wireless-transmitters: "Belaidžiai siųstuvai"
+  wireless-receivers: "Belaidžiai imtuvai"
+  distinct-items: "Skirtingi daiktai"
+  total-items: "Iš viso daiktų"
+  root-power: "Šaknies energija"
+  total-nodes: "Iš viso mazgų"
+  warning-label: "Įspėjimas: "
+  overburdened: "Tavo tinklas pasiekė arba perėjo didžiausią mazgų ribą. Mazgai virš ribos neveiks, ir tai ne visada tie patys mazgai. Sumažink bendrą mazgų skaičių."

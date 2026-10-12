@@ -1,0 +1,95 @@
+quantum:
+  must-be-storage: "Eldeki eşya bir Ağ Kuantum Deposu olmalı."
+  unset-or-corrupt: "Bu kart henüz bir eşyaya atanmamış ya da bozuk bir Ağ Kuantum Deposu."
+  item-updated: "Eşya güncellendi"
+  must-be-empty: "Atanan eşya değiştirilmeden önce Ağ Kuantum Deposu boş olmalı."
+
+card:
+  unstack-first: "Bir eşya atamadan önce kartları ayır."
+  item-not-storable: "Bu tür bir eşya Ağ Kartında saklanamaz."
+  must-be-empty: "Bir karta eşya atamayı denemeden önce kart boş olmalı."
+
+controller:
+  already-present: "Bu ağın zaten bir denetleyicisi var!"
+  would-connect-two: "Bu yerleştirme iki denetleyiciyi birbirine bağlardı!"
+
+encoder:
+  not-enough-power: "Bu görevi yerine getirmek için ağ gücü yetersiz."
+  output-must-be-empty: "Çıkış yuvası boş olmalı."
+  needs-blank-blueprint: "Boş bir plan sağlamalısın"
+  invalid-recipe: "Bu geçerli bir tarif gibi görünmüyor."
+
+grid:
+  filter-prompt: "Bu ızgarayı neye göre filtrelemek istediğini yaz"
+  filter-applied: "Filtre uygulandı"
+
+configurator:
+  needs-directional: "Yönlü bir Networks arayüzünü hedeflemelisin."
+  no-direction-set: "Bu yönlü ögenin henüz ayarlanmış bir yönü yok"
+  copied: "Yapılandırma kopyalandı."
+  direction-label: "Yön: "
+  direction-not-supplied: "Belirtilmedi"
+  direction-applied: "Başarıyla uygulandı"
+  item-label: "Eşya [%slot%]: "
+  item-added: "Eşya filtreye eklendi"
+  not-enough-items: "Filtreyi doldurmak için yeterli eşya yok"
+  no-item-stored: "Kayıtlı yapılandırmada eşya yok"
+  items-label: "Eşyalar: "
+  no-items-stored: "Kayıtlı yapılandırmada hiç eşya yok"
+
+wireless:
+  needs-wireless-block: "Bir Ağ Kablosuz bloğunu hedeflemelisin."
+  no-receiver-set: "Hiçbir Ağ Kablosuz Alıcısı ayarlanmadı."
+  receiver-other-world: "Ağ Kablosuz Alıcısı başka bir dünyada."
+  transmitter-set: "Vericinin alıcı konumu ayarlandı."
+  receiver-set: "Ağ Kablosuz Alıcısı ayarlandı."
+
+remote:
+  needs-grid: "Bir Ağ Izgarasına ayarlanmalı (üretim ızgarasına değil)."
+  bound: "Izgara uzaktan kumandaya bağlandı."
+  grid-not-loaded: "Bağlı ızgara yüklü değil."
+  grid-out-of-reach: "Bağlı ızgara erişim mesafesinde değil."
+  not-bound: "Uzaktan kumanda hiçbir ızgaraya bağlı değil."
+  grid-gone: "Bağlı ızgara artık bulunamıyor."
+
+crayon:
+  removed: "Pastel boya ağdan çıkarıldı."
+  added: "Pastel boya ağa eklendi."
+
+debug:
+  state-set: "Bu bloğun hata ayıklaması %state% olarak ayarlandı."
+  until-restart: "Yeniden başlatmaya kadar ya da sen kapatana kadar sürer."
+  op-only: "Bu aracı yalnızca operatör yetkisi olan bir oyuncu olarak kullanabilirsin."
+
+tool:
+  on-cooldown: "Bu hâlâ bekleme süresinde"
+
+probe:
+  summary-title: "           Ağ Özeti           "
+  bridges: "Köprüler"
+  monitors: "Monitörler"
+  importers: "İçe Aktarıcılar"
+  exporters: "Dışa Aktarıcılar"
+  grids: "Izgaralar"
+  cells: "Hücreler"
+  wipers: "Silgiler"
+  grabbers: "Tutucular"
+  pushers: "İticiler"
+  cutters: "Kesiciler"
+  pasters: "Yapıştırıcılar"
+  vacuums: "Süpürgeler"
+  purgers: "Temizleyiciler"
+  crafters: "Otomatik Üreticiler"
+  power-nodes: "Güç düğümleri"
+  power-outlets: "Güç çıkışları"
+  power-displays: "Güç göstergeleri"
+  encoders: "Tarif kodlayıcıları"
+  greedy-blocks: "Açgözlü bloklar"
+  wireless-transmitters: "Kablosuz vericiler"
+  wireless-receivers: "Kablosuz alıcılar"
+  distinct-items: "Ayrı eşyalar"
+  total-items: "Toplam eşya"
+  root-power: "Kökün gücü"
+  total-nodes: "Toplam düğüm"
+  warning-label: "Uyarı: "
+  overburdened: "Ağın en yüksek düğüm sınırına ulaştı ya da onu aştı. Sınırın ötesindeki düğümler çalışmaz ve bunlar her zaman aynı düğümler olmaz. Toplam düğüm sayını azalt."
