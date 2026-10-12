@@ -1,192 +1,562 @@
 NTW_ADVANCED_NANOBOTS:
+  name: '&bFejlett Nanorobotok'
   type:
   - '&7&oAlkatrész'
 NTW_AI_CORE:
+  name: '&bA.I. Mag'
   type:
   - '&7&oAlkatrész'
 NTW_AUTO_CRAFTER:
+  description:
+  - '&7A Hálózati Automatikus Barkácsoló elfogad'
+  - '&7egy barkácsolási tervrajzot. Amikor a'
+  - '&7tervrajz kimeneti tárgyát kérik,'
+  - '&7de nincs belőle a hálózatban,'
+  - '&7akkor elkészül, ha megvannak hozzá'
+  - '&7az anyagok.'
+  name: '&3Hálózati Automatikus Barkácsoló'
+  stats:
+  - '&7Hálózati Fogyasztás: &e64&7/barkácsolás'
   type:
   - '&7&oGép'
 NTW_AUTO_CRAFTER_WITHHOLDING:
+  description:
+  - '&7A Hálózati Automatikus Barkácsoló elfogad'
+  - '&7egy barkácsolási tervrajzot. Amikor a'
+  - '&7tervrajz kimeneti tárgyát kérik,'
+  - '&7de nincs belőle a hálózatban,'
+  - '&7akkor elkészül, ha megvannak hozzá'
+  - '&7az anyagok.'
+  - '&7A Visszatartó Barkácsoló megtart'
+  - '&7egy halmot a kimeneten, és leállítja'
+  - '&7a barkácsolást. A halom látható'
+  - '&7a Hálózatban, és teherrel is'
+  - '&7hozzáférhető.'
+  name: '&3Hálózati Automatikus Barkácsoló (Visszatartó)'
+  stats:
+  - '&7Hálózati Fogyasztás: &e128&7/barkácsolás'
   type:
   - '&7&oGép'
 NTW_BEST_PUSHER:
+  description:
+  - '&7A Hálózati Fejlett Betoló megpróbálja'
+  - '&7betolni a megfelelő tárgyakat legfeljebb'
+  - '&7tizenkét megadott minta alapján a'
+  - '&7kiválasztott gépbe.'
+  name: '&3Hálózati Fejlett Betoló'
   type:
   - '&7&oGép'
 NTW_BRIDGE:
+  description:
+  - '&7A Híd lehetővé teszi a hálózati'
+  - '&7objektumok olcsó összekapcsolását.'
+  name: '&3Hálózati Híd'
   type:
   - '&7&oGép'
 NTW_CAPACITOR_1:
+  description:
+  - '&7A Hálózati Kondenzátor áramot'
+  - '&7vesz fel és tárolja felhasználásra'
+  - '&7a hálózaton belül.'
+  name: '&3Hálózati Kondenzátor (1)'
+  stats:
+  - '&7Kapacitás: &e1000'
   type:
   - '&7&oGép'
 NTW_CAPACITOR_2:
+  description:
+  - '&7A Hálózati Kondenzátor áramot'
+  - '&7vesz fel és tárolja felhasználásra'
+  - '&7a hálózaton belül.'
+  name: '&3Hálózati Kondenzátor (2)'
+  stats:
+  - '&7Kapacitás: &e10000'
   type:
   - '&7&oGép'
 NTW_CAPACITOR_3:
+  description:
+  - '&7A Hálózati Kondenzátor áramot'
+  - '&7vesz fel és tárolja felhasználásra'
+  - '&7a hálózaton belül.'
+  name: '&3Hálózati Kondenzátor (3)'
+  stats:
+  - '&7Kapacitás: &e100000'
   type:
   - '&7&oGép'
 NTW_CAPACITOR_4:
+  description:
+  - '&7A Hálózati Kondenzátor áramot'
+  - '&7vesz fel és tárolja felhasználásra'
+  - '&7a hálózaton belül.'
+  name: '&3Hálózati Kondenzátor (4)'
+  stats:
+  - '&7Kapacitás: &e1000000'
   type:
   - '&7&oGép'
 NTW_CELL:
+  description:
+  - '&7A Hálózati Cella egy nagy'
+  - '&7(dupla láda méretű) leltár, amely'
+  - '&7elérhető a hálózatból is'
+  - '&7és a világban is.'
+  name: '&3Hálózati Cella'
   type:
   - '&7&oGép'
 NTW_CONFIGURATOR:
+  description:
+  - '&7Az irányított csatolók beállításainak'
+  - '&7másolására és beillesztésére'
+  - '&7használatos.'
+  name: '&5Hálózati Konfigurátor'
   type:
   - '&7&oEszköz'
+  usage:
+  - '&eJobb Klikk&7: Beállítás alkalmazása'
+  - '&eShift Jobb Klikk&7: Beállítás mentése'
 NTW_CONTROLLER:
+  description:
+  - '&7A Hálózati Vezérlő az agya'
+  - '&7az egész hálózatnak.'
+  name: '&3Hálózati Vezérlő'
+  stats:
+  - '&7Korlát: &eLegfeljebb 1&7 hálózatonként'
   type:
   - '&7&oGép'
 NTW_CONTROL_V:
+  description:
+  - '&7A Hálózati Vezérlés: V megpróbálja'
+  - '&7egy blokk ''beillesztését'' a Hálózatból'
+  - '&7a világba.'
+  - '&7Csak vanilla blokkokkal működik.'
+  name: '&3Hálózati Vezérlés: V'
+  stats:
+  - '&7Hálózati Fogyasztás: &e100&7/beillesztés'
   type:
   - '&7&oGép'
 NTW_CONTROL_X:
+  description:
+  - '&7A Hálózati Vezérlés: X megpróbálja'
+  - '&7egy blokk ''kivágását'' a világból'
+  - '&7és a Hálózatba helyezését.'
+  - '&7Csak olyan vanilla blokkokon működik,'
+  - '&7amelyeknek nincs leltára.'
+  name: '&3Hálózati Vezérlés: X'
+  stats:
+  - '&7Hálózati Fogyasztás: &e100&7/vágás'
   type:
   - '&7&oGép'
 NTW_CRAFTING_BLUEPRINT:
+  description:
+  - '&7Egy üres tervrajz, amely egy'
+  - '&7barkácsolási recept tárolására'
+  - '&7használható.'
+  name: '&5Barkácsolási Tervrajz'
   type:
   - '&7&oEszköz'
 NTW_CRAFTING_GRID:
+  description:
+  - '&7A Hálózati Barkácsoló Rács úgy működik,'
+  - '&7mint egy sima rács, de kevesebb tárgyat'
+  - '&7mutat, viszont engedi a barkácsolást'
+  - '&7közvetlenül a hálózatból.'
+  name: '&3Hálózati Barkácsoló Rács'
   type:
   - '&7&oGép'
 NTW_CRAYON:
+  description:
+  - '&7Be- és kikapcsol egy hálózatszintű'
+  - '&7hibakeresési részecskekijelzést, amely'
+  - '&7mutatja a csomópontok működését.'
+  name: '&5Hálózati Zsírkréta'
   type:
   - '&7&oEszköz'
+  usage:
+  - '&eJobb Klikk&7 egy Hálózati Vezérlőre a részecskekijelzés váltásához.'
 NTW_DEBUG_STICK:
+  description:
+  - '&7Csak operátoroknak szánt diagnosztikai'
+  - '&7szerszám a Hálózati blokkok vizsgálatához.'
+  name: '&5Hálózati Hibakereső Pálca'
   type:
   - '&7&oEszköz'
+  usage:
+  - '&eJobb Klikk&7 egy Hálózati Objektumra a hibakeresés bekapcsolásához.'
 NTW_EMPOWERED_AI_CORE:
+  name: '&bFelerősített A.I. Mag'
   type:
   - '&7&oAlkatrész'
 NTW_EXPORT:
+  description:
+  - '&7A Hálózati Exportáló beállítható, hogy'
+  - '&7folyamatosan exportáljon 1 halmot egy'
+  - '&7megadott tárgyból.'
+  - '&7Engedi a tárgykivételt teherrel.'
+  name: '&3Hálózati Exportáló'
   type:
   - '&7&oGép'
 NTW_GRABBER:
+  description:
+  - '&7A Hálózati Megfogó megpróbálja'
+  - '&7kivenni az első tárgyat, amit talál'
+  - '&7a kiválasztott gépben.'
+  name: '&3Hálózati Megfogó'
   type:
   - '&7&oGép'
 NTW_GREEDY_BLOCK:
+  description:
+  - '&7A Hálózati Kapzsi Blokk beállítható'
+  - '&7egyetlen tárgyra, amelyből aztán'
+  - '&7kapzsin megtart egyetlen'
+  - '&7halmot. Ha több beérkező tárgy'
+  - '&7nem fér be, az nem jut be'
+  - '&7a hálózatba.'
+  name: '&3Hálózati Kapzsi Blokk'
   type:
   - '&7&oGép'
 NTW_GRID:
+  description:
+  - '&7A Hálózati Rács megmutatja az összes'
+  - '&7tárgyat, ami a hálózatban van,'
+  - '&7és lehetővé teszi a be- vagy kivételt'
+  - '&7közvetlenül.'
+  name: '&3Hálózati Rács'
   type:
   - '&7&oGép'
 NTW_IMPORT:
+  description:
+  - '&7A Hálózati Importáló minden benne'
+  - '&7lévő tárgyat bevisz a hálózatba.'
+  - '&7Tárgyakat fogad be teherből.'
+  name: '&3Hálózati Importáló'
+  stats:
+  - '&7Import Arány: &eLegfeljebb 9 halom&7/tick'
   type:
   - '&7&oGép'
 NTW_INTERDIMENSIONAL_PRESENCE:
+  name: '&bDimenziók Közti Jelenlét'
   type:
   - '&7&oAlkatrész'
 NTW_MONITOR:
+  description:
+  - '&7A Hálózati Monitor egyszerű'
+  - '&7import/export kapcsolatot tesz lehetővé'
+  - '&7a szomszédos objektumokkal.'
+  - '&7Jelenleg támogatja:'
+  - '&7Végtelen Hordók'
+  - '&7Hálózati Héjak'
+  name: '&3Hálózati Monitor'
   type:
   - '&7&oGép'
 NTW_NETWORK_WIRELESS_RECEIVER:
+  description:
+  - '&7A Hálózati Vezeték nélküli Vevő képes'
+  - '&7tárgyakat fogadni egy összekapcsolt'
+  - '&7vezeték nélküli adótól, amely ugyanabban'
+  - '&7a világban található.'
+  - '&7A kapott tárgyakat megpróbálja betolni'
+  - '&7a Hálózatba minden tick alatt.'
+  name: '&3Hálózati Vezeték nélküli Vevő'
   type:
   - '&7&oGép'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
+  description:
+  - '&7A Hálózati Vezeték nélküli Adó megpróbál'
+  - '&7minden benne lévő tárgyat átvinni'
+  - '&7egy összekapcsolt Hálózati Vezeték nélküli Vevőhöz,'
+  - '&7amely ugyanabban a világban van.'
+  - '&7Használd a Vezeték nélküli Konfigurátort'
+  - '&7a Vezeték nélküli Adó beállításához.'
+  name: '&3Hálózati Vezeték nélküli Adó'
+  stats:
+  - '&7Átvitelenként 500 Hálózati Áramot igényel.'
   type:
   - '&7&oGép'
 NTW_OPTIC_CABLE:
+  name: '&bOptikai Kábel'
   type:
   - '&7&oAlkatrész'
 NTW_OPTIC_GLASS:
+  name: '&bOptikai Üveg'
   type:
   - '&7&oAlkatrész'
 NTW_OPTIC_STAR:
+  name: '&bOptikai Csillag'
   type:
   - '&7&oAlkatrész'
 NTW_POWER_DISPLAY:
+  description:
+  - '&7A Hálózati Áramkijelző megjeleníti'
+  - '&7a hálózatban lévő áramot.'
+  - '&7Egyszerű, ugye?'
+  name: '&3Hálózati Áramkijelző'
   type:
   - '&7&oGép'
 NTW_POWER_OUTLET_1:
+  description:
+  - '&7A Hálózati Kondenzátor áramot'
+  - '&7áramot vesz ki a Hálózatból, hogy'
+  - '&7gépeket hajtson vagy visszatáplálja egy'
+  - '&7EnergyNet hálózatba.'
+  name: '&3Hálózati Áramkimenet (1)'
+  stats:
+  - '&720% veszteséggel működik.'
+  - '&7Max Átvitel: &e500'
   type:
   - '&7&oGép'
 NTW_POWER_OUTLET_2:
+  description:
+  - '&7A Hálózati Kondenzátor áramot'
+  - '&7áramot vesz ki a Hálózatból, hogy'
+  - '&7gépeket hajtson vagy visszatáplálja egy'
+  - '&7EnergyNet hálózatba.'
+  name: '&3Hálózati Áramkimenet (2)'
+  stats:
+  - '&720% veszteséggel működik.'
+  - '&7Max Átvitel: &e2000'
   type:
   - '&7&oGép'
 NTW_PRISTINE_AI_CORE:
+  name: '&bÉrintetlen A.I. Mag'
   type:
   - '&7&oAlkatrész'
 NTW_PROBE:
+  description:
+  - '&7Összefoglalót ad egy Hálózatról,'
+  - '&7benne az árammal, a tárgyszámmal'
+  - '&7és a csomópontok összesítésével.'
+  name: '&5Hálózati Szonda'
   type:
   - '&7&oEszköz'
+  usage:
+  - '&eJobb Klikk&7 egy Hálózati Vezérlőre az összefoglalóért.'
 NTW_PUSHER:
+  description:
+  - '&7A Hálózati Betoló megpróbálja'
+  - '&7betolni egy megfelelő tárgyat egy'
+  - '&7megadott tárgy alapján a kiválasztott gépbe.'
+  name: '&3Hálózati Betoló'
   type:
   - '&7&oGép'
 NTW_QUANTUM_STORAGE_1:
+  description:
+  - '&7Tárgyakat tárol tömeges mennyiségben egy'
+  - '&7kvantum szingularitásban.'
+  name: '&3Hálózati Kvantum Tároló (4K)'
+  stats:
+  - '&7Tárol &e4096&7 tárgyat'
   type:
   - '&7&oGép'
 NTW_QUANTUM_STORAGE_2:
+  description:
+  - '&7Tárgyakat tárol tömeges mennyiségben egy'
+  - '&7kvantum szingularitásban.'
+  name: '&3Hálózati Kvantum Tároló (32K)'
+  stats:
+  - '&7Tárol &e32768&7 tárgyat'
   type:
   - '&7&oGép'
 NTW_QUANTUM_STORAGE_3:
+  description:
+  - '&7Tárgyakat tárol tömeges mennyiségben egy'
+  - '&7kvantum szingularitásban.'
+  name: '&3Hálózati Kvantum Tároló (262K)'
+  stats:
+  - '&7Tárol &e262144&7 tárgyat'
   type:
   - '&7&oGép'
 NTW_QUANTUM_STORAGE_4:
+  description:
+  - '&7Tárgyakat tárol tömeges mennyiségben egy'
+  - '&7kvantum szingularitásban.'
+  name: '&3Hálózati Kvantum Tároló (2M)'
+  stats:
+  - '&7Tárol &e2097152&7 tárgyat'
   type:
   - '&7&oGép'
 NTW_QUANTUM_STORAGE_5:
+  description:
+  - '&7Tárgyakat tárol tömeges mennyiségben egy'
+  - '&7kvantum szingularitásban.'
+  name: '&3Hálózati Kvantum Tároló (16M)'
+  stats:
+  - '&7Tárol &e16777216&7 tárgyat'
   type:
   - '&7&oGép'
 NTW_QUANTUM_STORAGE_6:
+  description:
+  - '&7Tárgyakat tárol tömeges mennyiségben egy'
+  - '&7kvantum szingularitásban.'
+  name: '&3Hálózati Kvantum Tároló (134M)'
+  stats:
+  - '&7Tárol &e134217728&7 tárgyat'
   type:
   - '&7&oGép'
 NTW_QUANTUM_STORAGE_7:
+  description:
+  - '&7Tárgyakat tárol tömeges mennyiségben egy'
+  - '&7kvantum szingularitásban.'
+  name: '&3Hálózati Kvantum Tároló (1B)'
+  stats:
+  - '&7Tárol &e1073741824&7 tárgyat'
   type:
   - '&7&oGép'
 NTW_QUANTUM_STORAGE_8:
+  description:
+  - '&7Tárgyakat tárol tömeges mennyiségben egy'
+  - '&7kvantum szingularitásban.'
+  name: '&3Hálózati Kvantum Tároló (∞)'
+  stats:
+  - '&7Tárol &e∞&7 tárgyat... majdnem'
   type:
   - '&7&oGép'
 NTW_QUANTUM_WORKBENCH:
+  description:
+  - '&7Lehetővé teszi a Kvantum Tárolók barkácsolását.'
+  name: '&3Hálózati Kvantum Munkaasztal'
   type:
   - '&7&oGép'
 NTW_RADIOACTIVE_OPTIC_STAR:
+  name: '&bRadioaktív Optikai Csillag'
   type:
   - '&7&oAlkatrész'
 NTW_RAKE_1:
+  description:
+  - '&7Kézi szerszám a Hálózati Objektumok gyors'
+  - '&7szétszedéséhez, gépek nélkül.'
+  name: '&5Hálózati Gereblye (1)'
+  stats:
+  - '&e250 Használat &7maradt'
   type:
   - '&7&oEszköz'
+  usage:
+  - '&eJobb Klikk&7 egy Hálózati Objektumra az azonnali összetöréséhez.'
 NTW_RAKE_2:
+  description:
+  - '&7Kézi szerszám a Hálózati Objektumok gyors'
+  - '&7szétszedéséhez, gépek nélkül.'
+  name: '&5Hálózati Gereblye (2)'
+  stats:
+  - '&e1000 Használat &7maradt'
   type:
   - '&7&oEszköz'
+  usage:
+  - '&eJobb Klikk&7 egy Hálózati Objektumra az azonnali összetöréséhez.'
 NTW_RAKE_3:
+  description:
+  - '&7Kézi szerszám a Hálózati Objektumok gyors'
+  - '&7szétszedéséhez, gépek nélkül.'
+  name: '&5Hálózati Gereblye (3)'
+  stats:
+  - '&e9999 Használat &7maradt'
   type:
   - '&7&oEszköz'
+  usage:
+  - '&eJobb Klikk&7 egy Hálózati Objektumra az azonnali összetöréséhez.'
 NTW_RECIPE_ENCODER:
+  description:
+  - '&7Barkácsolási Tervrajz készítésére'
+  - '&7használatos a bemeneti tárgyakból.'
+  name: '&3Hálózati Receptkódoló'
+  stats:
+  - '&7Hálózati Fogyasztás: &e20000&7/kódolás'
   type:
   - '&7&oGép'
 NTW_REMOTE:
+  description:
+  - '&7Vezeték nélkül megnyit egy összekapcsolt rácsot.'
+  - '&7A rácsnak betöltött chunkban kell lennie.'
+  name: '&5Hálózati Távirányító'
+  stats:
+  - '&7Hatótávolság: &e150'
   type:
   - '&7&oEszköz'
 NTW_REMOTE_EMPOWERED:
+  description:
+  - '&7Vezeték nélkül megnyit egy összekapcsolt rácsot.'
+  - '&7A rácsnak betöltött chunkban kell lennie.'
+  name: '&5Felerősített Hálózati Távirányító'
+  stats:
+  - '&7Hatótávolság: &e500'
   type:
   - '&7&oEszköz'
 NTW_REMOTE_PRISTINE:
+  description:
+  - '&7Vezeték nélkül megnyit egy összekapcsolt rácsot.'
+  - '&7A rácsnak betöltött chunkban kell lennie.'
+  name: '&5Érintetlen Hálózati Távirányító'
+  stats:
+  - '&7Hatótávolság: &eHatártalan'
   type:
   - '&7&oEszköz'
 NTW_REMOTE_ULTIMATE:
+  description:
+  - '&7Vezeték nélkül megnyit egy összekapcsolt rácsot.'
+  - '&7A rácsnak betöltött chunkban kell lennie.'
+  name: '&5Végső Hálózati Távirányító'
+  stats:
+  - '&7Hatótávolság: &eDimenziók közti'
   type:
   - '&7&oEszköz'
 NTW_SHRINKING_BASE:
+  name: '&bZsugorító Alap'
   type:
   - '&7&oAlkatrész'
 NTW_SIMPLE_NANOBOTS:
+  name: '&bEgyszerű Nanorobotok'
   type:
   - '&7&oAlkatrész'
 NTW_SYNTHETIC_EMERALD_SHARD:
+  name: '&bSzintetikus Smaragdszilánk'
   type:
   - '&7&oAlkatrész'
 NTW_TRASH:
+  description:
+  - '&7A Hálózati Tisztító kihúzza a'
+  - '&7megfelelő tárgyakat a hálózatból'
+  - '&7és azonnal megsemmisíti őket.'
+  - '&7Használd nagy óvatossággal!'
+  name: '&3Hálózati Tisztító'
   type:
   - '&7&oGép'
 NTW_VACUUM:
+  description:
+  - '&7A Hálózati Szívó beszívja a'
+  - '&7tárgyakat önmagába egy'
+  - '&74 x 4 hatótávolságon belül.'
+  - '&7A beszívott tárgyak megpróbálnak'
+  - '&7bekerülni a Hálózatba.'
+  name: '&3Hálózati Szívó'
+  stats:
+  - '&7Hálózati Fogyasztás: &e100&7/tick'
   type:
   - '&7&oGép'
 NTW_VANILLA_GRABBER:
+  description:
+  - '&7A Hálózati Vanilla Megfogó megpróbálja'
+  - '&7kivenni az első lehetséges tárgyat'
+  - '&7a kiválasztott vanilla leltárból.'
+  - '&7A tárgyakat Megfogóval kell'
+  - '&7kivenni ebből a csomópontból.'
+  name: '&3Hálózati Vanilla Megfogó'
   type:
   - '&7&oGép'
 NTW_VANILLA_PUSHER:
+  description:
+  - '&7A Hálózati Vanilla Betoló megpróbálja'
+  - '&7betolni a benne lévő tárgyakat'
+  - '&7a kiválasztott vanilla leltárból.'
+  - '&7A tárgyakat Betolóval kell'
+  - '&7betolni ebbe a csomópontba.'
+  name: '&3Hálózati Vanilla Betoló'
   type:
   - '&7&oGép'
 NTW_WIRELESS_CONFIGURATOR:
+  description:
+  - '&7Egy Vevő helyének mentésére, majd'
+  - '&7egy Adóra alkalmazására használatos.'
+  name: '&5Hálózati Vezeték nélküli Konfigurátor'
   type:
   - '&7&oEszköz'
+  usage:
+  - '&eJobb Klikk&7: Vevő helyének mentése'
+  - '&eShift Jobb Klikk&7: Hely beállítása az Adóra'
