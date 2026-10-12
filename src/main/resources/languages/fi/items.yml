@@ -1,192 +1,562 @@
 NTW_ADVANCED_NANOBOTS:
+  name: '&bKehittyneet nanobotit'
   type:
   - '&7&oKomponentti'
 NTW_AI_CORE:
+  name: '&bA.I.-ydin'
   type:
   - '&7&oKomponentti'
 NTW_AUTO_CRAFTER:
+  description:
+  - '&7Verkon automaattivalmistin hyväksyy'
+  - '&7valmistuspiirustuksen. Kun'
+  - '&7piirustuksen tuotetta pyydetään'
+  - '&7eikä sitä ole verkossa,'
+  - '&7se valmistetaan, jos sinulla on'
+  - '&7materiaalit.'
+  name: '&3Verkon automaattivalmistin'
+  stats:
+  - '&7Verkon kulutus: &e64&7/valmistus'
   type:
   - '&7&oKone'
 NTW_AUTO_CRAFTER_WITHHOLDING:
+  description:
+  - '&7Verkon automaattivalmistin hyväksyy'
+  - '&7valmistuspiirustuksen. Kun'
+  - '&7piirustuksen tuotetta pyydetään'
+  - '&7eikä sitä ole verkossa,'
+  - '&7se valmistetaan, jos sinulla on'
+  - '&7materiaalit.'
+  - '&7Pidättävä valmistin pitää'
+  - '&7yhden pinon ulostulossa ja lopettaa'
+  - '&7valmistuksen. Pino näkyy'
+  - '&7verkossa ja sallii myös'
+  - '&7rahdin.'
+  name: '&3Verkon automaattivalmistin (pidättävä)'
+  stats:
+  - '&7Verkon kulutus: &e128&7/valmistus'
   type:
   - '&7&oKone'
 NTW_BEST_PUSHER:
+  description:
+  - '&7Verkon kehittynyt työntäjä yrittää työntää'
+  - '&7vastaavia esineitä jopa kahdestatoista'
+  - '&7annetusta mallista'
+  - '&7valittuun koneeseen.'
+  name: '&3Verkon kehittynyt työntäjä'
   type:
   - '&7&oKone'
 NTW_BRIDGE:
+  description:
+  - '&7Silta mahdollistaa halvan tavan'
+  - '&7yhdistää verkon kohteet yhteen.'
+  name: '&3Verkkosilta'
   type:
   - '&7&oKone'
 NTW_CAPACITOR_1:
+  description:
+  - '&7Verkkokondensaattori voi ottaa'
+  - '&7virtaa sisään ja varastoida sen'
+  - '&7verkon käyttöön.'
+  name: '&3Verkkokondensaattori (1)'
+  stats:
+  - '&7Kapasiteetti: &e1000'
   type:
   - '&7&oKone'
 NTW_CAPACITOR_2:
+  description:
+  - '&7Verkkokondensaattori voi ottaa'
+  - '&7virtaa sisään ja varastoida sen'
+  - '&7verkon käyttöön.'
+  name: '&3Verkkokondensaattori (2)'
+  stats:
+  - '&7Kapasiteetti: &e10000'
   type:
   - '&7&oKone'
 NTW_CAPACITOR_3:
+  description:
+  - '&7Verkkokondensaattori voi ottaa'
+  - '&7virtaa sisään ja varastoida sen'
+  - '&7verkon käyttöön.'
+  name: '&3Verkkokondensaattori (3)'
+  stats:
+  - '&7Kapasiteetti: &e100000'
   type:
   - '&7&oKone'
 NTW_CAPACITOR_4:
+  description:
+  - '&7Verkkokondensaattori voi ottaa'
+  - '&7virtaa sisään ja varastoida sen'
+  - '&7verkon käyttöön.'
+  name: '&3Verkkokondensaattori (4)'
+  stats:
+  - '&7Kapasiteetti: &e1000000'
   type:
   - '&7&oKone'
 NTW_CELL:
+  description:
+  - '&7Verkkokenno on suuri'
+  - '&7(kaksoisarkku) inventaario, jota voi'
+  - '&7käyttää sekä verkosta'
+  - '&7että maailmasta.'
+  name: '&3Verkkokenno'
   type:
   - '&7&oKone'
 NTW_CONFIGURATOR:
+  description:
+  - '&7Käytetään suunnattujen rajapintojen'
+  - '&7asetusten kopiointiin ja'
+  - '&7liittämiseen.'
+  name: '&5Verkon määrittäjä'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7: Käytä asetuksia'
+  - '&eShift + oikea napsautus&7: Tallenna asetukset'
 NTW_CONTROLLER:
+  description:
+  - '&7Verkko-ohjain on aivot'
+  - '&7koko verkolle.'
+  name: '&3Verkko-ohjain'
+  stats:
+  - '&7Raja: &eEnintään 1&7 per verkko'
   type:
   - '&7&oKone'
 NTW_CONTROL_V:
+  description:
+  - '&7Verkko-ohjaus: V yrittää'
+  - '&7''liittää'' palikan verkosta'
+  - '&7maailmaan.'
+  - '&7Toimii vain vanilla-palikoilla.'
+  name: '&3Verkko-ohjaus: V'
+  stats:
+  - '&7Verkon kulutus: &e100&7/liitos'
   type:
   - '&7&oKone'
 NTW_CONTROL_X:
+  description:
+  - '&7Verkko-ohjaus: X yrittää'
+  - '&7''leikata'' palikan maailmasta'
+  - '&7ja laittaa sen verkkoon.'
+  - '&7Toimii vain vanilla-palikoilla, joilla'
+  - '&7ei ole inventaarioa.'
+  name: '&3Verkko-ohjaus: X'
+  stats:
+  - '&7Verkon kulutus: &e100&7/leikkaus'
   type:
   - '&7&oKone'
 NTW_CRAFTING_BLUEPRINT:
+  description:
+  - '&7Tyhjä piirustus, jota voi'
+  - '&7käyttää valmistusreseptin'
+  - '&7tallentamiseen.'
+  name: '&5Valmistuspiirustus'
   type:
   - '&7&oTyökalu'
 NTW_CRAFTING_GRID:
+  description:
+  - '&7Verkon valmistusruudukko toimii'
+  - '&7kuin tavallinen ruudukko, mutta näyttää'
+  - '&7vähemmän esineitä ja sallii valmistuksen'
+  - '&7suoraan verkon esineistä.'
+  name: '&3Verkon valmistusruudukko'
   type:
   - '&7&oKone'
 NTW_CRAYON:
+  description:
+  - '&7Kytkee koko verkon virheenjäljityksen'
+  - '&7hiukkasnäytön, joka näyttää solmujen'
+  - '&7toiminnan sen edetessä.'
+  name: '&5Verkkovärikynä'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7 Verkko-ohjainta kytkeäksesi hiukkasnäytön.'
 NTW_DEBUG_STICK:
+  description:
+  - '&7Vain ylläpitäjille tarkoitettu diagnostiikkatyökalu'
+  - '&7verkkopalikoiden toiminnan jäljittämiseen.'
+  name: '&5Verkon virheenjäljityskeppi'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7 verkon kohdetta kytkeäksesi virheenjäljityksen.'
 NTW_EMPOWERED_AI_CORE:
+  name: '&bVoimistettu A.I.-ydin'
   type:
   - '&7&oKomponentti'
 NTW_EXPORT:
+  description:
+  - '&7Verkkoviejä voidaan asettaa viemään'
+  - '&7jatkuvasti 1 pinon mitä tahansa'
+  - '&7annettua esinettä.'
+  - '&7Hyväksyy esineiden noudon rahtiin.'
+  name: '&3Verkkoviejä'
   type:
   - '&7&oKone'
 NTW_GRABBER:
+  description:
+  - '&7Verkkonappaaja yrittää napata'
+  - '&7ensimmäisen löytämänsä esineen'
+  - '&7valitun koneen sisältä.'
+  name: '&3Verkkonappaaja'
   type:
   - '&7&oKone'
 NTW_GREEDY_BLOCK:
+  description:
+  - '&7Verkon ahne palikka voidaan'
+  - '&7asettaa yhdelle esineelle, jota se'
+  - '&7pitää sitten ahneesti hallussaan yhden'
+  - '&7pinon verran. Jos saapuvat esineet'
+  - '&7eivät mahdu, ne eivät päädy'
+  - '&7verkkoon.'
+  name: '&3Verkon ahne palikka'
   type:
   - '&7&oKone'
 NTW_GRID:
+  description:
+  - '&7Verkkoruudukko näyttää kaikki'
+  - '&7verkossa olevat esineesi'
+  - '&7ja antaa lisätä tai noutaa niitä'
+  - '&7suoraan.'
+  name: '&3Verkkoruudukko'
   type:
   - '&7&oKone'
 NTW_IMPORT:
+  description:
+  - '&7Verkkotuoja tuo verkkoon kaikki'
+  - '&7sen sisällä olevat esineet.'
+  - '&7Hyväksyy esineitä rahdista.'
+  name: '&3Verkkotuoja'
+  stats:
+  - '&7Tuontinopeus: &eEnintään 9 pinoa&7/tikki'
   type:
   - '&7&oKone'
 NTW_INTERDIMENSIONAL_PRESENCE:
+  name: '&bUlottuvuuksien välinen läsnäolo'
   type:
   - '&7&oKomponentti'
 NTW_MONITOR:
+  description:
+  - '&7Verkkomonitori mahdollistaa yksinkertaisen'
+  - '&7tuonti-/vientivuorovaikutuksen viereisten'
+  - '&7kohteiden kanssa.'
+  - '&7Tukee tällä hetkellä:'
+  - '&7Äärettömät tynnyrit'
+  - '&7Verkkokuoret'
+  name: '&3Verkkomonitori'
   type:
   - '&7&oKone'
 NTW_NETWORK_WIRELESS_RECEIVER:
+  description:
+  - '&7Verkon langaton vastaanotin pystyy'
+  - '&7vastaanottamaan esineitä linkitetyltä'
+  - '&7langattomalta lähettimeltä, joka on'
+  - '&7samassa maailmassa.'
+  - '&7Se yrittää työntää vastaanotetut esineet'
+  - '&7verkkoon joka tikillä.'
+  name: '&3Verkon langaton vastaanotin'
   type:
   - '&7&oKone'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
+  description:
+  - '&7Verkon langaton lähetin yrittää'
+  - '&7lähettää sisällään olevat esineet'
+  - '&7linkitetylle Verkon langattomalle vastaanottimelle'
+  - '&7joka sijaitsee samassa maailmassa.'
+  - '&7Käytä Langatonta määrittäjää'
+  - '&7langattoman lähettimen asetukseen.'
+  name: '&3Verkon langaton lähetin'
+  stats:
+  - '&7Vaatii 500 verkkovirtaa per siirto.'
   type:
   - '&7&oKone'
 NTW_OPTIC_CABLE:
+  name: '&bOptinen kaapeli'
   type:
   - '&7&oKomponentti'
 NTW_OPTIC_GLASS:
+  name: '&bOptinen lasi'
   type:
   - '&7&oKomponentti'
 NTW_OPTIC_STAR:
+  name: '&bOptinen tähti'
   type:
   - '&7&oKomponentti'
 NTW_POWER_DISPLAY:
+  description:
+  - '&7Verkon virtanäyttö näyttää'
+  - '&7verkossa olevan virran.'
+  - '&7Yksinkertaista, eikö?'
+  name: '&3Verkon virtanäyttö'
   type:
   - '&7&oKone'
 NTW_POWER_OUTLET_1:
+  description:
+  - '&7Verkkokondensaattori voi ottaa'
+  - '&7virtaa verkosta koneiden'
+  - '&7käyttöön tai takaisin'
+  - '&7EnergyNet-verkkoon.'
+  name: '&3Verkon virtapistoke (1)'
+  stats:
+  - '&7Toimii 20% häviöllä.'
+  - '&7Enimmäissiirto: &e500'
   type:
   - '&7&oKone'
 NTW_POWER_OUTLET_2:
+  description:
+  - '&7Verkkokondensaattori voi ottaa'
+  - '&7virtaa verkosta koneiden'
+  - '&7käyttöön tai takaisin'
+  - '&7EnergyNet-verkkoon.'
+  name: '&3Verkon virtapistoke (2)'
+  stats:
+  - '&7Toimii 20% häviöllä.'
+  - '&7Enimmäissiirto: &e2000'
   type:
   - '&7&oKone'
 NTW_PRISTINE_AI_CORE:
+  name: '&bVirheetön A.I.-ydin'
   type:
   - '&7&oKomponentti'
 NTW_PROBE:
+  description:
+  - '&7Paljastaa yhteenvedon verkosta,'
+  - '&7mukaan lukien virta, esinemäärät'
+  - '&7ja solmujen kokonaismäärät.'
+  name: '&5Verkkoluotain'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7 Verkko-ohjainta nähdäksesi yhteenvedon.'
 NTW_PUSHER:
+  description:
+  - '&7Verkkotyöntäjä yrittää työntää'
+  - '&7vastaavan esineen annetusta'
+  - '&7esineestä valittuun koneeseen.'
+  name: '&3Verkkotyöntäjä'
   type:
   - '&7&oKone'
 NTW_QUANTUM_STORAGE_1:
+  description:
+  - '&7Varastoi esineitä suurina määrinä'
+  - '&7kvanttisingulariteetissa.'
+  name: '&3Verkkokvanttivarasto (4K)'
+  stats:
+  - '&7Varastoi &e4096&7 esinettä'
   type:
   - '&7&oKone'
 NTW_QUANTUM_STORAGE_2:
+  description:
+  - '&7Varastoi esineitä suurina määrinä'
+  - '&7kvanttisingulariteetissa.'
+  name: '&3Verkkokvanttivarasto (32K)'
+  stats:
+  - '&7Varastoi &e32768&7 esinettä'
   type:
   - '&7&oKone'
 NTW_QUANTUM_STORAGE_3:
+  description:
+  - '&7Varastoi esineitä suurina määrinä'
+  - '&7kvanttisingulariteetissa.'
+  name: '&3Verkkokvanttivarasto (262K)'
+  stats:
+  - '&7Varastoi &e262144&7 esinettä'
   type:
   - '&7&oKone'
 NTW_QUANTUM_STORAGE_4:
+  description:
+  - '&7Varastoi esineitä suurina määrinä'
+  - '&7kvanttisingulariteetissa.'
+  name: '&3Verkkokvanttivarasto (2M)'
+  stats:
+  - '&7Varastoi &e2097152&7 esinettä'
   type:
   - '&7&oKone'
 NTW_QUANTUM_STORAGE_5:
+  description:
+  - '&7Varastoi esineitä suurina määrinä'
+  - '&7kvanttisingulariteetissa.'
+  name: '&3Verkkokvanttivarasto (16M)'
+  stats:
+  - '&7Varastoi &e16777216&7 esinettä'
   type:
   - '&7&oKone'
 NTW_QUANTUM_STORAGE_6:
+  description:
+  - '&7Varastoi esineitä suurina määrinä'
+  - '&7kvanttisingulariteetissa.'
+  name: '&3Verkkokvanttivarasto (134M)'
+  stats:
+  - '&7Varastoi &e134217728&7 esinettä'
   type:
   - '&7&oKone'
 NTW_QUANTUM_STORAGE_7:
+  description:
+  - '&7Varastoi esineitä suurina määrinä'
+  - '&7kvanttisingulariteetissa.'
+  name: '&3Verkkokvanttivarasto (1B)'
+  stats:
+  - '&7Varastoi &e1073741824&7 esinettä'
   type:
   - '&7&oKone'
 NTW_QUANTUM_STORAGE_8:
+  description:
+  - '&7Varastoi esineitä suurina määrinä'
+  - '&7kvanttisingulariteetissa.'
+  name: '&3Verkkokvanttivarasto (∞)'
+  stats:
+  - '&7Varastoi &e∞&7 esinettä... melkein'
   type:
   - '&7&oKone'
 NTW_QUANTUM_WORKBENCH:
+  description:
+  - '&7Mahdollistaa kvanttivarastojen valmistuksen.'
+  name: '&3Verkkokvanttiverstas'
   type:
   - '&7&oKone'
 NTW_RADIOACTIVE_OPTIC_STAR:
+  name: '&bRadioaktiivinen optinen tähti'
   type:
   - '&7&oKomponentti'
 NTW_RAKE_1:
+  description:
+  - '&7Kädessä pidettävä työkalu verkon kohteiden'
+  - '&7nopeaan purkamiseen ilman koneita.'
+  name: '&5Verkkoharava (1)'
+  stats:
+  - '&e250 käyttöä &7jäljellä'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7 verkon kohdetta rikkoaksesi sen välittömästi.'
 NTW_RAKE_2:
+  description:
+  - '&7Kädessä pidettävä työkalu verkon kohteiden'
+  - '&7nopeaan purkamiseen ilman koneita.'
+  name: '&5Verkkoharava (2)'
+  stats:
+  - '&e1000 käyttöä &7jäljellä'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7 verkon kohdetta rikkoaksesi sen välittömästi.'
 NTW_RAKE_3:
+  description:
+  - '&7Kädessä pidettävä työkalu verkon kohteiden'
+  - '&7nopeaan purkamiseen ilman koneita.'
+  name: '&5Verkkoharava (3)'
+  stats:
+  - '&e9999 käyttöä &7jäljellä'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7 verkon kohdetta rikkoaksesi sen välittömästi.'
 NTW_RECIPE_ENCODER:
+  description:
+  - '&7Käytetään valmistuspiirustuksen'
+  - '&7muodostamiseen syöte-esineistä.'
+  name: '&3Verkon reseptienkooderi'
+  stats:
+  - '&7Verkon kulutus: &e20000&7/koodaus'
   type:
   - '&7&oKone'
 NTW_REMOTE:
+  description:
+  - '&7Avaa sidotun ruudukon langattomasti.'
+  - '&7Ruudukon lohko täytyy olla ladattuna.'
+  name: '&5Verkon kaukosäädin'
+  stats:
+  - '&7Kantama: &e150'
   type:
   - '&7&oTyökalu'
 NTW_REMOTE_EMPOWERED:
+  description:
+  - '&7Avaa sidotun ruudukon langattomasti.'
+  - '&7Ruudukon lohko täytyy olla ladattuna.'
+  name: '&5Verkon kaukosäädin, voimistettu'
+  stats:
+  - '&7Kantama: &e500'
   type:
   - '&7&oTyökalu'
 NTW_REMOTE_PRISTINE:
+  description:
+  - '&7Avaa sidotun ruudukon langattomasti.'
+  - '&7Ruudukon lohko täytyy olla ladattuna.'
+  name: '&5Verkon kaukosäädin, virheetön'
+  stats:
+  - '&7Kantama: &eRajaton'
   type:
   - '&7&oTyökalu'
 NTW_REMOTE_ULTIMATE:
+  description:
+  - '&7Avaa sidotun ruudukon langattomasti.'
+  - '&7Ruudukon lohko täytyy olla ladattuna.'
+  name: '&5Verkon kaukosäädin, lopullinen'
+  stats:
+  - '&7Kantama: &eUlottuvuuksien välinen'
   type:
   - '&7&oTyökalu'
 NTW_SHRINKING_BASE:
+  name: '&bKutistava perusta'
   type:
   - '&7&oKomponentti'
 NTW_SIMPLE_NANOBOTS:
+  name: '&bYksinkertaiset nanobotit'
   type:
   - '&7&oKomponentti'
 NTW_SYNTHETIC_EMERALD_SHARD:
+  name: '&bSynteettinen smaragdinsiru'
   type:
   - '&7&oKomponentti'
 NTW_TRASH:
+  description:
+  - '&7Verkkopuhdistin vetää verkosta'
+  - '&7vastaavat esineet'
+  - '&7ja hävittää ne välittömästi.'
+  - '&7Käytä erittäin varovasti!'
+  name: '&3Verkkopuhdistin'
   type:
   - '&7&oKone'
 NTW_VACUUM:
+  description:
+  - '&7Verkkoimuri imee esineet'
+  - '&7itseensä alueelta, joka on'
+  - '&74 x 4 sen ympärillä.'
+  - '&7Imetyt esineet yrittävät työntyä'
+  - '&7verkkoon.'
+  name: '&3Verkkoimuri'
+  stats:
+  - '&7Verkon kulutus: &e100&7/tikki'
   type:
   - '&7&oKone'
 NTW_VANILLA_GRABBER:
+  description:
+  - '&7Verkon vanilla-nappaaja yrittää napata'
+  - '&7ensimmäisen mahdollisen esineen'
+  - '&7valitusta vanilla-inventaariosta.'
+  - '&7Sinun täytyy napata esineet tästä'
+  - '&7solmusta Nappaajalla.'
+  name: '&3Verkon vanilla-nappaaja'
   type:
   - '&7&oKone'
 NTW_VANILLA_PUSHER:
+  description:
+  - '&7Verkon vanilla-työntäjä yrittää työntää'
+  - '&7mitä tahansa sisällään olevaa esinettä'
+  - '&7valitusta vanilla-inventaariosta.'
+  - '&7Sinun täytyy työntää esineet tähän'
+  - '&7solmuun Työntäjällä.'
+  name: '&3Verkon vanilla-työntäjä'
   type:
   - '&7&oKone'
 NTW_WIRELESS_CONFIGURATOR:
+  description:
+  - '&7Käytetään vastaanottimen sijainnin'
+  - '&7tallentamiseen ja lähettimeen asettamiseen.'
+  name: '&5Verkon langaton määrittäjä'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7: Tallenna vastaanottimen sijainti'
+  - '&eShift + oikea napsautus&7: Aseta sijainti lähettimeen'
