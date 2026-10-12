@@ -1,192 +1,562 @@
 NTW_ADVANCED_NANOBOTS:
+  name: '&bRobot nano Nâng cao'
   type:
   - '&7&oThành Phần'
 NTW_AI_CORE:
+  name: '&bLõi A.I.'
   type:
   - '&7&oThành Phần'
 NTW_AUTO_CRAFTER:
+  description:
+  - '&7Máy chế tạo Tự động Mạng nhận'
+  - '&7một bản thiết kế chế tạo. Khi'
+  - '&7vật phẩm đầu ra của bản thiết kế được yêu cầu'
+  - '&7mà trong mạng không còn cái nào'
+  - '&7nó sẽ được chế tạo nếu bạn có'
+  - '&7nguyên liệu.'
+  name: '&3Máy chế tạo Tự động Mạng'
+  stats:
+  - '&7Tiêu thụ Mạng: &e64&7/lần chế tạo'
   type:
   - '&7&oMáy Móc'
 NTW_AUTO_CRAFTER_WITHHOLDING:
+  description:
+  - '&7Máy chế tạo Tự động Mạng nhận'
+  - '&7một bản thiết kế chế tạo. Khi'
+  - '&7vật phẩm đầu ra của bản thiết kế được yêu cầu'
+  - '&7mà trong mạng không còn cái nào'
+  - '&7nó sẽ được chế tạo nếu bạn có'
+  - '&7nguyên liệu.'
+  - '&7Máy chế tạo Giữ lại sẽ giữ'
+  - '&7một chồng ở đầu ra và ngừng'
+  - '&7chế tạo. Chồng đó có thể được thấy'
+  - '&7trong Mạng và cũng cho phép dùng'
+  - '&7hàng hóa.'
+  name: '&3Máy chế tạo Tự động Mạng (Giữ lại)'
+  stats:
+  - '&7Tiêu thụ Mạng: &e128&7/lần chế tạo'
   type:
   - '&7&oMáy Móc'
 NTW_BEST_PUSHER:
+  description:
+  - '&7Bộ đẩy Nâng cao Mạng sẽ thử'
+  - '&7đẩy các vật phẩm tương ứng từ tối đa'
+  - '&7mười hai mẫu được chọn vào'
+  - '&7máy đã chọn.'
+  name: '&3Bộ đẩy Nâng cao Mạng'
   type:
   - '&7&oMáy Móc'
 NTW_BRIDGE:
+  description:
+  - '&7Cầu nối cho phép bạn kết nối'
+  - '&7các đối tượng mạng với nhau với giá rẻ.'
+  name: '&3Cầu nối Mạng'
   type:
   - '&7&oMáy Móc'
 NTW_CAPACITOR_1:
+  description:
+  - '&7Tụ điện Mạng có thể nhận'
+  - '&7điện năng vào và lưu lại để dùng'
+  - '&7trong mạng.'
+  name: '&3Tụ điện Mạng (1)'
+  stats:
+  - '&7Dung lượng: &e1000'
   type:
   - '&7&oMáy Móc'
 NTW_CAPACITOR_2:
+  description:
+  - '&7Tụ điện Mạng có thể nhận'
+  - '&7điện năng vào và lưu lại để dùng'
+  - '&7trong mạng.'
+  name: '&3Tụ điện Mạng (2)'
+  stats:
+  - '&7Dung lượng: &e10000'
   type:
   - '&7&oMáy Móc'
 NTW_CAPACITOR_3:
+  description:
+  - '&7Tụ điện Mạng có thể nhận'
+  - '&7điện năng vào và lưu lại để dùng'
+  - '&7trong mạng.'
+  name: '&3Tụ điện Mạng (3)'
+  stats:
+  - '&7Dung lượng: &e100000'
   type:
   - '&7&oMáy Móc'
 NTW_CAPACITOR_4:
+  description:
+  - '&7Tụ điện Mạng có thể nhận'
+  - '&7điện năng vào và lưu lại để dùng'
+  - '&7trong mạng.'
+  name: '&3Tụ điện Mạng (4)'
+  stats:
+  - '&7Dung lượng: &e1000000'
   type:
   - '&7&oMáy Móc'
 NTW_CELL:
+  description:
+  - '&7Ngăn Mạng là một túi đồ lớn'
+  - '&7(hòm đôi) có thể'
+  - '&7được truy cập cả từ mạng'
+  - '&7và trong thế giới.'
+  name: '&3Ngăn Mạng'
   type:
   - '&7&oMáy Móc'
 NTW_CONFIGURATOR:
+  description:
+  - '&7Dùng để sao chép và dán'
+  - '&7cấu hình của các giao diện'
+  - '&7có hướng.'
+  name: '&5Bộ cấu hình Mạng'
   type:
   - '&7&oDụng Cụ'
+  usage:
+  - '&eChuột phải&7: Áp dụng cấu hình'
+  - '&eShift Chuột phải&7: Lưu cấu hình'
 NTW_CONTROLLER:
+  description:
+  - '&7Bộ điều khiển Mạng là bộ não'
+  - '&7của toàn bộ mạng.'
+  name: '&3Bộ điều khiển Mạng'
+  stats:
+  - '&7Giới hạn: &eTối đa 1&7 mỗi mạng'
   type:
   - '&7&oMáy Móc'
 NTW_CONTROL_V:
+  description:
+  - '&7Điều khiển Mạng: V sẽ thử'
+  - '&7''dán'' một khối từ Mạng'
+  - '&7vào thế giới.'
+  - '&7Chỉ hoạt động với khối nguyên bản.'
+  name: '&3Điều khiển Mạng: V'
+  stats:
+  - '&7Tiêu thụ Mạng: &e100&7/lần dán'
   type:
   - '&7&oMáy Móc'
 NTW_CONTROL_X:
+  description:
+  - '&7Điều khiển Mạng: X sẽ thử'
+  - '&7''cắt'' một khối ra khỏi thế giới'
+  - '&7và cho nó vào Mạng.'
+  - '&7Chỉ hoạt động với khối nguyên bản không'
+  - '&7có túi đồ.'
+  name: '&3Điều khiển Mạng: X'
+  stats:
+  - '&7Tiêu thụ Mạng: &e100&7/lần cắt'
   type:
   - '&7&oMáy Móc'
 NTW_CRAFTING_BLUEPRINT:
+  description:
+  - '&7Một bản thiết kế trống có thể'
+  - '&7được dùng để lưu một công thức'
+  - '&7chế tạo.'
+  name: '&5Bản thiết kế Chế tạo'
   type:
   - '&7&oDụng Cụ'
 NTW_CRAFTING_GRID:
+  description:
+  - '&7Lưới Chế tạo Mạng hoạt động'
+  - '&7như lưới thường nhưng hiển thị ít'
+  - '&7vật phẩm hơn mà cho phép chế tạo bằng vật phẩm'
+  - '&7trực tiếp từ mạng.'
+  name: '&3Lưới Chế tạo Mạng'
   type:
   - '&7&oMáy Móc'
 NTW_CRAYON:
+  description:
+  - '&7Bật tắt hiển thị hạt gỡ lỗi toàn mạng,'
+  - '&7hiện hình hoạt động của các nút'
+  - '&7khi chúng làm việc.'
+  name: '&5Bút màu Mạng'
   type:
   - '&7&oDụng Cụ'
+  usage:
+  - '&eChuột phải&7 vào Bộ điều khiển Mạng để bật tắt hiển thị hạt.'
 NTW_DEBUG_STICK:
+  description:
+  - '&7Một công cụ chẩn đoán chỉ dành cho người điều hành, dùng'
+  - '&7để gỡ lỗi hành vi của các khối Mạng.'
+  name: '&5Gậy Gỡ lỗi Mạng'
   type:
   - '&7&oDụng Cụ'
+  usage:
+  - '&eChuột phải&7 vào một Đối tượng Mạng để bật gỡ lỗi.'
 NTW_EMPOWERED_AI_CORE:
+  name: '&bLõi A.I. Cường hóa'
   type:
   - '&7&oThành Phần'
 NTW_EXPORT:
+  description:
+  - '&7Bộ xuất Mạng có thể được đặt để'
+  - '&7liên tục xuất ra 1 chồng của bất kỳ'
+  - '&7vật phẩm nào được chọn.'
+  - '&7Cho phép rút vật phẩm từ hàng hóa.'
+  name: '&3Bộ xuất Mạng'
   type:
   - '&7&oMáy Móc'
 NTW_GRABBER:
+  description:
+  - '&7Bộ gắp Mạng sẽ thử'
+  - '&7gắp vật phẩm đầu tiên nó tìm thấy'
+  - '&7từ trong máy đã chọn.'
+  name: '&3Bộ gắp Mạng'
   type:
   - '&7&oMáy Móc'
 NTW_GREEDY_BLOCK:
+  description:
+  - '&7Khối Tham lam Mạng có thể'
+  - '&7được đặt cho một vật phẩm mà nó sẽ'
+  - '&7giữ khư khư một chồng duy nhất'
+  - '&7của vật phẩm đó. Nếu vật phẩm vào thêm'
+  - '&7không vừa, chúng sẽ không vào'
+  - '&7mạng.'
+  name: '&3Khối Tham lam Mạng'
   type:
   - '&7&oMáy Móc'
 NTW_GRID:
+  description:
+  - '&7Lưới Mạng cho bạn thấy toàn bộ'
+  - '&7vật phẩm bạn có trong mạng'
+  - '&7và cho phép bạn gửi vào hoặc rút ra'
+  - '&7trực tiếp.'
+  name: '&3Lưới Mạng'
   type:
   - '&7&oMáy Móc'
 NTW_IMPORT:
+  description:
+  - '&7Bộ nhập Mạng đưa mọi vật phẩm'
+  - '&7bên trong nó vào mạng.'
+  - '&7Nhận vật phẩm vào từ hàng hóa.'
+  name: '&3Bộ nhập Mạng'
+  stats:
+  - '&7Tốc độ nhập: &eTối đa 9 chồng&7/tick'
   type:
   - '&7&oMáy Móc'
 NTW_INTERDIMENSIONAL_PRESENCE:
+  name: '&bHiện diện Liên chiều'
   type:
   - '&7&oThành Phần'
 NTW_MONITOR:
+  description:
+  - '&7Bộ theo dõi Mạng cho phép tương tác'
+  - '&7nhập/xuất đơn giản với các đối tượng'
+  - '&7liền kề.'
+  - '&7Hiện hỗ trợ:'
+  - '&7Thùng Vô cực'
+  - '&7Vỏ Mạng'
+  name: '&3Bộ theo dõi Mạng'
   type:
   - '&7&oMáy Móc'
 NTW_NETWORK_WIRELESS_RECEIVER:
+  description:
+  - '&7Bộ thu Mạng Không dây có'
+  - '&7thể nhận vật phẩm từ một bộ phát'
+  - '&7không dây đã liên kết nằm trong'
+  - '&7cùng một thế giới.'
+  - '&7Nó sẽ thử đẩy vật phẩm nhận được'
+  - '&7vào Mạng mỗi tick.'
+  name: '&3Bộ thu Mạng Không dây'
   type:
   - '&7&oMáy Móc'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
+  description:
+  - '&7Bộ phát Mạng Không dây sẽ'
+  - '&7thử truyền mọi vật phẩm bên trong nó'
+  - '&7tới một Bộ thu Mạng Không dây liên kết'
+  - '&7nằm trong cùng một thế giới.'
+  - '&7Dùng Bộ cấu hình Không dây để'
+  - '&7thiết lập Bộ phát Không dây.'
+  name: '&3Bộ phát Mạng Không dây'
+  stats:
+  - '&7Cần 500 Điện năng Mạng mỗi lần truyền.'
   type:
   - '&7&oMáy Móc'
 NTW_OPTIC_CABLE:
+  name: '&bCáp Quang học'
   type:
   - '&7&oThành Phần'
 NTW_OPTIC_GLASS:
+  name: '&bKính Quang học'
   type:
   - '&7&oThành Phần'
 NTW_OPTIC_STAR:
+  name: '&bNgôi sao Quang học'
   type:
   - '&7&oThành Phần'
 NTW_POWER_DISPLAY:
+  description:
+  - '&7Bảng hiển thị Điện năng Mạng sẽ'
+  - '&7hiển thị điện năng trong mạng.'
+  - '&7Đơn giản, phải không?'
+  name: '&3Bảng hiển thị Điện năng Mạng'
   type:
   - '&7&oMáy Móc'
 NTW_POWER_OUTLET_1:
+  description:
+  - '&7Tụ điện Mạng có thể nhận'
+  - '&7điện năng từ Mạng để cấp điện cho'
+  - '&7máy móc hoặc trả lại vào một'
+  - '&7mạng EnergyNet.'
+  name: '&3Ổ cắm Điện Mạng (1)'
+  stats:
+  - '&7Hoạt động với tỉ lệ tổn thất 20%.'
+  - '&7Truyền tối đa: &e500'
   type:
   - '&7&oMáy Móc'
 NTW_POWER_OUTLET_2:
+  description:
+  - '&7Tụ điện Mạng có thể nhận'
+  - '&7điện năng từ Mạng để cấp điện cho'
+  - '&7máy móc hoặc trả lại vào một'
+  - '&7mạng EnergyNet.'
+  name: '&3Ổ cắm Điện Mạng (2)'
+  stats:
+  - '&7Hoạt động với tỉ lệ tổn thất 20%.'
+  - '&7Truyền tối đa: &e2000'
   type:
   - '&7&oMáy Móc'
 NTW_PRISTINE_AI_CORE:
+  name: '&bLõi A.I. Tinh khiết'
   type:
   - '&7&oThành Phần'
 NTW_PROBE:
+  description:
+  - '&7Hiện ra bản tóm tắt của một Mạng,'
+  - '&7gồm điện năng, số lượng vật phẩm'
+  - '&7và tổng số nút.'
+  name: '&5Đầu dò Mạng'
   type:
   - '&7&oDụng Cụ'
+  usage:
+  - '&eChuột phải&7 vào Bộ điều khiển Mạng để xem bản tóm tắt.'
 NTW_PUSHER:
+  description:
+  - '&7Bộ đẩy Mạng sẽ thử'
+  - '&7đẩy một vật phẩm tương ứng từ một'
+  - '&7vật phẩm mẫu vào máy đã chọn.'
+  name: '&3Bộ đẩy Mạng'
   type:
   - '&7&oMáy Móc'
 NTW_QUANTUM_STORAGE_1:
+  description:
+  - '&7Lưu trữ vật phẩm với số lượng lớn trong'
+  - '&7một điểm kỳ dị lượng tử.'
+  name: '&3Kho lưu trữ Lượng tử Mạng (4K)'
+  stats:
+  - '&7Lưu trữ &e4096&7 vật phẩm'
   type:
   - '&7&oMáy Móc'
 NTW_QUANTUM_STORAGE_2:
+  description:
+  - '&7Lưu trữ vật phẩm với số lượng lớn trong'
+  - '&7một điểm kỳ dị lượng tử.'
+  name: '&3Kho lưu trữ Lượng tử Mạng (32K)'
+  stats:
+  - '&7Lưu trữ &e32768&7 vật phẩm'
   type:
   - '&7&oMáy Móc'
 NTW_QUANTUM_STORAGE_3:
+  description:
+  - '&7Lưu trữ vật phẩm với số lượng lớn trong'
+  - '&7một điểm kỳ dị lượng tử.'
+  name: '&3Kho lưu trữ Lượng tử Mạng (262K)'
+  stats:
+  - '&7Lưu trữ &e262144&7 vật phẩm'
   type:
   - '&7&oMáy Móc'
 NTW_QUANTUM_STORAGE_4:
+  description:
+  - '&7Lưu trữ vật phẩm với số lượng lớn trong'
+  - '&7một điểm kỳ dị lượng tử.'
+  name: '&3Kho lưu trữ Lượng tử Mạng (2M)'
+  stats:
+  - '&7Lưu trữ &e2097152&7 vật phẩm'
   type:
   - '&7&oMáy Móc'
 NTW_QUANTUM_STORAGE_5:
+  description:
+  - '&7Lưu trữ vật phẩm với số lượng lớn trong'
+  - '&7một điểm kỳ dị lượng tử.'
+  name: '&3Kho lưu trữ Lượng tử Mạng (16M)'
+  stats:
+  - '&7Lưu trữ &e16777216&7 vật phẩm'
   type:
   - '&7&oMáy Móc'
 NTW_QUANTUM_STORAGE_6:
+  description:
+  - '&7Lưu trữ vật phẩm với số lượng lớn trong'
+  - '&7một điểm kỳ dị lượng tử.'
+  name: '&3Kho lưu trữ Lượng tử Mạng (134M)'
+  stats:
+  - '&7Lưu trữ &e134217728&7 vật phẩm'
   type:
   - '&7&oMáy Móc'
 NTW_QUANTUM_STORAGE_7:
+  description:
+  - '&7Lưu trữ vật phẩm với số lượng lớn trong'
+  - '&7một điểm kỳ dị lượng tử.'
+  name: '&3Kho lưu trữ Lượng tử Mạng (1B)'
+  stats:
+  - '&7Lưu trữ &e1073741824&7 vật phẩm'
   type:
   - '&7&oMáy Móc'
 NTW_QUANTUM_STORAGE_8:
+  description:
+  - '&7Lưu trữ vật phẩm với số lượng lớn trong'
+  - '&7một điểm kỳ dị lượng tử.'
+  name: '&3Kho lưu trữ Lượng tử Mạng (∞)'
+  stats:
+  - '&7Lưu trữ &e∞&7 vật phẩm... gần như vậy'
   type:
   - '&7&oMáy Móc'
 NTW_QUANTUM_WORKBENCH:
+  description:
+  - '&7Cho phép chế tạo Kho lưu trữ Lượng tử.'
+  name: '&3Bàn chế tạo Lượng tử Mạng'
   type:
   - '&7&oMáy Móc'
 NTW_RADIOACTIVE_OPTIC_STAR:
+  name: '&bNgôi sao Quang học Phóng xạ'
   type:
   - '&7&oThành Phần'
 NTW_RAKE_1:
+  description:
+  - '&7Một công cụ cầm tay để tháo rời nhanh chóng'
+  - '&7các Đối tượng Mạng mà không cần máy móc.'
+  name: '&5Cào Mạng (1)'
+  stats:
+  - '&e250 Lần dùng &7còn lại'
   type:
   - '&7&oDụng Cụ'
+  usage:
+  - '&eChuột phải&7 vào một Đối tượng Mạng để phá nó ngay lập tức.'
 NTW_RAKE_2:
+  description:
+  - '&7Một công cụ cầm tay để tháo rời nhanh chóng'
+  - '&7các Đối tượng Mạng mà không cần máy móc.'
+  name: '&5Cào Mạng (2)'
+  stats:
+  - '&e1000 Lần dùng &7còn lại'
   type:
   - '&7&oDụng Cụ'
+  usage:
+  - '&eChuột phải&7 vào một Đối tượng Mạng để phá nó ngay lập tức.'
 NTW_RAKE_3:
+  description:
+  - '&7Một công cụ cầm tay để tháo rời nhanh chóng'
+  - '&7các Đối tượng Mạng mà không cần máy móc.'
+  name: '&5Cào Mạng (3)'
+  stats:
+  - '&e9999 Lần dùng &7còn lại'
   type:
   - '&7&oDụng Cụ'
+  usage:
+  - '&eChuột phải&7 vào một Đối tượng Mạng để phá nó ngay lập tức.'
 NTW_RECIPE_ENCODER:
+  description:
+  - '&7Dùng để tạo nên một Bản thiết kế Chế tạo'
+  - '&7từ các vật phẩm đầu vào.'
+  name: '&3Bộ mã hóa Công thức Mạng'
+  stats:
+  - '&7Tiêu thụ Mạng: &e20000&7/lần mã hóa'
   type:
   - '&7&oMáy Móc'
 NTW_REMOTE:
+  description:
+  - '&7Mở một lưới đã gắn kết từ xa không dây.'
+  - '&7Lưới đó phải nằm trong chunk đã tải.'
+  name: '&5Điều khiển từ xa Mạng'
+  stats:
+  - '&7Phạm vi: &e150'
   type:
   - '&7&oDụng Cụ'
 NTW_REMOTE_EMPOWERED:
+  description:
+  - '&7Mở một lưới đã gắn kết từ xa không dây.'
+  - '&7Lưới đó phải nằm trong chunk đã tải.'
+  name: '&5Điều khiển từ xa Mạng Cường hóa'
+  stats:
+  - '&7Phạm vi: &e500'
   type:
   - '&7&oDụng Cụ'
 NTW_REMOTE_PRISTINE:
+  description:
+  - '&7Mở một lưới đã gắn kết từ xa không dây.'
+  - '&7Lưới đó phải nằm trong chunk đã tải.'
+  name: '&5Điều khiển từ xa Mạng Tinh khiết'
+  stats:
+  - '&7Phạm vi: &eKhông giới hạn'
   type:
   - '&7&oDụng Cụ'
 NTW_REMOTE_ULTIMATE:
+  description:
+  - '&7Mở một lưới đã gắn kết từ xa không dây.'
+  - '&7Lưới đó phải nằm trong chunk đã tải.'
+  name: '&5Điều khiển từ xa Mạng Tột đỉnh'
+  stats:
+  - '&7Phạm vi: &eXuyên chiều không gian'
   type:
   - '&7&oDụng Cụ'
 NTW_SHRINKING_BASE:
+  name: '&bĐế Thu nhỏ'
   type:
   - '&7&oThành Phần'
 NTW_SIMPLE_NANOBOTS:
+  name: '&bRobot nano Đơn giản'
   type:
   - '&7&oThành Phần'
 NTW_SYNTHETIC_EMERALD_SHARD:
+  name: '&bMảnh Ngọc lục bảo Tổng hợp'
   type:
   - '&7&oThành Phần'
 NTW_TRASH:
+  description:
+  - '&7Bộ tiêu hủy Mạng sẽ kéo'
+  - '&7các vật phẩm tương ứng từ mạng'
+  - '&7và xóa chúng ngay lập tức.'
+  - '&7Hãy dùng thật cẩn thận!'
+  name: '&3Bộ tiêu hủy Mạng'
   type:
   - '&7&oMáy Móc'
 NTW_VACUUM:
+  description:
+  - '&7Máy hút Mạng sẽ hút'
+  - '&7vật phẩm vào trong nó trong'
+  - '&7phạm vi 4 x 4 quanh chính nó.'
+  - '&7Vật phẩm đã hút sẽ thử đẩy'
+  - '&7vào Mạng.'
+  name: '&3Máy hút Mạng'
+  stats:
+  - '&7Tiêu thụ Mạng: &e100&7/tick'
   type:
   - '&7&oMáy Móc'
 NTW_VANILLA_GRABBER:
+  description:
+  - '&7Bộ gắp Mạng Nguyên bản sẽ thử'
+  - '&7gắp vật phẩm đầu tiên có thể từ'
+  - '&7túi đồ nguyên bản đã chọn.'
+  - '&7Bạn cần gắp vật phẩm từ'
+  - '&7nút này bằng một Bộ gắp.'
+  name: '&3Bộ gắp Mạng Nguyên bản'
   type:
   - '&7&oMáy Móc'
 NTW_VANILLA_PUSHER:
+  description:
+  - '&7Bộ đẩy Mạng Nguyên bản sẽ thử'
+  - '&7đẩy mọi vật phẩm bên trong nó vào'
+  - '&7túi đồ nguyên bản đã chọn.'
+  - '&7Bạn cần đẩy vật phẩm vào'
+  - '&7nút này từ một Bộ đẩy.'
+  name: '&3Bộ đẩy Mạng Nguyên bản'
   type:
   - '&7&oMáy Móc'
 NTW_WIRELESS_CONFIGURATOR:
+  description:
+  - '&7Dùng để lưu vị trí của một Bộ thu'
+  - '&7rồi áp dụng cho một Bộ phát.'
+  name: '&5Bộ cấu hình Mạng Không dây'
   type:
   - '&7&oDụng Cụ'
+  usage:
+  - '&eChuột phải&7: Lưu vị trí Bộ thu'
+  - '&eShift Chuột phải&7: Đặt vị trí cho Bộ phát'
