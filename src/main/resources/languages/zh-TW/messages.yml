@@ -93,3 +93,7 @@ probe:
   total-nodes: "節點總數"
   warning-label: "警告："
   overburdened: "你的網路已達到或超過最大節點上限。超出上限的節點將無法運作，而且每次不一定是同一批節點。請減少節點總數。"
+guide:
+  widgets:
+    logistics: '&bNetworks：指南'
+    machines: '&b自動合成：指南'

@@ -93,3 +93,7 @@ probe:
   total-nodes: "Noduri în total"
   warning-label: "Avertisment: "
   overburdened: "Rețeaua ta a atins sau a depășit limita maximă de noduri. Nodurile peste limită nu vor funcționa, iar acestea nu sunt mereu aceleași. Reduce numărul total de noduri."
+guide:
+  widgets:
+    logistics: '&bNetworks: ghid'
+    machines: '&bFabricare automată: ghid'

@@ -93,3 +93,7 @@ probe:
   total-nodes: "Tổng số nút"
   warning-label: "Cảnh báo: "
   overburdened: "Mạng của bạn đã đạt hoặc vượt giới hạn số nút tối đa. Các nút vượt giới hạn sẽ không hoạt động, và đó không phải lúc nào cũng là những nút giống nhau. Hãy giảm tổng số nút của bạn."
+guide:
+  widgets:
+    logistics: '&bNetworks: hướng dẫn'
+    machines: '&bChế tạo tự động: hướng dẫn'

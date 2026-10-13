@@ -93,3 +93,7 @@ probe:
   total-nodes: "Noder totalt"
   warning-label: "Advarsel: "
   overburdened: "Nettverket ditt har nådd eller gått over den høyeste grensen for noder. Noder over grensen virker ikke, og det er ikke alltid de samme. Reduser det totale antallet noder."
+guide:
+  widgets:
+    logistics: '&bNetworks: guide'
+    machines: '&bAutoproduksjon: guide'

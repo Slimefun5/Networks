@@ -93,3 +93,7 @@ probe:
   total-nodes: "Nodos en total"
   warning-label: "Advertencia: "
   overburdened: "Tu red ha alcanzado o superado el límite máximo de nodos. Los nodos que superen el límite no funcionarán, y no siempre serán los mismos. Reduce el número total de nodos."
+guide:
+  widgets:
+    logistics: '&bNetworks: guía'
+    machines: '&bFabricación automática: guía'

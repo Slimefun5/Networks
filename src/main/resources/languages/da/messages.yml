@@ -93,3 +93,7 @@ probe:
   total-nodes: "Knuder i alt"
   warning-label: "Advarsel: "
   overburdened: "Dit netværk har nået eller overskredet den maksimale grænse for knuder. Knuder over grænsen virker ikke, og det er ikke altid de samme. Reducer dit samlede antal knuder."
+guide:
+  widgets:
+    logistics: '&bNetworks: guide'
+    machines: '&bAutofremstilling: guide'

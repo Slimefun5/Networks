@@ -93,3 +93,7 @@ probe:
   total-nodes: "Uzlů celkem"
   warning-label: "Upozornění: "
   overburdened: "Tvá síť dosáhla nebo překročila maximální limit uzlů. Uzly nad limit nebudou fungovat a nejsou to vždy tytéž uzly. Sniž celkový počet uzlů."
+guide:
+  widgets:
+    logistics: '&bNetworks: příručka'
+    machines: '&bAutomatická výroba: příručka'

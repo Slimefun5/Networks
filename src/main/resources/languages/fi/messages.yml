@@ -93,3 +93,7 @@ probe:
   total-nodes: "Solmuja yhteensä"
   warning-label: "Varoitus: "
   overburdened: "Verkkosi on saavuttanut solmujen enimmäisrajan tai ylittänyt sen. Rajan ylittävät solmut eivät toimi, eivätkä ne ole aina samoja. Vähennä solmujesi kokonaismäärää."
+guide:
+  widgets:
+    logistics: '&bNetworks: opas'
+    machines: '&bAutomaattivalmistus: opas'

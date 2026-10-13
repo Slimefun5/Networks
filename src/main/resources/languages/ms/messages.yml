@@ -93,3 +93,7 @@ probe:
   total-nodes: "Jumlah nod"
   warning-label: "Peringatan: "
   overburdened: "Rangkaian kamu telah mencapai atau melepasi had maksimum nod. Nod melebihi had tidak akan berfungsi, dan nod itu tidak selalu sama. Kurangkan jumlah nod kamu."
+guide:
+  widgets:
+    logistics: '&bNetworks: panduan'
+    machines: '&bPembuatan automatik: panduan'

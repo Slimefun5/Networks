@@ -93,3 +93,7 @@ probe:
   total-nodes: "Iš viso mazgų"
   warning-label: "Įspėjimas: "
   overburdened: "Tavo tinklas pasiekė arba perėjo didžiausią mazgų ribą. Mazgai virš ribos neveiks, ir tai ne visada tie patys mazgai. Sumažink bendrą mazgų skaičių."
+guide:
+  widgets:
+    logistics: '&bNetworks: vadovas'
+    machines: '&bAutomatinė kūryba: vadovas'

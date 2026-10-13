@@ -93,3 +93,7 @@ probe:
   total-nodes: "Čvorova ukupno"
   warning-label: "Upozorenje: "
   overburdened: "Tvoja mreža dosegnula je ili prešla najveći dopušteni broj čvorova. Čvorovi iznad granice neće raditi, a to nisu uvijek isti čvorovi. Smanji ukupan broj čvorova."
+guide:
+  widgets:
+    logistics: '&bNetworks: vodič'
+    machines: '&bAutomatska izrada: vodič'

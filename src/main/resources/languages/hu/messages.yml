@@ -93,3 +93,7 @@ probe:
   total-nodes: "Csomópontok összesen"
   warning-label: "Figyelem: "
   overburdened: "A hálózatod elérte vagy túllépte a csomópontok felső határát. A határon felüli csomópontok nem működnek, és nem mindig ugyanazok. Csökkentsd a csomópontok teljes számát."
+guide:
+  widgets:
+    logistics: '&bNetworks: útmutató'
+    machines: '&bAutomatikus gyártás: útmutató'

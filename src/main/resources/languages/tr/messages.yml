@@ -93,3 +93,7 @@ probe:
   total-nodes: "Toplam düğüm"
   warning-label: "Uyarı: "
   overburdened: "Ağın en yüksek düğüm sınırına ulaştı ya da onu aştı. Sınırın ötesindeki düğümler çalışmaz ve bunlar her zaman aynı düğümler olmaz. Toplam düğüm sayını azalt."
+guide:
+  widgets:
+    logistics: '&bNetworks: kılavuz'
+    machines: '&bOtomatik üretim: kılavuz'

@@ -93,3 +93,7 @@ probe:
   total-nodes: "Total simpul"
   warning-label: "Peringatan: "
   overburdened: "Jaringanmu sudah mencapai atau melewati batas maksimum simpul. Simpul di atas batas tidak akan berfungsi, dan simpul tersebut tidak selalu sama. Kurangi jumlah total simpulmu."
+guide:
+  widgets:
+    logistics: '&bNetworks: panduan'
+    machines: '&bPerakitan otomatis: panduan'

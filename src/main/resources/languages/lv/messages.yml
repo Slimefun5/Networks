@@ -93,3 +93,7 @@ probe:
   total-nodes: "Mezglu kopā"
   warning-label: "Brīdinājums: "
   overburdened: "Tavs tīkls ir sasniedzis vai pārsniedzis lielāko pieļaujamo mezglu skaitu. Mezgli virs robežas nedarbosies, un tie ne vienmēr ir tie paši mezgli. Samazini kopējo mezglu skaitu."
+guide:
+  widgets:
+    logistics: '&bNetworks: ceļvedis'
+    machines: '&bAutomātiskā izgatavošana: ceļvedis'

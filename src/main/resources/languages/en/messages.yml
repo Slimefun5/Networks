@@ -93,3 +93,7 @@ probe:
   total-nodes: "Total Nodes"
   warning-label: "Warning: "
   overburdened: "Your network has reached or exceeded the maximum node limit. Nodes beyond the limit will not function, which nodes these are may not always be the same. Reduce your total nodes."
+guide:
+  widgets:
+    logistics: '&bNetworks Guide'
+    machines: '&bAuto Crafting Guide'

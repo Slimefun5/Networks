@@ -93,3 +93,7 @@ probe:
   total-nodes: "Węzły łącznie"
   warning-label: "Ostrzeżenie: "
   overburdened: "Twoja sieć osiągnęła lub przekroczyła maksymalny limit węzłów. Węzły powyżej limitu nie będą działać, a nie zawsze są to te same węzły. Zmniejsz łączną liczbę węzłów."
+guide:
+  widgets:
+    logistics: '&bNetworks: poradnik'
+    machines: '&bAutomatyczne tworzenie: poradnik'

@@ -93,3 +93,7 @@ probe:
   total-nodes: "Knoten insgesamt"
   warning-label: "Warnung: "
   overburdened: "Dein Netzwerk hat die maximale Knotenzahl erreicht oder überschritten. Knoten jenseits der Grenze funktionieren nicht, und welche das sind, kann sich jedes Mal ändern. Reduziere die Gesamtzahl deiner Knoten."
+guide:
+  widgets:
+    logistics: '&bNetworks: Anleitung'
+    machines: '&bAuto-Fertigung: Anleitung'

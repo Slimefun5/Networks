@@ -93,3 +93,7 @@ probe:
   total-nodes: "전체 노드"
   warning-label: "경고: "
   overburdened: "네트워크가 최대 노드 한계에 이르거나 넘었습니다. 한계를 넘은 노드는 작동하지 않으며, 그 노드가 늘 같은 것은 아닙니다. 전체 노드 수를 줄이세요."
+guide:
+  widgets:
+    logistics: '&bNetworks: 안내서'
+    machines: '&b자동 제작: 안내서'

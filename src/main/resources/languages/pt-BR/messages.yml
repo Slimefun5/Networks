@@ -93,3 +93,7 @@ probe:
   total-nodes: "Nós no total"
   warning-label: "Aviso: "
   overburdened: "Sua rede atingiu ou passou do limite máximo de nós. Os nós acima do limite não vão funcionar, e nem sempre são os mesmos. Reduza o número total de nós."
+guide:
+  widgets:
+    logistics: '&bNetworks: guia'
+    machines: '&bFabricação automática: guia'

@@ -93,3 +93,7 @@ probe:
   total-nodes: "Nœuds au total"
   warning-label: "Avertissement : "
   overburdened: "Votre réseau a atteint ou dépassé la limite de nœuds. Les nœuds au-delà de la limite ne fonctionneront pas, et il ne s'agit pas toujours des mêmes. Réduisez votre nombre total de nœuds."
+guide:
+  widgets:
+    logistics: '&bNetworks : guide'
+    machines: '&bFabrication auto : guide'

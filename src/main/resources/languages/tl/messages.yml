@@ -93,3 +93,7 @@ probe:
   total-nodes: "Kabuuang nodo"
   warning-label: "Babala: "
   overburdened: "Naabot o nalampasan na ng network mo ang pinakamataas na bilang ng nodo. Ang mga nodong lampas sa hangganan ay hindi gagana, at hindi laging pareho ang mga ito. Bawasan ang kabuuang bilang ng nodo mo."
+guide:
+  widgets:
+    logistics: '&bNetworks: gabay'
+    machines: '&bAwtomatikong paggawa: gabay'

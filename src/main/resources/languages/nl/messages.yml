@@ -93,3 +93,7 @@ probe:
   total-nodes: "Knooppunten in totaal"
   warning-label: "Waarschuwing: "
   overburdened: "Je netwerk heeft de maximale hoeveelheid knooppunten bereikt of overschreden. Knooppunten boven de grens werken niet, en dat zijn niet altijd dezelfde. Verminder je totale aantal knooppunten."
+guide:
+  widgets:
+    logistics: '&bNetworks: gids'
+    machines: '&bAutomatisch vervaardigen: gids'
