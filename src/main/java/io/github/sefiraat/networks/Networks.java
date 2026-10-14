@@ -69,6 +69,7 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
 
         Slimefun.getItemTranslationService().registerTranslations(this);
         Slimefun.getLocalization().registerItemGroupTranslations(this);
+        Slimefun.getLocalization().registerRecipeTypeTranslations(this);
         Slimefun.getAddonMessageService().registerTranslations(this);
         registerWiki();
         registerGuideWidgets();
