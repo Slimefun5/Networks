@@ -1,0 +1,3 @@
+networks:
+  quantum-workbench:
+    name: 'Banc de lucru Cuantic'

@@ -1,0 +1,6 @@
+networks:
+  materials: '合成材料'
+  tools: '網路管理工具'
+  network_items: '網路物品'
+  network_quantums: '網路量子儲存裝置'
+  disabled_items: '已停用/移除的物品'

@@ -1,0 +1,6 @@
+networks:
+  materials: 'วัสดุประดิษฐ์'
+  tools: 'เครื่องมือจัดการเครือข่าย'
+  network_items: 'ไอเทมเครือข่าย'
+  network_quantums: 'อุปกรณ์เก็บของควอนตัมเครือข่าย'
+  disabled_items: 'ไอเทมที่ปิดใช้งาน/ถูกลบ'

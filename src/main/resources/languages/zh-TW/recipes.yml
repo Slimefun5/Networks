@@ -1,0 +1,3 @@
+networks:
+  quantum-workbench:
+    name: '量子工作台'

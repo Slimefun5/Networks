@@ -1,0 +1,6 @@
+networks:
+  materials: 'Herstellungsmaterialien'
+  tools: 'Netzwerk-Verwaltungswerkzeuge'
+  network_items: 'Netzwerk-Gegenstände'
+  network_quantums: 'Netzwerk-Quantenspeichergeräte'
+  disabled_items: 'Deaktivierte/Entfernte Gegenstände'

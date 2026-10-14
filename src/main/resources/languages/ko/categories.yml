@@ -1,0 +1,6 @@
+networks:
+  materials: '제작 재료'
+  tools: '네트워크 관리 도구'
+  network_items: '네트워크 아이템'
+  network_quantums: '네트워크 양자 저장 장치'
+  disabled_items: '비활성화/제거된 아이템'

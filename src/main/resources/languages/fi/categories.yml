@@ -1,0 +1,6 @@
+networks:
+  materials: 'Valmistusmateriaalit'
+  tools: 'Verkonhallintatyökalut'
+  network_items: 'Verkkoesineet'
+  network_quantums: 'Verkon kvanttivarastolaitteet'
+  disabled_items: 'Estetyt/poistetut esineet'

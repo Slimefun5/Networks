@@ -1,0 +1,6 @@
+networks:
+  materials: 'Nguyên liệu Chế tạo'
+  tools: 'Dụng cụ Quản lý Mạng'
+  network_items: 'Vật phẩm Mạng'
+  network_quantums: 'Thiết bị Lưu trữ Lượng tử Mạng'
+  disabled_items: 'Vật phẩm Bị vô hiệu/Bị xóa'

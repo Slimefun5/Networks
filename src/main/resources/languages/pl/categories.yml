@@ -1,0 +1,6 @@
+networks:
+  materials: 'Materiały Rzemieślnicze'
+  tools: 'Narzędzia do Zarządzania Siecią'
+  network_items: 'Przedmioty Sieciowe'
+  network_quantums: 'Sieciowe Kwantowe Urządzenia Magazynujące'
+  disabled_items: 'Wyłączone/Usunięte Przedmioty'

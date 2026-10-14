@@ -1,0 +1,6 @@
+networks:
+  materials: 'חומרי יצירה'
+  tools: 'כלי ניהול רשת'
+  network_items: 'פריטי רשת'
+  network_quantums: 'התקני אחסון קוונטי של רשת'
+  disabled_items: 'פריטים מושבתים/שהוסרו'

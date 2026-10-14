@@ -1,0 +1,6 @@
+networks:
+  materials: 'Bahan Pembuatan'
+  tools: 'Alat Pengurusan Rangkaian'
+  network_items: 'Item Rangkaian'
+  network_quantums: 'Peranti Penyimpanan Kuantum Rangkaian'
+  disabled_items: 'Item Dilumpuhkan/Dibuang'

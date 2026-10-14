@@ -1,0 +1,3 @@
+networks:
+  quantum-workbench:
+    name: 'Bàn chế tạo Lượng tử'

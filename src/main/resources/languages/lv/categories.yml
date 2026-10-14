@@ -1,0 +1,6 @@
+networks:
+  materials: 'Izgatavošanas materiāli'
+  tools: 'Tīkla pārvaldības rīki'
+  network_items: 'Tīkla priekšmeti'
+  network_quantums: 'Tīkla kvantu krātuves ierīces'
+  disabled_items: 'Atspējoti/noņemti priekšmeti'

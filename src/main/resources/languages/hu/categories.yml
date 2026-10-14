@@ -1,0 +1,6 @@
+networks:
+  materials: 'Készítési alapanyagok'
+  tools: 'Hálózatkezelő eszközök'
+  network_items: 'Hálózati tárgyak'
+  network_quantums: 'Hálózati kvantumtároló eszközök'
+  disabled_items: 'Letiltott/eltávolított tárgyak'

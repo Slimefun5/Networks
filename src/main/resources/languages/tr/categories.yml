@@ -1,0 +1,6 @@
+networks:
+  materials: 'Üretim Malzemeleri'
+  tools: 'Ağ Yönetim Aletleri'
+  network_items: 'Ağ Eşyaları'
+  network_quantums: 'Ağ Kuantum Depolama Cihazları'
+  disabled_items: 'Devre Dışı/Kaldırılmış Eşyalar'

@@ -1,0 +1,6 @@
+networks:
+  materials: 'Tillverkningsmaterial'
+  tools: 'Nätverkshanteringsverktyg'
+  network_items: 'Nätverksföremål'
+  network_quantums: 'Nätverkets kvantlagringsenheter'
+  disabled_items: 'Inaktiverade/borttagna föremål'

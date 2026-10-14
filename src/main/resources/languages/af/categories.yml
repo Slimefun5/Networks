@@ -1,0 +1,6 @@
+networks:
+  materials: 'Vervaardigingsmateriale'
+  tools: 'Netwerkbestuursgereedskap'
+  network_items: 'Netwerkvoorwerpe'
+  network_quantums: 'Netwerkkwantumbergingstoestelle'
+  disabled_items: 'Gedeaktiveerde/Verwyderde Voorwerpe'

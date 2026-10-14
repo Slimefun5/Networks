@@ -1,0 +1,6 @@
+networks:
+  materials: 'Materiale de Fabricare'
+  tools: 'Unelte de Gestionare a Rețelei'
+  network_items: 'Obiecte de Rețea'
+  network_quantums: 'Dispozitive de Stocare Cuantică de Rețea'
+  disabled_items: 'Obiecte Dezactivate/Eliminate'

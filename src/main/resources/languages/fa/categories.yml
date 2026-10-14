@@ -1,0 +1,6 @@
+networks:
+  materials: 'مواد ساخت'
+  tools: 'ابزارهای مدیریت شبکه'
+  network_items: 'آیتم‌های شبکه'
+  network_quantums: 'دستگاه‌های ذخیره‌سازی کوانتومی شبکه'
+  disabled_items: 'آیتم‌های غیرفعال/حذف‌شده'

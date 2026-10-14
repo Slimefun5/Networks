@@ -1,0 +1,6 @@
+networks:
+  materials: 'නිෂ්පාදන ද්‍රව්‍ය'
+  tools: 'ජාල කළමනාකරණ මෙවලම්'
+  network_items: 'ජාල භාණ්ඩ'
+  network_quantums: 'ජාල ක්වොන්ටම් ගබඩා උපාංග'
+  disabled_items: 'අක්‍රිය/ඉවත් කළ භාණ්ඩ'

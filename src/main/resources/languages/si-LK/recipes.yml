@@ -1,0 +1,3 @@
+networks:
+  quantum-workbench:
+    name: 'ක්වොන්ටම් වැඩ මේසය'

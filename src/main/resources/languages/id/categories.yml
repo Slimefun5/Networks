@@ -1,0 +1,6 @@
+networks:
+  materials: 'Bahan Pembuatan'
+  tools: 'Alat Manajemen Jaringan'
+  network_items: 'Barang Jaringan'
+  network_quantums: 'Perangkat Penyimpanan Kuantum Jaringan'
+  disabled_items: 'Barang Nonaktif/Dihapus'

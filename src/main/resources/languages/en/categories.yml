@@ -1,0 +1,6 @@
+networks:
+  materials: 'Crafting Materials'
+  tools: 'Network Management Tools'
+  network_items: 'Network Items'
+  network_quantums: 'Network Quantum Storage Devices'
+  disabled_items: 'Disabled/Removed Items'

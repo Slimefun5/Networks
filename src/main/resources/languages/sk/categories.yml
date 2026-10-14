@@ -1,0 +1,6 @@
+networks:
+  materials: 'Materiály na výrobu'
+  tools: 'Nástroje na správu siete'
+  network_items: 'Sieťové predmety'
+  network_quantums: 'Sieťové kvantové úložiská'
+  disabled_items: 'Vypnuté/odstránené predmety'

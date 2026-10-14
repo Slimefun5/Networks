@@ -1,0 +1,6 @@
+networks:
+  materials: 'Mga Materyales sa Paggawa'
+  tools: 'Mga Kasangkapan sa Pamamahala ng Network'
+  network_items: 'Mga Aytem ng Network'
+  network_quantums: 'Mga Kwantum na Imbakan ng Network'
+  disabled_items: 'Mga Aytem na Hindi Pinagana/Inalis'

@@ -1,0 +1,3 @@
+networks:
+  quantum-workbench:
+    name: '양자 작업대'

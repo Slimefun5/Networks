@@ -1,0 +1,6 @@
+networks:
+  materials: 'مواد الصناعة'
+  tools: 'أدوات إدارة الشبكة'
+  network_items: 'عناصر الشبكة'
+  network_quantums: 'أجهزة تخزين الشبكة الكمية'
+  disabled_items: 'عناصر معطّلة/محذوفة'

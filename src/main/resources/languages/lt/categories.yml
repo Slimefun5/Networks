@@ -1,0 +1,6 @@
+networks:
+  materials: 'Gamybos medžiagos'
+  tools: 'Tinklo valdymo įrankiai'
+  network_items: 'Tinklo daiktai'
+  network_quantums: 'Tinklo kvantinės saugyklos'
+  disabled_items: 'Išjungti/pašalinti daiktai'

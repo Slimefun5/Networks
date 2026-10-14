@@ -1,0 +1,6 @@
+networks:
+  materials: 'Fabricagematerialen'
+  tools: 'Netwerkbeheergereedschap'
+  network_items: 'Netwerkvoorwerpen'
+  network_quantums: 'Netwerk-kwantumopslagapparaten'
+  disabled_items: 'Uitgeschakelde/verwijderde voorwerpen'

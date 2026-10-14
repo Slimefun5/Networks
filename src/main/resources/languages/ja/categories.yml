@@ -1,0 +1,6 @@
+networks:
+  materials: 'クラフト素材'
+  tools: 'ネットワーク管理ツール'
+  network_items: 'ネットワークアイテム'
+  network_quantums: 'ネットワーク量子ストレージ装置'
+  disabled_items: '無効化/削除されたアイテム'

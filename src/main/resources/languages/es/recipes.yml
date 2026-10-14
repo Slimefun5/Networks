@@ -1,0 +1,3 @@
+networks:
+  quantum-workbench:
+    name: 'Mesa de trabajo cuántica'

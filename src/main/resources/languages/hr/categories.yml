@@ -1,0 +1,6 @@
+networks:
+  materials: 'Materijali za izradu'
+  tools: 'Alati za upravljanje mrežom'
+  network_items: 'Mrežni predmeti'
+  network_quantums: 'Mrežni kvantni uređaji za pohranu'
+  disabled_items: 'Onemogućeni/uklonjeni predmeti'
