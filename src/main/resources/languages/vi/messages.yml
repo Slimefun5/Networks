@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Thẻ này chưa được gán cho vật phẩm nào hoặc là một Kho Lượng tử Mạng bị lỗi."
   item-updated: "Đã cập nhật vật phẩm"
   must-be-empty: "Kho Lượng tử Mạng phải trống trước khi thay đổi vật phẩm được gán."
+  voiding-on: "&eHủy phần dư: &7Có"
+  voiding-off: "&eHủy phần dư: &7Không"
+  amount: "&eSố lượng: &7{0}"
+  holding: "&eĐang chứa: &7{0}"
 
 card:
   unstack-first: "Hãy tách các thẻ ra trước khi gán vật phẩm."

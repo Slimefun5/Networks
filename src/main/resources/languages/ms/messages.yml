@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Kad ini belum dikaitkan dengan item atau ia Simpanan Kuantum Rangkaian yang rosak."
   item-updated: "Item dikemas kini"
   must-be-empty: "Simpanan Kuantum Rangkaian mesti kosong sebelum item yang dikaitkan ditukar."
+  voiding-on: "&eMusnahkan lebihan: &7Ya"
+  voiding-off: "&eMusnahkan lebihan: &7Tidak"
+  amount: "&eJumlah: &7{0}"
+  holding: "&eMengandungi: &7{0}"
 
 card:
   unstack-first: "Pisahkan kad sebelum mengaitkan item."

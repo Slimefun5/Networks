@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "此卡片尚未綁定物品，或者它是一個已損壞的網路量子儲存。"
   item-updated: "物品已更新"
   must-be-empty: "變更綁定的物品之前，網路量子儲存必須是空的。"
+  voiding-on: "&e銷毀溢出: &7是"
+  voiding-off: "&e銷毀溢出: &7否"
+  amount: "&e數量: &7{0}"
+  holding: "&e儲存: &7{0}"
 
 card:
   unstack-first: "綁定物品之前請先把卡片拆開。"

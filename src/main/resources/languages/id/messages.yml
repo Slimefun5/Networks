@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Kartu ini belum dikaitkan ke sebuah item atau merupakan Penyimpanan Kuantum Jaringan yang rusak."
   item-updated: "Item diperbarui"
   must-be-empty: "Penyimpanan Kuantum Jaringan harus kosong sebelum item yang dikaitkan diubah."
+  voiding-on: "&eMusnahkan kelebihan: &7Ya"
+  voiding-off: "&eMusnahkan kelebihan: &7Tidak"
+  amount: "&eJumlah: &7{0}"
+  holding: "&eBerisi: &7{0}"
 
 card:
   unstack-first: "Pisahkan kartu sebelum mengaitkan item."

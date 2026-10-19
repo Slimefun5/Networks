@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Bu kart henüz bir eşyaya atanmamış ya da bozuk bir Ağ Kuantum Deposu."
   item-updated: "Eşya güncellendi"
   must-be-empty: "Atanan eşya değiştirilmeden önce Ağ Kuantum Deposu boş olmalı."
+  voiding-on: "&eFazlayı yok et: &7Evet"
+  voiding-off: "&eFazlayı yok et: &7Hayır"
+  amount: "&eMiktar: &7{0}"
+  holding: "&eİçerik: &7{0}"
 
 card:
   unstack-first: "Bir eşya atamadan önce kartları ayır."

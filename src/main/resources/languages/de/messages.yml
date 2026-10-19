@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Diese Karte wurde entweder noch nicht auf ein Item gesetzt oder ist ein beschädigter Netzwerk-Quantenspeicher."
   item-updated: "Item aktualisiert"
   must-be-empty: "Der Netzwerk-Quantenspeicher muss leer sein, bevor das gesetzte Item geändert wird."
+  voiding-on: "&eÜberschuss vernichten: &7Ja"
+  voiding-off: "&eÜberschuss vernichten: &7Nein"
+  amount: "&eMenge: &7{0}"
+  holding: "&eEnthält: &7{0}"
 
 card:
   unstack-first: "Entstapel die Karten, bevor du ein Item zuweist."

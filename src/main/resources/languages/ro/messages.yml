@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Acest card nu a fost încă asociat unui obiect sau este un Depozit Cuantic de Rețea corupt."
   item-updated: "Obiect actualizat"
   must-be-empty: "Depozitul Cuantic de Rețea trebuie să fie gol înainte de a schimba obiectul asociat."
+  voiding-on: "&eDistrugere surplus: &7Da"
+  voiding-off: "&eDistrugere surplus: &7Nu"
+  amount: "&eCantitate: &7{0}"
+  holding: "&eConține: &7{0}"
 
 card:
   unstack-first: "Desparte cardurile înainte de a asocia un obiect."

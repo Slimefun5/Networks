@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Ta karta nie została jeszcze przypisana do przedmiotu albo jest uszkodzonym Magazynem Kwantowym Sieciowym."
   item-updated: "Przedmiot zaktualizowany"
   must-be-empty: "Magazyn Kwantowy Sieciowy musi być pusty przed zmianą przypisanego przedmiotu."
+  voiding-on: "&eNiszczenie nadmiaru: &7Tak"
+  voiding-off: "&eNiszczenie nadmiaru: &7Nie"
+  amount: "&eIlość: &7{0}"
+  holding: "&eZawiera: &7{0}"
 
 card:
   unstack-first: "Rozdziel karty przed przypisaniem przedmiotu."

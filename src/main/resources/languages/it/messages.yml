@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Questa scheda non è ancora stata associata a un oggetto oppure è uno Stoccaggio Quantistico di Rete corrotto."
   item-updated: "Oggetto aggiornato"
   must-be-empty: "Lo Stoccaggio Quantistico di Rete deve essere vuoto prima di cambiare l'oggetto associato."
+  voiding-on: "&eDistruggi eccesso: &7Sì"
+  voiding-off: "&eDistruggi eccesso: &7No"
+  amount: "&eQuantità: &7{0}"
+  holding: "&eContiene: &7{0}"
 
 card:
   unstack-first: "Separa le schede prima di associare un oggetto."

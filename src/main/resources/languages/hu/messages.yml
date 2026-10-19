@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Ezt a kártyát még nem rendelték tárgyhoz, vagy sérült Hálózati Kvantumtároló."
   item-updated: "Tárgy frissítve"
   must-be-empty: "A Hálózati Kvantumtárolónak üresnek kell lennie, mielőtt a hozzárendelt tárgy megváltozik."
+  voiding-on: "&eTöbblet megsemmisítése: &7Igen"
+  voiding-off: "&eTöbblet megsemmisítése: &7Nem"
+  amount: "&eMennyiség: &7{0}"
+  holding: "&eTartalom: &7{0}"
 
 card:
   unstack-first: "Szedd szét a kártyákat, mielőtt tárgyat rendelsz hozzájuk."

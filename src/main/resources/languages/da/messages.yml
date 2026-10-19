@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Dette kort er endnu ikke knyttet til en genstand, eller det er en beskadiget netværkskvanteopbevaring."
   item-updated: "Genstanden opdateret"
   must-be-empty: "Netværkskvanteopbevaringen skal være tom, før den knyttede genstand ændres."
+  voiding-on: "&eDestruer overskud: &7Ja"
+  voiding-off: "&eDestruer overskud: &7Nej"
+  amount: "&eAntal: &7{0}"
+  holding: "&eIndeholder: &7{0}"
 
 card:
   unstack-first: "Del kortene op, før du knytter en genstand."

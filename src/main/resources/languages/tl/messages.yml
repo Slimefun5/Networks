@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Ang kard na ito ay hindi pa naiugnay sa isang item o ito ay sirang Network Quantum na Imbakan."
   item-updated: "Na-update ang item"
   must-be-empty: "Kailangang walang laman ang Network Quantum na Imbakan bago palitan ang naiugnay na item."
+  voiding-on: "&eSirain ang sobra: &7Oo"
+  voiding-off: "&eSirain ang sobra: &7Hindi"
+  amount: "&eDami: &7{0}"
+  holding: "&eLaman: &7{0}"
 
 card:
   unstack-first: "Ihiwalay ang mga kard bago mag-ugnay ng item."

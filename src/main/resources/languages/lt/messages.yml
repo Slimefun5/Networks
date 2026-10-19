@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Ši kortelė dar nepriskirta daiktui arba yra sugadinta tinklo kvantinė saugykla."
   item-updated: "Daiktas atnaujintas"
   must-be-empty: "Tinklo kvantinė saugykla turi būti tuščia, kol nepakeistas priskirtas daiktas."
+  voiding-on: "&ePertekliaus naikinimas: &7Taip"
+  voiding-off: "&ePertekliaus naikinimas: &7Ne"
+  amount: "&eKiekis: &7{0}"
+  holding: "&eTuri: &7{0}"
 
 card:
   unstack-first: "Išskirstyk korteles, kol nepriskyrei daikto."

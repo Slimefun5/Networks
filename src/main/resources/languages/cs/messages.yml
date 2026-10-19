@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Tato karta ještě nebyla přiřazena k předmětu, nebo je to poškozené síťové kvantové úložiště."
   item-updated: "Předmět aktualizován"
   must-be-empty: "Síťové kvantové úložiště musí být prázdné, než změníš přiřazený předmět."
+  voiding-on: "&eNičení přebytku: &7Ano"
+  voiding-off: "&eNičení přebytku: &7Ne"
+  amount: "&eMnožství: &7{0}"
+  holding: "&eObsahuje: &7{0}"
 
 card:
   unstack-first: "Rozděl karty, než přiřadíš předmět."

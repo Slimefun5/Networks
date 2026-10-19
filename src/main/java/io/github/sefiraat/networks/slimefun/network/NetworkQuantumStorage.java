@@ -1,14 +1,15 @@
 package io.github.sefiraat.networks.slimefun.network;
 
+import io.github.sefiraat.networks.Networks;
 import io.github.sefiraat.networks.utils.Messages;
 import io.github.sefiraat.networks.network.stackcaches.QuantumCache;
 import io.github.sefiraat.networks.utils.Keys;
 import io.github.sefiraat.networks.utils.MaterialCompat;
 import io.github.sefiraat.networks.utils.StackUtils;
-import io.github.sefiraat.networks.utils.StringUtils;
 import io.github.sefiraat.networks.utils.Theme;
 import io.github.sefiraat.networks.utils.datatypes.PersistentQuantumStorageType;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun5.api.items.LiveLore;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
@@ -42,6 +43,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -547,11 +549,10 @@ public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveIt
         } else {
             final ItemStack itemStack = cache.getItemStack().clone();
             final ItemMeta itemMeta = itemStack.getItemMeta();
-            final List<String> lore = itemMeta.hasLore() ? itemMeta.getLore() : new ArrayList<>();
-            lore.add("");
-            lore.add(Theme.CLICK_INFO + "Voiding: " + Theme.PASSIVE + StringUtils.toTitleCase(String.valueOf(cache.isVoidExcess())));
-            lore.add(Theme.CLICK_INFO + "Amount: " + Theme.PASSIVE + cache.getAmount());
-            itemMeta.setLore(lore);
+            LiveLore.set(itemMeta, Arrays.asList(
+                LiveLore.Line.of(Networks.getInstance(), cache.isVoidExcess() ? "quantum.voiding-on" : "quantum.voiding-off"),
+                LiveLore.Line.of(Networks.getInstance(), "quantum.amount", cache.getAmount())
+            ));
             itemStack.setItemMeta(itemMeta);
             itemStack.setAmount(1);
             menu.replaceExistingItem(ITEM_SLOT, itemStack);

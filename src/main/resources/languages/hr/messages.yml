@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Ova kartica još nije povezana s predmetom ili je oštećeno mrežno kvantno skladište."
   item-updated: "Predmet ažuriran"
   must-be-empty: "Mrežno kvantno skladište mora biti prazno prije promjene povezanog predmeta."
+  voiding-on: "&eUništavanje viška: &7Da"
+  voiding-off: "&eUništavanje viška: &7Ne"
+  amount: "&eKoličina: &7{0}"
+  holding: "&eSadrži: &7{0}"
 
 card:
   unstack-first: "Razdvoji kartice prije povezivanja predmeta."

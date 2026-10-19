@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Cette carte n'a pas encore été associée à un objet, ou bien c'est un Stockage Quantique de Réseau corrompu."
   item-updated: "Objet mis à jour"
   must-be-empty: "Le Stockage Quantique de Réseau doit être vide avant de changer l'objet associé."
+  voiding-on: "&eDestruction de l'excédent: &7Oui"
+  voiding-off: "&eDestruction de l'excédent: &7Non"
+  amount: "&eQuantité: &7{0}"
+  holding: "&eContient: &7{0}"
 
 card:
   unstack-first: "Séparez les cartes avant d'associer un objet."

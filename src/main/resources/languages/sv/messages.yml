@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Det här kortet har ännu inte kopplats till ett objekt, eller så är det en skadad kvantlagring."
   item-updated: "Objektet uppdaterat"
   must-be-empty: "Nätverkets kvantlagring måste vara tom innan det kopplade objektet ändras."
+  voiding-on: "&eFörstör överskott: &7Ja"
+  voiding-off: "&eFörstör överskott: &7Nej"
+  amount: "&eAntal: &7{0}"
+  holding: "&eInnehåller: &7{0}"
 
 card:
   unstack-first: "Dela upp korten innan du kopplar ett objekt."

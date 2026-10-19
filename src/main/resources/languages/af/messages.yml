@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Hierdie kaart is nog nie aan 'n item gekoppel nie, of dit is 'n beskadigde netwerkkwantumberging."
   item-updated: "Item opgedateer"
   must-be-empty: "Die netwerkkwantumberging moet leeg wees voordat die gekoppelde item verander word."
+  voiding-on: "&eVernietig oorskot: &7Ja"
+  voiding-off: "&eVernietig oorskot: &7Nee"
+  amount: "&eHoeveelheid: &7{0}"
+  holding: "&eBevat: &7{0}"
 
 card:
   unstack-first: "Deel die kaarte op voordat jy 'n item koppel."

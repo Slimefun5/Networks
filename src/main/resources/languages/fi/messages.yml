@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Tätä korttia ei ole vielä liitetty esineeseen, tai se on vioittunut verkon kvanttivarasto."
   item-updated: "Esine päivitetty"
   must-be-empty: "Verkon kvanttivaraston on oltava tyhjä, ennen kuin liitettyä esinettä vaihdetaan."
+  voiding-on: "&eYlijäämän tuhoaminen: &7Kyllä"
+  voiding-off: "&eYlijäämän tuhoaminen: &7Ei"
+  amount: "&eMäärä: &7{0}"
+  holding: "&eSisältää: &7{0}"
 
 card:
   unstack-first: "Pura korttipino, ennen kuin liität esineen."

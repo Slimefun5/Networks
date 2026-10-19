@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "This card has either not been set to an item yet or is a corrupted Quantum Storage."
   item-updated: "Item updated"
   must-be-empty: "Quantum Storage must be empty before changing the set item."
+  voiding-on: "&eVoiding: &7Yes"
+  voiding-off: "&eVoiding: &7No"
+  amount: "&eAmount: &7{0}"
+  holding: "&eHolding: &7{0}"
 
 card:
   unstack-first: "Unstack cards before assigning an item."

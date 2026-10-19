@@ -82,7 +82,7 @@ public class NetworksMain implements CommandExecutor {
 
         quantumCache.setAmount(amount);
         PersistentQuantumStorageType.store(meta, quantumCache);
-        quantumCache.updateMetaLore(meta);
+        quantumCache.addMetaLore(meta);
         itemStack.setItemMeta(meta);
         Messages.send(player, Theme.SUCCESS, "quantum.item-updated", "Item updated");
     }

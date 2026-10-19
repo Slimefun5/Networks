@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Esta tarjeta aún no se ha asignado a un objeto o es un Almacenamiento Cuántico de Red corrupto."
   item-updated: "Objeto actualizado"
   must-be-empty: "El Almacenamiento Cuántico de Red debe estar vacío antes de cambiar el objeto asignado."
+  voiding-on: "&eEliminar excedente: &7Sí"
+  voiding-off: "&eEliminar excedente: &7No"
+  amount: "&eCantidad: &7{0}"
+  holding: "&eContiene: &7{0}"
 
 card:
   unstack-first: "Separa las tarjetas antes de asignar un objeto."

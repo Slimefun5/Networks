@@ -3,6 +3,10 @@ quantum:
   unset-or-corrupt: "Šī karte vēl nav piesaistīta priekšmetam vai ir bojāta tīkla kvantu krātuve."
   item-updated: "Priekšmets atjaunināts"
   must-be-empty: "Tīkla kvantu krātuvei jābūt tukšai, pirms tiek mainīts piesaistītais priekšmets."
+  voiding-on: "&ePārpalikuma iznīcināšana: &7Jā"
+  voiding-off: "&ePārpalikuma iznīcināšana: &7Nē"
+  amount: "&eDaudzums: &7{0}"
+  holding: "&eSatur: &7{0}"
 
 card:
   unstack-first: "Sadali kartes, pirms piesaisti priekšmetu."
