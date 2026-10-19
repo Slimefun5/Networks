@@ -48,6 +48,9 @@ import java.util.Map;
 
 public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveItem {
 
+    /** Slots 0 to 35, the main inventory and hotbar on every version; {@code getStorageContents} is 1.9+. */
+    private static final int PLAYER_STORAGE_SLOTS = 36;
+
     private static final int[] SIZES = new int[]{
         4096,
         32768,
@@ -294,19 +297,17 @@ public class NetworkQuantumStorage extends SlimefunItem implements DistinctiveIt
             final ItemStack stored = cache.getItemStack();
             final int maxStack = stored.getMaxStackSize();
             final PlayerInventory inventory = player.getInventory();
-            final ItemStack[] contents = inventory.getStorageContents();
 
-            for (int i = 0; i < contents.length && cache.getAmount() > 0; i++) {
-                if (contents[i] == null || contents[i].getType() == Material.AIR) {
+            for (int slot = 0; slot < PLAYER_STORAGE_SLOTS && cache.getAmount() > 0; slot++) {
+                final ItemStack current = inventory.getItem(slot);
+                if (current == null || current.getType() == Material.AIR) {
                     final int amount = Math.min(cache.getAmount(), maxStack);
                     final ItemStack give = stored.clone();
                     give.setAmount(amount);
-                    contents[i] = give;
+                    inventory.setItem(slot, give);
                     cache.reduceAmount(amount);
                 }
             }
-
-            inventory.setStorageContents(contents);
         }
 
         updateDisplayItem(blockMenu, cache);
