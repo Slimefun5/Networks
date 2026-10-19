@@ -71,7 +71,7 @@ public class NetworkVacuum extends NetworkObject {
                         final BlockMenu blockMenu = BlockStorage.getInventory(block);
                         addToRegistry(block);
                         tryAddItem(blockMenu);
-                        Bukkit.getScheduler().runTask(Networks.getInstance(), bukkitTask -> findItem(blockMenu));
+                        Bukkit.getScheduler().runTask(Networks.getInstance(), () -> findItem(blockMenu));
                     }
                 }
 

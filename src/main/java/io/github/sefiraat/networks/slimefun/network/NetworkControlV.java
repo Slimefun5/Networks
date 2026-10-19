@@ -138,7 +138,7 @@ public class NetworkControlV extends NetworkDirectional {
         }
 
         this.blockCache.add(targetPosition);
-        Bukkit.getScheduler().runTask(Networks.getInstance(), bukkitTask -> {
+        Bukkit.getScheduler().runTask(Networks.getInstance(), () -> {
             targetBlock.setType(fetchedStack.getType(), true);
             Location centre = targetBlock.getLocation().clone().add(0.5, 0.5, 0.5);
             io.github.sefiraat.networks.utils.ParticleCompat.spawn(centre, 1, 0.2, 0.2, 0.2, "CRIT_MAGIC", "CRIT");

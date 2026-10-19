@@ -136,7 +136,7 @@ public class NetworkControlX extends NetworkDirectional {
 
         if (resultStack.getAmount() == 0) {
             this.blockCache.add(targetPosition);
-            Bukkit.getScheduler().runTask(Networks.getInstance(), bukkitTask -> {
+            Bukkit.getScheduler().runTask(Networks.getInstance(), () -> {
                 final BlockStateSnapshotResult blockState = PaperLib.getBlockState(targetBlock, true);
 
                 if (blockState.getState() instanceof InventoryHolder) {
