@@ -34,6 +34,8 @@ import java.util.Map;
 public class Networks extends JavaPlugin implements SlimefunAddon {
 
 
+    private static final long UNLOADED_WORLD_SWEEP_TICKS = 6000L;
+
     private static Networks instance;
 
     private final String username;
@@ -63,6 +65,7 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
         setupSlimefun();
 
         this.listenerManager = new ListenerManager();
+        getServer().getScheduler().runTaskTimer(this, NetworkStorage::forgetUnloadedWorlds, UNLOADED_WORLD_SWEEP_TICKS, UNLOADED_WORLD_SWEEP_TICKS);
         this.getCommand("networks").setExecutor(new NetworksMain());
 
         setupMetrics();
