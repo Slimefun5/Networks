@@ -36,6 +36,7 @@ import org.bukkit.inventory.ItemStack;
 import javax.annotation.Nonnull;
 import java.util.Collection;
 import java.util.Optional;
+import io.github.thebusybiscuit.slimefun5.utils.compatibility.EntityCompat;
 
 public class NetworkVacuum extends NetworkObject {
 
@@ -89,8 +90,7 @@ public class NetworkVacuum extends NetworkObject {
             if (inSlot == null || MaterialCompat.isAir(inSlot.getType())) {
                 final Location location = blockMenu.getLocation().clone().add(0.5, 0.5, 0.5);
                 final int range = this.vacuumRange.getValue();
-                Collection<Entity> items = location.getWorld()
-                    .getNearbyEntities(location, range, range, range, Item.class::isInstance);
+                Collection<Entity> items = EntityCompat.getNearbyEntities(location.getWorld(), location, range, range, range, Item.class::isInstance);
                 Optional<Entity> optionalEntity = items.stream().findFirst();
                 if (!optionalEntity.isPresent() || !(optionalEntity.get() instanceof Item)) {
                     return;
