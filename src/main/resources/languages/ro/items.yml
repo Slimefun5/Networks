@@ -1,9 +1,9 @@
 NTW_ADVANCED_NANOBOTS:
-  name: '&bNanoboți Avansați'
+  name: 'Nanoboți Avansați'
   type:
   - '&7&oComponentă'
 NTW_AI_CORE:
-  name: '&bNucleu A.I.'
+  name: 'Nucleu A.I.'
   type:
   - '&7&oComponentă'
 NTW_AUTO_CRAFTER:
@@ -14,7 +14,7 @@ NTW_AUTO_CRAFTER:
   - '&7iar în rețea nu există niciunul,'
   - '&7va fi fabricat dacă ai'
   - '&7materiale.'
-  name: '&3Fabricator Auto de Rețea'
+  name: 'Fabricator Auto de Rețea'
   stats:
   - '&7Consum de Rețea: &e64&7/fabricare'
   type:
@@ -32,7 +32,7 @@ NTW_AUTO_CRAFTER_WITHHOLDING:
   - '&7fabricarea. Stiva poate fi văzută'
   - '&7în Rețea și permite și'
   - '&7cargo.'
-  name: '&3Fabricator Auto de Rețea (cu Reținere)'
+  name: 'Fabricator Auto de Rețea (cu Reținere)'
   stats:
   - '&7Consum de Rețea: &e128&7/fabricare'
   type:
@@ -43,14 +43,14 @@ NTW_BEST_PUSHER:
   - '&7să împingă obiecte corespunzătoare din până la'
   - '&7douăsprezece șabloane indicate în'
   - '&7mașina aleasă.'
-  name: '&3Împingător Avansat de Rețea'
+  name: 'Împingător Avansat de Rețea'
   type:
   - '&7&oMașină'
 NTW_BRIDGE:
   description:
   - '&7Puntea îți permite să conectezi ieftin'
   - '&7obiectele rețelei între ele.'
-  name: '&3Punte de Rețea'
+  name: 'Punte de Rețea'
   type:
   - '&7&oMașină'
 NTW_CAPACITOR_1:
@@ -58,7 +58,7 @@ NTW_CAPACITOR_1:
   - '&7Condensatorul de Rețea poate primi'
   - '&7energie și o poate stoca pentru folosire'
   - '&7în interiorul rețelei.'
-  name: '&3Condensator de Rețea (1)'
+  name: 'Condensator de Rețea (1)'
   stats:
   - '&7Capacitate: &e1000'
   type:
@@ -68,7 +68,7 @@ NTW_CAPACITOR_2:
   - '&7Condensatorul de Rețea poate primi'
   - '&7energie și o poate stoca pentru folosire'
   - '&7în interiorul rețelei.'
-  name: '&3Condensator de Rețea (2)'
+  name: 'Condensator de Rețea (2)'
   stats:
   - '&7Capacitate: &e10000'
   type:
@@ -78,7 +78,7 @@ NTW_CAPACITOR_3:
   - '&7Condensatorul de Rețea poate primi'
   - '&7energie și o poate stoca pentru folosire'
   - '&7în interiorul rețelei.'
-  name: '&3Condensator de Rețea (3)'
+  name: 'Condensator de Rețea (3)'
   stats:
   - '&7Capacitate: &e100000'
   type:
@@ -88,7 +88,7 @@ NTW_CAPACITOR_4:
   - '&7Condensatorul de Rețea poate primi'
   - '&7energie și o poate stoca pentru folosire'
   - '&7în interiorul rețelei.'
-  name: '&3Condensator de Rețea (4)'
+  name: 'Condensator de Rețea (4)'
   stats:
   - '&7Capacitate: &e1000000'
   type:
@@ -99,7 +99,7 @@ NTW_CELL:
   - '&7(cufăr dublu) care poate fi'
   - '&7accesat atât din rețea'
   - '&7cât și în lume.'
-  name: '&3Celulă de Rețea'
+  name: 'Celulă de Rețea'
   type:
   - '&7&oMașină'
 NTW_CONFIGURATOR:
@@ -107,7 +107,7 @@ NTW_CONFIGURATOR:
   - '&7Folosit pentru a copia și lipi'
   - '&7configurațiile interfețelor'
   - '&7direcționale.'
-  name: '&5Configurator de Rețea'
+  name: 'Configurator de Rețea'
   type:
   - '&7&oUnealtă'
   usage:
@@ -117,7 +117,7 @@ NTW_CONTROLLER:
   description:
   - '&7Controlerul de Rețea este creierul'
   - '&7întregii rețele.'
-  name: '&3Controler de Rețea'
+  name: 'Controler de Rețea'
   stats:
   - '&7Limită: &eMax 1&7 per rețea'
   type:
@@ -128,7 +128,7 @@ NTW_CONTROL_V:
   - '&7să ''lipească'' un bloc din Rețea'
   - '&7în lume.'
   - '&7Funcționează doar cu blocuri vanilla.'
-  name: '&3Control de Rețea: V'
+  name: 'Control de Rețea: V'
   stats:
   - '&7Consum de Rețea: &e100&7/lipire'
   type:
@@ -140,7 +140,7 @@ NTW_CONTROL_X:
   - '&7și să îl pună în Rețea.'
   - '&7Funcționează doar pe blocuri vanilla fără'
   - '&7inventare.'
-  name: '&3Control de Rețea: X'
+  name: 'Control de Rețea: X'
   stats:
   - '&7Consum de Rețea: &e100&7/tăiere'
   type:
@@ -150,7 +150,7 @@ NTW_CRAFTING_BLUEPRINT:
   - '&7Un plan gol care poate'
   - '&7fi folosit pentru a stoca o rețetă'
   - '&7de fabricare.'
-  name: '&5Plan de Fabricare'
+  name: 'Plan de Fabricare'
   type:
   - '&7&oUnealtă'
 NTW_CRAFTING_GRID:
@@ -159,7 +159,7 @@ NTW_CRAFTING_GRID:
   - '&7ca o grilă normală, dar afișează mai puține'
   - '&7obiecte și permite fabricarea cu obiecte'
   - '&7direct din rețea.'
-  name: '&3Grilă de Fabricare de Rețea'
+  name: 'Grilă de Fabricare de Rețea'
   type:
   - '&7&oMașină'
 NTW_CRAYON:
@@ -167,7 +167,7 @@ NTW_CRAYON:
   - '&7Comută un afișaj de particule de depanare'
   - '&7la nivel de rețea, arătând activitatea nodurilor'
   - '&7în timp ce lucrează.'
-  name: '&5Creion de Rețea'
+  name: 'Creion de Rețea'
   type:
   - '&7&oUnealtă'
   usage:
@@ -176,13 +176,13 @@ NTW_DEBUG_STICK:
   description:
   - '&7O unealtă de diagnostic doar pentru operatori,'
   - '&7folosită pentru a depana comportamentul blocurilor de Rețea.'
-  name: '&5Bastonaș de Depanare de Rețea'
+  name: 'Bastonaș de Depanare de Rețea'
   type:
   - '&7&oUnealtă'
   usage:
   - '&eClic dreapta&7 pe un Obiect de Rețea pentru a porni depanarea.'
 NTW_EMPOWERED_AI_CORE:
-  name: '&bNucleu A.I. Împuternicit'
+  name: 'Nucleu A.I. Împuternicit'
   type:
   - '&7&oComponentă'
 NTW_EXPORT:
@@ -191,7 +191,7 @@ NTW_EXPORT:
   - '&7exporte constant 1 stivă din orice'
   - '&7obiect indicat.'
   - '&7Acceptă retragerea obiectelor prin cargo.'
-  name: '&3Exportator de Rețea'
+  name: 'Exportator de Rețea'
   type:
   - '&7&oMașină'
 NTW_GRABBER:
@@ -199,7 +199,7 @@ NTW_GRABBER:
   - '&7Apucătorul de Rețea va încerca'
   - '&7să apuce primul obiect găsit'
   - '&7în mașina selectată.'
-  name: '&3Apucător de Rețea'
+  name: 'Apucător de Rețea'
   type:
   - '&7&oMașină'
 NTW_GREEDY_BLOCK:
@@ -210,7 +210,7 @@ NTW_GREEDY_BLOCK:
   - '&7stivă. Dacă alte obiecte venite'
   - '&7nu încap, ele nu vor intra'
   - '&7în rețea.'
-  name: '&3Bloc Lacom de Rețea'
+  name: 'Bloc Lacom de Rețea'
   type:
   - '&7&oMașină'
 NTW_GRID:
@@ -219,7 +219,7 @@ NTW_GRID:
   - '&7obiectele pe care le ai în rețea'
   - '&7și îți permite să introduci sau să retragi'
   - '&7direct.'
-  name: '&3Grilă de Rețea'
+  name: 'Grilă de Rețea'
   type:
   - '&7&oMașină'
 NTW_IMPORT:
@@ -227,13 +227,13 @@ NTW_IMPORT:
   - '&7Importatorul de Rețea aduce orice'
   - '&7obiect din el în rețea.'
   - '&7Acceptă obiecte venite din cargo.'
-  name: '&3Importator de Rețea'
+  name: 'Importator de Rețea'
   stats:
   - '&7Rată de Import: &ePână la 9 stive&7/tick'
   type:
   - '&7&oMașină'
 NTW_INTERDIMENSIONAL_PRESENCE:
-  name: '&bPrezență Interdimensională'
+  name: 'Prezență Interdimensională'
   type:
   - '&7&oComponentă'
 NTW_MONITOR:
@@ -244,7 +244,7 @@ NTW_MONITOR:
   - '&7Momentan suportă:'
   - '&7Butoaie Infinite'
   - '&7Carcase de Rețea'
-  name: '&3Monitor de Rețea'
+  name: 'Monitor de Rețea'
   type:
   - '&7&oMașină'
 NTW_NETWORK_WIRELESS_RECEIVER:
@@ -255,7 +255,7 @@ NTW_NETWORK_WIRELESS_RECEIVER:
   - '&7aceeași lume.'
   - '&7Va încerca să împingă obiectele primite'
   - '&7în Rețea la fiecare tick.'
-  name: '&3Receptor Fără fir de Rețea'
+  name: 'Receptor Fără fir de Rețea'
   type:
   - '&7&oMașină'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
@@ -266,21 +266,21 @@ NTW_NETWORK_WIRELESS_TRANSMITTER:
   - '&7aflat în aceeași lume.'
   - '&7Folosește Configuratorul Fără fir pentru a'
   - '&7configura Transmițătorul Fără fir.'
-  name: '&3Transmițător Fără fir de Rețea'
+  name: 'Transmițător Fără fir de Rețea'
   stats:
   - '&7Necesită 500 Energie de Rețea per transfer.'
   type:
   - '&7&oMașină'
 NTW_OPTIC_CABLE:
-  name: '&bCablu Optic'
+  name: 'Cablu Optic'
   type:
   - '&7&oComponentă'
 NTW_OPTIC_GLASS:
-  name: '&bSticlă Optică'
+  name: 'Sticlă Optică'
   type:
   - '&7&oComponentă'
 NTW_OPTIC_STAR:
-  name: '&bStea Optică'
+  name: 'Stea Optică'
   type:
   - '&7&oComponentă'
 NTW_POWER_DISPLAY:
@@ -288,7 +288,7 @@ NTW_POWER_DISPLAY:
   - '&7Afișajul de Energie de Rețea va'
   - '&7arăta energia din rețea.'
   - '&7Simplu, nu?'
-  name: '&3Afișaj de Energie de Rețea'
+  name: 'Afișaj de Energie de Rețea'
   type:
   - '&7&oMașină'
 NTW_POWER_OUTLET_1:
@@ -297,7 +297,7 @@ NTW_POWER_OUTLET_1:
   - '&7energie din Rețea pentru a alimenta'
   - '&7mașini sau a o reintroduce într-o'
   - '&7rețea EnergyNet.'
-  name: '&3Priză de Energie de Rețea (1)'
+  name: 'Priză de Energie de Rețea (1)'
   stats:
   - '&7Funcționează cu o pierdere de 20%.'
   - '&7Transfer Maxim: &e500'
@@ -309,14 +309,14 @@ NTW_POWER_OUTLET_2:
   - '&7energie din Rețea pentru a alimenta'
   - '&7mașini sau a o reintroduce într-o'
   - '&7rețea EnergyNet.'
-  name: '&3Priză de Energie de Rețea (2)'
+  name: 'Priză de Energie de Rețea (2)'
   stats:
   - '&7Funcționează cu o pierdere de 20%.'
   - '&7Transfer Maxim: &e2000'
   type:
   - '&7&oMașină'
 NTW_PRISTINE_AI_CORE:
-  name: '&bNucleu A.I. Imaculat'
+  name: 'Nucleu A.I. Imaculat'
   type:
   - '&7&oComponentă'
 NTW_PROBE:
@@ -324,7 +324,7 @@ NTW_PROBE:
   - '&7Dezvăluie un sumar al unei Rețele,'
   - '&7inclusiv energia, numărul de obiecte'
   - '&7și totalurile de noduri.'
-  name: '&5Sondă de Rețea'
+  name: 'Sondă de Rețea'
   type:
   - '&7&oUnealtă'
   usage:
@@ -334,14 +334,14 @@ NTW_PUSHER:
   - '&7Împingătorul de Rețea va încerca'
   - '&7să împingă un obiect corespunzător unui'
   - '&7obiect indicat în mașina aleasă.'
-  name: '&3Împingător de Rețea'
+  name: 'Împingător de Rețea'
   type:
   - '&7&oMașină'
 NTW_QUANTUM_STORAGE_1:
   description:
   - '&7Stochează obiecte în cantități masive într-o'
   - '&7singularitate cuantică.'
-  name: '&3Stocare Cuantică de Rețea (4K)'
+  name: 'Stocare Cuantică de Rețea (4K)'
   stats:
   - '&7Stochează &e4096&7 obiecte'
   type:
@@ -350,7 +350,7 @@ NTW_QUANTUM_STORAGE_2:
   description:
   - '&7Stochează obiecte în cantități masive într-o'
   - '&7singularitate cuantică.'
-  name: '&3Stocare Cuantică de Rețea (32K)'
+  name: 'Stocare Cuantică de Rețea (32K)'
   stats:
   - '&7Stochează &e32768&7 obiecte'
   type:
@@ -359,7 +359,7 @@ NTW_QUANTUM_STORAGE_3:
   description:
   - '&7Stochează obiecte în cantități masive într-o'
   - '&7singularitate cuantică.'
-  name: '&3Stocare Cuantică de Rețea (262K)'
+  name: 'Stocare Cuantică de Rețea (262K)'
   stats:
   - '&7Stochează &e262144&7 obiecte'
   type:
@@ -368,7 +368,7 @@ NTW_QUANTUM_STORAGE_4:
   description:
   - '&7Stochează obiecte în cantități masive într-o'
   - '&7singularitate cuantică.'
-  name: '&3Stocare Cuantică de Rețea (2M)'
+  name: 'Stocare Cuantică de Rețea (2M)'
   stats:
   - '&7Stochează &e2097152&7 obiecte'
   type:
@@ -377,7 +377,7 @@ NTW_QUANTUM_STORAGE_5:
   description:
   - '&7Stochează obiecte în cantități masive într-o'
   - '&7singularitate cuantică.'
-  name: '&3Stocare Cuantică de Rețea (16M)'
+  name: 'Stocare Cuantică de Rețea (16M)'
   stats:
   - '&7Stochează &e16777216&7 obiecte'
   type:
@@ -386,7 +386,7 @@ NTW_QUANTUM_STORAGE_6:
   description:
   - '&7Stochează obiecte în cantități masive într-o'
   - '&7singularitate cuantică.'
-  name: '&3Stocare Cuantică de Rețea (134M)'
+  name: 'Stocare Cuantică de Rețea (134M)'
   stats:
   - '&7Stochează &e134217728&7 obiecte'
   type:
@@ -395,7 +395,7 @@ NTW_QUANTUM_STORAGE_7:
   description:
   - '&7Stochează obiecte în cantități masive într-o'
   - '&7singularitate cuantică.'
-  name: '&3Stocare Cuantică de Rețea (1B)'
+  name: 'Stocare Cuantică de Rețea (1B)'
   stats:
   - '&7Stochează &e1073741824&7 obiecte'
   type:
@@ -404,7 +404,7 @@ NTW_QUANTUM_STORAGE_8:
   description:
   - '&7Stochează obiecte în cantități masive într-o'
   - '&7singularitate cuantică.'
-  name: '&3Stocare Cuantică de Rețea (∞)'
+  name: 'Stocare Cuantică de Rețea (∞)'
   stats:
   - '&7Stochează &e∞&7 obiecte... aproape'
   type:
@@ -412,18 +412,18 @@ NTW_QUANTUM_STORAGE_8:
 NTW_QUANTUM_WORKBENCH:
   description:
   - '&7Permite fabricarea Stocărilor Cuantice.'
-  name: '&3Banc de lucru Cuantic de Rețea'
+  name: 'Banc de lucru Cuantic de Rețea'
   type:
   - '&7&oMașină'
 NTW_RADIOACTIVE_OPTIC_STAR:
-  name: '&bStea Optică Radioactivă'
+  name: 'Stea Optică Radioactivă'
   type:
   - '&7&oComponentă'
 NTW_RAKE_1:
   description:
   - '&7O unealtă de mână pentru demontarea rapidă'
   - '&7a Obiectelor de Rețea fără mașinărie.'
-  name: '&5Greblă de Rețea (1)'
+  name: 'Greblă de Rețea (1)'
   stats:
   - '&e250 Utilizări &7rămase'
   type:
@@ -434,7 +434,7 @@ NTW_RAKE_2:
   description:
   - '&7O unealtă de mână pentru demontarea rapidă'
   - '&7a Obiectelor de Rețea fără mașinărie.'
-  name: '&5Greblă de Rețea (2)'
+  name: 'Greblă de Rețea (2)'
   stats:
   - '&e1000 Utilizări &7rămase'
   type:
@@ -445,7 +445,7 @@ NTW_RAKE_3:
   description:
   - '&7O unealtă de mână pentru demontarea rapidă'
   - '&7a Obiectelor de Rețea fără mașinărie.'
-  name: '&5Greblă de Rețea (3)'
+  name: 'Greblă de Rețea (3)'
   stats:
   - '&e9999 Utilizări &7rămase'
   type:
@@ -456,7 +456,7 @@ NTW_RECIPE_ENCODER:
   description:
   - '&7Folosit pentru a forma un Plan de Fabricare'
   - '&7din obiectele introduse.'
-  name: '&3Codificator de Rețete de Rețea'
+  name: 'Codificator de Rețete de Rețea'
   stats:
   - '&7Consum de Rețea: &e20000&7/codificare'
   type:
@@ -465,7 +465,7 @@ NTW_REMOTE:
   description:
   - '&7Deschide fără fir o grilă legată.'
   - '&7Grila trebuie să fie într-un chunk încărcat.'
-  name: '&5Telecomandă de Rețea'
+  name: 'Telecomandă de Rețea'
   stats:
   - '&7Rază: &e150'
   type:
@@ -474,7 +474,7 @@ NTW_REMOTE_EMPOWERED:
   description:
   - '&7Deschide fără fir o grilă legată.'
   - '&7Grila trebuie să fie într-un chunk încărcat.'
-  name: '&5Telecomandă de Rețea Împuternicită'
+  name: 'Telecomandă de Rețea Împuternicită'
   stats:
   - '&7Rază: &e500'
   type:
@@ -483,7 +483,7 @@ NTW_REMOTE_PRISTINE:
   description:
   - '&7Deschide fără fir o grilă legată.'
   - '&7Grila trebuie să fie într-un chunk încărcat.'
-  name: '&5Telecomandă de Rețea Imaculată'
+  name: 'Telecomandă de Rețea Imaculată'
   stats:
   - '&7Rază: &eNelimitată'
   type:
@@ -492,21 +492,21 @@ NTW_REMOTE_ULTIMATE:
   description:
   - '&7Deschide fără fir o grilă legată.'
   - '&7Grila trebuie să fie într-un chunk încărcat.'
-  name: '&5Telecomandă de Rețea Supremă'
+  name: 'Telecomandă de Rețea Supremă'
   stats:
   - '&7Rază: &eInterdimensională'
   type:
   - '&7&oUnealtă'
 NTW_SHRINKING_BASE:
-  name: '&bBază de Micșorare'
+  name: 'Bază de Micșorare'
   type:
   - '&7&oComponentă'
 NTW_SIMPLE_NANOBOTS:
-  name: '&bNanoboți Simpli'
+  name: 'Nanoboți Simpli'
   type:
   - '&7&oComponentă'
 NTW_SYNTHETIC_EMERALD_SHARD:
-  name: '&bFragment de Smarald Sintetic'
+  name: 'Fragment de Smarald Sintetic'
   type:
   - '&7&oComponentă'
 NTW_TRASH:
@@ -515,7 +515,7 @@ NTW_TRASH:
   - '&7obiectele corespunzătoare din rețea'
   - '&7și le va distruge instantaneu.'
   - '&7Folosește cu mare grijă!'
-  name: '&3Epurator de Rețea'
+  name: 'Epurator de Rețea'
   type:
   - '&7&oMașină'
 NTW_VACUUM:
@@ -525,7 +525,7 @@ NTW_VACUUM:
   - '&7rază de 4 x 4 centrată pe el.'
   - '&7Obiectele aspirate vor încerca să intre'
   - '&7în Rețea.'
-  name: '&3Aspirator de Rețea'
+  name: 'Aspirator de Rețea'
   stats:
   - '&7Consum de Rețea: &e100&7/tick'
   type:
@@ -537,7 +537,7 @@ NTW_VANILLA_GRABBER:
   - '&7inventarul vanilla ales.'
   - '&7Trebuie să iei obiecte din acest'
   - '&7nod folosind un Apucător.'
-  name: '&3Apucător Vanilla de Rețea'
+  name: 'Apucător Vanilla de Rețea'
   type:
   - '&7&oMașină'
 NTW_VANILLA_PUSHER:
@@ -547,14 +547,14 @@ NTW_VANILLA_PUSHER:
   - '&7inventarul vanilla ales.'
   - '&7Trebuie să împingi obiecte în acest'
   - '&7nod dintr-un Împingător.'
-  name: '&3Împingător Vanilla de Rețea'
+  name: 'Împingător Vanilla de Rețea'
   type:
   - '&7&oMașină'
 NTW_WIRELESS_CONFIGURATOR:
   description:
   - '&7Folosit pentru a stoca locația unui Receptor'
   - '&7și apoi a o aplica unui Transmițător.'
-  name: '&5Configurator Fără fir de Rețea'
+  name: 'Configurator Fără fir de Rețea'
   type:
   - '&7&oUnealtă'
   usage:

@@ -1,67 +1,67 @@
 # en item translations for Networks. Unified block-lore (name/type/description/stats/usage).
 
 NTW_SYNTHETIC_EMERALD_SHARD:
-  name: "&bSynthetic Emerald Shard"
+  name: 'Synthetic Emerald Shard'
   type:
     - "&7&oComponent"
 
 NTW_OPTIC_GLASS:
-  name: "&bOptic Glass"
+  name: 'Optic Glass'
   type:
     - "&7&oComponent"
 
 NTW_OPTIC_CABLE:
-  name: "&bOptic Cable"
+  name: 'Optic Cable'
   type:
     - "&7&oComponent"
 
 NTW_OPTIC_STAR:
-  name: "&bOptic Star"
+  name: 'Optic Star'
   type:
     - "&7&oComponent"
 
 NTW_RADIOACTIVE_OPTIC_STAR:
-  name: "&bRadioactive Optic Star"
+  name: 'Radioactive Optic Star'
   type:
     - "&7&oComponent"
 
 NTW_SHRINKING_BASE:
-  name: "&bShrinking Base"
+  name: 'Shrinking Base'
   type:
     - "&7&oComponent"
 
 NTW_SIMPLE_NANOBOTS:
-  name: "&bSimple Nanobots"
+  name: 'Simple Nanobots'
   type:
     - "&7&oComponent"
 
 NTW_ADVANCED_NANOBOTS:
-  name: "&bAdvanced Nanobots"
+  name: 'Advanced Nanobots'
   type:
     - "&7&oComponent"
 
 NTW_AI_CORE:
-  name: "&bA.I. Core"
+  name: 'A.I. Core'
   type:
     - "&7&oComponent"
 
 NTW_EMPOWERED_AI_CORE:
-  name: "&bEmpowered A.I. Core"
+  name: 'Empowered A.I. Core'
   type:
     - "&7&oComponent"
 
 NTW_PRISTINE_AI_CORE:
-  name: "&bPristine A.I. Core"
+  name: 'Pristine A.I. Core'
   type:
     - "&7&oComponent"
 
 NTW_INTERDIMENSIONAL_PRESENCE:
-  name: "&bInterdimensional Presence"
+  name: 'Interdimensional Presence'
   type:
     - "&7&oComponent"
 
 NTW_CONTROLLER:
-  name: "&3Network Controller"
+  name: 'Network Controller'
   type:
     - "&7&oMachine"
   description:
@@ -71,7 +71,7 @@ NTW_CONTROLLER:
     - "&7Limit: &eMax 1&7 per network"
 
 NTW_BRIDGE:
-  name: "&3Network Bridge"
+  name: 'Network Bridge'
   type:
     - "&7&oMachine"
   description:
@@ -79,7 +79,7 @@ NTW_BRIDGE:
     - "&7connect network objects together."
 
 NTW_MONITOR:
-  name: "&3Network Monitor"
+  name: 'Network Monitor'
   type:
     - "&7&oMachine"
   description:
@@ -91,7 +91,7 @@ NTW_MONITOR:
     - "&7Network Shells"
 
 NTW_IMPORT:
-  name: "&3Network Importer"
+  name: 'Network Importer'
   type:
     - "&7&oMachine"
   description:
@@ -102,7 +102,7 @@ NTW_IMPORT:
     - "&7Import Rate: &eUp to 9 stacks&7/tick"
 
 NTW_EXPORT:
-  name: "&3Network Exporter"
+  name: 'Network Exporter'
   type:
     - "&7&oMachine"
   description:
@@ -112,7 +112,7 @@ NTW_EXPORT:
     - "&7Accepts item withdrawal from cargo."
 
 NTW_GRABBER:
-  name: "&3Network Grabber"
+  name: 'Network Grabber'
   type:
     - "&7&oMachine"
   description:
@@ -121,7 +121,7 @@ NTW_GRABBER:
     - "&7from within the selected machine."
 
 NTW_PUSHER:
-  name: "&3Network Pusher"
+  name: 'Network Pusher'
   type:
     - "&7&oMachine"
   description:
@@ -130,7 +130,7 @@ NTW_PUSHER:
     - "&7given item into the chosen machine."
 
 NTW_CONTROL_X:
-  name: "&3Network Control: X"
+  name: 'Network Control: X'
   type:
     - "&7&oMachine"
   description:
@@ -143,7 +143,7 @@ NTW_CONTROL_X:
     - "&7Network Drain: &e100&7/cut"
 
 NTW_CONTROL_V:
-  name: "&3Network Control: V"
+  name: 'Network Control: V'
   type:
     - "&7&oMachine"
   description:
@@ -155,7 +155,7 @@ NTW_CONTROL_V:
     - "&7Network Drain: &e100&7/paste"
 
 NTW_VACUUM:
-  name: "&3Network Vacuum"
+  name: 'Network Vacuum'
   type:
     - "&7&oMachine"
   description:
@@ -168,7 +168,7 @@ NTW_VACUUM:
     - "&7Network Drain: &e100&7/tick"
 
 NTW_VANILLA_GRABBER:
-  name: "&3Network Vanilla Grabber"
+  name: 'Network Vanilla Grabber'
   type:
     - "&7&oMachine"
   description:
@@ -179,7 +179,7 @@ NTW_VANILLA_GRABBER:
     - "&7node using a Grabber."
 
 NTW_VANILLA_PUSHER:
-  name: "&3Network Vanilla Pusher"
+  name: 'Network Vanilla Pusher'
   type:
     - "&7&oMachine"
   description:
@@ -190,7 +190,7 @@ NTW_VANILLA_PUSHER:
     - "&7node from a Pusher."
 
 NTW_NETWORK_WIRELESS_TRANSMITTER:
-  name: "&3Network Wireless Transmitter"
+  name: 'Network Wireless Transmitter'
   type:
     - "&7&oMachine"
   description:
@@ -204,7 +204,7 @@ NTW_NETWORK_WIRELESS_TRANSMITTER:
     - "&7Requires 500 Network Power per transfer."
 
 NTW_NETWORK_WIRELESS_RECEIVER:
-  name: "&3Network Wireless Receiver"
+  name: 'Network Wireless Receiver'
   type:
     - "&7&oMachine"
   description:
@@ -216,7 +216,7 @@ NTW_NETWORK_WIRELESS_RECEIVER:
     - "&7into the Network each tick."
 
 NTW_TRASH:
-  name: "&3Network Purger"
+  name: 'Network Purger'
   type:
     - "&7&oMachine"
   description:
@@ -226,7 +226,7 @@ NTW_TRASH:
     - "&7Use with great care!"
 
 NTW_GRID:
-  name: "&3Network Grid"
+  name: 'Network Grid'
   type:
     - "&7&oMachine"
   description:
@@ -236,7 +236,7 @@ NTW_GRID:
     - "&7directly."
 
 NTW_CRAFTING_GRID:
-  name: "&3Network Crafting Grid"
+  name: 'Network Crafting Grid'
   type:
     - "&7&oMachine"
   description:
@@ -246,7 +246,7 @@ NTW_CRAFTING_GRID:
     - "&7directly from the network."
 
 NTW_CELL:
-  name: "&3Network Cell"
+  name: 'Network Cell'
   type:
     - "&7&oMachine"
   description:
@@ -256,7 +256,7 @@ NTW_CELL:
     - "&7and in the world."
 
 NTW_GREEDY_BLOCK:
-  name: "&3Network Greedy Block"
+  name: 'Network Greedy Block'
   type:
     - "&7&oMachine"
   description:
@@ -268,14 +268,14 @@ NTW_GREEDY_BLOCK:
     - "&7the network."
 
 NTW_QUANTUM_WORKBENCH:
-  name: "&3Network Quantum Workbench"
+  name: 'Network Quantum Workbench'
   type:
     - "&7&oMachine"
   description:
     - "&7Allows the crafting of Quantum Storages."
 
 NTW_QUANTUM_STORAGE_1:
-  name: "&3Network Quantum Storage (4K)"
+  name: 'Network Quantum Storage (4K)'
   type:
     - "&7&oMachine"
   description:
@@ -285,7 +285,7 @@ NTW_QUANTUM_STORAGE_1:
     - "&7Stores &e4096&7 items"
 
 NTW_QUANTUM_STORAGE_2:
-  name: "&3Network Quantum Storage (32K)"
+  name: 'Network Quantum Storage (32K)'
   type:
     - "&7&oMachine"
   description:
@@ -295,7 +295,7 @@ NTW_QUANTUM_STORAGE_2:
     - "&7Stores &e32768&7 items"
 
 NTW_QUANTUM_STORAGE_3:
-  name: "&3Network Quantum Storage (262K)"
+  name: 'Network Quantum Storage (262K)'
   type:
     - "&7&oMachine"
   description:
@@ -305,7 +305,7 @@ NTW_QUANTUM_STORAGE_3:
     - "&7Stores &e262144&7 items"
 
 NTW_QUANTUM_STORAGE_4:
-  name: "&3Network Quantum Storage (2M)"
+  name: 'Network Quantum Storage (2M)'
   type:
     - "&7&oMachine"
   description:
@@ -315,7 +315,7 @@ NTW_QUANTUM_STORAGE_4:
     - "&7Stores &e2097152&7 items"
 
 NTW_QUANTUM_STORAGE_5:
-  name: "&3Network Quantum Storage (16M)"
+  name: 'Network Quantum Storage (16M)'
   type:
     - "&7&oMachine"
   description:
@@ -325,7 +325,7 @@ NTW_QUANTUM_STORAGE_5:
     - "&7Stores &e16777216&7 items"
 
 NTW_QUANTUM_STORAGE_6:
-  name: "&3Network Quantum Storage (134M)"
+  name: 'Network Quantum Storage (134M)'
   type:
     - "&7&oMachine"
   description:
@@ -335,7 +335,7 @@ NTW_QUANTUM_STORAGE_6:
     - "&7Stores &e134217728&7 items"
 
 NTW_QUANTUM_STORAGE_7:
-  name: "&3Network Quantum Storage (1B)"
+  name: 'Network Quantum Storage (1B)'
   type:
     - "&7&oMachine"
   description:
@@ -345,7 +345,7 @@ NTW_QUANTUM_STORAGE_7:
     - "&7Stores &e1073741824&7 items"
 
 NTW_QUANTUM_STORAGE_8:
-  name: "&3Network Quantum Storage (∞)"
+  name: 'Network Quantum Storage (∞)'
   type:
     - "&7&oMachine"
   description:
@@ -355,7 +355,7 @@ NTW_QUANTUM_STORAGE_8:
     - "&7Stores &e∞&7 items... almost"
 
 NTW_CAPACITOR_1:
-  name: "&3Network Capacitor (1)"
+  name: 'Network Capacitor (1)'
   type:
     - "&7&oMachine"
   description:
@@ -366,7 +366,7 @@ NTW_CAPACITOR_1:
     - "&7Capacity: &e1000"
 
 NTW_CAPACITOR_2:
-  name: "&3Network Capacitor (2)"
+  name: 'Network Capacitor (2)'
   type:
     - "&7&oMachine"
   description:
@@ -377,7 +377,7 @@ NTW_CAPACITOR_2:
     - "&7Capacity: &e10000"
 
 NTW_CAPACITOR_3:
-  name: "&3Network Capacitor (3)"
+  name: 'Network Capacitor (3)'
   type:
     - "&7&oMachine"
   description:
@@ -388,7 +388,7 @@ NTW_CAPACITOR_3:
     - "&7Capacity: &e100000"
 
 NTW_CAPACITOR_4:
-  name: "&3Network Capacitor (4)"
+  name: 'Network Capacitor (4)'
   type:
     - "&7&oMachine"
   description:
@@ -399,7 +399,7 @@ NTW_CAPACITOR_4:
     - "&7Capacity: &e1000000"
 
 NTW_POWER_OUTLET_1:
-  name: "&3Network Power Outlet (1)"
+  name: 'Network Power Outlet (1)'
   type:
     - "&7&oMachine"
   description:
@@ -412,7 +412,7 @@ NTW_POWER_OUTLET_1:
     - "&7Max Transfer: &e500"
 
 NTW_POWER_OUTLET_2:
-  name: "&3Network Power Outlet (2)"
+  name: 'Network Power Outlet (2)'
   type:
     - "&7&oMachine"
   description:
@@ -425,7 +425,7 @@ NTW_POWER_OUTLET_2:
     - "&7Max Transfer: &e2000"
 
 NTW_POWER_DISPLAY:
-  name: "&3Network Power Display"
+  name: 'Network Power Display'
   type:
     - "&7&oMachine"
   description:
@@ -434,7 +434,7 @@ NTW_POWER_DISPLAY:
     - "&7Simple, right?"
 
 NTW_RECIPE_ENCODER:
-  name: "&3Network Recipe Encoder"
+  name: 'Network Recipe Encoder'
   type:
     - "&7&oMachine"
   description:
@@ -444,7 +444,7 @@ NTW_RECIPE_ENCODER:
     - "&7Network Drain: &e20000&7/encode"
 
 NTW_AUTO_CRAFTER:
-  name: "&3Network Auto Crafter"
+  name: 'Network Auto Crafter'
   type:
     - "&7&oMachine"
   description:
@@ -458,7 +458,7 @@ NTW_AUTO_CRAFTER:
     - "&7Network Drain: &e64&7/craft"
 
 NTW_AUTO_CRAFTER_WITHHOLDING:
-  name: "&3Network Auto Crafter (Withholding)"
+  name: 'Network Auto Crafter (Withholding)'
   type:
     - "&7&oMachine"
   description:
@@ -477,7 +477,7 @@ NTW_AUTO_CRAFTER_WITHHOLDING:
     - "&7Network Drain: &e128&7/craft"
 
 NTW_CRAFTING_BLUEPRINT:
-  name: "&5Crafting Blueprint"
+  name: 'Crafting Blueprint'
   type:
     - "&7&oTool"
   description:
@@ -486,7 +486,7 @@ NTW_CRAFTING_BLUEPRINT:
     - "&7recipe."
 
 NTW_PROBE:
-  name: "&5Network Probe"
+  name: 'Network Probe'
   type:
     - "&7&oTool"
   description:
@@ -497,7 +497,7 @@ NTW_PROBE:
     - "&eRight Click&7 a Network Controller to view the summary."
 
 NTW_REMOTE:
-  name: "&5Network Remote"
+  name: 'Network Remote'
   type:
     - "&7&oTool"
   description:
@@ -507,7 +507,7 @@ NTW_REMOTE:
     - "&7Range: &e150"
 
 NTW_REMOTE_EMPOWERED:
-  name: "&5Network Remote Empowered"
+  name: 'Network Remote Empowered'
   type:
     - "&7&oTool"
   description:
@@ -517,7 +517,7 @@ NTW_REMOTE_EMPOWERED:
     - "&7Range: &e500"
 
 NTW_REMOTE_PRISTINE:
-  name: "&5Network Remote Pristine"
+  name: 'Network Remote Pristine'
   type:
     - "&7&oTool"
   description:
@@ -527,7 +527,7 @@ NTW_REMOTE_PRISTINE:
     - "&7Range: &eUnlimited"
 
 NTW_REMOTE_ULTIMATE:
-  name: "&5Network Remote Ultimate"
+  name: 'Network Remote Ultimate'
   type:
     - "&7&oTool"
   description:
@@ -537,7 +537,7 @@ NTW_REMOTE_ULTIMATE:
     - "&7Range: &eCross Dimensional"
 
 NTW_CRAYON:
-  name: "&5Network Crayon"
+  name: 'Network Crayon'
   type:
     - "&7&oTool"
   description:
@@ -548,7 +548,7 @@ NTW_CRAYON:
     - "&eRight Click&7 a Network Controller to toggle particle display."
 
 NTW_CONFIGURATOR:
-  name: "&5Network Configurator"
+  name: 'Network Configurator'
   type:
     - "&7&oTool"
   description:
@@ -560,7 +560,7 @@ NTW_CONFIGURATOR:
     - "&eShift Right Click&7: Store Config"
 
 NTW_WIRELESS_CONFIGURATOR:
-  name: "&5Network Wireless Configurator"
+  name: 'Network Wireless Configurator'
   type:
     - "&7&oTool"
   description:
@@ -571,7 +571,7 @@ NTW_WIRELESS_CONFIGURATOR:
     - "&eShift Right Click&7: Set Location to Transmitter"
 
 NTW_RAKE_1:
-  name: "&5Network Rake (1)"
+  name: 'Network Rake (1)'
   type:
     - "&7&oTool"
   description:
@@ -583,7 +583,7 @@ NTW_RAKE_1:
     - "&eRight Click&7 a Network Object to break it instantly."
 
 NTW_RAKE_2:
-  name: "&5Network Rake (2)"
+  name: 'Network Rake (2)'
   type:
     - "&7&oTool"
   description:
@@ -595,7 +595,7 @@ NTW_RAKE_2:
     - "&eRight Click&7 a Network Object to break it instantly."
 
 NTW_RAKE_3:
-  name: "&5Network Rake (3)"
+  name: 'Network Rake (3)'
   type:
     - "&7&oTool"
   description:
@@ -607,7 +607,7 @@ NTW_RAKE_3:
     - "&eRight Click&7 a Network Object to break it instantly."
 
 NTW_DEBUG_STICK:
-  name: "&5Network Debug Stick"
+  name: 'Network Debug Stick'
   type:
     - "&7&oTool"
   description:
@@ -617,7 +617,7 @@ NTW_DEBUG_STICK:
     - "&eRight Click&7 a Network Object to turn on debugging."
 
 NTW_BEST_PUSHER:
-  name: "&3Network Advanced Pusher"
+  name: 'Network Advanced Pusher'
   type:
     - "&7&oMachine"
   description:

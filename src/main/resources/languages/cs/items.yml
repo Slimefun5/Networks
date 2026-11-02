@@ -1,9 +1,9 @@
 NTW_ADVANCED_NANOBOTS:
-  name: '&bPokročilé nanoboty'
+  name: 'Pokročilé nanoboty'
   type:
   - '&7&oKomponenta'
 NTW_AI_CORE:
-  name: '&bJádro A.I.'
+  name: 'Jádro A.I.'
   type:
   - '&7&oKomponenta'
 NTW_AUTO_CRAFTER:
@@ -14,7 +14,7 @@ NTW_AUTO_CRAFTER:
   - '&7a v síti žádný není,'
   - '&7bude vyroben, pokud máš'
   - '&7materiály.'
-  name: '&3Síťový automatický výrobník'
+  name: 'Síťový automatický výrobník'
   stats:
   - '&7Odběr sítě: &e64&7/výrobu'
   type:
@@ -32,7 +32,7 @@ NTW_AUTO_CRAFTER_WITHHOLDING:
   - '&7vyrábět. Stack je vidět'
   - '&7v síti a je dostupný i pro'
   - '&7nákladní síť.'
-  name: '&3Síťový automatický výrobník (zadržující)'
+  name: 'Síťový automatický výrobník (zadržující)'
   stats:
   - '&7Odběr sítě: &e128&7/výrobu'
   type:
@@ -43,14 +43,14 @@ NTW_BEST_PUSHER:
   - '&7vtlačit odpovídající předměty až podle'
   - '&7dvanácti zadaných předloh do'
   - '&7zvoleného stroje.'
-  name: '&3Síťový pokročilý vtlačovač'
+  name: 'Síťový pokročilý vtlačovač'
   type:
   - '&7&oStroj'
 NTW_BRIDGE:
   description:
   - '&7Most umožňuje levně'
   - '&7propojit síťové objekty.'
-  name: '&3Síťový most'
+  name: 'Síťový most'
   type:
   - '&7&oStroj'
 NTW_CAPACITOR_1:
@@ -58,7 +58,7 @@ NTW_CAPACITOR_1:
   - '&7Síťový kondenzátor dokáže přijmout'
   - '&7energii a uložit ji pro použití'
   - '&7v rámci sítě.'
-  name: '&3Síťový kondenzátor (1)'
+  name: 'Síťový kondenzátor (1)'
   stats:
   - '&7Kapacita: &e1000'
   type:
@@ -68,7 +68,7 @@ NTW_CAPACITOR_2:
   - '&7Síťový kondenzátor dokáže přijmout'
   - '&7energii a uložit ji pro použití'
   - '&7v rámci sítě.'
-  name: '&3Síťový kondenzátor (2)'
+  name: 'Síťový kondenzátor (2)'
   stats:
   - '&7Kapacita: &e10000'
   type:
@@ -78,7 +78,7 @@ NTW_CAPACITOR_3:
   - '&7Síťový kondenzátor dokáže přijmout'
   - '&7energii a uložit ji pro použití'
   - '&7v rámci sítě.'
-  name: '&3Síťový kondenzátor (3)'
+  name: 'Síťový kondenzátor (3)'
   stats:
   - '&7Kapacita: &e100000'
   type:
@@ -88,7 +88,7 @@ NTW_CAPACITOR_4:
   - '&7Síťový kondenzátor dokáže přijmout'
   - '&7energii a uložit ji pro použití'
   - '&7v rámci sítě.'
-  name: '&3Síťový kondenzátor (4)'
+  name: 'Síťový kondenzátor (4)'
   stats:
   - '&7Kapacita: &e1000000'
   type:
@@ -99,7 +99,7 @@ NTW_CELL:
   - '&7inventář (dvojitá truhla), který lze'
   - '&7otevřít jak ze sítě,'
   - '&7tak ve světě.'
-  name: '&3Síťový článek'
+  name: 'Síťový článek'
   type:
   - '&7&oStroj'
 NTW_CONFIGURATOR:
@@ -107,7 +107,7 @@ NTW_CONFIGURATOR:
   - '&7Používá se ke zkopírování a vložení'
   - '&7nastavení směrových'
   - '&7rozhraní.'
-  name: '&5Síťový konfigurátor'
+  name: 'Síťový konfigurátor'
   type:
   - '&7&oNástroj'
   usage:
@@ -117,7 +117,7 @@ NTW_CONTROLLER:
   description:
   - '&7Síťový ovladač je mozkem'
   - '&7celé sítě.'
-  name: '&3Síťový ovladač'
+  name: 'Síťový ovladač'
   stats:
   - '&7Limit: &eMax 1&7 na síť'
   type:
@@ -128,7 +128,7 @@ NTW_CONTROL_V:
   - '&7''vložit'' blok ze sítě'
   - '&7do světa.'
   - '&7Funguje jen s vanilla bloky.'
-  name: '&3Síťové ovládání: V'
+  name: 'Síťové ovládání: V'
   stats:
   - '&7Odběr sítě: &e100&7/vložení'
   type:
@@ -140,7 +140,7 @@ NTW_CONTROL_X:
   - '&7a vložit jej do sítě.'
   - '&7Funguje jen na vanilla blocích bez'
   - '&7inventáře.'
-  name: '&3Síťové ovládání: X'
+  name: 'Síťové ovládání: X'
   stats:
   - '&7Odběr sítě: &e100&7/vyjmutí'
   type:
@@ -150,7 +150,7 @@ NTW_CRAFTING_BLUEPRINT:
   - '&7Prázdný plán, do kterého lze'
   - '&7uložit výrobní'
   - '&7recept.'
-  name: '&5Výrobní plán'
+  name: 'Výrobní plán'
   type:
   - '&7&oNástroj'
 NTW_CRAFTING_GRID:
@@ -159,7 +159,7 @@ NTW_CRAFTING_GRID:
   - '&7jako běžná mřížka, ale zobrazí méně'
   - '&7předmětů a umožní výrobu z předmětů'
   - '&7přímo ze sítě.'
-  name: '&3Síťová výrobní mřížka'
+  name: 'Síťová výrobní mřížka'
   type:
   - '&7&oStroj'
 NTW_CRAYON:
@@ -167,7 +167,7 @@ NTW_CRAYON:
   - '&7Přepíná ladicí zobrazení částic'
   - '&7v celé síti a ukazuje činnost uzlů'
   - '&7za provozu.'
-  name: '&5Síťová pastelka'
+  name: 'Síťová pastelka'
   type:
   - '&7&oNástroj'
   usage:
@@ -176,13 +176,13 @@ NTW_DEBUG_STICK:
   description:
   - '&7Diagnostický nástroj jen pro operátory,'
   - '&7slouží k ladění chování síťových bloků.'
-  name: '&5Síťová ladicí hůlka'
+  name: 'Síťová ladicí hůlka'
   type:
   - '&7&oNástroj'
   usage:
   - '&ePravý klik&7 na síťový objekt zapne ladění.'
 NTW_EMPOWERED_AI_CORE:
-  name: '&bPosílené jádro A.I.'
+  name: 'Posílené jádro A.I.'
   type:
   - '&7&oKomponenta'
 NTW_EXPORT:
@@ -191,7 +191,7 @@ NTW_EXPORT:
   - '&7aby neustále exportoval 1 stack'
   - '&7zadaného předmětu.'
   - '&7Umožňuje odběr předmětů nákladní sítí.'
-  name: '&3Síťový exportér'
+  name: 'Síťový exportér'
   type:
   - '&7&oStroj'
 NTW_GRABBER:
@@ -199,7 +199,7 @@ NTW_GRABBER:
   - '&7Síťový vytahovač se pokusí'
   - '&7vytáhnout první předmět, který najde'
   - '&7ve vybraném stroji.'
-  name: '&3Síťový vytahovač'
+  name: 'Síťový vytahovač'
   type:
   - '&7&oStroj'
 NTW_GREEDY_BLOCK:
@@ -210,7 +210,7 @@ NTW_GREEDY_BLOCK:
   - '&7stack. Pokud se další příchozí předměty'
   - '&7nevejdou, nedostanou se do'
   - '&7sítě.'
-  name: '&3Síťový lakomý blok'
+  name: 'Síťový lakomý blok'
   type:
   - '&7&oStroj'
 NTW_GRID:
@@ -219,7 +219,7 @@ NTW_GRID:
   - '&7předměty, které máš v síti,'
   - '&7a umožní ti je vkládat i vybírat'
   - '&7přímo.'
-  name: '&3Síťová mřížka'
+  name: 'Síťová mřížka'
   type:
   - '&7&oStroj'
 NTW_IMPORT:
@@ -227,13 +227,13 @@ NTW_IMPORT:
   - '&7Síťový importér vnese jakýkoli'
   - '&7předmět uvnitř sebe do sítě.'
   - '&7Přijímá předměty z nákladní sítě.'
-  name: '&3Síťový importér'
+  name: 'Síťový importér'
   stats:
   - '&7Míra importu: &eAž 9 stacků&7/tick'
   type:
   - '&7&oStroj'
 NTW_INTERDIMENSIONAL_PRESENCE:
-  name: '&bMezidimenzionální přítomnost'
+  name: 'Mezidimenzionální přítomnost'
   type:
   - '&7&oKomponenta'
 NTW_MONITOR:
@@ -244,7 +244,7 @@ NTW_MONITOR:
   - '&7Aktuálně podporuje:'
   - '&7Nekonečné sudy'
   - '&7Síťové schránky'
-  name: '&3Síťový monitor'
+  name: 'Síťový monitor'
   type:
   - '&7&oStroj'
 NTW_NETWORK_WIRELESS_RECEIVER:
@@ -255,7 +255,7 @@ NTW_NETWORK_WIRELESS_RECEIVER:
   - '&7ve stejném světě.'
   - '&7Přijaté předměty se pokusí vtlačit'
   - '&7do sítě každý tick.'
-  name: '&3Síťový bezdrátový přijímač'
+  name: 'Síťový bezdrátový přijímač'
   type:
   - '&7&oStroj'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
@@ -266,21 +266,21 @@ NTW_NETWORK_WIRELESS_TRANSMITTER:
   - '&7ve stejném světě.'
   - '&7K nastavení bezdrátového vysílače'
   - '&7použij Bezdrátový konfigurátor.'
-  name: '&3Síťový bezdrátový vysílač'
+  name: 'Síťový bezdrátový vysílač'
   stats:
   - '&7Vyžaduje 500 energie sítě na přenos.'
   type:
   - '&7&oStroj'
 NTW_OPTIC_CABLE:
-  name: '&bOptický kabel'
+  name: 'Optický kabel'
   type:
   - '&7&oKomponenta'
 NTW_OPTIC_GLASS:
-  name: '&bOptické sklo'
+  name: 'Optické sklo'
   type:
   - '&7&oKomponenta'
 NTW_OPTIC_STAR:
-  name: '&bOptická hvězda'
+  name: 'Optická hvězda'
   type:
   - '&7&oKomponenta'
 NTW_POWER_DISPLAY:
@@ -288,7 +288,7 @@ NTW_POWER_DISPLAY:
   - '&7Síťový displej energie zobrazí'
   - '&7množství energie v síti.'
   - '&7Jednoduché, že?'
-  name: '&3Síťový displej energie'
+  name: 'Síťový displej energie'
   type:
   - '&7&oStroj'
 NTW_POWER_OUTLET_1:
@@ -297,7 +297,7 @@ NTW_POWER_OUTLET_1:
   - '&7energii ze sítě k napájení'
   - '&7strojů nebo ji vrátit do'
   - '&7sítě EnergyNet.'
-  name: '&3Síťová energetická zásuvka (1)'
+  name: 'Síťová energetická zásuvka (1)'
   stats:
   - '&7Pracuje se ztrátou 20%.'
   - '&7Max. přenos: &e500'
@@ -309,14 +309,14 @@ NTW_POWER_OUTLET_2:
   - '&7energii ze sítě k napájení'
   - '&7strojů nebo ji vrátit do'
   - '&7sítě EnergyNet.'
-  name: '&3Síťová energetická zásuvka (2)'
+  name: 'Síťová energetická zásuvka (2)'
   stats:
   - '&7Pracuje se ztrátou 20%.'
   - '&7Max. přenos: &e2000'
   type:
   - '&7&oStroj'
 NTW_PRISTINE_AI_CORE:
-  name: '&bNeposkvrněné jádro A.I.'
+  name: 'Neposkvrněné jádro A.I.'
   type:
   - '&7&oKomponenta'
 NTW_PROBE:
@@ -324,7 +324,7 @@ NTW_PROBE:
   - '&7Zobrazí přehled sítě,'
   - '&7včetně její energie, počtu předmětů'
   - '&7a celkového počtu uzlů.'
-  name: '&5Síťová sonda'
+  name: 'Síťová sonda'
   type:
   - '&7&oNástroj'
   usage:
@@ -334,14 +334,14 @@ NTW_PUSHER:
   - '&7Síťový vtlačovač se pokusí'
   - '&7vtlačit odpovídající předmět podle'
   - '&7zadaného předmětu do zvoleného stroje.'
-  name: '&3Síťový vtlačovač'
+  name: 'Síťový vtlačovač'
   type:
   - '&7&oStroj'
 NTW_QUANTUM_STORAGE_1:
   description:
   - '&7Ukládá předměty v hromadném množství v'
   - '&7kvantové singularitě.'
-  name: '&3Síťové kvantové úložiště (4K)'
+  name: 'Síťové kvantové úložiště (4K)'
   stats:
   - '&7Ukládá &e4096&7 předmětů'
   type:
@@ -350,7 +350,7 @@ NTW_QUANTUM_STORAGE_2:
   description:
   - '&7Ukládá předměty v hromadném množství v'
   - '&7kvantové singularitě.'
-  name: '&3Síťové kvantové úložiště (32K)'
+  name: 'Síťové kvantové úložiště (32K)'
   stats:
   - '&7Ukládá &e32768&7 předmětů'
   type:
@@ -359,7 +359,7 @@ NTW_QUANTUM_STORAGE_3:
   description:
   - '&7Ukládá předměty v hromadném množství v'
   - '&7kvantové singularitě.'
-  name: '&3Síťové kvantové úložiště (262K)'
+  name: 'Síťové kvantové úložiště (262K)'
   stats:
   - '&7Ukládá &e262144&7 předmětů'
   type:
@@ -368,7 +368,7 @@ NTW_QUANTUM_STORAGE_4:
   description:
   - '&7Ukládá předměty v hromadném množství v'
   - '&7kvantové singularitě.'
-  name: '&3Síťové kvantové úložiště (2M)'
+  name: 'Síťové kvantové úložiště (2M)'
   stats:
   - '&7Ukládá &e2097152&7 předmětů'
   type:
@@ -377,7 +377,7 @@ NTW_QUANTUM_STORAGE_5:
   description:
   - '&7Ukládá předměty v hromadném množství v'
   - '&7kvantové singularitě.'
-  name: '&3Síťové kvantové úložiště (16M)'
+  name: 'Síťové kvantové úložiště (16M)'
   stats:
   - '&7Ukládá &e16777216&7 předmětů'
   type:
@@ -386,7 +386,7 @@ NTW_QUANTUM_STORAGE_6:
   description:
   - '&7Ukládá předměty v hromadném množství v'
   - '&7kvantové singularitě.'
-  name: '&3Síťové kvantové úložiště (134M)'
+  name: 'Síťové kvantové úložiště (134M)'
   stats:
   - '&7Ukládá &e134217728&7 předmětů'
   type:
@@ -395,7 +395,7 @@ NTW_QUANTUM_STORAGE_7:
   description:
   - '&7Ukládá předměty v hromadném množství v'
   - '&7kvantové singularitě.'
-  name: '&3Síťové kvantové úložiště (1B)'
+  name: 'Síťové kvantové úložiště (1B)'
   stats:
   - '&7Ukládá &e1073741824&7 předmětů'
   type:
@@ -404,7 +404,7 @@ NTW_QUANTUM_STORAGE_8:
   description:
   - '&7Ukládá předměty v hromadném množství v'
   - '&7kvantové singularitě.'
-  name: '&3Síťové kvantové úložiště (∞)'
+  name: 'Síťové kvantové úložiště (∞)'
   stats:
   - '&7Ukládá &e∞&7 předmětů... skoro'
   type:
@@ -412,18 +412,18 @@ NTW_QUANTUM_STORAGE_8:
 NTW_QUANTUM_WORKBENCH:
   description:
   - '&7Umožňuje výrobu kvantových úložišť.'
-  name: '&3Síťový kvantový pracovní stůl'
+  name: 'Síťový kvantový pracovní stůl'
   type:
   - '&7&oStroj'
 NTW_RADIOACTIVE_OPTIC_STAR:
-  name: '&bRadioaktivní optická hvězda'
+  name: 'Radioaktivní optická hvězda'
   type:
   - '&7&oKomponenta'
 NTW_RAKE_1:
   description:
   - '&7Ruční nástroj pro rychlou demontáž'
   - '&7síťových objektů bez strojů.'
-  name: '&5Síťové hrábě (1)'
+  name: 'Síťové hrábě (1)'
   stats:
   - '&e250 použití &7zbývá'
   type:
@@ -434,7 +434,7 @@ NTW_RAKE_2:
   description:
   - '&7Ruční nástroj pro rychlou demontáž'
   - '&7síťových objektů bez strojů.'
-  name: '&5Síťové hrábě (2)'
+  name: 'Síťové hrábě (2)'
   stats:
   - '&e1000 použití &7zbývá'
   type:
@@ -445,7 +445,7 @@ NTW_RAKE_3:
   description:
   - '&7Ruční nástroj pro rychlou demontáž'
   - '&7síťových objektů bez strojů.'
-  name: '&5Síťové hrábě (3)'
+  name: 'Síťové hrábě (3)'
   stats:
   - '&e9999 použití &7zbývá'
   type:
@@ -456,7 +456,7 @@ NTW_RECIPE_ENCODER:
   description:
   - '&7Používá se k vytvoření výrobního plánu'
   - '&7ze vstupních předmětů.'
-  name: '&3Síťový kodér receptů'
+  name: 'Síťový kodér receptů'
   stats:
   - '&7Odběr sítě: &e20000&7/zakódování'
   type:
@@ -465,7 +465,7 @@ NTW_REMOTE:
   description:
   - '&7Bezdrátově otevře propojenou mřížku.'
   - '&7Chunk s mřížkou musí být načtený.'
-  name: '&5Síťový dálkový ovladač'
+  name: 'Síťový dálkový ovladač'
   stats:
   - '&7Dosah: &e150'
   type:
@@ -474,7 +474,7 @@ NTW_REMOTE_EMPOWERED:
   description:
   - '&7Bezdrátově otevře propojenou mřížku.'
   - '&7Chunk s mřížkou musí být načtený.'
-  name: '&5Posílený síťový dálkový ovladač'
+  name: 'Posílený síťový dálkový ovladač'
   stats:
   - '&7Dosah: &e500'
   type:
@@ -483,7 +483,7 @@ NTW_REMOTE_PRISTINE:
   description:
   - '&7Bezdrátově otevře propojenou mřížku.'
   - '&7Chunk s mřížkou musí být načtený.'
-  name: '&5Neposkvrněný síťový dálkový ovladač'
+  name: 'Neposkvrněný síťový dálkový ovladač'
   stats:
   - '&7Dosah: &eNeomezený'
   type:
@@ -492,21 +492,21 @@ NTW_REMOTE_ULTIMATE:
   description:
   - '&7Bezdrátově otevře propojenou mřížku.'
   - '&7Chunk s mřížkou musí být načtený.'
-  name: '&5Dokonalý síťový dálkový ovladač'
+  name: 'Dokonalý síťový dálkový ovladač'
   stats:
   - '&7Dosah: &eNapříč dimenzemi'
   type:
   - '&7&oNástroj'
 NTW_SHRINKING_BASE:
-  name: '&bZmenšovací základna'
+  name: 'Zmenšovací základna'
   type:
   - '&7&oKomponenta'
 NTW_SIMPLE_NANOBOTS:
-  name: '&bJednoduché nanoboty'
+  name: 'Jednoduché nanoboty'
   type:
   - '&7&oKomponenta'
 NTW_SYNTHETIC_EMERALD_SHARD:
-  name: '&bSyntetický smaragdový střep'
+  name: 'Syntetický smaragdový střep'
   type:
   - '&7&oKomponenta'
 NTW_TRASH:
@@ -515,7 +515,7 @@ NTW_TRASH:
   - '&7odpovídající předměty ze sítě'
   - '&7a okamžitě je zničí.'
   - '&7Používej s velkou opatrností!'
-  name: '&3Síťový likvidátor'
+  name: 'Síťový likvidátor'
   type:
   - '&7&oStroj'
 NTW_VACUUM:
@@ -525,7 +525,7 @@ NTW_VACUUM:
   - '&74 x 4 se středem na sobě.'
   - '&7Nasáté předměty se pokusí projít'
   - '&7do sítě.'
-  name: '&3Síťový vysavač'
+  name: 'Síťový vysavač'
   stats:
   - '&7Odběr sítě: &e100&7/tick'
   type:
@@ -537,7 +537,7 @@ NTW_VANILLA_GRABBER:
   - '&7zvoleného vanilla inventáře.'
   - '&7Předměty z tohoto uzlu musíš'
   - '&7vytahovat pomocí Vytahovače.'
-  name: '&3Síťový vanilla vytahovač'
+  name: 'Síťový vanilla vytahovač'
   type:
   - '&7&oStroj'
 NTW_VANILLA_PUSHER:
@@ -547,14 +547,14 @@ NTW_VANILLA_PUSHER:
   - '&7zvoleného vanilla inventáře.'
   - '&7Předměty do tohoto uzlu musíš'
   - '&7vtlačovat pomocí Vtlačovače.'
-  name: '&3Síťový vanilla vtlačovač'
+  name: 'Síťový vanilla vtlačovač'
   type:
   - '&7&oStroj'
 NTW_WIRELESS_CONFIGURATOR:
   description:
   - '&7Uloží pozici přijímače'
   - '&7a poté ji použije na vysílač.'
-  name: '&5Síťový bezdrátový konfigurátor'
+  name: 'Síťový bezdrátový konfigurátor'
   type:
   - '&7&oNástroj'
   usage:

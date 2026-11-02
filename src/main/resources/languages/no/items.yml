@@ -1,9 +1,9 @@
 NTW_ADVANCED_NANOBOTS:
-  name: '&bAvanserte nanoroboter'
+  name: 'Avanserte nanoroboter'
   type:
   - '&7&oKomponent'
 NTW_AI_CORE:
-  name: '&bKI-kjerne'
+  name: 'KI-kjerne'
   type:
   - '&7&oKomponent'
 NTW_AUTO_CRAFTER:
@@ -14,7 +14,7 @@ NTW_AUTO_CRAFTER:
   - '&7mens det ikke finnes noen i nettverket,'
   - '&7lages den hvis du har'
   - '&7materialer.'
-  name: '&3Nettverksautohåndverker'
+  name: 'Nettverksautohåndverker'
   stats:
   - '&7Nettverksforbruk: &e64&7/håndverk'
   type:
@@ -32,7 +32,7 @@ NTW_AUTO_CRAFTER_WITHHOLDING:
   - '&7å lage. Stabelen kan ses'
   - '&7i nettverket og åpner også for'
   - '&7frakt.'
-  name: '&3Nettverksautohåndverker (tilbakeholdende)'
+  name: 'Nettverksautohåndverker (tilbakeholdende)'
   stats:
   - '&7Nettverksforbruk: &e128&7/håndverk'
   type:
@@ -43,14 +43,14 @@ NTW_BEST_PUSHER:
   - '&7å dytte tilsvarende gjenstander fra opptil'
   - '&7tolv gitte maler inn i den'
   - '&7valgte maskinen.'
-  name: '&3Nettverks avanserte dytter'
+  name: 'Nettverks avanserte dytter'
   type:
   - '&7&oMaskin'
 NTW_BRIDGE:
   description:
   - '&7Broen lar deg billig'
   - '&7koble nettverksobjekter sammen.'
-  name: '&3Nettverksbro'
+  name: 'Nettverksbro'
   type:
   - '&7&oMaskin'
 NTW_CAPACITOR_1:
@@ -58,7 +58,7 @@ NTW_CAPACITOR_1:
   - '&7Nettverkskondensatoren kan ta'
   - '&7imot kraft og lagre den til bruk'
   - '&7innenfor nettverket.'
-  name: '&3Nettverkskondensator (1)'
+  name: 'Nettverkskondensator (1)'
   stats:
   - '&7Kapasitet: &e1000'
   type:
@@ -68,7 +68,7 @@ NTW_CAPACITOR_2:
   - '&7Nettverkskondensatoren kan ta'
   - '&7imot kraft og lagre den til bruk'
   - '&7innenfor nettverket.'
-  name: '&3Nettverkskondensator (2)'
+  name: 'Nettverkskondensator (2)'
   stats:
   - '&7Kapasitet: &e10000'
   type:
@@ -78,7 +78,7 @@ NTW_CAPACITOR_3:
   - '&7Nettverkskondensatoren kan ta'
   - '&7imot kraft og lagre den til bruk'
   - '&7innenfor nettverket.'
-  name: '&3Nettverkskondensator (3)'
+  name: 'Nettverkskondensator (3)'
   stats:
   - '&7Kapasitet: &e100000'
   type:
@@ -88,7 +88,7 @@ NTW_CAPACITOR_4:
   - '&7Nettverkskondensatoren kan ta'
   - '&7imot kraft og lagre den til bruk'
   - '&7innenfor nettverket.'
-  name: '&3Nettverkskondensator (4)'
+  name: 'Nettverkskondensator (4)'
   stats:
   - '&7Kapasitet: &e1000000'
   type:
@@ -99,7 +99,7 @@ NTW_CELL:
   - '&7inventar (dobbel kiste) som kan'
   - '&7nås både fra nettverket'
   - '&7og ute i verden.'
-  name: '&3Nettverkscelle'
+  name: 'Nettverkscelle'
   type:
   - '&7&oMaskin'
 NTW_CONFIGURATOR:
@@ -107,7 +107,7 @@ NTW_CONFIGURATOR:
   - '&7Brukes til å kopiere og lime inn'
   - '&7oppsettet til retningsbestemte'
   - '&7grensesnitt.'
-  name: '&5Nettverkskonfigurator'
+  name: 'Nettverkskonfigurator'
   type:
   - '&7&oVerktøy'
   usage:
@@ -117,7 +117,7 @@ NTW_CONTROLLER:
   description:
   - '&7Nettverkskontrolleren er hjernen'
   - '&7for hele nettverket.'
-  name: '&3Nettverkskontroller'
+  name: 'Nettverkskontroller'
   stats:
   - '&7Grense: &eMaks 1&7 per nettverk'
   type:
@@ -128,7 +128,7 @@ NTW_CONTROL_V:
   - '&7å ''lime inn'' en blokk fra nettverket'
   - '&7ut i verden.'
   - '&7Virker bare med vanilla-blokker.'
-  name: '&3Nettverkskontroll: V'
+  name: 'Nettverkskontroll: V'
   stats:
   - '&7Nettverksforbruk: &e100&7/innliming'
   type:
@@ -140,7 +140,7 @@ NTW_CONTROL_X:
   - '&7og legge den inn i nettverket.'
   - '&7Virker bare på vanilla-blokker uten'
   - '&7inventarer.'
-  name: '&3Nettverkskontroll: X'
+  name: 'Nettverkskontroll: X'
   stats:
   - '&7Nettverksforbruk: &e100&7/utklipp'
   type:
@@ -150,7 +150,7 @@ NTW_CRAFTING_BLUEPRINT:
   - '&7En tom tegning som kan'
   - '&7brukes til å lagre en'
   - '&7håndverksoppskrift.'
-  name: '&5Håndverkstegning'
+  name: 'Håndverkstegning'
   type:
   - '&7&oVerktøy'
 NTW_CRAFTING_GRID:
@@ -159,7 +159,7 @@ NTW_CRAFTING_GRID:
   - '&7som et vanlig rutenett, men viser færre'
   - '&7gjenstander og tillater håndverk med gjenstander'
   - '&7direkte fra nettverket.'
-  name: '&3Nettverkshåndverksrutenett'
+  name: 'Nettverkshåndverksrutenett'
   type:
   - '&7&oMaskin'
 NTW_CRAYON:
@@ -167,7 +167,7 @@ NTW_CRAYON:
   - '&7Slår av og på en nettverksdekkende feilsøkings-'
   - '&7partikkelvisning som viser nodeaktivitet'
   - '&7mens den pågår.'
-  name: '&5Nettverksfargestift'
+  name: 'Nettverksfargestift'
   type:
   - '&7&oVerktøy'
   usage:
@@ -176,13 +176,13 @@ NTW_DEBUG_STICK:
   description:
   - '&7Et diagnoseverktøy kun for operatører, brukt'
   - '&7til å feilsøke oppførselen til nettverksblokker.'
-  name: '&5Nettverksfeilsøkingspinne'
+  name: 'Nettverksfeilsøkingspinne'
   type:
   - '&7&oVerktøy'
   usage:
   - '&eHøyreklikk&7 et nettverksobjekt for å slå på feilsøking.'
 NTW_EMPOWERED_AI_CORE:
-  name: '&bStyrket KI-kjerne'
+  name: 'Styrket KI-kjerne'
   type:
   - '&7&oKomponent'
 NTW_EXPORT:
@@ -191,7 +191,7 @@ NTW_EXPORT:
   - '&7stadig å eksportere 1 stabel av en'
   - '&7gitt gjenstand.'
   - '&7Tillater uttak av gjenstander fra frakt.'
-  name: '&3Nettverkseksportør'
+  name: 'Nettverkseksportør'
   type:
   - '&7&oMaskin'
 NTW_GRABBER:
@@ -199,7 +199,7 @@ NTW_GRABBER:
   - '&7Nettverksgriperen vil prøve'
   - '&7å gripe den første gjenstanden den finner'
   - '&7inne i den valgte maskinen.'
-  name: '&3Nettverksgriper'
+  name: 'Nettverksgriper'
   type:
   - '&7&oMaskin'
 NTW_GREEDY_BLOCK:
@@ -210,7 +210,7 @@ NTW_GREEDY_BLOCK:
   - '&7stabel. Hvis flere innkommende gjenstander'
   - '&7ikke får plass, kommer de ikke inn i'
   - '&7nettverket.'
-  name: '&3Grådig nettverksblokk'
+  name: 'Grådig nettverksblokk'
   type:
   - '&7&oMaskin'
 NTW_GRID:
@@ -219,7 +219,7 @@ NTW_GRID:
   - '&7gjenstandene du har i nettverket'
   - '&7og lar deg sette inn eller ta ut'
   - '&7direkte.'
-  name: '&3Nettverksrutenett'
+  name: 'Nettverksrutenett'
   type:
   - '&7&oMaskin'
 NTW_IMPORT:
@@ -227,13 +227,13 @@ NTW_IMPORT:
   - '&7Nettverksimportøren fører enhver'
   - '&7gjenstand inni den inn i nettverket.'
   - '&7Tar imot gjenstander fra frakt.'
-  name: '&3Nettverksimportør'
+  name: 'Nettverksimportør'
   stats:
   - '&7Importrate: &eOpptil 9 stabler&7/tikk'
   type:
   - '&7&oMaskin'
 NTW_INTERDIMENSIONAL_PRESENCE:
-  name: '&bInterdimensjonalt nærvær'
+  name: 'Interdimensjonalt nærvær'
   type:
   - '&7&oKomponent'
 NTW_MONITOR:
@@ -244,7 +244,7 @@ NTW_MONITOR:
   - '&7Støtter for øyeblikket:'
   - '&7Uendelige tønner'
   - '&7Nettverksskall'
-  name: '&3Nettverksovervåker'
+  name: 'Nettverksovervåker'
   type:
   - '&7&oMaskin'
 NTW_NETWORK_WIRELESS_RECEIVER:
@@ -255,7 +255,7 @@ NTW_NETWORK_WIRELESS_RECEIVER:
   - '&7den samme verdenen.'
   - '&7Den vil prøve å dytte mottatte gjenstander'
   - '&7inn i nettverket hvert tikk.'
-  name: '&3Nettverk trådløs mottaker'
+  name: 'Nettverk trådløs mottaker'
   type:
   - '&7&oMaskin'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
@@ -266,21 +266,21 @@ NTW_NETWORK_WIRELESS_TRANSMITTER:
   - '&7som ligger innenfor samme verden.'
   - '&7Bruk den trådløse konfiguratoren til å'
   - '&7sette opp den trådløse senderen.'
-  name: '&3Nettverk trådløs sender'
+  name: 'Nettverk trådløs sender'
   stats:
   - '&7Krever 500 nettverkskraft per overføring.'
   type:
   - '&7&oMaskin'
 NTW_OPTIC_CABLE:
-  name: '&bOptisk kabel'
+  name: 'Optisk kabel'
   type:
   - '&7&oKomponent'
 NTW_OPTIC_GLASS:
-  name: '&bOptisk glass'
+  name: 'Optisk glass'
   type:
   - '&7&oKomponent'
 NTW_OPTIC_STAR:
-  name: '&bOptisk stjerne'
+  name: 'Optisk stjerne'
   type:
   - '&7&oKomponent'
 NTW_POWER_DISPLAY:
@@ -288,7 +288,7 @@ NTW_POWER_DISPLAY:
   - '&7Nettverkets kraftvisning vil'
   - '&7vise kraften i nettverket.'
   - '&7Enkelt, ikke sant?'
-  name: '&3Nettverkskraftvisning'
+  name: 'Nettverkskraftvisning'
   type:
   - '&7&oMaskin'
 NTW_POWER_OUTLET_1:
@@ -297,7 +297,7 @@ NTW_POWER_OUTLET_1:
   - '&7kraft fra nettverket for å drive'
   - '&7maskiner eller mate tilbake til et'
   - '&7EnergyNet-nettverk.'
-  name: '&3Nettverksstrømuttak (1)'
+  name: 'Nettverksstrømuttak (1)'
   stats:
   - '&7Drives med 20% tap.'
   - '&7Maks overføring: &e500'
@@ -309,14 +309,14 @@ NTW_POWER_OUTLET_2:
   - '&7kraft fra nettverket for å drive'
   - '&7maskiner eller mate tilbake til et'
   - '&7EnergyNet-nettverk.'
-  name: '&3Nettverksstrømuttak (2)'
+  name: 'Nettverksstrømuttak (2)'
   stats:
   - '&7Drives med 20% tap.'
   - '&7Maks overføring: &e2000'
   type:
   - '&7&oMaskin'
 NTW_PRISTINE_AI_CORE:
-  name: '&bPlettfri KI-kjerne'
+  name: 'Plettfri KI-kjerne'
   type:
   - '&7&oKomponent'
 NTW_PROBE:
@@ -324,7 +324,7 @@ NTW_PROBE:
   - '&7Viser et sammendrag av et nettverk,'
   - '&7inkludert kraften, antall gjenstander'
   - '&7og antall noder.'
-  name: '&5Nettverkssonde'
+  name: 'Nettverkssonde'
   type:
   - '&7&oVerktøy'
   usage:
@@ -334,14 +334,14 @@ NTW_PUSHER:
   - '&7Nettverksdytteren vil prøve'
   - '&7å dytte en tilsvarende gjenstand fra en'
   - '&7gitt gjenstand inn i den valgte maskinen.'
-  name: '&3Nettverksdytter'
+  name: 'Nettverksdytter'
   type:
   - '&7&oMaskin'
 NTW_QUANTUM_STORAGE_1:
   description:
   - '&7Lagrer gjenstander i enorme mengder inne i'
   - '&7en kvantesingularitet.'
-  name: '&3Nettverkskvantelagring (4K)'
+  name: 'Nettverkskvantelagring (4K)'
   stats:
   - '&7Lagrer &e4096&7 gjenstander'
   type:
@@ -350,7 +350,7 @@ NTW_QUANTUM_STORAGE_2:
   description:
   - '&7Lagrer gjenstander i enorme mengder inne i'
   - '&7en kvantesingularitet.'
-  name: '&3Nettverkskvantelagring (32K)'
+  name: 'Nettverkskvantelagring (32K)'
   stats:
   - '&7Lagrer &e32768&7 gjenstander'
   type:
@@ -359,7 +359,7 @@ NTW_QUANTUM_STORAGE_3:
   description:
   - '&7Lagrer gjenstander i enorme mengder inne i'
   - '&7en kvantesingularitet.'
-  name: '&3Nettverkskvantelagring (262K)'
+  name: 'Nettverkskvantelagring (262K)'
   stats:
   - '&7Lagrer &e262144&7 gjenstander'
   type:
@@ -368,7 +368,7 @@ NTW_QUANTUM_STORAGE_4:
   description:
   - '&7Lagrer gjenstander i enorme mengder inne i'
   - '&7en kvantesingularitet.'
-  name: '&3Nettverkskvantelagring (2M)'
+  name: 'Nettverkskvantelagring (2M)'
   stats:
   - '&7Lagrer &e2097152&7 gjenstander'
   type:
@@ -377,7 +377,7 @@ NTW_QUANTUM_STORAGE_5:
   description:
   - '&7Lagrer gjenstander i enorme mengder inne i'
   - '&7en kvantesingularitet.'
-  name: '&3Nettverkskvantelagring (16M)'
+  name: 'Nettverkskvantelagring (16M)'
   stats:
   - '&7Lagrer &e16777216&7 gjenstander'
   type:
@@ -386,7 +386,7 @@ NTW_QUANTUM_STORAGE_6:
   description:
   - '&7Lagrer gjenstander i enorme mengder inne i'
   - '&7en kvantesingularitet.'
-  name: '&3Nettverkskvantelagring (134M)'
+  name: 'Nettverkskvantelagring (134M)'
   stats:
   - '&7Lagrer &e134217728&7 gjenstander'
   type:
@@ -395,7 +395,7 @@ NTW_QUANTUM_STORAGE_7:
   description:
   - '&7Lagrer gjenstander i enorme mengder inne i'
   - '&7en kvantesingularitet.'
-  name: '&3Nettverkskvantelagring (1B)'
+  name: 'Nettverkskvantelagring (1B)'
   stats:
   - '&7Lagrer &e1073741824&7 gjenstander'
   type:
@@ -404,7 +404,7 @@ NTW_QUANTUM_STORAGE_8:
   description:
   - '&7Lagrer gjenstander i enorme mengder inne i'
   - '&7en kvantesingularitet.'
-  name: '&3Nettverkskvantelagring (∞)'
+  name: 'Nettverkskvantelagring (∞)'
   stats:
   - '&7Lagrer &e∞&7 gjenstander... nesten'
   type:
@@ -412,18 +412,18 @@ NTW_QUANTUM_STORAGE_8:
 NTW_QUANTUM_WORKBENCH:
   description:
   - '&7Tillater håndverk av kvantelagringer.'
-  name: '&3Nettverkskvante-arbeidsbenk'
+  name: 'Nettverkskvante-arbeidsbenk'
   type:
   - '&7&oMaskin'
 NTW_RADIOACTIVE_OPTIC_STAR:
-  name: '&bRadioaktiv optisk stjerne'
+  name: 'Radioaktiv optisk stjerne'
   type:
   - '&7&oKomponent'
 NTW_RAKE_1:
   description:
   - '&7Et håndholdt verktøy for raskt å demontere'
   - '&7nettverksobjekter uten maskineri.'
-  name: '&5Nettverksrive (1)'
+  name: 'Nettverksrive (1)'
   stats:
   - '&e250 bruk &7igjen'
   type:
@@ -434,7 +434,7 @@ NTW_RAKE_2:
   description:
   - '&7Et håndholdt verktøy for raskt å demontere'
   - '&7nettverksobjekter uten maskineri.'
-  name: '&5Nettverksrive (2)'
+  name: 'Nettverksrive (2)'
   stats:
   - '&e1000 bruk &7igjen'
   type:
@@ -445,7 +445,7 @@ NTW_RAKE_3:
   description:
   - '&7Et håndholdt verktøy for raskt å demontere'
   - '&7nettverksobjekter uten maskineri.'
-  name: '&5Nettverksrive (3)'
+  name: 'Nettverksrive (3)'
   stats:
   - '&e9999 bruk &7igjen'
   type:
@@ -456,7 +456,7 @@ NTW_RECIPE_ENCODER:
   description:
   - '&7Brukes til å lage en håndverkstegning'
   - '&7fra inngangsgjenstander.'
-  name: '&3Nettverksoppskriftskoder'
+  name: 'Nettverksoppskriftskoder'
   stats:
   - '&7Nettverksforbruk: &e20000&7/koding'
   type:
@@ -465,7 +465,7 @@ NTW_REMOTE:
   description:
   - '&7Åpner et bundet rutenett trådløst.'
   - '&7Rutenettet må ligge i en lastet chunk.'
-  name: '&5Nettverksfjernkontroll'
+  name: 'Nettverksfjernkontroll'
   stats:
   - '&7Rekkevidde: &e150'
   type:
@@ -474,7 +474,7 @@ NTW_REMOTE_EMPOWERED:
   description:
   - '&7Åpner et bundet rutenett trådløst.'
   - '&7Rutenettet må ligge i en lastet chunk.'
-  name: '&5Nettverksfjernkontroll styrket'
+  name: 'Nettverksfjernkontroll styrket'
   stats:
   - '&7Rekkevidde: &e500'
   type:
@@ -483,7 +483,7 @@ NTW_REMOTE_PRISTINE:
   description:
   - '&7Åpner et bundet rutenett trådløst.'
   - '&7Rutenettet må ligge i en lastet chunk.'
-  name: '&5Nettverksfjernkontroll plettfri'
+  name: 'Nettverksfjernkontroll plettfri'
   stats:
   - '&7Rekkevidde: &eUbegrenset'
   type:
@@ -492,21 +492,21 @@ NTW_REMOTE_ULTIMATE:
   description:
   - '&7Åpner et bundet rutenett trådløst.'
   - '&7Rutenettet må ligge i en lastet chunk.'
-  name: '&5Nettverksfjernkontroll ultimat'
+  name: 'Nettverksfjernkontroll ultimat'
   stats:
   - '&7Rekkevidde: &eTvers av dimensjoner'
   type:
   - '&7&oVerktøy'
 NTW_SHRINKING_BASE:
-  name: '&bKrympebase'
+  name: 'Krympebase'
   type:
   - '&7&oKomponent'
 NTW_SIMPLE_NANOBOTS:
-  name: '&bEnkle nanoroboter'
+  name: 'Enkle nanoroboter'
   type:
   - '&7&oKomponent'
 NTW_SYNTHETIC_EMERALD_SHARD:
-  name: '&bSyntetisk smaragdskår'
+  name: 'Syntetisk smaragdskår'
   type:
   - '&7&oKomponent'
 NTW_TRASH:
@@ -515,7 +515,7 @@ NTW_TRASH:
   - '&7tilsvarende gjenstander ut av nettverket'
   - '&7og slette dem umiddelbart.'
   - '&7Brukes med stor forsiktighet!'
-  name: '&3Nettverksrenser'
+  name: 'Nettverksrenser'
   type:
   - '&7&oMaskin'
 NTW_VACUUM:
@@ -525,7 +525,7 @@ NTW_VACUUM:
   - '&7en 4 x 4 rekkevidde rundt seg selv.'
   - '&7Oppsugde gjenstander vil prøve å dytte'
   - '&7seg inn i nettverket.'
-  name: '&3Nettverksstøvsuger'
+  name: 'Nettverksstøvsuger'
   stats:
   - '&7Nettverksforbruk: &e100&7/tikk'
   type:
@@ -537,7 +537,7 @@ NTW_VANILLA_GRABBER:
   - '&7det valgte vanilla-inventaret.'
   - '&7Du må hente gjenstander fra denne'
   - '&7noden med en griper.'
-  name: '&3Nettverkets vanilla-griper'
+  name: 'Nettverkets vanilla-griper'
   type:
   - '&7&oMaskin'
 NTW_VANILLA_PUSHER:
@@ -547,14 +547,14 @@ NTW_VANILLA_PUSHER:
   - '&7det valgte vanilla-inventaret.'
   - '&7Du må dytte gjenstander inn i denne'
   - '&7noden fra en dytter.'
-  name: '&3Nettverkets vanilla-dytter'
+  name: 'Nettverkets vanilla-dytter'
   type:
   - '&7&oMaskin'
 NTW_WIRELESS_CONFIGURATOR:
   description:
   - '&7Brukes til å lagre en mottakerplassering'
   - '&7og deretter overføre den til en sender.'
-  name: '&5Nettverk trådløs konfigurator'
+  name: 'Nettverk trådløs konfigurator'
   type:
   - '&7&oVerktøy'
   usage:

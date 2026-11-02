@@ -1,9 +1,9 @@
 NTW_ADVANCED_NANOBOTS:
-  name: '&bGelişmiş Nanobotlar'
+  name: 'Gelişmiş Nanobotlar'
   type:
   - '&7&oBileşen'
 NTW_AI_CORE:
-  name: '&bY.Z. Çekirdeği'
+  name: 'Y.Z. Çekirdeği'
   type:
   - '&7&oBileşen'
 NTW_AUTO_CRAFTER:
@@ -14,7 +14,7 @@ NTW_AUTO_CRAFTER:
   - '&7o eşyadan yoksa, üretim için'
   - '&7gereken tüm'
   - '&7malzemeleriniz varsa üretilir.'
-  name: '&3Ağ Otomatik Üreticisi'
+  name: 'Ağ Otomatik Üreticisi'
   stats:
   - '&7Ağ Tüketimi: &e64&7/üretim'
   type:
@@ -32,7 +32,7 @@ NTW_AUTO_CRAFTER_WITHHOLDING:
   - '&7Bu yığın Ağda görünür ve ayrıca'
   - '&7şuna da olanak tanır:'
   - '&7kargo.'
-  name: '&3Ağ Otomatik Üreticisi (Stoklayan)'
+  name: 'Ağ Otomatik Üreticisi (Stoklayan)'
   stats:
   - '&7Ağ Tüketimi: &e128&7/üretim'
   type:
@@ -43,14 +43,14 @@ NTW_BEST_PUSHER:
   - '&7şablona kadar eşleşen eşyaları'
   - '&7seçilen makinenin içine itmeye'
   - '&7çalışır.'
-  name: '&3Ağ Gelişmiş İticisi'
+  name: 'Ağ Gelişmiş İticisi'
   type:
   - '&7&oMakine'
 NTW_BRIDGE:
   description:
   - '&7Köprü, ağ nesnelerini birbirine ucuza'
   - '&7bağlamanı sağlar.'
-  name: '&3Ağ Köprüsü'
+  name: 'Ağ Köprüsü'
   type:
   - '&7&oMakine'
 NTW_CAPACITOR_1:
@@ -58,7 +58,7 @@ NTW_CAPACITOR_1:
   - '&7Ağ Kapasitörü güç alabilir ve'
   - '&7bu gücü ağ içinde kullanılmak'
   - '&7üzere depolar.'
-  name: '&3Ağ Kapasitörü (1)'
+  name: 'Ağ Kapasitörü (1)'
   stats:
   - '&7Kapasite: &e1000'
   type:
@@ -68,7 +68,7 @@ NTW_CAPACITOR_2:
   - '&7Ağ Kapasitörü güç alabilir ve'
   - '&7bu gücü ağ içinde kullanılmak'
   - '&7üzere depolar.'
-  name: '&3Ağ Kapasitörü (2)'
+  name: 'Ağ Kapasitörü (2)'
   stats:
   - '&7Kapasite: &e10000'
   type:
@@ -78,7 +78,7 @@ NTW_CAPACITOR_3:
   - '&7Ağ Kapasitörü güç alabilir ve'
   - '&7bu gücü ağ içinde kullanılmak'
   - '&7üzere depolar.'
-  name: '&3Ağ Kapasitörü (3)'
+  name: 'Ağ Kapasitörü (3)'
   stats:
   - '&7Kapasite: &e100000'
   type:
@@ -88,7 +88,7 @@ NTW_CAPACITOR_4:
   - '&7Ağ Kapasitörü güç alabilir ve'
   - '&7bu gücü ağ içinde kullanılmak'
   - '&7üzere depolar.'
-  name: '&3Ağ Kapasitörü (4)'
+  name: 'Ağ Kapasitörü (4)'
   stats:
   - '&7Kapasite: &e1000000'
   type:
@@ -99,7 +99,7 @@ NTW_CELL:
   - '&7dünyadan erişilebilen büyük'
   - '&7(çift sandık) bir'
   - '&7envanterdir.'
-  name: '&3Ağ Hücresi'
+  name: 'Ağ Hücresi'
   type:
   - '&7&oMakine'
 NTW_CONFIGURATOR:
@@ -107,7 +107,7 @@ NTW_CONFIGURATOR:
   - '&7Yönlü arayüzlerin ayarlarını'
   - '&7kopyalayıp yapıştırmak için'
   - '&7kullanılır.'
-  name: '&5Ağ Yapılandırıcısı'
+  name: 'Ağ Yapılandırıcısı'
   type:
   - '&7&oAlet'
   usage:
@@ -117,7 +117,7 @@ NTW_CONTROLLER:
   description:
   - '&7Ağ Kontrolcüsü, tüm ağın'
   - '&7beynidir.'
-  name: '&3Ağ Kontrolcüsü'
+  name: 'Ağ Kontrolcüsü'
   stats:
   - '&7Sınır: &eEn fazla 1&7 ağ başına'
   type:
@@ -128,7 +128,7 @@ NTW_CONTROL_V:
   - '&7dünyaya ''yapıştırmaya'''
   - '&7çalışır.'
   - '&7Yalnızca vanilla bloklarla çalışır.'
-  name: '&3Ağ Kontrol: V'
+  name: 'Ağ Kontrol: V'
   stats:
   - '&7Ağ Tüketimi: &e100&7/yapıştırma'
   type:
@@ -140,7 +140,7 @@ NTW_CONTROL_X:
   - '&7koymaya çalışır.'
   - '&7Yalnızca envanteri olmayan vanilla'
   - '&7bloklarda çalışır.'
-  name: '&3Ağ Kontrol: X'
+  name: 'Ağ Kontrol: X'
   stats:
   - '&7Ağ Tüketimi: &e100&7/kesme'
   type:
@@ -150,7 +150,7 @@ NTW_CRAFTING_BLUEPRINT:
   - '&7Bir üretim tarifi saklamak için'
   - '&7kullanılabilen boş bir'
   - '&7plan.'
-  name: '&5Üretim Planı'
+  name: 'Üretim Planı'
   type:
   - '&7&oAlet'
 NTW_CRAFTING_GRID:
@@ -159,7 +159,7 @@ NTW_CRAFTING_GRID:
   - '&7gibi çalışır, daha az eşya gösterir'
   - '&7ama doğrudan ağdaki eşyalarla'
   - '&7üretim yapmanı sağlar.'
-  name: '&3Ağ Üretim Izgarası'
+  name: 'Ağ Üretim Izgarası'
   type:
   - '&7&oMakine'
 NTW_CRAYON:
@@ -167,7 +167,7 @@ NTW_CRAYON:
   - '&7Ağ genelinde hata ayıklama parçacık'
   - '&7gösterimini açıp kapatır; düğüm'
   - '&7etkinliğini görselleştirir.'
-  name: '&5Ağ Boya Kalemi'
+  name: 'Ağ Boya Kalemi'
   type:
   - '&7&oAlet'
   usage:
@@ -176,13 +176,13 @@ NTW_DEBUG_STICK:
   description:
   - '&7Ağ bloklarının davranışını ayıklamak'
   - '&7için yalnızca yetkililere özel bir tanı aleti.'
-  name: '&5Ağ Hata Ayıklama Çubuğu'
+  name: 'Ağ Hata Ayıklama Çubuğu'
   type:
   - '&7&oAlet'
   usage:
   - '&eSağ Tık&7 ile bir Ağ Nesnesinde hata ayıklamayı aç.'
 NTW_EMPOWERED_AI_CORE:
-  name: '&bGüçlendirilmiş Y.Z. Çekirdeği'
+  name: 'Güçlendirilmiş Y.Z. Çekirdeği'
   type:
   - '&7&oBileşen'
 NTW_EXPORT:
@@ -191,7 +191,7 @@ NTW_EXPORT:
   - '&7eşyadan sürekli 1 yığın dışa'
   - '&7aktaracak şekilde ayarlanabilir.'
   - '&7Kargoya eşya çekilmesine izin verir.'
-  name: '&3Ağ Dışa Aktarıcısı'
+  name: 'Ağ Dışa Aktarıcısı'
   type:
   - '&7&oMakine'
 NTW_GRABBER:
@@ -199,7 +199,7 @@ NTW_GRABBER:
   - '&7Ağ Tutucusu, seçilen makinenin'
   - '&7içinde bulduğu ilk eşyayı'
   - '&7almaya çalışır.'
-  name: '&3Ağ Tutucusu'
+  name: 'Ağ Tutucusu'
   type:
   - '&7&oMakine'
 NTW_GREEDY_BLOCK:
@@ -210,7 +210,7 @@ NTW_GREEDY_BLOCK:
   - '&7tutar. Gelen fazla eşyalar sığmazsa'
   - '&7onlar ağa'
   - '&7giremez.'
-  name: '&3Ağ Açgözlü Bloğu'
+  name: 'Ağ Açgözlü Bloğu'
   type:
   - '&7&oMakine'
 NTW_GRID:
@@ -219,7 +219,7 @@ NTW_GRID:
   - '&7eşyaları gösterir ve doğrudan'
   - '&7eşya koymanı ya da çekmeni'
   - '&7sağlar.'
-  name: '&3Ağ Izgarası'
+  name: 'Ağ Izgarası'
   type:
   - '&7&oMakine'
 NTW_IMPORT:
@@ -227,13 +227,13 @@ NTW_IMPORT:
   - '&7Ağ İçe Aktarıcısı, içindeki her'
   - '&7eşyayı ağa taşır.'
   - '&7Kargodan eşya kabul eder.'
-  name: '&3Ağ İçe Aktarıcısı'
+  name: 'Ağ İçe Aktarıcısı'
   stats:
   - '&7İçe Aktarma Hızı: &e9 yığına kadar&7/tik'
   type:
   - '&7&oMakine'
 NTW_INTERDIMENSIONAL_PRESENCE:
-  name: '&bBoyutlar Arası Varlık'
+  name: 'Boyutlar Arası Varlık'
   type:
   - '&7&oBileşen'
 NTW_MONITOR:
@@ -244,7 +244,7 @@ NTW_MONITOR:
   - '&7Şu An Desteklenenler:'
   - '&7Sonsuzluk Fıçıları'
   - '&7Ağ Kabukları'
-  name: '&3Ağ Monitörü'
+  name: 'Ağ Monitörü'
   type:
   - '&7&oMakine'
 NTW_NETWORK_WIRELESS_RECEIVER:
@@ -255,7 +255,7 @@ NTW_NETWORK_WIRELESS_RECEIVER:
   - '&7bulunmalıdır.'
   - '&7Aldığı eşyaları her tik Ağın içine'
   - '&7itmeye çalışır.'
-  name: '&3Ağ Kablosuz Alıcısı'
+  name: 'Ağ Kablosuz Alıcısı'
   type:
   - '&7&oMakine'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
@@ -266,21 +266,21 @@ NTW_NETWORK_WIRELESS_TRANSMITTER:
   - '&7çalışır.'
   - '&7Kablosuz Vericiyi ayarlamak için'
   - '&7Kablosuz Yapılandırıcıyı kullan.'
-  name: '&3Ağ Kablosuz Vericisi'
+  name: 'Ağ Kablosuz Vericisi'
   stats:
   - '&7Aktarım başına 500 Ağ Gücü gerektirir.'
   type:
   - '&7&oMakine'
 NTW_OPTIC_CABLE:
-  name: '&bOptik Kablo'
+  name: 'Optik Kablo'
   type:
   - '&7&oBileşen'
 NTW_OPTIC_GLASS:
-  name: '&bOptik Cam'
+  name: 'Optik Cam'
   type:
   - '&7&oBileşen'
 NTW_OPTIC_STAR:
-  name: '&bOptik Yıldız'
+  name: 'Optik Yıldız'
   type:
   - '&7&oBileşen'
 NTW_POWER_DISPLAY:
@@ -288,7 +288,7 @@ NTW_POWER_DISPLAY:
   - '&7Ağ Güç Göstergesi, ağdaki gücü'
   - '&7ekranda gösterir.'
   - '&7Basit, değil mi?'
-  name: '&3Ağ Güç Göstergesi'
+  name: 'Ağ Güç Göstergesi'
   type:
   - '&7&oMakine'
 NTW_POWER_OUTLET_1:
@@ -297,7 +297,7 @@ NTW_POWER_OUTLET_1:
   - '&7Ağdan güç alarak makineleri'
   - '&7makinelere aktarır ya da bir'
   - '&7EnergyNet ağına geri besler.'
-  name: '&3Ağ Güç Çıkışı (1)'
+  name: 'Ağ Güç Çıkışı (1)'
   stats:
   - '&7%20 kayıp oranıyla çalışır.'
   - '&7Azami Aktarım: &e500'
@@ -309,14 +309,14 @@ NTW_POWER_OUTLET_2:
   - '&7Ağdan güç alarak makineleri'
   - '&7makinelere aktarır ya da bir'
   - '&7EnergyNet ağına geri besler.'
-  name: '&3Ağ Güç Çıkışı (2)'
+  name: 'Ağ Güç Çıkışı (2)'
   stats:
   - '&7%20 kayıp oranıyla çalışır.'
   - '&7Azami Aktarım: &e2000'
   type:
   - '&7&oMakine'
 NTW_PRISTINE_AI_CORE:
-  name: '&bKusursuz Y.Z. Çekirdeği'
+  name: 'Kusursuz Y.Z. Çekirdeği'
   type:
   - '&7&oBileşen'
 NTW_PROBE:
@@ -324,7 +324,7 @@ NTW_PROBE:
   - '&7Bir Ağın özetini gösterir;'
   - '&7gücünü, eşya sayılarını'
   - '&7ve düğüm toplamlarını içerir.'
-  name: '&5Ağ Sondası'
+  name: 'Ağ Sondası'
   type:
   - '&7&oAlet'
   usage:
@@ -334,14 +334,14 @@ NTW_PUSHER:
   - '&7Ağ İticisi, verilen bir eşyayla'
   - '&7eşleşen bir eşyayı seçilen'
   - '&7makineye itmeye çalışır.'
-  name: '&3Ağ İticisi'
+  name: 'Ağ İticisi'
   type:
   - '&7&oMakine'
 NTW_QUANTUM_STORAGE_1:
   description:
   - '&7Eşyaları bir kuantum tekilliğinde'
   - '&7büyük miktarlarda depolar.'
-  name: '&3Ağ Kuantum Depolama (4K)'
+  name: 'Ağ Kuantum Depolama (4K)'
   stats:
   - '&7Depolar: &e4096&7 eşya'
   type:
@@ -350,7 +350,7 @@ NTW_QUANTUM_STORAGE_2:
   description:
   - '&7Eşyaları bir kuantum tekilliğinde'
   - '&7büyük miktarlarda depolar.'
-  name: '&3Ağ Kuantum Depolama (32K)'
+  name: 'Ağ Kuantum Depolama (32K)'
   stats:
   - '&7Depolar: &e32768&7 eşya'
   type:
@@ -359,7 +359,7 @@ NTW_QUANTUM_STORAGE_3:
   description:
   - '&7Eşyaları bir kuantum tekilliğinde'
   - '&7büyük miktarlarda depolar.'
-  name: '&3Ağ Kuantum Depolama (262K)'
+  name: 'Ağ Kuantum Depolama (262K)'
   stats:
   - '&7Depolar: &e262144&7 eşya'
   type:
@@ -368,7 +368,7 @@ NTW_QUANTUM_STORAGE_4:
   description:
   - '&7Eşyaları bir kuantum tekilliğinde'
   - '&7büyük miktarlarda depolar.'
-  name: '&3Ağ Kuantum Depolama (2M)'
+  name: 'Ağ Kuantum Depolama (2M)'
   stats:
   - '&7Depolar: &e2097152&7 eşya'
   type:
@@ -377,7 +377,7 @@ NTW_QUANTUM_STORAGE_5:
   description:
   - '&7Eşyaları bir kuantum tekilliğinde'
   - '&7büyük miktarlarda depolar.'
-  name: '&3Ağ Kuantum Depolama (16M)'
+  name: 'Ağ Kuantum Depolama (16M)'
   stats:
   - '&7Depolar: &e16777216&7 eşya'
   type:
@@ -386,7 +386,7 @@ NTW_QUANTUM_STORAGE_6:
   description:
   - '&7Eşyaları bir kuantum tekilliğinde'
   - '&7büyük miktarlarda depolar.'
-  name: '&3Ağ Kuantum Depolama (134M)'
+  name: 'Ağ Kuantum Depolama (134M)'
   stats:
   - '&7Depolar: &e134217728&7 eşya'
   type:
@@ -395,7 +395,7 @@ NTW_QUANTUM_STORAGE_7:
   description:
   - '&7Eşyaları bir kuantum tekilliğinde'
   - '&7büyük miktarlarda depolar.'
-  name: '&3Ağ Kuantum Depolama (1B)'
+  name: 'Ağ Kuantum Depolama (1B)'
   stats:
   - '&7Depolar: &e1073741824&7 eşya'
   type:
@@ -404,7 +404,7 @@ NTW_QUANTUM_STORAGE_8:
   description:
   - '&7Eşyaları bir kuantum tekilliğinde'
   - '&7büyük miktarlarda depolar.'
-  name: '&3Ağ Kuantum Depolama (∞)'
+  name: 'Ağ Kuantum Depolama (∞)'
   stats:
   - '&7Depolar: &e∞&7 eşya... neredeyse'
   type:
@@ -412,18 +412,18 @@ NTW_QUANTUM_STORAGE_8:
 NTW_QUANTUM_WORKBENCH:
   description:
   - '&7Kuantum Depolamaların üretilmesini sağlar.'
-  name: '&3Ağ Kuantum Tezgahı'
+  name: 'Ağ Kuantum Tezgahı'
   type:
   - '&7&oMakine'
 NTW_RADIOACTIVE_OPTIC_STAR:
-  name: '&bRadyoaktif Optik Yıldız'
+  name: 'Radyoaktif Optik Yıldız'
   type:
   - '&7&oBileşen'
 NTW_RAKE_1:
   description:
   - '&7Ağ Nesnelerini makine olmadan hızlıca'
   - '&7sökmek için el tipi bir alet.'
-  name: '&5Ağ Tırmığı (1)'
+  name: 'Ağ Tırmığı (1)'
   stats:
   - '&e250 Kullanım &7kaldı'
   type:
@@ -434,7 +434,7 @@ NTW_RAKE_2:
   description:
   - '&7Ağ Nesnelerini makine olmadan hızlıca'
   - '&7sökmek için el tipi bir alet.'
-  name: '&5Ağ Tırmığı (2)'
+  name: 'Ağ Tırmığı (2)'
   stats:
   - '&e1000 Kullanım &7kaldı'
   type:
@@ -445,7 +445,7 @@ NTW_RAKE_3:
   description:
   - '&7Ağ Nesnelerini makine olmadan hızlıca'
   - '&7sökmek için el tipi bir alet.'
-  name: '&5Ağ Tırmığı (3)'
+  name: 'Ağ Tırmığı (3)'
   stats:
   - '&e9999 Kullanım &7kaldı'
   type:
@@ -456,7 +456,7 @@ NTW_RECIPE_ENCODER:
   description:
   - '&7Girdi eşyalarından bir Üretim Planı'
   - '&7oluşturmak için kullanılır.'
-  name: '&3Ağ Tarif Kodlayıcısı'
+  name: 'Ağ Tarif Kodlayıcısı'
   stats:
   - '&7Ağ Tüketimi: &e20000&7/kodlama'
   type:
@@ -465,7 +465,7 @@ NTW_REMOTE:
   description:
   - '&7Bağlı bir ızgarayı kablosuz açar.'
   - '&7Izgaranın bulunduğu bölüm yüklü olmalı.'
-  name: '&5Ağ Kumandası'
+  name: 'Ağ Kumandası'
   stats:
   - '&7Menzil: &e150'
   type:
@@ -474,7 +474,7 @@ NTW_REMOTE_EMPOWERED:
   description:
   - '&7Bağlı bir ızgarayı kablosuz açar.'
   - '&7Izgaranın bulunduğu bölüm yüklü olmalı.'
-  name: '&5Ağ Kumandası Güçlendirilmiş'
+  name: 'Ağ Kumandası Güçlendirilmiş'
   stats:
   - '&7Menzil: &e500'
   type:
@@ -483,7 +483,7 @@ NTW_REMOTE_PRISTINE:
   description:
   - '&7Bağlı bir ızgarayı kablosuz açar.'
   - '&7Izgaranın bulunduğu bölüm yüklü olmalı.'
-  name: '&5Ağ Kumandası Kusursuz'
+  name: 'Ağ Kumandası Kusursuz'
   stats:
   - '&7Menzil: &eSınırsız'
   type:
@@ -492,21 +492,21 @@ NTW_REMOTE_ULTIMATE:
   description:
   - '&7Bağlı bir ızgarayı kablosuz açar.'
   - '&7Izgaranın bulunduğu bölüm yüklü olmalı.'
-  name: '&5Ağ Kumandası Nihai'
+  name: 'Ağ Kumandası Nihai'
   stats:
   - '&7Menzil: &eBoyutlar Arası'
   type:
   - '&7&oAlet'
 NTW_SHRINKING_BASE:
-  name: '&bKüçültme Tabanı'
+  name: 'Küçültme Tabanı'
   type:
   - '&7&oBileşen'
 NTW_SIMPLE_NANOBOTS:
-  name: '&bBasit Nanobotlar'
+  name: 'Basit Nanobotlar'
   type:
   - '&7&oBileşen'
 NTW_SYNTHETIC_EMERALD_SHARD:
-  name: '&bSentetik Zümrüt Parçası'
+  name: 'Sentetik Zümrüt Parçası'
   type:
   - '&7&oBileşen'
 NTW_TRASH:
@@ -515,7 +515,7 @@ NTW_TRASH:
   - '&7ağdan çeker ve'
   - '&7anında yok eder.'
   - '&7Çok dikkatli kullan!'
-  name: '&3Ağ Temizleyicisi'
+  name: 'Ağ Temizleyicisi'
   type:
   - '&7&oMakine'
 NTW_VACUUM:
@@ -525,7 +525,7 @@ NTW_VACUUM:
   - '&7menzili kendi merkezli 4 x 4 kadardır.'
   - '&7Çekilen eşyalar Ağın içine'
   - '&7itilmeye çalışılır.'
-  name: '&3Ağ Süpürgesi'
+  name: 'Ağ Süpürgesi'
   stats:
   - '&7Ağ Tüketimi: &e100&7/tik'
   type:
@@ -537,7 +537,7 @@ NTW_VANILLA_GRABBER:
   - '&7seçilen vanilla envanteri.'
   - '&7Bu düğümden eşyaları bir Tutucu'
   - '&7kullanarak almalısın.'
-  name: '&3Ağ Vanilla Tutucusu'
+  name: 'Ağ Vanilla Tutucusu'
   type:
   - '&7&oMakine'
 NTW_VANILLA_PUSHER:
@@ -547,14 +547,14 @@ NTW_VANILLA_PUSHER:
   - '&7seçilen vanilla envanteri.'
   - '&7Bu düğüme eşyaları bir İticiyle'
   - '&7itmelisin.'
-  name: '&3Ağ Vanilla İticisi'
+  name: 'Ağ Vanilla İticisi'
   type:
   - '&7&oMakine'
 NTW_WIRELESS_CONFIGURATOR:
   description:
   - '&7Bir Alıcı konumunu saklayıp sonra'
   - '&7bir Vericiye uygulamak için kullanılır.'
-  name: '&5Ağ Kablosuz Yapılandırıcısı'
+  name: 'Ağ Kablosuz Yapılandırıcısı'
   type:
   - '&7&oAlet'
   usage:

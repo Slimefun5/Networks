@@ -1,9 +1,9 @@
 NTW_ADVANCED_NANOBOTS:
-  name: '&bNanobot Canggih'
+  name: 'Nanobot Canggih'
   type:
   - '&7&oKomponen'
 NTW_AI_CORE:
-  name: '&bInti A.I.'
+  name: 'Inti A.I.'
   type:
   - '&7&oKomponen'
 NTW_AUTO_CRAFTER:
@@ -14,7 +14,7 @@ NTW_AUTO_CRAFTER:
   - '&7sementara tidak ada di jaringan'
   - '&7ia akan dibuat jika Anda punya'
   - '&7bahannya.'
-  name: '&3Perakit Otomatis Jaringan'
+  name: 'Perakit Otomatis Jaringan'
   stats:
   - '&7Konsumsi Jaringan: &e64&7/buat'
   type:
@@ -32,7 +32,7 @@ NTW_AUTO_CRAFTER_WITHHOLDING:
   - '&7membuat. Tumpukan itu dapat terlihat'
   - '&7di Jaringan dan juga memungkinkan'
   - '&7kargo.'
-  name: '&3Perakit Otomatis Jaringan (Penahan)'
+  name: 'Perakit Otomatis Jaringan (Penahan)'
   stats:
   - '&7Konsumsi Jaringan: &e128&7/buat'
   type:
@@ -43,14 +43,14 @@ NTW_BEST_PUSHER:
   - '&7mendorong item yang cocok dari hingga'
   - '&7dua belas templat yang ditentukan ke'
   - '&7mesin yang dipilih.'
-  name: '&3Pendorong Canggih Jaringan'
+  name: 'Pendorong Canggih Jaringan'
   type:
   - '&7&oMesin'
 NTW_BRIDGE:
   description:
   - '&7Jembatan memungkinkan Anda untuk'
   - '&7menghubungkan objek jaringan dengan murah.'
-  name: '&3Jembatan Jaringan'
+  name: 'Jembatan Jaringan'
   type:
   - '&7&oMesin'
 NTW_CAPACITOR_1:
@@ -58,7 +58,7 @@ NTW_CAPACITOR_1:
   - '&7Kapasitor Jaringan dapat menerima'
   - '&7daya dan menyimpannya untuk digunakan'
   - '&7di dalam jaringan.'
-  name: '&3Kapasitor Jaringan (1)'
+  name: 'Kapasitor Jaringan (1)'
   stats:
   - '&7Kapasitas: &e1000'
   type:
@@ -68,7 +68,7 @@ NTW_CAPACITOR_2:
   - '&7Kapasitor Jaringan dapat menerima'
   - '&7daya dan menyimpannya untuk digunakan'
   - '&7di dalam jaringan.'
-  name: '&3Kapasitor Jaringan (2)'
+  name: 'Kapasitor Jaringan (2)'
   stats:
   - '&7Kapasitas: &e10000'
   type:
@@ -78,7 +78,7 @@ NTW_CAPACITOR_3:
   - '&7Kapasitor Jaringan dapat menerima'
   - '&7daya dan menyimpannya untuk digunakan'
   - '&7di dalam jaringan.'
-  name: '&3Kapasitor Jaringan (3)'
+  name: 'Kapasitor Jaringan (3)'
   stats:
   - '&7Kapasitas: &e100000'
   type:
@@ -88,7 +88,7 @@ NTW_CAPACITOR_4:
   - '&7Kapasitor Jaringan dapat menerima'
   - '&7daya dan menyimpannya untuk digunakan'
   - '&7di dalam jaringan.'
-  name: '&3Kapasitor Jaringan (4)'
+  name: 'Kapasitor Jaringan (4)'
   stats:
   - '&7Kapasitas: &e1000000'
   type:
@@ -99,7 +99,7 @@ NTW_CELL:
   - '&7(peti ganda) yang dapat'
   - '&7diakses baik dari jaringan'
   - '&7maupun di dalam dunia.'
-  name: '&3Sel Jaringan'
+  name: 'Sel Jaringan'
   type:
   - '&7&oMesin'
 NTW_CONFIGURATOR:
@@ -107,7 +107,7 @@ NTW_CONFIGURATOR:
   - '&7Digunakan untuk menyalin dan menempel'
   - '&7konfigurasi antarmuka'
   - '&7berarah.'
-  name: '&5Konfigurator Jaringan'
+  name: 'Konfigurator Jaringan'
   type:
   - '&7&oAlat'
   usage:
@@ -117,7 +117,7 @@ NTW_CONTROLLER:
   description:
   - '&7Pengendali Jaringan adalah otak'
   - '&7bagi seluruh jaringan.'
-  name: '&3Pengendali Jaringan'
+  name: 'Pengendali Jaringan'
   stats:
   - '&7Batas: &eMaks 1&7 per jaringan'
   type:
@@ -128,7 +128,7 @@ NTW_CONTROL_V:
   - '&7untuk ''menempel'' blok dari Jaringan'
   - '&7ke dalam dunia.'
   - '&7Hanya bekerja dengan blok vanilla.'
-  name: '&3Kendali Jaringan: V'
+  name: 'Kendali Jaringan: V'
   stats:
   - '&7Konsumsi Jaringan: &e100&7/tempel'
   type:
@@ -140,7 +140,7 @@ NTW_CONTROL_X:
   - '&7dan menaruhnya ke dalam Jaringan.'
   - '&7Hanya bekerja pada blok vanilla tanpa'
   - '&7inventaris.'
-  name: '&3Kendali Jaringan: X'
+  name: 'Kendali Jaringan: X'
   stats:
   - '&7Konsumsi Jaringan: &e100&7/potong'
   type:
@@ -150,7 +150,7 @@ NTW_CRAFTING_BLUEPRINT:
   - '&7Cetak biru kosong yang dapat'
   - '&7digunakan untuk menyimpan resep'
   - '&7kerajinan.'
-  name: '&5Cetak Biru Kerajinan'
+  name: 'Cetak Biru Kerajinan'
   type:
   - '&7&oAlat'
 NTW_CRAFTING_GRID:
@@ -159,7 +159,7 @@ NTW_CRAFTING_GRID:
   - '&7seperti kisi biasa tetapi menampilkan lebih sedikit'
   - '&7item, namun memungkinkan pembuatan dengan item'
   - '&7langsung dari jaringan.'
-  name: '&3Kisi Kerajinan Jaringan'
+  name: 'Kisi Kerajinan Jaringan'
   type:
   - '&7&oMesin'
 NTW_CRAYON:
@@ -167,7 +167,7 @@ NTW_CRAYON:
   - '&7Mengalihkan tampilan partikel awakutu'
   - '&7seluruh jaringan, memvisualkan aktivitas simpul'
   - '&7selagi bekerja.'
-  name: '&5Krayon Jaringan'
+  name: 'Krayon Jaringan'
   type:
   - '&7&oAlat'
   usage:
@@ -176,13 +176,13 @@ NTW_DEBUG_STICK:
   description:
   - '&7Alat diagnostik khusus operator yang'
   - '&7dipakai mengawakutu perilaku blok Jaringan.'
-  name: '&5Tongkat Awakutu Jaringan'
+  name: 'Tongkat Awakutu Jaringan'
   type:
   - '&7&oAlat'
   usage:
   - '&eKlik Kanan&7 Objek Jaringan untuk menyalakan pengawakutuan.'
 NTW_EMPOWERED_AI_CORE:
-  name: '&bInti A.I. Berdaya'
+  name: 'Inti A.I. Berdaya'
   type:
   - '&7&oKomponen'
 NTW_EXPORT:
@@ -191,7 +191,7 @@ NTW_EXPORT:
   - '&7terus mengekspor 1 tumpukan dari'
   - '&7item mana pun yang ditentukan.'
   - '&7Menerima penarikan item dari kargo.'
-  name: '&3Pengekspor Jaringan'
+  name: 'Pengekspor Jaringan'
   type:
   - '&7&oMesin'
 NTW_GRABBER:
@@ -199,7 +199,7 @@ NTW_GRABBER:
   - '&7Penyambar Jaringan akan mencoba'
   - '&7menyambar item pertama yang ditemukan'
   - '&7dari dalam mesin yang dipilih.'
-  name: '&3Penyambar Jaringan'
+  name: 'Penyambar Jaringan'
   type:
   - '&7&oMesin'
 NTW_GREEDY_BLOCK:
@@ -210,7 +210,7 @@ NTW_GREEDY_BLOCK:
   - '&7tumpukan. Jika item masuk lainnya'
   - '&7tidak muat, mereka tidak akan masuk'
   - '&7ke jaringan.'
-  name: '&3Blok Rakus Jaringan'
+  name: 'Blok Rakus Jaringan'
   type:
   - '&7&oMesin'
 NTW_GRID:
@@ -219,7 +219,7 @@ NTW_GRID:
   - '&7item yang Anda miliki di jaringan'
   - '&7dan memungkinkan Anda memasukkan atau menarik'
   - '&7secara langsung.'
-  name: '&3Kisi Jaringan'
+  name: 'Kisi Jaringan'
   type:
   - '&7&oMesin'
 NTW_IMPORT:
@@ -227,13 +227,13 @@ NTW_IMPORT:
   - '&7Pengimpor Jaringan membawa setiap'
   - '&7item di dalamnya ke dalam jaringan.'
   - '&7Menerima item masuk dari kargo.'
-  name: '&3Pengimpor Jaringan'
+  name: 'Pengimpor Jaringan'
   stats:
   - '&7Laju Impor: &eHingga 9 tumpukan&7/tik'
   type:
   - '&7&oMesin'
 NTW_INTERDIMENSIONAL_PRESENCE:
-  name: '&bKehadiran Antardimensi'
+  name: 'Kehadiran Antardimensi'
   type:
   - '&7&oKomponen'
 NTW_MONITOR:
@@ -244,7 +244,7 @@ NTW_MONITOR:
   - '&7Saat Ini Mendukung:'
   - '&7Tong Tak Terbatas'
   - '&7Cangkang Jaringan'
-  name: '&3Monitor Jaringan'
+  name: 'Monitor Jaringan'
   type:
   - '&7&oMesin'
 NTW_NETWORK_WIRELESS_RECEIVER:
@@ -255,7 +255,7 @@ NTW_NETWORK_WIRELESS_RECEIVER:
   - '&7dunia yang sama.'
   - '&7Ia akan mencoba mendorong item yang diterima'
   - '&7ke dalam Jaringan setiap tik.'
-  name: '&3Penerima Nirkabel Jaringan'
+  name: 'Penerima Nirkabel Jaringan'
   type:
   - '&7&oMesin'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
@@ -266,21 +266,21 @@ NTW_NETWORK_WIRELESS_TRANSMITTER:
   - '&7yang berada dalam dunia yang sama.'
   - '&7Gunakan Konfigurator Nirkabel untuk'
   - '&7menyiapkan Pemancar Nirkabel.'
-  name: '&3Pemancar Nirkabel Jaringan'
+  name: 'Pemancar Nirkabel Jaringan'
   stats:
   - '&7Memerlukan 500 Daya Jaringan per transfer.'
   type:
   - '&7&oMesin'
 NTW_OPTIC_CABLE:
-  name: '&bKabel Optik'
+  name: 'Kabel Optik'
   type:
   - '&7&oKomponen'
 NTW_OPTIC_GLASS:
-  name: '&bKaca Optik'
+  name: 'Kaca Optik'
   type:
   - '&7&oKomponen'
 NTW_OPTIC_STAR:
-  name: '&bBintang Optik'
+  name: 'Bintang Optik'
   type:
   - '&7&oKomponen'
 NTW_POWER_DISPLAY:
@@ -288,7 +288,7 @@ NTW_POWER_DISPLAY:
   - '&7Tampilan Daya Jaringan akan'
   - '&7menampilkan daya di dalam jaringan.'
   - '&7Sederhana, bukan?'
-  name: '&3Tampilan Daya Jaringan'
+  name: 'Tampilan Daya Jaringan'
   type:
   - '&7&oMesin'
 NTW_POWER_OUTLET_1:
@@ -297,7 +297,7 @@ NTW_POWER_OUTLET_1:
   - '&7daya dari Jaringan untuk menyalakan'
   - '&7mesin atau mengalirkannya kembali ke'
   - '&7jaringan EnergyNet.'
-  name: '&3Stopkontak Daya Jaringan (1)'
+  name: 'Stopkontak Daya Jaringan (1)'
   stats:
   - '&7Beroperasi dengan laju kehilangan 20%.'
   - '&7Transfer Maks: &e500'
@@ -309,14 +309,14 @@ NTW_POWER_OUTLET_2:
   - '&7daya dari Jaringan untuk menyalakan'
   - '&7mesin atau mengalirkannya kembali ke'
   - '&7jaringan EnergyNet.'
-  name: '&3Stopkontak Daya Jaringan (2)'
+  name: 'Stopkontak Daya Jaringan (2)'
   stats:
   - '&7Beroperasi dengan laju kehilangan 20%.'
   - '&7Transfer Maks: &e2000'
   type:
   - '&7&oMesin'
 NTW_PRISTINE_AI_CORE:
-  name: '&bInti A.I. Murni'
+  name: 'Inti A.I. Murni'
   type:
   - '&7&oKomponen'
 NTW_PROBE:
@@ -324,7 +324,7 @@ NTW_PROBE:
   - '&7Menampilkan ringkasan sebuah Jaringan,'
   - '&7termasuk dayanya, jumlah item'
   - '&7dan total simpul.'
-  name: '&5Penyelidik Jaringan'
+  name: 'Penyelidik Jaringan'
   type:
   - '&7&oAlat'
   usage:
@@ -334,14 +334,14 @@ NTW_PUSHER:
   - '&7Pendorong Jaringan akan mencoba'
   - '&7mendorong item yang cocok dari'
   - '&7item tertentu ke mesin yang dipilih.'
-  name: '&3Pendorong Jaringan'
+  name: 'Pendorong Jaringan'
   type:
   - '&7&oMesin'
 NTW_QUANTUM_STORAGE_1:
   description:
   - '&7Menyimpan item dalam kuantitas massal di dalam'
   - '&7sebuah singularitas kuantum.'
-  name: '&3Penyimpanan Kuantum Jaringan (4K)'
+  name: 'Penyimpanan Kuantum Jaringan (4K)'
   stats:
   - '&7Menyimpan &e4096&7 item'
   type:
@@ -350,7 +350,7 @@ NTW_QUANTUM_STORAGE_2:
   description:
   - '&7Menyimpan item dalam kuantitas massal di dalam'
   - '&7sebuah singularitas kuantum.'
-  name: '&3Penyimpanan Kuantum Jaringan (32K)'
+  name: 'Penyimpanan Kuantum Jaringan (32K)'
   stats:
   - '&7Menyimpan &e32768&7 item'
   type:
@@ -359,7 +359,7 @@ NTW_QUANTUM_STORAGE_3:
   description:
   - '&7Menyimpan item dalam kuantitas massal di dalam'
   - '&7sebuah singularitas kuantum.'
-  name: '&3Penyimpanan Kuantum Jaringan (262K)'
+  name: 'Penyimpanan Kuantum Jaringan (262K)'
   stats:
   - '&7Menyimpan &e262144&7 item'
   type:
@@ -368,7 +368,7 @@ NTW_QUANTUM_STORAGE_4:
   description:
   - '&7Menyimpan item dalam kuantitas massal di dalam'
   - '&7sebuah singularitas kuantum.'
-  name: '&3Penyimpanan Kuantum Jaringan (2M)'
+  name: 'Penyimpanan Kuantum Jaringan (2M)'
   stats:
   - '&7Menyimpan &e2097152&7 item'
   type:
@@ -377,7 +377,7 @@ NTW_QUANTUM_STORAGE_5:
   description:
   - '&7Menyimpan item dalam kuantitas massal di dalam'
   - '&7sebuah singularitas kuantum.'
-  name: '&3Penyimpanan Kuantum Jaringan (16M)'
+  name: 'Penyimpanan Kuantum Jaringan (16M)'
   stats:
   - '&7Menyimpan &e16777216&7 item'
   type:
@@ -386,7 +386,7 @@ NTW_QUANTUM_STORAGE_6:
   description:
   - '&7Menyimpan item dalam kuantitas massal di dalam'
   - '&7sebuah singularitas kuantum.'
-  name: '&3Penyimpanan Kuantum Jaringan (134M)'
+  name: 'Penyimpanan Kuantum Jaringan (134M)'
   stats:
   - '&7Menyimpan &e134217728&7 item'
   type:
@@ -395,7 +395,7 @@ NTW_QUANTUM_STORAGE_7:
   description:
   - '&7Menyimpan item dalam kuantitas massal di dalam'
   - '&7sebuah singularitas kuantum.'
-  name: '&3Penyimpanan Kuantum Jaringan (1B)'
+  name: 'Penyimpanan Kuantum Jaringan (1B)'
   stats:
   - '&7Menyimpan &e1073741824&7 item'
   type:
@@ -404,7 +404,7 @@ NTW_QUANTUM_STORAGE_8:
   description:
   - '&7Menyimpan item dalam kuantitas massal di dalam'
   - '&7sebuah singularitas kuantum.'
-  name: '&3Penyimpanan Kuantum Jaringan (∞)'
+  name: 'Penyimpanan Kuantum Jaringan (∞)'
   stats:
   - '&7Menyimpan &e∞&7 item... hampir'
   type:
@@ -412,18 +412,18 @@ NTW_QUANTUM_STORAGE_8:
 NTW_QUANTUM_WORKBENCH:
   description:
   - '&7Memungkinkan pembuatan Penyimpanan Kuantum.'
-  name: '&3Meja Kerja Kuantum Jaringan'
+  name: 'Meja Kerja Kuantum Jaringan'
   type:
   - '&7&oMesin'
 NTW_RADIOACTIVE_OPTIC_STAR:
-  name: '&bBintang Optik Radioaktif'
+  name: 'Bintang Optik Radioaktif'
   type:
   - '&7&oKomponen'
 NTW_RAKE_1:
   description:
   - '&7Alat genggam untuk membongkar dengan cepat'
   - '&7Objek Jaringan tanpa permesinan.'
-  name: '&5Garu Jaringan (1)'
+  name: 'Garu Jaringan (1)'
   stats:
   - '&e250 Penggunaan &7tersisa'
   type:
@@ -434,7 +434,7 @@ NTW_RAKE_2:
   description:
   - '&7Alat genggam untuk membongkar dengan cepat'
   - '&7Objek Jaringan tanpa permesinan.'
-  name: '&5Garu Jaringan (2)'
+  name: 'Garu Jaringan (2)'
   stats:
   - '&e1000 Penggunaan &7tersisa'
   type:
@@ -445,7 +445,7 @@ NTW_RAKE_3:
   description:
   - '&7Alat genggam untuk membongkar dengan cepat'
   - '&7Objek Jaringan tanpa permesinan.'
-  name: '&5Garu Jaringan (3)'
+  name: 'Garu Jaringan (3)'
   stats:
   - '&e9999 Penggunaan &7tersisa'
   type:
@@ -456,7 +456,7 @@ NTW_RECIPE_ENCODER:
   description:
   - '&7Digunakan untuk membentuk Cetak Biru Kerajinan'
   - '&7dari item masukan.'
-  name: '&3Pengode Resep Jaringan'
+  name: 'Pengode Resep Jaringan'
   stats:
   - '&7Konsumsi Jaringan: &e20000&7/kode'
   type:
@@ -465,7 +465,7 @@ NTW_REMOTE:
   description:
   - '&7Membuka kisi terikat secara nirkabel.'
   - '&7Kisi harus berada di chunk yang termuat.'
-  name: '&5Kendali Jarak Jauh Jaringan'
+  name: 'Kendali Jarak Jauh Jaringan'
   stats:
   - '&7Jangkauan: &e150'
   type:
@@ -474,7 +474,7 @@ NTW_REMOTE_EMPOWERED:
   description:
   - '&7Membuka kisi terikat secara nirkabel.'
   - '&7Kisi harus berada di chunk yang termuat.'
-  name: '&5Kendali Jarak Jauh Jaringan Berdaya'
+  name: 'Kendali Jarak Jauh Jaringan Berdaya'
   stats:
   - '&7Jangkauan: &e500'
   type:
@@ -483,7 +483,7 @@ NTW_REMOTE_PRISTINE:
   description:
   - '&7Membuka kisi terikat secara nirkabel.'
   - '&7Kisi harus berada di chunk yang termuat.'
-  name: '&5Kendali Jarak Jauh Jaringan Murni'
+  name: 'Kendali Jarak Jauh Jaringan Murni'
   stats:
   - '&7Jangkauan: &eTanpa Batas'
   type:
@@ -492,21 +492,21 @@ NTW_REMOTE_ULTIMATE:
   description:
   - '&7Membuka kisi terikat secara nirkabel.'
   - '&7Kisi harus berada di chunk yang termuat.'
-  name: '&5Kendali Jarak Jauh Jaringan Puncak'
+  name: 'Kendali Jarak Jauh Jaringan Puncak'
   stats:
   - '&7Jangkauan: &eLintas Dimensi'
   type:
   - '&7&oAlat'
 NTW_SHRINKING_BASE:
-  name: '&bBasis Penyusut'
+  name: 'Basis Penyusut'
   type:
   - '&7&oKomponen'
 NTW_SIMPLE_NANOBOTS:
-  name: '&bNanobot Sederhana'
+  name: 'Nanobot Sederhana'
   type:
   - '&7&oKomponen'
 NTW_SYNTHETIC_EMERALD_SHARD:
-  name: '&bPecahan Zamrud Sintetis'
+  name: 'Pecahan Zamrud Sintetis'
   type:
   - '&7&oKomponen'
 NTW_TRASH:
@@ -515,7 +515,7 @@ NTW_TRASH:
   - '&7item yang cocok dari jaringan'
   - '&7dan seketika memusnahkannya.'
   - '&7Gunakan dengan sangat hati-hati!'
-  name: '&3Pembersih Jaringan'
+  name: 'Pembersih Jaringan'
   type:
   - '&7&oMesin'
 NTW_VACUUM:
@@ -525,7 +525,7 @@ NTW_VACUUM:
   - '&7jangkauan 4 x 4 yang berpusat padanya.'
   - '&7Item yang disedot akan mencoba mendorong'
   - '&7masuk ke dalam Jaringan.'
-  name: '&3Penyedot Jaringan'
+  name: 'Penyedot Jaringan'
   stats:
   - '&7Konsumsi Jaringan: &e100&7/tik'
   type:
@@ -537,7 +537,7 @@ NTW_VANILLA_GRABBER:
   - '&7inventaris vanilla yang dipilih.'
   - '&7Anda perlu menyambar item dari'
   - '&7simpul ini menggunakan Penyambar.'
-  name: '&3Penyambar Vanilla Jaringan'
+  name: 'Penyambar Vanilla Jaringan'
   type:
   - '&7&oMesin'
 NTW_VANILLA_PUSHER:
@@ -547,14 +547,14 @@ NTW_VANILLA_PUSHER:
   - '&7inventaris vanilla yang dipilih.'
   - '&7Anda perlu mendorong item ke dalam'
   - '&7simpul ini dari Pendorong.'
-  name: '&3Pendorong Vanilla Jaringan'
+  name: 'Pendorong Vanilla Jaringan'
   type:
   - '&7&oMesin'
 NTW_WIRELESS_CONFIGURATOR:
   description:
   - '&7Digunakan untuk menyimpan lokasi Penerima'
   - '&7lalu menerapkannya pada Pemancar.'
-  name: '&5Konfigurator Nirkabel Jaringan'
+  name: 'Konfigurator Nirkabel Jaringan'
   type:
   - '&7&oAlat'
   usage:

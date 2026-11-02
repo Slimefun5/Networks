@@ -1,9 +1,9 @@
 NTW_ADVANCED_NANOBOTS:
-  name: '&bAbanseng Nanobot'
+  name: 'Abanseng Nanobot'
   type:
   - '&7&oBahagi'
 NTW_AI_CORE:
-  name: '&bUbod ng A.I.'
+  name: 'Ubod ng A.I.'
   type:
   - '&7&oBahagi'
 NTW_AUTO_CRAFTER:
@@ -14,7 +14,7 @@ NTW_AUTO_CRAFTER:
   - '&7habang wala nito sa network'
   - '&7ay lilikhain ito kung mayroon kang'
   - '&7mga materyal.'
-  name: '&3Network Awtomatikong Tagalikha'
+  name: 'Network Awtomatikong Tagalikha'
   stats:
   - '&7Pagkonsumo ng Network: &e64&7/likha'
   type:
@@ -32,7 +32,7 @@ NTW_AUTO_CRAFTER_WITHHOLDING:
   - '&7paglikha. Makikita ang salansan'
   - '&7sa Network at nagbibigay-daan din sa'
   - '&7kargamento.'
-  name: '&3Network Awtomatikong Tagalikha (Nagtatabi)'
+  name: 'Network Awtomatikong Tagalikha (Nagtatabi)'
   stats:
   - '&7Pagkonsumo ng Network: &e128&7/likha'
   type:
@@ -43,14 +43,14 @@ NTW_BEST_PUSHER:
   - '&7na itulak ang mga katugmang bagay mula sa hanggang'
   - '&7labindalawang ibinigay na padron papasok sa'
   - '&7napiling makina.'
-  name: '&3Network Abanseng Tagatulak'
+  name: 'Network Abanseng Tagatulak'
   type:
   - '&7&oMakina'
 NTW_BRIDGE:
   description:
   - '&7Ang Tulay ay nagbibigay-daan sa murang'
   - '&7pag-uugnay ng mga bagay ng network.'
-  name: '&3Network Tulay'
+  name: 'Network Tulay'
   type:
   - '&7&oMakina'
 NTW_CAPACITOR_1:
@@ -58,7 +58,7 @@ NTW_CAPACITOR_1:
   - '&7Ang Network Kapasitor ay maaaring tumanggap ng'
   - '&7lakas at imbakin ito para gamitin'
   - '&7sa loob ng network.'
-  name: '&3Network Kapasitor (1)'
+  name: 'Network Kapasitor (1)'
   stats:
   - '&7Kapasidad: &e1000'
   type:
@@ -68,7 +68,7 @@ NTW_CAPACITOR_2:
   - '&7Ang Network Kapasitor ay maaaring tumanggap ng'
   - '&7lakas at imbakin ito para gamitin'
   - '&7sa loob ng network.'
-  name: '&3Network Kapasitor (2)'
+  name: 'Network Kapasitor (2)'
   stats:
   - '&7Kapasidad: &e10000'
   type:
@@ -78,7 +78,7 @@ NTW_CAPACITOR_3:
   - '&7Ang Network Kapasitor ay maaaring tumanggap ng'
   - '&7lakas at imbakin ito para gamitin'
   - '&7sa loob ng network.'
-  name: '&3Network Kapasitor (3)'
+  name: 'Network Kapasitor (3)'
   stats:
   - '&7Kapasidad: &e100000'
   type:
@@ -88,7 +88,7 @@ NTW_CAPACITOR_4:
   - '&7Ang Network Kapasitor ay maaaring tumanggap ng'
   - '&7lakas at imbakin ito para gamitin'
   - '&7sa loob ng network.'
-  name: '&3Network Kapasitor (4)'
+  name: 'Network Kapasitor (4)'
   stats:
   - '&7Kapasidad: &e1000000'
   type:
@@ -99,7 +99,7 @@ NTW_CELL:
   - '&7imbentaryo (dobleng kaban) na maaaring'
   - '&7buksan kapwa mula sa network'
   - '&7at sa mundo.'
-  name: '&3Network Selda'
+  name: 'Network Selda'
   type:
   - '&7&oMakina'
 NTW_CONFIGURATOR:
@@ -107,7 +107,7 @@ NTW_CONFIGURATOR:
   - '&7Ginagamit upang kopyahin at idikit ang'
   - '&7mga kaayusan ng mga may-direksyong'
   - '&7bahagi.'
-  name: '&5Network Tagasaayos'
+  name: 'Network Tagasaayos'
   type:
   - '&7&oKasangkapan'
   usage:
@@ -117,7 +117,7 @@ NTW_CONTROLLER:
   description:
   - '&7Ang Network Kontrolador ang utak'
   - '&7ng buong network.'
-  name: '&3Network Kontrolador'
+  name: 'Network Kontrolador'
   stats:
   - '&7Hangganan: &eHanggang 1&7 kada network'
   type:
@@ -128,7 +128,7 @@ NTW_CONTROL_V:
   - '&7na ''idikit'' ang isang bloke mula sa Network'
   - '&7papunta sa mundo.'
   - '&7Gumagana lamang sa mga orihinal na bloke.'
-  name: '&3Network Kontrol: V'
+  name: 'Network Kontrol: V'
   stats:
   - '&7Pagkonsumo ng Network: &e100&7/dikit'
   type:
@@ -140,7 +140,7 @@ NTW_CONTROL_X:
   - '&7at ilagay ito sa Network.'
   - '&7Gumagana lamang sa mga orihinal na bloke na walang'
   - '&7imbentaryo.'
-  name: '&3Network Kontrol: X'
+  name: 'Network Kontrol: X'
   stats:
   - '&7Pagkonsumo ng Network: &e100&7/gupit'
   type:
@@ -150,7 +150,7 @@ NTW_CRAFTING_BLUEPRINT:
   - '&7Isang blangkong balangkas na maaaring'
   - '&7gamitin upang mag-imbak ng resipi ng'
   - '&7paglikha.'
-  name: '&5Balangkas ng Paglikha'
+  name: 'Balangkas ng Paglikha'
   type:
   - '&7&oKasangkapan'
 NTW_CRAFTING_GRID:
@@ -159,7 +159,7 @@ NTW_CRAFTING_GRID:
   - '&7tulad ng karaniwang grid ngunit mas kakaunti ang'
   - '&7bagay ngunit pinapayagan ang paglikha gamit ang mga bagay'
   - '&7direkta mula sa network.'
-  name: '&3Network Grid ng Paglikha'
+  name: 'Network Grid ng Paglikha'
   type:
   - '&7&oMakina'
 NTW_CRAYON:
@@ -167,7 +167,7 @@ NTW_CRAYON:
   - '&7Pinapatay-sindi ang pansuring partikulo sa buong'
   - '&7network, na nagpapakita ng gawain ng nodo'
   - '&7habang gumagana ito.'
-  name: '&5Network Krayola'
+  name: 'Network Krayola'
   type:
   - '&7&oKasangkapan'
   usage:
@@ -176,13 +176,13 @@ NTW_DEBUG_STICK:
   description:
   - '&7Isang pansuring kasangkapan para lamang sa operator na ginagamit'
   - '&7upang suriin ang kilos ng mga bloke ng Network.'
-  name: '&5Network Patpat Pansuri'
+  name: 'Network Patpat Pansuri'
   type:
   - '&7&oKasangkapan'
   usage:
   - '&eKanang Pindot&7 sa Bagay ng Network upang buksan ang pagsusuri.'
 NTW_EMPOWERED_AI_CORE:
-  name: '&bPinalakas na Ubod ng A.I.'
+  name: 'Pinalakas na Ubod ng A.I.'
   type:
   - '&7&oBahagi'
 NTW_EXPORT:
@@ -191,7 +191,7 @@ NTW_EXPORT:
   - '&7patuloy na iluwas ang 1 salansan ng anumang'
   - '&7ibinigay na bagay.'
   - '&7Tumatanggap ng pagbawi ng bagay mula sa kargamento.'
-  name: '&3Network Tagapagluwas'
+  name: 'Network Tagapagluwas'
   type:
   - '&7&oMakina'
 NTW_GRABBER:
@@ -199,7 +199,7 @@ NTW_GRABBER:
   - '&7Ang Network Tagasunggab ay susubok'
   - '&7na sunggaban ang unang bagay na matagpuan'
   - '&7mula sa loob ng napiling makina.'
-  name: '&3Network Tagasunggab'
+  name: 'Network Tagasunggab'
   type:
   - '&7&oMakina'
 NTW_GREEDY_BLOCK:
@@ -210,7 +210,7 @@ NTW_GREEDY_BLOCK:
   - '&7salansan nito. Kung hindi kasya ang iba pang'
   - '&7papasok na bagay, hindi sila makakapasok sa'
   - '&7network.'
-  name: '&3Network Sakim na Bloke'
+  name: 'Network Sakim na Bloke'
   type:
   - '&7&oMakina'
 NTW_GRID:
@@ -219,7 +219,7 @@ NTW_GRID:
   - '&7ng mga bagay na nasa network mo'
   - '&7at hinahayaan kang maglagay o mag-alis'
   - '&7nang direkta.'
-  name: '&3Network Grid'
+  name: 'Network Grid'
   type:
   - '&7&oMakina'
 NTW_IMPORT:
@@ -227,13 +227,13 @@ NTW_IMPORT:
   - '&7Ang Network Tagapag-angkat ay nagpapasok ng'
   - '&7anumang bagay sa loob nito sa network.'
   - '&7Tumatanggap ng mga bagay mula sa kargamento.'
-  name: '&3Network Tagapag-angkat'
+  name: 'Network Tagapag-angkat'
   stats:
   - '&7Antas ng Pag-angkat: &eHanggang 9 na salansan&7/tik'
   type:
   - '&7&oMakina'
 NTW_INTERDIMENSIONAL_PRESENCE:
-  name: '&bPresensyang Interdimensyonal'
+  name: 'Presensyang Interdimensyonal'
   type:
   - '&7&oBahagi'
 NTW_MONITOR:
@@ -244,7 +244,7 @@ NTW_MONITOR:
   - '&7Sa Ngayon ay Sinusuportahan:'
   - '&7Mga Bariles na Walang Hanggan'
   - '&7Mga Balat ng Network'
-  name: '&3Network Tagasubaybay'
+  name: 'Network Tagasubaybay'
   type:
   - '&7&oMakina'
 NTW_NETWORK_WIRELESS_RECEIVER:
@@ -255,7 +255,7 @@ NTW_NETWORK_WIRELESS_RECEIVER:
   - '&7parehong mundo.'
   - '&7Susubok nitong itulak ang mga natanggap na bagay'
   - '&7papasok sa Network sa bawat tik.'
-  name: '&3Network Walang Kableng Tagatanggap'
+  name: 'Network Walang Kableng Tagatanggap'
   type:
   - '&7&oMakina'
 NTW_NETWORK_WIRELESS_TRANSMITTER:
@@ -266,21 +266,21 @@ NTW_NETWORK_WIRELESS_TRANSMITTER:
   - '&7na nasa loob ng parehong mundo.'
   - '&7Gamitin ang Walang Kableng Tagasaayos upang'
   - '&7itakda ang Walang Kableng Tagapadala.'
-  name: '&3Network Walang Kableng Tagapadala'
+  name: 'Network Walang Kableng Tagapadala'
   stats:
   - '&7Nangangailangan ng 500 Lakas ng Network kada paglipat.'
   type:
   - '&7&oMakina'
 NTW_OPTIC_CABLE:
-  name: '&bOptikong Kable'
+  name: 'Optikong Kable'
   type:
   - '&7&oBahagi'
 NTW_OPTIC_GLASS:
-  name: '&bOptikong Salamin'
+  name: 'Optikong Salamin'
   type:
   - '&7&oBahagi'
 NTW_OPTIC_STAR:
-  name: '&bOptikong Bituin'
+  name: 'Optikong Bituin'
   type:
   - '&7&oBahagi'
 NTW_POWER_DISPLAY:
@@ -288,7 +288,7 @@ NTW_POWER_DISPLAY:
   - '&7Ang Network Tagapakita ng Lakas ay'
   - '&7magpapakita ng lakas sa network.'
   - '&7Payak, hindi ba?'
-  name: '&3Network Tagapakita ng Lakas'
+  name: 'Network Tagapakita ng Lakas'
   type:
   - '&7&oMakina'
 NTW_POWER_OUTLET_1:
@@ -297,7 +297,7 @@ NTW_POWER_OUTLET_1:
   - '&7lakas mula sa Network upang paganahin ang'
   - '&7mga makina o ibalik sa isang'
   - '&7network ng EnergyNet.'
-  name: '&3Network Saksakan ng Lakas (1)'
+  name: 'Network Saksakan ng Lakas (1)'
   stats:
   - '&7Gumagana sa 20% na antas ng pagkalugi.'
   - '&7Pinakamataas na Paglipat: &e500'
@@ -309,14 +309,14 @@ NTW_POWER_OUTLET_2:
   - '&7lakas mula sa Network upang paganahin ang'
   - '&7mga makina o ibalik sa isang'
   - '&7network ng EnergyNet.'
-  name: '&3Network Saksakan ng Lakas (2)'
+  name: 'Network Saksakan ng Lakas (2)'
   stats:
   - '&7Gumagana sa 20% na antas ng pagkalugi.'
   - '&7Pinakamataas na Paglipat: &e2000'
   type:
   - '&7&oMakina'
 NTW_PRISTINE_AI_CORE:
-  name: '&bDalisay na Ubod ng A.I.'
+  name: 'Dalisay na Ubod ng A.I.'
   type:
   - '&7&oBahagi'
 NTW_PROBE:
@@ -324,7 +324,7 @@ NTW_PROBE:
   - '&7Naghahayag ng buod ng isang Network,'
   - '&7kasama ang lakas, bilang ng bagay'
   - '&7at kabuuan ng nodo.'
-  name: '&5Network Tagasiyasat'
+  name: 'Network Tagasiyasat'
   type:
   - '&7&oKasangkapan'
   usage:
@@ -334,14 +334,14 @@ NTW_PUSHER:
   - '&7Ang Network Tagatulak ay susubok'
   - '&7na itulak ang katugmang bagay mula sa'
   - '&7ibinigay na bagay papasok sa napiling makina.'
-  name: '&3Network Tagatulak'
+  name: 'Network Tagatulak'
   type:
   - '&7&oMakina'
 NTW_QUANTUM_STORAGE_1:
   description:
   - '&7Nag-iimbak ng mga bagay sa malaking kantidad sa loob ng'
   - '&7singularidad na kwantum.'
-  name: '&3Network Imbakang Kwantum (4K)'
+  name: 'Network Imbakang Kwantum (4K)'
   stats:
   - '&7Nag-iimbak ng &e4096&7 na bagay'
   type:
@@ -350,7 +350,7 @@ NTW_QUANTUM_STORAGE_2:
   description:
   - '&7Nag-iimbak ng mga bagay sa malaking kantidad sa loob ng'
   - '&7singularidad na kwantum.'
-  name: '&3Network Imbakang Kwantum (32K)'
+  name: 'Network Imbakang Kwantum (32K)'
   stats:
   - '&7Nag-iimbak ng &e32768&7 na bagay'
   type:
@@ -359,7 +359,7 @@ NTW_QUANTUM_STORAGE_3:
   description:
   - '&7Nag-iimbak ng mga bagay sa malaking kantidad sa loob ng'
   - '&7singularidad na kwantum.'
-  name: '&3Network Imbakang Kwantum (262K)'
+  name: 'Network Imbakang Kwantum (262K)'
   stats:
   - '&7Nag-iimbak ng &e262144&7 na bagay'
   type:
@@ -368,7 +368,7 @@ NTW_QUANTUM_STORAGE_4:
   description:
   - '&7Nag-iimbak ng mga bagay sa malaking kantidad sa loob ng'
   - '&7singularidad na kwantum.'
-  name: '&3Network Imbakang Kwantum (2M)'
+  name: 'Network Imbakang Kwantum (2M)'
   stats:
   - '&7Nag-iimbak ng &e2097152&7 na bagay'
   type:
@@ -377,7 +377,7 @@ NTW_QUANTUM_STORAGE_5:
   description:
   - '&7Nag-iimbak ng mga bagay sa malaking kantidad sa loob ng'
   - '&7singularidad na kwantum.'
-  name: '&3Network Imbakang Kwantum (16M)'
+  name: 'Network Imbakang Kwantum (16M)'
   stats:
   - '&7Nag-iimbak ng &e16777216&7 na bagay'
   type:
@@ -386,7 +386,7 @@ NTW_QUANTUM_STORAGE_6:
   description:
   - '&7Nag-iimbak ng mga bagay sa malaking kantidad sa loob ng'
   - '&7singularidad na kwantum.'
-  name: '&3Network Imbakang Kwantum (134M)'
+  name: 'Network Imbakang Kwantum (134M)'
   stats:
   - '&7Nag-iimbak ng &e134217728&7 na bagay'
   type:
@@ -395,7 +395,7 @@ NTW_QUANTUM_STORAGE_7:
   description:
   - '&7Nag-iimbak ng mga bagay sa malaking kantidad sa loob ng'
   - '&7singularidad na kwantum.'
-  name: '&3Network Imbakang Kwantum (1B)'
+  name: 'Network Imbakang Kwantum (1B)'
   stats:
   - '&7Nag-iimbak ng &e1073741824&7 na bagay'
   type:
@@ -404,7 +404,7 @@ NTW_QUANTUM_STORAGE_8:
   description:
   - '&7Nag-iimbak ng mga bagay sa malaking kantidad sa loob ng'
   - '&7singularidad na kwantum.'
-  name: '&3Network Imbakang Kwantum (∞)'
+  name: 'Network Imbakang Kwantum (∞)'
   stats:
   - '&7Nag-iimbak ng &e∞&7 na bagay... halos'
   type:
@@ -412,18 +412,18 @@ NTW_QUANTUM_STORAGE_8:
 NTW_QUANTUM_WORKBENCH:
   description:
   - '&7Nagbibigay-daan sa paglikha ng mga Imbakang Kwantum.'
-  name: '&3Network Gawaan ng Kwantum'
+  name: 'Network Gawaan ng Kwantum'
   type:
   - '&7&oMakina'
 NTW_RADIOACTIVE_OPTIC_STAR:
-  name: '&bRadyoaktibong Optikong Bituin'
+  name: 'Radyoaktibong Optikong Bituin'
   type:
   - '&7&oBahagi'
 NTW_RAKE_1:
   description:
   - '&7Isang hawak-kamay na kasangkapan para agad na buwagin ang'
   - '&7mga bagay ng Network nang walang makinarya.'
-  name: '&5Network Kalaykay (1)'
+  name: 'Network Kalaykay (1)'
   stats:
   - '&e250 Paggamit &7ang natitira'
   type:
@@ -434,7 +434,7 @@ NTW_RAKE_2:
   description:
   - '&7Isang hawak-kamay na kasangkapan para agad na buwagin ang'
   - '&7mga bagay ng Network nang walang makinarya.'
-  name: '&5Network Kalaykay (2)'
+  name: 'Network Kalaykay (2)'
   stats:
   - '&e1000 Paggamit &7ang natitira'
   type:
@@ -445,7 +445,7 @@ NTW_RAKE_3:
   description:
   - '&7Isang hawak-kamay na kasangkapan para agad na buwagin ang'
   - '&7mga bagay ng Network nang walang makinarya.'
-  name: '&5Network Kalaykay (3)'
+  name: 'Network Kalaykay (3)'
   stats:
   - '&e9999 Paggamit &7ang natitira'
   type:
@@ -456,7 +456,7 @@ NTW_RECIPE_ENCODER:
   description:
   - '&7Ginagamit upang bumuo ng Balangkas ng Paglikha'
   - '&7mula sa mga bagay na ipinasok.'
-  name: '&3Network Tagakodigo ng Resipi'
+  name: 'Network Tagakodigo ng Resipi'
   stats:
   - '&7Pagkonsumo ng Network: &e20000&7/kodigo'
   type:
@@ -465,7 +465,7 @@ NTW_REMOTE:
   description:
   - '&7Nagbubukas ng nakaugnay na grid nang walang kable.'
   - '&7Dapat nakakarga ang chunk ng grid.'
-  name: '&5Network Malayuang Kontrol'
+  name: 'Network Malayuang Kontrol'
   stats:
   - '&7Abot: &e150'
   type:
@@ -474,7 +474,7 @@ NTW_REMOTE_EMPOWERED:
   description:
   - '&7Nagbubukas ng nakaugnay na grid nang walang kable.'
   - '&7Dapat nakakarga ang chunk ng grid.'
-  name: '&5Network Malayuang Kontrol na Pinalakas'
+  name: 'Network Malayuang Kontrol na Pinalakas'
   stats:
   - '&7Abot: &e500'
   type:
@@ -483,7 +483,7 @@ NTW_REMOTE_PRISTINE:
   description:
   - '&7Nagbubukas ng nakaugnay na grid nang walang kable.'
   - '&7Dapat nakakarga ang chunk ng grid.'
-  name: '&5Network Malayuang Kontrol na Dalisay'
+  name: 'Network Malayuang Kontrol na Dalisay'
   stats:
   - '&7Abot: &eWalang Hangganan'
   type:
@@ -492,21 +492,21 @@ NTW_REMOTE_ULTIMATE:
   description:
   - '&7Nagbubukas ng nakaugnay na grid nang walang kable.'
   - '&7Dapat nakakarga ang chunk ng grid.'
-  name: '&5Network Malayuang Kontrol na Kataas-taasan'
+  name: 'Network Malayuang Kontrol na Kataas-taasan'
   stats:
   - '&7Abot: &ePagitan ng mga Dimensyon'
   type:
   - '&7&oKasangkapan'
 NTW_SHRINKING_BASE:
-  name: '&bSaligan ng Pagliit'
+  name: 'Saligan ng Pagliit'
   type:
   - '&7&oBahagi'
 NTW_SIMPLE_NANOBOTS:
-  name: '&bPayak na Nanobot'
+  name: 'Payak na Nanobot'
   type:
   - '&7&oBahagi'
 NTW_SYNTHETIC_EMERALD_SHARD:
-  name: '&bSintetikong Tipak ng Esmeralda'
+  name: 'Sintetikong Tipak ng Esmeralda'
   type:
   - '&7&oBahagi'
 NTW_TRASH:
@@ -515,7 +515,7 @@ NTW_TRASH:
   - '&7mga katugmang bagay mula sa network'
   - '&7at agad-agad itong pupuksain.'
   - '&7Gamitin nang may labis na pag-iingat!'
-  name: '&3Network Tagapuksa'
+  name: 'Network Tagapuksa'
   type:
   - '&7&oMakina'
 NTW_VACUUM:
@@ -525,7 +525,7 @@ NTW_VACUUM:
   - '&74 x 4 na abot na nakasentro sa sarili nito.'
   - '&7Ang mga sinipsip na bagay ay susubok tumulak'
   - '&7papasok sa Network.'
-  name: '&3Network Tagasipsip'
+  name: 'Network Tagasipsip'
   stats:
   - '&7Pagkonsumo ng Network: &e100&7/tik'
   type:
@@ -537,7 +537,7 @@ NTW_VANILLA_GRABBER:
   - '&7napiling orihinal na imbentaryo.'
   - '&7Kailangan mong sunggaban ang mga bagay mula sa'
   - '&7nodong ito gamit ang Tagasunggab.'
-  name: '&3Network Tagasunggab ng Orihinal'
+  name: 'Network Tagasunggab ng Orihinal'
   type:
   - '&7&oMakina'
 NTW_VANILLA_PUSHER:
@@ -547,14 +547,14 @@ NTW_VANILLA_PUSHER:
   - '&7napiling orihinal na imbentaryo.'
   - '&7Kailangan mong itulak ang mga bagay papasok sa'
   - '&7nodong ito mula sa Tagatulak.'
-  name: '&3Network Tagatulak ng Orihinal'
+  name: 'Network Tagatulak ng Orihinal'
   type:
   - '&7&oMakina'
 NTW_WIRELESS_CONFIGURATOR:
   description:
   - '&7Ginagamit upang iimbak ang lokasyon ng Tagatanggap'
   - '&7at pagkatapos ay ilapat sa isang Tagapadala.'
-  name: '&5Network Walang Kableng Tagasaayos'
+  name: 'Network Walang Kableng Tagasaayos'
   type:
   - '&7&oKasangkapan'
   usage:
